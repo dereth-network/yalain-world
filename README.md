@@ -13,6 +13,9 @@ The world is built up from a collection of TOML-based rows, described in [FORMAT
 `seed-2017-talk/` is what NPCs say and when: the lines heard in those recordings, plus the other
 lines in each NPC's string table, placed by what their names say they are for.
 
+`fix-start/` sends the start halls' quick exits where each hall's shard leads; no recording shows a
+trip through one.
+
 Every row's `prov` says where it came from: `capture` (measured; with an `AC2-EVID-...` evidence handle naming the extraction, an opaque reference to the recording, the confidence and the sample counts), `derived` (computed by a rule listed in FORMAT.md), `dat` (a record rooted in the client DATs) or `authored` (written by a person).
 
 ## What's Missing

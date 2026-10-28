@@ -1,5 +1,9 @@
 # Changes
 
+## v0.3.0
+
+- The start halls' quick exits go somewhere: where each hall's shard leads. New pack `fix-start/`.
+
 ## v0.2.0
 
 - What NPCs say and when: 5,510 lines in a new pack, `seed-2017-talk/`.

@@ -3,4 +3,9 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start"]
+
+[[override]]
+pack = "fix-start"
+over = "seed-2017"
+items = ["object s-56@0298", "object s-3b@03FB"]
