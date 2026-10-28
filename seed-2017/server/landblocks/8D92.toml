@@ -1,0 +1,50 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "n-2f37"
+kind = "npc"
+template = 0x47002F37
+cell = 0x8D920006
+at = [10.113, 103.5129, 85.0119]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:ea452793", confidence = "medium", sample = { sessions = 2 } }
+
+[[camp]]
+key = "c-6372"
+cell = 0x8D920006
+at = [5.1, 106.4, 85.4]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002B82, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6372", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-6373"
+cell = 0x8D92001B
+at = [65.1, 41.8, 73.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002B82, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6373", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-6876"
+cell = 0x8D920007
+at = [8.2, 125.7, 84.7]
+radius = 26.7
+population = 6
+regen = 192.0
+spawns = [{ template = 0x47002B1D, weight = 5 }, { template = 0x47002B1F, weight = 5 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6876", confidence = "medium", sample = { creatures = 10, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-6878"
+cell = 0x8D92001B
+at = [67.4, 45.7, 73.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002B1F, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6878", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

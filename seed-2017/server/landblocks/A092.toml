@@ -1,0 +1,37 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-6100"
+cell = 0xA0920010
+at = [23.4, 154.3, 136.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002378, weight = 1 }]
+profile = 51
+profile_name = "GP_CampDrudgeSlinker"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6100", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6101"
+cell = 0xA0920013
+at = [40.6, 44.4, 124.5]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002373, weight = 2 }]
+profile = 48
+profile_name = "GP_CampDrudgeProwler"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6101", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6102"
+cell = 0xA0920023
+at = [90.9, 50.5, 76.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002373, weight = 1 }]
+profile = 48
+profile_name = "GP_CampDrudgeProwler"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6102", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

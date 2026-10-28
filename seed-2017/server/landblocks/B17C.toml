@@ -1,0 +1,35 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-9325"
+cell = 0xB17C0033
+at = [122.1, 43.1, 121.7]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002BBC, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9325", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-10288"
+cell = 0xB17C0035
+at = [139.6, 88.1, 118.7]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002309, weight = 1 }]
+profile = 33
+profile_name = "GP_CampDarkenfowlChanticleer"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10288", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-10452"
+cell = 0xB17C003D
+at = [144.8, 81.3, 117.8]
+radius = 16.3
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470027B9, weight = 3 }, { template = 0x470027A8, weight = 2 }, { template = 0x470027B5, weight = 1 }]
+profile = 315
+profile_name = "GP_CampMimbuKachem"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10452", confidence = "medium", sample = { creatures = 6, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

@@ -1,0 +1,10 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000CF
+id_name = "QuestFindWarderCragstone"
+state = 0x6F0007CA
+challenge = -999
+duration = 172800
+cancellable = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:fd2ec2f3", confidence = "high", sample = { sessions = 4 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0007CA } } }

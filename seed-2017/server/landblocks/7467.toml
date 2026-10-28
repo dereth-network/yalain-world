@@ -1,0 +1,13 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-411"
+cell = 0x7467002E
+at = [107.8, 115.6, 83.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021C1, weight = 2 }]
+profile = 11
+profile_name = "GP_CampArmoredilloSteppe"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 411", confidence = "medium", sample = { creatures = 2, sessions = 3 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

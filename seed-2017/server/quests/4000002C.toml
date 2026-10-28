@@ -1,0 +1,10 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000002C
+id_name = "QuestGreatTree"
+state = 0x6F000895
+challenge = 30
+duration = 72000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:7eb7b423", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000895 } } }

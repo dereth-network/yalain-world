@@ -1,0 +1,33 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40988C0000000001
+template = 0x47001BC0
+cell = 0x988C0040
+at = [148.0, 146.0, 133.0]
+rotation = [0.0, 0.0, 0.0, 1.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:e53edf73", confidence = "high", sample = { sessions = 4 } }
+
+[[camp]]
+key = "c-5920"
+cell = 0x988C0026
+at = [84.8, 118.1, 136.1]
+radius = 5.0
+population = 1
+regen = 60.0
+spawns = [{ template = 0x47002C0E, weight = 1 }]
+profile = 359
+profile_name = "GP_CampLostWishThornlingRingleader"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5920", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-generator" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-8326"
+cell = 0x988C0026
+at = [83.2, 117.1, 135.7]
+radius = 3.4
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470029CB, weight = 2 }, { template = 0x470029C2, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8326", confidence = "medium", sample = { creatures = 3, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

@@ -1,0 +1,54 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x40D0770000000002
+template = 0x47001BF2
+cell = 0xD0770014
+at = [47.5183, 60.699, 78.7324]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:2b02d538", confidence = "low", sample = { sessions = 1 } }
+
+[[object]]
+key = "n-31ce"
+kind = "npc"
+template = 0x470031CE
+cell = 0xD077003C
+at = [149.5168, 73.2169, 90.3851]
+rotation = [0.965831, 0.0, 0.0, -0.259174]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:1b43e2b8", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-9093"
+cell = 0xD0770029
+at = [101.5, 15.9, 75.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A22, weight = 1 }]
+profile = 348
+profile_name = "GP_CampSclavusUlu"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9093", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-9094"
+cell = 0xD0770011
+at = [58.8, 11.2, 79.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A22, weight = 1 }]
+profile = 348
+profile_name = "GP_CampSclavusUlu"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9094", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-9448"
+cell = 0xD077003F
+at = [153.2, 131.4, 80.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002BE4, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9448", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

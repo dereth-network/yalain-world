@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x400002A5
+id_name = "QuestDestroyChaosArchon"
+state = 0x6F00076C
+challenge = -999
+duration = 604800
+retry = 518400
+cancellable = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:3e9fbbe7", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00076C }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00076C } } }

@@ -1,0 +1,31 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-9240"
+cell = 0x3D95001E
+at = [66.1, 114.7, 157.0]
+radius = 22.5
+population = 4
+regen = 192.0
+spawns = [{ template = 0x47002BC0, weight = 7 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9240", confidence = "low", sample = { creatures = 7, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-11039"
+cell = 0x3D950020
+at = [76.5, 140.8, 156.7]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002848, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11039", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-11775"
+cell = 0x3D950016
+at = [55.8, 102.0, 154.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024CC, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11775", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

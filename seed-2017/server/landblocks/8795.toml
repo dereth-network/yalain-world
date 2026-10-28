@@ -1,0 +1,43 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-4621"
+cell = 0x8795000F
+at = [31.9, 131.8, 68.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700222A, weight = 1 }]
+profile = 29
+profile_name = "GP_CampBeetleScythe"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4621", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-7253"
+cell = 0x87950020
+at = [71.8, 158.3, 70.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002347, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7253", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8719"
+cell = 0x87950005
+at = [1.9, 92.1, 71.2]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002B1B, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8719", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8720"
+cell = 0x8795001E
+at = [68.7, 111.8, 71.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002B17, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8720", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

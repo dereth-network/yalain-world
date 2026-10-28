@@ -1,0 +1,33 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x409C890000000001
+template = 0x47001BC0
+cell = 0x9C89001E
+at = [79.0, 119.0, 171.8335]
+rotation = [-0.382684, 0.0, 0.0, 0.92388]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:30988987", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-2857"
+cell = 0x9C890039
+at = [158.7, 7.8, 211.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002965, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2857", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7417"
+cell = 0x9C89002A
+at = [104.8, 24.7, 209.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002326, weight = 1 }]
+profile = 44
+profile_name = "GP_CampDrudgeMystic"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7417", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

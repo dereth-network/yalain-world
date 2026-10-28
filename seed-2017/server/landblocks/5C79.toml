@@ -1,0 +1,95 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-215"
+cell = 0x5C790035
+at = [135.2, 82.1, 137.1]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700084A, weight = 1 }, { template = 0x4700084B, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 215", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-994"
+cell = 0x5C79003A
+at = [145.4, 26.4, 135.8]
+radius = 11.9
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021F8, weight = 3 }]
+profile = 22
+profile_name = "GP_CampBanderlingThrasher"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 994", confidence = "medium", sample = { creatures = 3, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-1203"
+cell = 0x5C79001A
+at = [74.9, 23.0, 132.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021F3, weight = 1 }]
+profile = 16
+profile_name = "GP_CampBanderlingCrasher"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1203", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-2622"
+cell = 0x5C790031
+at = [121.7, 15.1, 136.7]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002639, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2622", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-2623"
+cell = 0x5C790019
+at = [78.3, 1.6, 134.9]
+radius = 18.4
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002639, weight = 4 }, { template = 0x47002658, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2623", confidence = "medium", sample = { creatures = 5, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-2683"
+cell = 0x5C79003A
+at = [156.1, 31.9, 133.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002658, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2683", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-2684"
+cell = 0x5C790002
+at = [13.9, 20.0, 141.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002658, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2684", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-4442"
+cell = 0x5C790022
+at = [86.2, 33.0, 135.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700084E, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4442", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-5099"
+cell = 0x5C790029
+at = [109.2, 17.6, 135.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D35, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5099", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

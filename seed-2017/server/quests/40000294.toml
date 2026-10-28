@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000294
+id_name = "QuestWhiteRabbit"
+state = 0x6F000D71
+challenge = 35
+duration = 21600
+retry = 518400
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:9a1bc99c", confidence = "high", sample = { sessions = 13 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000D71 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000D71 } } }

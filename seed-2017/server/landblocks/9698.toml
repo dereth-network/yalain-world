@@ -1,0 +1,23 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-6159"
+cell = 0x9698002C
+at = [102.2, 65.9, 165.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002373, weight = 1 }, { template = 0x47002376, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6159", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7230"
+cell = 0x9698002B
+at = [114.8, 50.2, 163.7]
+radius = 17.4
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002363, weight = 2 }, { template = 0x47002353, weight = 2 }]
+profile = 50
+profile_name = "GP_CampDrudgeScowl"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7230", confidence = "medium", sample = { creatures = 4, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

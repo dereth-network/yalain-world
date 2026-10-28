@@ -1,0 +1,25 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-9070"
+cell = 0xBC770032
+at = [124.7, 37.1, 117.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A1A, weight = 1 }]
+profile = 344
+profile_name = "GP_CampSclavusAste"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9070", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-10527"
+cell = 0xBC770039
+at = [149.1, 1.2, 93.0]
+radius = 10.7
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470027A8, weight = 2 }, { template = 0x470027B5, weight = 1 }]
+profile = 315
+profile_name = "GP_CampMimbuKachem"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10527", confidence = "low", sample = { creatures = 3, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

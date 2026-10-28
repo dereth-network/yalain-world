@@ -1,0 +1,44 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "n-32cb"
+kind = "npc"
+template = 0x470032CB
+cell = 0x61780019
+at = [77.8168, 14.1881, 110.0862]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:b7199583", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-803"
+cell = 0x61780030
+at = [109.3, 156.2, 129.2]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021C2, weight = 1 }]
+profile = 12
+profile_name = "GP_CampArmoredilloStony"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 803", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-804"
+cell = 0x61780027
+at = [95.5, 127.2, 118.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021C2, weight = 1 }]
+profile = 12
+profile_name = "GP_CampArmoredilloStony"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 804", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-2190"
+cell = 0x61780022
+at = [84.9, 34.3, 103.2]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002AF4, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2190", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

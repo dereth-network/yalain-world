@@ -1,0 +1,23 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-836"
+cell = 0x869C0028
+at = [86.2, 140.5, 79.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021C0, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 836", confidence = "medium", sample = { creatures = 2, sessions = 4 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-4746"
+cell = 0x869C003E
+at = [143.7, 111.6, 79.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700222E, weight = 2 }]
+profile = 30
+profile_name = "GP_CampBeetleShear"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4746", confidence = "medium", sample = { creatures = 2, sessions = 4 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

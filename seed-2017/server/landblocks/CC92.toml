@@ -1,0 +1,33 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-8943"
+cell = 0xCC920007
+at = [4.7, 134.1, 83.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A1B, weight = 1 }]
+profile = 345
+profile_name = "GP_CampSclavusEssa"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8943", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-9371"
+cell = 0xCC92000A
+at = [29.3, 39.0, 75.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002BB7, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9371", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-11227"
+cell = 0xCC920007
+at = [5.5, 129.4, 82.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700289B, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11227", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

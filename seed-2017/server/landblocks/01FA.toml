@@ -1,0 +1,96 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1e"
+kind = "static"
+id = 0x4001FA000000001E
+template = 0x47000FB1
+cell = 0x01FA0112
+at = [-9.62, 0.82, 18.26]
+rotation = [0.0, 0.0, 0.0, 1.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:4e218fe4", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-1d"
+kind = "static"
+id = 0x4001FA000000001D
+template = 0x47001154
+cell = 0x01FA011B
+at = [-5.7491, 9.5532, 8.2167]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B40, string = 0x7B3CF7B7 }
+to = "p-01f8012d"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:0b2c8ad0", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-1f"
+kind = "static"
+id = 0x4001FA000000001F
+template = 0x47000FB1
+cell = 0x01FA0113
+at = [0.36, 17.7, 18.26]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:0a939fae", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x4001FA0000000003
+template = 0x47001154
+cell = 0x01FA014F
+at = [-14.8977, 19.259, 67.2937]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0x1BECBA6F }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:99631900", confidence = "medium", sample = { sessions = 2 } }
+
+[[camp]]
+key = "c-10168"
+cell = 0x01FA011F
+at = [-8.2, 7.2, 55.2]
+radius = 0.0
+spots = [{ cell = 0x01FA011F, at = [31.9, 35.1, 42.3] }, { cell = 0x01FA0123, at = [15.5, 25.3, 42.3] }, { cell = 0x01FA0123, at = [18.3, -5.7, 45.3] }, { cell = 0x01FA0125, at = [-46.5, 24.6, 45.3] }, { cell = 0x01FA0125, at = [-43.6, 20.2, 45.3] }, { cell = 0x01FA012A, at = [-6.2, 40.0, 54.3] }, { cell = 0x01FA012A, at = [-4.9, 38.1, 55.3] }, { cell = 0x01FA012B, at = [-4.8, -18.8, 55.2] }, { cell = 0x01FA012B, at = [1.9, -24.4, 53.9] }, { cell = 0x01FA012E, at = [-7.3, 6.4, 57.2] }, { cell = 0x01FA013F, at = [22.5, 1.9, 67.3] }, { cell = 0x01FA0140, at = [12.6, 19.7, 67.3] }, { cell = 0x01FA0158, at = [-31.1, -2.0, 67.3] }, { cell = 0x01FA015C, at = [-4.6, -16.6, 67.3] }, { cell = 0x01FA0172, at = [-21.9, -16.0, 42.3] }]
+population = 9
+regen = 192.0
+spawns = [{ template = 0x4700238A, weight = 21 }, { template = 0x47002387, weight = 2 }]
+profile = 48
+profile_name = "GP_CampDrudgeProwler"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10168", confidence = "medium", sample = { creatures = 23, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-10169"
+cell = 0x01FA0120
+at = [-45.6, -16.8, 44.3]
+radius = 0.0
+spots = [{ cell = 0x01FA0120, at = [-45.6, -16.8, 44.3] }, { cell = 0x01FA0120, at = [-45.6, -16.8, 44.4] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700232B, weight = 2 }]
+profile = 44
+profile_name = "GP_CampDrudgeMystic"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10169", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-10170"
+cell = 0x01FA010F
+at = [-8.0, 8.7, 56.3]
+radius = 0.0
+spots = [{ cell = 0x01FA010F, at = [-7.8, -5.2, 22.7] }, { cell = 0x01FA010F, at = [-7.4, -6.2, 23.2] }, { cell = 0x01FA0111, at = [-1.6, 24.2, 23.2] }, { cell = 0x01FA0129, at = [-3.6, 44.7, 55.3] }, { cell = 0x01FA0129, at = [-3.6, 44.7, 56.3] }, { cell = 0x01FA012B, at = [-7.1, -28.2, 56.3] }, { cell = 0x01FA0134, at = [2.0, -0.8, 59.2] }, { cell = 0x01FA0157, at = [-30.2, 18.4, 69.3] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x4700232B, weight = 12 }]
+profile = 44
+profile_name = "GP_CampDrudgeMystic"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10170", confidence = "medium", sample = { creatures = 12, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-10171"
+cell = 0x01FA011F
+at = [35.2, 34.4, 44.3]
+radius = 0.0
+spots = [{ cell = 0x01FA011F, at = [35.2, 34.4, 44.3] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700232B, weight = 1 }]
+profile = 44
+profile_name = "GP_CampDrudgeMystic"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10171", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

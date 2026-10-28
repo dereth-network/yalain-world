@@ -1,0 +1,115 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "n-2fe8"
+kind = "npc"
+template = 0x47002FE8
+cell = 0xE08A0035
+at = [121.1892, 93.8463, 156.547]
+rotation = [0.258819, 0.0, 0.0, 0.965926]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:5660ca1f", confidence = "high", sample = { sessions = 11 } }
+
+[[object]]
+key = "n-306e"
+kind = "npc"
+template = 0x4700306E
+cell = 0xE08A0034
+at = [127.2054, 67.025, 163.9794]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:3a276348", confidence = "high", sample = { sessions = 11 } }
+
+[[object]]
+key = "n-2feb"
+kind = "npc"
+template = 0x47002FEB
+cell = 0xE08A002A
+at = [109.4656, 23.9519, 158.7809]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:00ae10f3", confidence = "high", sample = { sessions = 11 } }
+
+[[object]]
+key = "n-3074"
+kind = "npc"
+template = 0x47003074
+cell = 0xE08A001B
+at = [66.8712, 45.4232, 153.5176]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:bbfa006b", confidence = "high", sample = { sessions = 13 } }
+
+[[object]]
+key = "n-2fdf"
+kind = "npc"
+template = 0x47002FDF
+cell = 0xE08A000D
+at = [36.9089, 84.292, 155.282]
+rotation = [0.61242, 0.0, 0.0, -0.790532]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:b4af9e2a", confidence = "high", sample = { sessions = 13 } }
+
+[[object]]
+key = "n-3353"
+kind = "npc"
+template = 0x47003353
+cell = 0xE08A000C
+at = [33.2724, 76.3272, 138.505]
+rotation = [0.61242, 0.0, 0.0, -0.790532]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:27236361", confidence = "high", sample = { sessions = 13 } }
+
+[[object]]
+key = "n-322c"
+kind = "npc"
+template = 0x4700322C
+cell = 0xE08A0039
+at = [141.8118, 16.9898, 136.3238]
+rotation = [-0.389786, 0.0, 0.0, 0.920906]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:e4f5402e", confidence = "high", sample = { sessions = 8 } }
+
+[[object]]
+key = "s-7"
+kind = "static"
+id = 0x40E08A0000000007
+template = 0x47001154
+cell = 0xE08A003C
+at = [152.4025, 79.7039, 138.8284]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B45, string = 0xB7BDE4AF }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:b7ba2adf", confidence = "high", sample = { sessions = 10 } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x40E08A0000000003
+template = 0x47001011
+cell = 0xE08A003B
+at = [147.6233, 52.2045, 138.5]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:6dd91325", confidence = "high", sample = { sessions = 10 } }
+
+[[object]]
+key = "s-a"
+kind = "static"
+id = 0x40E08A000000000A
+template = 0x47000CD1
+cell = 0xE08A001E
+at = [76.3923, 115.503, 161.565]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:02bc6b67", confidence = "high", sample = { sessions = 13 } }
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x40E08A0000000004
+template = 0x4700100F
+cell = 0xE08A0040
+at = [148.265, 147.677, 138.5]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:491941fd", confidence = "high", sample = { sessions = 20 } }
+
+[[camp]]
+key = "c-20"
+cell = 0xE08A0026
+at = [97.9, 107.0, 138.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47000863, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 20", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

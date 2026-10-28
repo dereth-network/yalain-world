@@ -1,0 +1,55 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-2831"
+cell = 0x92800020
+at = [78.9, 154.7, 217.7]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002962, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2831", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7173"
+cell = 0x92800030
+at = [116.6, 151.1, 222.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700234B, weight = 1 }, { template = 0x47002349, weight = 1 }]
+profile = 39
+profile_name = "GP_CampDrudgeGloom"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7173", confidence = "medium", sample = { creatures = 2, sessions = 3 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-7407"
+cell = 0x92800028
+at = [94.8, 142.3, 224.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700233B, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7407", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8454"
+cell = 0x92800030
+at = [115.2, 156.2, 220.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470029CA, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8454", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8494"
+cell = 0x92800030
+at = [104.0, 153.2, 219.9]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470022F1, weight = 1 }, { template = 0x470022F0, weight = 1 }]
+profile = 32
+profile_name = "GP_CampCroneSorrow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8494", confidence = "medium", sample = { creatures = 2, sessions = 3 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

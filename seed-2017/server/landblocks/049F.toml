@@ -1,0 +1,86 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40049F0000000001
+template = 0x47001154
+cell = 0x049F0100
+at = [-1.4007, -131.8415, 5.7574]
+rotation = [0.866025, 0.0, 0.0, -0.5]
+name = { table = 0x25001B44, string = 0xA7D0B208 }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:7e1a8812", confidence = "high", sample = { sessions = 9 } }
+
+[[object]]
+key = "s-c"
+kind = "static"
+id = 0x40049F000000000C
+template = 0x47000F5E
+cell = 0x049F0107
+at = [102.8565, -87.9921, 11.7397]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:264a6033", confidence = "high", sample = { sessions = 3 } }
+
+[[object]]
+key = "s-8"
+kind = "static"
+id = 0x40049F0000000008
+template = 0x4700129F
+cell = 0x049F010B
+at = [80.0793, -142.61, 11.6387]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:2d62d96d", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-e"
+kind = "static"
+id = 0x40049F000000000E
+template = 0x47001180
+cell = 0x049F010E
+at = [37.86, -32.74, 5.86]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:7501c23e", confidence = "high", sample = { sessions = 9 } }
+
+[[camp]]
+key = "c-12438"
+cell = 0x049F0106
+at = [131.3, -109.9, 6.6]
+radius = 0.0
+spots = [{ cell = 0x049F0106, at = [112.5, -111.5, 11.6] }, { cell = 0x049F0107, at = [101.0, -94.1, 11.5] }, { cell = 0x049F0107, at = [105.4, -92.8, 11.4] }, { cell = 0x049F0108, at = [137.5, -111.9, 6.6] }, { cell = 0x049F0109, at = [155.1, -113.0, 3.8] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002AF6, weight = 12 }, { template = 0x47002B05, weight = 5 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12438", confidence = "high", sample = { creatures = 17, sessions = 9 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12439"
+cell = 0x049F010A
+at = [97.8, -143.5, 12.2]
+radius = 0.0
+spots = [{ cell = 0x049F010A, at = [96.6, -146.2, 12.7] }, { cell = 0x049F010A, at = [98.9, -140.7, 11.8] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002AF6, weight = 10 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12439", confidence = "high", sample = { creatures = 10, sessions = 9 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12763"
+cell = 0x049F0104
+at = [72.8, -107.5, 11.0]
+radius = 0.0
+spots = [{ cell = 0x049F0104, at = [57.5, -111.0, 10.9] }, { cell = 0x049F0104, at = [60.9, -112.2, 10.9] }, { cell = 0x049F0104, at = [66.0, -111.8, 11.0] }, { cell = 0x049F0104, at = [77.8, -110.2, 11.0] }, { cell = 0x049F0107, at = [101.6, -92.1, 11.1] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700084B, weight = 3 }, { template = 0x4700084A, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12763", confidence = "high", sample = { creatures = 5, sessions = 5 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12764"
+cell = 0x049F0104
+at = [66.7, -110.9, 10.9]
+radius = 0.0
+spots = [{ cell = 0x049F0104, at = [59.1, -111.0, 10.9] }, { cell = 0x049F0104, at = [66.1, -110.4, 11.0] }, { cell = 0x049F0104, at = [67.3, -111.2, 10.9] }, { cell = 0x049F0104, at = [68.3, -111.1, 10.9] }, { cell = 0x049F0105, at = [69.2, -111.4, 10.8] }, { cell = 0x049F0105, at = [70.2, -110.4, 10.9] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700084E, weight = 3 }, { template = 0x47000854, weight = 1 }, { template = 0x47000852, weight = 1 }, { template = 0x47000850, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12764", confidence = "high", sample = { creatures = 6, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

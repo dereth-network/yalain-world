@@ -1,0 +1,67 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-2780"
+cell = 0x9CB90020
+at = [78.6, 146.4, 158.2]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002963, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2780", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-2781"
+cell = 0x9CB90038
+at = [135.7, 153.9, 152.2]
+radius = 7.2
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002963, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2781", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-2782"
+cell = 0x9CB90024
+at = [96.3, 65.8, 203.7]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002963, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2782", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-5719"
+cell = 0x9CB90028
+at = [80.1, 145.4, 156.3]
+radius = 3.9
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C11, weight = 3 }]
+profile = 367
+profile_name = "GP_CampThornlingRogue"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5719", confidence = "medium", sample = { creatures = 3, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-5753"
+cell = 0x9CB90024
+at = [98.4, 67.6, 204.1]
+radius = 2.3
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C11, weight = 3 }]
+profile = 367
+profile_name = "GP_CampThornlingRogue"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5753", confidence = "medium", sample = { creatures = 3, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-5999"
+cell = 0x9CB90038
+at = [131.4, 152.5, 150.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C11, weight = 1 }]
+profile = 367
+profile_name = "GP_CampThornlingRogue"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5999", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

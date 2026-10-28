@@ -1,0 +1,65 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x4074740000000002
+template = 0x47001BE6
+cell = 0x74740020
+at = [76.1245, 147.66, 96.4506]
+rotation = [0.707107, 0.0, 0.0, 0.707107]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:6a308828", confidence = "low", sample = { sessions = 1 } }
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x4074740000000001
+template = 0x4700113D
+cell = 0x74740017
+at = [54.0, 130.0, 91.0204]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:f85c92ee", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-4023"
+cell = 0x74740024
+at = [85.5, 60.2, 92.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470023CD, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4023", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-4106"
+cell = 0x7474002A
+at = [100.1, 24.9, 93.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470023CF, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4106", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-4294"
+cell = 0x74740034
+at = [134.4, 68.7, 93.2]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002441, weight = 1 }]
+profile = 62
+profile_name = "GP_CampFlayerWind"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4294", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-4295"
+cell = 0x74740022
+at = [96.9, 20.9, 94.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002441, weight = 1 }]
+profile = 62
+profile_name = "GP_CampFlayerWind"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4295", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

@@ -1,0 +1,53 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40C7550000000001
+template = 0x4700116C
+cell = 0xC7550034
+at = [135.0, 66.0, 179.037]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0x6FA89ED5 }
+to = "p-c954001e"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:937523e4", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-8763"
+cell = 0xC7550003
+at = [18.5, 44.0, 153.7]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002B43, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8763", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8764"
+cell = 0xC7550016
+at = [59.0, 105.1, 151.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002B3B, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8764", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8765"
+cell = 0xC755002F
+at = [104.0, 120.8, 159.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002B2F, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8765", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-11053"
+cell = 0xC755002F
+at = [106.5, 138.9, 159.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700286F, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11053", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

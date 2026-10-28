@@ -1,0 +1,12 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000009A
+id_name = "QuestKillInfectiousDevolvedMucor"
+state = 0x6F00092A
+challenge = 30
+duration = 3600
+retry = 72000
+xp = 180000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:a83a3c62", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00092A }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00092A }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F00092A } } }

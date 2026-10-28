@@ -1,0 +1,10 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x400002B7
+id_name = "QuestDestroyHahnainGem"
+state = 0x6F0007AC
+challenge = 45
+duration = 86400
+cancellable = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:cff88703", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0007AC } } }

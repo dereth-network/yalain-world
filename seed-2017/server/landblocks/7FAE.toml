@@ -1,0 +1,55 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-2760"
+cell = 0x7FAE001E
+at = [60.2, 118.2, 102.4]
+radius = 18.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700296C, weight = 4 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2760", confidence = "medium", sample = { creatures = 4, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-2761"
+cell = 0x7FAE003B
+at = [147.8, 47.1, 106.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002963, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2761", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-4926"
+cell = 0x7FAE0017
+at = [43.1, 120.5, 102.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D2D, weight = 1 }]
+profile = 378
+profile_name = "GP_CampVerminTanglefoot"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4926", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-5052"
+cell = 0x7FAE003A
+at = [141.4, 39.9, 105.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D33, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5052", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-5400"
+cell = 0x7FAE001E
+at = [78.5, 113.2, 99.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470029EE, weight = 1 }]
+profile = 340
+profile_name = "GP_CampReedsharkRunt"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5400", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

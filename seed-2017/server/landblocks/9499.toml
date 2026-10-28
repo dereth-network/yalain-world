@@ -1,0 +1,45 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-6076"
+cell = 0x94990036
+at = [129.5, 107.3, 176.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002373, weight = 2 }]
+profile = 48
+profile_name = "GP_CampDrudgeProwler"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6076", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-7144"
+cell = 0x94990036
+at = [130.4, 112.5, 173.5]
+radius = 4.2
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002353, weight = 4 }, { template = 0x47002362, weight = 1 }, { template = 0x47002346, weight = 1 }]
+profile = 50
+profile_name = "GP_CampDrudgeScowl"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7144", confidence = "high", sample = { creatures = 6, sessions = 5 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-7163"
+cell = 0x94990008
+at = [18.4, 140.8, 209.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002353, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7163", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7391"
+cell = 0x94990036
+at = [131.7, 112.4, 174.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700232C, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7391", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

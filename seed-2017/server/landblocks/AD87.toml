@@ -1,0 +1,45 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-9812"
+cell = 0xAD870001
+at = [18.7, 13.8, 85.2]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470023E6, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9812", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-10187"
+cell = 0xAD870024
+at = [90.6, 77.3, 85.2]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700230F, weight = 1 }]
+profile = 36
+profile_name = "GP_CampDarkenfowlRunt"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10187", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-10188"
+cell = 0xAD870004
+at = [6.4, 71.0, 82.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700230F, weight = 1 }]
+profile = 36
+profile_name = "GP_CampDarkenfowlRunt"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10188", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-10189"
+cell = 0xAD87000F
+at = [32.0, 126.7, 75.5]
+radius = 16.2
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002310, weight = 2 }, { template = 0x4700230B, weight = 1 }, { template = 0x4700230E, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10189", confidence = "low", sample = { creatures = 4, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

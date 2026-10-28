@@ -1,0 +1,77 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "n-33ce"
+kind = "npc"
+template = 0x470033CE
+cell = 0xB8780017
+at = [41.7406, 122.9852, 110.5036]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:b7ae9d8e", confidence = "high", sample = { sessions = 25 } }
+
+[[object]]
+key = "n-33d2"
+kind = "npc"
+template = 0x470033D2
+cell = 0xB8780027
+at = [87.4002, 133.8933, 110.5042]
+rotation = [0.707107, 0.0, 0.0, 0.707107]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:c397eb89", confidence = "high", sample = { sessions = 20 } }
+
+[[object]]
+key = "n-33d4"
+kind = "npc"
+template = 0x470033D4
+cell = 0xB8780016
+at = [56.0874, 105.6825, 110.9367]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:29747273", confidence = "high", sample = { sessions = 21 } }
+
+[[object]]
+key = "n-33d0"
+kind = "npc"
+template = 0x470033D0
+cell = 0xB8780037
+at = [122.6802, 120.7277, 110.773]
+rotation = [0.866025, 0.0, 0.0, 0.5]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:f99d1474", confidence = "high", sample = { sessions = 18 } }
+
+[[object]]
+key = "n-338d"
+kind = "npc"
+template = 0x4700338D
+cell = 0xB8780010
+at = [34.1592, 149.4654, 110.505]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:5f1dcef5", confidence = "high", sample = { sessions = 25 } }
+
+[[object]]
+key = "n-32c0"
+kind = "npc"
+template = 0x470032C0
+cell = 0xB8780022
+at = [95.731, 29.221, 133.5606]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:e48b987c", confidence = "high", sample = { sessions = 6 } }
+
+[[camp]]
+key = "c-9183"
+cell = 0xB8780029
+at = [102.8, 12.5, 111.2]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A1A, weight = 1 }]
+profile = 344
+profile_name = "GP_CampSclavusAste"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9183", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-9590"
+cell = 0xB8780023
+at = [96.1, 40.3, 116.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002BBC, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9590", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

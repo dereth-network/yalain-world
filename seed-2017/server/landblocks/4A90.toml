@@ -1,0 +1,50 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "n-2ff3"
+kind = "npc"
+template = 0x47002FF3
+cell = 0x4A900036
+at = [138.8063, 112.82, 88.3445]
+rotation = [-0.5, 0.0, 0.0, 0.866025]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:32ac67b9", confidence = "high", sample = { sessions = 6 } }
+
+[[camp]]
+key = "c-5345"
+cell = 0x4A900006
+at = [19.7, 118.8, 121.1]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470029F0, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5345", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-5816"
+cell = 0x4A900007
+at = [13.2, 121.1, 121.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C0B, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5816", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-6554"
+cell = 0x4A900007
+at = [12.4, 126.6, 121.3]
+radius = 8.1
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700272C, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6554", confidence = "medium", sample = { creatures = 3, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8017"
+cell = 0x4A900007
+at = [14.4, 123.0, 120.9]
+radius = 8.2
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470022D8, weight = 2 }, { template = 0x470022D5, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8017", confidence = "medium", sample = { creatures = 4, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

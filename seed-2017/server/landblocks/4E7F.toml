@@ -1,0 +1,64 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x404E7F0000000004
+template = 0x4700114D
+cell = 0x4E7F002E
+at = [119.2943, 102.7739, 115.7196]
+rotation = [0.991445, 0.0, 0.0, -0.130526]
+name = { table = 0x25001B43, string = 0xFFB8ECEC }
+to = "p-4678002f"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:db45ad39", confidence = "high", sample = { sessions = 5 } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x404E7F0000000003
+template = 0x47001BD3
+cell = 0x4E7F001E
+at = [73.0, 115.0, 119.1632]
+rotation = [0.707107, 0.0, 0.0, 0.707107]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:02f69f51", confidence = "high", sample = { sessions = 5 } }
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x404E7F0000000001
+template = 0x4700113D
+cell = 0x4E7F0015
+at = [55.0157, 94.451, 113.5059]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:f381031f", confidence = "high", sample = { sessions = 5 } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x404E7F0000000002
+template = 0x4700114D
+cell = 0x4E7F0030
+at = [104.8222, 143.3873, 115.4799]
+rotation = [0.0, 0.0, 0.0, 1.0]
+name = { table = 0x25001B43, string = 0x168CE933 }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:783c7809", confidence = "high", sample = { sessions = 5 } }
+
+[[camp]]
+key = "c-4238"
+cell = 0x4E7F0032
+at = [121.5, 32.0, 126.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700243F, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4238", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-6767"
+cell = 0x4E7F0032
+at = [124.3, 38.1, 123.2]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C87, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6767", confidence = "medium", sample = { creatures = 2, sessions = 3 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

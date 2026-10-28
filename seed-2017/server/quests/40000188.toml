@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000188
+id_name = "QuestMineUlkasOmishan"
+state = 0x6F000BBE
+challenge = -999
+duration = 172800
+retry = 0
+cancellable = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:8a80606b", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000BBE }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000BBE } } }

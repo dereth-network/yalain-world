@@ -1,0 +1,33 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-4411"
+cell = 0x6CBB001A
+at = [63.1, 28.9, 142.5]
+radius = 4.5
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470029A5, weight = 4 }, { template = 0x470029A7, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4411", confidence = "low", sample = { creatures = 5, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-4574"
+cell = 0x6CBB001A
+at = [68.0, 23.7, 142.5]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002224, weight = 1 }, { template = 0x47002225, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4574", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-5019"
+cell = 0x6CBB001A
+at = [70.6, 22.2, 142.5]
+radius = 10.5
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D34, weight = 3 }]
+profile = 377
+profile_name = "GP_CampVerminPilferer"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5019", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

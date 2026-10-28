@@ -1,0 +1,12 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000095
+id_name = "QuestKillFeyenMimbuSnakehunter"
+state = 0x6F00091F
+challenge = 15
+duration = 3600
+retry = 72000
+xp = 2200
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:82be48a2", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00091F }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00091F }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F00091F } } }

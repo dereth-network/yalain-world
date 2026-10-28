@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000018F
+id_name = "QuestOrlenUlkas"
+state = 0x6F000BC0
+challenge = -999
+duration = 172800
+retry = 0
+cancellable = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:ae7bbb33", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000BC0 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000BC0 } } }

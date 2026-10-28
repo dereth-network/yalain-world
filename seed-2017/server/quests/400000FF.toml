@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000FF
+id_name = "QuestMucorMushrooms"
+state = 0x6F000BE1
+challenge = 30
+duration = 43200
+retry = 259200
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:98929d1e", confidence = "high", sample = { sessions = 4 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000BE1 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000BE1 } } }

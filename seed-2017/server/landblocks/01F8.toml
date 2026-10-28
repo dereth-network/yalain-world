@@ -1,0 +1,48 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x4001F80000000001
+template = 0x47001154
+cell = 0x01F8012B
+at = [33.7124, -24.851, 23.306]
+rotation = [0.92388, 0.0, 0.0, 0.382683]
+name = { table = 0x25001B44, string = 0x1BECBA6F }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:6eb76158", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x4001F80000000004
+template = 0x47001154
+cell = 0x01F80118
+at = [-14.6067, 0.0755, 29.4492]
+rotation = [0.707107, 0.0, 0.0, 0.707107]
+name = { table = 0x25001B40, string = 0x5D907238 }
+to = "p-01f90100"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:bd96c17a", confidence = "medium", sample = { sessions = 2 } }
+
+[[camp]]
+key = "c-10172"
+cell = 0x01F8010A
+at = [5.8, -0.3, 23.3]
+radius = 0.0
+spots = [{ cell = 0x01F8010A, at = [2.7, -2.3, 23.3] }, { cell = 0x01F8010A, at = [3.6, 2.5, 23.3] }, { cell = 0x01F8010A, at = [4.2, -2.3, 23.3] }, { cell = 0x01F8010A, at = [4.5, 0.8, 23.3] }, { cell = 0x01F8011E, at = [8.1, -0.7, 23.3] }, { cell = 0x01F8011E, at = [15.0, 2.1, 23.3] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002372, weight = 7 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10172", confidence = "medium", sample = { creatures = 7, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-10173"
+cell = 0x01F8010A
+at = [0.6, 0.8, 23.3]
+radius = 0.0
+spots = [{ cell = 0x01F8010A, at = [0.2, 0.9, 23.3] }, { cell = 0x01F8010A, at = [1.1, 0.6, 23.3] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002351, weight = 2 }]
+profile = 39
+profile_name = "GP_CampDrudgeGloom"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10173", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

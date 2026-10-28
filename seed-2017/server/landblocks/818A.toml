@@ -1,0 +1,35 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-4838"
+cell = 0x818A0029
+at = [108.2, 15.5, 121.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470025CA, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4838", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-4839"
+cell = 0x818A003C
+at = [145.3, 67.7, 129.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470025D0, weight = 1 }]
+profile = 81
+profile_name = "GP_CampGruttMorbific"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4839", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-7061"
+cell = 0x818A0011
+at = [49.4, 14.9, 123.9]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A60, weight = 1 }]
+profile = 354
+profile_name = "GP_CampScravenRukh"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7061", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

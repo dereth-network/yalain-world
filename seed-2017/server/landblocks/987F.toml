@@ -1,0 +1,43 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40987F0000000001
+template = 0x47000F30
+cell = 0x987F0026
+at = [83.1142, 119.8801, 195.5]
+rotation = [0.0, 0.0, 0.0, 1.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:30de9489", confidence = "high", sample = { sessions = 5 } }
+
+[[camp]]
+key = "c-3889"
+cell = 0x987F0025
+at = [80.9, 94.2, 195.9]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002996, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3889", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7204"
+cell = 0x987F0026
+at = [81.6, 103.2, 195.5]
+radius = 17.4
+population = 9
+regen = 192.0
+spawns = [{ template = 0x47002346, weight = 8 }, { template = 0x47002344, weight = 8 }, { template = 0x47000811, weight = 8 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7204", confidence = "high", sample = { creatures = 24, sessions = 7 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7432"
+cell = 0x987F0025
+at = [80.0, 97.5, 196.5]
+radius = 8.7
+population = 6
+regen = 192.0
+spawns = [{ template = 0x47002326, weight = 7 }]
+profile = 44
+profile_name = "GP_CampDrudgeMystic"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7432", confidence = "medium", sample = { creatures = 7, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

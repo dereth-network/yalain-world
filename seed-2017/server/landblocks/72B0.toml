@@ -1,0 +1,23 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-4806"
+cell = 0x72B0002C
+at = [117.3, 71.3, 121.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002225, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4806", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-5193"
+cell = 0x72B0002E
+at = [110.6, 114.4, 118.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D34, weight = 1 }]
+profile = 377
+profile_name = "GP_CampVerminPilferer"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5193", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

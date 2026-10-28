@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000C7
+id_name = "QuestDrudgeWindmill"
+state = 0x6F0007EB
+challenge = 6
+duration = 86400
+xp = 200
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:a6495126", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0007EB }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F0007EB } } }

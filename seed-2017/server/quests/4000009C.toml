@@ -1,0 +1,12 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000009C
+id_name = "QuestKillOporNefaneCorruptor"
+state = 0x6F000930
+challenge = 34
+duration = 3600
+retry = 72000
+xp = 600000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:ee4e5fd8", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000930 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000930 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000930 } } }

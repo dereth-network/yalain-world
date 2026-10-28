@@ -1,0 +1,53 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-3716"
+cell = 0x9582003C
+at = [143.4, 68.3, 210.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700224E, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3716", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-3717"
+cell = 0x9582002C
+at = [114.5, 79.1, 218.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700224E, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3717", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7469"
+cell = 0x9582002B
+at = [102.5, 45.0, 221.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700233B, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7469", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8453"
+cell = 0x9582002D
+at = [113.9, 97.2, 217.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470029CA, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8453", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8568"
+cell = 0x95820035
+at = [123.0, 81.5, 212.6]
+radius = 21.7
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470022F1, weight = 4 }, { template = 0x470022F0, weight = 1 }]
+profile = 32
+profile_name = "GP_CampCroneSorrow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8568", confidence = "medium", sample = { creatures = 5, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

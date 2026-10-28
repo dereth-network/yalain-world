@@ -1,0 +1,45 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-8073"
+cell = 0xAD92002E
+at = [107.9, 101.0, 71.5]
+radius = 5.0
+population = 2
+regen = 240.0
+spawns = [{ template = 0x470022DF, weight = 1 }, { template = 0x470022E1, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8073", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-generator" } } }
+
+[[camp]]
+key = "c-9315"
+cell = 0xAD920010
+at = [32.0, 141.1, 73.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002BBD, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9315", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-10262"
+cell = 0xAD920023
+at = [87.5, 58.7, 72.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700230E, weight = 1 }]
+profile = 35
+profile_name = "GP_CampDarkenfowlHen"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10262", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-10438"
+cell = 0xAD920018
+at = [46.8, 141.2, 73.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470027A6, weight = 1 }]
+profile = 314
+profile_name = "GP_CampMimbuFeyen"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10438", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000112
+id_name = "QuestKillMaliktheSadist"
+state = 0x6F0009B0
+challenge = 42
+duration = 7200
+retry = 72000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:46361b61", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0009B0 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F0009B0 } } }

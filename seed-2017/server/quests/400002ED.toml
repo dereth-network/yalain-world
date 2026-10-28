@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x400002ED
+id_name = "QuestGemstoneCollectorGarnet"
+state = 0x6F00087D
+challenge = -999
+duration = 604800
+retry = 0
+cancellable = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:9a3a0727", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00087D }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00087D } } }

@@ -1,0 +1,25 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-5054"
+cell = 0x82AF0020
+at = [73.5, 148.8, 118.7]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002D2D, weight = 2 }]
+profile = 378
+profile_name = "GP_CampVerminTanglefoot"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5054", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-5055"
+cell = 0x82AF003A
+at = [154.6, 38.7, 148.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D2D, weight = 1 }]
+profile = 378
+profile_name = "GP_CampVerminTanglefoot"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5055", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

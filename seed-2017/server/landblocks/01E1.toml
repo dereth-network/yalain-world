@@ -1,0 +1,64 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-6"
+kind = "static"
+id = 0x4001E10000000006
+template = 0x47001C48
+cell = 0x01E10101
+at = [-15.8788, 42.3181, -4.4264]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:3f81363f", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x4001E10000000004
+template = 0x47001C48
+cell = 0x01E10103
+at = [64.1212, -13.6819, -5.4264]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:a97d51b7", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-5"
+kind = "static"
+id = 0x4001E10000000005
+template = 0x47001C48
+cell = 0x01E10102
+at = [-15.8788, -13.6819, -5.4264]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:88a48567", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x4001E10000000003
+template = 0x47001154
+cell = 0x01E10105
+at = [63.0971, -25.8537, 44.8805]
+rotation = [0.0, 0.0, 0.0, 1.0]
+name = { table = 0x25001B40, string = 0x60284D57 }
+to = "p-01e00100"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:0bfbfa73", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-7"
+kind = "static"
+id = 0x4001E10000000007
+template = 0x47001C48
+cell = 0x01E10100
+at = [64.1212, 42.3181, -4.4264]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:eb9193e4", confidence = "medium", sample = { sessions = 2 } }
+
+[[camp]]
+key = "c-12715"
+cell = 0x01E10105
+at = [63.4, -9.9, 38.9]
+radius = 0.0
+spots = [{ cell = 0x01E10105, at = [63.4, -9.9, 38.9] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470022D4, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12715", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

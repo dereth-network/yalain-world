@@ -1,0 +1,45 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-378"
+cell = 0x96A30027
+at = [93.1, 130.7, 197.9]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021C0, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 378", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-4872"
+cell = 0x96A30018
+at = [50.8, 153.5, 198.2]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470025D1, weight = 1 }]
+profile = 77
+profile_name = "GP_CampGruttFilthminder"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4872", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-4873"
+cell = 0x96A30007
+at = [12.5, 134.6, 197.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470025D3, weight = 1 }]
+profile = 83
+profile_name = "GP_CampGruttSepsis"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4873", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6182"
+cell = 0x96A30030
+at = [112.0, 144.8, 198.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470023AC, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6182", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

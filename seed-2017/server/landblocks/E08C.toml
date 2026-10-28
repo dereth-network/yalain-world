@@ -1,0 +1,33 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40E08C0000000001
+template = 0x4700114D
+cell = 0xE08C0036
+at = [137.5302, 101.6627, 73.827]
+rotation = [0.5, 0.0, 0.0, 0.866025]
+name = { table = 0x25001B43, string = 0x530D546B }
+to = "p-eb8f0029"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:807d30dd", confidence = "high", sample = { sessions = 8 } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x40E08C0000000002
+template = 0x47001BEA
+cell = 0xE08C000C
+at = [29.0, 62.0, 73.0]
+rotation = [-0.382684, 0.0, 0.0, 0.92388]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:4a8c84c5", confidence = "high", sample = { sessions = 11 } }
+
+[[camp]]
+key = "c-9659"
+cell = 0xE08C003C
+at = [140.4, 60.8, 80.7]
+radius = 3.8
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470022BC, weight = 17 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9659", confidence = "high", sample = { creatures = 17, sessions = 12 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

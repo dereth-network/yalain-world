@@ -1,0 +1,63 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x40A1940000000002
+template = 0x47001BBE
+cell = 0xA194002B
+at = [114.1594, 44.5647, 101.3979]
+rotation = [0.965926, 0.0, 0.0, -0.258819]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:716c1a2f", confidence = "high", sample = { sessions = 6 } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x40A1940000000003
+template = 0x47001BB4
+cell = 0xA194002B
+at = [114.1594, 44.5647, 101.0282]
+rotation = [0.0, 0.0, 0.0, 1.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:9608aaff", confidence = "high", sample = { sessions = 6 } }
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x40A1940000000004
+template = 0x47001BC0
+cell = 0xA194002B
+at = [114.1594, 44.5647, 101.3603]
+rotation = [0.92388, 0.0, 0.0, 0.382684]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:12a8b5fe", confidence = "high", sample = { sessions = 6 } }
+
+[[camp]]
+key = "c-6230"
+cell = 0xA1940007
+at = [5.3, 122.5, 105.7]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002373, weight = 1 }]
+profile = 48
+profile_name = "GP_CampDrudgeProwler"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6230", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6231"
+cell = 0xA1940008
+at = [1.7, 154.8, 109.0]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002378, weight = 1 }, { template = 0x47002376, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6231", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-6692"
+cell = 0xA1940018
+at = [56.6, 143.0, 74.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002729, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6692", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

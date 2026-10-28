@@ -1,0 +1,51 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-f"
+kind = "static"
+id = 0x40ED97000000000F
+template = 0x47000F2F
+cell = 0xED970015
+at = [53.7111, 84.728, 72.7023]
+rotation = [0.0, 0.0, 0.0, 1.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:a0361578", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-3887"
+cell = 0xED970014
+at = [59.6, 71.8, 73.7]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002992, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3887", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-9716"
+cell = 0xED970014
+at = [58.9, 69.9, 74.3]
+radius = 8.3
+population = 4
+regen = 192.0
+spawns = [{ template = 0x470022B1, weight = 4 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9716", confidence = "low", sample = { creatures = 4, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-10674"
+cell = 0xED97001C
+at = [66.6, 68.8, 73.9]
+radius = 8.5
+population = 9
+regen = 192.0
+spawns = [{ template = 0x4700226A, weight = 6 }, { template = 0x47002267, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10674", confidence = "low", sample = { creatures = 9, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12415"
+cell = 0xED970014
+at = [58.6, 76.5, 73.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002290, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12415", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

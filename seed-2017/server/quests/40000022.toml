@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000022
+id_name = "QuestBrothOfTanacha"
+state = 0x6F000754
+challenge = 10
+duration = 21600
+xp = 850
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:2ff42b86", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000754 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000754 } } }

@@ -1,0 +1,47 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-4526"
+cell = 0x8D7F0004
+at = [0.1, 63.9, 112.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700222A, weight = 1 }]
+profile = 29
+profile_name = "GP_CampBeetleScythe"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4526", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-5788"
+cell = 0x8D7F0014
+at = [47.6, 77.5, 116.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C0D, weight = 1 }]
+profile = 366
+profile_name = "GP_CampThornlingRankle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5788", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-5789"
+cell = 0x8D7F0025
+at = [94.8, 90.4, 129.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C14, weight = 1 }]
+profile = 368
+profile_name = "GP_CampThornlingWorrier"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5789", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6536"
+cell = 0x8D7F0003
+at = [0.3, 56.5, 113.9]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700272E, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6536", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

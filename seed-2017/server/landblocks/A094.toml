@@ -1,0 +1,53 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40A0940000000001
+template = 0x47001BBE
+cell = 0xA0940037
+at = [120.2028, 120.5109, 114.5076]
+rotation = [0.866025, 0.0, 0.0, -0.5]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:3bce631a", confidence = "low", sample = { sessions = 1 } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x40A0940000000002
+template = 0x47001BB4
+cell = 0xA0940037
+at = [120.2028, 120.5109, 114.1379]
+rotation = [0.0, 0.0, 0.0, 1.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:0363180e", confidence = "low", sample = { sessions = 1 } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x40A0940000000003
+template = 0x47001BC0
+cell = 0xA0940037
+at = [120.2028, 120.5109, 114.4701]
+rotation = [0.5, 0.0, 0.0, 0.866025]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:4f5cfe63", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-6232"
+cell = 0xA0940026
+at = [81.7, 114.8, 118.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002376, weight = 1 }]
+profile = 49
+profile_name = "GP_CampDrudgeRobber"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6232", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6694"
+cell = 0xA0940018
+at = [56.0, 140.7, 128.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002729, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6694", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

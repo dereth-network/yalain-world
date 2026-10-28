@@ -1,0 +1,10 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000085
+id_name = "QuestFindExplorerArwic"
+state = 0x6F000D3B
+challenge = -999
+duration = 10800
+cancellable = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:c03db289", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000D3B } } }

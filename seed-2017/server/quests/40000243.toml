@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000243
+id_name = "QuestKillWispSwampGas"
+state = 0x6F00098A
+challenge = 49
+duration = 10800
+retry = 72000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:39bdeff0", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00098A }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00098A } } }

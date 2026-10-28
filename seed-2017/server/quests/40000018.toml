@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000018
+id_name = "QuestObeliskSearchEsper"
+state = 0x6F000BE9
+challenge = 4
+duration = 86400
+xp = 80
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:57668de1", confidence = "high", sample = { sessions = 7 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000BE9 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000BE9 } } }

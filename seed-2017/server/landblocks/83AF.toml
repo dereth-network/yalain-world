@@ -1,0 +1,35 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-3069"
+cell = 0x83AF0011
+at = [48.8, 3.0, 105.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002963, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3069", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-5056"
+cell = 0x83AF001B
+at = [67.8, 46.5, 97.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D2D, weight = 1 }]
+profile = 378
+profile_name = "GP_CampVerminTanglefoot"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5056", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-5057"
+cell = 0x83AF0029
+at = [104.4, 6.5, 105.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D2D, weight = 1 }]
+profile = 378
+profile_name = "GP_CampVerminTanglefoot"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5057", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

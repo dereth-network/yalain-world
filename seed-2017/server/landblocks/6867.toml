@@ -1,0 +1,45 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-978"
+cell = 0x68670034
+at = [126.7, 76.9, 93.7]
+radius = 4.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021F8, weight = 3 }]
+profile = 22
+profile_name = "GP_CampBanderlingThrasher"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 978", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-979"
+cell = 0x6867001B
+at = [71.9, 50.1, 92.8]
+radius = 28.6
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470021F3, weight = 3 }, { template = 0x470021F8, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 979", confidence = "medium", sample = { creatures = 6, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-980"
+cell = 0x68670001
+at = [16.2, 15.4, 93.4]
+radius = 7.6
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021EF, weight = 3 }]
+profile = 15
+profile_name = "GP_CampBanderlingBouncer"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 980", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-2904"
+cell = 0x6867002B
+at = [100.5, 53.6, 92.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D90, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2904", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

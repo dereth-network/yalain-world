@@ -1,0 +1,10 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000D1
+id_name = "QuestFindWarderCorporal"
+state = 0x6F000785
+challenge = -999
+duration = 172800
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:05e77ff2", confidence = "high", sample = { sessions = 5 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000785 } } }

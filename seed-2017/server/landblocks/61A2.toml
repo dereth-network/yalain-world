@@ -1,0 +1,33 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-5002"
+cell = 0x61A20020
+at = [60.1, 145.8, 139.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D38, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5002", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-5003"
+cell = 0x61A20033
+at = [125.3, 40.2, 121.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D38, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5003", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-5394"
+cell = 0x61A20020
+at = [66.5, 155.0, 139.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470029EE, weight = 1 }]
+profile = 340
+profile_name = "GP_CampReedsharkRunt"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5394", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

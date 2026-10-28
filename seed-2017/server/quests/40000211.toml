@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000211
+id_name = "QuestKillOlthoiGardener"
+state = 0x6F00096F
+challenge = 49
+duration = 10800
+retry = 72000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:d76738e1", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00096F }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00096F } } }

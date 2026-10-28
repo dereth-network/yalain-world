@@ -1,0 +1,151 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1b"
+kind = "static"
+id = 0x4001DC000000001B
+template = 0x47000FCE
+cell = 0x01DC017B
+at = [20.0, 70.6, -21.0]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:586ca3b7", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x4001DC0000000003
+template = 0x47000FC4
+cell = 0x01DC0117
+at = [0.0, -127.702, -9.0]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:ded62c62", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x4001DC0000000004
+template = 0x47000FC4
+cell = 0x01DC0118
+at = [-0.0783, 27.6897, -8.96]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:e9f0060c", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x4001DC0000000001
+template = 0x47001154
+cell = 0x01DC0101
+at = [0.0, 19.0, 1.8]
+rotation = [0.608761, 0.0, 0.0, 0.793353]
+name = { table = 0x25001B44, string = 0x54F67F72 }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:3d95d220", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-1c"
+kind = "static"
+id = 0x4001DC000000001C
+template = 0x47000FB1
+cell = 0x01DC01E2
+at = [0.0, -180.0, -9.0]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:fdbe02ff", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x4001DC0000000002
+template = 0x47001154
+cell = 0x01DC0249
+at = [0.0, -190.0, -18.2]
+rotation = [0.92388, 0.0, 0.0, -0.382683]
+name = { table = 0x25001B40, string = 0x53C33969 }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:950a6e81", confidence = "medium", sample = { sessions = 2 } }
+
+[[camp]]
+key = "c-12729"
+cell = 0x01DC0115
+at = [-8.9, -69.0, -13.8]
+radius = 0.0
+spots = [{ cell = 0x01DC0115, at = [-20.3, -78.2, -8.7] }, { cell = 0x01DC01A5, at = [2.5, -59.7, -18.9] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470027E1, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12729", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12730"
+cell = 0x01DC0137
+at = [-60.0, -31.8, -8.9]
+radius = 0.0
+spots = [{ cell = 0x01DC0137, at = [-54.1, -40.0, -8.9] }, { cell = 0x01DC013C, at = [-65.8, -23.5, -8.9] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470027E1, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12730", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12731"
+cell = 0x01DC011E
+at = [56.8, -30.7, -8.9]
+radius = 0.0
+spots = [{ cell = 0x01DC011E, at = [52.8, -39.5, -8.9] }, { cell = 0x01DC0122, at = [60.7, -22.0, -8.9] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470027E1, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12731", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12732"
+cell = 0x01DC0110
+at = [0.7, -0.4, -8.9]
+radius = 0.0
+spots = [{ cell = 0x01DC0110, at = [0.7, -0.4, -8.9] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470027E1, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12732", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12733"
+cell = 0x01DC0117
+at = [8.7, -132.4, -8.9]
+radius = 0.0
+spots = [{ cell = 0x01DC0117, at = [0.0, -112.9, -8.9] }, { cell = 0x01DC01FE, at = [26.2, -143.8, -8.9] }, { cell = 0x01DC0247, at = [-0.3, -140.6, -18.9] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470027E1, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12733", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12734"
+cell = 0x01DC0163
+at = [-8.2, 73.0, -14.9]
+radius = 0.0
+spots = [{ cell = 0x01DC0163, at = [-19.0, 62.5, -8.9] }, { cell = 0x01DC0163, at = [-16.1, 73.3, -8.9] }, { cell = 0x01DC0165, at = [-0.9, 78.2, -8.9] }, { cell = 0x01DC01AA, at = [19.1, 81.3, -20.9] }, { cell = 0x01DC01B4, at = [-14.1, 87.8, -20.9] }, { cell = 0x01DC01BF, at = [-17.1, 74.8, -20.9] }, { cell = 0x01DC01C5, at = [-16.4, 47.8, -20.9] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470027E1, weight = 7 }, { template = 0x470027E3, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12734", confidence = "medium", sample = { creatures = 8, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12735"
+cell = 0x01DC0170
+at = [29.0, 51.6, -8.9]
+radius = 0.0
+spots = [{ cell = 0x01DC0170, at = [29.0, 51.6, -8.9] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470027E1, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12735", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12736"
+cell = 0x01DC01E2
+at = [-16.4, -173.2, -8.9]
+radius = 0.0
+spots = [{ cell = 0x01DC01E2, at = [-0.3, -184.0, -8.9] }, { cell = 0x01DC01E2, at = [2.6, -189.4, -8.9] }, { cell = 0x01DC01F7, at = [-46.2, -153.0, -8.9] }, { cell = 0x01DC024A, at = [-21.6, -166.2, -18.9] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470027E1, weight = 4 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12736", confidence = "medium", sample = { creatures = 4, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

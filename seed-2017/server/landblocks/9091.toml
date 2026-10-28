@@ -1,0 +1,53 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-43"
+kind = "static"
+id = 0x4090910000000043
+template = 0x47000F30
+cell = 0x9091002C
+at = [111.1131, 63.142, 133.5]
+rotation = [0.0, 0.0, 0.0, 1.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:2be384dd", confidence = "high", sample = { sessions = 11 } }
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x4090910000000001
+template = 0x4700113A
+cell = 0x9091003C
+at = [140.512, 64.0044, 134.045]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:8e1676bf", confidence = "high", sample = { sessions = 7 } }
+
+[[camp]]
+key = "c-3884"
+cell = 0x9091002B
+at = [108.8, 54.8, 133.9]
+radius = 0.3
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700298F, weight = 10 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3884", confidence = "high", sample = { creatures = 10, sessions = 11 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7219"
+cell = 0x9091002B
+at = [101.6, 51.0, 133.5]
+radius = 25.3
+population = 14
+regen = 192.0
+spawns = [{ template = 0x47000811, weight = 45 }, { template = 0x47002346, weight = 42 }, { template = 0x47002344, weight = 34 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7219", confidence = "high", sample = { creatures = 121, sessions = 11 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7431"
+cell = 0x9091002B
+at = [105.5, 52.3, 134.6]
+radius = 13.0
+population = 6
+regen = 192.0
+spawns = [{ template = 0x47002326, weight = 29 }]
+profile = 44
+profile_name = "GP_CampDrudgeMystic"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7431", confidence = "high", sample = { creatures = 29, sessions = 11 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

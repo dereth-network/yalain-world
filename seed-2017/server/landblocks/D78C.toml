@@ -1,0 +1,71 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40D78C0000000001
+template = 0x47001BFB
+cell = 0xD78C000B
+at = [36.0, 45.0, 116.4095]
+rotation = [0.92388, 0.0, 0.0, -0.382683]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:32c4b74a", confidence = "low", sample = { sessions = 1 } }
+
+[[object]]
+key = "n-31d1"
+kind = "npc"
+template = 0x470031D1
+cell = 0xD78C0021
+at = [92.6143, 16.7933, 154.2791]
+rotation = [0.782859, 0.0, 0.0, 0.622199]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:c4c73e09", confidence = "low", sample = { sessions = 1 } }
+
+[[object]]
+key = "n-31d1-2"
+kind = "npc"
+template = 0x470031D1
+cell = 0xD78C0005
+at = [3.5129, 85.2963, 132.1587]
+rotation = [0.998541, 0.0, 0.0, 0.053999]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:f60dda9f", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-8989"
+cell = 0xD78C000D
+at = [27.4, 87.9, 125.3]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002A20, weight = 1 }, { template = 0x47002A22, weight = 1 }]
+profile = 348
+profile_name = "GP_CampSclavusUlu"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8989", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-9879"
+cell = 0xD78C0022
+at = [80.4, 34.5, 144.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470023E7, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9879", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-11308"
+cell = 0xD78C0005
+at = [6.9, 86.8, 131.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700289A, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11308", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-11873"
+cell = 0xD78C0005
+at = [14.2, 83.0, 132.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700288B, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11873", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

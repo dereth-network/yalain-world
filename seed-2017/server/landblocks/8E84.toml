@@ -1,0 +1,45 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-4513"
+cell = 0x8E840029
+at = [107.5, 18.5, 130.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002230, weight = 1 }]
+profile = 31
+profile_name = "GP_CampBeetleSlicer"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4513", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-5778"
+cell = 0x8E840022
+at = [90.0, 21.5, 135.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C0D, weight = 1 }]
+profile = 366
+profile_name = "GP_CampThornlingRankle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5778", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6512"
+cell = 0x8E840007
+at = [7.0, 124.0, 129.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700272E, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6512", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-6513"
+cell = 0x8E840003
+at = [17.3, 44.8, 131.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002731, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6513", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

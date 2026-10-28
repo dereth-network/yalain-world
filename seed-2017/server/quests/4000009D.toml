@@ -1,0 +1,12 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000009D
+id_name = "QuestKillRedWaspStriker"
+state = 0x6F000933
+challenge = 1
+duration = 3600
+retry = 72000
+xp = 300
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:67cf0fb0", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000933 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000933 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000933 } } }

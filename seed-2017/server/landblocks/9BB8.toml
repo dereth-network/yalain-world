@@ -1,0 +1,13 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-5721"
+cell = 0x9BB8002F
+at = [105.4, 123.3, 197.9]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C11, weight = 1 }]
+profile = 367
+profile_name = "GP_CampThornlingRogue"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5721", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

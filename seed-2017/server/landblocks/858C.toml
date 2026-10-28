@@ -1,0 +1,13 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-7099"
+cell = 0x858C000D
+at = [27.5, 88.0, 127.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A62, weight = 1 }]
+profile = 355
+profile_name = "GP_CampScravenShimar"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7099", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

@@ -1,0 +1,51 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-5842"
+cell = 0x3B8F0009
+at = [27.8, 5.0, 108.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C12, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5842", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8197"
+cell = 0x3B8F0038
+at = [120.0, 145.2, 136.2]
+radius = 7.4
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470022D5, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8197", confidence = "low", sample = { creatures = 3, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8370"
+cell = 0x3B8F000E
+at = [30.7, 105.2, 109.4]
+radius = 20.2
+population = 9
+regen = 192.0
+spawns = [{ template = 0x470029C7, weight = 11 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8370", confidence = "low", sample = { creatures = 11, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8379"
+cell = 0x3B8F0021
+at = [82.3, 13.8, 131.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470029C7, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8379", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8544"
+cell = 0x3B8F000E
+at = [34.8, 107.4, 109.1]
+radius = 8.9
+population = 4
+regen = 192.0
+spawns = [{ template = 0x470022E7, weight = 4 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8544", confidence = "low", sample = { creatures = 4, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

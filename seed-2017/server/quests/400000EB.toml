@@ -1,0 +1,12 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000EB
+id_name = "QuestKillHiveQueen"
+state = 0x6F0009AD
+challenge = 8
+duration = 7200
+retry = 72000
+xp = 440
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:18c9a851", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0009AD }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F0009AD }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F0009AD } } }

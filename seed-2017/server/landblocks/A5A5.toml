@@ -1,0 +1,65 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40A5A50000000001
+template = 0x4700114D
+cell = 0xA5A5002D
+at = [107.7531, 87.7528, 150.6952]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B43, string = 0x884DA3AB }
+to = "p-a3940002"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:c2f8f7be", confidence = "high", sample = { sessions = 12 } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x40A5A50000000003
+template = 0x4700113A
+cell = 0xA5A5002F
+at = [104.376, 128.418, 147.8011]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:bffa51cd", confidence = "high", sample = { sessions = 12 } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x40A5A50000000002
+template = 0x47001BB4
+cell = 0xA5A50034
+at = [132.1374, 75.0349, 151.7537]
+rotation = [0.382683, 0.0, 0.0, 0.92388]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:0e83de8d", confidence = "high", sample = { sessions = 12 } }
+
+[[camp]]
+key = "c-4833"
+cell = 0xA5A5003E
+at = [145.9, 111.5, 147.5]
+radius = 4.9
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470025CA, weight = 5 }, { template = 0x470025CE, weight = 3 }, { template = 0x470025D4, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4833", confidence = "high", sample = { creatures = 9, sessions = 10 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-5270"
+cell = 0xA5A5003E
+at = [144.9, 114.3, 147.2]
+radius = 1.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470029F4, weight = 2 }, { template = 0x470029E9, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5270", confidence = "medium", sample = { creatures = 3, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-5432"
+cell = 0xA5A5002A
+at = [108.0, 29.2, 149.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470029E9, weight = 1 }]
+profile = 334
+profile_name = "GP_CampReedsharkElder"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5432", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

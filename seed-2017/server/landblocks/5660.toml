@@ -1,0 +1,43 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x4056600000000003
+template = 0x47001154
+cell = 0x56600038
+at = [127.7658, 151.2867, 76.716]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B42, string = 0x800E9EBE }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:c98f3d3e", confidence = "high", sample = { sessions = 4 } }
+
+[[object]]
+key = "n-31b6"
+kind = "npc"
+template = 0x470031B6
+cell = 0x5660002F
+at = [108.9752, 130.8667, 87.7636]
+rotation = [0.897892, 0.0, 0.0, 0.440216]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:e9d5174e", confidence = "high", sample = { sessions = 4 } }
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x4056600000000004
+template = 0x47001154
+cell = 0x56600026
+at = [94.7107, 103.7185, 93.6623]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B42, string = 0x800E9EBE }
+to = "p-565e0025"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:745df6cd", confidence = "high", sample = { sessions = 4 } }
+
+[[camp]]
+key = "c-200"
+cell = 0x5660002F
+at = [104.0, 122.1, 88.7]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700084A, weight = 1 }, { template = 0x4700084B, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 200", confidence = "medium", sample = { creatures = 2, sessions = 3 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

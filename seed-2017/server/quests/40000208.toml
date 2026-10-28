@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000208
+id_name = "QuestKillMosswartFrothing"
+state = 0x6F000966
+challenge = 50
+duration = 10800
+retry = 72000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:a793ceab", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000966 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000966 } } }

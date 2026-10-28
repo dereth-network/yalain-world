@@ -1,0 +1,24 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x409A8D0000000001
+template = 0x4700114D
+cell = 0x9A8D000F
+at = [23.2657, 134.299, 127.571]
+rotation = [0.707107, 0.0, 0.0, -0.707107]
+name = { table = 0x25001B43, string = 0x4D96AA5C }
+to = "p-7f8a000b"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:accc6a0e", confidence = "high", sample = { sessions = 27 } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x409A8D0000000002
+template = 0x4700113A
+cell = 0x9A8D002E
+at = [119.0, 113.0, 128.7804]
+rotation = [1.0, 0.0, 0.0, 0.0]
+landings = [{ cell = 0x9A8D0036, at = [123.53, 114.82, 128.5], heading = 248.5, seen = 2 }, { cell = 0x9A8D002E, at = [114.83, 112.27, 128.5], heading = 251.3, seen = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:b455824a", confidence = "high", sample = { sessions = 28 }, fields = { landings = { from = "capture", evidence = "AC2-EVID-WDB-PLACES-2017", ref = "c:4673954a", confidence = "high", sample = { trips = 4 } } } }

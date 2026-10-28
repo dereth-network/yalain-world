@@ -1,0 +1,73 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-13"
+kind = "static"
+id = 0x4001F40000000013
+template = 0x47000FC3
+cell = 0x01F40117
+at = [-46.4, -14.95, 67.04]
+rotation = [0.707107, 0.0, 0.0, -0.707107]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:46f3e91b", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x4001F40000000001
+template = 0x47001154
+cell = 0x01F40156
+at = [-114.765, 40.051, 77.0477]
+rotation = [-0.382683, 0.0, 0.0, 0.92388]
+name = { table = 0x25001B44, string = 0x094E1E55 }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:08ae2b65", confidence = "low", sample = { sessions = 1 } }
+
+[[object]]
+key = "s-12"
+kind = "static"
+id = 0x4001F40000000012
+template = 0x47001154
+cell = 0x01F40169
+at = [-80.0964, -54.8293, 39.0104]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B40, string = 0x13FEF898 }
+to = "p-01f20130"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:6c5459e3", confidence = "medium", sample = { sessions = 2 } }
+
+[[camp]]
+key = "c-12269"
+cell = 0x01F40100
+at = [-30.2, -3.2, 67.5]
+radius = 0.0
+spots = [{ cell = 0x01F40100, at = [-19.1, 5.4, 67.5] }, { cell = 0x01F40102, at = [-17.7, -14.7, 67.5] }, { cell = 0x01F40117, at = [-40.9, -17.7, 67.5] }, { cell = 0x01F40117, at = [-40.1, -16.5, 67.5] }, { cell = 0x01F4011B, at = [-40.6, 3.8, 67.5] }, { cell = 0x01F4011B, at = [-40.2, 1.1, 67.5] }, { cell = 0x01F4011D, at = [-21.4, 5.4, 67.5] }, { cell = 0x01F4011D, at = [-21.2, 7.4, 67.5] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470027BA, weight = 8 }]
+profile = 316
+profile_name = "GP_CampMimbuTolen"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12269", confidence = "medium", sample = { creatures = 8, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-12270"
+cell = 0x01F4012B
+at = [-77.9, 41.7, 76.5]
+radius = 0.0
+spots = [{ cell = 0x01F4012B, at = [-73.0, 4.2, 72.9] }, { cell = 0x01F4012B, at = [-72.8, 5.9, 72.8] }, { cell = 0x01F4012B, at = [-72.7, 5.6, 72.7] }, { cell = 0x01F4012D, at = [-83.6, 31.2, 73.9] }, { cell = 0x01F40142, at = [-44.3, 40.7, 76.6] }, { cell = 0x01F40148, at = [-88.6, 41.4, 73.8] }, { cell = 0x01F4014E, at = [-87.4, 61.6, 76.1] }, { cell = 0x01F40152, at = [-76.0, 52.8, 76.5] }, { cell = 0x01F40154, at = [-78.5, 75.0, 76.6] }, { cell = 0x01F40154, at = [-77.4, 74.6, 76.6] }, { cell = 0x01F40155, at = [-104.5, 41.8, 76.6] }, { cell = 0x01F40155, at = [-104.3, 41.8, 76.6] }, { cell = 0x01F4016A, at = [-90.8, 54.4, 76.5] }, { cell = 0x01F40170, at = [-70.8, 53.2, 76.5] }]
+population = 7
+regen = 192.0
+spawns = [{ template = 0x470027B6, weight = 11 }, { template = 0x470027BA, weight = 4 }]
+profile = 316
+profile_name = "GP_CampMimbuTolen"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12270", confidence = "medium", sample = { creatures = 15, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-12271"
+cell = 0x01F40157
+at = [-80.2, -34.0, 58.5]
+radius = 0.0
+spots = [{ cell = 0x01F40157, at = [-80.3, -26.4, 58.5] }, { cell = 0x01F40169, at = [-79.9, -49.1, 38.5] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470027BA, weight = 3 }]
+profile = 316
+profile_name = "GP_CampMimbuTolen"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12271", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

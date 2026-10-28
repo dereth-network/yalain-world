@@ -1,0 +1,50 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "n-31d0"
+kind = "npc"
+template = 0x470031D0
+cell = 0xC3AC0015
+at = [48.5764, 96.3845, 75.9609]
+rotation = [0.822059, 0.0, 0.0, -0.569402]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:2e9aac66", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-8127"
+cell = 0xC3AC0015
+at = [43.8, 97.8, 76.2]
+radius = 13.6
+population = 2
+regen = 240.0
+spawns = [{ template = 0x470022E5, weight = 2 }, { template = 0x470022E3, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8127", confidence = "low", sample = { creatures = 3, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-generator" } } }
+
+[[camp]]
+key = "c-11316"
+cell = 0xC3AC0012
+at = [53.5, 29.3, 76.4]
+radius = 6.4
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700289B, weight = 2 }, { template = 0x4700289A, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11316", confidence = "medium", sample = { creatures = 3, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-11324"
+cell = 0xC3AC0015
+at = [44.6, 99.8, 76.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700289A, weight = 1 }, { template = 0x4700289B, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11324", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-11362"
+cell = 0xC3AC0029
+at = [113.4, 10.4, 76.7]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700289A, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11362", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

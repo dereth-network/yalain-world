@@ -1,0 +1,51 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-22"
+kind = "static"
+id = 0x405C5C0000000022
+template = 0x47000F2E
+cell = 0x5C5C0015
+at = [46.202, 98.3938, 91.25]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:409c07dc", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-1306"
+cell = 0x5C5C001E
+at = [66.7, 110.8, 91.3]
+radius = 20.2
+population = 5
+regen = 192.0
+spawns = [{ template = 0x47002616, weight = 5 }, { template = 0x47002618, weight = 2 }, { template = 0x47002619, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1306", confidence = "high", sample = { creatures = 8, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-1580"
+cell = 0x5C5C0016
+at = [59.1, 109.0, 91.3]
+radius = 19.6
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700265F, weight = 7 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1580", confidence = "high", sample = { creatures = 7, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-2442"
+cell = 0x5C5C0015
+at = [59.1, 94.9, 91.3]
+radius = 12.7
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002639, weight = 5 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2442", confidence = "low", sample = { creatures = 5, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-3886"
+cell = 0x5C5C001D
+at = [65.0, 99.8, 91.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002999, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3886", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

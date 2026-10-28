@@ -1,0 +1,100 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x4084890000000001
+template = 0x4700113A
+cell = 0x84890032
+at = [138.0, 25.0, 98.0]
+rotation = [1.0, 0.0, 0.0, 0.0]
+landings = [{ cell = 0x84890032, at = [134.41, 23.08, 97.59], heading = 60.7, seen = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:41f073e9", confidence = "high", sample = { sessions = 4 }, fields = { landings = { from = "capture", evidence = "AC2-EVID-WDB-PLACES-2017", ref = "c:a73a8b73", confidence = "low", sample = { trips = 1 } } } }
+
+[[camp]]
+key = "c-4705"
+cell = 0x8489003D
+at = [146.8, 91.8, 100.8]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002230, weight = 1 }, { template = 0x4700222A, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4705", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-4844"
+cell = 0x8489000E
+at = [21.1, 109.9, 97.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470025CA, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4844", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-4885"
+cell = 0x84890007
+at = [5.9, 139.9, 97.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470025D0, weight = 1 }]
+profile = 81
+profile_name = "GP_CampGruttMorbific"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4885", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-5741"
+cell = 0x84890040
+at = [155.0, 145.9, 97.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C0A, weight = 1 }]
+profile = 362
+profile_name = "GP_CampThornlingHarrower"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5741", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-5877"
+cell = 0x8489003D
+at = [154.2, 97.2, 100.1]
+radius = 10.5
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C0A, weight = 3 }]
+profile = 362
+profile_name = "GP_CampThornlingHarrower"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5877", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6466"
+cell = 0x8489003D
+at = [150.6, 97.5, 100.6]
+radius = 8.9
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002731, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6466", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-6675"
+cell = 0x8489000D
+at = [24.2, 98.8, 96.8]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002732, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6675", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7113"
+cell = 0x84890007
+at = [3.7, 135.5, 97.4]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A5E, weight = 1 }]
+profile = 354
+profile_name = "GP_CampScravenRukh"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7113", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

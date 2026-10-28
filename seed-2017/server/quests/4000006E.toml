@@ -1,0 +1,10 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000006E
+id_name = "QuestDilloRustlers"
+state = 0x6F0007B8
+challenge = 33
+duration = 7200
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:cdb55263", confidence = "high", sample = { sessions = 11 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0007B8 } } }

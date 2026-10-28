@@ -1,0 +1,51 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40F3A60000000001
+template = 0x47002F82
+cell = 0xF3A60034
+at = [125.2541, 73.9014, 84.5506]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:7f8634e4", confidence = "high", sample = { sessions = 11 } }
+
+[[camp]]
+key = "c-203"
+cell = 0xF3A6002F
+at = [118.7, 129.1, 74.8]
+radius = 13.7
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700084B, weight = 2 }, { template = 0x4700084C, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 203", confidence = "medium", sample = { creatures = 3, sessions = 4 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7759"
+cell = 0xF3A60017
+at = [59.6, 136.9, 75.8]
+radius = 18.7
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700282F, weight = 13 }, { template = 0x47002831, weight = 8 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7759", confidence = "high", sample = { creatures = 21, sessions = 11 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-8164"
+cell = 0xF3A60018
+at = [52.4, 151.8, 76.3]
+radius = 15.6
+population = 3
+regen = 240.0
+spawns = [{ template = 0x470022DD, weight = 2 }, { template = 0x470022DB, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8164", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-generator" } } }
+
+[[camp]]
+key = "c-8190"
+cell = 0xF3A60038
+at = [122.2, 140.4, 80.8]
+radius = 5.0
+population = 2
+regen = 240.0
+spawns = [{ template = 0x470022DD, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8190", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-generator" } } }

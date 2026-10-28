@@ -1,0 +1,52 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40419E0000000001
+template = 0x47001154
+cell = 0x419E002C
+at = [102.1277, 73.7186, 230.52]
+rotation = [0.965926, 0.0, 0.0, 0.258819]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:cb9b6ea4", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-3798"
+cell = 0x419E000C
+at = [35.3, 65.1, 282.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024E6, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3798", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-3799"
+cell = 0x419E001D
+at = [60.1, 96.7, 282.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024E6, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3799", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-11089"
+cell = 0x419E002C
+at = [102.4, 73.7, 230.1]
+radius = 10.3
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700284A, weight = 4 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11089", confidence = "low", sample = { creatures = 4, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-11791"
+cell = 0x419E000A
+at = [29.0, 29.1, 281.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024C9, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11791", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

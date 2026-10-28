@@ -1,0 +1,36 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40AA880000000001
+template = 0x47001143
+cell = 0xAA880030
+at = [104.6642, 152.8077, 128.403]
+rotation = [1.0, 0.0, 0.0, 0.0]
+landings = [{ cell = 0xAA880030, at = [100.5, 152.61, 128.51], heading = 8.5, seen = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:fb5ac05e", confidence = "high", sample = { sessions = 5 }, fields = { landings = { from = "capture", evidence = "AC2-EVID-WDB-PLACES-2017", ref = "c:185eca69", confidence = "low", sample = { trips = 1 } } } }
+
+[[camp]]
+key = "c-10334"
+cell = 0xAA88002A
+at = [105.0, 26.8, 157.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002310, weight = 1 }]
+profile = 37
+profile_name = "GP_CampDarkenfowlStray"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10334", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-10555"
+cell = 0xAA880011
+at = [51.6, 1.7, 190.6]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470027A2, weight = 1 }]
+profile = 313
+profile_name = "GP_CampMimbuAkeha"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10555", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

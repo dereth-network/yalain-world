@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000002B
+id_name = "QuestSlavetakersHead"
+state = 0x6F000CDE
+challenge = 20
+duration = 72000
+xp = 13000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:9526c92a", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000CDE }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000CDE } } }

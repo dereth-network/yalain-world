@@ -1,0 +1,12 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000E1
+id_name = "QuestKillBurunBrowerkPatrol"
+state = 0x6F00090F
+challenge = 30
+duration = 3600
+retry = 72000
+xp = 180000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:6ad97b23", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00090F }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00090F }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F00090F } } }

@@ -1,0 +1,67 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "n-3070"
+kind = "npc"
+template = 0x47003070
+cell = 0xDF8B0014
+at = [45.1734, 68.1974, 120.8049]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:f69a5bab", confidence = "high", sample = { sessions = 9 } }
+
+[[object]]
+key = "n-3072"
+kind = "npc"
+template = 0x47003072
+cell = 0xDF8B0037
+at = [139.2565, 129.8926, 102.5877]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:727af82f", confidence = "high", sample = { sessions = 9 } }
+
+[[object]]
+key = "n-3073"
+kind = "npc"
+template = 0x47003073
+cell = 0xDF8B0038
+at = [131.1573, 141.6037, 101.4604]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:817819ac", confidence = "high", sample = { sessions = 8 } }
+
+[[object]]
+key = "n-32c6"
+kind = "npc"
+template = 0x470032C6
+cell = 0xDF8B0038
+at = [138.1568, 143.7511, 101.9456]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:eb2e92e6", confidence = "high", sample = { sessions = 8 } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x40DF8B0000000002
+template = 0x47001010
+cell = 0xDF8B0026
+at = [91.6972, 110.0701, 104.5]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:21c06c47", confidence = "high", sample = { sessions = 9 } }
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40DF8B0000000001
+template = 0x47001BEB
+cell = 0xDF8B003A
+at = [141.0, 32.0, 104.8729]
+rotation = [0.707107, 0.0, 0.0, 0.707107]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:568ee157", confidence = "high", sample = { sessions = 10 } }
+
+[[camp]]
+key = "c-190"
+cell = 0xDF8B001C
+at = [61.5, 70.6, 120.7]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47000863, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 190", confidence = "low", sample = { creatures = 1, sessions = 3 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

@@ -1,0 +1,34 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x409ABB0000000004
+template = 0x470031F4
+cell = 0x9ABB0037
+at = [136.937, 126.4688, 146.3142]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:9bbfe3f2", confidence = "high", sample = { sessions = 17 } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x409ABB0000000002
+template = 0x4700114D
+cell = 0x9ABB002F
+at = [119.08, 136.326, 148.575]
+rotation = [-0.5, 0.0, 0.0, 0.866025]
+name = { table = 0x25001B43, string = 0x8CD8378B }
+to = "p-8eb6000b"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:c0644c75", confidence = "high", sample = { sessions = 17 } }
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x409ABB0000000001
+template = 0x4700113A
+cell = 0x9ABB002E
+at = [108.259, 105.499, 148.1961]
+rotation = [1.0, 0.0, 0.0, 0.0]
+landings = [{ cell = 0x9ABB002E, at = [111.31, 108.75, 147.5], heading = 223.1, seen = 3 }, { cell = 0x9ABB002E, at = [111.17, 109.02, 147.51], heading = 177.9, seen = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:ad46b4d5", confidence = "high", sample = { sessions = 17 }, fields = { landings = { from = "capture", evidence = "AC2-EVID-WDB-PLACES-2017", ref = "c:49cda123", confidence = "high", sample = { trips = 4 } } } }

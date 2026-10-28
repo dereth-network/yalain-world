@@ -1,0 +1,12 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000A6
+id_name = "QuestKillWatchfulIdolSpawn"
+state = 0x6F000941
+challenge = 21
+duration = 3600
+retry = 72000
+xp = 13000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:b48d4a54", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000941 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000941 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000941 } } }

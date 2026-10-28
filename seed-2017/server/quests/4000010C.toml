@@ -1,0 +1,11 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000010C
+id_name = "QuestDrudgePotionRaidPotion"
+state = 0x6F000D6A
+challenge = -999
+duration = 3600
+xp = 0
+cancellable = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:ab242286", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000D6A }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000D6A } } }

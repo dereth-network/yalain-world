@@ -1,0 +1,23 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40A0850000000001
+template = 0x4700113A
+cell = 0xA0850035
+at = [126.356, 95.8768, 172.548]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:ce9c659c", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-7198"
+cell = 0xA0850013
+at = [41.3, 49.8, 164.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47000811, weight = 1 }]
+profile = 39
+profile_name = "GP_CampDrudgeGloom"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7198", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

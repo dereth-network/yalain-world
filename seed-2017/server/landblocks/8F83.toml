@@ -1,0 +1,23 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-5984"
+cell = 0x8F830007
+at = [6.8, 134.4, 108.3]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C14, weight = 2 }]
+profile = 368
+profile_name = "GP_CampThornlingWorrier"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5984", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6671"
+cell = 0x8F830008
+at = [10.0, 142.4, 108.0]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002731, weight = 1 }, { template = 0x47002729, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6671", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

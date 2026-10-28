@@ -1,0 +1,63 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "n-33cc"
+kind = "npc"
+template = 0x470033CC
+cell = 0x80910014
+at = [45.159, 72.2281, 173.505]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:3829664a", confidence = "high", sample = { sessions = 16 } }
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x4080910000000004
+template = 0x47001BBD
+cell = 0x80910030
+at = [105.5673, 154.8864, 155.7364]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:2fb8edc3", confidence = "low", sample = { sessions = 1 } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x4080910000000003
+template = 0x470031C6
+cell = 0x8091000C
+at = [24.895, 79.0154, 173.5002]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:293aaa0d", confidence = "high", sample = { sessions = 28 } }
+
+[[object]]
+key = "s-5"
+kind = "static"
+id = 0x4080910000000005
+template = 0x47001154
+cell = 0x80910013
+at = [40.67, 43.43, 176.05]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B45, string = 0x6FF7C8DA }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:f26e3085", confidence = "high", sample = { sessions = 16 } }
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x4080910000000001
+template = 0x4700113A
+cell = 0x80910022
+at = [85.7539, 30.0701, 174.045]
+rotation = [1.0, 0.0, 0.0, 0.0]
+landings = [{ cell = 0x80910022, at = [82.59, 33.45, 173.64], heading = 135.5, seen = 1 }, { cell = 0x80910022, at = [82.83, 33.77, 173.56], heading = 141.2, seen = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:b6a5eca2", confidence = "high", sample = { sessions = 10 }, fields = { landings = { from = "capture", evidence = "AC2-EVID-WDB-PLACES-2017", ref = "c:f66b05c4", confidence = "medium", sample = { trips = 2 } } } }
+
+[[object]]
+key = "s-8"
+kind = "static"
+id = 0x4080910000000008
+template = 0x4700114D
+cell = 0x80910019
+at = [73.3652, 16.9479, 174.7515]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B43, string = 0x5306926B }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:5f197848", confidence = "high", sample = { sessions = 11 } }

@@ -1,0 +1,45 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[camp]]
+key = "c-1096"
+cell = 0x816E0029
+at = [117.3, 15.8, 180.6]
+radius = 4.4
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002219, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1096", confidence = "medium", sample = { creatures = 3, sessions = 4 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-3817"
+cell = 0x816E0031
+at = [134.8, 8.3, 182.3]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700224C, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3817", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-3989"
+cell = 0x816E0029
+at = [119.1, 15.6, 180.9]
+radius = 4.8
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470023D3, weight = 2 }, { template = 0x470023D1, weight = 2 }, { template = 0x470023CF, weight = 1 }]
+profile = 60
+profile_name = "GP_CampEliSlaggard"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3989", confidence = "high", sample = { creatures = 5, sessions = 4 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-4139"
+cell = 0x816E003C
+at = [147.6, 77.2, 184.3]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470023D3, weight = 1 }, { template = 0x470023D1, weight = 1 }]
+profile = 60
+profile_name = "GP_CampEliSlaggard"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4139", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

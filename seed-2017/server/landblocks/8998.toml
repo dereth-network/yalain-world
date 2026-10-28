@@ -1,0 +1,50 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "n-2f10"
+kind = "npc"
+template = 0x47002F10
+cell = 0x89980003
+at = [17.3199, 43.9299, 40.2688]
+rotation = [0.991445, 0.0, 0.0, -0.130526]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:80f28309", confidence = "high", sample = { sessions = 4 } }
+
+[[camp]]
+key = "c-1414"
+cell = 0x89980031
+at = [135.4, 6.8, 40.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002616, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1414", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-1765"
+cell = 0x8998002C
+at = [107.3, 61.5, 40.0]
+radius = 20.3
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700265A, weight = 2 }, { template = 0x4700265F, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1765", confidence = "medium", sample = { creatures = 3, sessions = 4 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-6981"
+cell = 0x89980023
+at = [89.8, 48.0, 40.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C85, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6981", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-6982"
+cell = 0x89980029
+at = [115.9, 19.8, 40.0]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C87, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6982", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

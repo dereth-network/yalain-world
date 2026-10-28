@@ -1,0 +1,54 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x400BFD0000000001
+template = 0x47001154
+cell = 0x0BFD0118
+at = [-290.6384, 332.0972, -69.3613]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B45, string = 0x79247E6B }
+to = "p-b7780034"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:91a3fb5a", confidence = "low", sample = { sessions = 1 } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x400BFD0000000002
+template = 0x470011C5
+cell = 0x0BFD0109
+at = [-219.0683, 279.7094, -69.7998]
+rotation = [0.92388, 0.0, 0.0, 0.382684]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:356ff5eb", confidence = "low", sample = { sessions = 1 } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x400BFD0000000003
+template = 0x470011C1
+cell = 0x0BFD0109
+at = [-212.5144, 281.5124, -69.7826]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:e45d3fbb", confidence = "low", sample = { sessions = 1 } }
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x400BFD0000000004
+template = 0x47001BEF
+cell = 0x0BFD0109
+at = [-233.5411, 285.8614, -70.6447]
+rotation = [0.92388, 0.0, 0.0, 0.382684]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:3c3ab5da", confidence = "low", sample = { sessions = 1 } }
+
+[[camp]]
+key = "c-12401"
+cell = 0x0BFD011E
+at = [-234.1, 225.8, -70.3]
+radius = 0.0
+spots = [{ cell = 0x0BFD011E, at = [-240.4, 221.3, -70.3] }, { cell = 0x0BFD011E, at = [-234.1, 224.4, -70.5] }, { cell = 0x0BFD011E, at = [-227.8, 231.7, -69.7] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470023B5, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12401", confidence = "low", sample = { creatures = 3, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

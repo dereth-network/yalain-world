@@ -1,0 +1,57 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[object]]
+key = "s-5"
+kind = "static"
+id = 0x4001E30000000005
+template = 0x47001C48
+cell = 0x01E30100
+at = [15.4427, -3.1865, -22.09]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:6bd5922a", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x4001E30000000003
+template = 0x47001154
+cell = 0x01E30102
+at = [98.0444, 5.6848, 13.11]
+rotation = [0.707107, 0.0, 0.0, -0.707107]
+name = { table = 0x25001B40, string = 0xFF507521 }
+to = "p-01e40100"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:abc28bb4", confidence = "medium", sample = { sessions = 2 } }
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x4001E30000000004
+template = 0x47001C48
+cell = 0x01E30102
+at = [81.4427, 7.8135, -22.09]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:9e9dc237", confidence = "medium", sample = { sessions = 2 } }
+
+[[camp]]
+key = "c-12561"
+cell = 0x01E30102
+at = [73.7, 8.2, 7.3]
+radius = 0.0
+spots = [{ cell = 0x01E30102, at = [66.9, 11.3, 7.2] }, { cell = 0x01E30102, at = [67.0, 11.1, 7.3] }, { cell = 0x01E30102, at = [74.4, 9.6, 7.3] }, { cell = 0x01E30102, at = [76.9, 5.8, 7.3] }, { cell = 0x01E30102, at = [78.5, 5.8, 7.4] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002A21, weight = 4 }, { template = 0x47002A24, weight = 2 }]
+profile = 347
+profile_name = "GP_CampSclavusSata"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12561", confidence = "medium", sample = { creatures = 6, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-12702"
+cell = 0x01E30102
+at = [73.5, 5.5, 6.9]
+radius = 0.0
+spots = [{ cell = 0x01E30102, at = [72.8, 6.5, 6.9] }, { cell = 0x01E30102, at = [74.3, 4.5, 6.9] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700085D, weight = 1 }, { template = 0x47000860, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12702", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

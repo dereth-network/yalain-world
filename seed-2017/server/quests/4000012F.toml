@@ -1,0 +1,10 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000012F
+id_name = "QuestSoulboundLinvak"
+state = 0x6F000CE2
+challenge = 35
+duration = -1
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:c97a61ff", confidence = "high", sample = { sessions = 8 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000CE2 } } }

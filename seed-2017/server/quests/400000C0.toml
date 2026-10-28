@@ -1,0 +1,10 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000C0
+id_name = "QuestFindArwicOverseer"
+state = 0x6F000BE7
+challenge = -999
+duration = 172800
+cancellable = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:a6f21923", confidence = "high", sample = { sessions = 24 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000BE7 } } }
