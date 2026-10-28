@@ -1,0 +1,64 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-31fa-290031b6"
+who = 0x470031FA
+line = { table = 0x25002A43, string = 0x290031B6 }
+line_name = "ID_GiveMeat"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A43, confidence = "low" }
+
+[[talk]]
+key = "t-31fa-2ae6122c"
+who = 0x470031FA
+line = { table = 0x25002A43, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A43, confidence = "medium" }
+
+[[talk]]
+key = "t-31fa-63691d8f"
+who = 0x470031FA
+line = { table = 0x25002A43, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ea4a436a", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-31fa-68a07c4d"
+who = 0x470031FA
+line = { table = 0x25002A43, string = 0x68A07C4D }
+line_name = "ID_Done"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A43, confidence = "high" }
+
+[[talk]]
+key = "t-31fa-a964fc6c"
+who = 0x470031FA
+line = { table = 0x25002A43, string = 0xA964FC6C }
+line_name = "ID_Fail"
+role = "fail"
+how = "emote"
+when = "use"
+update = "fail"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A43, confidence = "medium" }
+
+[[talk]]
+key = "t-31fa-aea07c7d"
+who = 0x470031FA
+line = { table = 0x25002A43, string = 0xAEA07C7D }
+line_name = "ID_Give"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A43, confidence = "low" }

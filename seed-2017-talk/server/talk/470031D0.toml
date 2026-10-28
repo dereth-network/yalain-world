@@ -1,0 +1,32 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-31d0-098e5251"
+who = 0x470031D0
+line = { table = 0x25002A29, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A29, confidence = "low" }
+
+[[talk]]
+key = "t-31d0-aa52fc4d"
+who = 0x470031D0
+line = { table = 0x25002A29, string = 0xAA52FC4D }
+line_name = "ID_Die"
+role = "death"
+how = "emote"
+when = "use"
+order = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:00fd66cf", confidence = "high", sample = { lines = 5, sessions = 3 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-31d0-abe77d0d"
+who = 0x470031D0
+line = { table = 0x25002A29, string = 0xABE77D0D }
+line_name = "ID_Pick"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:6705757b", confidence = "high", sample = { lines = 15, sessions = 3 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

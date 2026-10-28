@@ -1,0 +1,56 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3e15-09200efe"
+who = 0x47003E15
+line = { table = 0x25002E8A, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:6cf654ea", confidence = "low", sample = { lines = 2, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3e15-2ae6124e"
+who = 0x47003E15
+line = { table = 0x25002E8A, string = 0x2AE6124E }
+line_name = "ID_Begin1"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x800000C1
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:2cbbe3ac", confidence = "high", sample = { lines = 3, sessions = 3 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3e15-68a04d4d"
+who = 0x47003E15
+line = { table = 0x25002E8A, string = 0x68A04D4D }
+line_name = "ID_Done1"
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x800000C1
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002E8A, confidence = "high", fields = { quest = { from = "derived", rule = "talk-quest-number" } } }
+
+[[talk]]
+key = "t-3e15-68f492a3"
+who = 0x47003E15
+line = { table = 0x25002E8A, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002E8A, confidence = "high" }
+
+[[talk]]
+key = "t-3e15-cdeb1fb2"
+who = 0x47003E15
+line = { table = 0x25002E8A, string = 0xCDEB1FB2 }
+line_name = "ID_Underway1"
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800000C1
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002E8A, confidence = "high", fields = { quest = { from = "derived", rule = "talk-quest-number" } } }

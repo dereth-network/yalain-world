@@ -1,0 +1,40 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-301b-60a44a29"
+who = 0x4700301B
+line = { table = 0x2500294A, string = 0x60A44A29 }
+line_name = "ID_RepairSpew"
+role = "use"
+how = "emote"
+when = "give"
+quest = 0x40000330
+update = "advance"
+phase = 6
+item = 0x470014FE
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:57fe82a2", confidence = "medium", sample = { lines = 2, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-301b-87614713"
+who = 0x4700301B
+line = { table = 0x2500294A, string = 0x87614713 }
+line_name = "ID_BrokenSpew"
+role = "use"
+how = "emote"
+when = "use"
+quest = 0x40000330
+update = "advance"
+phase = 2
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:9f89c4df", confidence = "low", sample = { lines = 6, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-301b-c4ed468e"
+who = 0x4700301B
+line = { table = 0x2500294A, string = 0xC4ED468E }
+how = "emote"
+when = "use"
+quest = 0x40000330
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:90abfc83", confidence = "medium", sample = { lines = 2, sessions = 2 } }

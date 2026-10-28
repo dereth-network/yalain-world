@@ -1,0 +1,52 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-335d-1bcb4aed"
+who = 0x4700335D
+line = { table = 0x25002ACA, string = 0x1BCB4AED }
+line_name = "ID_WrongItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ACA, confidence = "low" }
+
+[[talk]]
+key = "t-335d-3485edf1"
+who = 0x4700335D
+line = { table = 0x25002ACA, string = 0x3485EDF1 }
+how = "tell"
+when = "use"
+quest = 0x80000032
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4b072406", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-335d-3486edf1"
+who = 0x4700335D
+line = { table = 0x25002ACA, string = 0x3486EDF1 }
+how = "tell"
+when = "use"
+quest = 0x80000032
+update = "bestow"
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4b072406", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-335d-3d06acc7"
+who = 0x4700335D
+line = { table = 0x25002ACA, string = 0x3D06ACC7 }
+line_name = "ID_GiveLattice"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ACA, confidence = "low" }
+
+[[talk]]
+key = "t-335d-7698481d"
+who = 0x4700335D
+line = { table = 0x25002ACA, string = 0x7698481D }
+line_name = "ID_Attack_GetMaxRange3"
+role = "combat"
+how = "tell"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ACA, confidence = "high" }

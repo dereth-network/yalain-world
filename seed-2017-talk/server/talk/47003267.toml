@@ -1,0 +1,53 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3267-098e5251"
+who = 0x47003267
+line = { table = 0x25002A52, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A52, confidence = "low" }
+
+[[talk]]
+key = "t-3267-2fe893c2"
+who = 0x47003267
+line = { table = 0x25002A52, string = 0x2FE893C2 }
+line_name = "ID_Bestow"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A52, confidence = "medium" }
+
+[[talk]]
+key = "t-3267-63e415aa"
+who = 0x47003267
+line = { table = 0x25002A52, string = 0x63E415AA }
+line_name = "ID_Dismiss"
+role = "refuse-use"
+how = "emote"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:01437471", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3267-68a50e56"
+who = 0x47003267
+line = { table = 0x25002A52, string = 0x68A50E56 }
+line_name = "ID_Ignore"
+role = "refuse-use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A52, confidence = "high" }
+
+[[talk]]
+key = "t-3267-bbe318f5"
+who = 0x47003267
+line = { table = 0x25002A52, string = 0xBBE318F5 }
+line_name = "ID_Succeed"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A52, confidence = "high" }

@@ -1,0 +1,21 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3433-2b68944c"
+who = 0x47003433
+line = { table = 0x25002B40, string = 0x2B68944C }
+line_name = "ID_Death"
+role = "death"
+how = "tell"
+when = "death"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B40, confidence = "low" }
+
+[[talk]]
+key = "t-3433-4d6ece73"
+who = 0x47003433
+line = { table = 0x25002B40, string = 0x4D6ECE73 }
+line_name = "ID_UseDevice6"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B40, confidence = "high" }

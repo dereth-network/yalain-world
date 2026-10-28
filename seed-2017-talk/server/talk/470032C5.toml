@@ -1,0 +1,90 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-32c5-07dbde00"
+who = 0x470032C5
+line = { table = 0x25002A84, string = 0x07DBDE00 }
+line_name = "ID_Give_Stronium"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A84, confidence = "low" }
+
+[[talk]]
+key = "t-32c5-09200efe"
+who = 0x470032C5
+line = { table = 0x25002A84, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:6eb8cab9", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-32c5-2ae6122c"
+who = 0x470032C5
+line = { table = 0x25002A84, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x800002E4
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:53e0158d", confidence = "medium", sample = { lines = 2, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-32c5-68a07c4d"
+who = 0x470032C5
+line = { table = 0x25002A84, string = 0x68A07C4D }
+line_name = "ID_Done"
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x800002E4
+update = "complete"
+item = 0x470008EB
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4e79ff26", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-32c5-68f492a3"
+who = 0x470032C5
+line = { table = 0x25002A84, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A84, confidence = "high" }
+
+[[talk]]
+key = "t-32c5-6936bd43"
+who = 0x470032C5
+line = { table = 0x25002A84, string = 0x6936BD43 }
+line_name = "ID_Give_Barium"
+role = "refuse-give"
+how = "tell"
+when = "give"
+quest = 0x800002E4
+update = "advance"
+phase = 0
+item = 0x470008ED
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:79deb7af", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-32c5-7de67da2"
+who = 0x470032C5
+line = { table = 0x25002A84, string = 0x7DE67DA2 }
+line_name = "ID_Give_Other"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A84, confidence = "low" }
+
+[[talk]]
+key = "t-32c5-8b6b186f"
+who = 0x470032C5
+line = { table = 0x25002A84, string = 0x8B6B186F }
+line_name = "ID_Phase1"
+role = "advance"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:26b98eb7", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

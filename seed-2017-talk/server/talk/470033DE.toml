@@ -1,0 +1,61 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-33de-09200efe"
+who = 0x470033DE
+line = { table = 0x25002B02, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c9b4b1b2", confidence = "medium", sample = { lines = 3, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-33de-5971dfbf"
+who = 0x470033DE
+line = { table = 0x25002B02, string = 0x5971DFBF }
+how = "tell"
+when = "give"
+quest = 0x80000364
+update = "bestow"
+item = 0x47001BA7
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:3dc0892d", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-33de-68f492a3"
+who = 0x470033DE
+line = { table = 0x25002B02, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B02, confidence = "high" }
+
+[[talk]]
+key = "t-33de-8ab74a93"
+who = 0x470033DE
+line = { table = 0x25002B02, string = 0x8AB74A93 }
+how = "tell"
+when = "give"
+quest = 0x80000364
+update = "complete"
+item = 0x47001BA6
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:721f5570", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-33de-aea07c7d"
+who = 0x470033DE
+line = { table = 0x25002B02, string = 0xAEA07C7D }
+line_name = "ID_Give"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B02, confidence = "low" }
+
+[[talk]]
+key = "t-33de-fc1dd5d7"
+who = 0x470033DE
+line = { table = 0x25002B02, string = 0xFC1DD5D7 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:8905303e", confidence = "low", sample = { lines = 1, sessions = 1 } }

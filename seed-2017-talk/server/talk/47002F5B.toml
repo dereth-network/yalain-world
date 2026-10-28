@@ -1,0 +1,31 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2f5b-08204d9c"
+who = 0x47002F5B
+line = { table = 0x250028E9, string = 0x08204D9C }
+line_name = "ID_Idle1"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028E9, confidence = "high" }
+
+[[talk]]
+key = "t-2f5b-08204e9c"
+who = 0x47002F5B
+line = { table = 0x250028E9, string = 0x08204E9C }
+line_name = "ID_Idle2"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028E9, confidence = "high" }
+
+[[talk]]
+key = "t-2f5b-89a7c228"
+who = 0x47002F5B
+line = { table = 0x250028E9, string = 0x89A7C228 }
+line_name = "ID_DestroyItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028E9, confidence = "low" }

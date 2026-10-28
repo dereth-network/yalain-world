@@ -1,0 +1,86 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2fa1-098e5251"
+who = 0x47002FA1
+line = { table = 0x25002908, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002908, confidence = "low" }
+
+[[talk]]
+key = "t-2fa1-2fe893c2"
+who = 0x47002FA1
+line = { table = 0x25002908, string = 0x2FE893C2 }
+line_name = "ID_Bestow"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002908, confidence = "medium" }
+
+[[talk]]
+key = "t-2fa1-33a594a1"
+who = 0x47002FA1
+line = { table = 0x25002908, string = 0x33A594A1 }
+line_name = "ID_Warning"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002908, confidence = "high" }
+
+[[talk]]
+key = "t-2fa1-6b6b987a"
+who = 0x47002FA1
+line = { table = 0x25002908, string = 0x6B6B987A }
+line_name = "ID_Award2"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002908, confidence = "high" }
+
+[[talk]]
+key = "t-2fa1-6b6b987c"
+who = 0x47002FA1
+line = { table = 0x25002908, string = 0x6B6B987C }
+line_name = "ID_Award1"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002908, confidence = "high" }
+
+[[talk]]
+key = "t-2fa1-a844e8b9"
+who = 0x47002FA1
+line = { table = 0x25002908, string = 0xA844E8B9 }
+line_name = "ID_AwardSpew"
+role = "complete"
+how = "emote"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002908, confidence = "high" }
+
+[[talk]]
+key = "t-2fa1-a96499a4"
+who = 0x47002FA1
+line = { table = 0x25002908, string = 0xA96499A4 }
+line_name = "ID_Failed"
+role = "fail"
+how = "tell"
+when = "use"
+update = "fail"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002908, confidence = "medium" }
+
+[[talk]]
+key = "t-2fa1-d2369908"
+who = 0x47002FA1
+line = { table = 0x25002908, string = 0xD2369908 }
+line_name = "ID_NotHero"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:8f5263f2", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

@@ -1,0 +1,41 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2fa5-086b7c1d"
+who = 0x47002FA5
+line = { table = 0x2500290A, string = 0x086B7C1D }
+line_name = "ID_Alms"
+role = "near"
+how = "tell"
+when = "near"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:58ccab89", confidence = "high", sample = { lines = 48, sessions = 16 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2fa5-09d03fa2"
+who = 0x47002FA5
+line = { table = 0x2500290A, string = 0x09D03FA2 }
+line_name = "ID_GiveCoin"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500290A, confidence = "low" }
+
+[[talk]]
+key = "t-2fa5-2e201fa4"
+who = 0x47002FA5
+line = { table = 0x2500290A, string = 0x2E201FA4 }
+line_name = "ID_Detect"
+role = "near"
+how = "say"
+when = "near"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:58ccab89", confidence = "high", sample = { lines = 84, sessions = 18 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2fa5-2e280ff0"
+who = 0x47002FA5
+line = { table = 0x2500290A, string = 0x2E280FF0 }
+line_name = "ID_Return"
+role = "remind"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500290A, confidence = "high" }

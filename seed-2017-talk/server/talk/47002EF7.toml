@@ -1,0 +1,56 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2ef7-2ae6122c"
+who = 0x47002EF7
+line = { table = 0x25001AB1, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x40000071
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ce179945", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2ef7-2e280ff0"
+who = 0x47002EF7
+line = { table = 0x25001AB1, string = 0x2E280FF0 }
+line_name = "ID_Return"
+role = "remind"
+how = "tell"
+when = "give"
+item = 0x47000670
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ed925e53", confidence = "medium", sample = { lines = 7, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2ef7-8b6b1865"
+who = 0x47002EF7
+line = { table = 0x25001AB1, string = 0x8B6B1865 }
+line_name = "ID_Phase4"
+role = "advance"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:510f325c", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2ef7-c4f9188e"
+who = 0x47002EF7
+line = { table = 0x25001AB1, string = 0xC4F9188E }
+line_name = "ID_TooWeak"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:b7b5cce6", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2ef7-ffa61ced"
+who = 0x47002EF7
+line = { table = 0x25001AB1, string = 0xFFA61CED }
+how = "tell"
+when = "give"
+quest = 0x40000071
+update = "advance"
+phase = 4
+item = 0x47000898
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c2c3d43d", confidence = "low", sample = { lines = 1, sessions = 1 } }

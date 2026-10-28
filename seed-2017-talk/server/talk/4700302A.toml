@@ -1,0 +1,81 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-302a-098e5251"
+who = 0x4700302A
+line = { table = 0x25002952, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002952, confidence = "low" }
+
+[[talk]]
+key = "t-302a-0db08ca3"
+who = 0x4700302A
+line = { table = 0x25002952, string = 0x0DB08CA3 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:d34a4241", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-302a-12c303c0"
+who = 0x4700302A
+line = { table = 0x25002952, string = 0x12C303C0 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4cf8b872", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-302a-3ecde13b"
+who = 0x4700302A
+line = { table = 0x25002952, string = 0x3ECDE13B }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:52d78a90", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-302a-3f7d50d6"
+who = 0x4700302A
+line = { table = 0x25002952, string = 0x3F7D50D6 }
+how = "tell"
+when = "use"
+quest = 0x4000032E
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:3669ae30", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-302a-63691d8f"
+who = 0x4700302A
+line = { table = 0x25002952, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:5df4086a", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-302a-85219c9e"
+who = 0x4700302A
+line = { table = 0x25002952, string = 0x85219C9E }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:e2a0d739", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-302a-b712d2a1"
+who = 0x4700302A
+line = { table = 0x25002952, string = 0xB712D2A1 }
+how = "tell"
+when = "use"
+quest = 0x4000032E
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ff5813e0", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-302a-f46840a9"
+who = 0x4700302A
+line = { table = 0x25002952, string = 0xF46840A9 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:0efcb01e", confidence = "low", sample = { lines = 1, sessions = 1 } }

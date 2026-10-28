@@ -1,0 +1,119 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2c80-0544e230"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0x0544E230 }
+line_name = "ID_AttackBlood"
+role = "combat"
+how = "tell"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250027D8, confidence = "high" }
+
+[[talk]]
+key = "t-2c80-0a05bf48"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0x0A05BF48 }
+line_name = "ID_AttackLightning"
+role = "combat"
+how = "tell"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250027D8, confidence = "high" }
+
+[[talk]]
+key = "t-2c80-156d3369"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0x156D3369 }
+line_name = "ID_AttackFire"
+role = "combat"
+how = "tell"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250027D8, confidence = "high" }
+
+[[talk]]
+key = "t-2c80-1f0e1270"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0x1F0E1270 }
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a6dbff1f", confidence = "medium", sample = { lines = 3, sessions = 2 } }
+
+[[talk]]
+key = "t-2c80-293c4fc9"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0x293C4FC9 }
+line_name = "ID_AttackIce"
+role = "combat"
+how = "tell"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250027D8, confidence = "high" }
+
+[[talk]]
+key = "t-2c80-5f0e1270"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0x5F0E1270 }
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:d776ed8a", confidence = "high", sample = { lines = 6, sessions = 4 } }
+
+[[talk]]
+key = "t-2c80-5f0e1271"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0x5F0E1271 }
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:073960da", confidence = "high", sample = { lines = 4, sessions = 4 } }
+
+[[talk]]
+key = "t-2c80-9f0e1270"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0x9F0E1270 }
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:0d9b3acf", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2c80-9f0e1273"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0x9F0E1273 }
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:e220b0c1", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2c80-ae658928"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0xAE658928 }
+line_name = "ID_Taunt2"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250027D8, confidence = "high" }
+
+[[talk]]
+key = "t-2c80-ae65892a"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0xAE65892A }
+line_name = "ID_Taunt3"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250027D8, confidence = "high" }
+
+[[talk]]
+key = "t-2c80-ae65892e"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0xAE65892E }
+line_name = "ID_Taunt1"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:865bf504", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2c80-df0e1270"
+who = 0x47002C80
+line = { table = 0x250027D8, string = 0xDF0E1270 }
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:125dd310", confidence = "low", sample = { lines = 2, sessions = 1 } }

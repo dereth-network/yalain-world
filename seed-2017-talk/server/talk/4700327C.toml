@@ -1,0 +1,30 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-327c-61ded4c0"
+who = 0x4700327C
+line = { table = 0x25002A5D, string = 0x61DED4C0 }
+how = "tell"
+when = "give"
+item = 0x47000538
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:be36700c", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-327c-a4a00eaf"
+who = 0x4700327C
+line = { table = 0x25002A5D, string = 0xA4A00EAF }
+line_name = "ID_Generic"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:68fb41e4", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-327c-df585032"
+who = 0x4700327C
+line = { table = 0x25002A5D, string = 0xDF585032 }
+line_name = "ID_GenericReturn"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A5D, confidence = "low" }

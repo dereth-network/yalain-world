@@ -1,0 +1,78 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3010-098e5251"
+who = 0x47003010
+line = { table = 0x25002945, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002945, confidence = "low" }
+
+[[talk]]
+key = "t-3010-0db08ca3"
+who = 0x47003010
+line = { table = 0x25002945, string = 0x0DB08CA3 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:f135376e", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3010-12c303c0"
+who = 0x47003010
+line = { table = 0x25002945, string = 0x12C303C0 }
+how = "tell"
+when = "use"
+quest = 0x40000330
+update = "complete"
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4418f582", confidence = "low", sample = { lines = 2, sessions = 1 } }
+
+[[talk]]
+key = "t-3010-3ecde13b"
+who = 0x47003010
+line = { table = 0x25002945, string = 0x3ECDE13B }
+how = "tell"
+when = "use"
+quest = 0x40000330
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:375364b2", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-3010-6103e404"
+who = 0x47003010
+line = { table = 0x25002945, string = 0x6103E404 }
+how = "tell"
+when = "use"
+quest = 0x40000330
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:9147015d", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-3010-63691d8f"
+who = 0x47003010
+line = { table = 0x25002945, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002945, confidence = "high" }
+
+[[talk]]
+key = "t-3010-645bab5b"
+who = 0x47003010
+line = { table = 0x25002945, string = 0x645BAB5B }
+how = "tell"
+when = "use"
+quest = 0x40000330
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:7fa09bdf", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-3010-85219c9e"
+who = 0x47003010
+line = { table = 0x25002945, string = 0x85219C9E }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:e5edebf8", confidence = "medium", sample = { lines = 2, sessions = 2 } }

@@ -1,0 +1,93 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-331f-09200efe"
+who = 0x4700331F
+line = { table = 0x25002AA9, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA9, confidence = "high" }
+
+[[talk]]
+key = "t-331f-156823fe"
+who = 0x4700331F
+line = { table = 0x25002AA9, string = 0x156823FE }
+line_name = "ID_Give_Any"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA9, confidence = "low" }
+
+[[talk]]
+key = "t-331f-2ae6122c"
+who = 0x4700331F
+line = { table = 0x25002AA9, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA9, confidence = "medium" }
+
+[[talk]]
+key = "t-331f-39c83565"
+who = 0x4700331F
+line = { table = 0x25002AA9, string = 0x39C83565 }
+line_name = "ID_HaveItem"
+role = "remind"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA9, confidence = "high" }
+
+[[talk]]
+key = "t-331f-4daf1f70"
+who = 0x4700331F
+line = { table = 0x25002AA9, string = 0x4DAF1F70 }
+line_name = "ID_Give_Phase1"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA9, confidence = "low" }
+
+[[talk]]
+key = "t-331f-68f492a3"
+who = 0x4700331F
+line = { table = 0x25002AA9, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA9, confidence = "high" }
+
+[[talk]]
+key = "t-331f-7de67da2"
+who = 0x4700331F
+line = { table = 0x25002AA9, string = 0x7DE67DA2 }
+line_name = "ID_Give_Other"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA9, confidence = "low" }
+
+[[talk]]
+key = "t-331f-bb4290f6"
+who = 0x4700331F
+line = { table = 0x25002AA9, string = 0xBB4290F6 }
+line_name = "ID_Complete"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA9, confidence = "high" }
+
+[[talk]]
+key = "t-331f-c8f69482"
+who = 0x4700331F
+line = { table = 0x25002AA9, string = 0xC8F69482 }
+line_name = "ID_TooHigh"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA9, confidence = "high" }

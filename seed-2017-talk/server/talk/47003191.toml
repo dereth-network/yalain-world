@@ -1,0 +1,21 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3191-61ae5111"
+who = 0x47003191
+line = { table = 0x25002A09, string = 0x61AE5111 }
+line_name = "ID_ReturnSpew"
+role = "refuse-give"
+how = "emote"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A09, confidence = "low" }
+
+[[talk]]
+key = "t-3191-faa20995"
+who = 0x47003191
+line = { table = 0x25002A09, string = 0xFAA20995 }
+line_name = "ID_Default"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A09, confidence = "high" }

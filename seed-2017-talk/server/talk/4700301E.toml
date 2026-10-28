@@ -1,0 +1,75 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-301e-09643513"
+who = 0x4700301E
+line = { table = 0x2500294C, string = 0x09643513 }
+line_name = "ID_QuestPhase2"
+role = "advance"
+how = "tell"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500294C, confidence = "medium" }
+
+[[talk]]
+key = "t-301e-098e5251"
+who = 0x4700301E
+line = { table = 0x2500294C, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500294C, confidence = "low" }
+
+[[talk]]
+key = "t-301e-2a6b091e"
+who = 0x4700301E
+line = { table = 0x2500294C, string = 0x2A6B091E }
+line_name = "ID_Quest"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500294C, confidence = "medium" }
+
+[[talk]]
+key = "t-301e-49643513"
+who = 0x4700301E
+line = { table = 0x2500294C, string = 0x49643513 }
+line_name = "ID_QuestPhase3"
+role = "advance"
+how = "tell"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500294C, confidence = "medium" }
+
+[[talk]]
+key = "t-301e-9913e672"
+who = 0x4700301E
+line = { table = 0x2500294C, string = 0x9913E672 }
+line_name = "ID_WrongKingdom"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500294C, confidence = "high" }
+
+[[talk]]
+key = "t-301e-b768190a"
+who = 0x4700301E
+line = { table = 0x2500294C, string = 0xB768190A }
+line_name = "ID_NoQuest"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500294C, confidence = "high" }
+
+[[talk]]
+key = "t-301e-c9643513"
+who = 0x4700301E
+line = { table = 0x2500294C, string = 0xC9643513 }
+line_name = "ID_QuestPhase1"
+role = "advance"
+how = "tell"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500294C, confidence = "medium" }

@@ -1,0 +1,12 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-30d8-2e280ff0"
+who = 0x470030D8
+line = { table = 0x250029A8, string = 0x2E280FF0 }
+line_name = "ID_Return"
+role = "remind"
+how = "tell"
+when = "give"
+quest = 0x80000196
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029A8, confidence = "high", fields = { quest = { from = "derived", rule = "talk-quest-name" } } }

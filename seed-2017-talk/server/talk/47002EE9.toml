@@ -1,0 +1,51 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2ee9-090d1676"
+who = 0x47002EE9
+line = { table = 0x250028B0, string = 0x090D1676 }
+line_name = "ID_Instructions_Obsidian"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028B0, confidence = "high" }
+
+[[talk]]
+key = "t-2ee9-098e5251"
+who = 0x47002EE9
+line = { table = 0x250028B0, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028B0, confidence = "low" }
+
+[[talk]]
+key = "t-2ee9-0acf61ed"
+who = 0x47002EE9
+line = { table = 0x250028B0, string = 0x0ACF61ED }
+line_name = "ID_Instructions_Deruwood"
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028B0, confidence = "high" }
+
+[[talk]]
+key = "t-2ee9-77519432"
+who = 0x47002EE9
+line = { table = 0x250028B0, string = 0x77519432 }
+line_name = "ID_Instructions_Coal"
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028B0, confidence = "high" }
+
+[[talk]]
+key = "t-2ee9-efcd896a"
+who = 0x47002EE9
+line = { table = 0x250028B0, string = 0xEFCD896A }
+line_name = "ID_Instructions_Pyreal"
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028B0, confidence = "high" }

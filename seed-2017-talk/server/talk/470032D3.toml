@@ -1,0 +1,84 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-32d3-09200efe"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "high" }
+
+[[talk]]
+key = "t-32d3-2530079c"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x2530079C }
+line_name = "ID_Give_Moonshine"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "low" }
+
+[[talk]]
+key = "t-32d3-7d9e3d81"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x7D9E3D81 }
+line_name = "ID_Give_Shwarma"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "low" }
+
+[[talk]]
+key = "t-32d3-7de67da2"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x7DE67DA2 }
+line_name = "ID_Give_Other"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "low" }
+
+[[talk]]
+key = "t-32d3-8b6b1869"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x8B6B1869 }
+line_name = "ID_Phase2"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "medium" }
+
+[[talk]]
+key = "t-32d3-8b6b186b"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x8B6B186B }
+line_name = "ID_Phase3"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "medium" }
+
+[[talk]]
+key = "t-32d3-a3c06cc4"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0xA3C06CC4 }
+line_name = "ID_Give_EmptyJug"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "low" }
+
+[[talk]]
+key = "t-32d3-ef3e7afc"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0xEF3E7AFC }
+line_name = "ID_DonePhase3"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "high" }

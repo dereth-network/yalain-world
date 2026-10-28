@@ -1,0 +1,74 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2f5e-08204d9c"
+who = 0x47002F5E
+line = { table = 0x250028EB, string = 0x08204D9C }
+line_name = "ID_Idle1"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028EB, confidence = "high" }
+
+[[talk]]
+key = "t-2f5e-08204e9c"
+who = 0x47002F5E
+line = { table = 0x250028EB, string = 0x08204E9C }
+line_name = "ID_Idle2"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028EB, confidence = "high" }
+
+[[talk]]
+key = "t-2f5e-098e5251"
+who = 0x47002F5E
+line = { table = 0x250028EB, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028EB, confidence = "low" }
+
+[[talk]]
+key = "t-2f5e-2a6b0978"
+who = 0x47002F5E
+line = { table = 0x250028EB, string = 0x2A6B0978 }
+line_name = "ID_Quest3"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028EB, confidence = "medium" }
+
+[[talk]]
+key = "t-2f5e-2a6b097a"
+who = 0x47002F5E
+line = { table = 0x250028EB, string = 0x2A6B097A }
+line_name = "ID_Quest2"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028EB, confidence = "medium" }
+
+[[talk]]
+key = "t-2f5e-2a6b097c"
+who = 0x47002F5E
+line = { table = 0x250028EB, string = 0x2A6B097C }
+line_name = "ID_Quest1"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028EB, confidence = "medium" }
+
+[[talk]]
+key = "t-2f5e-b768190a"
+who = 0x47002F5E
+line = { table = 0x250028EB, string = 0xB768190A }
+line_name = "ID_NoQuest"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028EB, confidence = "high" }

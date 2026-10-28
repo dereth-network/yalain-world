@@ -1,0 +1,32 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-332d-09643513"
+who = 0x4700332D
+line = { table = 0x25002AB0, string = 0x09643513 }
+line_name = "ID_QuestPhase2"
+role = "advance"
+how = "tell"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AB0, confidence = "medium" }
+
+[[talk]]
+key = "t-332d-1bcb4aed"
+who = 0x4700332D
+line = { table = 0x25002AB0, string = 0x1BCB4AED }
+line_name = "ID_WrongItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AB0, confidence = "low" }
+
+[[talk]]
+key = "t-332d-61b457e8"
+who = 0x4700332D
+line = { table = 0x25002AB0, string = 0x61B457E8 }
+line_name = "ID_QuestUnderway"
+role = "remind"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AB0, confidence = "high" }

@@ -1,0 +1,61 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3034-098e5251"
+who = 0x47003034
+line = { table = 0x25002955, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002955, confidence = "low" }
+
+[[talk]]
+key = "t-3034-12c303c0"
+who = 0x47003034
+line = { table = 0x25002955, string = 0x12C303C0 }
+how = "tell"
+when = "use"
+quest = 0x4000032A
+update = "bestow"
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:bd3566c7", confidence = "low", sample = { lines = 2, sessions = 1 } }
+
+[[talk]]
+key = "t-3034-366d4fe4"
+who = 0x47003034
+line = { table = 0x25002955, string = 0x366D4FE4 }
+how = "tell"
+when = "use"
+quest = 0x4000032A
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4ad82aed", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3034-63691d8f"
+who = 0x47003034
+line = { table = 0x25002955, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002955, confidence = "high" }
+
+[[talk]]
+key = "t-3034-85219c9e"
+who = 0x47003034
+line = { table = 0x25002955, string = 0x85219C9E }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c6e0995b", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-3034-cbdaf6e1"
+who = 0x47003034
+line = { table = 0x25002955, string = 0xCBDAF6E1 }
+how = "tell"
+when = "give"
+quest = 0x4000032A
+update = "complete"
+item = 0x470014F2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:50b00004", confidence = "low", sample = { lines = 1, sessions = 1 } }

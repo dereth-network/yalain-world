@@ -1,0 +1,21 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-169f-83df378c"
+who = 0x4700169F
+line = { table = 0x25002A0B, string = 0x83DF378C }
+line_name = "ID_Default_Spew"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A0B, confidence = "high" }
+
+[[talk]]
+key = "t-169f-d172f7ef"
+who = 0x4700169F
+line = { table = 0x25002A0B, string = 0xD172F7EF }
+line_name = "ID_Teleport_Spew"
+role = "teleport"
+how = "emote"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A0B, confidence = "high" }

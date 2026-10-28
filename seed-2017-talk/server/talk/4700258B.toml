@@ -1,0 +1,12 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-258b-47c22343"
+who = 0x4700258B
+line = { table = 0x25002582, string = 0x47C22343 }
+line_name = "ID_Fail_AdminMedHoard3"
+role = "fail"
+how = "tell"
+when = "use"
+update = "fail"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002582, confidence = "medium" }

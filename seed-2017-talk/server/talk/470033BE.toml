@@ -1,0 +1,63 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-33be-7d07c9ad"
+who = 0x470033BE
+line = { table = 0x25002AF3, string = 0x7D07C9AD }
+line_name = "ID_UseFriend1"
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:45c178c3", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-33be-7d07c9cd"
+who = 0x470033BE
+line = { table = 0x25002AF3, string = 0x7D07C9CD }
+line_name = "ID_UseFriend2"
+role = "use"
+how = "tell"
+when = "use"
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:45c178c3", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-33be-7d07c9ed"
+who = 0x470033BE
+line = { table = 0x25002AF3, string = 0x7D07C9ED }
+line_name = "ID_UseFriend3"
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AF3, confidence = "high" }
+
+[[talk]]
+key = "t-33be-b97576a5"
+who = 0x470033BE
+line = { table = 0x25002AF3, string = 0xB97576A5 }
+how = "tell"
+when = "use"
+order = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:45c178c3", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-33be-bb462af6"
+who = 0x470033BE
+line = { table = 0x25002AF3, string = 0xBB462AF6 }
+line_name = "ID_CompleteKP"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AF3, confidence = "high" }
+
+[[talk]]
+key = "t-33be-bb471af6"
+who = 0x470033BE
+line = { table = 0x25002AF3, string = 0xBB471AF6 }
+line_name = "ID_CompleteXP"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AF3, confidence = "high" }

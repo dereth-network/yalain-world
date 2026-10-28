@@ -1,0 +1,53 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-31b6-2ae6122c"
+who = 0x470031B6
+line = { table = 0x25002A1F, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "give"
+item = 0x47000AFD
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:1ddfdfbd", confidence = "high", sample = { lines = 3, sessions = 3 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-31b6-63691d8f"
+who = 0x470031B6
+line = { table = 0x25002A1F, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A1F, confidence = "high" }
+
+[[talk]]
+key = "t-31b6-aea07c7d"
+who = 0x470031B6
+line = { table = 0x25002A1F, string = 0xAEA07C7D }
+line_name = "ID_Give"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A1F, confidence = "low" }
+
+[[talk]]
+key = "t-31b6-e14eb19f"
+who = 0x470031B6
+line = { table = 0x25002A1F, string = 0xE14EB19F }
+line_name = "ID_NeedPyreal"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A1F, confidence = "high" }
+
+[[talk]]
+key = "t-31b6-f2ae9daa"
+who = 0x470031B6
+line = { table = 0x25002A1F, string = 0xF2AE9DAA }
+line_name = "ID_DoPhase1"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A1F, confidence = "medium" }

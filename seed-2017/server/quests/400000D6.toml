@@ -6,6 +6,7 @@ id_name = "QuestSeekSlavetakersHead"
 state = 0x6F000D6C
 challenge = 20
 duration = 172800
+retry = 72000
 xp = 5000
 cancellable = true
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:49ac7801", confidence = "high", sample = { sessions = 7 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000D6C }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000D6C } } }

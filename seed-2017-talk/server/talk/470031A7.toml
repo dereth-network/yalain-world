@@ -1,0 +1,74 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-31a7-29d64f38"
+who = 0x470031A7
+line = { table = 0x25002A17, string = 0x29D64F38 }
+line_name = "ID_GiveOrange"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A17, confidence = "low" }
+
+[[talk]]
+key = "t-31a7-2e280ff0"
+who = 0x470031A7
+line = { table = 0x25002A17, string = 0x2E280FF0 }
+line_name = "ID_Return"
+role = "remind"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A17, confidence = "high" }
+
+[[talk]]
+key = "t-31a7-398edb98"
+who = 0x470031A7
+line = { table = 0x25002A17, string = 0x398EDB98 }
+line_name = "ID_GiveGreen"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A17, confidence = "low" }
+
+[[talk]]
+key = "t-31a7-6526e036"
+who = 0x470031A7
+line = { table = 0x25002A17, string = 0x6526E036 }
+line_name = "ID_GivePurple"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A17, confidence = "low" }
+
+[[talk]]
+key = "t-31a7-8dc612b7"
+who = 0x470031A7
+line = { table = 0x25002A17, string = 0x8DC612B7 }
+line_name = "ID_BeginMid"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A17, confidence = "medium" }
+
+[[talk]]
+key = "t-31a7-8dd892bd"
+who = 0x470031A7
+line = { table = 0x25002A17, string = 0x8DD892BD }
+line_name = "ID_BeginHigh"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A17, confidence = "medium" }
+
+[[talk]]
+key = "t-31a7-955e12b5"
+who = 0x470031A7
+line = { table = 0x25002A17, string = 0x955E12B5 }
+line_name = "ID_BeginLow"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A17, confidence = "medium" }

@@ -1,0 +1,11 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2643-af8a4c65"
+who = 0x47002643
+line = { table = 0x250025B7, string = 0xAF8A4C65 }
+line_name = "ID_Tell_Taunt"
+role = "combat"
+how = "tell"
+when = "attack"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:407ab02f", confidence = "low", sample = { lines = 4, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

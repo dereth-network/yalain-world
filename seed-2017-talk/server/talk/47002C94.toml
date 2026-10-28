@@ -1,0 +1,41 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2c94-ad48fd3c"
+who = 0x47002C94
+line = { table = 0x250027E4, string = 0xAD48FD3C }
+line_name = "ID_Say4"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250027E4, confidence = "high" }
+
+[[talk]]
+key = "t-2c94-ad4a7d3c"
+who = 0x47002C94
+line = { table = 0x250027E4, string = 0xAD4A7D3C }
+line_name = "ID_Say1"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250027E4, confidence = "high" }
+
+[[talk]]
+key = "t-2c94-ad4b7d3c"
+who = 0x47002C94
+line = { table = 0x250027E4, string = 0xAD4B7D3C }
+line_name = "ID_Say3"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ea6bd6fd", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2c94-ad4bfd3c"
+who = 0x47002C94
+line = { table = 0x250027E4, string = 0xAD4BFD3C }
+line_name = "ID_Say2"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250027E4, confidence = "high" }

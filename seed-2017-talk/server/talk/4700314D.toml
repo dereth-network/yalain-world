@@ -1,0 +1,51 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-314d-2e280ff0"
+who = 0x4700314D
+line = { table = 0x250029E6, string = 0x2E280FF0 }
+line_name = "ID_Return"
+role = "remind"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E6, confidence = "high" }
+
+[[talk]]
+key = "t-314d-64605307"
+who = 0x4700314D
+line = { table = 0x250029E6, string = 0x64605307 }
+line_name = "ID_RecipeSpew"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E6, confidence = "high" }
+
+[[talk]]
+key = "t-314d-7ddedebe"
+who = 0x4700314D
+line = { table = 0x250029E6, string = 0x7DDEDEBE }
+line_name = "ID_GiveTatoo0"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E6, confidence = "low" }
+
+[[talk]]
+key = "t-314d-e7af0477"
+who = 0x4700314D
+line = { table = 0x250029E6, string = 0xE7AF0477 }
+line_name = "ID_RandomSay4"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E6, confidence = "high" }
+
+[[talk]]
+key = "t-314d-e7af04d7"
+who = 0x4700314D
+line = { table = 0x250029E6, string = 0xE7AF04D7 }
+line_name = "ID_RandomSay1"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E6, confidence = "high" }

@@ -1,0 +1,63 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-26bf-08204d9c"
+who = 0x470026BF
+line = { table = 0x250025E9, string = 0x08204D9C }
+line_name = "ID_Idle1"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250025E9, confidence = "high" }
+
+[[talk]]
+key = "t-26bf-08204e9c"
+who = 0x470026BF
+line = { table = 0x250025E9, string = 0x08204E9C }
+line_name = "ID_Idle2"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250025E9, confidence = "high" }
+
+[[talk]]
+key = "t-26bf-ae658924"
+who = 0x470026BF
+line = { table = 0x250025E9, string = 0xAE658924 }
+line_name = "ID_Taunt4"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:f92d3ee1", confidence = "low", sample = { lines = 2, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-26bf-ae658928"
+who = 0x470026BF
+line = { table = 0x250025E9, string = 0xAE658928 }
+line_name = "ID_Taunt2"
+role = "combat"
+how = "say"
+when = "attack"
+order = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:b306b3f4", confidence = "low", sample = { lines = 2, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-26bf-ae65892a"
+who = 0x470026BF
+line = { table = 0x250025E9, string = 0xAE65892A }
+line_name = "ID_Taunt3"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:fb1391c7", confidence = "low", sample = { lines = 2, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-26bf-ae65892e"
+who = 0x470026BF
+line = { table = 0x250025E9, string = 0xAE65892E }
+line_name = "ID_Taunt1"
+role = "combat"
+how = "say"
+when = "attack"
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:29b2cbb3", confidence = "low", sample = { lines = 2, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

@@ -61,6 +61,7 @@ update = "advance"
 phase = 5
 xp = 40
 gives = [0x47001AEE, 0x47001AEF, 0x47001AF0]
+takes = [0x47001AF1]
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:156325d4", confidence = "low", sample = { sessions = 1 }, fields = { trigger = { from = "authored" } } }
 
 [[step]]
@@ -83,3 +84,24 @@ update = "advance"
 phase = 8
 xp = 65
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:d49c865c", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "s8"
+quest = 0x40000088
+needs = 6
+trigger = { use = 0x47001AED, on = 0x47001CE8 }
+update = "advance"
+phase = 7
+xp = 0
+takes = [0x47001AED]
+to = "p-0298014d"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:e01eede8", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "s9"
+quest = 0x40000088
+needs = 8
+trigger = { arrive = 0x47001BFF }
+update = "complete"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:d687c146", confidence = "medium", sample = { sessions = 2 } }

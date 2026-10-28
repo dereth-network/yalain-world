@@ -10,6 +10,9 @@ The world is built up from a collection of TOML-based rows, described in [FORMAT
 
 `seed-2017/` was derived from community pcap archives generated in January 2017.
 
+`seed-2017-talk/` is what NPCs say and when: the lines heard in those recordings, plus the other
+lines in each NPC's string table, placed by what their names say they are for.
+
 Every row's `prov` says where it came from: `capture` (measured; with an `AC2-EVID-...` evidence handle naming the extraction, an opaque reference to the recording, the confidence and the sample counts), `derived` (computed by a rule listed in FORMAT.md), `dat` (a record rooted in the client DATs) or `authored` (written by a person).
 
 ## What's Missing
@@ -26,20 +29,20 @@ A lot. There is no known server data to reference, so most of the world is missi
 | item magic effects | 720 | none |
 | store templates | 1,008 | 12 with listings |
 | storekeeper templates | 126 | 17 placed |
-| quests | 2,323 | 251, one with its steps |
-| lines in NPCs' string tables | 51,296 | a greeting and the training hall's lines |
+| quests | 2,323 | 252, 18 with their steps |
+| lines in NPCs' string tables | 51,296 | 5,510, 1,033 of them heard in 2017 |
 
 ## Contributing
 
-The seed pack, `seed-2017/`, is written by the project's seed builder from the recordings and is
-never edited by hand. Changes go in authored packs that lie on top of it:
+The seed packs, `seed-2017/` and `seed-2017-talk/`, are written by the project's builders from the
+recordings and are never edited by hand. Changes go in authored packs that lie on top of them:
 
 - **`fill-<area>/`** fills a hole: people in a town, camps in a valley, a quest's steps
   (`fill-millstone`, `fill-quest-kill-red-wasps`).
 - **`fix-<topic>/`** corrects seed rows: it sets a row with the same key, and `world.toml` says it
   wins (`[[override]] pack = "fix-arwic-camps" over = "seed-2017"`).
 
-A pack is listed in `world.toml`'s `packs`, after `seed-2017`. Write rows with `prov = { from =
+A pack is listed in `world.toml`'s `packs`, after the seed packs. Write rows with `prov = { from =
 "authored" }` (and `by`, `note` if you like). Never paste the game's own text into a row: reference
 it by string id. New text a world needs belongs, by preference, in new string-table entries of that
 world's data overlay, referenced by id; a `*_text` field holds it only when that is not possible.

@@ -6,6 +6,62 @@ id_name = "QuestDrudgeWindmill"
 state = 0x6F0007EB
 challenge = 6
 duration = 86400
+retry = 72000
 xp = 200
 cancellable = true
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:a6495126", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0007EB }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F0007EB } } }
+
+[[step]]
+key = "s1"
+quest = 0x400000C7
+needs = 0
+trigger = { use = 0x47002FBC }
+tell = { table = 0x2500291D, string = 0x2AE6122C }
+update = "bestow"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:e714b6f5", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "s2"
+quest = 0x400000C7
+needs = 1
+trigger = { use = 0x47001425 }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:26e419a0", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "s3"
+quest = 0x400000C7
+needs = 2
+trigger = { use = 0x47002FBC }
+tell = { table = 0x2500291D, string = 0x2B6BFC7C }
+update = "advance"
+phase = 3
+xp = 0
+gives = [0x47001423]
+takes = [0x470006C6]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:f6ed6866", confidence = "medium", sample = { sessions = 2 }, fields = { trigger = { from = "authored" } } }
+
+[[step]]
+key = "s4"
+quest = 0x400000C7
+needs = 3
+trigger = { use = 0x47002DE8 }
+update = "advance"
+phase = 4
+xp = 0
+takes = [0x47001423]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:92c88129", confidence = "medium", sample = { sessions = 2 }, fields = { trigger = { from = "authored" } } }
+
+[[step]]
+key = "s5"
+quest = 0x400000C7
+needs = 4
+trigger = { use = 0x47002FBC }
+tell = { table = 0x2500291D, string = 0xA3033C8E }
+update = "complete"
+xp = 200
+gives = [0x470010B5]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:e463bc8b", confidence = "medium", sample = { sessions = 2 } }

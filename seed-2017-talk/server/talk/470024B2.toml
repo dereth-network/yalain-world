@@ -1,0 +1,71 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-24b2-2e280ff0"
+who = 0x470024B2
+line = { table = 0x2500253C, string = 0x2E280FF0 }
+line_name = "ID_Return"
+role = "remind"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500253C, confidence = "high" }
+
+[[talk]]
+key = "t-24b2-7dded89e"
+who = 0x470024B2
+line = { table = 0x2500253C, string = 0x7DDED89E }
+line_name = "ID_GiveBaton1"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500253C, confidence = "low" }
+
+[[talk]]
+key = "t-24b2-7dded8fe"
+who = 0x470024B2
+line = { table = 0x2500253C, string = 0x7DDED8FE }
+line_name = "ID_GiveBaton2"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500253C, confidence = "low" }
+
+[[talk]]
+key = "t-24b2-e3800d93"
+who = 0x470024B2
+line = { table = 0x2500253C, string = 0xE3800D93 }
+line_name = "ID_Teleport"
+role = "teleport"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500253C, confidence = "high" }
+
+[[talk]]
+key = "t-24b2-e7af0477"
+who = 0x470024B2
+line = { table = 0x2500253C, string = 0xE7AF0477 }
+line_name = "ID_RandomSay4"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500253C, confidence = "high" }
+
+[[talk]]
+key = "t-24b2-e7af04d7"
+who = 0x470024B2
+line = { table = 0x2500253C, string = 0xE7AF04D7 }
+line_name = "ID_RandomSay1"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500253C, confidence = "high" }
+
+[[talk]]
+key = "t-24b2-faa20995"
+who = 0x470024B2
+line = { table = 0x2500253C, string = 0xFAA20995 }
+line_name = "ID_Default"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500253C, confidence = "high" }

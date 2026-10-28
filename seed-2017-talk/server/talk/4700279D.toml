@@ -1,0 +1,49 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-279d-4de50d1c"
+who = 0x4700279D
+line = { table = 0x2500261D, string = 0x4DE50D1C }
+line_name = "ID_DetectedLugian"
+role = "near"
+how = "say"
+when = "near"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:e02dc06d", confidence = "low", sample = { lines = 2, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-279d-8bf6e13f"
+who = 0x4700279D
+line = { table = 0x2500261D, string = 0x8BF6E13F }
+line_name = "ID_DetectedOther"
+role = "near"
+how = "say"
+when = "near"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500261D, confidence = "high" }
+
+[[talk]]
+key = "t-279d-c9ea911e"
+who = 0x4700279D
+line = { table = 0x2500261D, string = 0xC9EA911E }
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:3c01ba9e", confidence = "low", sample = { lines = 4, sessions = 1 } }
+
+[[talk]]
+key = "t-279d-cb639bf8"
+who = 0x4700279D
+line = { table = 0x2500261D, string = 0xCB639BF8 }
+line_name = "ID_DetectedDrudge"
+role = "near"
+how = "say"
+when = "near"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500261D, confidence = "high" }
+
+[[talk]]
+key = "t-279d-f5f6899e"
+who = 0x4700279D
+line = { table = 0x2500261D, string = 0xF5F6899E }
+line_name = "ID_DetectedEmpyrean"
+role = "near"
+how = "say"
+when = "near"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500261D, confidence = "high" }

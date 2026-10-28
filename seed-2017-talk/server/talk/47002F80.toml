@@ -1,0 +1,41 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2f80-5bdbfe19"
+who = 0x47002F80
+line = { table = 0x250028FC, string = 0x5BDBFE19 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:b73075ff", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2f80-9142b893"
+who = 0x47002F80
+line = { table = 0x250028FC, string = 0x9142B893 }
+line_name = "ID_DeepDone"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028FC, confidence = "high" }
+
+[[talk]]
+key = "t-2f80-9bbade1b"
+who = 0x47002F80
+line = { table = 0x250028FC, string = 0x9BBADE1B }
+line_name = "ID_ChthonicDone"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028FC, confidence = "high" }
+
+[[talk]]
+key = "t-2f80-aea07c7d"
+who = 0x47002F80
+line = { table = 0x250028FC, string = 0xAEA07C7D }
+line_name = "ID_Give"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028FC, confidence = "low" }

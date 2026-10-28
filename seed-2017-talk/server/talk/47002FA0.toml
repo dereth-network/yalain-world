@@ -1,0 +1,37 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2fa0-2ae6122c"
+who = 0x47002FA0
+line = { table = 0x25001AB7, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x4000006E
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a29b32e4", confidence = "medium", sample = { lines = 2, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2fa0-bbe318f5"
+who = 0x47002FA0
+line = { table = 0x25001AB7, string = 0xBBE318F5 }
+line_name = "ID_Succeed"
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x4000006E
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:fa8a54b6", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2fa0-ff6818cb"
+who = 0x47002FA0
+line = { table = 0x25001AB7, string = 0xFF6818CB }
+line_name = "ID_Request"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x4000006E
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:fe3db35f", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

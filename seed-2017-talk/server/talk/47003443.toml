@@ -1,0 +1,31 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3443-2413d36c"
+who = 0x47003443
+line = { table = 0x25002B43, string = 0x2413D36C }
+line_name = "ID_Use_Summoner"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B43, confidence = "high" }
+
+[[talk]]
+key = "t-3443-790023e0"
+who = 0x47003443
+line = { table = 0x25002B43, string = 0x790023E0 }
+line_name = "ID_Give_Nut"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B43, confidence = "low" }
+
+[[talk]]
+key = "t-3443-9adbf761"
+who = 0x47003443
+line = { table = 0x25002B43, string = 0x9ADBF761 }
+line_name = "ID_AttackedMagicWhistle8"
+role = "combat"
+how = "tell"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B43, confidence = "high" }

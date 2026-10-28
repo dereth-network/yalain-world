@@ -1,0 +1,129 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3280-0326a0a5"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0x0326A0A5 }
+how = "tell"
+when = "use"
+quest = 0x80000342
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:6ce96d00", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3280-04577ae0"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0x04577AE0 }
+how = "tell"
+when = "give"
+quest = 0x80000344
+update = "complete"
+item = 0x4700184E
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4a44240d", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3280-04577ae4"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0x04577AE4 }
+how = "tell"
+when = "give"
+quest = 0x80000344
+update = "complete"
+item = 0x4700184E
+order = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4a44240d", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3280-04577ae6"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0x04577AE6 }
+how = "emote"
+when = "give"
+quest = 0x80000344
+update = "complete"
+item = 0x4700184E
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4a44240d", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3280-04577aea"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0x04577AEA }
+how = "tell"
+when = "give"
+quest = 0x80000344
+update = "complete"
+item = 0x4700184E
+order = 3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4a44240d", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3280-1c9b7fe8"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0x1C9B7FE8 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c924817f", confidence = "low", sample = { lines = 2, sessions = 1 } }
+
+[[talk]]
+key = "t-3280-5575bc07"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0x5575BC07 }
+how = "tell"
+when = "use"
+quest = 0x80000344
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:72887cf5", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3280-57b5590d"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0x57B5590D }
+how = "tell"
+when = "use"
+quest = 0x80000342
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:0d115a3a", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3280-76de23ce"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0x76DE23CE }
+how = "tell"
+when = "give"
+quest = 0x80000342
+update = "complete"
+item = 0x47001858
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:60d8fd59", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3280-a4a00eaf"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0xA4A00EAF }
+line_name = "ID_Generic"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:f9455830", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3280-c3ff936e"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0xC3FF936E }
+how = "tell"
+when = "use"
+quest = 0x80000344
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:edb5b83d", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3280-df585032"
+who = 0x47003280
+line = { table = 0x25002A5F, string = 0xDF585032 }
+line_name = "ID_GenericReturn"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A5F, confidence = "low" }

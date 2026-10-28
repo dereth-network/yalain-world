@@ -1,0 +1,39 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2adb-098e5251"
+who = 0x47002ADB
+line = { table = 0x250025D9, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250025D9, confidence = "low" }
+
+[[talk]]
+key = "t-2adb-2824938c"
+who = 0x47002ADB
+line = { table = 0x250025D9, string = 0x2824938C }
+line_name = "ID_Hello"
+role = "near"
+how = "tell"
+when = "near"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250025D9, confidence = "high" }
+
+[[talk]]
+key = "t-2adb-66e20589"
+who = 0x47002ADB
+line = { table = 0x250025D9, string = 0x66E20589 }
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:74992563", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2adb-fce09e8e"
+who = 0x47002ADB
+line = { table = 0x250025D9, string = 0xFCE09E8E }
+line_name = "ID_Goodbye"
+role = "death"
+how = "emote"
+when = "death"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250025D9, confidence = "low" }

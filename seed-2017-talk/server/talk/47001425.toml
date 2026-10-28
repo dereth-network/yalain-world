@@ -1,0 +1,11 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-1425-e7e318d9"
+who = 0x47001425
+line = { table = 0x25001F60, string = 0xE7E318D9 }
+line_name = "ID_Success"
+role = "complete"
+how = "emote"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:531deabf", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

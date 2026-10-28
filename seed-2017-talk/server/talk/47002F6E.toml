@@ -1,0 +1,72 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2f6e-2ae6122c"
+who = 0x47002F6E
+line = { table = 0x25001AB5, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x40000069
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:42e01dbe", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2f6e-48e81b8d"
+who = 0x47002F6E
+line = { table = 0x25001AB5, string = 0x48E81B8D }
+how = "tell"
+when = "give"
+quest = 0x40000069
+update = "advance"
+phase = 0
+item = 0x47001331
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:21a8d65a", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2f6e-6fa07cdd"
+who = 0x47002F6E
+line = { table = 0x25001AB5, string = 0x6FA07CDD }
+line_name = "ID_More"
+role = "accept"
+how = "tell"
+when = "give"
+quest = 0x40000069
+update = "advance"
+phase = 0
+item = 0x47001332
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:fb949efb", confidence = "low", sample = { lines = 2, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2f6e-8b6b186f"
+who = 0x47002F6E
+line = { table = 0x25001AB5, string = 0x8B6B186F }
+line_name = "ID_Phase1"
+role = "advance"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:919ae4ec", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2f6e-bbe318f5"
+who = 0x47002F6E
+line = { table = 0x25001AB5, string = 0xBBE318F5 }
+line_name = "ID_Succeed"
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x40000069
+update = "complete"
+item = 0x47001330
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:6c59665b", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2f6e-d308ab8e"
+who = 0x47002F6E
+line = { table = 0x25001AB5, string = 0xD308AB8E }
+how = "tell"
+when = "give"
+item = 0x47001331
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:8fe50895", confidence = "low", sample = { lines = 1, sessions = 1 } }

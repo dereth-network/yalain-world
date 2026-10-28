@@ -1,0 +1,12 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3203-ef610400"
+who = 0x47003203
+line = { table = 0x25002A47, string = 0xEF610400 }
+line_name = "ID_QuestComplete"
+role = "complete"
+how = "tell"
+when = "give"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A47, confidence = "high" }

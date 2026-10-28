@@ -1,0 +1,65 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-32c2-09200efe"
+who = 0x470032C2
+line = { table = 0x25002A81, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A81, confidence = "high" }
+
+[[talk]]
+key = "t-32c2-68f492a3"
+who = 0x470032C2
+line = { table = 0x25002A81, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A81, confidence = "high" }
+
+[[talk]]
+key = "t-32c2-7de67da2"
+who = 0x470032C2
+line = { table = 0x25002A81, string = 0x7DE67DA2 }
+line_name = "ID_Give_Other"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A81, confidence = "low" }
+
+[[talk]]
+key = "t-32c2-e2e61292"
+who = 0x470032C2
+line = { table = 0x25002A81, string = 0xE2E61292 }
+line_name = "ID_Begin_2"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x800002D3
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:44f69af9", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-32c2-eee61292"
+who = 0x470032C2
+line = { table = 0x25002A81, string = 0xEEE61292 }
+line_name = "ID_Begin_1"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x800002D2
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a10604c7", confidence = "medium", sample = { lines = 2, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-32c2-f6e31868"
+who = 0x470032C2
+line = { table = 0x25002A81, string = 0xF6E31868 }
+how = "tell"
+when = "use"
+quest = 0x800002D2
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:0b553823", confidence = "low", sample = { lines = 1, sessions = 1 } }

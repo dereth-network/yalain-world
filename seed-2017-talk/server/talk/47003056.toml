@@ -1,0 +1,22 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3056-257c1464"
+who = 0x47003056
+line = { table = 0x25002967, string = 0x257C1464 }
+line_name = "ID_SuccessSpew"
+role = "complete"
+how = "emote"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002967, confidence = "high" }
+
+[[talk]]
+key = "t-3056-30b9998d"
+who = 0x47003056
+line = { table = 0x25002967, string = 0x30B9998D }
+line_name = "ID_NothingSpew"
+role = "refuse-use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002967, confidence = "high" }

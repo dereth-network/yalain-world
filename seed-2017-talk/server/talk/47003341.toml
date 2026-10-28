@@ -1,0 +1,86 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3341-098e5251"
+who = 0x47003341
+line = { table = 0x25002ABB, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ABB, confidence = "low" }
+
+[[talk]]
+key = "t-3341-2a6b091e"
+who = 0x47003341
+line = { table = 0x25002ABB, string = 0x2A6B091E }
+line_name = "ID_Quest"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ABB, confidence = "medium" }
+
+[[talk]]
+key = "t-3341-9768191a"
+who = 0x47003341
+line = { table = 0x25002ABB, string = 0x9768191A }
+line_name = "ID_OnQuest"
+role = "remind"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ABB, confidence = "high" }
+
+[[talk]]
+key = "t-3341-b768190a"
+who = 0x47003341
+line = { table = 0x25002ABB, string = 0xB768190A }
+line_name = "ID_NoQuest"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:5f347e4f", confidence = "high", sample = { lines = 3, sessions = 3 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3341-c2b3e64f"
+who = 0x47003341
+line = { table = 0x25002ABB, string = 0xC2B3E64F }
+line_name = "ID_CompleteQuest4"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ABB, confidence = "high" }
+
+[[talk]]
+key = "t-3341-c2b3e84f"
+who = 0x47003341
+line = { table = 0x25002ABB, string = 0xC2B3E84F }
+line_name = "ID_CompleteQuest3"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ABB, confidence = "high" }
+
+[[talk]]
+key = "t-3341-c2b3ea4f"
+who = 0x47003341
+line = { table = 0x25002ABB, string = 0xC2B3EA4F }
+line_name = "ID_CompleteQuest2"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ABB, confidence = "high" }
+
+[[talk]]
+key = "t-3341-c2b3ec4f"
+who = 0x47003341
+line = { table = 0x25002ABB, string = 0xC2B3EC4F }
+line_name = "ID_CompleteQuest1"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ABB, confidence = "high" }

@@ -1,0 +1,31 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-280b-0dc7cc17"
+who = 0x4700280B
+line = { table = 0x2500263A, string = 0x0DC7CC17 }
+line_name = "ID_Spew_Taunt"
+role = "combat"
+how = "emote"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500263A, confidence = "high" }
+
+[[talk]]
+key = "t-280b-7d9cbab8"
+who = 0x4700280B
+line = { table = 0x2500263A, string = 0x7D9CBAB8 }
+line_name = "ID_Broadcast_Death"
+role = "death"
+how = "emote"
+when = "death"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500263A, confidence = "low" }
+
+[[talk]]
+key = "t-280b-bf2befc5"
+who = 0x4700280B
+line = { table = 0x2500263A, string = 0xBF2BEFC5 }
+line_name = "ID_Tell_Death"
+role = "death"
+how = "tell"
+when = "death"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500263A, confidence = "low" }

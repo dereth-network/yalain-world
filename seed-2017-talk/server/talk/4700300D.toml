@@ -1,0 +1,24 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-300d-2a0f7fb9"
+who = 0x4700300D
+line = { table = 0x25002943, string = 0x2A0F7FB9 }
+line_name = "ID_AshesSpew"
+role = "use"
+how = "emote"
+when = "use"
+quest = 0x4000032F
+update = "advance"
+phase = 5
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:f60c9d5d", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-300d-30b9998d"
+who = 0x4700300D
+line = { table = 0x25002943, string = 0x30B9998D }
+line_name = "ID_NothingSpew"
+role = "refuse-use"
+how = "emote"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:d98a7b80", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

@@ -1,0 +1,88 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2ff5-098e5251"
+who = 0x47002FF5
+line = { table = 0x25002938, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002938, confidence = "low" }
+
+[[talk]]
+key = "t-2ff5-2fe893c2"
+who = 0x47002FF5
+line = { table = 0x25002938, string = 0x2FE893C2 }
+line_name = "ID_Bestow"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x400001F6
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:24c081cd", confidence = "high", sample = { lines = 5, sessions = 5 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2ff5-63691d8f"
+who = 0x47002FF5
+line = { table = 0x25002938, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:32ac406c", confidence = "high", sample = { lines = 10, sessions = 7 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2ff5-6b6b981e"
+who = 0x47002FF5
+line = { table = 0x25002938, string = 0x6B6B981E }
+line_name = "ID_Award"
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x400001F6
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c407c42b", confidence = "high", sample = { lines = 5, sessions = 5 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2ff5-9913e672"
+who = 0x47002FF5
+line = { table = 0x25002938, string = 0x9913E672 }
+line_name = "ID_WrongKingdom"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002938, confidence = "high" }
+
+[[talk]]
+key = "t-2ff5-d496181e"
+who = 0x47002FF5
+line = { table = 0x25002938, string = 0xD496181E }
+how = "tell"
+when = "use"
+quest = 0x400001F6
+update = "bestow"
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:02c9e9ef", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-2ff5-d496281e"
+who = 0x47002FF5
+line = { table = 0x25002938, string = 0xD496281E }
+how = "tell"
+when = "use"
+quest = 0x400001F6
+update = "bestow"
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:d783a1ca", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2ff5-d496381e"
+who = 0x47002FF5
+line = { table = 0x25002938, string = 0xD496381E }
+how = "tell"
+when = "use"
+quest = 0x400001F6
+update = "bestow"
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:24c081cd", confidence = "medium", sample = { lines = 4, sessions = 2 } }

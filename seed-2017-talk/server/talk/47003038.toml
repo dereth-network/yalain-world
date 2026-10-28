@@ -1,0 +1,42 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3038-098e5251"
+who = 0x47003038
+line = { table = 0x25002957, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002957, confidence = "low" }
+
+[[talk]]
+key = "t-3038-393f6d96"
+who = 0x47003038
+line = { table = 0x25002957, string = 0x393F6D96 }
+line_name = "ID_GiveQuest"
+role = "accept"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002957, confidence = "low" }
+
+[[talk]]
+key = "t-3038-b768190a"
+who = 0x47003038
+line = { table = 0x25002957, string = 0xB768190A }
+line_name = "ID_NoQuest"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002957, confidence = "high" }
+
+[[talk]]
+key = "t-3038-c2b38e4f"
+who = 0x47003038
+line = { table = 0x25002957, string = 0xC2B38E4F }
+line_name = "ID_CompleteQuest"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002957, confidence = "high" }

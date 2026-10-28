@@ -1,0 +1,55 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-32b4-098e5251"
+who = 0x470032B4
+line = { table = 0x25002A77, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A77, confidence = "low" }
+
+[[talk]]
+key = "t-32b4-70c6cdbe"
+who = 0x470032B4
+line = { table = 0x25002A77, string = 0x70C6CDBE }
+line_name = "ID_BestowQuest1"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A77, confidence = "medium" }
+
+[[talk]]
+key = "t-32b4-7146cdbe"
+who = 0x470032B4
+line = { table = 0x25002A77, string = 0x7146CDBE }
+line_name = "ID_BestowQuest2"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A77, confidence = "medium" }
+
+[[talk]]
+key = "t-32b4-71c6cdbe"
+who = 0x470032B4
+line = { table = 0x25002A77, string = 0x71C6CDBE }
+line_name = "ID_BestowQuest3"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A77, confidence = "medium" }
+
+[[talk]]
+key = "t-32b4-c2b38e4f"
+who = 0x470032B4
+line = { table = 0x25002A77, string = 0xC2B38E4F }
+line_name = "ID_CompleteQuest"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A77, confidence = "high" }

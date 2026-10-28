@@ -1,0 +1,62 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-334e-098e5251"
+who = 0x4700334E
+line = { table = 0x25002AC2, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC2, confidence = "low" }
+
+[[talk]]
+key = "t-334e-27e68c7b"
+who = 0x4700334E
+line = { table = 0x25002AC2, string = 0x27E68C7B }
+line_name = "ID_RandomChat2"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC2, confidence = "high" }
+
+[[talk]]
+key = "t-334e-67e68c7b"
+who = 0x4700334E
+line = { table = 0x25002AC2, string = 0x67E68C7B }
+line_name = "ID_RandomChat3"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC2, confidence = "high" }
+
+[[talk]]
+key = "t-334e-8f8dca2a"
+who = 0x4700334E
+line = { table = 0x25002AC2, string = 0x8F8DCA2A }
+how = "tell"
+when = "use"
+quest = 0x400001B1
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:b515ea29", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-334e-a7e68c7a"
+who = 0x4700334E
+line = { table = 0x25002AC2, string = 0xA7E68C7A }
+line_name = "ID_RandomChat4"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC2, confidence = "high" }
+
+[[talk]]
+key = "t-334e-e7e68c7b"
+who = 0x4700334E
+line = { table = 0x25002AC2, string = 0xE7E68C7B }
+line_name = "ID_RandomChat1"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC2, confidence = "high" }

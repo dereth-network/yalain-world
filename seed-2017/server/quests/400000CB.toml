@@ -8,3 +8,22 @@ challenge = -999
 duration = 172800
 cancellable = false
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:3a769fcf", confidence = "high", sample = { sessions = 4 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0007EC } } }
+
+[[step]]
+key = "s1"
+quest = 0x400000CB
+needs = 0
+trigger = { use = 0x47002FBC }
+tell = { table = 0x2500291D, string = 0xA3030C8E }
+update = "bestow"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:8db2b1c7", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "s2"
+quest = 0x400000CB
+needs = 1
+trigger = { use = 0x47002FA9 }
+update = "complete"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:a97149d4", confidence = "medium", sample = { sessions = 2 } }

@@ -1,0 +1,45 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-326d-0aa6e843"
+who = 0x4700326D
+line = { table = 0x25002A55, string = 0x0AA6E843 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:b98a0314", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-326d-6aa6e843"
+who = 0x4700326D
+line = { table = 0x25002A55, string = 0x6AA6E843 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:5627ad69", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-326d-7aa6e843"
+who = 0x4700326D
+line = { table = 0x25002A55, string = 0x7AA6E843 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:e3ada660", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-326d-a4a00eaf"
+who = 0x4700326D
+line = { table = 0x25002A55, string = 0xA4A00EAF }
+line_name = "ID_Generic"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:955627e1", confidence = "high", sample = { lines = 8, sessions = 8 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-326d-df585032"
+who = 0x4700326D
+line = { table = 0x25002A55, string = 0xDF585032 }
+line_name = "ID_GenericReturn"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A55, confidence = "low" }

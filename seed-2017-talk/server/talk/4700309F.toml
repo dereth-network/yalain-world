@@ -1,0 +1,42 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-309f-a964fc6c"
+who = 0x4700309F
+line = { table = 0x2500298D, string = 0xA964FC6C }
+line_name = "ID_Fail"
+role = "fail"
+how = "emote"
+when = "use"
+update = "fail"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298D, confidence = "medium" }
+
+[[talk]]
+key = "t-309f-be2399fa"
+who = 0x4700309F
+line = { table = 0x2500298D, string = 0xBE2399FA }
+line_name = "ID_Correct1"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298D, confidence = "low" }
+
+[[talk]]
+key = "t-309f-be3399fa"
+who = 0x4700309F
+line = { table = 0x2500298D, string = 0xBE3399FA }
+line_name = "ID_Correct3"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298D, confidence = "low" }
+
+[[talk]]
+key = "t-309f-be3b99fa"
+who = 0x4700309F
+line = { table = 0x2500298D, string = 0xBE3B99FA }
+line_name = "ID_Correct2"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298D, confidence = "low" }

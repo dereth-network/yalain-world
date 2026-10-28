@@ -1,0 +1,49 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-32e4-098e5251"
+who = 0x470032E4
+line = { table = 0x25002AA1, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA1, confidence = "low" }
+
+[[talk]]
+key = "t-32e4-1757acee"
+who = 0x470032E4
+line = { table = 0x25002AA1, string = 0x1757ACEE }
+line_name = "ID_Instructions__Xml0"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA1, confidence = "high" }
+
+[[talk]]
+key = "t-32e4-3dadc214"
+who = 0x470032E4
+line = { table = 0x25002AA1, string = 0x3DADC214 }
+line_name = "ID_Use_AcidBreath5"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA1, confidence = "high" }
+
+[[talk]]
+key = "t-32e4-50b7ce4a"
+who = 0x470032E4
+line = { table = 0x25002AA1, string = 0x50B7CE4A }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:d0c8b11a", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-32e4-faa20995"
+who = 0x470032E4
+line = { table = 0x25002AA1, string = 0xFAA20995 }
+line_name = "ID_Default"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AA1, confidence = "high" }

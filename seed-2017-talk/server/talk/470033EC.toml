@@ -1,0 +1,43 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-33ec-0255b44a"
+who = 0x470033EC
+line = { table = 0x25002B09, string = 0x0255B44A }
+line_name = "ID_Give_ErobalRemains"
+role = "refuse-give"
+how = "emote"
+when = "give"
+quest = 0x8000035E
+update = "advance"
+phase = 2
+item = 0x47001BAA
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:69649289", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-33ec-09200efe"
+who = 0x470033EC
+line = { table = 0x25002B09, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B09, confidence = "high" }
+
+[[talk]]
+key = "t-33ec-aea07c7d"
+who = 0x470033EC
+line = { table = 0x25002B09, string = 0xAEA07C7D }
+line_name = "ID_Give"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B09, confidence = "low" }
+
+[[talk]]
+key = "t-33ec-edf28164"
+who = 0x470033EC
+line = { table = 0x25002B09, string = 0xEDF28164 }
+how = "emote"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:80d366bc", confidence = "low", sample = { lines = 1, sessions = 1 } }

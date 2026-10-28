@@ -1,0 +1,37 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-302d-098e5251"
+who = 0x4700302D
+line = { table = 0x25002953, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002953, confidence = "low" }
+
+[[talk]]
+key = "t-302d-9291e909"
+who = 0x4700302D
+line = { table = 0x25002953, string = 0x9291E909 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:aa42d8e0", confidence = "high", sample = { lines = 4, sessions = 4 } }
+
+[[talk]]
+key = "t-302d-a2fef207"
+who = 0x4700302D
+line = { table = 0x25002953, string = 0xA2FEF207 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c4b58ecd", confidence = "high", sample = { lines = 14, sessions = 14 } }
+
+[[talk]]
+key = "t-302d-b768190a"
+who = 0x4700302D
+line = { table = 0x25002953, string = 0xB768190A }
+line_name = "ID_NoQuest"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002953, confidence = "high" }

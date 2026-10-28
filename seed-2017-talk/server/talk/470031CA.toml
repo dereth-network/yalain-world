@@ -1,0 +1,166 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-31ca-0b015d5a"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0x0B015D5A }
+line_name = "ID_DevolvedDone"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A25, confidence = "high" }
+
+[[talk]]
+key = "t-31ca-2ae6122c"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x400000FF
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:928011de", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-31ca-2c2e5fbd"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0x2C2E5FBD }
+how = "tell"
+when = "give"
+quest = 0x4000032D
+update = "advance"
+phase = 3
+item = 0x47000FF5
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:90814b20", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-31ca-39af6f92"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0x39AF6F92 }
+how = "tell"
+when = "give"
+quest = 0x4000032D
+update = "advance"
+phase = 4
+item = 0x470014F3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:fb88c208", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-31ca-63691d8f"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A25, confidence = "high" }
+
+[[talk]]
+key = "t-31ca-a964fc6c"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0xA964FC6C }
+line_name = "ID_Fail"
+role = "fail"
+how = "emote"
+when = "use"
+update = "fail"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A25, confidence = "medium" }
+
+[[talk]]
+key = "t-31ca-aea07c7d"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0xAEA07C7D }
+line_name = "ID_Give"
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x47000FF5
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:5ce0e523", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-31ca-cdaf2916"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0xCDAF2916 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:50975d5b", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-31ca-d5af2916"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0xD5AF2916 }
+how = "tell"
+when = "use"
+quest = 0x4000032D
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:32c640ca", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-31ca-d92f1935"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0xD92F1935 }
+how = "tell"
+when = "give"
+quest = 0x400000FF
+update = "advance"
+phase = 3
+item = 0x47001754
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:1d765f1a", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-31ca-d92f19f5"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0xD92F19F5 }
+how = "tell"
+when = "give"
+quest = 0x400000FF
+update = "advance"
+phase = 3
+item = 0x47001754
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:28666e88", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-31ca-f2869daa"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0xF2869DAA }
+line_name = "ID_DoPhase4"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A25, confidence = "medium" }
+
+[[talk]]
+key = "t-31ca-f2ae9daa"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0xF2AE9DAA }
+line_name = "ID_DoPhase1"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A25, confidence = "medium" }
+
+[[talk]]
+key = "t-31ca-f2b69daa"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0xF2B69DAA }
+line_name = "ID_DoPhase2"
+role = "offer"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:f642dd7d", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-31ca-f2be9daa"
+who = 0x470031CA
+line = { table = 0x25002A25, string = 0xF2BE9DAA }
+line_name = "ID_DoPhase3"
+role = "offer"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:64ed78e6", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

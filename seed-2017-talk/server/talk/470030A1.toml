@@ -1,0 +1,145 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-30a1-098e5251"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "low" }
+
+[[talk]]
+key = "t-30a1-27e68c7a"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0x27E68C7A }
+line_name = "ID_RandomChat6"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "high" }
+
+[[talk]]
+key = "t-30a1-27e68c7b"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0x27E68C7B }
+line_name = "ID_RandomChat2"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "high" }
+
+[[talk]]
+key = "t-30a1-3e21ff0e"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0x3E21FF0E }
+line_name = "ID_BestowQuestAltarUnlock"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "medium" }
+
+[[talk]]
+key = "t-30a1-4f04d5f6"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0x4F04D5F6 }
+line_name = "ID_RequestSliver"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "medium" }
+
+[[talk]]
+key = "t-30a1-63691d8f"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "high" }
+
+[[talk]]
+key = "t-30a1-67e68c7a"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0x67E68C7A }
+line_name = "ID_RandomChat7"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "high" }
+
+[[talk]]
+key = "t-30a1-67e68c7b"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0x67E68C7B }
+line_name = "ID_RandomChat3"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "high" }
+
+[[talk]]
+key = "t-30a1-8f8cca2a"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0x8F8CCA2A }
+how = "tell"
+when = "give"
+quest = 0x400001B0
+update = "advance"
+phase = 2
+item = 0x47000611
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a2fb1288", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-30a1-a7e68c79"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0xA7E68C79 }
+line_name = "ID_RandomChat8"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "high" }
+
+[[talk]]
+key = "t-30a1-a7e68c7a"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0xA7E68C7A }
+line_name = "ID_RandomChat4"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "high" }
+
+[[talk]]
+key = "t-30a1-ab877f8a"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0xAB877F8A }
+line_name = "ID_BonusSpew"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "high" }
+
+[[talk]]
+key = "t-30a1-e7e68c7a"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0xE7E68C7A }
+line_name = "ID_RandomChat5"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "high" }
+
+[[talk]]
+key = "t-30a1-e7e68c7b"
+who = 0x470030A1
+line = { table = 0x2500298E, string = 0xE7E68C7B }
+line_name = "ID_RandomChat1"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500298E, confidence = "high" }

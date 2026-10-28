@@ -1,0 +1,43 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-31ae-2ddf72b1"
+who = 0x470031AE
+line = { table = 0x25002A1B, string = 0x2DDF72B1 }
+line_name = "ID_Spew_Give"
+role = "use"
+how = "emote"
+when = "give"
+item = 0x47000B37
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:01e41695", confidence = "medium", sample = { lines = 3, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-31ae-5d779e06"
+who = 0x470031AE
+line = { table = 0x25002A1B, string = 0x5D779E06 }
+line_name = "ID_Spew_Bucket"
+role = "use"
+how = "emote"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A1B, confidence = "high" }
+
+[[talk]]
+key = "t-31ae-5d7eb29b"
+who = 0x470031AE
+line = { table = 0x25002A1B, string = 0x5D7EB29B }
+line_name = "ID_Spew_Ruby"
+role = "use"
+how = "emote"
+when = "give"
+item = 0x47000B38
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:af62d5d4", confidence = "medium", sample = { lines = 26, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-31ae-dbe7ff8e"
+who = 0x470031AE
+line = { table = 0x25002A1B, string = 0xDBE7FF8E }
+line_name = "ID_Spew_Examine"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A1B, confidence = "high" }

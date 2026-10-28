@@ -1,0 +1,56 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-32c1-09200efe"
+who = 0x470032C1
+line = { table = 0x25002A80, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:20a9600d", confidence = "medium", sample = { lines = 2, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-32c1-2ae6122c"
+who = 0x470032C1
+line = { table = 0x25002A80, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x800002DD
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:9dac3f93", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-32c1-68f492a3"
+who = 0x470032C1
+line = { table = 0x25002A80, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A80, confidence = "high" }
+
+[[talk]]
+key = "t-32c1-7de67da2"
+who = 0x470032C1
+line = { table = 0x25002A80, string = 0x7DE67DA2 }
+line_name = "ID_Give_Other"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A80, confidence = "low" }
+
+[[talk]]
+key = "t-32c1-edd23d79"
+who = 0x470032C1
+line = { table = 0x25002A80, string = 0xEDD23D79 }
+line_name = "ID_Give_Application"
+role = "refuse-give"
+how = "tell"
+when = "give"
+quest = 0x800002DD
+update = "complete"
+item = 0x470018E2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:72a56ba2", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

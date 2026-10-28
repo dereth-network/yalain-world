@@ -1,0 +1,21 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3284-4a5dc61f"
+who = 0x47003284
+line = { table = 0x25002A61, string = 0x4A5DC61F }
+line_name = "ID_WelcomeSpecial"
+role = "near"
+how = "say"
+when = "near"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A61, confidence = "high" }
+
+[[talk]]
+key = "t-3284-ceb9ecfc"
+who = 0x47003284
+line = { table = 0x25002A61, string = 0xCEB9ECFC }
+line_name = "ID_WelcomeNormal"
+role = "near"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:6a98e831", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

@@ -1,0 +1,37 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3049-34124e9f"
+who = 0x47003049
+line = { table = 0x25001ACF, string = 0x34124E9F }
+how = "emote"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:cebcc07c", confidence = "high", sample = { lines = 5, sessions = 5 } }
+
+[[talk]]
+key = "t-3049-5978fef1"
+who = 0x47003049
+line = { table = 0x25001ACF, string = 0x5978FEF1 }
+how = "emote"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:af8bf219", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3049-7dc52ebf"
+who = 0x47003049
+line = { table = 0x25001ACF, string = 0x7DC52EBF }
+line_name = "ID_Use_Spew"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25001ACF, confidence = "high" }
+
+[[talk]]
+key = "t-3049-ea52fd5e"
+who = 0x47003049
+line = { table = 0x25001ACF, string = 0xEA52FD5E }
+line_name = "ID_Use"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25001ACF, confidence = "high" }

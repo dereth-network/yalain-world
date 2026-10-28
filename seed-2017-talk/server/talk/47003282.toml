@@ -1,0 +1,155 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3282-098e5251"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A60, confidence = "low" }
+
+[[talk]]
+key = "t-3282-265ebd0f"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x265EBD0F }
+line_name = "ID_Chat_Default"
+role = "idle"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:cec95d03", confidence = "low", sample = { lines = 3, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3282-2e85394d"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x2E85394D }
+how = "tell"
+when = "give"
+quest = 0x80000376
+update = "complete"
+item = 0x4700184C
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a3dcc398", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3282-2e853951"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x2E853951 }
+how = "tell"
+when = "give"
+quest = 0x80000376
+update = "advance"
+phase = 4
+item = 0x47001852
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:f2b9e16b", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3282-2e853955"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x2E853955 }
+how = "tell"
+when = "give"
+quest = 0x80000376
+update = "advance"
+phase = 3
+item = 0x4700185F
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a70fb8de", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3282-2e853959"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x2E853959 }
+how = "tell"
+when = "use"
+quest = 0x80000376
+update = "advance"
+phase = 2
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:2bfaa575", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3282-2e95394d"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x2E95394D }
+how = "emote"
+when = "give"
+quest = 0x80000376
+update = "complete"
+item = 0x4700184C
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a3dcc398", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3282-2e953951"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x2E953951 }
+how = "emote"
+when = "idle"
+quest = 0x80000376
+update = "advance"
+phase = 4
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:f2b9e16b", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3282-2e953959"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x2E953959 }
+how = "tell"
+when = "use"
+quest = 0x80000376
+update = "advance"
+phase = 2
+order = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:2bfaa575", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3282-2eb53955"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x2EB53955 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a90d3a8a", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3282-2eb53959"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x2EB53959 }
+how = "tell"
+when = "use"
+quest = 0x80000376
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:2bfaa575", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3282-2ee5394d"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x2EE5394D }
+how = "tell"
+when = "give"
+quest = 0x80000376
+update = "complete"
+item = 0x4700184C
+order = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a3dcc398", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3282-2ee53951"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x2EE53951 }
+how = "tell"
+when = "give"
+quest = 0x80000376
+update = "advance"
+phase = 4
+item = 0x47001852
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:f2b9e16b", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3282-84e6dcbd"
+who = 0x47003282
+line = { table = 0x25002A60, string = 0x84E6DCBD }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:e915f902", confidence = "low", sample = { lines = 1, sessions = 1 } }

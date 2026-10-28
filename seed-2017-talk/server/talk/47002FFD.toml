@@ -1,0 +1,44 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2ffd-380b9d48"
+who = 0x47002FFD
+line = { table = 0x2500293D, string = 0x380B9D48 }
+how = "emote"
+when = "give"
+quest = 0x400002A0
+update = "bestow"
+item = 0x47001744
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ea90d664", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2ffd-383c00d8"
+who = 0x47002FFD
+line = { table = 0x2500293D, string = 0x383C00D8 }
+how = "emote"
+when = "give"
+quest = 0x4000029E
+update = "bestow"
+item = 0x4700173D
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:473de1f4", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2ffd-7dc52ebf"
+who = 0x47002FFD
+line = { table = 0x2500293D, string = 0x7DC52EBF }
+line_name = "ID_Use_Spew"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500293D, confidence = "high" }
+
+[[talk]]
+key = "t-2ffd-e6c05562"
+who = 0x47002FFD
+line = { table = 0x2500293D, string = 0xE6C05562 }
+how = "emote"
+when = "give"
+quest = 0x4000029C
+update = "bestow"
+item = 0x4700172D
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:cd30dd07", confidence = "low", sample = { lines = 1, sessions = 1 } }

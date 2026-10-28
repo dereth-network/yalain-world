@@ -6,5 +6,6 @@ id_name = "QuestFindWarderMadCrone"
 state = 0x6F000D6B
 challenge = -999
 duration = 172800
+retry = 72000
 cancellable = true
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:1300512b", confidence = "high", sample = { sessions = 4 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000D6B } } }

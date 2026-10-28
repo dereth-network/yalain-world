@@ -1,0 +1,19 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2b80-0dc7cc17"
+who = 0x47002B80
+line = { table = 0x2500276E, string = 0x0DC7CC17 }
+line_name = "ID_Spew_Taunt"
+role = "combat"
+how = "emote"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500276E, confidence = "high" }
+
+[[talk]]
+key = "t-2b80-8fcebf96"
+who = 0x47002B80
+line = { table = 0x2500276E, string = 0x8FCEBF96 }
+how = "tell"
+when = "attack"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:e8c2cbd7", confidence = "low", sample = { lines = 2, sessions = 1 } }

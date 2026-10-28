@@ -6,5 +6,6 @@ id_name = "QuestDestroySaelar"
 state = 0x6F0007B4
 challenge = 55
 duration = 86400
+retry = 518400
 cancellable = true
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:2fd27047", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0007B4 } } }

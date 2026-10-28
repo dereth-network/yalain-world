@@ -1,0 +1,81 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3031-098e5251"
+who = 0x47003031
+line = { table = 0x25002954, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002954, confidence = "low" }
+
+[[talk]]
+key = "t-3031-63691d8f"
+who = 0x47003031
+line = { table = 0x25002954, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002954, confidence = "high" }
+
+[[talk]]
+key = "t-3031-bd8312a7"
+who = 0x47003031
+line = { table = 0x25002954, string = 0xBD8312A7 }
+line_name = "ID_Welcome4"
+role = "near"
+how = "tell"
+when = "near"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a0e9c9d3", confidence = "low", sample = { lines = 2, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3031-bd8b12a7"
+who = 0x47003031
+line = { table = 0x25002954, string = 0xBD8B12A7 }
+line_name = "ID_Welcome5"
+role = "near"
+how = "tell"
+when = "near"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002954, confidence = "high" }
+
+[[talk]]
+key = "t-3031-bd9312a7"
+who = 0x47003031
+line = { table = 0x25002954, string = 0xBD9312A7 }
+line_name = "ID_Welcome6"
+role = "near"
+how = "tell"
+when = "near"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002954, confidence = "high" }
+
+[[talk]]
+key = "t-3031-bdab12a7"
+who = 0x47003031
+line = { table = 0x25002954, string = 0xBDAB12A7 }
+line_name = "ID_Welcome1"
+role = "near"
+how = "tell"
+when = "near"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002954, confidence = "high" }
+
+[[talk]]
+key = "t-3031-bdb312a7"
+who = 0x47003031
+line = { table = 0x25002954, string = 0xBDB312A7 }
+line_name = "ID_Welcome2"
+role = "near"
+how = "tell"
+when = "near"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002954, confidence = "high" }
+
+[[talk]]
+key = "t-3031-bdbb12a7"
+who = 0x47003031
+line = { table = 0x25002954, string = 0xBDBB12A7 }
+line_name = "ID_Welcome3"
+role = "near"
+how = "tell"
+when = "near"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002954, confidence = "high" }

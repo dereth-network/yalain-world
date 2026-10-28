@@ -6,5 +6,25 @@ id_name = "QuestFindWarderCragstone"
 state = 0x6F0007CA
 challenge = -999
 duration = 172800
+retry = 72000
 cancellable = false
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:fd2ec2f3", confidence = "high", sample = { sessions = 4 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0007CA } } }
+
+[[step]]
+key = "s1"
+quest = 0x400000CF
+needs = 0
+trigger = { use = 0x47002FA9 }
+tell = { table = 0x2500290C, string = 0xA3031C8E }
+update = "bestow"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:1e22c484", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "s2"
+quest = 0x400000CF
+needs = 1
+trigger = { use = 0x47002F7E }
+update = "complete"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:4d1d2cac", confidence = "medium", sample = { sessions = 2 } }

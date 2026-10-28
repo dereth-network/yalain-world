@@ -1,0 +1,71 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3198-098e5251"
+who = 0x47003198
+line = { table = 0x25002A0E, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A0E, confidence = "low" }
+
+[[talk]]
+key = "t-3198-153830b6"
+who = 0x47003198
+line = { table = 0x25002A0E, string = 0x153830B6 }
+line_name = "ID_GiveLens"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A0E, confidence = "low" }
+
+[[talk]]
+key = "t-3198-3d8fbfa2"
+who = 0x47003198
+line = { table = 0x25002A0E, string = 0x3D8FBFA2 }
+line_name = "ID_GiveCodex"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A0E, confidence = "low" }
+
+[[talk]]
+key = "t-3198-65dee23a"
+who = 0x47003198
+line = { table = 0x25002A0E, string = 0x65DEE23A }
+line_name = "ID_GiveScroll"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A0E, confidence = "low" }
+
+[[talk]]
+key = "t-3198-6aef1506"
+who = 0x47003198
+line = { table = 0x25002A0E, string = 0x6AEF1506 }
+line_name = "ID_GiveTalisman"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A0E, confidence = "low" }
+
+[[talk]]
+key = "t-3198-ad4c65ea"
+who = 0x47003198
+line = { table = 0x25002A0E, string = 0xAD4C65EA }
+line_name = "ID_TouchSpew"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A0E, confidence = "high" }
+
+[[talk]]
+key = "t-3198-faa20995"
+who = 0x47003198
+line = { table = 0x25002A0E, string = 0xFAA20995 }
+line_name = "ID_Default"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A0E, confidence = "high" }

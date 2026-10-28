@@ -1,0 +1,40 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-31cc-08204d9c"
+who = 0x470031CC
+line = { table = 0x25002A26, string = 0x08204D9C }
+line_name = "ID_Idle1"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A26, confidence = "high" }
+
+[[talk]]
+key = "t-31cc-08204e9c"
+who = 0x470031CC
+line = { table = 0x25002A26, string = 0x08204E9C }
+line_name = "ID_Idle2"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A26, confidence = "high" }
+
+[[talk]]
+key = "t-31cc-098e5251"
+who = 0x470031CC
+line = { table = 0x25002A26, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A26, confidence = "low" }
+
+[[talk]]
+key = "t-31cc-c66b08f6"
+who = 0x470031CC
+line = { table = 0x25002A26, string = 0xC66B08F6 }
+how = "emote"
+when = "give"
+item = 0x47001777
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:e621db99", confidence = "low", sample = { lines = 1, sessions = 1 } }

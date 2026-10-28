@@ -1,0 +1,42 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-31a6-0146edcf"
+who = 0x470031A6
+line = { table = 0x25002991, string = 0x0146EDCF }
+line_name = "ID_CompleteGift"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002991, confidence = "high" }
+
+[[talk]]
+key = "t-31a6-1bcb4aed"
+who = 0x470031A6
+line = { table = 0x25002991, string = 0x1BCB4AED }
+line_name = "ID_WrongItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002991, confidence = "low" }
+
+[[talk]]
+key = "t-31a6-7d12a883"
+who = 0x470031A6
+line = { table = 0x25002991, string = 0x7D12A883 }
+line_name = "ID_Use_Enemy"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002991, confidence = "high" }
+
+[[talk]]
+key = "t-31a6-ea52fd5e"
+who = 0x470031A6
+line = { table = 0x25002991, string = 0xEA52FD5E }
+line_name = "ID_Use"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002991, confidence = "high" }

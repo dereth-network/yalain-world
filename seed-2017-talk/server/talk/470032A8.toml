@@ -1,0 +1,41 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-32a8-098e5251"
+who = 0x470032A8
+line = { table = 0x25002A74, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A74, confidence = "low" }
+
+[[talk]]
+key = "t-32a8-22740e90"
+who = 0x470032A8
+line = { table = 0x25002A74, string = 0x22740E90 }
+line_name = "ID_UseMsg2"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A74, confidence = "high" }
+
+[[talk]]
+key = "t-32a8-26740e90"
+who = 0x470032A8
+line = { table = 0x25002A74, string = 0x26740E90 }
+line_name = "ID_UseMsg3"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A74, confidence = "high" }
+
+[[talk]]
+key = "t-32a8-2e740e90"
+who = 0x470032A8
+line = { table = 0x25002A74, string = 0x2E740E90 }
+line_name = "ID_UseMsg1"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A74, confidence = "high" }

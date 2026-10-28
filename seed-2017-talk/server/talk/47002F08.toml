@@ -1,0 +1,43 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2f08-63691d8f"
+who = 0x47002F08
+line = { table = 0x250028C0, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028C0, confidence = "high" }
+
+[[talk]]
+key = "t-2f08-653621ae"
+who = 0x47002F08
+line = { table = 0x250028C0, string = 0x653621AE }
+line_name = "ID_GiveMirra"
+role = "accept"
+how = "emote"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028C0, confidence = "low" }
+
+[[talk]]
+key = "t-2f08-aea07c7d"
+who = 0x47002F08
+line = { table = 0x250028C0, string = 0xAEA07C7D }
+line_name = "ID_Give"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028C0, confidence = "low" }
+
+[[talk]]
+key = "t-2f08-b76ade47"
+who = 0x47002F08
+line = { table = 0x250028C0, string = 0xB76ADE47 }
+line_name = "ID_HelmBegin"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x400001AA
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:7b808556", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

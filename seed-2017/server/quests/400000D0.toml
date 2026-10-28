@@ -6,6 +6,99 @@ id_name = "QuestDrudgeCampEsper"
 state = 0x6F0007C9
 challenge = 7
 duration = 86400
+retry = 72000
 xp = 320
 cancellable = false
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:ccc518cd", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0007C9 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F0007C9 } } }
+
+[[step]]
+key = "s1"
+quest = 0x400000D0
+needs = 0
+trigger = { use = 0x47002FA9 }
+tell = { table = 0x2500290C, string = 0xAD7154AD }
+update = "bestow"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:5a702487", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "s2"
+quest = 0x400000D0
+needs = 1
+trigger = { take = 0x47000B2A }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:a8622cfa", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "s3"
+quest = 0x400000D0
+needs = 1
+trigger = { take = 0x47000B2B }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "authored" }
+
+[[step]]
+key = "s4"
+quest = 0x400000D0
+needs = 1
+trigger = { take = 0x47000B2C }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:bcccbae4", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "s5"
+quest = 0x400000D0
+needs = 1
+trigger = { take = 0x47000B2D }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "authored" }
+
+[[step]]
+key = "s6"
+quest = 0x400000D0
+needs = 1
+trigger = { take = 0x47000B2E }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "authored" }
+
+[[step]]
+key = "s7"
+quest = 0x400000D0
+needs = 1
+trigger = { take = 0x47000B2F }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "authored" }
+
+[[step]]
+key = "s8"
+quest = 0x400000D0
+needs = 2
+trigger = { take = 0x470013FB }
+update = "advance"
+phase = 3
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:a097d43e", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "s9"
+quest = 0x400000D0
+needs = 3
+trigger = { use = 0x47002FA9 }
+tell = { table = 0x2500290C, string = 0xA3033C8E }
+update = "complete"
+xp = 320
+gives = [0x470010B1]
+takes = [0x470013FB]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:89549581", confidence = "medium", sample = { sessions = 2 }, fields = { trigger = { from = "authored" } } }

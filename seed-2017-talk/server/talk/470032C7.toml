@@ -1,0 +1,85 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-32c7-09200efe"
+who = 0x470032C7
+line = { table = 0x25002A86, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A86, confidence = "high" }
+
+[[talk]]
+key = "t-32c7-2ae6122c"
+who = 0x470032C7
+line = { table = 0x25002A86, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x800002E3
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:7474d388", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-32c7-68a07c4d"
+who = 0x470032C7
+line = { table = 0x25002A86, string = 0x68A07C4D }
+line_name = "ID_Done"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A86, confidence = "high" }
+
+[[talk]]
+key = "t-32c7-68f492a3"
+who = 0x470032C7
+line = { table = 0x25002A86, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A86, confidence = "high" }
+
+[[talk]]
+key = "t-32c7-7de67da2"
+who = 0x470032C7
+line = { table = 0x25002A86, string = 0x7DE67DA2 }
+line_name = "ID_Give_Other"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A86, confidence = "low" }
+
+[[talk]]
+key = "t-32c7-8b6b186f"
+who = 0x470032C7
+line = { table = 0x25002A86, string = 0x8B6B186F }
+line_name = "ID_Phase1"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A86, confidence = "medium" }
+
+[[talk]]
+key = "t-32c7-91272f46"
+who = 0x470032C7
+line = { table = 0x25002A86, string = 0x91272F46 }
+line_name = "ID_Give_Copper"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A86, confidence = "low" }
+
+[[talk]]
+key = "t-32c7-a9fb24c5"
+who = 0x470032C7
+line = { table = 0x25002A86, string = 0xA9FB24C5 }
+line_name = "ID_Give_Aluminium"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A86, confidence = "low" }

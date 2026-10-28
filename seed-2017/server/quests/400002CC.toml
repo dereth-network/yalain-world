@@ -6,5 +6,6 @@ id_name = "QuestSlayBroodMother"
 state = 0x6F0008D5
 challenge = 36
 duration = 86400
+retry = 259200
 cancellable = true
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:19a3450c", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0008D5 } } }

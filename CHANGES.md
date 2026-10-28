@@ -1,5 +1,12 @@
 # Changes
 
+## v0.2.0
+
+- What NPCs say and when: 5,510 lines in a new pack, `seed-2017-talk/`.
+- The start area's quests have their steps: 162 steps of 18 quests.
+- Quests say how long before they can be done again.
+- Every key from v0.1.0 is kept.
+
 ## v0.1.0
 
 - The first release: the whole world as the January 2017 recordings show it. 2,450 people and

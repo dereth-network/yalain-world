@@ -6,6 +6,7 @@ id_name = "QuestWarderScout"
 state = 0x6F000D6F
 challenge = 12
 duration = 86400
+retry = 72000
 xp = 800
 cancellable = true
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:76b72ddf", confidence = "high", sample = { sessions = 5 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000D6F }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000D6F } } }

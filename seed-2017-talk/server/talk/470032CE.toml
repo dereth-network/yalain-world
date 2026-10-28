@@ -1,0 +1,158 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-32ce-09200efe"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "high" }
+
+[[talk]]
+key = "t-32ce-098673ec"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x098673EC }
+line_name = "ID_Give_Hide"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "low" }
+
+[[talk]]
+key = "t-32ce-09867d8c"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x09867D8C }
+line_name = "ID_Give_Hides"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "low" }
+
+[[talk]]
+key = "t-32ce-09d67d3a"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x09D67D3A }
+line_name = "ID_Give_Sinew"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "low" }
+
+[[talk]]
+key = "t-32ce-2ae6122c"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x800002FB
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:f937dd39", confidence = "medium", sample = { lines = 2, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-32ce-39af0d6c"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x39AF0D6C }
+line_name = "ID_Give_Heart"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "low" }
+
+[[talk]]
+key = "t-32ce-5ed6be9c"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x5ED6BE9C }
+line_name = "ID_Give_Manikin"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "low" }
+
+[[talk]]
+key = "t-32ce-68a07c4d"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x68A07C4D }
+line_name = "ID_Done"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "high" }
+
+[[talk]]
+key = "t-32ce-68f492a3"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "high" }
+
+[[talk]]
+key = "t-32ce-7de67da2"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x7DE67DA2 }
+line_name = "ID_Give_Other"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "low" }
+
+[[talk]]
+key = "t-32ce-8b6b1865"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x8B6B1865 }
+line_name = "ID_Phase4"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "medium" }
+
+[[talk]]
+key = "t-32ce-8b6b1869"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x8B6B1869 }
+line_name = "ID_Phase2"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "medium" }
+
+[[talk]]
+key = "t-32ce-8b6b186b"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x8B6B186B }
+line_name = "ID_Phase3"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "medium" }
+
+[[talk]]
+key = "t-32ce-8b6b186f"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0x8B6B186F }
+line_name = "ID_Phase1"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "medium" }
+
+[[talk]]
+key = "t-32ce-f9af0d70"
+who = 0x470032CE
+line = { table = 0x25002A8D, string = 0xF9AF0D70 }
+line_name = "ID_Give_Hearts"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8D, confidence = "low" }

@@ -1,0 +1,21 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3250-098e5251"
+who = 0x47003250
+line = { table = 0x25002A4D, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A4D, confidence = "low" }
+
+[[talk]]
+key = "t-3250-af12fdac"
+who = 0x47003250
+line = { table = 0x25002A4D, string = 0xAF12FDAC }
+line_name = "ID_Zap"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ca57d106", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

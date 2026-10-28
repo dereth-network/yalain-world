@@ -1,0 +1,59 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-31d9-098e5251"
+who = 0x470031D9
+line = { table = 0x25002A30, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A30, confidence = "low" }
+
+[[talk]]
+key = "t-31d9-2be60de6"
+who = 0x470031D9
+line = { table = 0x25002A30, string = 0x2BE60DE6 }
+how = "emote"
+when = "give"
+item = 0x47001779
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c5127a09", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-31d9-60823410"
+who = 0x470031D9
+line = { table = 0x25002A30, string = 0x60823410 }
+how = "emote"
+when = "give"
+item = 0x47001765
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:6b5faf39", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-31d9-6e63154d"
+who = 0x470031D9
+line = { table = 0x25002A30, string = 0x6E63154D }
+line_name = "ID_Touch"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A30, confidence = "high" }
+
+[[talk]]
+key = "t-31d9-89a7c228"
+who = 0x470031D9
+line = { table = 0x25002A30, string = 0x89A7C228 }
+line_name = "ID_DestroyItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A30, confidence = "low" }
+
+[[talk]]
+key = "t-31d9-c0f16ab7"
+who = 0x470031D9
+line = { table = 0x25002A30, string = 0xC0F16AB7 }
+how = "emote"
+when = "give"
+item = 0x47001779
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c5127a09", confidence = "low", sample = { lines = 1, sessions = 1 } }

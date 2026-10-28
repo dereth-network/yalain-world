@@ -1,0 +1,23 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3359-0e6e735f"
+who = 0x47003359
+line = { table = 0x25002AC8, string = 0x0E6E735F }
+line_name = "ID_ChatComplete"
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x80000095
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC8, confidence = "high", fields = { quest = { from = "derived", rule = "talk-quest-name" } } }
+
+[[talk]]
+key = "t-3359-8f832f4d"
+who = 0x47003359
+line = { table = 0x25002AC8, string = 0x8F832F4D }
+line_name = "ID_IdleChat1"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC8, confidence = "high" }

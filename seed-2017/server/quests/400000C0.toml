@@ -6,5 +6,48 @@ id_name = "QuestFindArwicOverseer"
 state = 0x6F000BE7
 challenge = -999
 duration = 172800
+retry = 86400
 cancellable = false
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:a6f21923", confidence = "high", sample = { sessions = 24 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000BE7 } } }
+
+[[step]]
+key = "s1"
+quest = 0x400000C0
+needs = 0
+trigger = { use = 0x470031E6 }
+tell = { table = 0x25002A34, string = 0xA3030C8E }
+update = "bestow"
+xp = 0
+requires = [{ quest = 0x40000016, done = true }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:e50aea9b", confidence = "high", sample = { sessions = 3 } }
+
+[[step]]
+key = "s2"
+quest = 0x400000C0
+needs = 0
+trigger = { use = 0x470031EA }
+tell = { table = 0x25002A36, string = 0xA3030C8E }
+update = "bestow"
+xp = 0
+requires = [{ quest = 0x40000017, done = true }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:e50aea9b", confidence = "high", sample = { sessions = 3 } }
+
+[[step]]
+key = "s3"
+quest = 0x400000C0
+needs = 0
+trigger = { use = 0x470031E8 }
+tell = { table = 0x25002A35, string = 0xA3030C8E }
+update = "bestow"
+xp = 0
+requires = [{ quest = 0x40000018, done = true }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:e50aea9b", confidence = "high", sample = { sessions = 3 } }
+
+[[step]]
+key = "s4"
+quest = 0x400000C0
+needs = 1
+trigger = { use = 0x47002F39 }
+update = "complete"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:a8133c93", confidence = "medium", sample = { sessions = 2 } }

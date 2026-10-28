@@ -9,4 +9,22 @@ duration = 7200
 retry = 72000
 xp = 440
 cancellable = true
-prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:18c9a851", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0009AD }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F0009AD }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F0009AD } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:18c9a851", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0009AD }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F0009AD } } }
+
+[[step]]
+key = "s1"
+quest = 0x400000EB
+needs = 0
+trigger = { kill = 0x4700296F }
+update = "bestow"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:18c9a851", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "s2"
+quest = 0x400000EB
+needs = 1
+trigger = { kill = 0x4700296D }
+update = "complete"
+xp = 440
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:c3315255", confidence = "medium", sample = { sessions = 2 } }

@@ -1,0 +1,96 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-329a-2ae6122c"
+who = 0x4700329A
+line = { table = 0x25002A6E, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A6E, confidence = "medium" }
+
+[[talk]]
+key = "t-329a-2fee7c2e"
+who = 0x4700329A
+line = { table = 0x25002A6E, string = 0x2FEE7C2E }
+line_name = "ID_Busy"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A6E, confidence = "high" }
+
+[[talk]]
+key = "t-329a-63691d8f"
+who = 0x4700329A
+line = { table = 0x25002A6E, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A6E, confidence = "high" }
+
+[[talk]]
+key = "t-329a-8b6b1865"
+who = 0x4700329A
+line = { table = 0x25002A6E, string = 0x8B6B1865 }
+line_name = "ID_Phase4"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A6E, confidence = "medium" }
+
+[[talk]]
+key = "t-329a-8b6b1869"
+who = 0x4700329A
+line = { table = 0x25002A6E, string = 0x8B6B1869 }
+line_name = "ID_Phase2"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A6E, confidence = "medium" }
+
+[[talk]]
+key = "t-329a-8b6b186b"
+who = 0x4700329A
+line = { table = 0x25002A6E, string = 0x8B6B186B }
+line_name = "ID_Phase3"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A6E, confidence = "medium" }
+
+[[talk]]
+key = "t-329a-8b6b186f"
+who = 0x4700329A
+line = { table = 0x25002A6E, string = 0x8B6B186F }
+line_name = "ID_Phase1"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A6E, confidence = "medium" }
+
+[[talk]]
+key = "t-329a-aea07c7d"
+who = 0x4700329A
+line = { table = 0x25002A6E, string = 0xAEA07C7D }
+line_name = "ID_Give"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A6E, confidence = "low" }
+
+[[talk]]
+key = "t-329a-f9949920"
+who = 0x4700329A
+line = { table = 0x25002A6E, string = 0xF9949920 }
+line_name = "ID_LowLevel"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A6E, confidence = "high" }

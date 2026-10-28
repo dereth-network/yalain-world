@@ -1,0 +1,80 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2ff1-098e5251"
+who = 0x47002FF1
+line = { table = 0x25002936, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002936, confidence = "low" }
+
+[[talk]]
+key = "t-2ff1-2fe893c2"
+who = 0x47002FF1
+line = { table = 0x25002936, string = 0x2FE893C2 }
+line_name = "ID_Bestow"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x400001F5
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:7a5a391f", confidence = "high", sample = { lines = 6, sessions = 6 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2ff1-63691d8f"
+who = 0x47002FF1
+line = { table = 0x25002936, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x400001F7
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:300d3431", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2ff1-6b6b981e"
+who = 0x47002FF1
+line = { table = 0x25002936, string = 0x6B6B981E }
+line_name = "ID_Award"
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x400001F5
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:0aa1173d", confidence = "high", sample = { lines = 6, sessions = 6 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2ff1-d496181e"
+who = 0x47002FF1
+line = { table = 0x25002936, string = 0xD496181E }
+how = "tell"
+when = "use"
+quest = 0x400001F5
+update = "bestow"
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:7a5a391f", confidence = "medium", sample = { lines = 3, sessions = 2 } }
+
+[[talk]]
+key = "t-2ff1-d496281e"
+who = 0x47002FF1
+line = { table = 0x25002936, string = 0xD496281E }
+how = "tell"
+when = "use"
+quest = 0x400001F5
+update = "bestow"
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:9c52d858", confidence = "medium", sample = { lines = 4, sessions = 2 } }
+
+[[talk]]
+key = "t-2ff1-d496381e"
+who = 0x47002FF1
+line = { table = 0x25002936, string = 0xD496381E }
+how = "tell"
+when = "use"
+quest = 0x400001F5
+update = "bestow"
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:e6d04f4b", confidence = "medium", sample = { lines = 2, sessions = 2 } }

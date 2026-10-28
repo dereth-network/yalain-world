@@ -1,0 +1,105 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-321b-098e5251"
+who = 0x4700321B
+line = { table = 0x25002A49, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A49, confidence = "low" }
+
+[[talk]]
+key = "t-321b-27e68c7b"
+who = 0x4700321B
+line = { table = 0x25002A49, string = 0x27E68C7B }
+line_name = "ID_RandomChat2"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A49, confidence = "high" }
+
+[[talk]]
+key = "t-321b-63691d8f"
+who = 0x4700321B
+line = { table = 0x25002A49, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A49, confidence = "high" }
+
+[[talk]]
+key = "t-321b-67e68c7b"
+who = 0x4700321B
+line = { table = 0x25002A49, string = 0x67E68C7B }
+line_name = "ID_RandomChat3"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A49, confidence = "high" }
+
+[[talk]]
+key = "t-321b-6846cdbe"
+who = 0x4700321B
+line = { table = 0x25002A49, string = 0x6846CDBE }
+line_name = "ID_BestowQuest"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A49, confidence = "medium" }
+
+[[talk]]
+key = "t-321b-a7e68c7a"
+who = 0x4700321B
+line = { table = 0x25002A49, string = 0xA7E68C7A }
+line_name = "ID_RandomChat4"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A49, confidence = "high" }
+
+[[talk]]
+key = "t-321b-b6e10c71"
+who = 0x4700321B
+line = { table = 0x25002A49, string = 0xB6E10C71 }
+line_name = "ID_Phase_Complete6"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A49, confidence = "high" }
+
+[[talk]]
+key = "t-321b-b6e10c75"
+who = 0x4700321B
+line = { table = 0x25002A49, string = 0xB6E10C75 }
+line_name = "ID_Phase_Complete7"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A49, confidence = "high" }
+
+[[talk]]
+key = "t-321b-e7e68c7b"
+who = 0x4700321B
+line = { table = 0x25002A49, string = 0xE7E68C7B }
+line_name = "ID_RandomChat1"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A49, confidence = "high" }
+
+[[talk]]
+key = "t-321b-ef610400"
+who = 0x4700321B
+line = { table = 0x25002A49, string = 0xEF610400 }
+line_name = "ID_QuestComplete"
+role = "complete"
+how = "tell"
+when = "give"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A49, confidence = "high" }

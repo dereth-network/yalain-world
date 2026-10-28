@@ -1,0 +1,51 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2fbe-1aa038a2"
+who = 0x47002FBE
+line = { table = 0x2500291E, string = 0x1AA038A2 }
+line_name = "ID_GiveDom"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500291E, confidence = "low" }
+
+[[talk]]
+key = "t-2fbe-1bcb4aed"
+who = 0x47002FBE
+line = { table = 0x2500291E, string = 0x1BCB4AED }
+line_name = "ID_WrongItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500291E, confidence = "low" }
+
+[[talk]]
+key = "t-2fbe-29802fac"
+who = 0x47002FBE
+line = { table = 0x2500291E, string = 0x29802FAC }
+line_name = "ID_GiveShad"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500291E, confidence = "low" }
+
+[[talk]]
+key = "t-2fbe-3d8f1398"
+who = 0x47002FBE
+line = { table = 0x2500291E, string = 0x3D8F1398 }
+line_name = "ID_GiveOrder"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500291E, confidence = "low" }
+
+[[talk]]
+key = "t-2fbe-c4f9188e"
+who = 0x47002FBE
+line = { table = 0x2500291E, string = 0xC4F9188E }
+line_name = "ID_TooWeak"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500291E, confidence = "high" }

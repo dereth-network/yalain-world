@@ -1,0 +1,66 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3017-05b14d6c"
+who = 0x47003017
+line = { table = 0x25002948, string = 0x05B14D6C }
+how = "tell"
+when = "use"
+quest = 0x40000332
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:b2f85cc5", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-3017-098e5251"
+who = 0x47003017
+line = { table = 0x25002948, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002948, confidence = "low" }
+
+[[talk]]
+key = "t-3017-12c303c0"
+who = 0x47003017
+line = { table = 0x25002948, string = 0x12C303C0 }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:e0b3cdfe", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3017-63691d8f"
+who = 0x47003017
+line = { table = 0x25002948, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002948, confidence = "high" }
+
+[[talk]]
+key = "t-3017-85219c9e"
+who = 0x47003017
+line = { table = 0x25002948, string = 0x85219C9E }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:b2a59242", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-3017-c1fa3991"
+who = 0x47003017
+line = { table = 0x25002948, string = 0xC1FA3991 }
+how = "tell"
+when = "give"
+quest = 0x40000332
+update = "complete"
+item = 0x470014FD
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:fe27fd19", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-3017-d5308fcc"
+who = 0x47003017
+line = { table = 0x25002948, string = 0xD5308FCC }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:bcb7ba69", confidence = "low", sample = { lines = 1, sessions = 1 } }

@@ -1,0 +1,41 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3362-59deb02d"
+who = 0x47003362
+line = { table = 0x25002ACD, string = 0x59DEB02D }
+line_name = "ID_UseFailure"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ACD, confidence = "high" }
+
+[[talk]]
+key = "t-3362-655436f9"
+who = 0x47003362
+line = { table = 0x25002ACD, string = 0x655436F9 }
+line_name = "ID_UseSuccess"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ACD, confidence = "high" }
+
+[[talk]]
+key = "t-3362-ea52fd5e"
+who = 0x47003362
+line = { table = 0x25002ACD, string = 0xEA52FD5E }
+line_name = "ID_Use"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ACD, confidence = "high" }
+
+[[talk]]
+key = "t-3362-f2269530"
+who = 0x47003362
+line = { table = 0x25002ACD, string = 0xF2269530 }
+line_name = "ID_Nothing"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ACD, confidence = "high" }

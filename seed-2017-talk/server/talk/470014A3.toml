@@ -1,0 +1,32 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-14a3-37a67231"
+who = 0x470014A3
+line = { table = 0x25001B44, string = 0x37A67231 }
+line_name = "ID_Misadventure__Random3"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25001B44, confidence = "high" }
+
+[[talk]]
+key = "t-14a3-81391eff"
+who = 0x470014A3
+line = { table = 0x25001B44, string = 0x81391EFF }
+line_name = "ID_Award__RemoveCraftFlags3"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25001B44, confidence = "high" }
+
+[[talk]]
+key = "t-14a3-823f1faa"
+who = 0x470014A3
+line = { table = 0x25001B44, string = 0x823F1FAA }
+line_name = "ID_Nothing__Died9"
+role = "death"
+how = "emote"
+when = "death"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25001B44, confidence = "low" }

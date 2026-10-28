@@ -1,0 +1,32 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-319e-bb53bdce"
+who = 0x4700319E
+line = { table = 0x25002A11, string = 0xBB53BDCE }
+line_name = "ID_Award_Boneshatter9"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A11, confidence = "high" }
+
+[[talk]]
+key = "t-319e-c4f9188e"
+who = 0x4700319E
+line = { table = 0x25002A11, string = 0xC4F9188E }
+line_name = "ID_TooWeak"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A11, confidence = "high" }
+
+[[talk]]
+key = "t-319e-d0fb1292"
+who = 0x4700319E
+line = { table = 0x25002A11, string = 0xD0FB1292 }
+line_name = "ID_TooSoon"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A11, confidence = "high" }

@@ -6,6 +6,26 @@ id_name = "QuestFindMillerLostWish"
 state = 0x6F0006FF
 challenge = -999
 duration = -1
+retry = 72000
 xp = 30
 cancellable = true
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:1eda7ba2", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0006FF }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F0006FF } } }
+
+[[step]]
+key = "s1"
+quest = 0x400000C2
+needs = 0
+trigger = { use = 0x47002F39 }
+tell = { table = 0x250028D9, string = 0xA3031C8E }
+update = "bestow"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:91ce18a2", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "s2"
+quest = 0x400000C2
+needs = 1
+trigger = { use = 0x47002FBC }
+update = "complete"
+xp = 30
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:481b86a7", confidence = "medium", sample = { sessions = 2 } }

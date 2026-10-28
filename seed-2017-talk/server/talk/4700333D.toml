@@ -1,0 +1,126 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-333d-25c66406"
+who = 0x4700333D
+line = { table = 0x25002AB9, string = 0x25C66406 }
+line_name = "ID_GiveEmblem"
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x40000131
+update = "complete"
+item = 0x470019AB
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:3e5f5175", confidence = "high", sample = { lines = 4, sessions = 4 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-333d-40c2ac70"
+who = 0x4700333D
+line = { table = 0x25002AB9, string = 0x40C2AC70 }
+how = "emote"
+when = "give"
+quest = 0x40000131
+update = "advance"
+phase = 2
+item = 0x470019AB
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:481edb4e", confidence = "high", sample = { lines = 4, sessions = 4 } }
+
+[[talk]]
+key = "t-333d-493f73a3"
+who = 0x4700333D
+line = { table = 0x25002AB9, string = 0x493F73A3 }
+line_name = "ID_GiveCrystal"
+role = "accept"
+how = "tell"
+when = "give"
+quest = 0x40000131
+update = "advance"
+phase = 2
+item = 0x470019AB
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:481edb4e", confidence = "high", sample = { lines = 4, sessions = 4 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-333d-63691d8f"
+who = 0x4700333D
+line = { table = 0x25002AB9, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AB9, confidence = "high" }
+
+[[talk]]
+key = "t-333d-77dc038e"
+who = 0x4700333D
+line = { table = 0x25002AB9, string = 0x77DC038E }
+line_name = "ID_UnderwayPart1"
+role = "remind"
+how = "emote"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a98886da", confidence = "medium", sample = { lines = 2, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-333d-77df038e"
+who = 0x4700333D
+line = { table = 0x25002AB9, string = 0x77DF038E }
+line_name = "ID_UnderwayPart2"
+role = "remind"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AB9, confidence = "high" }
+
+[[talk]]
+key = "t-333d-a964fc6c"
+who = 0x4700333D
+line = { table = 0x25002AB9, string = 0xA964FC6C }
+line_name = "ID_Fail"
+role = "fail"
+how = "emote"
+when = "use"
+update = "fail"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AB9, confidence = "medium" }
+
+[[talk]]
+key = "t-333d-aea07c7d"
+who = 0x4700333D
+line = { table = 0x25002AB9, string = 0xAEA07C7D }
+line_name = "ID_Give"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AB9, confidence = "low" }
+
+[[talk]]
+key = "t-333d-b768190a"
+who = 0x4700333D
+line = { table = 0x25002AB9, string = 0xB768190A }
+line_name = "ID_NoQuest"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AB9, confidence = "high" }
+
+[[talk]]
+key = "t-333d-c3298d82"
+who = 0x4700333D
+line = { table = 0x25002AB9, string = 0xC3298D82 }
+how = "emote"
+when = "give"
+quest = 0x40000131
+update = "complete"
+item = 0x470019AB
+order = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:3e5f5175", confidence = "high", sample = { lines = 4, sessions = 4 } }
+
+[[talk]]
+key = "t-333d-db298d82"
+who = 0x4700333D
+line = { table = 0x25002AB9, string = 0xDB298D82 }
+how = "emote"
+when = "give"
+quest = 0x40000131
+update = "complete"
+item = 0x470019AB
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:3bd5dc5c", confidence = "high", sample = { lines = 4, sessions = 4 } }

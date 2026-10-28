@@ -1,0 +1,54 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2fd7-098e5251"
+who = 0x47002FD7
+line = { table = 0x25002929, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002929, confidence = "low" }
+
+[[talk]]
+key = "t-2fd7-adfde52c"
+who = 0x47002FD7
+line = { table = 0x25002929, string = 0xADFDE52C }
+line_name = "ID_QuestEarned"
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x400002ED
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:2ab16222", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2fd7-b768190a"
+who = 0x47002FD7
+line = { table = 0x25002929, string = 0xB768190A }
+line_name = "ID_NoQuest"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002929, confidence = "high" }
+
+[[talk]]
+key = "t-2fd7-ca33899b"
+who = 0x47002FD7
+line = { table = 0x25002929, string = 0xCA33899B }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:49846165", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2fd7-ef610400"
+who = 0x47002FD7
+line = { table = 0x25002929, string = 0xEF610400 }
+line_name = "ID_QuestComplete"
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x400002EE
+update = "complete"
+item = 0x47001045
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:aaa5b893", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

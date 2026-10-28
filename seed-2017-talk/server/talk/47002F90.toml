@@ -1,0 +1,158 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2f90-098e5251"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002901, confidence = "low" }
+
+[[talk]]
+key = "t-2f90-0fc9a495"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0x0FC9A495 }
+how = "tell"
+when = "give"
+quest = 0x8000003D
+update = "complete"
+item = 0x470013D6
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:94c2334b", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2f90-2a6b091e"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0x2A6B091E }
+line_name = "ID_Quest"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x8000003D
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:49ca564a", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2f90-79cf2898"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0x79CF2898 }
+line_name = "ID_GiveTrump"
+role = "accept"
+how = "tell"
+when = "give"
+quest = 0x8000003D
+update = "complete"
+item = 0x470013D6
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:94c2334b", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2f90-9768191a"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0x9768191A }
+line_name = "ID_OnQuest"
+role = "remind"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002901, confidence = "high" }
+
+[[talk]]
+key = "t-2f90-d0375acb"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0xD0375ACB }
+line_name = "ID_GiveSignificator"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002901, confidence = "low" }
+
+[[talk]]
+key = "t-2f90-fa0089b0"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0xFA0089B0 }
+line_name = "ID_Fortune5"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002901, confidence = "high" }
+
+[[talk]]
+key = "t-2f90-fa0889b0"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0xFA0889B0 }
+line_name = "ID_Fortune4"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002901, confidence = "high" }
+
+[[talk]]
+key = "t-2f90-fa1089b0"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0xFA1089B0 }
+line_name = "ID_Fortune7"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002901, confidence = "high" }
+
+[[talk]]
+key = "t-2f90-fa1889b0"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0xFA1889B0 }
+line_name = "ID_Fortune6"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002901, confidence = "high" }
+
+[[talk]]
+key = "t-2f90-fa2089b0"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0xFA2089B0 }
+line_name = "ID_Fortune1"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002901, confidence = "high" }
+
+[[talk]]
+key = "t-2f90-fa3089b0"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0xFA3089B0 }
+line_name = "ID_Fortune3"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002901, confidence = "high" }
+
+[[talk]]
+key = "t-2f90-fa3889b0"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0xFA3889B0 }
+line_name = "ID_Fortune2"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002901, confidence = "high" }
+
+[[talk]]
+key = "t-2f90-fa6889b0"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0xFA6889B0 }
+line_name = "ID_Fortune8"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002901, confidence = "high" }
+
+[[talk]]
+key = "t-2f90-faa20995"
+who = 0x47002F90
+line = { table = 0x25002901, string = 0xFAA20995 }
+line_name = "ID_Default"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:d227a836", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

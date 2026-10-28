@@ -1,0 +1,77 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2fb5-09200efe"
+who = 0x47002FB5
+line = { table = 0x25002916, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002916, confidence = "high" }
+
+[[talk]]
+key = "t-2fb5-2ae612ae"
+who = 0x47002FB5
+line = { table = 0x25002916, string = 0x2AE612AE }
+line_name = "ID_BeginA"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x80000337
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4c85801e", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2fb5-7de67da2"
+who = 0x47002FB5
+line = { table = 0x25002916, string = 0x7DE67DA2 }
+line_name = "ID_Give_Other"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002916, confidence = "low" }
+
+[[talk]]
+key = "t-2fb5-836b186e"
+who = 0x47002FB5
+line = { table = 0x25002916, string = 0x836B186E }
+line_name = "ID_Phase1B"
+role = "advance"
+how = "tell"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002916, confidence = "medium" }
+
+[[talk]]
+key = "t-2fb5-8f6b186e"
+who = 0x47002FB5
+line = { table = 0x25002916, string = 0x8F6B186E }
+line_name = "ID_Phase1A"
+role = "advance"
+how = "tell"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002916, confidence = "medium" }
+
+[[talk]]
+key = "t-2fb5-bb4290f6"
+who = 0x47002FB5
+line = { table = 0x25002916, string = 0xBB4290F6 }
+line_name = "ID_Complete"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002916, confidence = "high" }
+
+[[talk]]
+key = "t-2fb5-eee612a8"
+who = 0x47002FB5
+line = { table = 0x25002916, string = 0xEEE612A8 }
+line_name = "ID_BeginB1"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002916, confidence = "medium" }

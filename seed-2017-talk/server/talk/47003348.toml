@@ -1,0 +1,62 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3348-098e5251"
+who = 0x47003348
+line = { table = 0x25002ABF, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ABF, confidence = "low" }
+
+[[talk]]
+key = "t-3348-27e68c7b"
+who = 0x47003348
+line = { table = 0x25002ABF, string = 0x27E68C7B }
+line_name = "ID_RandomChat2"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ABF, confidence = "high" }
+
+[[talk]]
+key = "t-3348-67e68c7b"
+who = 0x47003348
+line = { table = 0x25002ABF, string = 0x67E68C7B }
+line_name = "ID_RandomChat3"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002ABF, confidence = "high" }
+
+[[talk]]
+key = "t-3348-a7e68c7a"
+who = 0x47003348
+line = { table = 0x25002ABF, string = 0xA7E68C7A }
+line_name = "ID_RandomChat4"
+role = "idle"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:dc27baed", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3348-e7e68c7b"
+who = 0x47003348
+line = { table = 0x25002ABF, string = 0xE7E68C7B }
+line_name = "ID_RandomChat1"
+role = "idle"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:6c5ca5c5", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3348-f221ebb3"
+who = 0x47003348
+line = { table = 0x25002ABF, string = 0xF221EBB3 }
+how = "tell"
+when = "give"
+quest = 0x400001B2
+update = "complete"
+item = 0x47001A2A
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ac71a3b9", confidence = "low", sample = { lines = 1, sessions = 1 } }

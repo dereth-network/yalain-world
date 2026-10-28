@@ -1,0 +1,82 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3445-0e221fc8"
+who = 0x47003445
+line = { table = 0x25002B44, string = 0x0E221FC8 }
+line_name = "ID_Attack"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B44, confidence = "high" }
+
+[[talk]]
+key = "t-3445-2b68944c"
+who = 0x47003445
+line = { table = 0x25002B44, string = 0x2B68944C }
+line_name = "ID_Death"
+role = "death"
+how = "tell"
+when = "death"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B44, confidence = "low" }
+
+[[talk]]
+key = "t-3445-2e280ff0"
+who = 0x47003445
+line = { table = 0x25002B44, string = 0x2E280FF0 }
+line_name = "ID_Return"
+role = "remind"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B44, confidence = "high" }
+
+[[talk]]
+key = "t-3445-8b6b186f"
+who = 0x47003445
+line = { table = 0x25002B44, string = 0x8B6B186F }
+line_name = "ID_Phase1"
+role = "advance"
+how = "emote"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B44, confidence = "medium" }
+
+[[talk]]
+key = "t-3445-99013fc9"
+who = 0x47003445
+line = { table = 0x25002B44, string = 0x99013FC9 }
+line_name = "ID_Attacked2"
+role = "combat"
+how = "emote"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B44, confidence = "high" }
+
+[[talk]]
+key = "t-3445-99021fc9"
+who = 0x47003445
+line = { table = 0x25002B44, string = 0x99021FC9 }
+line_name = "ID_Attacked"
+role = "combat"
+how = "emote"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B44, confidence = "high" }
+
+[[talk]]
+key = "t-3445-ae658928"
+who = 0x47003445
+line = { table = 0x25002B44, string = 0xAE658928 }
+line_name = "ID_Taunt2"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B44, confidence = "high" }
+
+[[talk]]
+key = "t-3445-ae65894c"
+who = 0x47003445
+line = { table = 0x25002B44, string = 0xAE65894C }
+line_name = "ID_Taunt"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B44, confidence = "high" }

@@ -9,4 +9,258 @@ duration = 3600
 retry = 72000
 xp = 300
 cancellable = true
-prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:0d3a037f", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000915 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000915 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000915 } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:0d3a037f", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000915 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000915 } } }
+
+[[step]]
+key = "s1"
+quest = 0x4000008F
+needs = 0
+trigger = { kill = 0x47002D44 }
+update = "bestow"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:0d3a037f", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "s2"
+quest = 0x4000008F
+needs = 1
+trigger = { kill = 0x47002D26 }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:ab661a89", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "s3"
+quest = 0x4000008F
+needs = 2
+trigger = { kill = 0x47002D26 }
+update = "advance"
+phase = 3
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:4b07bf24", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "s4"
+quest = 0x4000008F
+needs = 3
+trigger = { kill = 0x47002D26 }
+update = "advance"
+phase = 4
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:9a18fe8c", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "s5"
+quest = 0x4000008F
+needs = 4
+trigger = { kill = 0x47002D26 }
+update = "advance"
+phase = 5
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:e5949843", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "s6"
+quest = 0x4000008F
+needs = 5
+trigger = { kill = 0x47002D26 }
+update = "complete"
+xp = 300
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:32e4b4bc", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "s7"
+quest = 0x4000008F
+needs = 1
+trigger = { kill = 0x47002D33 }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D33 }
+
+[[step]]
+key = "s8"
+quest = 0x4000008F
+needs = 2
+trigger = { kill = 0x47002D33 }
+update = "advance"
+phase = 3
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D33 }
+
+[[step]]
+key = "s9"
+quest = 0x4000008F
+needs = 3
+trigger = { kill = 0x47002D33 }
+update = "advance"
+phase = 4
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D33 }
+
+[[step]]
+key = "s10"
+quest = 0x4000008F
+needs = 4
+trigger = { kill = 0x47002D33 }
+update = "advance"
+phase = 5
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D33 }
+
+[[step]]
+key = "s11"
+quest = 0x4000008F
+needs = 5
+trigger = { kill = 0x47002D33 }
+update = "complete"
+xp = 300
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D33 }
+
+[[step]]
+key = "s12"
+quest = 0x4000008F
+needs = 1
+trigger = { kill = 0x47002D4D }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D4D }
+
+[[step]]
+key = "s13"
+quest = 0x4000008F
+needs = 2
+trigger = { kill = 0x47002D4D }
+update = "advance"
+phase = 3
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D4D }
+
+[[step]]
+key = "s14"
+quest = 0x4000008F
+needs = 3
+trigger = { kill = 0x47002D4D }
+update = "advance"
+phase = 4
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D4D }
+
+[[step]]
+key = "s15"
+quest = 0x4000008F
+needs = 4
+trigger = { kill = 0x47002D4D }
+update = "advance"
+phase = 5
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D4D }
+
+[[step]]
+key = "s16"
+quest = 0x4000008F
+needs = 5
+trigger = { kill = 0x47002D4D }
+update = "complete"
+xp = 300
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D4D }
+
+[[step]]
+key = "s17"
+quest = 0x4000008F
+needs = 1
+trigger = { kill = 0x47002D3E }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D3E }
+
+[[step]]
+key = "s18"
+quest = 0x4000008F
+needs = 2
+trigger = { kill = 0x47002D3E }
+update = "advance"
+phase = 3
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D3E }
+
+[[step]]
+key = "s19"
+quest = 0x4000008F
+needs = 3
+trigger = { kill = 0x47002D3E }
+update = "advance"
+phase = 4
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D3E }
+
+[[step]]
+key = "s20"
+quest = 0x4000008F
+needs = 4
+trigger = { kill = 0x47002D3E }
+update = "advance"
+phase = 5
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D3E }
+
+[[step]]
+key = "s21"
+quest = 0x4000008F
+needs = 5
+trigger = { kill = 0x47002D3E }
+update = "complete"
+xp = 300
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D3E }
+
+[[step]]
+key = "s22"
+quest = 0x4000008F
+needs = 1
+trigger = { kill = 0x47002D40 }
+update = "advance"
+phase = 2
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D40 }
+
+[[step]]
+key = "s23"
+quest = 0x4000008F
+needs = 2
+trigger = { kill = 0x47002D40 }
+update = "advance"
+phase = 3
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D40 }
+
+[[step]]
+key = "s24"
+quest = 0x4000008F
+needs = 3
+trigger = { kill = 0x47002D40 }
+update = "advance"
+phase = 4
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D40 }
+
+[[step]]
+key = "s25"
+quest = 0x4000008F
+needs = 4
+trigger = { kill = 0x47002D40 }
+update = "advance"
+phase = 5
+xp = 0
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D40 }
+
+[[step]]
+key = "s26"
+quest = 0x4000008F
+needs = 5
+trigger = { kill = 0x47002D40 }
+update = "complete"
+xp = 300
+prov = { from = "derived", rule = "quest-death-effect", record = 0x47002D40 }

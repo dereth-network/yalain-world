@@ -1,0 +1,32 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3000-6a4bd3cb"
+who = 0x47003000
+line = { table = 0x2500293F, string = 0x6A4BD3CB }
+line_name = "ID_Fail_Spew"
+role = "fail"
+how = "emote"
+when = "use"
+update = "fail"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500293F, confidence = "medium" }
+
+[[talk]]
+key = "t-3000-8b5bab29"
+who = 0x47003000
+line = { table = 0x2500293F, string = 0x8B5BAB29 }
+line_name = "ID_Nothing_Spew"
+role = "refuse-use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500293F, confidence = "high" }
+
+[[talk]]
+key = "t-3000-e3df2cc2"
+who = 0x47003000
+line = { table = 0x2500293F, string = 0xE3DF2CC2 }
+line_name = "ID_Advance_Spew"
+role = "advance"
+how = "emote"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:de24c3fa", confidence = "low", sample = { lines = 12, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

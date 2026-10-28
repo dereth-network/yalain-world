@@ -1,0 +1,39 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3247-0fba3eac"
+who = 0x47003247
+line = { table = 0x25002A4C, string = 0x0FBA3EAC }
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:331ae7cb", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3247-15162dce"
+who = 0x47003247
+line = { table = 0x25002A4C, string = 0x15162DCE }
+line_name = "ID_GiveLinvak"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A4C, confidence = "low" }
+
+[[talk]]
+key = "t-3247-7d8f7e9a"
+who = 0x47003247
+line = { table = 0x25002A4C, string = 0x7D8F7E9A }
+line_name = "ID_GiveOsteth"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A4C, confidence = "low" }
+
+[[talk]]
+key = "t-3247-893ebf9d"
+who = 0x47003247
+line = { table = 0x25002A4C, string = 0x893EBF9D }
+line_name = "ID_GiveOmishan"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A4C, confidence = "low" }

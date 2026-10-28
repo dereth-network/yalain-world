@@ -1,0 +1,92 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2f44-1bcb4aed"
+who = 0x47002F44
+line = { table = 0x250028DE, string = 0x1BCB4AED }
+line_name = "ID_WrongItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028DE, confidence = "low" }
+
+[[talk]]
+key = "t-2f44-2072a33a"
+who = 0x47002F44
+line = { table = 0x250028DE, string = 0x2072A33A }
+how = "tell"
+when = "use"
+quest = 0x4000024A
+update = "advance"
+phase = 2
+order = 3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:477c0ef2", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2f44-20f2a33a"
+who = 0x47002F44
+line = { table = 0x250028DE, string = 0x20F2A33A }
+how = "tell"
+when = "use"
+quest = 0x4000024A
+update = "advance"
+phase = 2
+order = 4
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:477c0ef2", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2f44-2172a33a"
+who = 0x47002F44
+line = { table = 0x250028DE, string = 0x2172A33A }
+how = "tell"
+when = "use"
+quest = 0x4000024A
+update = "advance"
+phase = 2
+order = 5
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:477c0ef2", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2f44-2372a33a"
+who = 0x47002F44
+line = { table = 0x250028DE, string = 0x2372A33A }
+how = "tell"
+when = "use"
+quest = 0x4000024A
+update = "advance"
+phase = 2
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:477c0ef2", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2f44-63691d8f"
+who = 0x47002F44
+line = { table = 0x250028DE, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028DE, confidence = "high" }
+
+[[talk]]
+key = "t-2f44-faf5891e"
+who = 0x47002F44
+line = { table = 0x250028DE, string = 0xFAF5891E }
+how = "emote"
+when = "use"
+quest = 0x4000024A
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:477c0ef2", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-2f44-fbf5891e"
+who = 0x47002F44
+line = { table = 0x250028DE, string = 0xFBF5891E }
+how = "emote"
+when = "use"
+quest = 0x4000024A
+update = "advance"
+phase = 2
+order = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:477c0ef2", confidence = "low", sample = { lines = 1, sessions = 1 } }

@@ -1,0 +1,71 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2f67-0820489c"
+who = 0x47002F67
+line = { table = 0x250028F1, string = 0x0820489C }
+line_name = "ID_Idle4"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028F1, confidence = "high" }
+
+[[talk]]
+key = "t-2f67-0820499c"
+who = 0x47002F67
+line = { table = 0x250028F1, string = 0x0820499C }
+line_name = "ID_Idle5"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:363b9f5c", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2f67-08204a9c"
+who = 0x47002F67
+line = { table = 0x250028F1, string = 0x08204A9C }
+line_name = "ID_Idle6"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028F1, confidence = "high" }
+
+[[talk]]
+key = "t-2f67-08204d9c"
+who = 0x47002F67
+line = { table = 0x250028F1, string = 0x08204D9C }
+line_name = "ID_Idle1"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:53102b1b", confidence = "medium", sample = { lines = 3, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-2f67-08204e9c"
+who = 0x47002F67
+line = { table = 0x250028F1, string = 0x08204E9C }
+line_name = "ID_Idle2"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028F1, confidence = "high" }
+
+[[talk]]
+key = "t-2f67-08204f9c"
+who = 0x47002F67
+line = { table = 0x250028F1, string = 0x08204F9C }
+line_name = "ID_Idle3"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028F1, confidence = "high" }
+
+[[talk]]
+key = "t-2f67-bff40440"
+who = 0x47002F67
+line = { table = 0x250028F1, string = 0xBFF40440 }
+line_name = "ID_CrystalSpew"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028F1, confidence = "high" }

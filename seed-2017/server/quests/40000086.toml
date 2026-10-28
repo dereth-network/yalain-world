@@ -1,0 +1,19 @@
+# Written by the AC2 world database's seed builder; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000086
+id_name = "QuestFindExplorerEsper"
+state = 0x6F000D3C
+challenge = -999
+duration = 10800
+cancellable = false
+prov = { from = "authored", fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000D3C } } }
+
+[[step]]
+key = "s1"
+quest = 0x40000086
+needs = 1
+trigger = { use = 0x470031E8 }
+update = "complete"
+xp = 0
+prov = { from = "authored" }

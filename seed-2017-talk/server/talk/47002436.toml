@@ -1,0 +1,71 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2436-098e5251"
+who = 0x47002436
+line = { table = 0x25002521, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002521, confidence = "low" }
+
+[[talk]]
+key = "t-2436-4aa037b6"
+who = 0x47002436
+line = { table = 0x25002521, string = 0x4AA037B6 }
+line_name = "ID_GiveKey"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002521, confidence = "low" }
+
+[[talk]]
+key = "t-2436-ae658924"
+who = 0x47002436
+line = { table = 0x25002521, string = 0xAE658924 }
+line_name = "ID_Taunt4"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002521, confidence = "high" }
+
+[[talk]]
+key = "t-2436-ae658928"
+who = 0x47002436
+line = { table = 0x25002521, string = 0xAE658928 }
+line_name = "ID_Taunt2"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002521, confidence = "high" }
+
+[[talk]]
+key = "t-2436-ae65892a"
+who = 0x47002436
+line = { table = 0x25002521, string = 0xAE65892A }
+line_name = "ID_Taunt3"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002521, confidence = "high" }
+
+[[talk]]
+key = "t-2436-ae65892e"
+who = 0x47002436
+line = { table = 0x25002521, string = 0xAE65892E }
+line_name = "ID_Taunt1"
+role = "combat"
+how = "say"
+when = "attack"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002521, confidence = "high" }
+
+[[talk]]
+key = "t-2436-faa20995"
+who = 0x47002436
+line = { table = 0x25002521, string = 0xFAA20995 }
+line_name = "ID_Default"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002521, confidence = "high" }

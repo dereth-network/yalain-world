@@ -1,0 +1,48 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-31c3-1bcb4aed"
+who = 0x470031C3
+line = { table = 0x25002A22, string = 0x1BCB4AED }
+line_name = "ID_WrongItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A22, confidence = "low" }
+
+[[talk]]
+key = "t-31c3-3d0e0adf"
+who = 0x470031C3
+line = { table = 0x25002A22, string = 0x3D0E0ADF }
+line_name = "ID_Activate"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:3856a8d2", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-31c3-88393c97"
+who = 0x470031C3
+line = { table = 0x25002A22, string = 0x88393C97 }
+how = "emote"
+when = "give"
+item = 0x47001742
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c7069985", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-31c3-a13e7640"
+who = 0x470031C3
+line = { table = 0x25002A22, string = 0xA13E7640 }
+how = "emote"
+when = "give"
+item = 0x47001732
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:d1a1738f", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-31c3-e53c1549"
+who = 0x470031C3
+line = { table = 0x25002A22, string = 0xE53C1549 }
+how = "emote"
+when = "give"
+item = 0x47001749
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:eaf4657a", confidence = "low", sample = { lines = 1, sessions = 1 } }

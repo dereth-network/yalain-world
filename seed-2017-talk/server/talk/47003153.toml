@@ -1,0 +1,71 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3153-4daf1f70"
+who = 0x47003153
+line = { table = 0x250029E8, string = 0x4DAF1F70 }
+line_name = "ID_Give_Phase1"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E8, confidence = "low" }
+
+[[talk]]
+key = "t-3153-4daf1f71"
+who = 0x47003153
+line = { table = 0x250029E8, string = 0x4DAF1F71 }
+line_name = "ID_Give_Phase5"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E8, confidence = "low" }
+
+[[talk]]
+key = "t-3153-4daf1f72"
+who = 0x47003153
+line = { table = 0x250029E8, string = 0x4DAF1F72 }
+line_name = "ID_Give_Phase9"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E8, confidence = "low" }
+
+[[talk]]
+key = "t-3153-cdaf1f70"
+who = 0x47003153
+line = { table = 0x250029E8, string = 0xCDAF1F70 }
+line_name = "ID_Give_Phase3"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E8, confidence = "low" }
+
+[[talk]]
+key = "t-3153-cdaf1f71"
+who = 0x47003153
+line = { table = 0x250029E8, string = 0xCDAF1F71 }
+line_name = "ID_Give_Phase7"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E8, confidence = "low" }
+
+[[talk]]
+key = "t-3153-ef43c761"
+who = 0x47003153
+line = { table = 0x250029E8, string = 0xEF43C761 }
+line_name = "ID_Wrong_Item"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E8, confidence = "low" }
+
+[[talk]]
+key = "t-3153-faa20995"
+who = 0x47003153
+line = { table = 0x250029E8, string = 0xFAA20995 }
+line_name = "ID_Default"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029E8, confidence = "high" }

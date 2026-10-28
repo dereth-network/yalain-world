@@ -1,0 +1,93 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3357-42e60a37"
+who = 0x47003357
+line = { table = 0x25002AC7, string = 0x42E60A37 }
+line_name = "ID_OnGive"
+role = "accept"
+how = "tell"
+when = "give"
+quest = 0x4000037A
+update = "advance"
+phase = 3
+item = 0x47001CD0
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:e332c04f", confidence = "high", sample = { lines = 10, sessions = 8 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3357-63691d8f"
+who = 0x47003357
+line = { table = 0x25002AC7, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC7, confidence = "high" }
+
+[[talk]]
+key = "t-3357-8a697d3e"
+who = 0x47003357
+line = { table = 0x25002AC7, string = 0x8A697D3E }
+line_name = "ID_Spew"
+role = "use"
+how = "emote"
+when = "give"
+quest = 0x4000037A
+update = "advance"
+phase = 3
+item = 0x47001CD0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:3ed092e9", confidence = "high", sample = { lines = 10, sessions = 8 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3357-8f830f4d"
+who = 0x47003357
+line = { table = 0x25002AC7, string = 0x8F830F4D }
+line_name = "ID_IdleChat3"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:f89d24ec", confidence = "high", sample = { lines = 25, sessions = 14 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3357-8f831f4d"
+who = 0x47003357
+line = { table = 0x25002AC7, string = 0x8F831F4D }
+line_name = "ID_IdleChat2"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC7, confidence = "high" }
+
+[[talk]]
+key = "t-3357-8f832f4d"
+who = 0x47003357
+line = { table = 0x25002AC7, string = 0x8F832F4D }
+line_name = "ID_IdleChat1"
+role = "idle"
+how = "say"
+when = "idle"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:45a3d6ad", confidence = "high", sample = { lines = 8, sessions = 6 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3357-a71d472a"
+who = 0x47003357
+line = { table = 0x25002AC7, string = 0xA71D472A }
+how = "tell"
+when = "use"
+quest = 0x4000037A
+update = "advance"
+phase = 2
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c4662cf4", confidence = "medium", sample = { lines = 2, sessions = 2 } }
+
+[[talk]]
+key = "t-3357-b80207d5"
+who = 0x47003357
+line = { table = 0x25002AC7, string = 0xB80207D5 }
+how = "tell"
+when = "use"
+quest = 0x4000037A
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c8449d51", confidence = "high", sample = { lines = 10, sessions = 9 } }

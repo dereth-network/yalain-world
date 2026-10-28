@@ -1,0 +1,21 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3367-11eec3fa"
+who = 0x47003367
+line = { table = 0x250013BB, string = 0x11EEC3FA }
+line_name = "ID_Give_Coin"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250013BB, confidence = "low" }
+
+[[talk]]
+key = "t-3367-1bcb4aed"
+who = 0x47003367
+line = { table = 0x250013BB, string = 0x1BCB4AED }
+line_name = "ID_WrongItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250013BB, confidence = "low" }

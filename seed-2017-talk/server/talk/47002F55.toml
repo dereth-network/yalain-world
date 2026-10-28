@@ -1,0 +1,31 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-2f55-0d2aaf57"
+who = 0x47002F55
+line = { table = 0x250028E5, string = 0x0D2AAF57 }
+line_name = "ID_GiveTheodolite"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028E5, confidence = "low" }
+
+[[talk]]
+key = "t-2f55-1bcb4aed"
+who = 0x47002F55
+line = { table = 0x250028E5, string = 0x1BCB4AED }
+line_name = "ID_WrongItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028E5, confidence = "low" }
+
+[[talk]]
+key = "t-2f55-c4f9188e"
+who = 0x47002F55
+line = { table = 0x250028E5, string = 0xC4F9188E }
+line_name = "ID_TooWeak"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250028E5, confidence = "high" }

@@ -1,0 +1,71 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3065-2e280ff0"
+who = 0x47003065
+line = { table = 0x2500296F, string = 0x2E280FF0 }
+line_name = "ID_Return"
+role = "remind"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500296F, confidence = "high" }
+
+[[talk]]
+key = "t-3065-4856a323"
+who = 0x47003065
+line = { table = 0x2500296F, string = 0x4856A323 }
+line_name = "ID_GiveAconite3"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500296F, confidence = "low" }
+
+[[talk]]
+key = "t-3065-48d6a323"
+who = 0x47003065
+line = { table = 0x2500296F, string = 0x48D6A323 }
+line_name = "ID_GiveAconite2"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500296F, confidence = "low" }
+
+[[talk]]
+key = "t-3065-4bd6a323"
+who = 0x47003065
+line = { table = 0x2500296F, string = 0x4BD6A323 }
+line_name = "ID_GiveAconite4"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500296F, confidence = "low" }
+
+[[talk]]
+key = "t-3065-51d6a323"
+who = 0x47003065
+line = { table = 0x2500296F, string = 0x51D6A323 }
+line_name = "ID_GiveAconite"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500296F, confidence = "low" }
+
+[[talk]]
+key = "t-3065-63691d8f"
+who = 0x47003065
+line = { table = 0x2500296F, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500296F, confidence = "high" }
+
+[[talk]]
+key = "t-3065-eb61185e"
+who = 0x47003065
+line = { table = 0x2500296F, string = 0xEB61185E }
+line_name = "ID_Usage"
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500296F, confidence = "high" }

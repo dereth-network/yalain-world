@@ -1,0 +1,62 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-33e0-09200efe"
+who = 0x470033E0
+line = { table = 0x25002B03, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ed702101", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-33e0-417010f3"
+who = 0x470033E0
+line = { table = 0x25002B03, string = 0x417010F3 }
+how = "tell"
+when = "use"
+quest = 0x8000038F
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:7792a258", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-33e0-65df4d98"
+who = 0x470033E0
+line = { table = 0x25002B03, string = 0x65DF4D98 }
+line_name = "ID_GiveArrow"
+role = "accept"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B03, confidence = "low" }
+
+[[talk]]
+key = "t-33e0-68f492a3"
+who = 0x470033E0
+line = { table = 0x25002B03, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:225929e2", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-33e0-aea07c7d"
+who = 0x470033E0
+line = { table = 0x25002B03, string = 0xAEA07C7D }
+line_name = "ID_Give"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002B03, confidence = "low" }
+
+[[talk]]
+key = "t-33e0-b7872a94"
+who = 0x470033E0
+line = { table = 0x25002B03, string = 0xB7872A94 }
+how = "tell"
+when = "give"
+quest = 0x8000038F
+update = "complete"
+item = 0x47001BA3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:cf713e2b", confidence = "low", sample = { lines = 1, sessions = 1 } }

@@ -15,6 +15,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/loot.toml            [[loot]]
 <pack>/server/stores.toml          [[keeper]], [[sale]]
 <pack>/server/quests/QQQQQQQQ.toml [[quest]], [[step]] of one quest
+<pack>/server/talk/TTTTTTTT.toml   [[talk]] of one template
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -58,10 +59,15 @@ description = "People of Arwic's market."
   each is the install's own for its number.
 - **String references** point at the install's text: `{ table = 0x25002AFC, string = 0x2824938C }`.
 - **New prose** a pack writes goes in a field ending in `_text` (`name_text`, `greeting_text`,
-  `tell_text`), at most 200 characters, beside the string reference it stands in for. A compile
-  uses the reference when there is one. Prefer new string-table entries in the world's own data
-  overlay, referenced by id; `_text` is for when there is no overlay. The game's own text is never
-  copied into a `_text` field.
+  `tell_text`, `line_text`), at most 200 characters, beside the string reference it stands in for.
+  A compile uses the reference when there is one; a line, a step's line or a greeting with only
+  `_text` is said as that text, which the client shows as it is (the same in every language, with
+  nothing filled in). Prefer new string-table entries in the world's own data overlay, referenced
+  by id; `_text` is for when there is no overlay. The game's own text is never copied into a
+  `_text` field.
+- **Token names**: a line's `line_name` is the name of the string token its string id is (such as
+  `ID_Begin2`); every token is computed from its name, so a check holds the name to the id, and a
+  tool can show what a line is for without the install.
 - **Places**: `cell` (the full cell id), `at = [x, y, z]` in meters within the cell's landblock
   (outdoors the landblock is 160 m on a side), and either `rotation = [w, x, y, z]` (scalar first)
   or `heading` (degrees). Outdoors `cell` may be left out: it follows from `at` (cells of 20 m,
@@ -80,16 +86,23 @@ Every row sets one **item**, named by its key:
 | `sale 0xSTORE ORDINAL` | the store template and the listing's ordinal |
 | `quest 0xID` | the quest's id |
 | `step 0xQUEST KEY` | the quest and the step's `key` |
+| `talk KEY` | the row's `key` |
 
-Keys are lowercase letters, digits and hyphens. The seed's keys are made from numbers: `s-5c` (the
-static object whose id ends in `5C`), `n-31e6` (a person of template `0x470031E6`), `c-12402` (camp
-12402), `p-77b80003` (a place in cell `0x77B80003`), `s1` (a step). A row refers to another by key:
-an object's `to` names a place, a camp's `parent` a camp; `pack:key` reaches another pack's row,
-`key@XXYY` another landblock's.
+Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
+`keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
+made from numbers: `s-5c` (the static object whose id ends in `5C`), `n-31e6` (a person of template
+`0x470031E6`), `c-12402` (camp 12402), `p-77b80003` (a place in cell `0x77B80003`), `s1` (a step),
+`t-335b-1cf7eb76` (a line of template `0x4700335B`, string `0x1CF7EB76`); a second row that would
+take a key already used gets `-2`, `-3`, ... The seed keeps each row's key from release to release,
+and never gives a key that a row has had to another row. A row refers to another by key: an
+object's `to` and a step's `to` name a place, a camp's `parent` a camp, a line's `object` a person;
+`pack:key` reaches another pack's row, `key@XXYY` another landblock's.
 
-Packs merge in load order. A pack that sets an item an earlier pack set wins only where an
-`[[override]]` says so; otherwise the build stops naming both rows. `[[remove]] items = ["camp
-c-4586@77B8"]` takes an item away.
+Packs merge in load order. Two packs that set an item alike agree. A pack that sets an item an
+earlier pack set differently wins only where an `[[override]]` says so (its `items` naming the
+item, or `landblock XXYY` for everything in a landblock, or nothing for everything both set);
+otherwise the build stops naming both rows. `[[remove]] items = ["camp c-4586@77B8"]` (or
+`item = "camp c-4586@77B8"`) takes an item away.
 
 ## Provenance
 
@@ -97,7 +110,7 @@ Every row has `prov`; a field whose source differs from its row's says so in `pr
 
 | `from` | means | required | optional |
 |---|---|---|---|
-| `capture` | measured from recordings of the live servers | `evidence` (an `AC2-EVID-...` handle), `ref` (opaque), `confidence` (`high`, `medium`, `low`) | `sample`: `sessions`, `creatures`, `corpses`, `views`, `trips` |
+| `capture` | measured from recordings of the live servers | `evidence` (an `AC2-EVID-...` handle), `ref` (opaque), `confidence` (`high`, `medium`, `low`) | `sample`: `sessions`, `creatures`, `corpses`, `views`, `trips`, `lines` |
 | `dat` | a record of the install | `record` | |
 | `derived` | computed by a listed rule | `rule` | `record` |
 | `authored` | written by a person | | `by`, `note` |
@@ -126,6 +139,10 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `store-sales` | a sale's product, price and currency are the store template's own listing at that ordinal; its name is the product's |
 | `quest-definition` | a quest's name, description, icon and journal entries are its definition's |
 | `quest-setup-static` | a quest's duration, retry wait and experience are the constant values its setup sets |
+| `quest-death-effect` | killing a creature whose template's death effect moves a quest on advances that quest a phase, as the recordings show for others of that effect |
+| `talk-token-role` | a line's role is the one its token's name gives (`ID_Begin2` offers a quest, `ID_Underway1` reminds, `ID_TooLow` refuses), said at that role's moment the way recorded lines of the name or role were; a derived line's `confidence` is how often recorded lines of its role agreed |
+| `talk-quest-number` | a person's quest line numbered k goes with the quest a recorded line of the same person numbered k went with |
+| `talk-quest-name` | a person's quest line numbered k goes with the quest named after the person's own table and k |
 
 ## Record kinds
 
@@ -178,11 +195,40 @@ are its template's and are not rows.
 are the definition's.
 
 **`[[step]]`**: what moves a quest on. `key`, `quest`, `needs` (the phase it must be at; 0 for not
-under way), `trigger` (`{ use = T }`, `{ take = T }` or `{ kill = T }`), `tell` / `tell_text` (what
-the person says), `update` (`bestow`, `advance`, `complete`), `phase` (for `advance`), `xp`, `gives`
-(templates).
+under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`bestow`, `advance`,
+`complete`), `phase` (for `advance`), `xp`, `gives` (templates), `requires`, `takes`, `to`.
 
-**`[[remove]]`**: `items`, the items a pack takes away.
+| `trigger` | moves the quest when the player |
+|---|---|
+| `{ use = T }` | uses a person or an object of template T (or a held item of it) |
+| `{ use = I, on = T }` | uses a held item of template I on an object of template T |
+| `{ arrive = T }` | arrives through a portal of template T |
+| `{ take = T }` | takes an item of template T |
+| `{ kill = T }` | kills a creature of template T |
+
+`requires` lists other quests the step needs, each `{ quest = Q, phase = N }` (under way at that
+phase) or `{ quest = Q, done = true }`. `takes` lists templates of items taken from the player's
+pack, which the player must hold (a hand-in). `to` names a place the step takes the player to,
+through portal space; its update is made on arrival.
+
+**`[[talk]]`**: a line a person (or a creature) says, and when. One row per line; a person says the
+lines of its rows whose moment and quest match, picking at random among several.
+
+| field | | meaning |
+|---|---|---|
+| `key` | required | unique in its pack |
+| `who` | required | the template that says it |
+| `object` | | one placed person only (`key@XXYY`) |
+| `line`, `line_text` | one of them | the line: a string reference, in the person's own string table, or new prose |
+| `line_name` | | the token name of `line`'s string id |
+| `role` | | what it does: `offer`, `remind`, `advance`, `accept`, `complete`, `fail`, `refuse-use`, `refuse-give`, `use`, `near`, `idle`, `combat`, `death`, `teleport` |
+| `how` | | `tell` (to the player, naming the speaker; the default), `say` (aloud, to everyone near), `emote` (text naming the speaker) |
+| `when` | required | the moment: `use`, `give`, `attack`, `death`, `near`, `idle` |
+| `quest`, `update`, `phase` | | the quest update the line comes with (`bestow`, `advance` and its phase, `complete`, `fail`) |
+| `item` | | the item given, for a line said when one is |
+| `order` | | its place in a speech of several lines (0 first) |
+
+**`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 
 ## What a row never holds
 

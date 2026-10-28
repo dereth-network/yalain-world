@@ -1,0 +1,22 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-15b0-68f19ca9"
+who = 0x470015B0
+line = { table = 0x25001FE2, string = 0x68F19CA9 }
+line_name = "ID_TooFar"
+role = "refuse-use"
+how = "tell"
+when = "use"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25001FE2, confidence = "high" }
+
+[[talk]]
+key = "t-15b0-afb032e6"
+who = 0x470015B0
+line = { table = 0x25001FE2, string = 0xAFB032E6 }
+line_name = "ID_Advance_Tatoo6"
+role = "advance"
+how = "tell"
+when = "use"
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25001FE2, confidence = "medium" }

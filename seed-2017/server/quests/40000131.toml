@@ -6,6 +6,7 @@ id_name = "QuestSoulboundOsteth"
 state = 0x6F000CE4
 challenge = 19
 duration = -1
+retry = 259200
 xp = 7500
 cancellable = true
 prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:66de9f30", confidence = "high", sample = { sessions = 4 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000CE4 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000CE4 } } }

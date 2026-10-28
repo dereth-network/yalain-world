@@ -1,0 +1,21 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-25fa-acc67a65"
+who = 0x470025FA
+line = { table = 0x250025A0, string = 0xACC67A65 }
+line_name = "ID_DeathTaunt"
+role = "death"
+how = "say"
+when = "death"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250025A0, confidence = "low" }
+
+[[talk]]
+key = "t-25fa-e847e4eb"
+who = 0x470025FA
+line = { table = 0x250025A0, string = 0xE847E4EB }
+line_name = "ID_DeathSpew"
+role = "death"
+how = "emote"
+when = "death"
+prov = { from = "derived", rule = "talk-token-role", record = 0x250025A0, confidence = "low" }

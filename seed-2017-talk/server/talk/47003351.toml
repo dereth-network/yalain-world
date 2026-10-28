@@ -1,0 +1,72 @@
+# Written by the AC2 world database's dialogue builder; edit an authored pack instead.
+
+[[talk]]
+key = "t-3351-098e5251"
+who = 0x47003351
+line = { table = 0x25002AC4, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC4, confidence = "low" }
+
+[[talk]]
+key = "t-3351-27e68c7b"
+who = 0x47003351
+line = { table = 0x25002AC4, string = 0x27E68C7B }
+line_name = "ID_RandomChat2"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC4, confidence = "high" }
+
+[[talk]]
+key = "t-3351-4b5fc8f5"
+who = 0x47003351
+line = { table = 0x25002AC4, string = 0x4B5FC8F5 }
+how = "tell"
+when = "give"
+quest = 0x4000027F
+update = "complete"
+item = 0x4700092F
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:f2018614", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3351-67e68c7b"
+who = 0x47003351
+line = { table = 0x25002AC4, string = 0x67E68C7B }
+line_name = "ID_RandomChat3"
+role = "idle"
+how = "tell"
+when = "idle"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC4, confidence = "high" }
+
+[[talk]]
+key = "t-3351-a7e68c7a"
+who = 0x47003351
+line = { table = 0x25002AC4, string = 0xA7E68C7A }
+line_name = "ID_RandomChat4"
+role = "idle"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4d8343e5", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
+
+[[talk]]
+key = "t-3351-b5e493c8"
+who = 0x47003351
+line = { table = 0x25002AC4, string = 0xB5E493C8 }
+how = "tell"
+when = "use"
+quest = 0x400002BC
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:148d364c", confidence = "low", sample = { lines = 1, sessions = 1 } }
+
+[[talk]]
+key = "t-3351-e7e68c7b"
+who = 0x47003351
+line = { table = 0x25002AC4, string = 0xE7E68C7B }
+line_name = "ID_RandomChat1"
+role = "idle"
+how = "tell"
+when = "use"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:cbdc2f6d", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }
