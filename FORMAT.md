@@ -167,6 +167,7 @@ A field marked † is read from the install when left out.
 | `name`, `name_text` | | a name the server gives it (a portal named for where it leads); else the template's |
 | `to` | | the place using it takes a player to |
 | `landings` | | a lifestone's recall spots: `{ cell, at, heading, seen }` |
+| `scene` | | a door's scene: the `[[scene]]` a player plays on the way to `to`, in place of portal space |
 
 **`[[camp]]`**: a spawn camp.
 
