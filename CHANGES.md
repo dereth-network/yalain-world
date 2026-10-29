@@ -1,5 +1,9 @@
 # Changes
 
+## v0.9.0
+
+- Camps no longer make players' pets and summons. New pack `fix-camps-summons/`.
+
 ## v0.8.0
 
 - Market-room, vault and dungeon doors play their scenes. New pack `market-doors/`.

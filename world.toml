@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons"]
 
 [[override]]
 pack = "fix-start"
@@ -24,3 +24,8 @@ items = ["step 0x400000d0 s1"]
 pack = "market-doors"
 over = "seed-2017"
 items = ["object s-1@FEFB", "object s-1@FEFA", "object s-1@F9FE", "object s-5@DE95", "object s-2@CA5A", "object s-e@049F", "object s-4@048B", "object s-46@0489"]
+
+[[override]]
+pack = "fix-camps-summons"
+over = "seed-2017"
+items = ["camp c-3618@6FA9", "camp c-3622@6FA9", "camp c-4413@6FA9"]

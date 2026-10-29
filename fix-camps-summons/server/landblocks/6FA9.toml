@@ -1,0 +1,32 @@
+[[camp]]
+key = "c-3618"
+cell = 0x6FA9003D
+at = [148.1, 89.8, 98.4]
+radius = 11.9
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470021EE, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3618", confidence = "medium", sample = { creatures = 5, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, spawns = { from = "authored", by = "Dereth Network", note = "a summoned creature (a pet's AI or NPC table): players' pets were seen, never spawned by a camp" } } }
+
+[[camp]]
+key = "c-3622"
+cell = 0x6FA90025
+at = [99.3, 99.6, 85.3]
+radius = 8.3
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470021EE, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3622", confidence = "medium", sample = { creatures = 7, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, spawns = { from = "authored", by = "Dereth Network", note = "a summoned creature (a pet's AI or NPC table): players' pets were seen, never spawned by a camp" } } }
+
+[[camp]]
+key = "c-4413"
+cell = 0x6FA9003E
+at = [140.5, 108.6, 91.5]
+radius = 27.2
+population = 12
+regen = 192.0
+spawns = [{ template = 0x47003459, weight = 7 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4413", confidence = "high", sample = { creatures = 33, sessions = 14 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, spawns = { from = "authored", by = "Dereth Network", note = "a summoned creature (a pet's AI or NPC table): players' pets were seen, never spawned by a camp" } } }
+
+[[remove]]
+items = ["camp c-1@6FA9", "camp c-948@6FA9", "camp c-4397@6FA9", "camp c-4412@6FA9", "camp c-5680@6FA9"]
