@@ -1,6 +1,6 @@
 # Changes
 
-## Unreleased
+## v0.6.0
 
 - Butchering corpses yields bone, hide, tallow, sinew or chitin, by creature. New pack
   `craft-butchery/`.
