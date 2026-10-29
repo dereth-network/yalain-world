@@ -18,6 +18,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/talk/TTTTTTTT.toml   [[talk]] of one template
 <pack>/server/crafting.toml        [[craft]]
 <pack>/server/story.toml           [[scene]], [[shard]]
+<pack>/server/butchery.toml        [[butchery]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -92,6 +93,7 @@ Every row sets one **item**, named by its key:
 | `craft 0xID` | the craft skill or recipe |
 | `scene 0xID` | the scene's id |
 | `shard 0xOBJECT` | the shard's world id |
+| `butchery 0xPROFILE` | the butchery profile |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -204,7 +206,8 @@ under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`b
 `complete`), `phase` (for `advance`), `xp`, `gives` (templates), `counts` (how many of each item
 given, in order; 1 when left out), `requires`, `takes`, `to`, `effects` (the effects it puts on the
 player, by their saved states: a blessing, a recipe learned or forgotten), `text` (a text shown
-after the effects, `{ table, string }`).
+after the effects, `{ table, string }`), `races` (the races it is for, by number: 1 human, 2
+Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out).
 
 | `trigger` | moves the quest when the player |
 |---|---|
@@ -252,6 +255,10 @@ starts with, at level 1 for a craft skill. One of the two.
 
 **`[[shard]]`**: `object`, a story shard's world id, and `scene`, the scene using it bestows (the
 shard's destination is its `[[object]]` row's `to`).
+
+**`[[butchery]]`**: what butchering a corpse yields, by its creature's butchery profile: `profile`
+(the profile's saved state), `items` (the materials' templates) and `weights` (each one's share, in
+order). One material is cut per butchery.
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 

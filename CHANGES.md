@@ -1,5 +1,11 @@
 # Changes
 
+## Unreleased
+
+- Butchering corpses yields bone, hide, tallow, sinew or chitin, by creature. New pack
+  `craft-butchery/`.
+- A start-area quest gives each race its own three weapon recipes.
+
 ## v0.5.0
 
 - The story's scenes and the shards that bestow them: 62 scenes, 24 shards, the 30 scenes a new

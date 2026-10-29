@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery"]
 
 [[override]]
 pack = "fix-start"
@@ -14,3 +14,8 @@ items = ["object s-56@0298", "object s-3b@03FB"]
 pack = "start-crafting"
 over = "seed-2017"
 items = ["step 0x40000016 s2", "step 0x40000016 s3", "step 0x40000016 s4", "step 0x40000016 s5", "step 0x400000c1 s3", "step 0x400000c1 s5", "step 0x400000c7 s5"]
+
+[[override]]
+pack = "craft-butchery"
+over = "seed-2017"
+items = ["step 0x400000d0 s1"]

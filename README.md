@@ -23,6 +23,9 @@ the player: the Arwic obelisks' blessings, the Arwic mines' recipe and iron, the
 `story-scenes/` is the story's scenes as the January 2017 servers sent them (their pictures, voices
 and subtitles by id), the shards that bestow them, and the scenes every new character holds.
 
+`craft-butchery/` is what butchering a corpse yields (each butchery profile's materials and their
+shares, as 2017's butcheries cut them) and a start-area quest's weapon recipes, three for each race.
+
 Every row's `prov` says where it came from: `capture` (measured; with an `AC2-EVID-...` evidence handle naming the extraction, an opaque reference to the recording, the confidence and the sample counts), `derived` (computed by a rule listed in FORMAT.md), `dat` (a record rooted in the client DATs) or `authored` (written by a person).
 
 ## What's Missing

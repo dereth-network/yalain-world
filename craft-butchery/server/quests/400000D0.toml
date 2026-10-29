@@ -1,0 +1,37 @@
+# The quest's giver bestows it with three of its six weapon recipes, by the player's race.
+
+[[step]]
+key = "s1"
+quest = 0x400000D0
+needs = 0
+trigger = { use = 0x47002FA9 }
+tell = { table = 0x2500290C, string = 0xAD7154AD }
+update = "bestow"
+xp = 0
+effects = [0x6F001B04, 0x6F001B0B, 0x6F001B0D]
+races = [4]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ESPER-RECIPES-2017", ref = "c:75a752b4", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "s1-human"
+quest = 0x400000D0
+needs = 0
+trigger = { use = 0x47002FA9 }
+tell = { table = 0x2500290C, string = 0xAD7154AD }
+update = "bestow"
+xp = 0
+effects = [0x6F001B02, 0x6F001B0C, 0x6F001B0D]
+races = [1, 8, 16]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ESPER-RECIPES-2017", ref = "c:98570820", confidence = "low", sample = { sessions = 1 }, note = "the player's race is not in the recording; races other than Lugian and Tumerok authored" }
+
+[[step]]
+key = "s1-lugian"
+quest = 0x400000D0
+needs = 0
+trigger = { use = 0x47002FA9 }
+tell = { table = 0x2500290C, string = 0xAD7154AD }
+update = "bestow"
+xp = 0
+effects = [0x6F001B03, 0x6F001B04, 0x6F001B0D]
+races = [2]
+prov = { from = "authored" }
