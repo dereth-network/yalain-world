@@ -1,11 +1,14 @@
 # Changes
 
+## v0.11.0
+
+- Locked doors hold from their front and open to their keys. New pack `door-locks/`.
+- Chests hold what the recorded chests held. New pack `chest-loot/`.
+
 ## v0.10.0
 
 - Creatures hold weapons that no template names, and every turret spot is filled. New packs
   `creature-weapons/` and `fix-camps-turrets/`.
-- Locked doors hold from their front and open to their keys. New pack `door-locks/`.
-- Chests hold what the recorded chests held. New pack `chest-loot/`.
 
 ## v0.9.0
 
