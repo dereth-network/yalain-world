@@ -17,6 +17,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/quests/QQQQQQQQ.toml [[quest]], [[step]] of one quest
 <pack>/server/talk/TTTTTTTT.toml   [[talk]] of one template
 <pack>/server/crafting.toml        [[craft]]
+<pack>/server/story.toml           [[scene]], [[shard]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -89,6 +90,8 @@ Every row sets one **item**, named by its key:
 | `step 0xQUEST KEY` | the quest and the step's `key` |
 | `talk KEY` | the row's `key` |
 | `craft 0xID` | the craft skill or recipe |
+| `scene 0xID` | the scene's id |
+| `shard 0xOBJECT` | the shard's world id |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -235,6 +238,20 @@ lines of its rows whose moment and quest match, picking at random among several.
 
 **`[[craft]]`**: a craft skill (`skill`, its saved state) or a recipe (`recipe`) every new character
 starts with, at level 1 for a craft skill. One of the two.
+
+**`[[scene]]`**: a scene of the story, as a client plays it.
+
+| field | | |
+|---|---|---|
+| `id` | required | the scene's id (an enumeration's value, such as `0x40000021`) |
+| `act`, `number` | `act` required | its act and its place in the act |
+| `name` | required | its name, a string reference |
+| `hidden`, `playable` | | a scene no story page lists (default false); one a player may replay (default true) |
+| `keyframes` | | its steps in order: `{ seconds, picture, music, voice, subtitle, tracks }`; `picture`, `music` and `voice` data ids, `subtitle` a string reference, `tracks` which of them the step defines (picture 0x1, music 0x2, voice 0x4, subtitle 0x10) |
+| `at_start` | | its place among the scenes every new character holds from its first entry |
+
+**`[[shard]]`**: `object`, a story shard's world id, and `scene`, the scene using it bestows (the
+shard's destination is its `[[object]]` row's `to`).
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 

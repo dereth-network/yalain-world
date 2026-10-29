@@ -20,6 +20,9 @@ trip through one.
 recipes, as the 2017 servers gave every new character), and what the start area's quest steps put on
 the player: the Arwic obelisks' blessings, the Arwic mines' recipe and iron, the miller's focus.
 
+`story-scenes/` is the story's scenes as the January 2017 servers sent them (their pictures, voices
+and subtitles by id), the shards that bestow them, and the scenes every new character holds.
+
 Every row's `prov` says where it came from: `capture` (measured; with an `AC2-EVID-...` evidence handle naming the extraction, an opaque reference to the recording, the confidence and the sample counts), `derived` (computed by a rule listed in FORMAT.md), `dat` (a record rooted in the client DATs) or `authored` (written by a person).
 
 ## What's Missing

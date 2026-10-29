@@ -1,5 +1,10 @@
 # Changes
 
+## v0.5.0
+
+- The story's scenes and the shards that bestow them: 62 scenes, 24 shards, the 30 scenes a new
+  character holds. New pack `story-scenes/`.
+
 ## v0.4.0
 
 - New characters know their craft skills and starting recipes. New pack `start-crafting/`.
