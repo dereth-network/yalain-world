@@ -1,0 +1,12 @@
+# Written by tools2/ac2-ycreat/turrets_pack.py from the January 2017 recordings.
+
+[[camp]]
+key = "c-12496"
+cell = 0x048A0100
+at = [-44.0, 0.0, 100.7]
+radius = 0.0
+spots = [{ cell = 0x048A0100, at = [-44.0, -6.0, 100.7] }, { cell = 0x048A0100, at = [-44.0, 6.0, 100.7] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C40, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TURRETS-2017", ref = "camp 12496", confidence = "medium", sample = { creatures = 2, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

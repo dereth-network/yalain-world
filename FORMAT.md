@@ -19,6 +19,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/crafting.toml        [[craft]]
 <pack>/server/story.toml           [[scene]], [[shard]]
 <pack>/server/butchery.toml        [[butchery]]
+<pack>/server/weapons.toml         [[weapon]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -94,6 +95,7 @@ Every row sets one **item**, named by its key:
 | `scene 0xID` | the scene's id |
 | `shard 0xOBJECT` | the shard's world id |
 | `butchery 0xPROFILE` | the butchery profile |
+| `weapon NAME` | the weapon's name, as creatures' templates write it |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -262,6 +264,12 @@ shard's destination is its `[[object]]` row's `to`).
 (the profile's saved state), `items` (the materials' templates) and `weights` (each one's share, in
 order), and `empty` (the share of butcheries that find nothing, against the weights; none when left
 out). One material is cut per butchery.
+
+**`[[weapon]]`**: a weapon creatures wield, where the name their templates give it (an identifier
+of the install, such as `ClubBurunBrowerk`) is no template of the install's own. `name`, `template`
+(the template it is made of), `two_share` (of the creatures whose template asks two of it, the share
+given two, the rest one; every one is given two when left out) and `stance` (the stance it is fought
+with, where its template sets none).
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 
