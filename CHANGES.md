@@ -1,5 +1,10 @@
 # Changes
 
+## v0.10.0
+
+- Creatures hold weapons that no template names, and every turret spot is filled. New packs
+  `creature-weapons/` and `fix-camps-turrets/`.
+
 ## v0.9.0
 
 - Camps no longer make players' pets and summons. New pack `fix-camps-summons/`.
