@@ -1,5 +1,11 @@
 # Changes
 
+## v0.4.0
+
+- New characters know their craft skills and starting recipes. New pack `start-crafting/`.
+- The Arwic obelisks and the explorer bless the player; the Arwic mines give the sword's recipe and
+  twenty iron; the miller renews the player's focus.
+
 ## v0.3.0
 
 - The start halls' quick exits go somewhere: where each hall's shard leads. New pack `fix-start/`.

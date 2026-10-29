@@ -16,6 +16,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/stores.toml          [[keeper]], [[sale]]
 <pack>/server/quests/QQQQQQQQ.toml [[quest]], [[step]] of one quest
 <pack>/server/talk/TTTTTTTT.toml   [[talk]] of one template
+<pack>/server/crafting.toml        [[craft]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -87,6 +88,7 @@ Every row sets one **item**, named by its key:
 | `quest 0xID` | the quest's id |
 | `step 0xQUEST KEY` | the quest and the step's `key` |
 | `talk KEY` | the row's `key` |
+| `craft 0xID` | the craft skill or recipe |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -196,7 +198,10 @@ are the definition's.
 
 **`[[step]]`**: what moves a quest on. `key`, `quest`, `needs` (the phase it must be at; 0 for not
 under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`bestow`, `advance`,
-`complete`), `phase` (for `advance`), `xp`, `gives` (templates), `requires`, `takes`, `to`.
+`complete`), `phase` (for `advance`), `xp`, `gives` (templates), `counts` (how many of each item
+given, in order; 1 when left out), `requires`, `takes`, `to`, `effects` (the effects it puts on the
+player, by their saved states: a blessing, a recipe learned or forgotten), `text` (a text shown
+after the effects, `{ table, string }`).
 
 | `trigger` | moves the quest when the player |
 |---|---|
@@ -227,6 +232,9 @@ lines of its rows whose moment and quest match, picking at random among several.
 | `quest`, `update`, `phase` | | the quest update the line comes with (`bestow`, `advance` and its phase, `complete`, `fail`) |
 | `item` | | the item given, for a line said when one is |
 | `order` | | its place in a speech of several lines (0 first) |
+
+**`[[craft]]`**: a craft skill (`skill`, its saved state) or a recipe (`recipe`) every new character
+starts with, at level 1 for a craft skill. One of the two.
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 

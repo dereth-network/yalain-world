@@ -1,0 +1,14 @@
+# The seed's steps of this quest, with what they put on the player and give in stacks.
+
+[[step]]
+key = "s5"
+quest = 0x400000C7
+needs = 4
+trigger = { use = 0x47002FBC }
+tell = { table = 0x2500291D, string = 0xA3033C8E }
+update = "complete"
+xp = 200
+gives = [0x470010B5]
+effects = [0x6F001B1F]
+text = { table = 0x250010C2, string = 0xA727FC98 }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-EFFECTS-2017", ref = "c:4406b01d", confidence = "medium", sample = { sessions = 2 } }

@@ -16,6 +16,10 @@ lines in each NPC's string table, placed by what their names say they are for.
 `fix-start/` sends the start halls' quick exits where each hall's shard leads; no recording shows a
 trip through one.
 
+`start-crafting/` is what a new character knows of crafting (every craft skill and the starting
+recipes, as the 2017 servers gave every new character), and what the start area's quest steps put on
+the player: the Arwic obelisks' blessings, the Arwic mines' recipe and iron, the miller's focus.
+
 Every row's `prov` says where it came from: `capture` (measured; with an `AC2-EVID-...` evidence handle naming the extraction, an opaque reference to the recording, the confidence and the sample counts), `derived` (computed by a rule listed in FORMAT.md), `dat` (a record rooted in the client DATs) or `authored` (written by a person).
 
 ## What's Missing
