@@ -1,6 +1,6 @@
 # Changes
 
-## Next
+## v0.7.0
 
 - Butchering some creatures can find nothing.
 - The Esper Warder's quest update comes before its recipes.
