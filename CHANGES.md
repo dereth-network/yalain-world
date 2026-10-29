@@ -1,5 +1,9 @@
 # Changes
 
+## v0.8.0
+
+- Market-room, vault and dungeon doors play their scenes. New pack `market-doors/`.
+
 ## v0.7.0
 
 - Butchering some creatures can find nothing.
