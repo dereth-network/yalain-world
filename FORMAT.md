@@ -170,6 +170,8 @@ A field marked † is read from the install when left out.
 | `to` | | the place using it takes a player to |
 | `landings` | | a lifestone's recall spots: `{ cell, at, heading, seen }` |
 | `scene` | | a door's scene: the `[[scene]]` a player plays on the way to `to`, in place of portal space |
+| `locked` | statics | a locked door: from its front a plain use is refused and only its key opens it (it locks again as it closes); from behind it opens |
+| `lock` | | a locked door's key id: the id (a key's `Lock_KeyID`) a key must carry to open it; none known: no key does |
 
 **`[[camp]]`**: a spawn camp.
 

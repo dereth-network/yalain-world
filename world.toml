@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks"]
 
 [[override]]
 pack = "fix-start"
@@ -34,3 +34,8 @@ items = ["camp c-3618@6FA9", "camp c-3622@6FA9", "camp c-4413@6FA9"]
 pack = "fix-camps-turrets"
 over = "seed-2017"
 items = ["camp c-12490@0489", "camp c-12491@0489", "camp c-12496@048A"]
+
+[[override]]
+pack = "door-locks"
+over = "seed-2017"
+items = ["object s-2@01BA", "object s-11@01D3", "object s-1@01D6", "object s-1a@01D6", "object s-3@01DC", "object s-18@01DF", "object s-1a@01E2", "object s-1@01E5", "object s-1@01EE", "object s-2@01F1", "object s-13@01F4", "object s-1@01F7", "object s-1e@01FA", "object s-13@03E9", "object s-1d@03E9", "object s-1e@03E9", "object s-e@03E9", "object s-f@03E9", "object s-4e@04AD", "object s-2f@6967", "object s-9@6967"]
