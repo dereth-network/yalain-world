@@ -207,7 +207,8 @@ under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`b
 given, in order; 1 when left out), `requires`, `takes`, `to`, `effects` (the effects it puts on the
 player, by their saved states: a blessing, a recipe learned or forgotten), `text` (a text shown
 after the effects, `{ table, string }`), `races` (the races it is for, by number: 1 human, 2
-Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out).
+Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out), `effects_last` (true: the
+quest's update is told before the effects and their text, not after them).
 
 | `trigger` | moves the quest when the player |
 |---|---|
@@ -258,7 +259,8 @@ shard's destination is its `[[object]]` row's `to`).
 
 **`[[butchery]]`**: what butchering a corpse yields, by its creature's butchery profile: `profile`
 (the profile's saved state), `items` (the materials' templates) and `weights` (each one's share, in
-order). One material is cut per butchery.
+order), and `empty` (the share of butcheries that find nothing, against the weights; none when left
+out). One material is cut per butchery.
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 

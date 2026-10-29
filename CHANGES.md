@@ -1,5 +1,10 @@
 # Changes
 
+## Next
+
+- Butchering some creatures can find nothing.
+- The Esper Warder's quest update comes before its recipes.
+
 ## v0.6.0
 
 - Butchering corpses yields bone, hide, tallow, sinew or chitin, by creature. New pack
