@@ -1,0 +1,35 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000135
+id_name = "QuestSoulboundHidden"
+state = 0x6F000CE1
+challenge = 40
+prov = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-GATES-2017", ref = "c:813cd4e2", confidence = "low", sample = { sessions = 4 } }
+
+[[step]]
+key = "with-4000012f"
+quest = 0x40000135
+needs = 0
+trigger = { done = 0x4000012F }
+update = "bestow"
+requires = [{ quest = 0x40000130, done = true }, { quest = 0x40000131, done = true }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-GATES-2017", ref = "c:813cd4e2", confidence = "low", sample = { sessions = 4 } }
+
+[[step]]
+key = "with-40000130"
+quest = 0x40000135
+needs = 0
+trigger = { done = 0x40000130 }
+update = "bestow"
+requires = [{ quest = 0x4000012F, done = true }, { quest = 0x40000131, done = true }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-GATES-2017", ref = "c:813cd4e2", confidence = "low", sample = { sessions = 4 } }
+
+[[step]]
+key = "with-40000131"
+quest = 0x40000135
+needs = 0
+trigger = { done = 0x40000131 }
+update = "bestow"
+requires = [{ quest = 0x4000012F, done = true }, { quest = 0x40000130, done = true }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-GATES-2017", ref = "c:813cd4e2", confidence = "low", sample = { sessions = 4 } }

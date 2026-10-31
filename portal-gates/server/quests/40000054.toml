@@ -1,0 +1,16 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000054
+id_name = "QuestTouTouPeninsulaBoss"
+state = 0x6F000D24
+challenge = 30
+prov = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-GATES-2017", ref = "c:54f32f8e", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "boss"
+quest = 0x40000054
+needs = 0
+trigger = { kill = 0x470022D4 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-GATES-2017", ref = "c:54f32f8e", confidence = "medium", sample = { sessions = 2 } }

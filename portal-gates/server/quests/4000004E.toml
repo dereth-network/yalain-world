@@ -1,0 +1,16 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000004E
+id_name = "QuestProsperMarchesBoss"
+state = 0x6F000C18
+challenge = 22
+prov = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-GATES-2017", ref = "c:54f32f8e", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "boss"
+quest = 0x4000004E
+needs = 0
+trigger = { kill = 0x4700236F }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-GATES-2017", ref = "c:54f32f8e", confidence = "low", sample = { sessions = 1 } }

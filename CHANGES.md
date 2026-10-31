@@ -1,5 +1,11 @@
 # Changes
 
+## v0.18.0
+
+- Vault, cache and Dominion Center portals keep out who 2017 kept out. New pack `portal-gates/`;
+  objects may name `requires`.
+- Four more Shaper's hoards can be entered. New pack `hoard-entrances/`.
+
 ## v0.17.0
 
 - Hoard keys open their hoards to the whole fellowship. New pack `hoard-keys/`; steps may name `fellows`.

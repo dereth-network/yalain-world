@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances"]
 
 [[override]]
 pack = "fix-start"
@@ -69,3 +69,13 @@ items = ["object n-3183@AE3B", "object n-3185@AE3A", "object n-3187@AE3A"]
 pack = "hoard-keys"
 over = "quest-catalog"
 items = ["quest 0x800000EA", "quest 0x800000F0", "quest 0x800000F2", "quest 0x80000102", "quest 0x80000106", "quest 0x80000108", "quest 0x8000010A"]
+
+[[override]]
+pack = "portal-gates"
+over = "seed-2017"
+items = ["object s-12@07F3", "object s-1@01E6", "object s-2@01E9", "object s-3@01D7", "object s-3@01E1", "object s-3@D490", "object s-49@0498", "object s-4@06C0", "object s-4a@0498", "object s-4b@0498", "object s-4c@0498", "object s-67@05F9", "object s-69@06FD", "object s-be@0498"]
+
+[[override]]
+pack = "hoard-entrances"
+over = "seed-2017"
+items = ["object s-1@66B3", "object s-1@78B0", "object s-1@F092", "object s-2@7396"]

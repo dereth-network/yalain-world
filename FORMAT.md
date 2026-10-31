@@ -154,6 +154,7 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `talk-quest-number` | a person's quest line numbered k goes with the quest a recorded line of the same person numbered k went with |
 | `hoard-key-table` | a hoard's key used on the stockpile its interaction table names gives its user and fellowship the quest the key's use needs able to be given, which the stockpile's use needs under way, as the recordings show for one hoard |
 | `hoard-key-text` | a hoard's entry quest lasts the ten minutes, and its mine quest the five, that its key's own text gives, as the recordings measured for one hoard |
+| `hoard-teleport-place` | a hoard's stockpile leads to the place its mine quest's teleport sends a player out from, where the recordings show players of one hoard arriving |
 | `talk-quest-name` | a person's quest line numbered k goes with the quest named after the person's own table and k |
 
 ## Record kinds
@@ -176,6 +177,7 @@ A field marked † is read from the install when left out.
 | `locked` | statics | a locked door: from its front a plain use is refused and only its key opens it (it locks again as it closes); from behind it opens |
 | `lock` | | a locked door's key id: the id (a key's `Lock_KeyID`) a key must carry to open it; none known: no key does |
 | `route`, `route_start`, `route_direction` | people | the `[[route]]` a person walks (`key`, or `pack:key`), the waypoint it sets out toward (from 0) and `forward` or `backward`, as a camp's creatures do |
+| `requires` | statics | the quest a player must hold to use it (a portal this placement keeps closed, over its template's): `{ quest = Q, done = true }` (completed), `{ quest = Q, underway = true }` (under way at any phase) or `{ quest = Q, phase = N }` (under way at that phase); a use or a walk-in it keeps out is refused at once |
 
 **`[[camp]]`**: a spawn camp.
 
