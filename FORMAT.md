@@ -239,7 +239,7 @@ lines of its rows whose moment and quest match, picking at random among several.
 | `line`, `line_text` | one of them | the line: a string reference, in the person's own string table, or new prose |
 | `line_name` | | the token name of `line`'s string id |
 | `role` | | what it does: `offer`, `remind`, `advance`, `accept`, `complete`, `fail`, `refuse-use`, `refuse-give`, `use`, `near`, `idle`, `combat`, `death`, `teleport` |
-| `how` | | `tell` (to the player, naming the speaker; the default), `say` (aloud, to everyone near), `emote` (text naming the speaker) |
+| `how` | | `tell` (to the player, naming the speaker; the default), `say` (aloud, to everyone near), `emote` (text naming the speaker), `broadcast` (read by every player in the speaker's landblock and the eight around it, indoors its own landblock, whether their clients know the speaker or not) |
 | `when` | required | the moment: `use`, `give`, `attack`, `death`, `near`, `idle` |
 | `quest`, `update`, `phase` | | the quest update the line comes with (`bestow`, `advance` and its phase, `complete`, `fail`) |
 | `item` | | the item given, for a line said when one is |

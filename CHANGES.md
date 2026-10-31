@@ -1,5 +1,9 @@
 # Changes
 
+## v0.14.0
+
+- Four creatures broadcast their idle emote to the landblocks around them. New pack `creature-emotes/`.
+
 ## v0.13.0
 
 - The quests 2017 players held are all defined. New pack `quest-catalog/`.

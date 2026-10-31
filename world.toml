@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes"]
 
 [[override]]
 pack = "fix-start"
@@ -44,3 +44,8 @@ items = ["object s-2@01BA", "object s-11@01D3", "object s-1@01D6", "object s-1a@
 pack = "glyph-vaults"
 over = "seed-2017"
 items = ["object s-1@3E6A", "object s-1@4B58", "object s-1@516F", "object s-1@5179", "object s-1@5D6F", "object s-1@62A1", "object s-1@645E", "object s-1@766A", "object s-1@7791", "object s-2@85AC", "object s-1@8E81", "object s-1@95A3", "object s-16@9C96", "object s-1@9CBE", "object s-1@AE94", "object s-1@C495", "object s-1@CDA2", "object s-1@CE84", "object s-1@D193", "object s-8@DEA1", "object s-1@F075"]
+
+[[override]]
+pack = "creature-emotes"
+over = "seed-2017-talk"
+items = ["talk t-31cc-08204d9c", "talk t-31d4-08204d9c", "talk t-31d6-08204d9c", "talk t-31e5-08204d9c"]
