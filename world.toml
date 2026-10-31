@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys"]
 
 [[override]]
 pack = "fix-start"
@@ -54,3 +54,13 @@ items = ["talk t-31cc-08204d9c", "talk t-31d4-08204d9c", "talk t-31d6-08204d9c",
 pack = "patrol-routes"
 over = "seed-2017"
 items = ["camp c-12474@048B", "camp c-12473@048B", "camp c-12475@048B", "camp c-12478@048B", "camp c-12479@048B", "camp c-12481@048B", "camp c-12480@048B", "camp c-12476@048B", "camp c-12477@048B", "camp c-12504@048A", "camp c-12503@048A", "camp c-12502@048A"]
+
+[[override]]
+pack = "quest-durations"
+over = "seed-2017"
+items = ["quest 0x4000006D", "quest 0x40000071", "quest 0x40000079", "quest 0x4000007A", "quest 0x4000007D", "quest 0x4000008C", "quest 0x40000115", "quest 0x4000011D", "quest 0x40000125", "quest 0x40000139", "quest 0x40000141", "quest 0x4000015B", "quest 0x40000161", "quest 0x40000167", "quest 0x4000016E", "quest 0x40000175", "quest 0x40000179", "quest 0x4000017A", "quest 0x4000017B", "quest 0x40000180", "quest 0x400001AD", "quest 0x400001AE", "quest 0x400001AF", "quest 0x400001B0", "quest 0x400001B1", "quest 0x400001B2", "quest 0x400001B5", "quest 0x400001B7", "quest 0x400001B8", "quest 0x400001B9", "quest 0x400001F2", "quest 0x400001F5", "quest 0x400001F6", "quest 0x400001F7", "quest 0x400001F8", "quest 0x4000027C", "quest 0x4000027E", "quest 0x4000027F", "quest 0x4000028C", "quest 0x4000028D", "quest 0x4000028E", "quest 0x40000313", "quest 0x40000335", "quest 0x40000336", "quest 0x4000037A", "quest 0x80000032", "quest 0x8000003D", "quest 0x80000043", "quest 0x8000004D", "quest 0x8000004F", "quest 0x80000050", "quest 0x80000051", "quest 0x80000052", "quest 0x80000053", "quest 0x80000054", "quest 0x800000EE", "quest 0x800002CD", "quest 0x800002E5", "quest 0x800002E6", "quest 0x8000031C", "quest 0x8000031E", "quest 0x80000321", "quest 0x80000324", "quest 0x80000327", "quest 0x80000348", "quest 0x80000364", "quest 0x80000374", "quest 0x8000037D", "quest 0x8000037E", "quest 0x8000037F"]
+
+[[override]]
+pack = "hoard-keys"
+over = "quest-catalog"
+items = ["quest 0x800000EA", "quest 0x800000F0", "quest 0x800000F2", "quest 0x80000102", "quest 0x80000106", "quest 0x80000108", "quest 0x8000010A"]

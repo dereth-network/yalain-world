@@ -152,6 +152,8 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `quest-death-effect` | killing a creature whose template's death effect moves a quest on advances that quest a phase, as the recordings show for others of that effect |
 | `talk-token-role` | a line's role is the one its token's name gives (`ID_Begin2` offers a quest, `ID_Underway1` reminds, `ID_TooLow` refuses), said at that role's moment the way recorded lines of the name or role were; a derived line's `confidence` is how often recorded lines of its role agreed |
 | `talk-quest-number` | a person's quest line numbered k goes with the quest a recorded line of the same person numbered k went with |
+| `hoard-key-table` | a hoard's key used on the stockpile its interaction table names gives its user and fellowship the quest the key's use needs able to be given, which the stockpile's use needs under way, as the recordings show for one hoard |
+| `hoard-key-text` | a hoard's entry quest lasts the ten minutes, and its mine quest the five, that its key's own text gives, as the recordings measured for one hoard |
 | `talk-quest-name` | a person's quest line numbered k goes with the quest named after the person's own table and k |
 
 ## Record kinds
@@ -220,7 +222,8 @@ under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`b
 `complete`), `phase` (for `advance`), `xp`, `gives` (templates), `counts` (how many of each item
 given, in order; 1 when left out), `requires`, `takes`, `to`, `effects` (the effects it puts on the
 player, by their saved states: a blessing, a recipe learned or forgotten), `text` (a text shown
-after the effects, `{ table, string }`), `races` (the races it is for, by number: 1 human, 2
+after the effects, `{ table, string }`), `fellows` (true: the update is made for each of the
+player's fellows in the world as well, each told it alone), `races` (the races it is for, by number: 1 human, 2
 Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out), `effects_last` (true: the
 quest's update is told before the effects and their text, not after them).
 

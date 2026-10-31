@@ -1,0 +1,17 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000E4
+id_name = "QuestCrystalKnorrBTDEnter"
+state = 0x6F000726
+duration = 600.0
+prov = { from = "derived", rule = "hoard-key-text", record = 0x6F0011FE }
+
+[[step]]
+key = "key"
+quest = 0x800000E4
+needs = 0
+trigger = { use = 0x470012A7, on = 0x470012A2 }
+update = "bestow"
+fellows = true
+prov = { from = "derived", rule = "hoard-key-table", record = 0x6F0011FE }

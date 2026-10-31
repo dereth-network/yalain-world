@@ -1,0 +1,17 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000EC
+id_name = "QuestIronKnorrBTDEnter"
+state = 0x6F00072E
+duration = 600.0
+prov = { from = "derived", rule = "hoard-key-text", record = 0x6F0011FF }
+
+[[step]]
+key = "key"
+quest = 0x800000EC
+needs = 0
+trigger = { use = 0x470012A8, on = 0x470012A3 }
+update = "bestow"
+fellows = true
+prov = { from = "derived", rule = "hoard-key-table", record = 0x6F0011FF }

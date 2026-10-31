@@ -1,0 +1,19 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000108
+id_name = "QuestWoodOmishanBTDEnter"
+state = 0x6F00074A
+challenge = -1
+retry = 590400
+duration = 600.0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:207aeabe", confidence = "high", sample = { sessions = 50 }, fields = { duration = { from = "derived", rule = "hoard-key-text", record = 0x6F00120C } } }
+
+[[step]]
+key = "key"
+quest = 0x80000108
+needs = 0
+trigger = { use = 0x470012D0, on = 0x470012CB }
+update = "bestow"
+fellows = true
+prov = { from = "derived", rule = "hoard-key-table", record = 0x6F00120C }

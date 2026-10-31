@@ -1,0 +1,17 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000100
+id_name = "QuestStoneOmishanBTDEnter"
+state = 0x6F000742
+duration = 600.0
+prov = { from = "derived", rule = "hoard-key-text", record = 0x6F00120B }
+
+[[step]]
+key = "key"
+quest = 0x80000100
+needs = 0
+trigger = { use = 0x470012CF, on = 0x470012CA }
+update = "bestow"
+fellows = true
+prov = { from = "derived", rule = "hoard-key-table", record = 0x6F00120B }

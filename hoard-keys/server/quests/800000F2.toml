@@ -1,0 +1,18 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000F2
+id_name = "QuestIronOstethBTDEnter"
+state = 0x6F000734
+challenge = -1
+duration = 600.0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:294f35c9", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "hoard-key-text", record = 0x6F00120E } } }
+
+[[step]]
+key = "key"
+quest = 0x800000F2
+needs = 0
+trigger = { use = 0x470012E0, on = 0x470012DB }
+update = "bestow"
+fellows = true
+prov = { from = "derived", rule = "hoard-key-table", record = 0x6F00120E }

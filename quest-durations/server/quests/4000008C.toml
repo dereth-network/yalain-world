@@ -1,0 +1,12 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000008C
+id_name = "QuestKillCobaltDrudgeProwlerSpymaster"
+state = 0x6F000911
+challenge = 13
+retry = 72000
+xp = 1100
+cancellable = true
+duration = 3600.0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:de55015d", confidence = "medium", sample = { sessions = 2 }, fields = { xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000911 }, duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:1b41f88e", confidence = "low", sample = { sessions = 1 } } } }

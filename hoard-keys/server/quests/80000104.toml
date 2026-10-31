@@ -1,0 +1,17 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000104
+id_name = "QuestWoodKnorrBTDEnter"
+state = 0x6F000746
+duration = 600.0
+prov = { from = "derived", rule = "hoard-key-text", record = 0x6F001202 }
+
+[[step]]
+key = "key"
+quest = 0x80000104
+needs = 0
+trigger = { use = 0x470012AB, on = 0x470012A6 }
+update = "bestow"
+fellows = true
+prov = { from = "derived", rule = "hoard-key-table", record = 0x6F001202 }
