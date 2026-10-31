@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000007E
+id_name = "QuestEeruksLoot"
+state = 0x6F0007F0
+challenge = 30
+duration = 72000
+retry = 259200
+xp = 220000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:e722fc09", confidence = "high", sample = { sessions = 50 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0007F0 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F0007F0 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F0007F0 }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F0007F0 } } }

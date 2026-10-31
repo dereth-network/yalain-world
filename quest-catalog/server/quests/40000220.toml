@@ -1,0 +1,11 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000220
+id_name = "QuestKillThornlingHarasser"
+state = 0x6F00097E
+challenge = 48
+duration = 10800
+retry = 72000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:fc234e98", confidence = "high", sample = { sessions = 7 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00097E }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00097E }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F00097E } } }

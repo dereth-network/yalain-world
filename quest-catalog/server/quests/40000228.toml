@@ -1,0 +1,11 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000228
+id_name = "QuestKillWispDustDevil"
+state = 0x6F000986
+challenge = 52
+duration = 10800
+retry = 72000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:450dc324", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000986 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000986 }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F000986 } } }

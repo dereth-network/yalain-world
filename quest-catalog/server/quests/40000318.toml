@@ -1,0 +1,10 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000318
+id_name = "QuestWar3KP"
+state = 0x6F000D63
+challenge = -999
+duration = 3600
+retry = 600
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:39ee8d24", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000D63 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000D63 } } }

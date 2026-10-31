@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000D8
+id_name = "QuestKillWearyDrudgeConscript"
+state = 0x6F000942
+challenge = 21
+duration = 3600
+retry = 72000
+xp = 13000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:c719fb08", confidence = "high", sample = { sessions = 30 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000942 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000942 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000942 }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F000942 } } }

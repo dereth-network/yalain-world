@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000D7
+id_name = "QuestKillBullMarshArmoredillo"
+state = 0x6F00090E
+challenge = 24
+duration = 3600
+retry = 72000
+xp = 46000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:7f85d88f", confidence = "high", sample = { sessions = 29 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00090E }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00090E }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F00090E }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F00090E } } }

@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000151
+id_name = "QuestKillAustereGurogGladiator"
+state = 0x6F000909
+challenge = 41
+duration = 3600
+retry = 72000
+xp = 2000000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:4db084fc", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000909 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000909 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000909 }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F000909 } } }

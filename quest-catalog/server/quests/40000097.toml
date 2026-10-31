@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000097
+id_name = "QuestKillGreenWaspStriker"
+state = 0x6F000925
+challenge = 7
+duration = 3600
+retry = 72000
+xp = 240
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:95c7f253", confidence = "high", sample = { sessions = 177 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000925 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000925 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000925 }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F000925 } } }

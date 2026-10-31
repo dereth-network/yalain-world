@@ -1,0 +1,11 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000062
+id_name = "QuestBurunDespoilment"
+state = 0x6F00075F
+challenge = 18
+duration = 7200
+xp = 6000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:b7740240", confidence = "high", sample = { sessions = 178 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00075F }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F00075F }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F00075F } } }

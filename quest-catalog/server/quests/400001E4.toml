@@ -1,0 +1,11 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x400001E4
+id_name = "QuestPortalBeaconTouTouNE"
+state = 0x6F000C13
+challenge = 35
+duration = 10800
+retry = 86400
+xp = 95000
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:9a609527", confidence = "high", sample = { sessions = 50 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000C13 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000C13 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000C13 } } }

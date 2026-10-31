@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000A2
+id_name = "QuestKillSneakyDrudgeRobber"
+state = 0x6F00093A
+challenge = 14
+duration = 3600
+retry = 72000
+xp = 1500
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:ef81a3b9", confidence = "high", sample = { sessions = 20 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00093A }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00093A }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F00093A }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F00093A } } }

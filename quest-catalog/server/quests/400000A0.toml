@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000A0
+id_name = "QuestKillScarredBladeBeetle"
+state = 0x6F000938
+challenge = 10
+duration = 3600
+retry = 72000
+xp = 550
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:57420680", confidence = "high", sample = { sessions = 75 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000938 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000938 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000938 }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F000938 } } }

@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000E9
+id_name = "QuestKillSwordBeetle"
+state = 0x6F0009B9
+challenge = 11
+duration = 7200
+retry = 72000
+xp = 1000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:dd333da5", confidence = "high", sample = { sessions = 80 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0009B9 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F0009B9 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F0009B9 }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F0009B9 } } }

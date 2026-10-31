@@ -1,0 +1,11 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000030A
+id_name = "QuestSlayBloodLords"
+state = 0x6F00089C
+challenge = 55
+duration = 86400
+retry = 518400
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:c0527d00", confidence = "high", sample = { sessions = 42 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00089C }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00089C }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F00089C } } }

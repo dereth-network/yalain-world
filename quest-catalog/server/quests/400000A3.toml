@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000A3
+id_name = "QuestKillTanglefootVermin"
+state = 0x6F00093C
+challenge = 6
+duration = 3600
+retry = 72000
+xp = 200
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:7923827a", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00093C }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00093C }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F00093C }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F00093C } } }

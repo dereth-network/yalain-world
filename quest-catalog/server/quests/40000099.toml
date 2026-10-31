@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000099
+id_name = "QuestKillGruttSepsisRavager"
+state = 0x6F000929
+challenge = 10
+duration = 3600
+retry = 72000
+xp = 900
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:7df380ba", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000929 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000929 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000929 }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F000929 } } }

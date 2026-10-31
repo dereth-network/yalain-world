@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000153
+id_name = "QuestKillGraspingBanderlingBouncer"
+state = 0x6F000924
+challenge = 41
+duration = 3600
+retry = 72000
+xp = 2330000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:bb8bfe36", confidence = "high", sample = { sessions = 7 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000924 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000924 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000924 }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F000924 } } }

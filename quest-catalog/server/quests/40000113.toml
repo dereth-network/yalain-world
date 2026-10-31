@@ -1,0 +1,12 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000113
+id_name = "QuestKillMasterGurogHenchman"
+state = 0x6F0009B1
+challenge = 39
+duration = 7200
+retry = 72000
+xp = 2250000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:12613cf6", confidence = "high", sample = { sessions = 19 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F0009B1 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F0009B1 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F0009B1 }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F0009B1 } } }

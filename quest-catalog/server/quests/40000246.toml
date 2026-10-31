@@ -1,0 +1,11 @@
+# Written by tools2/ac2-yquest/catalog.py from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000246
+id_name = "QuestKillSpawnFloatingSpore"
+state = 0x6F00097B
+challenge = 51
+duration = 10800
+retry = 72000
+cancellable = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:6d427d8c", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F00097B }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F00097B }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F00097B } } }
