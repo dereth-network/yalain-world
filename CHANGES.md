@@ -1,5 +1,10 @@
 # Changes
 
+## v0.13.0
+
+- The quests 2017 players held are all defined. New pack `quest-catalog/`.
+- The iron hoard's veins stand where they stood. New pack `hoard-veins/`.
+
 ## v0.12.0
 
 - Glyphs open their vaults, and each vault leads somewhere. New pack `glyph-vaults/`.
