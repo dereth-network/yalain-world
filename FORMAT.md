@@ -175,6 +175,7 @@ A field marked † is read from the install when left out.
 | `scene` | | a door's scene: the `[[scene]]` a player plays on the way to `to`, in place of portal space |
 | `locked` | statics | a locked door: from its front a plain use is refused and only its key opens it (it locks again as it closes); from behind it opens |
 | `lock` | | a locked door's key id: the id (a key's `Lock_KeyID`) a key must carry to open it; none known: no key does |
+| `route`, `route_start`, `route_direction` | people | the `[[route]]` a person walks (`key`, or `pack:key`), the waypoint it sets out toward (from 0) and `forward` or `backward`, as a camp's creatures do |
 
 **`[[camp]]`**: a spawn camp.
 
@@ -286,7 +287,7 @@ of the install, such as `ClubBurunBrowerk`) is no template of the install's own.
 given two, the rest one; every one is given two when left out) and `stance` (the stance it is fought
 with, where its template sets none).
 
-**`[[route]]`**: places creatures walk at rest in turn. `key`; `waypoints` (`{ cell, at, rest }`, `rest`
+**`[[route]]`**: places creatures (and people that name it) walk at rest in turn. `key`; `waypoints` (`{ cell, at, rest }`, `rest`
 the seconds a creature stands there, else the route's); `shape`, `back-and-forth` (turn back at either
 end, the default) or `loop` (on from the last to the first); `gait`, `walk` (the default) or `run`;
 `speed` (meters a second for a creature of scale 1, when not the gait's own pace); `rest` (seconds, for
