@@ -1,5 +1,10 @@
 # Changes
 
+## v0.15.0
+
+- Reward quests are done with the quests they reward, and the iron hoard has its mine quest. New pack
+  `hidden-quests/`.
+
 ## v0.14.0
 
 - Four creatures broadcast their idle emote to the landblocks around them. New pack `creature-emotes/`.
