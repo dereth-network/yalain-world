@@ -20,6 +20,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/story.toml           [[scene]], [[shard]]
 <pack>/server/butchery.toml        [[butchery]]
 <pack>/server/weapons.toml         [[weapon]]
+<pack>/server/routes.toml          [[route]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -119,7 +120,7 @@ Every row has `prov`; a field whose source differs from its row's says so in `pr
 
 | `from` | means | required | optional |
 |---|---|---|---|
-| `capture` | measured from recordings of the live servers | `evidence` (an `AC2-EVID-...` handle), `ref` (opaque), `confidence` (`high`, `medium`, `low`) | `sample`: `sessions`, `creatures`, `corpses`, `views`, `trips`, `lines` |
+| `capture` | measured from recordings of the live servers | `evidence` (an `AC2-EVID-...` handle), `ref` (opaque), `confidence` (`high`, `medium`, `low`) | `sample`: `sessions`, `creatures`, `corpses`, `views`, `trips`, `lines`, `visits` |
 | `dat` | a record of the install | `record` | |
 | `derived` | computed by a listed rule | `rule` | `record` |
 | `authored` | written by a person | | `by`, `note` |
@@ -186,6 +187,12 @@ A field marked † is read from the install when left out.
 | `spawns` | | what it makes: `{ template, weight }` |
 | `profile`, `profile_name` | | the generator profile it stands for |
 | `parent` | | a master camp |
+| `movement` | | how its creatures may move, over their template's: `stationary` (never moves nor fights), `turn-only` (turns where it stands), `constrained-to-home` (kept near home: the default), `constrained-to-master` (follows a master), `free-range` (no distance from home ends a fight) |
+| `wanders`, `wander_range`, `wander_chance` | | over their template's: whether they wander at rest (default true), how far from home (m, default 25), the chance a wander sets out when one falls due (default 0.1) |
+| `homesick`, `perception` | | over their template's: the distance from home they keep to (m, default 40; under 5 they never wander), how near a player must come to be noticed (m, default 20) |
+| `uses_doors` | | over their template's: whether they open doors (default true) |
+| `route` | | the `[[route]]` its creatures walk at rest (`key`, or `pack:key`), in place of wandering, indoors too |
+| `route_start`, `route_direction` | | the waypoint they set off toward (from 0; default 0) and which way they go on: `forward` (default) or `backward` |
 
 **`[[place]]`**: a destination. `key`, `cell`, `at`, `rotation` / `heading`, `named_by` (templates
 whose destination names it), `destination` (that name, as text).
@@ -275,6 +282,13 @@ of the install, such as `ClubBurunBrowerk`) is no template of the install's own.
 (the template it is made of), `two_share` (of the creatures whose template asks two of it, the share
 given two, the rest one; every one is given two when left out) and `stance` (the stance it is fought
 with, where its template sets none).
+
+**`[[route]]`**: places creatures walk at rest in turn. `key`; `waypoints` (`{ cell, at, rest }`, `rest`
+the seconds a creature stands there, else the route's); `shape`, `back-and-forth` (turn back at either
+end, the default) or `loop` (on from the last to the first); `gait`, `walk` (the default) or `run`;
+`speed` (meters a second for a creature of scale 1, when not the gait's own pace); `rest` (seconds, for
+waypoints that set none; 0 when left out). Several camps may share one route, each with its own start.
+A creature that gives up a fight goes back to its route's nearest waypoint and carries on from there.
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 

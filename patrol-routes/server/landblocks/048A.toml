@@ -1,0 +1,63 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12504"
+cell = 0x048A0112
+at = [60.6, 0.0, 100.4]
+radius = 0.0
+spots = [{ cell = 0x048A0112, at = [60.6, 0.0, 100.4] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700279B, weight = 1 }]
+route = "shreth-square"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12504", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { route = { from = "capture", evidence = "AC2-EVID-WDB-ROUTES-2017", ref = "c:d2ee3c4d", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12503"
+cell = 0x048A0112
+at = [60.2, 37.6, 100.4]
+radius = 0.0
+spots = [{ cell = 0x048A0112, at = [60.2, 37.6, 100.4] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700279E, weight = 1 }]
+route = "shreth-square"
+route_start = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12503", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { route = { from = "capture", evidence = "AC2-EVID-WDB-ROUTES-2017", ref = "c:d2ee3c4d", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "guard-11"
+cell = 0x048A0114
+at = [140.0, 32.5, 100.4]
+radius = 0.0
+spots = [{ cell = 0x048A0114, at = [140.0, 32.5, 100.4] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700279C, weight = 1 }]
+route = "shreth-square"
+route_start = 3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ROUTES-2017", ref = "c:e3d1514b", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "guard-12"
+cell = 0x048A0114
+at = [140.6, 80.0, 100.4]
+radius = 0.0
+spots = [{ cell = 0x048A0114, at = [140.6, 80.0, 100.4] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700279D, weight = 1 }]
+route = "shreth-square"
+route_start = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ROUTES-2017", ref = "c:ec4411d7", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12502"
+cell = 0x048A0107
+at = [114.8, 42.4, 100.4]
+radius = 0.0
+spots = [{ cell = 0x048A0107, at = [89.0, 51.0, 100.4] }, { cell = 0x048A0107, at = [98.0, 26.0, 100.4] }, { cell = 0x048A0107, at = [110.0, 37.0, 100.4] }, { cell = 0x048A0107, at = [111.0, 41.0, 100.4] }, { cell = 0x048A0107, at = [111.0, 45.0, 100.4] }, { cell = 0x048A0107, at = [119.0, 43.0, 100.4] }]
+population = 6
+regen = 192.0
+spawns = [{ template = 0x470026BE, weight = 2 }, { template = 0x4700278E, weight = 2 }, { template = 0x47002C3D, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12502", confidence = "low", sample = { creatures = 8, sessions = 1 }, fields = { spawns = { from = "authored", note = "the two patrolling guards have camps of their own" }, spots = { from = "authored", note = "the two patrolling guards have camps of their own" }, population = { from = "authored", note = "the two patrolling guards have camps of their own" }, regen = { from = "derived", rule = "camp-regen-median" } } }

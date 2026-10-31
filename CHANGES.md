@@ -1,5 +1,10 @@
 # Changes
 
+## v0.16.0
+
+- The patrolling guards walk the routes they walked, and camps can set how their creatures move. New
+  pack `patrol-routes/`, new `[[route]]` rows.
+
 ## v0.15.0
 
 - Reward quests are done with the quests they reward, and the iron hoard has its mine quest. New pack

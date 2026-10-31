@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes"]
 
 [[override]]
 pack = "fix-start"
@@ -49,3 +49,8 @@ items = ["object s-1@3E6A", "object s-1@4B58", "object s-1@516F", "object s-1@51
 pack = "creature-emotes"
 over = "seed-2017-talk"
 items = ["talk t-31cc-08204d9c", "talk t-31d4-08204d9c", "talk t-31d6-08204d9c", "talk t-31e5-08204d9c"]
+
+[[override]]
+pack = "patrol-routes"
+over = "seed-2017"
+items = ["camp c-12474@048B", "camp c-12473@048B", "camp c-12475@048B", "camp c-12478@048B", "camp c-12479@048B", "camp c-12481@048B", "camp c-12480@048B", "camp c-12476@048B", "camp c-12477@048B", "camp c-12504@048A", "camp c-12503@048A", "camp c-12502@048A"]
