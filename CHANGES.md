@@ -1,5 +1,9 @@
 # Changes
 
+## v0.12.0
+
+- Glyphs open their vaults, and each vault leads somewhere. New pack `glyph-vaults/`.
+
 ## v0.11.0
 
 - Locked doors hold from their front and open to their keys. New pack `door-locks/`.
