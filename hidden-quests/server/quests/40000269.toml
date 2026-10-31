@@ -1,0 +1,17 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000269
+id_name = "QuestHeroMountReward"
+state = 0x6F0008BC
+challenge = 45
+visible = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIDDEN-QUESTS-2017", ref = "c:ec0d86a5", confidence = "medium", sample = { sessions = 69 }, fields = { visible = { from = "derived", rule = "quest-setup-static", record = 0x6F0008BC }, challenge = { from = "derived", rule = "quest-setup-static", record = 0x6F0008BC } } }
+
+[[step]]
+key = "with-done"
+quest = 0x40000269
+needs = 0
+trigger = { done = 0x40000263 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIDDEN-QUESTS-2017", ref = "c:ec0d86a5", confidence = "medium", sample = { sessions = 69 } }

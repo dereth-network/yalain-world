@@ -1,0 +1,17 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x400001CA
+id_name = "QuestSalvationReward"
+state = 0x6F000C66
+challenge = 45
+visible = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIDDEN-QUESTS-2017", ref = "c:df8d9ffb", confidence = "medium", sample = { sessions = 2 }, fields = { visible = { from = "derived", rule = "quest-setup-static", record = 0x6F000C66 }, challenge = { from = "derived", rule = "quest-setup-static", record = 0x6F000C66 } } }
+
+[[step]]
+key = "with-done"
+quest = 0x400001CA
+needs = 0
+trigger = { done = 0x400001C7 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIDDEN-QUESTS-2017", ref = "c:df8d9ffb", confidence = "medium", sample = { sessions = 2 } }

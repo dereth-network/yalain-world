@@ -147,7 +147,7 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `keeper-store` | a storekeeper opens the store its template names |
 | `store-sales` | a sale's product, price and currency are the store template's own listing at that ordinal; its name is the product's |
 | `quest-definition` | a quest's name, description, icon and journal entries are its definition's |
-| `quest-setup-static` | a quest's duration, retry wait and experience are the constant values its setup sets |
+| `quest-setup-static` | a quest's duration, retry wait, experience, challenge and whether it is shown are the constant values its setup sets |
 | `quest-death-effect` | killing a creature whose template's death effect moves a quest on advances that quest a phase, as the recordings show for others of that effect |
 | `talk-token-role` | a line's role is the one its token's name gives (`ID_Begin2` offers a quest, `ID_Underway1` reminds, `ID_TooLow` refuses), said at that role's moment the way recorded lines of the name or role were; a derived line's `confidence` is how often recorded lines of its role agreed |
 | `talk-quest-number` | a person's quest line numbered k goes with the quest a recorded line of the same person numbered k went with |
@@ -203,8 +203,10 @@ are its template's and are not rows.
 `name_text`.
 
 **`[[quest]]`**: a quest's server values. `id` and `id_name`, `state`† (its definition), `challenge`,
-`duration` (s, 0 for none), `retry` (s), `xp`, `cancellable`. Its name, description, icon and journal
-are the definition's.
+`duration` (s, 0 for none), `retry` (s), `xp`, `cancellable`, `visible`† (false: the quest is kept for
+its player but never shown, in no journal and no update; left out, a quest is shown when its
+definition has a description). Its name, description, icon, journal and the effects each of its
+updates puts on the player are the definition's.
 
 **`[[step]]`**: what moves a quest on. `key`, `quest`, `needs` (the phase it must be at; 0 for not
 under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`bestow`, `advance`,
@@ -222,6 +224,7 @@ quest's update is told before the effects and their text, not after them).
 | `{ arrive = T }` | arrives through a portal of template T |
 | `{ take = T }` | takes an item of template T |
 | `{ kill = T }` | kills a creature of template T |
+| `{ done = Q }` | completes quest Q |
 
 `requires` lists other quests the step needs, each `{ quest = Q, phase = N }` (under way at that
 phase) or `{ quest = Q, done = true }`. `takes` lists templates of items taken from the player's
