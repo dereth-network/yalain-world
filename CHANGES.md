@@ -1,5 +1,11 @@
 # Changes
 
+## v0.17.0
+
+- Hoard keys open their hoards to the whole fellowship. New pack `hoard-keys/`; steps may name `fellows`.
+- 70 quests run out at the time limits 2017 gave them. New pack `quest-durations/`.
+- The Sentries walk their rounds. New pack `people-routes/`; people may name a route.
+
 ## v0.16.0
 
 - The patrolling guards walk the routes they walked, and camps can set how their creatures move. New
