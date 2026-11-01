@@ -156,6 +156,7 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `hoard-key-text` | a hoard's entry quest lasts the ten minutes, and its mine quest the five, that its key's own text gives, as the recordings measured for one hoard |
 | `hoard-teleport-place` | a hoard's stockpile leads to the place its mine quest's teleport sends a player out from, where the recordings show players of one hoard arriving |
 | `talk-quest-name` | a person's quest line numbered k goes with the quest named after the person's own table and k |
+| `map-marked-place` | a surveyor's map leads where the recordings show maps marking the same area (the same search rectangle) leading, whatever their material |
 
 ## Record kinds
 
@@ -200,7 +201,8 @@ A field marked † is read from the install when left out.
 | `route_start`, `route_direction` | | the waypoint they set off toward (from 0; default 0) and which way they go on: `forward` (default) or `backward` |
 
 **`[[place]]`**: a destination. `key`, `cell`, `at`, `rotation` / `heading`, `named_by` (templates
-whose destination names it), `destination` (that name, as text).
+whose destination names it: a portal's, or a surveyor's map's, whose holder a person who sends players by
+maps sends here; a template is named by one place at most), `destination` (that name, as text).
 
 **`[[loot]]`**: what a dead creature leaves. `profile` and `profile_name` (its death-loot profile),
 `counts` (the chance of 0, 1, 2, ... items), `items` (`{ template, weight }`, what a draw picks
@@ -270,12 +272,17 @@ lines of its rows whose moment and quest match, picking at random among several.
 | `object` | | one placed person only (`key@XXYY`) |
 | `line`, `line_text` | one of them | the line: a string reference, in the person's own string table, or new prose |
 | `line_name` | | the token name of `line`'s string id |
-| `role` | | what it does: `offer`, `remind`, `advance`, `accept`, `complete`, `fail`, `refuse-use`, `refuse-give`, `too-soon`, `use`, `near`, `idle`, `combat`, `death`, `teleport` |
+| `role` | | what it does: `offer`, `remind`, `advance`, `accept`, `complete`, `fail`, `refuse-use`, `refuse-give`, `too-soon`, `use`, `near`, `idle`, `combat`, `death`, `teleport` (said as a person sends a map's holder where it leads), `refuse-map` (said of a map it does not send anyone with) |
 | `how` | | `tell` (to the player, naming the speaker; the default), `say` (aloud, to everyone near), `emote` (text naming the speaker), `broadcast` (read by every player in the speaker's landblock and the eight around it, indoors its own landblock, whether their clients know the speaker or not) |
 | `when` | required | the moment: `use`, `give`, `attack`, `death`, `near`, `idle` |
 | `quest`, `update`, `phase` | | the quest update the line comes with (`bestow`, `advance` and its phase, `complete`, `fail`) |
 | `item` | | the item given, for a line said when one is |
 | `order` | | its place in a speech of several lines (0 first) |
+
+A person with a `teleport` line said at a give sends the holder of a surveyor's map given it to the place that names
+the map's template (`[[place]]` `named_by`), handing the map back: a map of its own land (the land its template's table
+names), or one its `teleport` lines name as their `item`. Any other map, or one no place names, is handed back with its
+`refuse-map` line.
 
 **`[[craft]]`**: a craft skill (`skill`, its saved state) or a recipe (`recipe`) every new character
 starts with, at level 1 for a craft skill. One of the two.

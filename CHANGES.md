@@ -6,6 +6,8 @@
   its end. New pack `quest-hand-ins/`; a step's `requires` may name phase 0 (the quest not under way).
 - Errands can be done again, and people with several hand them out one at a time. Quests may name `once` (the install's
   setup decides when left out); lines may have the role `too-soon`.
+- Maps handed to the people who read them send players where the maps lead, and two quest mines are placed. New pack
+  `maps-and-mines/`; a place's `named_by` may name maps, and lines may have the role `refuse-map`.
 
 ## v0.21.0
 
