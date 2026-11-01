@@ -12,7 +12,7 @@
 
 ## v0.19.0
 
-- The Orbs of Insight answer a use with their line. New pack `object-lines/`.
+- Some placed orbs answer a use with their line. New pack `object-lines/`.
 
 ## v0.18.0
 

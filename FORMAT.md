@@ -294,8 +294,8 @@ shard's destination is its `[[object]]` row's `to`).
 order), and `empty` (the share of butcheries that find nothing, against the weights; none when left
 out). One material is cut per butchery.
 
-**`[[weapon]]`**: a weapon creatures wield, where the name their templates give it (an identifier
-of the install, such as `ClubBurunBrowerk`) is no template of the install's own. `name`, `template`
+**`[[weapon]]`**: the weapon a creature wields, where the name its templates give it (an identifier
+of the install) is no template of the install's own. `name`, `template`
 (the template it is made of), `two_share` (of the creatures whose template asks two of it, the share
 given two, the rest one; every one is given two when left out) and `stance` (the stance it is fought
 with, where its template sets none).
