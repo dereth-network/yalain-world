@@ -4,6 +4,8 @@
 
 - Many more people and objects take items handed to them and move their quests along, each quest from its start to
   its end. New pack `quest-hand-ins/`; a step's `requires` may name phase 0 (the quest not under way).
+- Errands can be done again, and people with several hand them out one at a time. Quests may name `once` (the install's
+  setup decides when left out); lines may have the role `too-soon`.
 
 ## v0.21.0
 

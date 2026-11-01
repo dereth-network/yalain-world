@@ -219,12 +219,17 @@ are its template's and are not rows.
 its player but never shown, in no journal and no update; left out, a quest is shown when its
 definition has a description), `min_level` (the least level a player is given it at; a person whose
 step would give it says its refusal of the quest, a `refuse-use` line naming it, to a player under
-it), `fails_on_death` (true: it fails when its player dies). Its name, description, icon, journal
+it), `fails_on_death` (true: it fails when its player dies), `once` (true: given only once, done never given again; false: given again;
+left out, as the quest's setup in the install says). Its name, description, icon, journal
 and the effects each of its updates puts on the player are the definition's. A phase the definition
 says is done by other quests (subquests) gives them with it, kept hidden: steps move them, each
 move told as the quest's own record with its phase kept, and the quest moves on to its next phase
 once all of them (or one, where the definition says one is enough) are done. A quest that failed
-or was cancelled is given again only once its wait is over, as a done one is.
+or was cancelled is given again only once its wait is over, as a done one is; a done quest with no wait (`retry`
+0 or left out) is given again at once, unless it is done once (its setup in the install says it may be done one
+time, or the row says `once`). A person who gives several quests gives one of them at a
+use, picked at random, none while one is under way, and, when none of them has a wait, none for two hours after the
+last it gave (it says its `too-soon` line).
 
 **`[[step]]`**: what moves a quest on. `key`, `quest`, `needs` (the phase it must be at; 0 for not
 under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`bestow`, `advance`,
@@ -265,7 +270,7 @@ lines of its rows whose moment and quest match, picking at random among several.
 | `object` | | one placed person only (`key@XXYY`) |
 | `line`, `line_text` | one of them | the line: a string reference, in the person's own string table, or new prose |
 | `line_name` | | the token name of `line`'s string id |
-| `role` | | what it does: `offer`, `remind`, `advance`, `accept`, `complete`, `fail`, `refuse-use`, `refuse-give`, `use`, `near`, `idle`, `combat`, `death`, `teleport` |
+| `role` | | what it does: `offer`, `remind`, `advance`, `accept`, `complete`, `fail`, `refuse-use`, `refuse-give`, `too-soon`, `use`, `near`, `idle`, `combat`, `death`, `teleport` |
 | `how` | | `tell` (to the player, naming the speaker; the default), `say` (aloud, to everyone near), `emote` (text naming the speaker), `broadcast` (read by every player in the speaker's landblock and the eight around it, indoors its own landblock, whether their clients know the speaker or not) |
 | `when` | required | the moment: `use`, `give`, `attack`, `death`, `near`, `idle` |
 | `quest`, `update`, `phase` | | the quest update the line comes with (`bestow`, `advance` and its phase, `complete`, `fail`) |
