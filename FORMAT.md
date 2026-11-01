@@ -147,6 +147,7 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `camp-profile-species` | a camp's generator profile is the one camp profile whose name matches the species of the creatures it made |
 | `keeper-store` | a storekeeper opens the store its template names |
 | `store-sales` | a sale's product, price and currency are the store template's own listing at that ordinal; its name is the product's |
+| `store-sales-unseen` | a sale no recording listed is the store template's own listing at that ordinal (as `store-sales`), its stack the most its product stacks to (1 when the product names none) and its icon the layers its product's look gives (none when the look gives none), as every recorded sale was |
 | `quest-definition` | a quest's name, description, icon and journal entries are its definition's |
 | `quest-setup-static` | a quest's duration, retry wait, experience, challenge and whether it is shown are the constant values its setup sets |
 | `quest-death-effect` | killing a creature whose template's death effect moves a quest on advances that quest a phase, as the recordings show for others of that effect |
@@ -214,7 +215,9 @@ are its template's and are not rows.
 
 **`[[sale]]`**: what a store's listing shows that the store template lacks. `store`, `ordinal`,
 `stack`, `icon` (`{ layer, picture, color }`), `product`†, `cost`†, `currency`†, `name`† /
-`name_text`.
+`name_text`. Who a sale is for (a race, a least level, quests at a status) and whether its store
+hides from a player the sales the player may not have (else shows them restricted) are the
+install's.
 
 **`[[quest]]`**: a quest's server values. `id` and `id_name`, `state`† (its definition), `challenge`,
 `duration` (s, 0 for none), `retry` (s), `xp`, `cancellable`, `visible`† (false: the quest is kept for

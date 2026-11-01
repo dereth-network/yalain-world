@@ -8,6 +8,8 @@
   setup decides when left out); lines may have the role `too-soon`.
 - Maps handed to the people who read them send players where the maps lead, and two quest mines are placed. New pack
   `maps-and-mines/`; a place's `named_by` may name maps, and lines may have the role `refuse-map`.
+- Five storekeepers whose stores opened empty now sell their wares, and three stores list all their sales. New pack
+  `store-listings/`; sales may follow the rule `store-sales-unseen`.
 
 ## v0.21.0
 
