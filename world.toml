@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines"]
 
 [[override]]
 pack = "fix-start"
@@ -79,3 +79,8 @@ items = ["object s-12@07F3", "object s-1@01E6", "object s-2@01E9", "object s-3@0
 pack = "hoard-entrances"
 over = "seed-2017"
 items = ["object s-1@66B3", "object s-1@78B0", "object s-1@F092", "object s-2@7396"]
+
+[[override]]
+pack = "object-lines"
+over = "seed-2017-talk"
+items = ["talk t-3269-f046c9b6"]
