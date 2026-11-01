@@ -21,6 +21,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/butchery.toml        [[butchery]]
 <pack>/server/weapons.toml         [[weapon]]
 <pack>/server/routes.toml          [[route]]
+<pack>/server/areas.toml           [[area]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -97,6 +98,7 @@ Every row sets one **item**, named by its key:
 | `shard 0xOBJECT` | the shard's world id |
 | `butchery 0xPROFILE` | the butchery profile |
 | `weapon NAME` | the weapon's name, as creatures' templates write it |
+| `area XXYY` | the area's landblock |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -323,6 +325,13 @@ end, the default) or `loop` (on from the last to the first); `gait`, `walk` (the
 `speed` (meters a second for a creature of scale 1, when not the gait's own pace); `rest` (seconds, for
 waypoints that set none; 0 when left out). Several camps may share one route, each with its own start.
 A creature that gives up a fight goes back to its route's nearest waypoint and carries on from there.
+
+**`[[area]]`**: the kind of player conflict a landblock allows. `landblock` (`0xXXYY`, outdoors or a
+dungeon's), `conflict`: `peace` (no player may fight another), `controlled` (players of different
+kingdoms may fight, neutral players stay out of it), `kingdom-vs-kingdom` (players of different kingdoms
+may fight) or `free-for-all` (any player may fight any other). A landblock no row names is a peace
+area. Players are told the kind of where they are as they enter, walk or arrive; who may fight whom
+there is the client's own rule.
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 

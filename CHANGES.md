@@ -15,6 +15,8 @@
   `maps-and-mines/`; a place's `named_by` may name maps, and lines may have the role `refuse-map`.
 - Five storekeepers whose stores opened empty now sell their wares, and three stores list all their sales. New pack
   `store-listings/`; sales may follow the rule `store-sales-unseen`.
+- The kingdom-against-kingdom, controlled and free-for-all areas are marked. New pack `conflict-areas/`; rows of the
+  new kind `[[area]]`.
 
 ## v0.21.0
 
