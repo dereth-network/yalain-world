@@ -1,0 +1,21 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "kill-47002a5b"
+quest = 0x40000026
+needs = 1
+trigger = { kill = 0x47002A5B }
+update = "advance"
+phase = 2
+requires = [{ quest = 0x40000022, phase = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:dbe4c302", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "take-4700060b"
+quest = 0x40000026
+needs = 2
+trigger = { take = 0x4700060B }
+update = "advance"
+phase = 3
+requires = [{ quest = 0x40000022, phase = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:12dee2ca", confidence = "low", sample = { sessions = 1 } }

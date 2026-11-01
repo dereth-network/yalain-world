@@ -1,0 +1,22 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000005B
+id_name = "QuestMistOpal"
+state = 0x6F000BD5
+challenge = 12
+duration = 7200
+retry = 72000
+cancellable = true
+fails_on_death = true
+min_level = 9
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:e80f5dc8", confidence = "high", sample = { sessions = 5 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000BD5 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000BD5 }, fails_on_death = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:d2094bd8", confidence = "medium", sample = { sessions = 2 } }, min_level = { from = "derived", rule = "quest-setup-static", record = 0x6F000BD5, confidence = "high" } } }
+
+[[step]]
+key = "shrine-gives"
+quest = 0x4000005B
+needs = 0
+trigger = { use = 0x470031C6 }
+update = "bestow"
+gives = [0x47000615]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:9bb2dd92", confidence = "high", sample = { sessions = 3 } }

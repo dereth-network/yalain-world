@@ -1,0 +1,45 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "kresovus-gives"
+quest = 0x4000024B
+needs = 0
+trigger = { use = 0x47003042 }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:b9e24baa", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "box-4700303d"
+quest = 0x4000024B
+needs = 1
+trigger = { use = 0x4700303D }
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:fa6b3f41", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "box-47003048"
+quest = 0x4000024B
+needs = 2
+trigger = { use = 0x47003048 }
+update = "advance"
+phase = 3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:25d0f01a", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "box-4700303c"
+quest = 0x4000024B
+needs = 3
+trigger = { use = 0x4700303C }
+update = "advance"
+phase = 4
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:d1c9b6bc", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "kresovus-boxes-opened"
+quest = 0x4000024B
+needs = 4
+trigger = { use = 0x47003042 }
+update = "advance"
+phase = 5
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:bdd7367c", confidence = "low", sample = { sessions = 1 } }

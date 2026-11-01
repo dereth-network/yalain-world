@@ -1,0 +1,11 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "stone-dominion"
+quest = 0x4000012C
+needs = 1
+trigger = { use = 0x47003363 }
+update = "complete"
+gives = [0x47001A53]
+requires = [{ quest = 0x4000005E, phase = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:9fc7e3c7", confidence = "high", sample = { sessions = 3 } }

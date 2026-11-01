@@ -1,0 +1,18 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "vault-portal-gives"
+quest = 0x400002AD
+needs = 0
+trigger = { arrive = 0x470013EF }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:95e74540", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "shard"
+quest = 0x400002AD
+needs = 3
+trigger = { use = 0x47002F9E }
+update = "complete"
+gives = [0x470013F4]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:aa4882fc", confidence = "medium", sample = { sessions = 2 } }

@@ -1,0 +1,11 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "stone-shadow"
+quest = 0x4000012E
+needs = 1
+trigger = { use = 0x47003365 }
+update = "complete"
+gives = [0x47001A55]
+requires = [{ quest = 0x4000005E, phase = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:a73661eb", confidence = "high", sample = { sessions = 3 } }

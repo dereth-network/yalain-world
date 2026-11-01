@@ -1,0 +1,20 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000002C
+id_name = "QuestGreatTree"
+state = 0x6F000895
+challenge = 30
+duration = 7200.0
+cancellable = true
+retry = 158400.0
+min_level = 25
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:7eb7b423", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:411e7ad7", confidence = "low", sample = { sessions = 1 } }, retry = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:c628ff84", confidence = "low", sample = { sessions = 1 } }, min_level = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:69cd5b2d", confidence = "low", sample = { sessions = 2 } } } }
+
+[[step]]
+key = "deru-gives"
+quest = 0x4000002C
+needs = 0
+trigger = { use = 0x47002FD9 }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:bd361ea6", confidence = "low", sample = { sessions = 1 } }

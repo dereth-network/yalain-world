@@ -1,0 +1,17 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000268
+id_name = "QuestInitiationManaRecipes"
+state = 0x6F0008DF
+visible = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:71935c5c", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "hero-shrine"
+quest = 0x40000268
+needs = 0
+trigger = { use = 0x47003049 }
+update = "complete"
+effects = [0x6F001C60, 0x6F001C62, 0x6F001C5E]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:d56a3101", confidence = "high", sample = { sessions = 5 } }

@@ -1,0 +1,19 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "aulatah-gives"
+quest = 0x4000024C
+needs = 0
+trigger = { use = 0x4700303A }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:48114cda", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "fire"
+quest = 0x4000024C
+needs = 1
+trigger = { use = 0x4700304A }
+update = "advance"
+phase = 2
+gives = [0x47001502]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:6bc21fbd", confidence = "low", sample = { sessions = 1 } }

@@ -1,0 +1,18 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "spirit-gives"
+quest = 0x4000005E
+needs = 0
+trigger = { use = 0x47003366 }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:dc7bc6ec", confidence = "high", sample = { sessions = 3 } }
+
+[[step]]
+key = "spirit-completes"
+quest = 0x4000005E
+needs = 3
+trigger = { use = 0x47003366 }
+update = "complete"
+effects = [0x6F001F85]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:a3006271", confidence = "high", sample = { sessions = 3 } }

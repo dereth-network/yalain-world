@@ -1,0 +1,10 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "leaf"
+quest = 0x4000002F
+needs = 1
+trigger = { use = 0x47002FDA }
+update = "complete"
+requires = [{ quest = 0x4000002C, phase = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:c35bf2bf", confidence = "low", sample = { sessions = 1 } }
