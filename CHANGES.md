@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Quest items, keys and mushrooms lie where they lay in 2017 and come back after they are taken. New
+  pack `lying-items/`; a camp's spawns may be items.
+- Chests the world put out in 2017 stand in their places. New pack `spawned-chests/`.
+- Six placed portals that led nowhere take players where they took them in 2017. New pack `portal-trips/`.
 - Portals say whether a player can recall and summon to them, and the cities' recalls have their places. New pack
   `portal-recall/`; objects may name `recall` and `summon`, and a place's `destination` is looked up by name.
 

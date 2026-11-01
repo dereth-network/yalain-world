@@ -160,6 +160,7 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `hoard-teleport-place` | a hoard's stockpile leads to the place its mine quest's teleport sends a player out from, where the recordings show players of one hoard arriving |
 | `talk-quest-name` | a person's quest line numbered k goes with the quest named after the person's own table and k |
 | `map-marked-place` | a surveyor's map leads where the recordings show maps marking the same area (the same search rectangle) leading, whatever their material |
+| `item-spot-regen` | an item a camp keeps lying whose return no recording timed comes back as the timed spots of its template did, else 20 s after its taking, as every timed quest item lying alone did |
 
 ## Record kinds
 
@@ -194,7 +195,7 @@ A field marked † is read from the install when left out.
 | `spots` | | indoors, the points creatures appear at: `{ cell, at }` |
 | `population` | required | how many it keeps alive |
 | `regen` | required | seconds from a death to its replacement |
-| `spawns` | | what it makes: `{ template, weight }` |
+| `spawns` | | what it makes: `{ template, weight }`; an item's template (one with a value, no creature) it keeps lying at its place, a new one `regen` seconds after the last is taken |
 | `profile`, `profile_name` | | the generator profile it stands for |
 | `parent` | | a master camp |
 | `movement` | | how its creatures may move, over their template's: `stationary` (never moves nor fights), `turn-only` (turns where it stands), `constrained-to-home` (kept near home: the default), `constrained-to-master` (follows a master), `free-range` (no distance from home ends a fight) |

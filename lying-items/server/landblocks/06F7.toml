@@ -1,0 +1,23 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[camp]]
+key = "lying-1"
+cell = 0x06F70119
+at = [61.24, 44.94, -8.0]
+radius = 0.0
+spots = [{ cell = 0x06F70119, at = [61.24, 44.94, -8.0] }]
+population = 1
+regen = 20.0
+spawns = [{ template = 0x470011DF, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-LYING-ITEMS-2017", ref = "c:4dbedbe3", confidence = "high", sample = { sessions = 6, views = 7 } }
+
+[[camp]]
+key = "lying-2"
+cell = 0x06F70193
+at = [137.21, 103.96, -18.01]
+radius = 0.0
+spots = [{ cell = 0x06F70193, at = [137.21, 103.96, -18.01] }]
+population = 1
+regen = 20.0
+spawns = [{ template = 0x470011DF, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-LYING-ITEMS-2017", ref = "c:1d6a5c1f", confidence = "medium", sample = { sessions = 2, views = 2 }, fields = { regen = { from = "derived", rule = "item-spot-regen" } } }
