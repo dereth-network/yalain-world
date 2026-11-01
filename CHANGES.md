@@ -1,5 +1,10 @@
 # Changes
 
+## Unreleased
+
+- Portals say whether a player can recall and summon to them, and the cities' recalls have their places. New pack
+  `portal-recall/`; objects may name `recall` and `summon`, and a place's `destination` is looked up by name.
+
 ## v0.22.0
 
 - Many more people and objects take items handed to them and move their quests along, each quest from its start to

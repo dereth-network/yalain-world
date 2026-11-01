@@ -179,6 +179,7 @@ A field marked † is read from the install when left out.
 | `locked` | statics | a locked door: from its front a plain use is refused and only its key opens it (it locks again as it closes); from behind it opens |
 | `lock` | | a locked door's key id: the id (a key's `Lock_KeyID`) a key must carry to open it; none known: no key does |
 | `route`, `route_start`, `route_direction` | people | the `[[route]]` a person walks (`key`, or `pack:key`), the waypoint it sets out toward (from 0) and `forward` or `backward`, as a camp's creatures do |
+| `recall`, `summon` | statics | a portal a player who used it may recall to (`recall = true`: a recall to the last portal used returns there) and summon a portal to (`summon = true`); left out, neither |
 | `requires` | statics | the quest a player must hold to use it (a portal this placement keeps closed, over its template's): `{ quest = Q, done = true }` (completed), `{ quest = Q, underway = true }` (under way at any phase) or `{ quest = Q, phase = N }` (under way at that phase); a use or a walk-in it keeps out is refused at once |
 
 **`[[camp]]`**: a spawn camp.
@@ -203,7 +204,8 @@ A field marked † is read from the install when left out.
 
 **`[[place]]`**: a destination. `key`, `cell`, `at`, `rotation` / `heading`, `named_by` (templates
 whose destination names it: a portal's, or a surveyor's map's, whose holder a person who sends players by
-maps sends here; a template is named by one place at most), `destination` (that name, as text).
+maps sends here; a template is named by one place at most), `destination` (that name, as text: the name an
+effect that sends a player to a named place, a city's recall, looks it up by; one place to a name).
 
 **`[[loot]]`**: what a dead creature leaves. `profile` and `profile_name` (its death-loot profile),
 `counts` (the chance of 0, 1, 2, ... items), `items` (`{ template, weight }`, what a draw picks
