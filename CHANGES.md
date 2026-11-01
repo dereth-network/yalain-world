@@ -1,5 +1,14 @@
 # Changes
 
+## v0.20.0
+
+- Kingdom stones, quest shrines, the Cauldron and the Hero Shrine move their quests. New pack `quest-uses/`;
+  quests may name `min_level` and `fails_on_death`, and list subquests.
+
+## v0.19.0
+
+- The Orbs of Insight answer a use with their line. New pack `object-lines/`.
+
 ## v0.18.0
 
 - Vault, cache and Dominion Center portals keep out who 2017 kept out. New pack `portal-gates/`;
