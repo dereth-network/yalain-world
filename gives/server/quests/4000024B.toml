@@ -1,0 +1,11 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "give-shard"
+quest = 0x4000024B
+needs = 5
+trigger = { give = 0x470016AB, to = 0x47003042 }
+update = "complete"
+takes = [0x470016AB]
+gives = [0x47001512]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:c2bc38e2", confidence = "low", sample = { sessions = 1 } }

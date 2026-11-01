@@ -1,0 +1,50 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "elysa-gives"
+quest = 0x4000024A
+needs = 0
+trigger = { use = 0x47003040 }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:67eea0d2", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "thorsten"
+quest = 0x4000024A
+needs = 1
+trigger = { use = 0x47002F44 }
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:bb15dd0f", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "elysa-3"
+quest = 0x4000024A
+needs = 2
+trigger = { use = 0x47003040 }
+update = "advance"
+phase = 3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:f26e5f9f", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "give-fragment"
+quest = 0x4000024A
+needs = 3
+trigger = { give = 0x470016AA, to = 0x47003040 }
+update = "advance"
+phase = 4
+takes = [0x470016AA]
+gives = [0x47001504]
+effects = [0x6F001C5D]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:59c7e3c7", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "give-boju-gem"
+quest = 0x4000024A
+needs = 4
+trigger = { give = 0x47001505, to = 0x47003049 }
+update = "complete"
+xp = 100000000
+takes = [0x47001505]
+effects = [0x6F001C6F, 0x6F001C73]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:d5bb79a4", confidence = "low", sample = { sessions = 1 } }

@@ -1,0 +1,11 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "give-47000609"
+quest = 0x40000024
+needs = 3
+trigger = { give = 0x47000609, to = 0x47002F43 }
+update = "complete"
+takes = [0x47000609]
+requires = [{ quest = 0x40000022, phase = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:f9a17db7", confidence = "low", sample = { sessions = 1 } }

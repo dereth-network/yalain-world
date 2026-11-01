@@ -1,0 +1,39 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "give-sodden-ashes"
+quest = 0x4000032F
+needs = 5
+trigger = { give = 0x470014FF, to = 0x4700338D }
+update = "advance"
+phase = 6
+takes = [0x470014FF]
+gives = [0x470014F7]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:0e43d1d2", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "land-claim-received"
+quest = 0x4000032F
+needs = 6
+trigger = { take = 0x470014F7 }
+update = "advance"
+phase = 7
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:d187eb2e", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "give-land-claim"
+quest = 0x4000032F
+needs = 7
+trigger = { give = 0x470014F7, to = 0x47003012 }
+update = "advance"
+phase = 8
+takes = [0x470014F7]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:09f52327", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "almahra-completes"
+quest = 0x4000032F
+needs = 8
+trigger = { use = 0x47003007 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:4968c66a", confidence = "low", sample = { sessions = 1 } }

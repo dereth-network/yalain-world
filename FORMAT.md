@@ -240,6 +240,7 @@ quest's update is told before the effects and their text, not after them).
 |---|---|
 | `{ use = T }` | uses a person or an object of template T (or a held item of it) |
 | `{ use = I, on = T }` | uses a held item of template I on an object of template T |
+| `{ give = I, to = T }` | gives an item of template I to a person or an object of template T (drags it onto it) |
 | `{ arrive = T }` | arrives through a portal of template T |
 | `{ take = T }` | takes an item of template T |
 | `{ kill = T }` | kills a creature of template T |
@@ -247,7 +248,11 @@ quest's update is told before the effects and their text, not after them).
 
 `requires` lists other quests the step needs, each `{ quest = Q, phase = N }` (under way at that
 phase) or `{ quest = Q, done = true }`. `takes` lists templates of items taken from the player's
-pack, which the player must hold (a hand-in). `to` names a place the step takes the player to,
+pack, which the player must hold (a hand-in); a give's step that takes the item given keeps it (the rest of a
+stack stays), one that does not hands it back after its update, and a give no step takes is handed back with the
+person's refusal of a give (its `refuse-give` line). The items a give's step gives come from the person, and one
+that moves a quest when taken (`{ take = T }`) moves it after the step's update. A give's step whose effects include the
+transformation into a hero (`0x6F001C6F`) runs when the transformation is through, 25.59 s after the give. `to` names a place the step takes the player to,
 through portal space; its update is made on arrival.
 
 **`[[talk]]`**: a line a person (or a creature) says, and when. One row per line; a person says the
