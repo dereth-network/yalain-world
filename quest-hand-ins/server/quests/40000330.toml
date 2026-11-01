@@ -1,0 +1,68 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "h-1"
+quest = 0x40000330
+needs = 0
+trigger = { use = 0x47003010 }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:2c966bbc", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-2"
+quest = 0x40000330
+needs = 1
+trigger = { use = 0x4700301B }
+update = "advance"
+phase = 2
+gives = [0x470014EA]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:e446ac05", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-3"
+quest = 0x40000330
+needs = 2
+trigger = { give = 0x470014EA, to = 0x47002FBC }
+update = "advance"
+phase = 3
+takes = [0x470014EA]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:68538aad", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-4"
+quest = 0x40000330
+needs = 3
+trigger = { give = 0x47000AFF, to = 0x47002FBC }
+update = "advance"
+phase = 4
+takes = [0x47000AFF]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:d11c3328", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-5"
+quest = 0x40000330
+needs = 4
+trigger = { give = 0x47001758, to = 0x47002FBC }
+update = "advance"
+phase = 5
+gives = [0x470014FE]
+takes = [0x47001758]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:8d9f06a2", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-6"
+quest = 0x40000330
+needs = 5
+trigger = { give = 0x470014FE, to = 0x4700301B }
+update = "advance"
+phase = 6
+takes = [0x470014FE]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:eb799983", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-7"
+quest = 0x40000330
+needs = 6
+trigger = { use = 0x47003010 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:821ef719", confidence = "medium", sample = { sessions = 2 } }

@@ -1,0 +1,47 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "h-1"
+quest = 0x400000C6
+needs = 0
+trigger = { use = 0x470033C8 }
+update = "bestow"
+requires = [{ quest = 0x400000C5, done = true }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:a11ce4dc", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-2"
+quest = 0x400000C6
+needs = 1
+trigger = { kill = 0x470023B8 }
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:d55c73f3", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-3"
+quest = 0x400000C6
+needs = 2
+trigger = { take = 0x47001B8C }
+update = "advance"
+phase = 3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:7aee8e22", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-4"
+quest = 0x400000C6
+needs = 3
+trigger = { take = 0x47001B8F }
+update = "advance"
+phase = 4
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:9c87eb71", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-5"
+quest = 0x400000C6
+needs = 4
+trigger = { give = 0x47001B8F, to = 0x470033C8 }
+update = "complete"
+gives = [0x47001B91, 0x470010AF]
+takes = [0x47001B8F]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:3c1de6a9", confidence = "medium", sample = { sessions = 2 } }

@@ -1,0 +1,27 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "s5"
+quest = 0x400000C1
+needs = 4
+trigger = { give = 0x47000B21, to = 0x47002F39 }
+update = "complete"
+tell = { table = 0x250028D9, string = 0xA3033C8E }
+xp = 150
+gives = [0x470006CD, 0x470010AE]
+takes = [0x47000B21]
+effects = [0x6F0019F0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:94360f3f", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-3-give"
+quest = 0x400000C1
+needs = 2
+trigger = { give = 0x4700126D, to = 0x47002F39 }
+update = "advance"
+phase = 3
+tell = { table = 0x250028D9, string = 0x8CF4023E }
+gives = [0x470006C1]
+counts = [20]
+effects = [0x6F0019EF]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:c069e116", confidence = "low", sample = { sessions = 1 } }

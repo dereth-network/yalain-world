@@ -1,5 +1,10 @@
 # Changes
 
+## v0.22.0
+
+- Many more people and objects take items handed to them and move their quests along, each quest from its start to
+  its end. New pack `quest-hand-ins/`; a step's `requires` may name phase 0 (the quest not under way).
+
 ## v0.21.0
 
 - Items handed to people and shrines move their quests, the hero's gem among them. New pack `gives/`; steps may

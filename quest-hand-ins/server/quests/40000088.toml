@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "s5"
+quest = 0x40000088
+needs = 4
+trigger = { give = 0x47001AF1, to = 0x47002E03 }
+update = "advance"
+phase = 5
+tell = { table = 0x25002884, string = 0x11DED2D4 }
+xp = 40
+gives = [0x47001AEE, 0x47001AEF, 0x47001AF0]
+takes = [0x47001AF1]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:6f570043", confidence = "medium", sample = { sessions = 2 } }

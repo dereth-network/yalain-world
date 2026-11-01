@@ -1,0 +1,17 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "h-1"
+quest = 0x4000010D
+needs = 0
+trigger = { done = 0x400000D5 }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:8c3d9f98", confidence = "medium", sample = { sessions = 3 } }
+
+[[step]]
+key = "h-2"
+quest = 0x4000010D
+needs = 1
+trigger = { take = 0x4700111A }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:b2bcedec", confidence = "medium", sample = { sessions = 4 } }

@@ -1,0 +1,18 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "h-1"
+quest = 0x80000354
+needs = 0
+trigger = { use = 0x47002FAE }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:188f4f32", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "h-2"
+quest = 0x80000354
+needs = 1
+trigger = { give = 0x47001CE2, to = 0x47002FAE }
+update = "complete"
+takes = [0x47001CE2]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:6063806f", confidence = "low", sample = { sessions = 1 } }

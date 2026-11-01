@@ -1,0 +1,76 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "h-1"
+quest = 0x4000037A
+needs = 0
+trigger = { use = 0x4700335B }
+update = "bestow"
+requires = [{ quest = 0x40000336, phase = 0 }, { quest = 0x40000313, phase = 0 }, { quest = 0x40000335, phase = 0 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:2aa6e589", confidence = "high", sample = { sessions = 8 } }
+
+[[step]]
+key = "h-2"
+quest = 0x4000037A
+needs = 1
+trigger = { use = 0x47003357 }
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:08e05aa5", confidence = "high", sample = { sessions = 7 } }
+
+[[step]]
+key = "h-3"
+quest = 0x4000037A
+needs = 2
+trigger = { give = 0x47001CD0, to = 0x47003357 }
+update = "advance"
+phase = 3
+gives = [0x47001A3C]
+takes = [0x47001CD0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:7ca5d3ac", confidence = "high", sample = { sessions = 7 } }
+
+[[step]]
+key = "h-4"
+quest = 0x4000037A
+needs = 3
+trigger = { use = 0x47001A3C, on = 0x47001A3D }
+update = "advance"
+phase = 4
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:4f8b9a5e", confidence = "high", sample = { sessions = 7 } }
+
+[[step]]
+key = "h-5"
+quest = 0x4000037A
+needs = 4
+trigger = { use = 0x47001A3C, on = 0x47001A3E }
+update = "advance"
+phase = 5
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:70c89fcb", confidence = "high", sample = { sessions = 7 } }
+
+[[step]]
+key = "h-6"
+quest = 0x4000037A
+needs = 5
+trigger = { use = 0x47001A3C, on = 0x47001A3F }
+update = "advance"
+phase = 6
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:573839ce", confidence = "high", sample = { sessions = 7 } }
+
+[[step]]
+key = "h-7"
+quest = 0x4000037A
+needs = 6
+trigger = { use = 0x4700335B }
+update = "advance"
+phase = 7
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:39bf1a96", confidence = "high", sample = { sessions = 7 } }
+
+[[step]]
+key = "h-8"
+quest = 0x4000037A
+needs = 7
+trigger = { give = 0x47001A3C, to = 0x4700335B }
+update = "complete"
+gives = [0x47001A3A]
+takes = [0x47001A3C]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:6d384214", confidence = "high", sample = { sessions = 7 } }

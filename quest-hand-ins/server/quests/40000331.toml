@@ -1,0 +1,60 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[step]]
+key = "h-1"
+quest = 0x40000331
+needs = 0
+trigger = { use = 0x4700301F }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:131f163e", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-2"
+quest = 0x40000331
+needs = 1
+trigger = { use = 0x47003007 }
+update = "advance"
+phase = 2
+gives = [0x470014EE]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:22f07daf", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "h-3-070"
+quest = 0x40000331
+needs = 2
+trigger = { use = 0x470014EE, on = 0x47001070 }
+update = "advance"
+phase = 3
+gives = [0x470014EF]
+takes = [0x470014EE]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:6b728a51", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "h-3-072"
+quest = 0x40000331
+needs = 2
+trigger = { use = 0x470014EE, on = 0x47001072 }
+update = "advance"
+phase = 3
+gives = [0x470014EF]
+takes = [0x470014EE]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:b2a295c5", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "h-4"
+quest = 0x40000331
+needs = 3
+trigger = { use = 0x470014EF }
+update = "advance"
+phase = 4
+gives = [0x470014F1]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:29f97fac", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "h-5"
+quest = 0x40000331
+needs = 4
+trigger = { give = 0x470014F1, to = 0x4700301F }
+update = "complete"
+takes = [0x470014F1]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:96442bff", confidence = "low", sample = { sessions = 1 } }
