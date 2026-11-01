@@ -1,5 +1,10 @@
 # Changes
 
+## v0.21.0
+
+- Items handed to people and shrines move their quests, the hero's gem among them. New pack `gives/`; steps may
+  name `{ give, to }`.
+
 ## v0.20.0
 
 - Kingdom stones, quest shrines, the Cauldron and the Hero Shrine move their quests. New pack `quest-uses/`;
