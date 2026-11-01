@@ -4,7 +4,7 @@ The world database for Yalain, a Dereth Network reimplementation of the Asheron'
 
 ## Format
 
-The world is built up from a collection of TOML-based rows, described in [FORMAT.md](FORMAT.md). Rows describe templates, cells, string tables and enum values, consistent with the game DAT files; short identifiers (generator profile names such as `GP_CampBeetleEdge`, quest names, destination keys) are beside raw numbers so a tool can read the rows without fully parsing DATs.
+The world is built up from a collection of TOML-based rows, described in [FORMAT.md](FORMAT.md). Rows describe templates, cells, string tables and enum values, consistent with the game DAT files; short identifiers (generator profile names, quest names, destination keys) are beside raw numbers so a tool can read the rows without fully parsing DATs.
 
 ## Contents
 

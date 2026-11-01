@@ -59,7 +59,7 @@ description = "People of Arwic's market."
 - **Enum values** are integers whose enumeration is fixed by the field: `profile` is always a
   generator profile.
 - **Identifiers** of the install may be written as text beside their number (`profile_name =
-  "GP_CampBeetleEdge"`, `id_name = "QuestRescueHold"`, a place's `destination =
+  "GP_AnExampleCamp"`, `id_name = "QuestAnExample"`, a place's `destination =
   "dng_btd_ironlinvak"`): letters, digits, `_`, `:`, `.`, `-`, at most 80. A compile checks that
   each is the install's own for its number.
 - **String references** point at the install's text: `{ table = 0x25002AFC, string = 0x2824938C }`.
