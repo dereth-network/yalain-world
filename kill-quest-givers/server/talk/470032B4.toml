@@ -1,0 +1,25 @@
+# Who gives the quests kills move on and who takes them back, from the January 2017 recordings and the install's own text; edit an authored pack instead.
+
+[[talk]]
+key = "q-80000329-70c6cdbe"
+who = 0x470032B4
+line = { table = 0x25002A77, string = 0x70C6CDBE }
+line_name = "ID_BestowQuest1"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x80000329
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A77, confidence = "low" }
+
+[[talk]]
+key = "q-8000032a-7146cdbe"
+who = 0x470032B4
+line = { table = 0x25002A77, string = 0x7146CDBE }
+line_name = "ID_BestowQuest2"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x8000032A
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A77, confidence = "low" }

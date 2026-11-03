@@ -1,5 +1,10 @@
 # Changes
 
+## v0.25.0
+
+- Many more of the quests creatures' deaths move can be taken from the people and postings boards who give them. New
+  pack `kill-quest-givers/`.
+
 ## v0.24.0
 
 - Killing creatures moves the quests their deaths name, and a kill can give a quest. New pack `kill-quests/`; quests
