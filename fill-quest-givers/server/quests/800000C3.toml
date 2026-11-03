@@ -1,0 +1,18 @@
+# Who gives these quests and takes them back, as players' guides of the time and the quests' journals tell it.
+
+[[step]]
+key = "v1"
+quest = 0x800000C3
+needs = 0
+trigger = { use = 0x4700307C }
+update = "bestow"
+requires = [{ quest = 0x800000C2, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time" }
+
+[[step]]
+key = "v2"
+quest = 0x800000C3
+needs = 11
+trigger = { use = 0x4700307C }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time" }

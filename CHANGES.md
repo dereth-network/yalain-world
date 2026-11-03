@@ -4,6 +4,8 @@
 
 - Portals that led to the wrong place now lead where they led in 2017, and more placed portals that led nowhere have
   their destinations. New pack `fix-portal-landings/`.
+- The town hunts and some errands can be taken from the people who give them and handed back to them. New pack
+  `fill-quest-givers/`.
 
 ## v0.23.0
 

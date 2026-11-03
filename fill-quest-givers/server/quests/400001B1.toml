@@ -1,0 +1,35 @@
+# Who gives these quests and takes them back, as players' guides of the time and the quests' journals tell it.
+
+[[step]]
+key = "v1"
+quest = 0x400001B1
+needs = 0
+trigger = { use = 0x47003343 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time" }
+
+[[step]]
+key = "v2"
+quest = 0x400001B1
+needs = 1
+trigger = { use = 0x4700334E }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time" }
+
+[[step]]
+key = "v3"
+quest = 0x400001B1
+needs = 2
+trigger = { use = 0x47003346 }
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time" }
+
+[[step]]
+key = "v4"
+quest = 0x400001B1
+needs = 3
+trigger = { use = 0x47003343 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time" }
