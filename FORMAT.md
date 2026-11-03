@@ -177,7 +177,7 @@ A field marked † is read from the install when left out.
 | `template` | required | what it is |
 | `cell`, `at`, `rotation` / `heading` | `at` required | where it stands |
 | `name`, `name_text` | | a name the server gives it (a portal named for where it leads); else the template's |
-| `to` | | the place using it takes a player to |
+| `to` | | the place using it takes a player to; a person says its line for a use as it does |
 | `landings` | | a lifestone's recall spots: `{ cell, at, heading, seen }` |
 | `scene` | | a door's scene: the `[[scene]]` a player plays on the way to `to`, in place of portal space |
 | `locked` | statics | a locked door: from its front a plain use is refused and only its key opens it (it locks again as it closes); from behind it opens |
@@ -269,7 +269,8 @@ stack stays), one that does not hands it back after its update, and a give no st
 person's refusal of a give (its `refuse-give` line). The items a give's step gives come from the person, and one
 that moves a quest when taken (`{ take = T }`) moves it after the step's update. A give's step whose effects include the
 transformation into a hero (`0x6F001C6F`) runs when the transformation is through, 25.59 s after the give. `to` names a place the step takes the player to,
-through portal space; its update is made on arrival.
+through portal space: an item's use on an object makes its update on arrival; a use of a person or
+an object tells its update at once and takes the player after.
 
 **`[[talk]]`**: a line a person (or a creature) says, and when. One row per line; a person says the
 lines of its rows whose moment and quest match, picking at random among several.

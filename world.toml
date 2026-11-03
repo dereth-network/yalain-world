@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips"]
 
 [[override]]
 pack = "fix-start"
@@ -149,3 +149,13 @@ items = ["quest 0x40000125"]
 pack = "kill-quests"
 over = "seed-2017"
 items = ["quest 0x40000125", "quest 0x800000B7", "quest 0x800000B9", "quest 0x800000BE", "quest 0x800000BF"]
+
+[[override]]
+pack = "person-trips"
+over = "seed-2017"
+items = ["object n-193b@048C", "object n-193e@048A", "object n-302d@5874", "object n-302d@D08C", "object n-3050@04A2", "object n-305e@0BF3", "object n-32e6@314E", "step 0x40000016 s1", "step 0x40000016 s2", "step 0x40000016 s3", "step 0x40000016 s4", "step 0x40000017 s1", "step 0x40000017 s2", "step 0x40000017 s3", "step 0x40000017 s4", "step 0x40000018 s1", "step 0x40000018 s2", "step 0x40000018 s3", "step 0x40000018 s4"]
+
+[[override]]
+pack = "person-trips"
+over = "start-crafting"
+items = ["step 0x40000016 s2", "step 0x40000016 s3", "step 0x40000016 s4"]
