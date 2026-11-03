@@ -1,5 +1,10 @@
 # Changes
 
+## Unreleased
+
+- Portals that led to the wrong place now lead where they led in 2017, and more placed portals that led nowhere have
+  their destinations. New pack `fix-portal-landings/`.
+
 ## v0.23.0
 
 - Many more people and objects take items handed to them and move their quests along, each quest from its start to
