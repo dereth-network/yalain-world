@@ -1,0 +1,12 @@
+# What a person says as it gives and takes back its quests, by the numbers its table and its quests share; edit an authored pack instead.
+
+[[talk]]
+key = "t-2feb-2e280ff0"
+who = 0x47002FEB
+line = { table = 0x25002933, string = 0x2E280FF0 }
+line_name = "ID_Return"
+role = "remind"
+how = "tell"
+when = "give"
+quest = 0x80000324
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002933, confidence = "high", fields = { quest = { from = "authored", note = "the person has one quest and one line" } } }

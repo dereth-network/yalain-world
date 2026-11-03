@@ -5,6 +5,7 @@
 - Quests that other quests require have rows, so a quest asking for one can see it. New pack `required-quests/`.
 - The explorers and obelisks send their seekers from stone to stone, and more people and gates that send whoever uses them
   have their destinations. New pack `person-trips/`; a step triggered by a use may name `to`.
+- More people say their own lines as they give, remind of and take back their quests. New pack `quest-lines/`.
 
 ## v0.25.0
 

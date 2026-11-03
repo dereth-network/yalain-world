@@ -1,0 +1,12 @@
+# What a person says as it gives and takes back its quests, by the numbers its table and its quests share; edit an authored pack instead.
+
+[[talk]]
+key = "t-3082-cdeb1fb2"
+who = 0x47003082
+line = { table = 0x2500297F, string = 0xCDEB1FB2 }
+line_name = "ID_Underway1"
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800000C8
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:a6ee605f", confidence = "low", sample = { lines = 3, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" }, quest = { from = "derived", rule = "talk-quest-name" } } }

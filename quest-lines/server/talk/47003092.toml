@@ -1,0 +1,36 @@
+# What a person says as it gives and takes back its quests, by the numbers its table and its quests share; edit an authored pack instead.
+
+[[talk]]
+key = "t-3092-cdeb1fb2"
+who = 0x47003092
+line = { table = 0x25002987, string = 0xCDEB1FB2 }
+line_name = "ID_Underway1"
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800000D7
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002987, confidence = "high", fields = { quest = { from = "authored", note = "the person has one quest and one line" } } }
+
+[[talk]]
+key = "t-3092-2ae6124e"
+who = 0x47003092
+line = { table = 0x25002987, string = 0x2AE6124E }
+line_name = "ID_Begin1"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+quest = 0x800000D7
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002987, confidence = "medium", fields = { quest = { from = "authored", note = "the person has one quest and one line" } } }
+
+[[talk]]
+key = "t-3092-68a04d4d"
+who = 0x47003092
+line = { table = 0x25002987, string = 0x68A04D4D }
+line_name = "ID_Done1"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+quest = 0x800000D7
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002987, confidence = "high", fields = { quest = { from = "authored", note = "the person has one quest and one line" } } }

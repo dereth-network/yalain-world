@@ -1,0 +1,71 @@
+# What a person says as it gives and takes back its quests, by the numbers its table and its quests share; edit an authored pack instead.
+
+[[talk]]
+key = "t-308c-cdeb1fb2"
+who = 0x4700308C
+line = { table = 0x25002984, string = 0xCDEB1FB2 }
+line_name = "ID_Underway1"
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800000D1
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002984, confidence = "high", fields = { quest = { from = "derived", rule = "talk-quest-name" } } }
+
+[[talk]]
+key = "t-308c-cdeb2fb2"
+who = 0x4700308C
+line = { table = 0x25002984, string = 0xCDEB2FB2 }
+line_name = "ID_Underway2"
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800000D2
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002984, confidence = "high", fields = { quest = { from = "derived", rule = "talk-quest-name" } } }
+
+[[talk]]
+key = "t-308c-2ae6124e"
+who = 0x4700308C
+line = { table = 0x25002984, string = 0x2AE6124E }
+line_name = "ID_Begin1"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+quest = 0x800000D1
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002984, confidence = "medium", fields = { quest = { from = "derived", rule = "talk-quest-name" } } }
+
+[[talk]]
+key = "t-308c-68a04d4d"
+who = 0x4700308C
+line = { table = 0x25002984, string = 0x68A04D4D }
+line_name = "ID_Done1"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+quest = 0x800000D1
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002984, confidence = "high", fields = { quest = { from = "derived", rule = "talk-quest-name" } } }
+
+[[talk]]
+key = "t-308c-2ae61248"
+who = 0x4700308C
+line = { table = 0x25002984, string = 0x2AE61248 }
+line_name = "ID_Begin2"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+quest = 0x800000D2
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002984, confidence = "medium", fields = { quest = { from = "derived", rule = "talk-quest-name" } } }
+
+[[talk]]
+key = "t-308c-68a04e4d"
+who = 0x4700308C
+line = { table = 0x25002984, string = 0x68A04E4D }
+line_name = "ID_Done2"
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+quest = 0x800000D2
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002984, confidence = "high", fields = { quest = { from = "derived", rule = "talk-quest-name" } } }

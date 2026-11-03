@@ -1,0 +1,13 @@
+# What a person says as it gives and takes back its quests, by the numbers its table and its quests share; edit an authored pack instead.
+
+[[talk]]
+key = "t-3353-83b39cdb"
+who = 0x47003353
+line = { table = 0x25002AC5, string = 0x83B39CDB }
+line_name = "ID_SetTask10"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+quest = 0x40000298
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002AC5, confidence = "medium", fields = { quest = { from = "derived", rule = "talk-quest-name" } } }
