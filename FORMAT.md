@@ -263,7 +263,8 @@ quest's update is told before the effects and their text, not after them).
 | `{ done = Q }` | completes quest Q |
 
 `requires` lists other quests the step needs, each `{ quest = Q, phase = N }` (under way at that
-phase; phase 0: not under way) or `{ quest = Q, done = true }`. `takes` lists templates of items taken from the player's
+phase; phase 0: not under way), `{ quest = Q, done = true }` or `{ quest = Q, free = true }` (free to
+be given: not under way, and never had or its wait over). `takes` lists templates of items taken from the player's
 pack, which the player must hold (a hand-in); a give's step that takes the item given keeps it (the rest of a
 stack stays), one that does not hands it back after its update, and a give no step takes is handed back with the
 person's refusal of a give (its `refuse-give` line). The items a give's step gives come from the person, and one

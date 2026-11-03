@@ -6,6 +6,8 @@
 - The explorers and obelisks send their seekers from stone to stone, and more people and gates that send whoever uses them
   have their destinations. New pack `person-trips/`; a step triggered by a use may name `to`.
 - More people say their own lines as they give, remind of and take back their quests. New pack `quest-lines/`.
+- The postings boards give one quest at a time, with a wait after each, from level 70. New pack `postings/`; a step's
+  `requires` may ask that a quest be `free`.
 
 ## v0.25.0
 

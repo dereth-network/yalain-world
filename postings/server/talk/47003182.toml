@@ -1,0 +1,13 @@
+# How the postings boards give their quests, from the install's quest definitions; edit an authored pack instead.
+
+[[talk]]
+key = "g-80000211"
+who = 0x47003182
+line = { table = 0x25002A04, string = 0x91779F7E }
+line_name = "ID_Bestow_Spew"
+role = "offer"
+how = "emote"
+when = "use"
+quest = 0x80000211
+update = "bestow"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A04, confidence = "low" }

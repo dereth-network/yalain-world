@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines", "postings"]
 
 [[override]]
 pack = "fix-start"
@@ -164,3 +164,18 @@ items = ["step 0x40000016 s2", "step 0x40000016 s3", "step 0x40000016 s4"]
 pack = "quest-lines"
 over = "seed-2017-talk"
 items = ["talk t-2f90-9768191a", "talk t-2fdf-2e280ff0", "talk t-2feb-2e280ff0", "talk t-3066-cdeb1fb2", "talk t-3068-cdeb1fb2", "talk t-306a-cdeb1fb2", "talk t-3073-2ae61248", "talk t-3073-2ae6124e", "talk t-3073-68a04d4d", "talk t-3073-68a04e4d", "talk t-3073-cdeb1fb2", "talk t-3076-cdeb1fb2", "talk t-3078-2ae6124e", "talk t-3078-68a04d4d", "talk t-3078-cdeb1fb2", "talk t-307c-cdeb1fb2", "talk t-307c-cdeb2fb2", "talk t-307c-cdeb3fb2", "talk t-3080-cdeb1fb2", "talk t-3082-cdeb1fb2", "talk t-3086-2ae6124e", "talk t-3086-68a04d4d", "talk t-3086-cdeb1fb2", "talk t-3088-2ae61248", "talk t-3088-2ae6124e", "talk t-3088-68a04d4d", "talk t-3088-68a04e4d", "talk t-308a-2ae61248", "talk t-308a-2ae6124a", "talk t-308a-2ae6124e", "talk t-308a-68a04d4d", "talk t-308a-68a04e4d", "talk t-308a-68a04f4d", "talk t-308a-cdeb1fb2", "talk t-308a-cdeb2fb2", "talk t-308a-cdeb3fb2", "talk t-308c-2ae61248", "talk t-308c-2ae6124e", "talk t-308c-68a04d4d", "talk t-308c-68a04e4d", "talk t-308c-cdeb1fb2", "talk t-308c-cdeb2fb2", "talk t-308e-2ae61248", "talk t-308e-2ae6124a", "talk t-308e-2ae6124e", "talk t-308e-68a04d4d", "talk t-308e-68a04e4d", "talk t-308e-68a04f4d", "talk t-308e-cdeb1fb2", "talk t-308e-cdeb2fb2", "talk t-308e-cdeb3fb2", "talk t-3090-2ae6124e", "talk t-3090-68a04d4d", "talk t-3090-cdeb1fb2", "talk t-3092-2ae6124e", "talk t-3092-68a04d4d", "talk t-3092-cdeb1fb2", "talk t-3094-2ae61248", "talk t-3094-2ae6124a", "talk t-3094-2ae6124e", "talk t-3094-68a04d4d", "talk t-3094-68a04e4d", "talk t-3094-68a04f4d", "talk t-3094-cdeb1fb2", "talk t-3094-cdeb2fb2", "talk t-3094-cdeb3fb2", "talk t-3096-2ae61248", "talk t-3096-2ae6124e", "talk t-3096-68a04d4d", "talk t-3096-68a04e4d", "talk t-3096-cdeb1fb2", "talk t-3096-cdeb2fb2", "talk t-3098-2ae6124e", "talk t-3098-68a04d4d", "talk t-3098-cdeb1fb2", "talk t-309a-2ae6124e", "talk t-309a-68a04d4d", "talk t-309a-cdeb1fb2", "talk t-310c-cde80fb2", "talk t-3110-cde80fb2", "talk t-3114-cde80fb2", "talk t-3120-2ae6122c", "talk t-3120-68a07c4d", "talk t-3120-cde80fb2", "talk t-3122-2ae6122c", "talk t-3122-68a07c4d", "talk t-3122-cde80fb2", "talk t-3128-2ae6122c", "talk t-3128-68a07c4d", "talk t-3128-cde80fb2", "talk t-319c-cde80fb2", "talk t-3346-83f09cdb", "talk t-3353-83b39cdb", "talk t-33ca-a3033c8e"]
+
+[[override]]
+pack = "postings"
+over = "kill-quest-givers"
+items = ["quest 0x80000237", "step 0x80000208 g1", "step 0x80000209 g1", "step 0x8000020D g1", "step 0x8000020E g1", "step 0x80000216 g1", "step 0x80000217 g1", "step 0x8000021A g1", "step 0x8000021B g1", "step 0x80000222 g1", "step 0x80000236 g1", "step 0x80000237 g1", "step 0x8000023B g1", "step 0x8000023C g1"]
+
+[[override]]
+pack = "postings"
+over = "kill-quests"
+items = ["quest 0x8000020D", "quest 0x8000021E", "quest 0x80000227", "quest 0x8000022F", "quest 0x8000023B"]
+
+[[override]]
+pack = "postings"
+over = "quest-catalog"
+items = ["quest 0x80000208", "quest 0x80000209", "quest 0x8000020E", "quest 0x80000211", "quest 0x80000216", "quest 0x80000217", "quest 0x8000021A", "quest 0x8000021B", "quest 0x80000222", "quest 0x80000223", "quest 0x80000228", "quest 0x8000022B", "quest 0x80000233", "quest 0x80000236", "quest 0x8000023C", "quest 0x8000023F", "quest 0x80000240", "quest 0x80000241", "quest 0x80000244", "quest 0x80000248", "quest 0x8000024B", "quest 0x8000024C", "quest 0x8000024D", "quest 0x80000250", "quest 0x80000254", "quest 0x80000258", "quest 0x8000028B", "quest 0x8000028D"]

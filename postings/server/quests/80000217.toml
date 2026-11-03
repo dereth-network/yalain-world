@@ -1,0 +1,21 @@
+# How the postings boards give their quests, from the install's quest definitions; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000217
+id_name = "Quest_KQ5_Felsister2"
+state = 0x6F000B01
+challenge = 80
+cancellable = true
+min_level = 70
+duration = 604800
+retry = 72000
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:b0016790", confidence = "low", sample = { sessions = 1 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }
+
+[[step]]
+key = "g1"
+quest = 0x80000217
+needs = 0
+trigger = { use = 0x47003182 }
+update = "bestow"
+requires = [{ quest = 0x8000028E, phase = 0 }, { quest = 0x8000028D, free = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the board whose description lists it", confidence = "medium" }

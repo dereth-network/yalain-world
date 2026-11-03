@@ -1,0 +1,10 @@
+# How the postings boards give their quests, from the install's quest definitions; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000230
+id_name = "Quest_KQ5_Soldiers2"
+state = 0x6F000B1A
+min_level = 70
+duration = 604800
+retry = 72000
+prov = { from = "derived", rule = "quest-definition", record = 0x6F000B1A, confidence = "low", fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }
