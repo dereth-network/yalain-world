@@ -1,0 +1,18 @@
+# Who gives the quests kills move on and who takes them back, from the January 2017 recordings and the install's own text; edit an authored pack instead.
+
+[[step]]
+key = "r2"
+quest = 0x400001B7
+needs = 2
+trigger = { use = 0x47003346 }
+update = "advance"
+phase = 3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KILL-GIVERS-2017", ref = "c:8aeb028c", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "r3"
+quest = 0x400001B7
+needs = 4
+trigger = { use = 0x47003346 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the person its journal says is next", confidence = "low" }

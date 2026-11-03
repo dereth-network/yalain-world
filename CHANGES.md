@@ -4,6 +4,7 @@
 
 - Many more of the quests creatures' deaths move can be taken from the people and postings boards who give them. New
   pack `kill-quest-givers/`.
+- Those quests, and hunts whose last phase says to return, can be handed back. New pack `kill-quest-returns/`.
 
 ## v0.24.0
 

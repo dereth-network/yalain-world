@@ -1,0 +1,27 @@
+# Who gives the quests kills move on and who takes them back, from the January 2017 recordings and the install's own text; edit an authored pack instead.
+
+[[step]]
+key = "r2"
+quest = 0x80000374
+needs = 2
+trigger = { use = 0x47003279 }
+update = "advance"
+phase = 3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KILL-GIVERS-2017", ref = "c:6a87fdb3", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "r3"
+quest = 0x80000374
+needs = 3
+trigger = { use = 0x47003279 }
+update = "advance"
+phase = 4
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KILL-GIVERS-2017", ref = "c:c7fd7df7", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "r1"
+quest = 0x80000374
+needs = 5
+trigger = { use = 0x47003279 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KILL-GIVERS-2017", ref = "c:6275f47f", confidence = "low", sample = { sessions = 1 } }
