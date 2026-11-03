@@ -1,5 +1,9 @@
 # Changes
 
+## v0.26.0
+
+- Quests that other quests require have rows, so a quest asking for one can see it. New pack `required-quests/`.
+
 ## v0.25.0
 
 - Many more of the quests creatures' deaths move can be taken from the people and postings boards who give them. New
