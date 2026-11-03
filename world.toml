@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines", "postings", "quest-refusals"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines", "postings", "quest-refusals", "posting-pay"]
 
 [[override]]
 pack = "fix-start"
@@ -199,3 +199,23 @@ items = ["quest 0x800000B7", "quest 0x800000B8", "quest 0x800000B9", "quest 0x80
 pack = "quest-refusals"
 over = "seed-2017-talk"
 items = ["talk t-2efb-68f492a3", "talk t-2efe-68f492a3", "talk t-2fae-68f492a3", "talk t-2faf-68f492a3", "talk t-2fb4-68f492a3", "talk t-2fb6-68f492a3", "talk t-306e-68f492a3", "talk t-3070-68f492a3", "talk t-3072-68f492a3", "talk t-3073-68f492a3", "talk t-3074-68f492a3", "talk t-3076-68f492a3", "talk t-3078-68f492a3", "talk t-307c-68f492a3", "talk t-307e-68f492a3", "talk t-3080-68f492a3", "talk t-3082-68f492a3", "talk t-3084-68f492a3", "talk t-3086-68f492a3", "talk t-3088-68f492a3", "talk t-308a-68f492a3", "talk t-308c-68f492a3", "talk t-308e-68f492a3", "talk t-3090-68f492a3", "talk t-3092-68f492a3", "talk t-3094-68f492a3", "talk t-3096-68f492a3", "talk t-3098-68f492a3", "talk t-309a-68f492a3", "talk t-30b9-68f492a3", "talk t-310c-68f492a3", "talk t-3110-68f492a3", "talk t-3114-68f492a3", "talk t-3120-68f492a3", "talk t-3122-68f492a3", "talk t-3128-68f492a3", "talk t-326f-68f492a3", "talk t-3279-68f492a3", "talk t-32bc-68f492a3", "talk t-32be-68f492a3", "talk t-32c1-68f492a3", "talk t-32c2-68f492a3", "talk t-32c5-68f492a3", "talk t-32d7-68f492a3", "talk t-33e0-68f492a3", "talk t-33e2-68f492a3", "talk t-33e4-68f492a3", "talk t-33e6-68f492a3", "talk t-33ea-68f492a3", "talk t-3e15-68f492a3"]
+
+[[override]]
+pack = "posting-pay"
+over = "kill-quest-givers"
+items = ["quest 0x80000237"]
+
+[[override]]
+pack = "posting-pay"
+over = "kill-quests"
+items = ["quest 0x8000020D", "quest 0x8000021E", "quest 0x80000227", "quest 0x8000022F", "quest 0x8000023B"]
+
+[[override]]
+pack = "posting-pay"
+over = "postings"
+items = ["quest 0x80000208", "quest 0x80000209", "quest 0x8000020D", "quest 0x8000020E", "quest 0x80000211", "quest 0x80000216", "quest 0x80000217", "quest 0x8000021A", "quest 0x8000021B", "quest 0x8000021E", "quest 0x8000021F", "quest 0x80000222", "quest 0x80000223", "quest 0x80000227", "quest 0x80000228", "quest 0x8000022B", "quest 0x8000022F", "quest 0x80000230", "quest 0x80000233", "quest 0x80000236", "quest 0x80000237", "quest 0x8000023B", "quest 0x8000023C", "quest 0x8000023F", "quest 0x80000240", "quest 0x80000241", "quest 0x80000244", "quest 0x80000248", "quest 0x8000024B", "quest 0x8000024C", "quest 0x8000024D", "quest 0x80000250", "quest 0x80000254", "quest 0x80000258"]
+
+[[override]]
+pack = "posting-pay"
+over = "quest-catalog"
+items = ["quest 0x80000208", "quest 0x80000209", "quest 0x8000020E", "quest 0x80000211", "quest 0x80000216", "quest 0x80000217", "quest 0x8000021A", "quest 0x8000021B", "quest 0x80000222", "quest 0x80000223", "quest 0x80000228", "quest 0x8000022B", "quest 0x80000233", "quest 0x80000236", "quest 0x8000023C", "quest 0x8000023F", "quest 0x80000240", "quest 0x80000241", "quest 0x80000244", "quest 0x80000248", "quest 0x8000024B", "quest 0x8000024C", "quest 0x8000024D", "quest 0x80000250", "quest 0x80000254", "quest 0x80000258"]

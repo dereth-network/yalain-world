@@ -10,6 +10,7 @@
   `requires` may ask that a quest be `free`.
 - A person refuses a player under its quests' least level with its own line, kept from everyone else, and many of those quests
   now have a least level. New pack `quest-refusals/`.
+- The postings pay experience. New pack `posting-pay/`; a quest may name `xp_share` and `xp_share_level`.
 
 ## v0.25.0
 

@@ -1,0 +1,12 @@
+# What the postings pay; edit an authored pack instead.
+
+[[quest]]
+id = 0x8000020D
+id_name = "Quest_KQ5_Enslaved1"
+state = 0x6F000AF7
+min_level = 70
+duration = 604800
+retry = 72000
+xp_share = 0.005
+xp_share_level = 72
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F000AF7, confidence = "low", fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it for two of them", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it for two of them", confidence = "low" } } }
