@@ -1,0 +1,8 @@
+# Derived from the install's quest setups and the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000011E
+id_name = "QuestBarnesKillSkeletonRider"
+state = 0x6F00071C
+fellows = true
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F00071C, confidence = "low", fields = { fellows = { from = "capture", evidence = "AC2-EVID-WDB-KILL-QUESTS-2017", ref = "c:f559898a", confidence = "low" } } }

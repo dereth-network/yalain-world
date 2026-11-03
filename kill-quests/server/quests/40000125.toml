@@ -1,0 +1,12 @@
+# Derived from the install's quest setups and the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000125
+id_name = "QuestBarnesOriad"
+state = 0x6F00071F
+challenge = 44
+retry = 72000
+cancellable = true
+duration = 172800.0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:131cb332", confidence = "high", sample = { sessions = 4 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:4f529ded", confidence = "medium", sample = { sessions = 2 } }, fellows = { from = "capture", evidence = "AC2-EVID-WDB-KILL-QUESTS-2017", ref = "c:f4763d5d", confidence = "medium" } } }
+fellows = false

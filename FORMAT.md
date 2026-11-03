@@ -152,7 +152,8 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `store-sales-unseen` | a sale no recording listed is the store template's own listing at that ordinal (as `store-sales`), its stack the most its product stacks to (1 when the product names none) and its icon the layers its product's look gives (none when the look gives none), as every recorded sale was |
 | `quest-definition` | a quest's name, description, icon and journal entries are its definition's |
 | `quest-setup-static` | a quest's duration, retry wait, experience, challenge and whether it is shown are the constant values its setup sets |
-| `quest-death-effect` | killing a creature whose template's death effect moves a quest on advances that quest a phase, as the recordings show for others of that effect |
+| `quest-death-effect` | a quest a creature's death effect moves on holds its definition's text alone, as no setup says more of it; the death effect itself is read from the creature's template when the creature dies |
+| `quest-kill-fellows` | a kill's move on a quest with no setup and no recording to say otherwise stays the killer's: nothing says it reaches fellows, and the setup decides that quest by quest, so its row leaves `fellows` out; a row or a later study may opt one in |
 | `talk-token-role` | a line's role is the one its token's name gives (`ID_Begin2` offers a quest, `ID_Underway1` reminds, `ID_TooLow` refuses), said at that role's moment the way recorded lines of the name or role were; a derived line's `confidence` is how often recorded lines of its role agreed |
 | `talk-quest-number` | a person's quest line numbered k goes with the quest a recorded line of the same person numbered k went with |
 | `hoard-key-table` | a hoard's key used on the stockpile its interaction table names gives its user and fellowship the quest the key's use needs able to be given, which the stockpile's use needs under way, as the recordings show for one hoard |
@@ -230,7 +231,7 @@ its player but never shown, in no journal and no update; left out, a quest is sh
 definition has a description), `min_level` (the least level a player is given it at; a person whose
 step would give it says its refusal of the quest, a `refuse-use` line naming it, to a player under
 it), `fails_on_death` (true: it fails when its player dies), `once` (true: given only once, done never given again; false: given again;
-left out, as the quest's setup in the install says). Its name, description, icon, journal
+left out, as the quest's setup in the install says), `fellows` (true: a kill's move on it reaches the killer's fellows; false: only the killer; left out, as the quest's setup in the install says, and only the killer for a quest with no setup). Its name, description, icon, journal
 and the effects each of its updates puts on the player are the definition's. A phase the definition
 says is done by other quests (subquests) gives them with it, kept hidden: steps move them, each
 move told as the quest's own record with its phase kept, and the quest moves on to its next phase
@@ -258,7 +259,7 @@ quest's update is told before the effects and their text, not after them).
 | `{ give = I, to = T }` | gives an item of template I to a person or an object of template T (drags it onto it) |
 | `{ arrive = T }` | arrives through a portal of template T |
 | `{ take = T }` | takes an item of template T |
-| `{ kill = T }` | kills a creature of template T |
+| `{ kill = T }` | kills a creature of template T (the effects its template names at its death need no step: they move their quests whatever a step says, on any quest no step moved at that kill) |
 | `{ done = Q }` | completes quest Q |
 
 `requires` lists other quests the step needs, each `{ quest = Q, phase = N }` (under way at that

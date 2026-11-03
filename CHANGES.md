@@ -1,7 +1,9 @@
 # Changes
 
-## Unreleased
+## v0.24.0
 
+- Killing creatures moves the quests their deaths name, and a kill can give a quest. New pack `kill-quests/`; quests
+  may name `fellows`.
 - Portals that led to the wrong place now lead where they led in 2017, and more placed portals that led nowhere have
   their destinations. New pack `fix-portal-landings/`.
 - The town hunts and some errands can be taken from the people who give them and handed back to them. New pack

@@ -1,0 +1,8 @@
+# Derived from the install's quest setups and the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000128
+id_name = "QuestBarnesKillGurogHenchmanEmpowered"
+state = 0x6F000713
+fellows = true
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F000713, confidence = "medium", fields = { fellows = { from = "capture", evidence = "AC2-EVID-WDB-KILL-QUESTS-2017", ref = "c:8f7940da", confidence = "medium" } } }

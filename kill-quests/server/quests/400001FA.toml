@@ -1,0 +1,13 @@
+# Derived from the install's quest setups and the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x400001FA
+id_name = "QuestDoomsword"
+state = 0x6F0007BB
+challenge = 50
+duration = 14400
+retry = 518400
+xp = 60000000
+cancellable = true
+fails_on_death = true
+prov = { from = "derived", rule = "quest-setup-static", record = 0x6F0007BB, confidence = "low" }
