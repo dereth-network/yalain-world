@@ -1,0 +1,23 @@
+# A person's under-level line tied to the quests it gives, and how low that is; edit an authored pack instead.
+
+[[talk]]
+key = "t-3096-68f492a3"
+who = 0x47003096
+line = { table = 0x25002989, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x800000DB
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002989, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "a person's under-level line, for each quest it gives", confidence = "medium" } } }
+
+[[talk]]
+key = "q-800000dc-68f492a3"
+who = 0x47003096
+line = { table = 0x25002989, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x800000DC
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002989, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "a person's under-level line, for each quest it gives", confidence = "medium" } } }

@@ -1,0 +1,11 @@
+# A person's under-level line tied to the quests it gives, and how low that is; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000367
+id_name = "Quest_DankRelics_2"
+state = 0x6F0006CC
+challenge = 30
+retry = 518400
+cancellable = true
+min_level = 32
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:e6014288", confidence = "high", sample = { sessions = 3 }, fields = { min_level = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-REFUSALS-2017", ref = "c:a844747f", confidence = "low", sample = { sessions = 1, lines = 1 } } } }

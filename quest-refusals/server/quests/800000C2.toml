@@ -1,0 +1,11 @@
+# A person's under-level line tied to the quests it gives, and how low that is; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000C2
+id_name = "QuestIkB1_ServitorSpawn"
+state = 0x6F0009CA
+challenge = 17
+retry = 72000
+cancellable = true
+min_level = 18
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:8104c131", confidence = "high", sample = { sessions = 4 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

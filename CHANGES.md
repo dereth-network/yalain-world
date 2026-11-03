@@ -8,6 +8,8 @@
 - More people say their own lines as they give, remind of and take back their quests. New pack `quest-lines/`.
 - The postings boards give one quest at a time, with a wait after each, from level 70. New pack `postings/`; a step's
   `requires` may ask that a quest be `free`.
+- A person refuses a player under its quests' least level with its own line, kept from everyone else, and many of those quests
+  now have a least level. New pack `quest-refusals/`.
 
 ## v0.25.0
 

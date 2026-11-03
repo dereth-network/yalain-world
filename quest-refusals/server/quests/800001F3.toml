@@ -1,0 +1,10 @@
+# A person's under-level line tied to the quests it gives, and how low that is; edit an authored pack instead.
+
+[[quest]]
+id = 0x800001F3
+id_name = "Quest_KQ2B_SkeletonLieutenant"
+state = 0x6F000ADD
+challenge = 50
+cancellable = true
+min_level = 50
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:37e7d807", confidence = "low", sample = { sessions = 1 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

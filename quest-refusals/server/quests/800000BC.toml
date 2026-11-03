@@ -1,0 +1,8 @@
+# A person's under-level line tied to the quests it gives, and how low that is; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000BC
+id_name = "QuestHakD2_ImmortalBurun"
+state = 0x6F0009C4
+min_level = 37
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F0009C4, confidence = "low", fields = { min_level = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-REFUSALS-2017", ref = "c:a7c64791", confidence = "low", sample = { sessions = 3, lines = 3 } } } }

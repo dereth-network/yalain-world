@@ -1,0 +1,11 @@
+# A person's under-level line tied to the quests it gives, and how low that is; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000C9
+id_name = "QuestIkE2_FaisiSclavus"
+state = 0x6F0009D1
+challenge = 24
+retry = 72000
+cancellable = true
+min_level = 24
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:6da61363", confidence = "high", sample = { sessions = 3 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it, held to the levels recorded", confidence = "low" } } }

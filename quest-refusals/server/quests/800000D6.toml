@@ -1,0 +1,8 @@
+# A person's under-level line tied to the quests it gives, and how low that is; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000D6
+id_name = "QuestLinD_DerangedLasher"
+state = 0x6F0009DE
+min_level = 50
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F0009DE, confidence = "low", fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

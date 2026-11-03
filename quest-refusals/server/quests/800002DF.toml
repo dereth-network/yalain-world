@@ -1,0 +1,11 @@
+# A person's under-level line tied to the quests it gives, and how low that is; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002DF
+id_name = "Quest_DC4_VoodooDoll"
+state = 0x6F000CC8
+challenge = 16
+retry = 518400
+cancellable = true
+min_level = 20
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:ad1c6d96", confidence = "high", sample = { sessions = 3 }, fields = { min_level = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-REFUSALS-2017", ref = "c:87acd55e", confidence = "low", sample = { sessions = 1, lines = 1 } } } }

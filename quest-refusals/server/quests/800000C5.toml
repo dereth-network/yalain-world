@@ -1,0 +1,11 @@
+# A person's under-level line tied to the quests it gives, and how low that is; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000C5
+id_name = "QuestIkC_MimbuKachem"
+state = 0x6F0009CD
+challenge = 19
+retry = 72000
+cancellable = true
+min_level = 19
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:cfa25f99", confidence = "high", sample = { sessions = 3 }, fields = { min_level = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-REFUSALS-2017", ref = "c:abaa424a", confidence = "low", sample = { sessions = 1, lines = 1 } } } }
