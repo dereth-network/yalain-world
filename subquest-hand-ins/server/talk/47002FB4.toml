@@ -1,0 +1,64 @@
+# A quest done by subquests: a step for each hand-in January 2017 recorded; edit an authored pack instead.
+
+[[talk]]
+key = "t-2fb4-6dee9f7a"
+who = 0x47002FB4
+line = { table = 0x25002915, string = 0x6DEE9F7A }
+line_name = "ID_Give_Spike"
+how = "tell"
+quest = 0x8000033E
+update = "complete"
+role = "accept"
+when = "give"
+item = 0x470008FB
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:458888f9", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" }, quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" } } }
+
+[[talk]]
+key = "t-2fb4-7b7ad98a"
+who = 0x47002FB4
+line = { table = 0x25002915, string = 0x7B7AD98A }
+how = "emote"
+when = "give"
+quest = 0x8000033F
+update = "complete"
+item = 0x47001CB7
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ea177163", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" } } }
+
+[[talk]]
+key = "t-2fb4-7b7abd8a"
+who = 0x47002FB4
+line = { table = 0x25002915, string = 0x7B7ABD8A }
+how = "emote"
+when = "give"
+quest = 0x8000033F
+update = "complete"
+item = 0x47001CB7
+order = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ea177163", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" } } }
+
+[[talk]]
+key = "t-2fb4-498823f6"
+who = 0x47002FB4
+line = { table = 0x25002915, string = 0x498823F6 }
+line_name = "ID_Give_Eye"
+how = "tell"
+order = 2
+quest = 0x8000033F
+update = "complete"
+role = "accept"
+when = "give"
+item = 0x47001CB7
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:ea177163", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" }, quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" } } }
+
+[[talk]]
+key = "t-2fb4-58d33de2"
+who = 0x47002FB4
+line = { table = 0x25002915, string = 0x58D33DE2 }
+line_name = "ID_Give_Carapace"
+how = "tell"
+quest = 0x80000340
+update = "complete"
+role = "accept"
+when = "give"
+item = 0x47001CAD
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002915, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" } } }

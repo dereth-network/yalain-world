@@ -1,0 +1,27 @@
+# A quest done by subquests: a step for each hand-in January 2017 recorded; edit an authored pack instead.
+
+[[talk]]
+key = "t-32c5-6936bd43"
+who = 0x470032C5
+line = { table = 0x25002A84, string = 0x6936BD43 }
+line_name = "ID_Give_Barium"
+how = "tell"
+quest = 0x800002EA
+update = "complete"
+role = "accept"
+when = "give"
+item = 0x470008ED
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:79deb7af", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" }, quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c5-07dbde00"
+who = 0x470032C5
+line = { table = 0x25002A84, string = 0x07DBDE00 }
+line_name = "ID_Give_Stronium"
+how = "tell"
+quest = 0x800002EB
+update = "complete"
+role = "accept"
+when = "give"
+item = 0x470008EB
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A84, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for this item, heard as it was handed in", confidence = "medium" } } }

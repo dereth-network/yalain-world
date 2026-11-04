@@ -1,0 +1,16 @@
+# A quest done by subquests: a step for each hand-in January 2017 recorded; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002EA
+id_name = "Quest_DF1_CollectBarium"
+state = 0x6F000CAB
+prov = { from = "derived", rule = "quest-definition", record = 0x6F000CAB, confidence = "medium" }
+
+[[step]]
+key = "g-1"
+quest = 0x800002EA
+needs = 1
+trigger = { give = 0x470008ED, to = 0x470032C5 }
+update = "complete"
+takes = [0x470008ED]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-IN-COUNTS-2017", ref = "c:41a7585f", confidence = "low", sample = { sessions = 1 } }
