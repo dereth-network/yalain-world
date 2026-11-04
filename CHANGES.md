@@ -1,5 +1,11 @@
 # Changes
 
+## v0.30.0
+
+- A mine's hidden quests run: a guard's death gives them to whoever paid the fee, each find counts, and the last ends the fee. New pack `ulkas-mines/`; a step's `trigger` may be `given`.
+- Hand-ins whose lines were waiting for a step run, from the journals, nearly all marked `low`. New pack `journal-hand-ins/`.
+- A jeweler's list of gems runs one after another, in the order characters did them; only one fee is recorded. New pack `ryvenna-gems/`.
+
 ## v0.29.0
 
 - Gives kept in the recordings that moved no quest you can see now run: offerings, charged relics, donations, a bribe. New pack `gives-kept/`, and a row kind, `[[give]]`.

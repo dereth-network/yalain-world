@@ -266,6 +266,7 @@ back, with the person's `refuse-give` line naming the quest and the `item` if it
 | `{ take = T }` | takes an item of template T |
 | `{ kill = T }` | kills a creature of template T (the effects its template names at its death need no step: they move their quests whatever a step says, on any quest no step moved at that kill) |
 | `{ done = Q }` | completes quest Q |
+| `{ given = Q }` | is given quest Q, shown or kept hidden, by whatever gives it |
 
 `requires` lists other quests the step needs, each `{ quest = Q, phase = N }` (under way at that
 phase; phase 0: not under way), `{ quest = Q, done = true }` or `{ quest = Q, free = true }` (free to
