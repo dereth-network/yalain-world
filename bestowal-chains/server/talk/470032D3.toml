@@ -1,0 +1,62 @@
+# Two crafters' second halves, from their journals and the people's own lines; edit an authored pack instead.
+
+[[talk]]
+key = "t-32d3-8b6b1869"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x8B6B1869 }
+line_name = "ID_Phase2"
+how = "emote"
+when = "use"
+role = "advance"
+quest = 0x80000303
+update = "advance"
+phase = 3
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "medium", fields = { role = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }, quest = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }, update = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }, phase = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" } } }
+
+[[talk]]
+key = "t-32d3-8b6b186b"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x8B6B186B }
+line_name = "ID_Phase3"
+how = "emote"
+when = "use"
+role = "remind"
+quest = 0x80000303
+phase = 3
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "medium", fields = { role = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }, quest = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }, phase = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" } } }
+
+[[talk]]
+key = "t-32d3-ef3e7afc"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0xEF3E7AFC }
+line_name = "ID_DonePhase3"
+how = "tell"
+role = "advance"
+when = "give"
+quest = 0x80000303
+update = "advance"
+phase = 4
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "high", fields = { role = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }, when = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }, quest = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }, update = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }, phase = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" } } }
+
+[[talk]]
+key = "b-32d3-moonshine"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x2530079C }
+line_name = "ID_Give_Moonshine"
+how = "tell"
+when = "give"
+role = "complete"
+quest = 0x80000308
+update = "complete"
+item = 0x47001905
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "low", fields = { role = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, quest = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, update = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the full jug is what the empty jug's text and his own line ask for", confidence = "low" } } }
+
+[[talk]]
+key = "g-32d3-910f2e01"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x910F2E01 }
+role = "refuse-give"
+item = 0x47001901
+how = "tell"
+when = "give"
+prov = { from = "authored", by = "Dereth Network", note = "his line for the coupon", confidence = "low" }
