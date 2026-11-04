@@ -1,0 +1,25 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-6200"
+cell = 0x80A1001A
+at = [71.8, 37.6, 118.3]
+radius = 56.8
+population = 12
+regen = 192.0
+spawns = [{ template = 0x47002377, weight = 22 }, { template = 0x47002375, weight = 4 }, { template = 0x4700239B, weight = 2 }]
+profile = 51
+profile_name = "GP_CampDrudgeSlinker"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6200", confidence = "medium", sample = { creatures = 28, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 6200", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6202"
+cell = 0x80A1000D
+at = [28.7, 99.2, 121.7]
+radius = 23.3
+population = 4
+regen = 192.0
+spawns = [{ template = 0x47002375, weight = 6 }, { template = 0x4700239B, weight = 2 }]
+profile = 51
+profile_name = "GP_CampDrudgeSlinker"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6202", confidence = "medium", sample = { creatures = 8, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 6202", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

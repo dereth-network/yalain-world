@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12602"
+cell = 0x07F6014C
+at = [-30.3, -367.6, -164.9]
+radius = 0.0
+spots = [{ cell = 0x07F6014C, at = [-34.0, -378.3, -164.6] }, { cell = 0x07F6014C, at = [-31.2, -379.4, -164.7] }, { cell = 0x07F6014C, at = [-29.7, -381.3, -164.7] }, { cell = 0x07F6014C, at = [-28.1, -377.6, -164.9] }, { cell = 0x07F6014C, at = [-27.0, -377.2, -165.0] }, { cell = 0x07F6014F, at = [-36.1, -356.5, -165.0] }, { cell = 0x07F6014F, at = [-34.8, -359.5, -165.0] }, { cell = 0x07F6014F, at = [-32.8, -344.8, -164.9] }, { cell = 0x07F6014F, at = [-31.9, -372.8, -164.9] }, { cell = 0x07F6014F, at = [-28.2, -370.0, -164.9] }, { cell = 0x07F6014F, at = [-27.2, -349.5, -164.9] }, { cell = 0x07F6014F, at = [-26.1, -359.8, -165.0] }, { cell = 0x07F6014F, at = [-23.7, -354.2, -165.0] }]
+population = 8
+regen = 192.0
+spawns = [{ template = 0x47000826, weight = 4 }, { template = 0x470023CD, weight = 4 }, { template = 0x470023D1, weight = 4 }, { template = 0x470023CF, weight = 4 }]
+profile = 60
+profile_name = "GP_CampEliSlaggard"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12602", confidence = "low", sample = { creatures = 16, sessions = 1 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12602", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

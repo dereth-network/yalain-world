@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12232"
+cell = 0x00A70108
+at = [-79.2, -111.9, -27.3]
+radius = 0.0
+spots = [{ cell = 0x00A70108, at = [-71.4, -106.6, -24.1] }, { cell = 0x00A7010C, at = [-73.8, -109.5, -24.2] }, { cell = 0x00A70112, at = [-80.3, -112.4, -32.9] }, { cell = 0x00A70116, at = [-78.8, -110.0, -30.4] }, { cell = 0x00A70117, at = [-97.4, -120.3, -43.5] }, { cell = 0x00A70117, at = [-73.4, -112.9, -23.8] }]
+population = 6
+regen = 192.0
+spawns = [{ template = 0x4700080E, weight = 6 }]
+profile = 49
+profile_name = "GP_CampDrudgeRobber"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12232", confidence = "medium", sample = { creatures = 6, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12232", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

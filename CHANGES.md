@@ -12,6 +12,7 @@
 - A shaman gives her maintenance quest, and asks after each phase. New pack `skyport-maint/`.
 - One more mirra runs as the others do. New pack `mirra-rouge/`.
 - Nobody who gives nothing here tells a player it is too weak. New pack `under-level-more/`.
+- 494 camps keep as many creatures as the recordings show alive together, 620 more in all. New pack `camp-counts/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 

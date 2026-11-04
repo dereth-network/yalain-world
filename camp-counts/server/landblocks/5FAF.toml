@@ -1,0 +1,13 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-2023"
+cell = 0x5FAF000E
+at = [35.3, 102.0, 86.9]
+radius = 17.8
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002AF9, weight = 3 }]
+profile = 358
+profile_name = "GP_CampShrethGnawer"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2023", confidence = "medium", sample = { creatures = 3, sessions = 3 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 2023", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

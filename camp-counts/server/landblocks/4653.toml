@@ -1,0 +1,11 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-10923"
+cell = 0x46530010
+at = [26.6, 158.2, 177.1]
+radius = 23.6
+population = 4
+regen = 192.0
+spawns = [{ template = 0x47002AB7, weight = 5 }, { template = 0x47002AC3, weight = 3 }, { template = 0x47002ABB, weight = 1 }, { template = 0x47002ABD, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10923", confidence = "high", sample = { creatures = 10, sessions = 5 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 10923", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" } } }

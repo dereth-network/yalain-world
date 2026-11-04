@@ -1,0 +1,13 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-10536"
+cell = 0xBA87002E
+at = [117.7, 114.1, 120.4]
+radius = 2.6
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470027B9, weight = 2 }, { template = 0x470027A7, weight = 1 }]
+profile = 314
+profile_name = "GP_CampMimbuFeyen"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10536", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 10536", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

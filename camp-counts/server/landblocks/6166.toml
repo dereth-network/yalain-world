@@ -1,0 +1,13 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-334"
+cell = 0x61660017
+at = [51.6, 130.0, 135.3]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470021C2, weight = 2 }]
+profile = 12
+profile_name = "GP_CampArmoredilloStony"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 334", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 334", confidence = "medium" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

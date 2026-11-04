@@ -1,0 +1,13 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-7268"
+cell = 0x99970003
+at = [1.7, 55.1, 119.8]
+radius = 17.8
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002353, weight = 2 }, { template = 0x47002346, weight = 1 }]
+profile = 50
+profile_name = "GP_CampDrudgeScowl"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7268", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 7268", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

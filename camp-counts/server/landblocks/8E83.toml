@@ -1,0 +1,25 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-4514"
+cell = 0x8E83003D
+at = [142.9, 80.1, 109.7]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700222A, weight = 1 }]
+profile = 29
+profile_name = "GP_CampBeetleScythe"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4514", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 4514", confidence = "low" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-4516"
+cell = 0x8E830037
+at = [137.2, 135.2, 109.5]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700222B, weight = 1 }, { template = 0x4700222A, weight = 1 }]
+profile = 29
+profile_name = "GP_CampBeetleScythe"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4516", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 4516", confidence = "medium" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

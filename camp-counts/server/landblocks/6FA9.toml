@@ -1,0 +1,31 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-3622"
+cell = 0x6FA90025
+at = [99.3, 99.6, 85.3]
+radius = 8.3
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470021EE, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3622", confidence = "medium", sample = { creatures = 7, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 3622", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, spawns = { from = "authored", by = "Dereth Network", note = "a summoned creature (a pet's AI or NPC table): players' pets were seen, never spawned by a camp" } } }
+
+[[camp]]
+key = "c-5616"
+cell = 0x6FA90036
+at = [125.8, 104.0, 87.5]
+radius = 38.4
+population = 19
+regen = 192.0
+spawns = [{ template = 0x47000894, weight = 53 }, { template = 0x470026C4, weight = 6 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5616", confidence = "high", sample = { creatures = 59, sessions = 46 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 5616", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-13071"
+cell = 0x6FA9002E
+at = [107.1, 104.6, 85.4]
+radius = 18.3
+population = 74
+regen = 192.0
+spawns = [{ template = 0x47003437, weight = 75 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 13071", confidence = "high", sample = { creatures = 75, sessions = 5 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 13071", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" } } }

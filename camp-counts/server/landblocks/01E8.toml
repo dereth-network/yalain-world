@@ -1,0 +1,27 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12195"
+cell = 0x01E80122
+at = [-36.3, 231.7, -87.0]
+radius = 0.0
+spots = [{ cell = 0x01E80122, at = [-39.1, 233.0, -87.2] }, { cell = 0x01E80122, at = [-33.5, 230.4, -86.7] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700236E, weight = 4 }]
+profile = 43
+profile_name = "GP_CampDrudgeMurk"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12195", confidence = "medium", sample = { creatures = 4, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12195", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-12196"
+cell = 0x01E8010E
+at = [-146.6, 52.7, -96.9]
+radius = 0.0
+spots = [{ cell = 0x01E8010E, at = [-146.0, 61.0, -97.4] }, { cell = 0x01E8010E, at = [-143.6, 65.8, -96.9] }, { cell = 0x01E8012A, at = [-150.0, 31.3, -67.3] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700236E, weight = 6 }]
+profile = 43
+profile_name = "GP_CampDrudgeMurk"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12196", confidence = "medium", sample = { creatures = 6, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12196", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

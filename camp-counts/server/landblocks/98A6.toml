@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12157"
+cell = 0x98A60152
+at = [119.1, 125.1, 140.8]
+radius = 0.0
+spots = [{ cell = 0x98A60152, at = [119.1, 104.2, 160.8] }, { cell = 0x98A60153, at = [119.7, 129.6, 140.8] }, { cell = 0x98A60154, at = [118.4, 141.3, 120.9] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002A5D, weight = 3 }]
+profile = 353
+profile_name = "GP_CampScravenPazur"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12157", confidence = "low", sample = { creatures = 3, sessions = 1 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12157", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

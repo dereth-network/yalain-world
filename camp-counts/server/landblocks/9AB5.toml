@@ -1,0 +1,12 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-6017"
+cell = 0x9AB50103
+at = [20.3, 32.3, 106.6]
+radius = 0.0
+spots = [{ cell = 0x9AB50103, at = [42.3, 79.0, 139.5] }, { cell = 0x9AB50103, at = [42.3, 85.9, 140.0] }, { cell = 0x9AB50107, at = [25.5, 81.5, 135.4] }, { cell = 0x9AB50107, at = [25.5, 81.5, 135.8] }, { cell = 0x9AB5010B, at = [70.5, 7.0, 135.7] }, { cell = 0x9AB5010B, at = [71.5, 11.5, 135.8] }, { cell = 0x9AB50120, at = [-13.6, 19.5, 110.8] }, { cell = 0x9AB50120, at = [-13.6, 19.5, 111.8] }, { cell = 0x9AB50120, at = [-13.6, 19.5, 112.8] }, { cell = 0x9AB50120, at = [-12.8, 21.2, 110.4] }, { cell = 0x9AB50120, at = [-12.8, 21.2, 111.3] }, { cell = 0x9AB50120, at = [-12.8, 21.2, 112.3] }, { cell = 0x9AB50120, at = [-12.1, 19.2, 110.9] }, { cell = 0x9AB50120, at = [-12.1, 19.2, 112.8] }, { cell = 0x9AB50121, at = [-10.6, 39.2, 106.6] }, { cell = 0x9AB50122, at = [-32.7, 29.7, 105.6] }, { cell = 0x9AB50123, at = [-32.8, 22.9, 105.7] }, { cell = 0x9AB50128, at = [40.5, 38.3, 101.0] }, { cell = 0x9AB50128, at = [43.9, 38.9, 100.9] }, { cell = 0x9AB50128, at = [52.4, 32.5, 101.2] }, { cell = 0x9AB50128, at = [52.4, 40.6, 101.2] }, { cell = 0x9AB50128, at = [52.7, 45.2, 101.8] }, { cell = 0x9AB50128, at = [55.6, 36.7, 101.1] }, { cell = 0x9AB50128, at = [55.6, 40.9, 101.0] }, { cell = 0x9AB50129, at = [23.6, 61.5, 101.3] }, { cell = 0x9AB5012F, at = [11.4, -4.4, 131.8] }, { cell = 0x9AB50133, at = [7.6, 12.4, 129.6] }, { cell = 0x9AB50134, at = [14.4, 5.8, 129.7] }, { cell = 0x9AB50139, at = [27.3, 22.6, 100.7] }]
+population = 15
+regen = 192.0
+spawns = [{ template = 0x4700296B, weight = 20 }, { template = 0x47002963, weight = 12 }, { template = 0x4700296C, weight = 11 }, { template = 0x4700296D, weight = 2 }, { template = 0x47002961, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6017", confidence = "medium", sample = { creatures = 47, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 6017", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" } } }
