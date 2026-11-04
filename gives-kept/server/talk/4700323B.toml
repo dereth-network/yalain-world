@@ -1,0 +1,11 @@
+# Gives that move no quest, from the January 2017 recordings and the people's own lines; edit an authored pack instead.
+
+[[talk]]
+key = "t-323b-15162dce"
+who = 0x4700323B
+line = { table = 0x25002A4C, string = 0x15162DCE }
+line_name = "ID_GiveLinvak"
+how = "tell"
+when = "give"
+role = "accept"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A4C, confidence = "low", fields = { role = { from = "authored", by = "Dereth Network", note = "a Warder thanks in its own land's words for any item", confidence = "medium" } } }

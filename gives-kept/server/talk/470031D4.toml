@@ -1,0 +1,21 @@
+# Gives that move no quest, from the January 2017 recordings and the people's own lines; edit an authored pack instead.
+
+[[talk]]
+key = "t-31d4-5a619b97"
+who = 0x470031D4
+line = { table = 0x25002A2D, string = 0x5A619B97 }
+how = "emote"
+when = "give"
+item = 0x47001775
+role = "accept"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:10906119", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "authored", by = "Dereth Network", note = "said as the item is taken", confidence = "medium" } } }
+
+[[talk]]
+key = "t-31d4-89a7c228"
+who = 0x470031D4
+line = { table = 0x25002A2D, string = 0x89A7C228 }
+line_name = "ID_DestroyItem"
+how = "tell"
+when = "give"
+role = "accept"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A2D, confidence = "low", fields = { role = { from = "authored", by = "Dereth Network", note = "said as anything else is consumed", confidence = "low" } } }

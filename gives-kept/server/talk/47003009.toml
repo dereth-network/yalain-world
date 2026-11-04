@@ -1,0 +1,21 @@
+# Gives that move no quest, from the January 2017 recordings and the people's own lines; edit an authored pack instead.
+
+[[talk]]
+key = "t-3009-a07690ac"
+who = 0x47003009
+line = { table = 0x25002942, string = 0xA07690AC }
+how = "tell"
+when = "give"
+item = 0x47000538
+role = "accept"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:6204d1ae", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "authored", by = "Dereth Network", note = "said as the item is taken", confidence = "medium" } } }
+
+[[talk]]
+key = "g-3009-4fff35f3"
+who = 0x47003009
+line = { table = 0x25002942, string = 0x4FFF35F3 }
+role = "refuse-give"
+item = 0x47000538
+how = "tell"
+when = "give"
+prov = { from = "authored", by = "Dereth Network", note = "the guard's own price, said to coins that fall short of it", confidence = "low" }

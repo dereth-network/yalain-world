@@ -1,0 +1,11 @@
+# Gives that move no quest, from the January 2017 recordings and the people's own lines; edit an authored pack instead.
+
+[[talk]]
+key = "t-323f-7d8f7e9a"
+who = 0x4700323F
+line = { table = 0x25002A4C, string = 0x7D8F7E9A }
+line_name = "ID_GiveOsteth"
+how = "tell"
+when = "give"
+role = "accept"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:93be4aa8", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "authored", by = "Dereth Network", note = "a Warder thanks in its own land's words for any item", confidence = "medium" }, line_name = { from = "derived", rule = "talk-token-role" } } }

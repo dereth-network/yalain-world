@@ -1,0 +1,19 @@
+# Gives that move no quest, from the January 2017 recordings and the people's own lines; edit an authored pack instead.
+
+[[give]]
+key = "bucket-31ac"
+item = 0x4700185E
+to = 0x470031AC
+gives = [0x4700185F]
+fx = 1090520396
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-KEPT-2017", ref = "c:e716be92", confidence = "low", sample = { sessions = 1 } }
+
+[[give]]
+key = "dip-31ac"
+item = 0x47000B38
+to = 0x470031AC
+gives = [0x47000B39]
+effects = [0x6F001DA6]
+fx = 1090520395
+requires = [{ quest = 0x4000018F, phase = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-KEPT-2017", ref = "c:26693947", confidence = "low", sample = { sessions = 1 } }
