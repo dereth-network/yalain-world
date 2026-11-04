@@ -1,0 +1,15 @@
+# Quests January 2017 recorded people giving, and what the install says finishes them; edit an authored pack instead.
+
+[[talk]]
+key = "t-2fba-35967da2"
+who = 0x47002FBA
+line = { table = 0x2500291B, string = 0x35967DA2 }
+line_name = "ID_Give_Offer"
+how = "tell"
+when = "give"
+quest = 0x8000031A
+update = "advance"
+role = "accept"
+item = 0x47001415
+phase = 2
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500291B, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for this item", confidence = "medium" } } }

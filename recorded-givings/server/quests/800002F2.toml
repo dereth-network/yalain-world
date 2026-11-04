@@ -1,0 +1,16 @@
+# Quests January 2017 recorded people giving, and what the install says finishes them; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002F2
+id_name = "Quest_DAB4_Wood"
+state = 0x6F000C9F
+prov = { from = "derived", rule = "quest-definition", record = 0x6F000C9F, confidence = "medium" }
+
+[[step]]
+key = "g-1"
+quest = 0x800002F2
+needs = 1
+trigger = { give = 0x470018EB, to = 0x470032C3 }
+update = "complete"
+takes = [0x470018EB]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's lines say so; the item by its name, handed over as the recordings show of a quest of this kind", confidence = "low" }

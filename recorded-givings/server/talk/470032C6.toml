@@ -1,0 +1,35 @@
+# Quests January 2017 recorded people giving, and what the install says finishes them; edit an authored pack instead.
+
+[[talk]]
+key = "t-32c6-68f492a3"
+who = 0x470032C6
+line = { table = 0x25002A85, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x800002EE
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:4d84aa9f", confidence = "medium", sample = { lines = 2, sessions = 2 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" }, quest = { from = "authored", by = "Dereth Network", note = "a person's under-level line, for the quest it gives", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c6-68a07c4d"
+who = 0x470032C6
+line = { table = 0x25002A85, string = 0x68A07C4D }
+line_name = "ID_Done"
+how = "tell"
+quest = 0x800002EE
+update = "complete"
+when = "give"
+role = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A85, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for finishing this quest", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c6-8b6b186f"
+who = 0x470032C6
+line = { table = 0x25002A85, string = 0x8B6B186F }
+line_name = "ID_Phase1"
+when = "use"
+quest = 0x800002EE
+role = "remind"
+how = "tell"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A85, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for a quest under way, its one journal's", confidence = "medium" } } }

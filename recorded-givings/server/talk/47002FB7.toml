@@ -1,0 +1,23 @@
+# Quests January 2017 recorded people giving, and what the install says finishes them; edit an authored pack instead.
+
+[[talk]]
+key = "t-2fb7-68f492a3"
+who = 0x47002FB7
+line = { table = 0x25002918, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x80000319
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002918, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "a person's under-level line, for the quest it gives", confidence = "medium" } } }
+
+[[talk]]
+key = "t-2fb7-4f6b186d"
+who = 0x47002FB7
+line = { table = 0x25002918, string = 0x4F6B186D }
+line_name = "ID_Phase01"
+when = "use"
+quest = 0x80000319
+role = "remind"
+how = "tell"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002918, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for a quest under way", confidence = "medium" } } }

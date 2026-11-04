@@ -1,0 +1,123 @@
+# Quests January 2017 recorded people giving, and what the install says finishes them; edit an authored pack instead.
+
+[[talk]]
+key = "t-32c3-68f492a3"
+who = 0x470032C3
+line = { table = 0x25002A82, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x800002F4
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A82, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "a person's under-level line, for the quest it gives", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c3-68a07c4d"
+who = 0x470032C3
+line = { table = 0x25002A82, string = 0x68A07C4D }
+line_name = "ID_Done"
+how = "tell"
+quest = 0x800002F4
+update = "complete"
+when = "give"
+role = "complete"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A82, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for finishing this quest", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c3-8b6b186f"
+who = 0x470032C3
+line = { table = 0x25002A82, string = 0x8B6B186F }
+line_name = "ID_Phase1"
+when = "use"
+quest = 0x800002F4
+role = "remind"
+how = "tell"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A82, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for a quest under way, its one journal's", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c3-39af03f8"
+who = 0x470032C3
+line = { table = 0x25002A82, string = 0x39AF03F8 }
+line_name = "ID_Give_Bear"
+how = "tell"
+quest = 0x800002EF
+update = "complete"
+role = "accept"
+when = "give"
+item = 0x470008D7
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A82, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for this item", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c3-7ddecf7a"
+who = 0x470032C3
+line = { table = 0x25002A82, string = 0x7DDECF7A }
+line_name = "ID_Give_Stone"
+how = "tell"
+quest = 0x800002F0
+update = "complete"
+role = "accept"
+when = "give"
+item = 0x470006C6
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A82, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for this item", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c3-bddecf66"
+who = 0x470032C3
+line = { table = 0x25002A82, string = 0xBDDECF66 }
+line_name = "ID_Give_Stones"
+role = "refuse-give"
+how = "tell"
+when = "give"
+quest = 0x800002F0
+item = 0x470006C6
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A82, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for the wrong number of this item", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for the wrong number of this item", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c3-29eee3d4"
+who = 0x470032C3
+line = { table = 0x25002A82, string = 0x29EEE3D4 }
+line_name = "ID_Give_Tail"
+how = "tell"
+quest = 0x800002F1
+update = "complete"
+role = "accept"
+when = "give"
+item = 0x47001CB0
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A82, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for this item", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c3-29eeedb4"
+who = 0x470032C3
+line = { table = 0x25002A82, string = 0x29EEEDB4 }
+line_name = "ID_Give_Tails"
+role = "refuse-give"
+how = "tell"
+when = "give"
+quest = 0x800002F1
+item = 0x47001CB0
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A82, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for the wrong number of this item", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for the wrong number of this item", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c3-11de63d2"
+who = 0x470032C3
+line = { table = 0x25002A82, string = 0x11DE63D2 }
+line_name = "ID_Give_Wood"
+how = "tell"
+quest = 0x800002F2
+update = "complete"
+role = "accept"
+when = "give"
+item = 0x470018EB
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A82, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for this item", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for this item", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32c3-11de6db2"
+who = 0x470032C3
+line = { table = 0x25002A82, string = 0x11DE6DB2 }
+line_name = "ID_Give_Woods"
+role = "refuse-give"
+how = "tell"
+when = "give"
+quest = 0x800002F2
+item = 0x470018EB
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A82, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for the wrong number of this item", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for the wrong number of this item", confidence = "medium" } } }

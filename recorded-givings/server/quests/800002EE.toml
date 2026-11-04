@@ -1,0 +1,27 @@
+# Quests January 2017 recorded people giving, and what the install says finishes them; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002EE
+id_name = "Quest_DFHakata"
+state = 0x6F000CA4
+challenge = 35
+cancellable = true
+min_level = 35
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:d282af3a", confidence = "medium", sample = { sessions = 2 }, fields = { min_level = { from = "capture", evidence = "AC2-EVID-WDB-RECORDED-GIVINGS-2017", ref = "c:dca97ca9", confidence = "low", sample = { lines = 2 } } } }
+
+[[step]]
+key = "g-1"
+quest = 0x800002EE
+needs = 0
+trigger = { use = 0x470032C6 }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-RECORDED-GIVINGS-2017", ref = "c:79fcea5a", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "g-2"
+quest = 0x800002EE
+needs = 1
+trigger = { give = 0x470008E9, to = 0x470032C6 }
+update = "complete"
+takes = [0x470008E9]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's lines say so; the item by its name, handed over as the recordings show of a quest of this kind", confidence = "low" }

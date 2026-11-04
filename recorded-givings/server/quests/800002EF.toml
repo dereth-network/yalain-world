@@ -1,0 +1,16 @@
+# Quests January 2017 recorded people giving, and what the install says finishes them; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002EF
+id_name = "Quest_DAB1_Bear"
+state = 0x6F000C9C
+prov = { from = "derived", rule = "quest-definition", record = 0x6F000C9C, confidence = "medium" }
+
+[[step]]
+key = "g-1"
+quest = 0x800002EF
+needs = 1
+trigger = { give = 0x470008D7, to = 0x470032C3 }
+update = "complete"
+takes = [0x470008D7]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's lines say so; the item by its name, handed over as the recordings show of a quest of this kind", confidence = "low" }

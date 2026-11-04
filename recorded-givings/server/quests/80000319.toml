@@ -1,0 +1,17 @@
+# Quests January 2017 recorded people giving, and what the install says finishes them; edit an authored pack instead.
+
+[[step]]
+key = "g-1"
+quest = 0x80000319
+needs = 0
+trigger = { use = 0x47002FB7 }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-RECORDED-GIVINGS-2017", ref = "c:705d359b", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "g-2"
+quest = 0x80000319
+needs = 1
+trigger = { use = 0x47002FB8 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-RECORDED-GIVINGS-2017", ref = "c:1085248a", confidence = "low", sample = { sessions = 1 } }
