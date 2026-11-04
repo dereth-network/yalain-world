@@ -1,0 +1,17 @@
+# Gives kept that move a quest, and what makes those quests reachable; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000073
+id_name = "QuestAncientPeriaptRuby"
+state = 0x6F0006C5
+prov = { from = "derived", rule = "quest-definition", record = 0x6F0006C5, confidence = "medium" }
+
+[[step]]
+key = "a-1"
+quest = 0x40000073
+needs = 1
+trigger = { use = 0x47002EFA }
+update = "complete"
+gives = [0x47000896]
+tell = { table = 0x25001AB4, string = 0xFFA61CED }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-KEPT-2017", ref = "c:0e0a2b3b", confidence = "low", sample = { sessions = 1 } }

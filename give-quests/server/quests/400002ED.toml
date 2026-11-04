@@ -1,0 +1,10 @@
+# Gives kept that move a quest, and what makes those quests reachable; edit an authored pack instead.
+
+[[step]]
+key = "g-given"
+quest = 0x400002ED
+needs = 0
+trigger = { use = 0x47002FD7 }
+update = "bestow"
+tell = { table = 0x25002929, string = 0xADFDE52C }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-KEPT-2017", ref = "c:4f7bcea5", confidence = "low", sample = { sessions = 1 } }

@@ -1,0 +1,21 @@
+# Gives kept that move a quest, and what makes those quests reachable; edit an authored pack instead.
+
+[[step]]
+key = "g-jade"
+quest = 0x400002EE
+needs = 1
+trigger = { give = 0x47001045, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538]
+counts = [900]
+takes = [0x47001045]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-KEPT-2017", ref = "c:08c42b1e", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "g-given"
+quest = 0x400002EE
+needs = 0
+trigger = { use = 0x47002FD7 }
+update = "bestow"
+tell = { table = 0x25002929, string = 0xAD4D598B }
+prov = { from = "authored", by = "Dereth Network", note = "the person's own line for asking for this gem; recordings show the quest under way, not its giving", confidence = "low" }

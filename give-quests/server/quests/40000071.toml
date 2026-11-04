@@ -1,0 +1,29 @@
+# Gives kept that move a quest, and what makes those quests reachable; edit an authored pack instead.
+
+[[step]]
+key = "a-1"
+quest = 0x40000071
+needs = 0
+trigger = { use = 0x47002EF7 }
+update = "bestow"
+tell = { table = 0x25001AB1, string = 0x2AE6122C }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-KEPT-2017", ref = "c:633a12f9", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "a-3"
+quest = 0x40000071
+needs = 2
+trigger = { take = 0x47000898 }
+update = "advance"
+phase = 3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-KEPT-2017", ref = "c:a57179c5", confidence = "low", sample = { sessions = 1 } }
+
+[[step]]
+key = "a-4"
+quest = 0x40000071
+needs = 3
+trigger = { give = 0x47000898, to = 0x47002EF7 }
+update = "advance"
+phase = 4
+takes = [0x47000898]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-KEPT-2017", ref = "c:2a05d230", confidence = "low", sample = { sessions = 1 } }
