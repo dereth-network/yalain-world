@@ -15,6 +15,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/loot.toml            [[loot]]
 <pack>/server/stores.toml          [[keeper]], [[sale]]
 <pack>/server/quests/QQQQQQQQ.toml [[quest]], [[step]] of one quest
+<pack>/server/gives/TTTTTTTT.toml  [[give]] of one template given to
 <pack>/server/talk/TTTTTTTT.toml   [[talk]] of one template
 <pack>/server/crafting.toml        [[craft]]
 <pack>/server/story.toml           [[scene]], [[shard]]
@@ -277,6 +278,16 @@ transformation into a hero (`0x6F001C6F`) runs when the transformation is throug
 through portal space: an item's use on an object makes its update on arrival; a use of a person or
 an object tells its update at once and takes the player after.
 
+**`[[give]]`**: what a person or an object does with an item given it that moves no quest (a toll is a
+quest, even one kept hidden, and is a step). `key`, `to` (the template given to), `item` (the template
+given; left out, any item), `wants` (exactly how many of it: any other count is refused, the stack handed
+back, with the person's `refuse-give` line naming the item if it has one, else its plain refusal; left out,
+whatever is given is taken whole), `gives`, `counts` (what it gives in its place, from the person), `effects`,
+`text` (what it puts on the player, cast by the person, and a text after them), `fx` (what the person or the
+object plays as it takes the item), `requires` (as a step's; not met, the item is refused). A step the give
+runs comes first, and a row for the item comes before one for any item. The person says its `accept` lines at a
+give naming the item and no quest, in their `order`, else one of those naming no item.
+
 **`[[talk]]`**: a line a person (or a creature) says, and when. One row per line; a person says the
 lines of its rows whose moment and quest match, picking at random among several.
 
@@ -293,7 +304,7 @@ lines of its rows whose moment and quest match, picking at random among several.
 | `quest`, `update`, `phase` | | the quest update the line comes with (`bestow`, `advance` and its phase, `complete`, `fail`) |
 
 A `remind` line names its `quest` and no `update`: it is said at a plain use with that quest under way, at the `phase` it names if it names one.
-| `item` | | the item given, for a line said when one is |
+| `item` | | the item given, for a line said when one is: at a give it is said of that item and no other, before the person's plain refusal |
 | `order` | | its place in a speech of several lines (0 first) |
 
 A person with a `teleport` line said at a give sends the holder of a surveyor's map given it to the place that names

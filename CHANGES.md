@@ -1,5 +1,12 @@
 # Changes
 
+## v0.29.0
+
+- Gives kept in the recordings that moved no quest you can see now run: offerings, charged relics, donations, a bribe. New pack `gives-kept/`, and a row kind, `[[give]]`.
+- A miner's fee is a hidden quest, and the portals ask for it. New pack `mine-tolls/`.
+- A gem hand-in and the altars' quest run to where they were recorded. New pack `give-quests/`.
+- A line about one item is said of that item alone. New pack `give-lines/`.
+
 ## v0.28.0
 
 - Three quests done by subquests take each hand-in in turn, instead of ending on the last alone. New pack `subquest-hand-ins/`.
