@@ -1,0 +1,25 @@
+# Written from the January 2017 recordings and what the install says; edit an authored pack instead.
+
+[[talk]]
+key = "t-33d6-c9643512"
+who = 0x470033D6
+line = { table = 0x25002AFE, string = 0xC9643512 }
+line_name = "ID_QuestPhase5"
+how = "tell"
+when = "use"
+role = "remind"
+quest = 0x40000294
+phase = 5
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:0e61f2fb", confidence = "high", sample = { lines = 27, sessions = 7 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" }, quest = { from = "authored", by = "Dereth Network", note = "the line heard at a use with the quest at this phase", confidence = "medium" }, phase = { from = "authored", by = "Dereth Network", note = "the line heard at a use with the quest at this phase", confidence = "medium" } } }
+
+[[talk]]
+key = "t-33d6-09643512"
+who = 0x470033D6
+line = { table = 0x25002AFE, string = 0x09643512 }
+line_name = "ID_QuestPhase6"
+how = "tell"
+when = "use"
+role = "remind"
+quest = 0x40000294
+phase = 6
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c7b8b96a", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" }, quest = { from = "authored", by = "Dereth Network", note = "the line heard at a use with the quest at this phase", confidence = "medium" }, phase = { from = "authored", by = "Dereth Network", note = "the line heard at a use with the quest at this phase", confidence = "medium" } } }
