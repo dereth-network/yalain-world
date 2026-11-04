@@ -6,12 +6,24 @@
 - Hand-ins whose lines were waiting for a step run, from the journals, nearly all marked `low`. New pack `journal-hand-ins/`.
 - A jeweler's list of gems runs one after another, in the order characters did them; only one fee is recorded. New pack `ryvenna-gems/`.
 - Thirteen quests that named no wait to be taken again have the one the recordings list. New pack `quest-waits/`.
+- The mines' other portals lead somewhere: ways down to the mine's base, second ways in where the first go. New pack `mine-ways-down/`.
+- Two crafters' second halves run, from their journals and lines. New pack `bestowal-chains/`.
+- A scholar's quest reminds at each phase and ends with its last hand-in. New pack `sclavus-cabals/`.
+- A shaman gives her maintenance quest, and asks after each phase. New pack `skyport-maint/`.
+- One more mirra runs as the others do. New pack `mirra-rouge/`.
+- Nobody who gives nothing here tells a player it is too weak. New pack `under-level-more/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 
 - `ulkas-mines/`: 6 of its 9 steps: the last find ending a fee. The 3 givings are captured, but what sets them off is inferred from who they reach.
 - `journal-hand-ins/`: 30 of its 31 steps, since no hand-in for these quests is recorded; the other is one recorded giving, also `low`. All 32 of its lines are tied by the journals alone, `low`.
 - `ryvenna-gems/`: all 131 hand-ins and their fees, by one recorded fee's rule, and her last line. The 33 givings and their order are captured.
+- `mine-ways-down/`: all of it: 4 portals' destinations by their own names, and 1 landing where recorded players stood at the way in.
+- `bestowal-chains/`: all 13 steps, 18 lines and 1 give, since neither crafter's second half is recorded.
+- `sclavus-cabals/`: the last hand-in and all 6 reminders. What moves its phases is the install's; where its items drop is not built.
+- `skyport-maint/`: the giving, its wait, the alembic's 2 steps and all 10 lines. The alembic isn't placed.
+- `mirra-rouge/`: all 4 steps and 1 give, by the three recorded mirras.
+- `under-level-more/`: 2 lines tied by the quest's description, 3 lines taken away.
 
 ## v0.29.0
 
