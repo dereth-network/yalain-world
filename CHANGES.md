@@ -1,5 +1,14 @@
 # Changes
 
+## v0.27.0
+
+- More people give the quests the recordings show them giving, with their lines, and what their journals ask for finishes them. New pack `recorded-givings/`.
+- A person who gives nothing here no longer tells anyone they are too weak. New pack `under-level-lines/`.
+- A person's reminders come at the phase they were heard. New pack `phase-reminders/`; a `remind` line may name its `phase`.
+- Three obelisks in the Water Temple open in the recorded order, and a wrong touch starts it over. New pack `antechamber-code/`; a step's `update` may be `fail`.
+- Two people's lines asking why you're still there need a quest under way. New pack `quest-reminders/`.
+- More quests with no setup add to a quest rating, marked `low`. New pack `quest-points-more/`.
+
 ## v0.26.0
 
 - Quests that other quests require have rows, so a quest asking for one can see it. New pack `required-quests/`.

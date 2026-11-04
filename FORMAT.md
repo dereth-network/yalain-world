@@ -237,7 +237,8 @@ left out, as the quest's setup in the install says), `fellows` (true: a kill's m
 and the effects each of its updates puts on the player are the definition's. A phase the definition
 says is done by other quests (subquests) gives them with it, kept hidden: steps move them, each
 move told as the quest's own record with its phase kept, and the quest moves on to its next phase
-once all of them (or one, where the definition says one is enough) are done. A quest that failed
+once all of them (or one, where the definition says one is enough) are done; from its last phase it
+is done, the person who took the last of them saying its `complete` line. A quest that failed
 or was cancelled is given again only once its wait is over, as a done one is; a done quest with no wait (`retry`
 0 or left out) is given again at once, unless it is done once (its setup in the install says it may be done one
 time, or the row says `once`). A person who gives several quests gives one of them at a
@@ -246,7 +247,7 @@ last it gave (it says its `too-soon` line).
 
 **`[[step]]`**: what moves a quest on. `key`, `quest`, `needs` (the phase it must be at; 0 for not
 under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`bestow`, `advance`,
-`complete`), `phase` (for `advance`), `xp`, `gives` (templates), `counts` (how many of each item
+`complete`, `fail`: a step that fails its quest needs it under way), `phase` (for `advance`), `xp`, `gives` (templates), `counts` (how many of each item
 given, in order; 1 when left out), `requires`, `takes`, `to`, `effects` (the effects it puts on the
 player, by their saved states: a blessing, a recipe learned or forgotten), `text` (a text shown
 after the effects, `{ table, string }`), `fellows` (true: the update is made for each of the
@@ -289,6 +290,8 @@ lines of its rows whose moment and quest match, picking at random among several.
 | `how` | | `tell` (to the player, naming the speaker; the default), `say` (aloud, to everyone near), `emote` (text naming the speaker), `broadcast` (read by every player in the speaker's landblock and the eight around it, indoors its own landblock, whether their clients know the speaker or not) |
 | `when` | required | the moment: `use`, `give`, `attack`, `death`, `near`, `idle` |
 | `quest`, `update`, `phase` | | the quest update the line comes with (`bestow`, `advance` and its phase, `complete`, `fail`) |
+
+A `remind` line names its `quest` and no `update`: it is said at a plain use with that quest under way, at the `phase` it names if it names one.
 | `item` | | the item given, for a line said when one is |
 | `order` | | its place in a speech of several lines (0 first) |
 
