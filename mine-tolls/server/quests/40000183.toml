@@ -1,0 +1,10 @@
+# A miner's toll: a hidden quest the fee starts and the portals ask for; edit an authored pack instead.
+
+[[step]]
+key = "toll"
+quest = 0x40000183
+needs = 0
+trigger = { give = 0x47000AFF, to = 0x470031B2 }
+update = "bestow"
+takes = [0x47000AFF]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-KEPT-2017", ref = "c:05845469", confidence = "medium", sample = { sessions = 2 } }
