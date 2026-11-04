@@ -1,0 +1,14 @@
+# Lines at a give tied to the item or the quest they fit; edit an authored pack instead.
+
+[[talk]]
+key = "t-3173-62797d94"
+who = 0x47003173
+line = { table = 0x250029FC, string = 0x62797D94 }
+line_name = "ID_Give_Infusion"
+how = "tell"
+when = "give"
+role = "complete"
+quest = 0x80000282
+update = "complete"
+item = 0x47001679
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029FC, confidence = "low", fields = { role = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, quest = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, update = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" } } }

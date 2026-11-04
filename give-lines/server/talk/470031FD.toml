@@ -1,0 +1,11 @@
+# Lines at a give tied to the item or the quest they fit; edit an authored pack instead.
+
+[[talk]]
+key = "t-31fd-8a697d3e"
+who = 0x470031FD
+line = { table = 0x25002A44, string = 0x8A697D3E }
+line_name = "ID_Spew"
+how = "emote"
+when = "give"
+role = "accept"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A44, confidence = "high", fields = { role = { from = "authored", by = "Dereth Network", note = "said of an item the person takes, not of a give it refuses", confidence = "low" } } }

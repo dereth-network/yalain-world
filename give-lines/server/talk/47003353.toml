@@ -1,0 +1,11 @@
+# Lines at a give tied to the item or the quest they fit; edit an authored pack instead.
+
+[[talk]]
+key = "t-3353-098e5251"
+who = 0x47003353
+line = { table = 0x25002AC5, string = 0x098E5251 }
+line_name = "ID_ReturnItem"
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:aa9580e6", confidence = "high", sample = { lines = 6, sessions = 3 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

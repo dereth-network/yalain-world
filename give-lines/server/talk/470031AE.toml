@@ -1,0 +1,11 @@
+# Lines at a give tied to the item or the quest they fit; edit an authored pack instead.
+
+[[talk]]
+key = "t-31ae-2ddf72b1"
+who = 0x470031AE
+line = { table = 0x25002A1B, string = 0x2DDF72B1 }
+line_name = "ID_Spew_Give"
+how = "emote"
+when = "give"
+role = "refuse-give"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:01e41695", confidence = "medium", sample = { lines = 3, sessions = 2 }, fields = { role = { from = "authored", by = "Dereth Network", note = "a plain refusal, recorded of one item, which fits any", confidence = "medium" }, line_name = { from = "derived", rule = "talk-token-role" } } }

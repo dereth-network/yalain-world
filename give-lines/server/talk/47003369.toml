@@ -1,0 +1,12 @@
+# Lines at a give tied to the item or the quest they fit; edit an authored pack instead.
+
+[[talk]]
+key = "t-3369-11eec3fa"
+who = 0x47003369
+line = { table = 0x250013BB, string = 0x11EEC3FA }
+line_name = "ID_Give_Coin"
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x47000538
+prov = { from = "derived", rule = "talk-token-role", record = 0x250013BB, confidence = "low", fields = { item = { from = "authored", by = "Dereth Network", note = "this line is about this item", confidence = "medium" } } }

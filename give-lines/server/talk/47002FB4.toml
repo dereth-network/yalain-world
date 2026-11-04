@@ -1,0 +1,34 @@
+# Lines at a give tied to the item or the quest they fit; edit an authored pack instead.
+
+[[talk]]
+key = "t-2fb4-217ad287"
+who = 0x47002FB4
+line = { table = 0x25002915, string = 0x217AD287 }
+line_name = "ID_Give_Ingredient"
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x470008FB
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002915, confidence = "low", fields = { item = { from = "authored", by = "Dereth Network", note = "said of his ritual's items, no step taking it now", confidence = "medium" } } }
+
+[[talk]]
+key = "g-2fb4-ingredient-1"
+who = 0x47002FB4
+line = { table = 0x25002915, string = 0x217AD287 }
+line_name = "ID_Give_Ingredient"
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x47001CB7
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002915, confidence = "low", fields = { item = { from = "authored", by = "Dereth Network", note = "said of his ritual's items, no step taking it now", confidence = "medium" } } }
+
+[[talk]]
+key = "g-2fb4-ingredient-2"
+who = 0x47002FB4
+line = { table = 0x25002915, string = 0x217AD287 }
+line_name = "ID_Give_Ingredient"
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x47001CAD
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002915, confidence = "low", fields = { item = { from = "authored", by = "Dereth Network", note = "said of his ritual's items, no step taking it now", confidence = "medium" } } }

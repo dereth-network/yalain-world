@@ -1,0 +1,38 @@
+# Lines at a give tied to the item or the quest they fit; edit an authored pack instead.
+
+[[talk]]
+key = "t-32d3-7d9e3d81"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x7D9E3D81 }
+line_name = "ID_Give_Shwarma"
+how = "tell"
+when = "give"
+role = "complete"
+quest = 0x80000307
+update = "complete"
+item = 0x47001906
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "low", fields = { role = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, quest = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, update = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32d3-2530079c"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0x2530079C }
+line_name = "ID_Give_Moonshine"
+how = "tell"
+when = "give"
+role = "complete"
+quest = 0x80000308
+update = "complete"
+item = 0x47001907
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "low", fields = { role = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, quest = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, update = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" } } }
+
+[[talk]]
+key = "t-32d3-a3c06cc4"
+who = 0x470032D3
+line = { table = 0x25002A92, string = 0xA3C06CC4 }
+line_name = "ID_Give_EmptyJug"
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x47001902
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A92, confidence = "low", fields = { item = { from = "authored", by = "Dereth Network", note = "this line is about this item", confidence = "medium" } } }

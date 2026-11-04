@@ -1,0 +1,15 @@
+# Lines at a give tied to the item or the quest they fit; edit an authored pack instead.
+
+[[talk]]
+key = "t-31b9-790023e0"
+who = 0x470031B9
+line = { table = 0x25002A21, string = 0x790023E0 }
+line_name = "ID_Give_Nut"
+how = "tell"
+when = "give"
+role = "advance"
+quest = 0x8000038C
+update = "advance"
+phase = 5
+item = 0x4700172B
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A21, confidence = "low", fields = { role = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, quest = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, update = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, phase = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" } } }

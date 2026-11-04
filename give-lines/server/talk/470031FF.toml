@@ -1,0 +1,20 @@
+# Lines at a give tied to the item or the quest they fit; edit an authored pack instead.
+
+[[talk]]
+key = "t-31ff-43293fb0"
+who = 0x470031FF
+line = { table = 0x25002A45, string = 0x43293FB0 }
+how = "tell"
+when = "give"
+role = "refuse-give"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:01a7d9de", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "authored", by = "Dereth Network", note = "a plain refusal, recorded of one item, which fits any", confidence = "medium" } } }
+
+[[talk]]
+key = "t-31ff-8a697d3e"
+who = 0x470031FF
+line = { table = 0x25002A45, string = 0x8A697D3E }
+line_name = "ID_Spew"
+how = "emote"
+when = "give"
+role = "accept"
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A45, confidence = "high", fields = { role = { from = "authored", by = "Dereth Network", note = "said of an item the person takes, not of a give it refuses", confidence = "low" } } }

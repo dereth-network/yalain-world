@@ -1,0 +1,13 @@
+# Lines at a give tied to the item or the quest they fit; edit an authored pack instead.
+
+[[talk]]
+key = "t-32bd-1136cd8c"
+who = 0x470032BD
+line = { table = 0x25002A7C, string = 0x1136CD8C }
+line_name = "ID_Give_Horns"
+role = "refuse-give"
+how = "tell"
+when = "give"
+quest = 0x8000030F
+item = 0x47001CCF
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A7C, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the quest's journal names this person, this item and this hand-in; its step is not built, so the line waits for it", confidence = "medium" } } }
