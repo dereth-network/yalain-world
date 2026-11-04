@@ -1,0 +1,32 @@
+# Two crafters' second halves, from their journals and the people's own lines; edit an authored pack instead.
+
+[[step]]
+key = "j-handed"
+quest = 0x80000308
+needs = 1
+trigger = { give = 0x47001905, to = 0x470032D3 }
+update = "complete"
+takes = [0x47001905]
+requires = [{ quest = 0x80000307, phase = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "j-last"
+quest = 0x80000308
+needs = 1
+trigger = { give = 0x47001905, to = 0x470032D3 }
+update = "complete"
+takes = [0x47001905]
+requires = [{ quest = 0x80000307, done = true }]
+gives = [0x47001904]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "c-filled"
+quest = 0x80000308
+needs = 1
+trigger = { use = 0x47001902, on = 0x47001903 }
+update = "advance"
+phase = 1
+gives = [0x47001905]
+prov = { from = "authored", by = "Dereth Network", note = "the jug's own text says so, and its table uses it up and answers with its line; nothing recorded", confidence = "low" }

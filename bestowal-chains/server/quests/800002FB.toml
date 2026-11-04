@@ -1,0 +1,19 @@
+# Two crafters' second halves, from their journals and the people's own lines; edit an authored pack instead.
+
+[[step]]
+key = "c-asked"
+quest = 0x800002FB
+needs = 2
+trigger = { use = 0x470032D0 }
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "c-handed"
+quest = 0x800002FB
+needs = 4
+trigger = { give = 0x470018FF, to = 0x470032CE }
+update = "complete"
+takes = [0x470018FF]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's own line say so; nothing recorded", confidence = "low" }
