@@ -1,0 +1,50 @@
+# A search's step moves its quest and sends nobody; a portal beside each stop takes the player on; edit an authored pack instead.
+
+[[step]]
+key = "s1"
+quest = 0x40000016
+needs = 0
+trigger = { use = 0x470031E6 }
+tell = { table = 0x25002A34, string = 0x2AE6122C }
+update = "bestow"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:85ac04de", confidence = "high", sample = { sessions = 4 } }
+
+[[step]]
+key = "s2"
+quest = 0x40000016
+needs = 1
+trigger = { use = 0x470031EC }
+tell = { table = 0x25002A37, string = 0x9AA212DB }
+update = "advance"
+phase = 2
+xp = 0
+effects = [0x6F001DF8]
+text = { table = 0x250010E9, string = 0x912EFF1D }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-EFFECTS-2017", ref = "c:98269aa3", confidence = "high", sample = { sessions = 4 } }
+
+[[step]]
+key = "s3"
+quest = 0x40000016
+needs = 2
+trigger = { use = 0x470031ED }
+tell = { table = 0x25002A38, string = 0x9AA212DB }
+update = "advance"
+phase = 3
+xp = 0
+effects = [0x6F001DF7]
+text = { table = 0x250010E8, string = 0x912EFF1D }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-EFFECTS-2017", ref = "c:98269aa3", confidence = "high", sample = { sessions = 4 } }
+
+[[step]]
+key = "s4"
+quest = 0x40000016
+needs = 3
+trigger = { use = 0x470031EE }
+tell = { table = 0x25002A39, string = 0x9AA212DB }
+update = "advance"
+phase = 4
+xp = 0
+effects = [0x6F001DF9]
+text = { table = 0x250010EA, string = 0x912EFF1D }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-EFFECTS-2017", ref = "c:98269aa3", confidence = "high", sample = { sessions = 4 } }
