@@ -6,6 +6,12 @@
 - Hand-ins whose lines were waiting for a step run, from the journals, nearly all marked `low`. New pack `journal-hand-ins/`.
 - A jeweler's list of gems runs one after another, in the order characters did them; only one fee is recorded. New pack `ryvenna-gems/`.
 
+Marked `authored` and `low` in this version, rather than recorded:
+
+- `ulkas-mines/`: 6 of its 9 steps: the last find ending a fee, and what follows it. The 3 givings are captured, but what sets them off is inferred from who they reach.
+- `journal-hand-ins/`: 30 of its 31 steps, since no hand-in for these quests is recorded; the other is one recorded giving, also `low`. 5 of its 32 lines are `low` too.
+- `ryvenna-gems/`: all 131 hand-ins and their fees, by one recorded fee's rule, and her last line. The 33 givings and their order are captured.
+
 ## v0.29.0
 
 - Gives kept in the recordings that moved no quest you can see now run: offerings, charged relics, donations, a bribe. New pack `gives-kept/`, and a row kind, `[[give]]`.
