@@ -227,7 +227,7 @@ hides from a player the sales the player may not have (else shows them restricte
 install's.
 
 **`[[quest]]`**: a quest's server values. `id` and `id_name`, `state`† (its definition), `challenge`,
-`duration` (s, 0 for none), `retry` (s), `xp` (left out, as the quest's setup in the install says), `xp_share` (in place of an amount, the
+`duration` (s of the player's time in the world, 0 for none), `retry` (s, by the calendar, in the world or not), `xp` (left out, as the quest's setup in the install says), `xp_share` (in place of an amount, the
 share of what the player's level takes to reach the next that its completion pays, whole; left out, as the setup says), `xp_share_level` (the level
 at and above which that share pays no more), `cancellable`, `visible`† (false: the quest is kept for
 its player but never shown, in no journal and no update; left out, a quest is shown when its
@@ -243,8 +243,8 @@ is done, the person who took the last of them saying its `complete` line. A ques
 or was cancelled is given again only once its wait is over, as a done one is; a done quest with no wait (`retry`
 0 or left out) is given again at once, unless it is done once (its setup in the install says it may be done one
 time, or the row says `once`). A person who gives several quests gives one of them at a
-use, picked at random, none while one is under way, and, when none of them has a wait, none for two hours after the
-last it gave (it says its `too-soon` line).
+use, picked at random, none while one is under way, and, when none of them has a wait, none for two hours of the player's
+time in the world after the last it gave (it says its `too-soon` line).
 
 **`[[step]]`**: what moves a quest on. `key`, `quest`, `needs` (the phase it must be at; 0 for not
 under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`bestow`, `advance`,
