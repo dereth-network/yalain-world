@@ -1,0 +1,49 @@
+# Written from the January 2017 recordings and what the install says; edit an authored pack instead.
+
+[[talk]]
+key = "t-3000-e3df2cc2"
+who = 0x47003000
+line = { table = 0x2500293F, string = 0xE3DF2CC2 }
+line_name = "ID_Advance_Spew"
+role = "advance"
+how = "emote"
+when = "use"
+quest = 0x40000264
+update = "advance"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:de24c3fa", confidence = "low", sample = { lines = 12, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" }, quest = { from = "authored", by = "Dereth Network", note = "the line every touch in the order said", confidence = "medium" } } }
+
+[[talk]]
+key = "q-3000-e3df2cc2-bestow"
+who = 0x47003000
+line = { table = 0x2500293F, string = 0xE3DF2CC2 }
+line_name = "ID_Advance_Spew"
+role = "advance"
+how = "emote"
+when = "use"
+quest = 0x40000264
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:de24c3fa", confidence = "low", sample = { lines = 12, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" }, quest = { from = "authored", by = "Dereth Network", note = "the line every touch in the order said", confidence = "medium" } } }
+
+[[talk]]
+key = "q-3000-e3df2cc2-complete"
+who = 0x47003000
+line = { table = 0x2500293F, string = 0xE3DF2CC2 }
+line_name = "ID_Advance_Spew"
+role = "advance"
+how = "emote"
+when = "use"
+quest = 0x40000264
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:de24c3fa", confidence = "low", sample = { lines = 12, sessions = 1 }, fields = { role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" }, quest = { from = "authored", by = "Dereth Network", note = "the line every touch in the order said", confidence = "medium" } } }
+
+[[talk]]
+key = "t-3000-6a4bd3cb"
+who = 0x47003000
+line = { table = 0x2500293F, string = 0x6A4BD3CB }
+line_name = "ID_Fail_Spew"
+role = "fail"
+how = "emote"
+when = "use"
+update = "fail"
+quest = 0x40000264
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500293F, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "the line of a failure, for this quest", confidence = "low" } } }

@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines", "postings", "quest-refusals", "posting-pay", "shard-quests", "quest-points", "recorded-givings", "under-level-lines", "phase-reminders"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines", "postings", "quest-refusals", "posting-pay", "shard-quests", "quest-points", "recorded-givings", "under-level-lines", "phase-reminders", "antechamber-code"]
 
 [[override]]
 pack = "fix-start"
@@ -269,3 +269,8 @@ items = ["talk t-30b3-68f492a3", "talk t-30b5-68f492a3", "talk t-30be-68f492a3",
 pack = "phase-reminders"
 over = "seed-2017-talk"
 items = ["talk t-33d6-09643512", "talk t-33d6-c9643512"]
+
+[[override]]
+pack = "antechamber-code"
+over = "seed-2017-talk"
+items = ["talk t-3000-6a4bd3cb", "talk t-3000-e3df2cc2", "talk t-3001-6a4bd3cb", "talk t-3001-e3df2cc2", "talk t-3002-6a4bd3cb", "talk t-3002-e3df2cc2"]

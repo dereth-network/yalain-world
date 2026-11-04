@@ -1,0 +1,25 @@
+# Written from the January 2017 recordings and what the install says; edit an authored pack instead.
+
+[[talk]]
+key = "t-3001-e3df2cc2"
+who = 0x47003001
+line = { table = 0x2500293F, string = 0xE3DF2CC2 }
+line_name = "ID_Advance_Spew"
+role = "advance"
+how = "emote"
+when = "use"
+quest = 0x40000264
+update = "advance"
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500293F, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "the line every touch in the order said", confidence = "medium" } } }
+
+[[talk]]
+key = "t-3001-6a4bd3cb"
+who = 0x47003001
+line = { table = 0x2500293F, string = 0x6A4BD3CB }
+line_name = "ID_Fail_Spew"
+role = "fail"
+how = "emote"
+when = "use"
+update = "fail"
+quest = 0x40000264
+prov = { from = "derived", rule = "talk-token-role", record = 0x2500293F, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "the line of a failure, for this quest", confidence = "low" } } }

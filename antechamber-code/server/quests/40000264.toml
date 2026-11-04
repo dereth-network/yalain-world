@@ -1,0 +1,292 @@
+# Written from the January 2017 recordings and what the install says; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000264
+id_name = "QuestHeroMountAntechamber"
+state = 0x700030C2
+challenge = 50
+visible = false
+prov = { from = "derived", rule = "quest-setup-static", record = 0x700030C2, confidence = "high" }
+
+[[step]]
+key = "g-1"
+quest = 0x40000264
+needs = 0
+trigger = { use = 0x47003000 }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-2"
+quest = 0x40000264
+needs = 1
+trigger = { use = 0x47003001 }
+update = "advance"
+phase = 2
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-2-0"
+quest = 0x40000264
+needs = 1
+trigger = { use = 0x47003000 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-2-2"
+quest = 0x40000264
+needs = 1
+trigger = { use = 0x47003002 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-3"
+quest = 0x40000264
+needs = 2
+trigger = { use = 0x47003000 }
+update = "advance"
+phase = 3
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-3-1"
+quest = 0x40000264
+needs = 2
+trigger = { use = 0x47003001 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-3-2"
+quest = 0x40000264
+needs = 2
+trigger = { use = 0x47003002 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-4"
+quest = 0x40000264
+needs = 3
+trigger = { use = 0x47003001 }
+update = "advance"
+phase = 4
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-4-0"
+quest = 0x40000264
+needs = 3
+trigger = { use = 0x47003000 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-4-2"
+quest = 0x40000264
+needs = 3
+trigger = { use = 0x47003002 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-5"
+quest = 0x40000264
+needs = 4
+trigger = { use = 0x47003002 }
+update = "advance"
+phase = 5
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-5-0"
+quest = 0x40000264
+needs = 4
+trigger = { use = 0x47003000 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-5-1"
+quest = 0x40000264
+needs = 4
+trigger = { use = 0x47003001 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-6"
+quest = 0x40000264
+needs = 5
+trigger = { use = 0x47003001 }
+update = "advance"
+phase = 6
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-6-0"
+quest = 0x40000264
+needs = 5
+trigger = { use = 0x47003000 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-6-2"
+quest = 0x40000264
+needs = 5
+trigger = { use = 0x47003002 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-7"
+quest = 0x40000264
+needs = 6
+trigger = { use = 0x47003002 }
+update = "advance"
+phase = 7
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-7-0"
+quest = 0x40000264
+needs = 6
+trigger = { use = 0x47003000 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-7-1"
+quest = 0x40000264
+needs = 6
+trigger = { use = 0x47003001 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-8"
+quest = 0x40000264
+needs = 7
+trigger = { use = 0x47003000 }
+update = "advance"
+phase = 8
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-8-1"
+quest = 0x40000264
+needs = 7
+trigger = { use = 0x47003001 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-8-2"
+quest = 0x40000264
+needs = 7
+trigger = { use = 0x47003002 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-9"
+quest = 0x40000264
+needs = 8
+trigger = { use = 0x47003001 }
+update = "advance"
+phase = 9
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-9-0"
+quest = 0x40000264
+needs = 8
+trigger = { use = 0x47003000 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-9-2"
+quest = 0x40000264
+needs = 8
+trigger = { use = 0x47003002 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-10"
+quest = 0x40000264
+needs = 9
+trigger = { use = 0x47003001 }
+update = "advance"
+phase = 10
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-10-0"
+quest = 0x40000264
+needs = 9
+trigger = { use = 0x47003000 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-10-2"
+quest = 0x40000264
+needs = 9
+trigger = { use = 0x47003002 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-11"
+quest = 0x40000264
+needs = 10
+trigger = { use = 0x47003002 }
+update = "advance"
+phase = 11
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-11-0"
+quest = 0x40000264
+needs = 10
+trigger = { use = 0x47003000 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-11-1"
+quest = 0x40000264
+needs = 10
+trigger = { use = 0x47003001 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-12"
+quest = 0x40000264
+needs = 11
+trigger = { use = 0x47003000 }
+update = "complete"
+to = "p-09f30127"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ANTECHAMBER-2017", ref = "c:2ef8af67", confidence = "medium", sample = { sessions = 1, lines = 12 }, note = "a guide of the time gives this order too" }
+
+[[step]]
+key = "g-12-1"
+quest = 0x40000264
+needs = 11
+trigger = { use = 0x47003001 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
+
+[[step]]
+key = "g-12-2"
+quest = 0x40000264
+needs = 11
+trigger = { use = 0x47003002 }
+update = "fail"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time says a touch with no click starts it over; no recording holds one", confidence = "low" }
