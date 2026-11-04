@@ -5,6 +5,7 @@
 - A mine's hidden quests run: a guard's death gives them to whoever paid the fee, each find counts, and the last ends the fee. New pack `ulkas-mines/`; a step's `trigger` may be `given`.
 - Hand-ins whose lines were waiting for a step run, from the journals, nearly all marked `low`. New pack `journal-hand-ins/`.
 - A jeweler's list of gems runs one after another, in the order characters did them; only one fee is recorded. New pack `ryvenna-gems/`.
+- Thirteen quests that named no wait to be taken again have the one the recordings list. New pack `quest-waits/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 
