@@ -227,7 +227,7 @@ hides from a player the sales the player may not have (else shows them restricte
 install's.
 
 **`[[quest]]`**: a quest's server values. `id` and `id_name`, `state`† (its definition), `challenge`,
-`duration` (s of the player's time in the world, 0 for none), `retry` (s, by the calendar, in the world or not), `xp` (left out, as the quest's setup in the install says), `xp_share` (in place of an amount, the
+`duration` (s of the player's time in the world, 0 for none), `timed_phase` (the one phase the duration runs in, from when that phase comes, shown and able to fail the quest in that phase only; left out, every phase from its giving), `retry` (s, by the calendar, in the world or not), `xp` (left out, as the quest's setup in the install says), `xp_share` (in place of an amount, the
 share of what the player's level takes to reach the next that its completion pays, whole; left out, as the setup says), `xp_share_level` (the level
 at and above which that share pays no more), `cancellable`, `visible`† (false: the quest is kept for
 its player but never shown, in no journal and no update; left out, a quest is shown when its
