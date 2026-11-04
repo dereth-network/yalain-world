@@ -1,0 +1,19 @@
+# Hand-ins from the journals and the people's own lines; edit an authored pack instead.
+
+[[step]]
+key = "j-given"
+quest = 0x8000030F
+needs = 0
+trigger = { use = 0x470032BD }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "j-horns"
+quest = 0x8000030F
+needs = 1
+trigger = { give = 0x47001CCF, to = 0x470032BD }
+update = "complete"
+takes = [0x47001CCF]
+wants = 5
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }

@@ -1,0 +1,37 @@
+# Hand-ins from the journals and the people's own lines; edit an authored pack instead.
+
+[[talk]]
+key = "t-32bd-2ae6122c"
+who = 0x470032BD
+line = { table = 0x25002A7C, string = 0x2AE6122C }
+line_name = "ID_Begin"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+quest = 0x8000030F
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A7C, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" } } }
+
+[[talk]]
+key = "t-32bd-68a07c4d"
+who = 0x470032BD
+line = { table = 0x25002A7C, string = 0x68A07C4D }
+line_name = "ID_Done"
+role = "complete"
+how = "tell"
+update = "complete"
+quest = 0x8000030F
+when = "give"
+item = 0x47001CCF
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A7C, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }, when = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }, item = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" } } }
+
+[[talk]]
+key = "t-32bd-8b6b186f"
+who = 0x470032BD
+line = { table = 0x25002A7C, string = 0x8B6B186F }
+line_name = "ID_Phase1"
+how = "emote"
+when = "use"
+role = "remind"
+quest = 0x8000030F
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A7C, confidence = "medium", fields = { role = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }, quest = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" } } }

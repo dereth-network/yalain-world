@@ -1,0 +1,26 @@
+# Hand-ins from the journals and the people's own lines; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000E3
+id_name = "Quest_E_ShiningSigil"
+state = 0x6F000CDD
+prov = { from = "derived", rule = "quest-definition", record = 0x6F000CDD, confidence = "medium" }
+
+[[step]]
+key = "j-given"
+quest = 0x800000E3
+needs = 0
+trigger = { use = 0x47003321 }
+update = "bestow"
+effects = [0x6F000F5E]
+effects_last = true
+prov = { from = "authored", by = "Dereth Network", note = "the person's words give the recipe; nothing recorded gives it", confidence = "low" }
+
+[[step]]
+key = "j-handed"
+quest = 0x800000E3
+needs = 2
+trigger = { give = 0x47000926, to = 0x47003321 }
+update = "complete"
+takes = [0x47000926]
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }

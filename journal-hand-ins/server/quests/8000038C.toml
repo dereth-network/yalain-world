@@ -1,0 +1,76 @@
+# Hand-ins from the journals and the people's own lines; edit an authored pack instead.
+
+[[step]]
+key = "j-given"
+quest = 0x8000038C
+needs = 0
+trigger = { use = 0x470031B8 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "j-back"
+quest = 0x8000038C
+needs = 3
+trigger = { use = 0x470031B8 }
+update = "advance"
+phase = 4
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "j-nut-31b9"
+quest = 0x8000038C
+needs = 4
+trigger = { give = 0x4700172B, to = 0x470031B9 }
+update = "advance"
+phase = 5
+takes = [0x4700172B]
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "j-nut-31bb"
+quest = 0x8000038C
+needs = 4
+trigger = { give = 0x4700172B, to = 0x470031BB }
+update = "advance"
+phase = 5
+takes = [0x4700172B]
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "j-nut-31bd"
+quest = 0x8000038C
+needs = 4
+trigger = { give = 0x4700172B, to = 0x470031BD }
+update = "advance"
+phase = 5
+takes = [0x4700172B]
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "j-nut-31bf"
+quest = 0x8000038C
+needs = 4
+trigger = { give = 0x4700172B, to = 0x470031BF }
+update = "advance"
+phase = 5
+takes = [0x4700172B]
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "j-nut-31c1"
+quest = 0x8000038C
+needs = 4
+trigger = { give = 0x4700172B, to = 0x470031C1 }
+update = "advance"
+phase = 5
+takes = [0x4700172B]
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "j-done"
+quest = 0x8000038C
+needs = 5
+trigger = { use = 0x470031B8 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }

@@ -1,0 +1,23 @@
+# Hand-ins from the journals and the people's own lines; edit an authored pack instead.
+
+[[talk]]
+key = "t-32cb-8b6b186f"
+who = 0x470032CB
+line = { table = 0x25002A8A, string = 0x8B6B186F }
+line_name = "ID_Phase1"
+how = "emote"
+when = "use"
+role = "remind"
+quest = 0x800002E8
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8A, confidence = "medium", fields = { role = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }, quest = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" } } }
+
+[[talk]]
+key = "t-32cb-63691d8f"
+who = 0x470032CB
+line = { table = 0x25002A8A, string = 0x63691D8F }
+line_name = "ID_GoAway"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x800002E8
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A8A, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" } } }

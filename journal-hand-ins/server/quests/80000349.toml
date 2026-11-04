@@ -1,0 +1,27 @@
+# Hand-ins from the journals and the people's own lines; edit an authored pack instead.
+
+[[step]]
+key = "j-given"
+quest = 0x80000349
+needs = 0
+trigger = { use = 0x47002FBB }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "j-made"
+quest = 0x80000349
+needs = 1
+trigger = { take = 0x470013FA }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }
+
+[[step]]
+key = "j-handed"
+quest = 0x80000349
+needs = 2
+trigger = { give = 0x470013FA, to = 0x47002FBB }
+update = "complete"
+takes = [0x470013FA]
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; nothing recorded", confidence = "low" }
