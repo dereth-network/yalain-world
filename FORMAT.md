@@ -253,7 +253,8 @@ player, by their saved states: a blessing, a recipe learned or forgotten), `text
 after the effects, `{ table, string }`), `fellows` (true: the update is made for each of the
 player's fellows in the world as well, each told it alone), `races` (the races it is for, by number: 1 human, 2
 Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out), `effects_last` (true: the
-quest's update is told before the effects and their text, not after them).
+quest's update is told before the effects and their text, not after them), `wants` (for a give, exactly how many of the item it wants: any other count is refused and handed
+back, with the person's `refuse-give` line naming the quest and the `item` if it has one, else its plain refusal; left out, it runs for whatever is given and takes it all).
 
 | `trigger` | moves the quest when the player |
 |---|---|

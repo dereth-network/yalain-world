@@ -1,5 +1,11 @@
 # Changes
 
+## v0.28.0
+
+- Three quests done by subquests take each hand-in in turn, instead of ending on the last alone. New pack `subquest-hand-ins/`.
+- A hand-in that names a count wants exactly that count, and a person with a line for the wrong number says it. New pack `hand-in-counts/`; a step may name `wants`.
+- A search's stops move its quest and send no one: a portal beside each takes the player on, as the recordings show. New pack `search-portals/`.
+
 ## v0.27.0
 
 - More people give the quests the recordings show them giving, with their lines. New pack `recorded-givings/`.
