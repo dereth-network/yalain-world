@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines", "postings", "quest-refusals", "posting-pay", "shard-quests", "quest-points", "recorded-givings", "under-level-lines", "phase-reminders", "antechamber-code", "quest-reminders", "quest-points-more", "subquest-hand-ins", "hand-in-counts", "search-portals", "give-quests", "mine-tolls", "gives-kept", "give-lines", "ulkas-mines", "journal-hand-ins"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines", "postings", "quest-refusals", "posting-pay", "shard-quests", "quest-points", "recorded-givings", "under-level-lines", "phase-reminders", "antechamber-code", "quest-reminders", "quest-points-more", "subquest-hand-ins", "hand-in-counts", "search-portals", "give-quests", "mine-tolls", "gives-kept", "give-lines", "ulkas-mines", "journal-hand-ins", "ryvenna-gems"]
 
 [[override]]
 pack = "fix-start"
@@ -374,3 +374,8 @@ items = ["object s-14@BA87"]
 pack = "journal-hand-ins"
 over = "seed-2017-talk"
 items = ["talk t-2fbb-2ae61248", "talk t-2fbb-2ae6124a", "talk t-2fbb-2ae6124e", "talk t-2fbb-8b6b1869", "talk t-2fbb-8b6b186f", "talk t-31b8-2ae61244", "talk t-31b8-2ae61248", "talk t-31b8-2ae6124a", "talk t-31b8-2ae6124e", "talk t-31b8-8b6b1869", "talk t-31b8-8b6b186b", "talk t-31b8-8b6b186f", "talk t-32bd-2ae6122c", "talk t-32bd-68a07c4d", "talk t-32bd-8b6b186f", "talk t-32cb-63691d8f", "talk t-32cb-8b6b186f", "talk t-3319-2ae6122c", "talk t-3319-39c83565", "talk t-3319-4daf1f70", "talk t-331b-2ae6122c", "talk t-331b-39c83565", "talk t-331b-4daf1f70", "talk t-331d-2ae6122c", "talk t-331d-39c83565", "talk t-331d-4daf1f70", "talk t-331f-2ae6122c", "talk t-331f-39c83565", "talk t-331f-4daf1f70", "talk t-3321-2ae6122c", "talk t-3321-39c83565", "talk t-3321-4daf1f70"]
+
+[[override]]
+pack = "ryvenna-gems"
+over = "give-quests"
+items = ["step 0x400002ED g-given", "step 0x400002EE g-given"]

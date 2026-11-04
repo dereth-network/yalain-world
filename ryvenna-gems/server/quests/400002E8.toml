@@ -1,0 +1,59 @@
+# Ryvenna's gems, in the order characters' quest lists hold them; edit an authored pack instead.
+
+[[step]]
+key = "g-given"
+quest = 0x400002E8
+needs = 0
+trigger = { use = 0x47002FD7 }
+update = "bestow"
+tell = { table = 0x25002929, string = 0xFB0A1804 }
+requires = [{ quest = 0x400002F1, done = true }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GEM-CHAIN-2017", ref = "c:4f5b7657", confidence = "medium", sample = { sessions = 3 } }
+
+[[step]]
+key = "g-huge"
+quest = 0x400002E8
+needs = 1
+trigger = { give = 0x4700102B, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538]
+counts = [300]
+takes = [0x4700102B]
+tell = { table = 0x25002929, string = 0xEF610400 }
+prov = { from = "authored", by = "Dereth Network", note = "any size will do, as she says; her fee is the recorded jade's, twice the plain stone's value, 1 recording", confidence = "low" }
+
+[[step]]
+key = "g-large"
+quest = 0x400002E8
+needs = 1
+trigger = { give = 0x4700102C, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538]
+counts = [300]
+takes = [0x4700102C]
+tell = { table = 0x25002929, string = 0xEF610400 }
+prov = { from = "authored", by = "Dereth Network", note = "any size will do, as she says; her fee is the recorded jade's, twice the plain stone's value, 1 recording", confidence = "low" }
+
+[[step]]
+key = "g-plain"
+quest = 0x400002E8
+needs = 1
+trigger = { give = 0x4700102D, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538]
+counts = [300]
+takes = [0x4700102D]
+tell = { table = 0x25002929, string = 0xEF610400 }
+prov = { from = "authored", by = "Dereth Network", note = "any size will do, as she says; her fee is the recorded jade's, twice the plain stone's value, 1 recording", confidence = "low" }
+
+[[step]]
+key = "g-small"
+quest = 0x400002E8
+needs = 1
+trigger = { give = 0x4700102E, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538]
+counts = [300]
+takes = [0x4700102E]
+tell = { table = 0x25002929, string = 0xEF610400 }
+prov = { from = "authored", by = "Dereth Network", note = "any size will do, as she says; her fee is the recorded jade's, twice the plain stone's value, 1 recording", confidence = "low" }
