@@ -1,0 +1,38 @@
+# A shaman's quest, from her own lines and its journal; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000282
+id_name = "QuestSkyportMaint"
+state = 0x6F000B6F
+challenge = 40
+retry = 172800
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:0cc8be60", confidence = "high", sample = { sessions = 50 }, fields = { retry = { from = "authored", by = "Dereth Network", note = "her line: more 'in about two days'", confidence = "low" } } }
+
+[[step]]
+key = "m-given"
+quest = 0x80000282
+needs = 0
+trigger = { use = 0x47003173 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "inferred: her own lines tell the whole quest and ask after each phase; nothing recorded gives it", confidence = "low" }
+
+[[step]]
+key = "m-shards"
+quest = 0x80000282
+needs = 3
+trigger = { use = 0x47001677, on = 0x47003171 }
+update = "advance"
+phase = 4
+takes = [0x47001677]
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; the alembic isn't placed yet, so nothing recorded", confidence = "low" }
+
+[[step]]
+key = "m-stibnite"
+quest = 0x80000282
+needs = 4
+trigger = { use = 0x4700167A, on = 0x47003171 }
+update = "advance"
+phase = 5
+takes = [0x4700167A]
+gives = [0x47001679]
+prov = { from = "authored", by = "Dereth Network", note = "the journal says it; the alembic isn't placed yet, so nothing recorded", confidence = "low" }
