@@ -11,6 +11,9 @@
 - A person refuses a player under its quests' least level with its own line, kept from everyone else, and many of those quests
   now have a least level. New pack `quest-refusals/`.
 - The postings pay experience. New pack `posting-pay/`; a quest may name `xp_share` and `xp_share_level`.
+- A vault's end shard completes the vault's quest, which pays as the player comes out. New pack `shard-quests/`; a shard may
+  name `quest`.
+- Quests that have no setup add what was measured to a player's quest rating. New pack `quest-points/`; a quest may name `qp`.
 
 ## v0.25.0
 
