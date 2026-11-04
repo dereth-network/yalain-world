@@ -1,0 +1,24 @@
+# The last under-level lines; edit an authored pack instead.
+
+[[talk]]
+key = "t-30e7-68f492a3"
+who = 0x470030E7
+line = { table = 0x250029AD, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x800001BF
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AD, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's under-level line, for the quest its description names as the person's", confidence = "low" } } }
+
+[[talk]]
+key = "t-30e7-2ee61293"
+who = 0x470030E7
+line = { table = 0x250029AD, string = 0x2EE61293 }
+line_name = "ID_Begin_A"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+quest = 0x800001BF
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AD, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's under-level line, for the quest its description names as the person's", confidence = "low" } } }
