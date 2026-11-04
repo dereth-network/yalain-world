@@ -8,8 +8,8 @@
 
 Marked `authored` and `low` in this version, rather than recorded:
 
-- `ulkas-mines/`: 6 of its 9 steps: the last find ending a fee, and what follows it. The 3 givings are captured, but what sets them off is inferred from who they reach.
-- `journal-hand-ins/`: 30 of its 31 steps, since no hand-in for these quests is recorded; the other is one recorded giving, also `low`. 5 of its 32 lines are `low` too.
+- `ulkas-mines/`: 6 of its 9 steps: the last find ending a fee. The 3 givings are captured, but what sets them off is inferred from who they reach.
+- `journal-hand-ins/`: 30 of its 31 steps, since no hand-in for these quests is recorded; the other is one recorded giving, also `low`. All 32 of its lines are tied by the journals alone, `low`.
 - `ryvenna-gems/`: all 131 hand-ins and their fees, by one recorded fee's rule, and her last line. The 33 givings and their order are captured.
 
 ## v0.29.0
