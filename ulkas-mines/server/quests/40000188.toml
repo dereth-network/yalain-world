@@ -1,0 +1,11 @@
+# An Ulkas mine: a guard's death gives its quest and recipe, the last gem ends the toll; edit an authored pack instead.
+
+[[step]]
+key = "m-given"
+quest = 0x40000188
+needs = 0
+trigger = { given = 0x40000187 }
+update = "bestow"
+effects = [0x6F001DA9]
+effects_last = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ULKAS-MINES-2017", ref = "c:1b66baca", confidence = "medium", sample = { sessions = 2 } }

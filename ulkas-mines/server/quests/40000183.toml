@@ -1,0 +1,9 @@
+# An Ulkas mine: a guard's death gives its quest and recipe, the last gem ends the toll; edit an authored pack instead.
+
+[[step]]
+key = "m-done"
+quest = 0x40000183
+needs = 1
+trigger = { done = 0x40000185 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the last gem ends it: the miner's own line asks another fee for more, and nothing recorded shows it either way", confidence = "low" }
