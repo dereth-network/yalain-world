@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines", "postings", "quest-refusals", "posting-pay", "shard-quests", "quest-points", "recorded-givings", "under-level-lines", "phase-reminders", "antechamber-code", "quest-reminders", "quest-points-more", "subquest-hand-ins"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines", "postings", "quest-refusals", "posting-pay", "shard-quests", "quest-points", "recorded-givings", "under-level-lines", "phase-reminders", "antechamber-code", "quest-reminders", "quest-points-more", "subquest-hand-ins", "hand-in-counts"]
 
 [[override]]
 pack = "fix-start"
@@ -304,3 +304,23 @@ items = ["step 0x800002E4 h-2", "step 0x80000341 h-2", "step 0x80000354 h-2"]
 pack = "subquest-hand-ins"
 over = "seed-2017-talk"
 items = ["talk t-2fae-291823e8", "talk t-2fae-39cf7db0", "talk t-2fb4-498823f6", "talk t-2fb4-58d33de2", "talk t-2fb4-6dee9f7a", "talk t-2fb4-7b7abd8a", "talk t-2fb4-7b7ad98a", "talk t-32c5-07dbde00", "talk t-32c5-6936bd43"]
+
+[[override]]
+pack = "hand-in-counts"
+over = "quest-hand-ins"
+items = ["step 0x40000179 h-2", "step 0x40000180 h-2", "step 0x4000027C h-2", "step 0x4000027C h-3", "step 0x4000027C h-4", "step 0x4000027C h-5", "step 0x4000027C h-6", "step 0x4000027E h-2", "step 0x4000027E h-3", "step 0x4000027E h-4", "step 0x4000032A h-2", "step 0x800002E5 h-1", "step 0x800002E6 h-1", "step 0x80000343 h-2", "step 0x80000359 h-2", "step 0x8000035E h-2", "step 0x8000037B h-2"]
+
+[[override]]
+pack = "hand-in-counts"
+over = "recorded-givings"
+items = ["step 0x800002DB g-2", "step 0x800002EC g-1", "step 0x800002ED g-1", "step 0x800002EE g-2", "step 0x800002EF g-1", "step 0x800002F0 g-1", "step 0x800002F1 g-1", "step 0x800002F2 g-1", "step 0x800002F5 g-1", "step 0x800002F6 g-1", "step 0x800002F7 g-1", "step 0x800002F8 g-1", "step 0x800002F9 g-1", "step 0x800002FC g-1", "step 0x800002FD g-1", "step 0x800002FE g-1", "step 0x800002FF g-1", "step 0x80000304 g-1", "step 0x80000305 g-1", "step 0x80000306 g-1"]
+
+[[override]]
+pack = "hand-in-counts"
+over = "seed-2017-talk"
+items = ["talk t-32c8-11eecd9a", "talk t-32c9-11eecd9a"]
+
+[[override]]
+pack = "hand-in-counts"
+over = "subquest-hand-ins"
+items = ["step 0x800002EA g-1", "step 0x800002EB g-1", "step 0x8000033E g-1", "step 0x8000033F g-1", "step 0x80000340 g-1", "step 0x80000351 g-1", "step 0x80000352 g-1"]

@@ -1,0 +1,34 @@
+# How many of an item a hand-in wants, and the person's line for the wrong number; edit an authored pack instead.
+
+[[step]]
+key = "h-2"
+quest = 0x4000027E
+needs = 1
+trigger = { give = 0x47001CC4, to = 0x47003353 }
+update = "advance"
+phase = 2
+takes = [0x47001CC4]
+wants = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:3f664f25", confidence = "low", sample = { sessions = 1 }, fields = { wants = { from = "authored", by = "Dereth Network", note = "one a phase: the journal counts them down; every recorded hand-in gave it", confidence = "medium" } } }
+
+[[step]]
+key = "h-3"
+quest = 0x4000027E
+needs = 2
+trigger = { give = 0x47001CC4, to = 0x47003353 }
+update = "advance"
+phase = 3
+takes = [0x47001CC4]
+wants = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:1381f5ca", confidence = "low", sample = { sessions = 1 }, fields = { wants = { from = "authored", by = "Dereth Network", note = "one a phase: the journal counts them down; every recorded hand-in gave it", confidence = "medium" } } }
+
+[[step]]
+key = "h-4"
+quest = 0x4000027E
+needs = 3
+trigger = { give = 0x47001CC4, to = 0x47003353 }
+update = "complete"
+gives = [0x47000700]
+takes = [0x47001CC4]
+wants = 1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:aaef727a", confidence = "low", sample = { sessions = 1 }, fields = { wants = { from = "authored", by = "Dereth Network", note = "one a phase: the journal counts them down; every recorded hand-in gave it", confidence = "medium" } } }

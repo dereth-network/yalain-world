@@ -1,0 +1,13 @@
+# How many of an item a hand-in wants, and the person's line for the wrong number; edit an authored pack instead.
+
+[[step]]
+key = "h-2"
+quest = 0x4000032A
+needs = 1
+trigger = { give = 0x47000538, to = 0x47003028 }
+update = "advance"
+phase = 2
+gives = [0x470014F8]
+takes = [0x47000538]
+wants = 1000
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:575f69b2", confidence = "low", sample = { sessions = 1 }, fields = { wants = { from = "capture", evidence = "AC2-EVID-WDB-HAND-IN-COUNTS-2017", ref = "c:929ffa71", confidence = "low", sample = { sessions = 1 } } } }

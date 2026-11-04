@@ -1,0 +1,11 @@
+# How many of an item a hand-in wants, and the person's line for the wrong number; edit an authored pack instead.
+
+[[step]]
+key = "g-1"
+quest = 0x80000305
+needs = 1
+trigger = { give = 0x470006C7, to = 0x470032D2 }
+update = "complete"
+takes = [0x470006C7]
+wants = 200
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal and the person's lines say so; the item by its name, handed over as the recordings show of a quest of this kind", confidence = "low", fields = { wants = { from = "authored", by = "Dereth Network", note = "its journal: 200; every recorded hand-in gave it", confidence = "low" } } }

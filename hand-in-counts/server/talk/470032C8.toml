@@ -1,0 +1,13 @@
+# How many of an item a hand-in wants, and the person's line for the wrong number; edit an authored pack instead.
+
+[[talk]]
+key = "t-32c8-11eecd9a"
+who = 0x470032C8
+line = { table = 0x25002A87, string = 0x11EECD9A }
+line_name = "ID_Give_Coins"
+role = "refuse-give"
+how = "tell"
+when = "give"
+quest = 0x800002E5
+item = 0x47000538
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A87, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's line for the wrong number of coins", confidence = "medium" }, item = { from = "authored", by = "Dereth Network", note = "the person's line for the wrong number of coins", confidence = "medium" } } }
