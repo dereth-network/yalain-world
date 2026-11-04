@@ -1,0 +1,38 @@
+# A mirra's chain, as the three recorded mirras' went; edit an authored pack instead.
+
+[[step]]
+key = "r-1"
+quest = 0x400002A2
+needs = 0
+trigger = { give = 0x4700174B, to = 0x47002FFD }
+update = "bestow"
+gives = [0x47001750]
+takes = [0x4700174B]
+prov = { from = "authored", by = "Dereth Network", note = "as the three other recorded mirras went; 4 lists hold this quest done, no step of it recorded", confidence = "low" }
+
+[[step]]
+key = "r-2"
+quest = 0x400002A2
+needs = 1
+trigger = { take = 0x47001750 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "as the three other recorded mirras went; 4 lists hold this quest done, no step of it recorded", confidence = "low" }
+
+[[step]]
+key = "r-3"
+quest = 0x400002A2
+needs = 2
+trigger = { give = 0x4700174E, to = 0x47003331 }
+update = "advance"
+phase = 3
+takes = [0x4700174E]
+prov = { from = "authored", by = "Dereth Network", note = "as the three other recorded mirras went; 4 lists hold this quest done, no step of it recorded", confidence = "low" }
+
+[[step]]
+key = "r-4"
+quest = 0x400002A2
+needs = 3
+trigger = { give = 0x4700076A, to = 0x47003331 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "as the three other recorded mirras went; 4 lists hold this quest done, no step of it recorded", confidence = "low" }
