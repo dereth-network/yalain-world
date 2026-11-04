@@ -1,0 +1,11 @@
+# The waits to be taken again the January 2017 lists show; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000005C
+id_name = "QuestBrokenTotemReturn"
+state = 0x6F000751
+challenge = 25
+duration = 7200
+cancellable = true
+retry = 158400
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:02755e41", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000751 }, retry = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-WAITS-2017", ref = "c:d481420e", confidence = "medium", sample = { sessions = 5 } } } }
