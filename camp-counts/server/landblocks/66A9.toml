@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12154"
+cell = 0x66A90117
+at = [-64.7, 52.9, 81.4]
+radius = 0.0
+spots = [{ cell = 0x66A90117, at = [-65.7, 65.8, 81.4] }, { cell = 0x66A90118, at = [-74.5, 36.9, 76.8] }, { cell = 0x66A9011C, at = [-53.9, 56.0, 81.8] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700222E, weight = 6 }]
+profile = 30
+profile_name = "GP_CampBeetleShear"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12154", confidence = "medium", sample = { creatures = 6, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12154", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

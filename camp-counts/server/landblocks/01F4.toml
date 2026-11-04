@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12269"
+cell = 0x01F40100
+at = [-30.2, -3.2, 67.5]
+radius = 0.0
+spots = [{ cell = 0x01F40100, at = [-19.1, 5.4, 67.5] }, { cell = 0x01F40102, at = [-17.7, -14.7, 67.5] }, { cell = 0x01F40117, at = [-40.9, -17.7, 67.5] }, { cell = 0x01F40117, at = [-40.1, -16.5, 67.5] }, { cell = 0x01F4011B, at = [-40.6, 3.8, 67.5] }, { cell = 0x01F4011B, at = [-40.2, 1.1, 67.5] }, { cell = 0x01F4011D, at = [-21.4, 5.4, 67.5] }, { cell = 0x01F4011D, at = [-21.2, 7.4, 67.5] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x470027BA, weight = 8 }]
+profile = 316
+profile_name = "GP_CampMimbuTolen"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12269", confidence = "medium", sample = { creatures = 8, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12269", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

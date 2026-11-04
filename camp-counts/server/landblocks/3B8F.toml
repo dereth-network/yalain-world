@@ -1,0 +1,11 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-8370"
+cell = 0x3B8F000E
+at = [30.7, 105.2, 109.4]
+radius = 20.2
+population = 11
+regen = 192.0
+spawns = [{ template = 0x470029C7, weight = 11 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8370", confidence = "low", sample = { creatures = 11, sessions = 1 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 8370", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" } } }

@@ -1,0 +1,11 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-1849"
+cell = 0x796C0027
+at = [98.5, 122.4, 81.7]
+radius = 18.1
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002AFE, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1849", confidence = "medium", sample = { creatures = 3, sessions = 3 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 1849", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" } } }

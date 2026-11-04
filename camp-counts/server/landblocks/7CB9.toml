@@ -1,0 +1,32 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-4665"
+cell = 0x7CB9000B
+at = [27.4, 49.6, 93.6]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002225, weight = 1 }, { template = 0x47002224, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4665", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 4665", confidence = "medium" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-4996"
+cell = 0x7CB9000B
+at = [27.6, 54.1, 93.7]
+radius = 17.8
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002D31, weight = 2 }, { template = 0x47002D52, weight = 2 }, { template = 0x47002D34, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4996", confidence = "high", sample = { creatures = 6, sessions = 3 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 4996", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12148"
+cell = 0x7CB90125
+at = [77.9, 27.6, 79.7]
+radius = 0.0
+spots = [{ cell = 0x7CB90125, at = [62.3, 45.0, 79.5] }, { cell = 0x7CB9012A, at = [51.0, 13.7, 79.8] }, { cell = 0x7CB9012D, at = [88.1, 24.7, 79.9] }, { cell = 0x7CB9012D, at = [90.7, 14.7, 79.8] }, { cell = 0x7CB9012D, at = [91.0, 17.3, 79.9] }, { cell = 0x7CB9012D, at = [99.2, 8.6, 77.3] }, { cell = 0x7CB9012E, at = [100.8, 34.8, 79.7] }, { cell = 0x7CB9012F, at = [67.7, 28.5, 79.8] }, { cell = 0x7CB90130, at = [86.0, 49.9, 79.6] }, { cell = 0x7CB90132, at = [99.0, 7.3, 77.1] }, { cell = 0x7CB90132, at = [100.6, 3.4, 76.2] }]
+population = 8
+regen = 192.0
+spawns = [{ template = 0x47002381, weight = 29 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12148", confidence = "high", sample = { creatures = 29, sessions = 5 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12148", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" } } }

@@ -1,0 +1,25 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-8892"
+cell = 0xC58D001E
+at = [62.6, 106.1, 83.7]
+radius = 9.6
+population = 5
+regen = 192.0
+spawns = [{ template = 0x47002A49, weight = 4 }, { template = 0x47002A47, weight = 1 }]
+profile = 344
+profile_name = "GP_CampSclavusAste"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8892", confidence = "low", sample = { creatures = 5, sessions = 1 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 8892", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-8894"
+cell = 0xC58D002E
+at = [115.8, 104.4, 86.9]
+radius = 9.5
+population = 6
+regen = 192.0
+spawns = [{ template = 0x47002A49, weight = 4 }, { template = 0x47002A48, weight = 2 }]
+profile = 344
+profile_name = "GP_CampSclavusAste"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8894", confidence = "low", sample = { creatures = 6, sessions = 1 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 8894", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

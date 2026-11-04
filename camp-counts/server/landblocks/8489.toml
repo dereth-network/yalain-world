@@ -1,0 +1,11 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-6466"
+cell = 0x8489003D
+at = [150.6, 97.5, 100.6]
+radius = 8.9
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002731, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6466", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 6466", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" } } }

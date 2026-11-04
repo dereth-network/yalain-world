@@ -1,0 +1,12 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12274"
+cell = 0xB880012A
+at = [-46.9, 130.0, 164.9]
+radius = 0.0
+spots = [{ cell = 0xB880012A, at = [-34.5, 143.7, 154.9] }, { cell = 0xB8800173, at = [-54.9, 130.0, 174.9] }, { cell = 0xB8800174, at = [-22.1, 95.5, 164.9] }, { cell = 0xB8800174, at = [-18.0, 95.2, 165.0] }, { cell = 0xB8800175, at = [-22.2, 164.9, 165.0] }, { cell = 0xB8800175, at = [-18.2, 164.2, 164.9] }, { cell = 0xB8800177, at = [-35.2, 115.5, 154.9] }, { cell = 0xB880017B, at = [-74.9, 149.4, 156.0] }, { cell = 0xB880017C, at = [-75.9, 112.6, 156.0] }, { cell = 0xB8800184, at = [-75.0, 149.8, 168.9] }, { cell = 0xB8800185, at = [-57.4, 129.9, 155.6] }, { cell = 0xB8800186, at = [-74.7, 109.7, 168.9] }]
+population = 12
+regen = 192.0
+spawns = [{ template = 0x470027A2, weight = 9 }, { template = 0x470027A6, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12274", confidence = "low", sample = { creatures = 12, sessions = 1 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12274", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" } } }
