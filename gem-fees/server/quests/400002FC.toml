@@ -1,0 +1,37 @@
+# What a jeweler pays for each size of gem; edit an authored pack instead.
+
+[[step]]
+key = "g-huge"
+quest = 0x400002FC
+needs = 1
+trigger = { give = 0x4700107B, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538]
+counts = [20000]
+takes = [0x4700107B]
+tell = { table = 0x25002929, string = 0xEF610400 }
+prov = { from = "authored", by = "Dereth Network", note = "twice the value of the gem handed in, as a player's guide of the time says; the one recorded fee fits it", confidence = "low" }
+
+[[step]]
+key = "g-large"
+quest = 0x400002FC
+needs = 1
+trigger = { give = 0x4700107C, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538]
+counts = [10000]
+takes = [0x4700107C]
+tell = { table = 0x25002929, string = 0xEF610400 }
+prov = { from = "authored", by = "Dereth Network", note = "twice the value of the gem handed in, as a player's guide of the time says; the one recorded fee fits it", confidence = "low" }
+
+[[step]]
+key = "g-small"
+quest = 0x400002FC
+needs = 1
+trigger = { give = 0x4700107E, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538]
+counts = [1000]
+takes = [0x4700107E]
+tell = { table = 0x25002929, string = 0xEF610400 }
+prov = { from = "authored", by = "Dereth Network", note = "twice the value of the gem handed in, as a player's guide of the time says; the one recorded fee fits it", confidence = "low" }

@@ -1,0 +1,49 @@
+# What a jeweler pays for each size of gem; edit an authored pack instead.
+
+[[step]]
+key = "g-huge"
+quest = 0x400002FD
+needs = 1
+trigger = { give = 0x47001087, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538, 0x470014C0]
+counts = [40000, 1]
+takes = [0x47001087]
+tell = { table = 0x25002929, string = 0xEF610400 }
+prov = { from = "authored", by = "Dereth Network", note = "twice the value of the gem handed in, as a player's guide of the time says; the one recorded fee fits it; the guide gives the last hand-in her tool", confidence = "low" }
+
+[[step]]
+key = "g-large"
+quest = 0x400002FD
+needs = 1
+trigger = { give = 0x47001088, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538, 0x470014C0]
+counts = [20000, 1]
+takes = [0x47001088]
+tell = { table = 0x25002929, string = 0xEF610400 }
+prov = { from = "authored", by = "Dereth Network", note = "twice the value of the gem handed in, as a player's guide of the time says; the one recorded fee fits it; the guide gives the last hand-in her tool", confidence = "low" }
+
+[[step]]
+key = "g-plain"
+quest = 0x400002FD
+needs = 1
+trigger = { give = 0x47001089, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538, 0x470014C0]
+counts = [6000, 1]
+takes = [0x47001089]
+tell = { table = 0x25002929, string = 0xEF610400 }
+prov = { from = "authored", by = "Dereth Network", note = "twice the value of the gem handed in, as a player's guide of the time says; the one recorded fee fits it; the guide gives the last hand-in her tool", confidence = "low" }
+
+[[step]]
+key = "g-small"
+quest = 0x400002FD
+needs = 1
+trigger = { give = 0x4700108A, to = 0x47002FD7 }
+update = "complete"
+gives = [0x47000538, 0x470014C0]
+counts = [2000, 1]
+takes = [0x4700108A]
+tell = { table = 0x25002929, string = 0xEF610400 }
+prov = { from = "authored", by = "Dereth Network", note = "twice the value of the gem handed in, as a player's guide of the time says; the one recorded fee fits it; the guide gives the last hand-in her tool", confidence = "low" }
