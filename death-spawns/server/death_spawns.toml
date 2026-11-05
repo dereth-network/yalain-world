@@ -1,0 +1,33 @@
+# What creatures' death effects make around their killers; edit an authored pack instead.
+
+[[death_spawn]]
+effect = "Eff_FortTears_SpawnDrudgeHelper1"
+template = 0x4700080E
+count = 1
+chance = 0.7
+offset = [-2.12, 2.12, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-DEATH-SPAWNS-2017", ref = "c:1aef5c3d", confidence = "low", sample = { sessions = 1 } }
+
+[[death_spawn]]
+effect = "Eff_FortTears_SpawnDrudgeHelper2"
+template = 0x4700080E
+count = 1
+chance = 0.7
+offset = [2.12, 2.12, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-DEATH-SPAWNS-2017", ref = "c:049c3268", confidence = "low", sample = { sessions = 1 } }
+
+[[death_spawn]]
+effect = "Eff_FortTears_SpawnDrudgeHelper3"
+template = 0x4700080E
+count = 1
+chance = 0.7
+offset = [0.0, -3.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-DEATH-SPAWNS-2017", ref = "c:1b86a399", confidence = "low", sample = { sessions = 1 } }
+
+[[death_spawn]]
+effect = "Eff_SpawnShrethHelpers"
+template = 0x47000824
+count = 3
+chance = 1.0
+offset = [0.0, 2.0, 0.0]
+prov = { from = "authored", by = "Dereth Network", note = "the template the effect's name gives by its creature table, not recorded", confidence = "low" }

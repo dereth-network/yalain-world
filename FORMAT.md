@@ -21,6 +21,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/story.toml           [[scene]], [[shard]]
 <pack>/server/butchery.toml        [[butchery]]
 <pack>/server/weapons.toml         [[weapon]]
+<pack>/server/death_spawns.toml    [[death_spawn]]
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
 ```
@@ -340,6 +341,8 @@ of the install) is no template of the install's own. `name`, `template`
 (the template it is made of), `two_share` (of the creatures whose template asks two of it, the share
 given two, the rest one; every one is given two when left out) and `stance` (the stance it is fought
 with, where its template sets none).
+
+**`[[death_spawn]]`**: what a creature's death effect makes around its killer, where the install names it by a name it doesn't resolve. `effect` (the death effect, as creatures' templates name it), `template` (what it makes), `count` (how many it tries to make; 1 when left out), `chance` (that each is made; 1 when left out) and `offset` (where each stands, in meters from the killer as the killer faces, `[x, y, z]`, on the ground). They stay until killed, no more than 24 of one effect's at once.
 
 **`[[route]]`**: places creatures (and people that name it) walk at rest in turn. `key`; `waypoints` (`{ cell, at, rest }`, `rest`
 the seconds a creature stands there, else the route's); `shape`, `back-and-forth` (turn back at either
