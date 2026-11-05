@@ -211,7 +211,9 @@ A field marked † is read from the install when left out.
 **`[[place]]`**: a destination. `key`, `cell`, `at`, `rotation` / `heading`, `named_by` (templates
 whose destination names it: a portal's, or a surveyor's map's, whose holder a person who sends players by
 maps sends here; a template is named by one place at most), `destination` (that name, as text: the name an
-effect that sends a player to a named place, a city's recall, looks it up by; one place to a name).
+effect that sends a player to a named place, a city's recall, looks it up by; one place to a name), `row`
+and `holds` (a room of a row of like rooms, and the cell its creature stands in: a step that leads to any
+room of a row sends a player to one of them, free of players and with its creature standing if it can).
 
 **`[[loot]]`**: what a dead creature leaves. `profile` and `profile_name` (its death-loot profile),
 `counts` (the chance of 0, 1, 2, ... items), `items` (`{ template, weight }`, what a draw picks
