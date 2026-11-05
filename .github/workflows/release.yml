@@ -1,0 +1,110 @@
+# Builds and publishes a world release from a tag.
+#
+# To release: build the archive with the pinned `yalain` (`yalain world release . --tag v<version>`
+# prints its SHA-256), set `version` and the hash in release.toml, commit, tag `v<version>` on
+# Forgejo, and push the tag there. The mirror carries it here, and this workflow does the rest. Tags
+# always start on Forgejo, so the mirror can't prune them. Nothing here pushes to any repository; it
+# only makes the release. The pin a server build follows still moves by a commit in dereth.
+#
+# It refuses to publish when the archive's hash differs from release.toml's, or when what it built
+# with isn't what release.toml pins. Running it by hand on main is a dry run: the same builds and
+# checks, the files kept as a workflow artifact for 7 days, nothing published.
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: build and check
+    # A forge that also reads this folder has no builder to build and nowhere to publish.
+    if: github.server_url == 'https://github.com'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    outputs:
+      tag: ${{ steps.pin.outputs.tag }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Read release.toml, and the tag names its version
+        id: pin
+        run: python3 .github/workflows/release-check.py pin
+
+      - name: The tag is on main
+        if: github.ref_type == 'tag'
+        run: git merge-base --is-ancestor "$GITHUB_SHA" origin/main
+
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          repository: dereth-network/dereth
+          ref: ${{ steps.pin.outputs.commit }}
+          path: builder
+          persist-credentials: false
+
+      - name: Build yalain
+        env:
+          TOOLCHAIN: ${{ steps.pin.outputs.toolchain }}
+        working-directory: builder
+        run: |
+          rustup toolchain install "$TOOLCHAIN" --profile minimal
+          cargo "+$TOOLCHAIN" build --release --locked -p yalain
+
+      - name: Make the release's files
+        env:
+          TAG: ${{ steps.pin.outputs.tag }}
+        run: |
+          # The change log's section runs from the release before this one.
+          previous=$(git tag --list 'v*' --sort=-v:refname | grep -vxF "$TAG" | head -n 1)
+          builder/target/release/yalain world release . --tag "$TAG" ${previous:+--since "$previous"} --out release
+
+      - name: Refuse anything but what release.toml states
+        env:
+          TOOLCHAIN: ${{ steps.pin.outputs.toolchain }}
+        run: |
+          rustc_said=$(cd builder && rustc "+$TOOLCHAIN" -V)
+          python3 .github/workflows/release-check.py verify builder release "$rustc_said"
+          (cd release && sha256sum -c ./*.sha256)
+
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: world-release
+          path: release
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    name: publish
+    needs: build
+    if: github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
+        with:
+          name: world-release
+          path: release
+
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ needs.build.outputs.tag }}
+        run: |
+          # --verify-tag: never let the release make a tag here that the mirror would prune.
+          # Not a draft and not a prerelease. The notes are the release's description, not a file.
+          mv "release/yalain-world-$TAG.notes.md" notes.md
+          gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --verify-tag --latest \
+            --title "$TAG" --notes-file notes.md release/*
