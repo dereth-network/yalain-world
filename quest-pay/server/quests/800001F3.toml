@@ -1,0 +1,13 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800001F3
+id_name = "Quest_KQ2B_SkeletonLieutenant"
+state = 0x6F000ADD
+challenge = 50
+cancellable = true
+min_level = 50
+xp_share = 0.04
+xp_share_level = 50
+retry = 604800
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:37e7d807", confidence = "low", sample = { sessions = 1 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

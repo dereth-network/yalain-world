@@ -229,7 +229,7 @@ install's.
 **`[[quest]]`**: a quest's server values. `id` and `id_name`, `state`† (its definition), `challenge`,
 `duration` (s of the player's time in the world, 0 for none), `timed_phase` (the one phase the duration runs in, from when that phase comes, shown and able to fail the quest in that phase only; left out, every phase from its giving), `retry` (s, by the calendar, in the world or not), `xp` (left out, as the quest's setup in the install says), `xp_share` (in place of an amount, the
 share of what the player's level takes to reach the next that its completion pays, whole; left out, as the setup says), `xp_share_level` (the level
-at and above which that share pays no more), `cancellable`, `visible`† (false: the quest is kept for
+at and above which that share pays no more), `xp_least`, `xp_most` (the least and the most that share pays), `xp_whole` (true: an amount is paid whole, whatever the quest's challenge against the player's level; left out, as the setup says), `cancellable`, `visible`† (false: the quest is kept for
 its player but never shown, in no journal and no update; left out, a quest is shown when its
 definition has a description), `min_level` (the least level a player is given it at; a person whose
 step would give it says its refusal of the quest, a `refuse-use` line naming it, to a player under

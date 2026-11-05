@@ -1,0 +1,14 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000BE
+id_name = "QuestHakE2_BoglurkArmoredillo"
+state = 0x6F0009C6
+challenge = 32
+retry = 72000
+cancellable = true
+fellows = true
+min_level = 35
+xp = 300000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:93b38eda", confidence = "high", sample = { sessions = 4 }, fields = { fellows = { from = "capture", evidence = "AC2-EVID-WDB-KILL-QUESTS-2017", ref = "c:237c5c0d", confidence = "medium" }, min_level = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-REFUSALS-2017", ref = "c:b60d713a", confidence = "low", sample = { sessions = 2, lines = 3 } }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:aa66a2f1", confidence = "medium", sample = { sessions = 2 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:aa66a2f1", confidence = "medium", sample = { sessions = 2 } } } }

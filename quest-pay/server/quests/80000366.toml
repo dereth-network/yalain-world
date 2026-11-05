@@ -1,0 +1,13 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000366
+id_name = "Quest_DankRelics_1"
+state = 0x6F0006CB
+challenge = 30
+retry = 518400
+cancellable = true
+min_level = 32
+xp = 200000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:24c84de2", confidence = "high", sample = { sessions = 10 }, fields = { min_level = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-REFUSALS-2017", ref = "c:733d4406", confidence = "low", sample = { sessions = 1, lines = 1 } }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:dcd272df", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:dcd272df", confidence = "low", sample = { sessions = 1 } } } }

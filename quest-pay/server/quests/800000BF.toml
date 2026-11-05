@@ -1,0 +1,14 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000BF
+id_name = "QuestHakF_MoarsmanChief"
+state = 0x6F0009C7
+challenge = 33
+retry = 72000
+cancellable = true
+fellows = true
+min_level = 35
+xp = 450000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:20c9eb17", confidence = "medium", sample = { sessions = 2 }, fields = { fellows = { from = "capture", evidence = "AC2-EVID-WDB-KILL-QUESTS-2017", ref = "c:ec058142", confidence = "medium" }, min_level = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-REFUSALS-2017", ref = "c:79366ab1", confidence = "low", sample = { sessions = 2, lines = 2 } }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:0d8b0319", confidence = "medium", sample = { sessions = 2 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:0d8b0319", confidence = "medium", sample = { sessions = 2 } } } }

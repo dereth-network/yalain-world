@@ -1,0 +1,11 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000DD
+id_name = "QuestLinH_DarkDreadMumiyah"
+state = 0x6F0009E5
+min_level = 55
+xp_share = 0.025
+xp_share_level = 56
+retry = 604800
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F0009E5, confidence = "low", fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

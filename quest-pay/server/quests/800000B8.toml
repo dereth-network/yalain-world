@@ -1,0 +1,13 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000B8
+id_name = "QuestHakB2_DevolvedMucor"
+state = 0x6F0009C0
+challenge = 31
+retry = 72000
+cancellable = true
+min_level = 32
+xp = 250000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:c6265786", confidence = "high", sample = { sessions = 3 }, fields = { min_level = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-REFUSALS-2017", ref = "c:11d05af8", confidence = "low", sample = { sessions = 1, lines = 1 } }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:409c2eb1", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:409c2eb1", confidence = "low", sample = { sessions = 1 } } } }

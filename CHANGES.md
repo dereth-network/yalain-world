@@ -15,6 +15,7 @@
 - 494 camps keep as many creatures as the recordings show alive together, 620 more in all. New pack `camp-counts/`.
 - Four camps of a jumping creature appear on the floor where the recordings first show them, not in midair. New pack `camp-first-places/`.
 - 178 outdoor camps appear at the fixed places the recordings show, not anywhere in a circle. New pack `camp-outdoor-spots/`.
+- Quests with no setup pay what was recorded, or a guide's figure. New pack `quest-pay/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 

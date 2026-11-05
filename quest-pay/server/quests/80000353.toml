@@ -1,0 +1,13 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000353
+id_name = "Quest_AppeasingDead_1"
+state = 0x6F0007D4
+challenge = 44
+retry = 518400
+cancellable = true
+min_level = 30
+xp = 4500000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:5addc085", confidence = "medium", sample = { sessions = 2 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:b039a9eb", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:b039a9eb", confidence = "low", sample = { sessions = 1 } } } }

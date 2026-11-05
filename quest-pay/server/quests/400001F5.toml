@@ -1,0 +1,13 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x400001F5
+id_name = "QuestHeroicSlayer4"
+state = 0x6F0008B4
+challenge = 50
+retry = 86400
+cancellable = false
+duration = 7200.0
+xp = 3000000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:861cb77b", confidence = "high", sample = { sessions = 18 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:0a052f5b", confidence = "medium", sample = { sessions = 6 } }, xp = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_whole = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

@@ -1,0 +1,14 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000B9
+id_name = "QuestHakC1_ReeshanBurun"
+state = 0x6F0009C1
+challenge = 30
+retry = 72000
+cancellable = true
+fellows = true
+min_level = 32
+xp = 200000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:5b44a037", confidence = "high", sample = { sessions = 6 }, fields = { fellows = { from = "capture", evidence = "AC2-EVID-WDB-KILL-QUESTS-2017", ref = "c:967e8c72", confidence = "medium" }, min_level = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-REFUSALS-2017", ref = "c:1de0fbba", confidence = "low", sample = { sessions = 1, lines = 1 } }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:135ab6c6", confidence = "medium", sample = { sessions = 2 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:135ab6c6", confidence = "medium", sample = { sessions = 2 } } } }

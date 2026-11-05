@@ -1,0 +1,13 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000CA
+id_name = "QuestIkF_MarshArmoredillo"
+state = 0x6F0009D2
+challenge = 25
+retry = 72000
+cancellable = true
+min_level = 27
+xp = 44000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:6fe429da", confidence = "high", sample = { sessions = 4 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:8e109d99", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:8e109d99", confidence = "low", sample = { sessions = 1 } } } }

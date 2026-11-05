@@ -1,0 +1,10 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000D8
+id_name = "QuestLinF1_BoneGolem"
+state = 0x6F0009E0
+min_level = 55
+xp_share = 0.04
+xp_share_level = 55
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F0009E0, confidence = "low", fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

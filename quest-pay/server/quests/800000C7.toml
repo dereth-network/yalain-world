@@ -1,0 +1,13 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000C7
+id_name = "QuestIkD2_ListrisNiffis"
+state = 0x6F0009CF
+challenge = 22
+retry = 72000
+cancellable = true
+min_level = 24
+xp = 18000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:03add05f", confidence = "high", sample = { sessions = 5 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:118ac5aa", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:118ac5aa", confidence = "low", sample = { sessions = 1 } } } }

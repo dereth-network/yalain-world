@@ -1,0 +1,13 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000313
+id_name = "QuestStubby1"
+state = 0x6F000D13
+challenge = 40
+cancellable = false
+duration = 7200.0
+xp_share = 0.005
+xp_least = 200000
+xp_most = 1300000
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:52e60928", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:3a1b3ca2", confidence = "low", sample = { sessions = 1 } }, xp_share = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:e043f0da", confidence = "low", sample = { sessions = 1 } }, xp_least = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_most = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

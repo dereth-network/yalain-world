@@ -1,0 +1,11 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000D7
+id_name = "QuestLinE_VigilantSpawn"
+state = 0x6F0009DF
+min_level = 50
+xp_share = 0.03
+xp_share_level = 53
+retry = 604800
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F0009DF, confidence = "low", fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

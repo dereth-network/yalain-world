@@ -1,0 +1,13 @@
+# What a quest with no setup pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000C4
+id_name = "QuestIkB3_SurrogateSpawn"
+state = 0x6F0009CC
+challenge = 20
+retry = 72000
+cancellable = true
+min_level = 22
+xp = 12000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:7fd08bcf", confidence = "low", sample = { sessions = 1 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:8e4f6374", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:8e4f6374", confidence = "low", sample = { sessions = 1 } } } }
