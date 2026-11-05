@@ -1,0 +1,38 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-978"
+cell = 0x68670034
+at = [126.7, 76.9, 93.7]
+radius = 4.0
+spots = [{ cell = 0x68670034, at = [124.67, 77.8, 93.74] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021F8, weight = 3 }]
+profile = 22
+profile_name = "GP_CampBanderlingThrasher"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 978", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 978", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-979"
+cell = 0x6867001B
+at = [71.9, 50.1, 92.8]
+radius = 28.6
+spots = [{ cell = 0x6867001A, at = [68.94, 21.8, 93.95] }, { cell = 0x6867001C, at = [73.95, 78.72, 92.71] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470021F3, weight = 3 }, { template = 0x470021F8, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 979", confidence = "medium", sample = { creatures = 6, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 979", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-980"
+cell = 0x68670001
+at = [16.2, 15.4, 93.4]
+radius = 7.6
+spots = [{ cell = 0x68670001, at = [11.99, 15.57, 93.42] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021EF, weight = 3 }]
+profile = 15
+profile_name = "GP_CampBanderlingBouncer"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 980", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 980", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

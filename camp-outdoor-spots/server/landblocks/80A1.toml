@@ -1,0 +1,38 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-6200"
+cell = 0x80A1001A
+at = [71.8, 37.6, 118.3]
+radius = 56.8
+spots = [{ cell = 0x80A10001, at = [15.0, 15.49, 117.06] }, { cell = 0x80A10009, at = [39.36, 17.58, 118.03] }, { cell = 0x80A1000A, at = [26.22, 20.87, 118.69] }, { cell = 0x80A1000B, at = [29.61, 43.15, 121.51] }, { cell = 0x80A10013, at = [54.4, 50.4, 122.51] }, { cell = 0x80A1001A, at = [63.14, 26.21, 118.76] }, { cell = 0x80A1001C, at = [65.62, 62.45, 123.08] }, { cell = 0x80A10022, at = [86.72, 29.22, 117.69] }, { cell = 0x80A10022, at = [88.7, 39.69, 117.74] }, { cell = 0x80A10022, at = [96.96, 35.73, 116.82] }, { cell = 0x80A10023, at = [93.64, 54.55, 118.6] }, { cell = 0x80A10024, at = [81.64, 72.94, 121.19] }, { cell = 0x80A10031, at = [121.13, 15.18, 110.03] }, { cell = 0x80A10033, at = [127.88, 48.27, 113.55] }]
+population = 12
+regen = 192.0
+spawns = [{ template = 0x47002377, weight = 22 }, { template = 0x47002375, weight = 4 }, { template = 0x4700239B, weight = 2 }]
+profile = 51
+profile_name = "GP_CampDrudgeSlinker"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6200", confidence = "medium", sample = { creatures = 28, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 6200", confidence = "medium" }, population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 6200", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6201"
+cell = 0x80A1002E
+at = [106.5, 118.0, 112.0]
+radius = 23.8
+spots = [{ cell = 0x80A10026, at = [84.05, 110.13, 117.86] }, { cell = 0x80A1002E, at = [112.5, 112.16, 112.05] }, { cell = 0x80A1002F, at = [112.39, 130.34, 110.04] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002375, weight = 7 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6201", confidence = "medium", sample = { creatures = 7, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 6201", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-6202"
+cell = 0x80A1000D
+at = [28.7, 99.2, 121.7]
+radius = 23.3
+spots = [{ cell = 0x80A10005, at = [12.75, 80.01, 121.97] }, { cell = 0x80A10006, at = [12.94, 104.4, 122.08] }, { cell = 0x80A1000D, at = [38.84, 91.72, 121.34] }, { cell = 0x80A10016, at = [42.56, 117.07, 122.75] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x47002375, weight = 6 }, { template = 0x4700239B, weight = 2 }]
+profile = 51
+profile_name = "GP_CampDrudgeSlinker"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6202", confidence = "medium", sample = { creatures = 8, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 6202", confidence = "medium" }, population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 6202", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

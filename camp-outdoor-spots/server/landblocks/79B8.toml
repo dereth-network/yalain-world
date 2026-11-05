@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-2004"
+cell = 0x79B80009
+at = [24.9, 18.7, 148.9]
+radius = 15.3
+spots = [{ cell = 0x79B80001, at = [17.15, 19.15, 149.23] }, { cell = 0x79B80009, at = [20.52, 13.02, 148.88] }, { cell = 0x79B80009, at = [31.56, 5.65, 149.09] }, { cell = 0x79B8000A, at = [22.37, 24.56, 146.01] }, { cell = 0x79B8000A, at = [31.12, 25.45, 143.31] }]
+population = 5
+regen = 192.0
+spawns = [{ template = 0x47002AF7, weight = 10 }]
+profile = 357
+profile_name = "GP_CampShrethCarrion"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2004", confidence = "high", sample = { creatures = 10, sessions = 3 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 2004", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

@@ -1,0 +1,23 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-7273"
+cell = 0x9C96001E
+at = [79.9, 105.5, 165.5]
+radius = 31.9
+spots = [{ cell = 0x9C96000D, at = [24.31, 85.96, 172.94] }, { cell = 0x9C96000D, at = [28.81, 91.36, 173.25] }, { cell = 0x9C960015, at = [42.95, 80.2, 170.91] }, { cell = 0x9C96001F, at = [60.31, 135.42, 170.85] }, { cell = 0x9C960026, at = [84.13, 103.14, 165.51] }, { cell = 0x9C960026, at = [87.72, 100.36, 165.51] }, { cell = 0x9C960026, at = [93.73, 100.95, 165.04] }, { cell = 0x9C960026, at = [96.53, 105.27, 164.51] }]
+population = 8
+regen = 192.0
+spawns = [{ template = 0x47002343, weight = 10 }, { template = 0x47002341, weight = 5 }, { template = 0x47002345, weight = 5 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7273", confidence = "high", sample = { creatures = 20, sessions = 5 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 7273", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7463"
+cell = 0x9C960026
+at = [86.6, 110.3, 167.1]
+radius = 8.6
+spots = [{ cell = 0x9C960026, at = [88.26, 110.85, 167.34] }, { cell = 0x9C960026, at = [88.76, 104.65, 167.16] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002324, weight = 8 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7463", confidence = "high", sample = { creatures = 8, sessions = 5 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 7463", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" } } }

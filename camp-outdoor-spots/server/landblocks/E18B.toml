@@ -1,0 +1,12 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-9618"
+cell = 0xE18B001C
+at = [71.9, 75.3, 104.1]
+radius = 0.1
+spots = [{ cell = 0xE18B001C, at = [71.98, 75.3, 104.09] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470022BC, weight = 53 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 9618", confidence = "high", sample = { creatures = 53, sessions = 37 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 9618", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" } } }

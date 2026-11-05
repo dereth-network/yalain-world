@@ -1,0 +1,36 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-7269"
+cell = 0x9996001D
+at = [69.3, 89.7, 104.5]
+radius = 24.2
+spots = [{ cell = 0x99960015, at = [46.85, 98.71, 105.06] }, { cell = 0x9996001C, at = [60.8, 78.35, 104.51] }, { cell = 0x9996001D, at = [71.96, 98.97, 104.51] }, { cell = 0x9996001D, at = [79.38, 90.87, 104.71] }, { cell = 0x99960024, at = [86.32, 78.36, 104.51] }]
+population = 5
+regen = 192.0
+spawns = [{ template = 0x47002343, weight = 5 }, { template = 0x47002341, weight = 3 }, { template = 0x47002345, weight = 3 }, { template = 0x47002353, weight = 2 }, { template = 0x47002346, weight = 1 }]
+profile = 50
+profile_name = "GP_CampDrudgeScowl"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7269", confidence = "high", sample = { creatures = 14, sessions = 3 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 7269", confidence = "high" }, population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 7269", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-7457"
+cell = 0x99960026
+at = [93.1, 119.1, 106.4]
+radius = 5.0
+spots = [{ cell = 0x99960026, at = [93.12, 119.08, 104.41] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002324, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7457", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 7457", confidence = "medium" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7458"
+cell = 0x99960023
+at = [82.5, 54.9, 106.8]
+radius = 14.0
+spots = [{ cell = 0x99960023, at = [81.98, 49.14, 105.85] }, { cell = 0x99960024, at = [84.19, 72.36, 104.51] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002324, weight = 3 }, { template = 0x47002322, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7458", confidence = "medium", sample = { creatures = 4, sessions = 3 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 7458", confidence = "medium" }, population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 7458", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" } } }

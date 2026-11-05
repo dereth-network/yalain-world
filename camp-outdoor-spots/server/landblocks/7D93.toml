@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-6058"
+cell = 0x7D93001B
+at = [60.3, 52.2, 127.5]
+radius = 26.0
+spots = [{ cell = 0x7D930012, at = [49.33, 33.73, 124.78] }, { cell = 0x7D930013, at = [50.27, 48.46, 124.51] }, { cell = 0x7D930014, at = [42.6, 71.28, 127.51] }, { cell = 0x7D93001A, at = [63.31, 32.01, 125.72] }, { cell = 0x7D93001C, at = [64.88, 70.67, 128.0] }]
+population = 5
+regen = 192.0
+spawns = [{ template = 0x47002378, weight = 9 }, { template = 0x470023B9, weight = 2 }]
+profile = 51
+profile_name = "GP_CampDrudgeSlinker"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6058", confidence = "medium", sample = { creatures = 11, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 6058", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-4469"
+cell = 0x84930004
+at = [6.1, 65.9, 79.3]
+radius = 5.0
+spots = [{ cell = 0x84930004, at = [3.67, 61.13, 79.26] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700222A, weight = 2 }]
+profile = 29
+profile_name = "GP_CampBeetleScythe"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4469", confidence = "medium", sample = { creatures = 2, sessions = 3 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 4469", confidence = "medium" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

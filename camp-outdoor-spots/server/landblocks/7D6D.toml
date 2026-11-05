@@ -1,0 +1,60 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-310"
+cell = 0x7D6D0024
+at = [87.0, 75.0, 181.2]
+radius = 0.0
+spots = [{ cell = 0x7D6D0024, at = [87.0, 75.0, 181.17] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021D1, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 310", confidence = "medium", sample = { creatures = 3, sessions = 4 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 310", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-311"
+cell = 0x7D6D0013
+at = [47.3, 44.5, 182.4]
+radius = 0.0
+spots = [{ cell = 0x7D6D0013, at = [47.27, 44.47, 182.36] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021D1, weight = 4 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 311", confidence = "medium", sample = { creatures = 4, sessions = 5 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 311", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-1017"
+cell = 0x7D6D0024
+at = [90.5, 62.9, 183.1]
+radius = 9.2
+spots = [{ cell = 0x7D6D0023, at = [87.0, 57.0, 183.05] }, { cell = 0x7D6D0024, at = [95.15, 70.87, 180.56] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470021F5, weight = 4 }, { template = 0x470021F8, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1017", confidence = "high", sample = { creatures = 7, sessions = 4 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 1017", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-1018"
+cell = 0x7D6D001A
+at = [65.4, 25.1, 183.2]
+radius = 0.0
+spots = [{ cell = 0x7D6D001A, at = [65.39, 25.12, 183.17] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021F5, weight = 5 }]
+profile = 20
+profile_name = "GP_CampBanderlingRaver"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1018", confidence = "high", sample = { creatures = 5, sessions = 5 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 1018", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-1019"
+cell = 0x7D6D0013
+at = [54.0, 54.0, 186.9]
+radius = 0.0
+spots = [{ cell = 0x7D6D0013, at = [54.0, 54.0, 186.95] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470021F5, weight = 5 }]
+profile = 20
+profile_name = "GP_CampBanderlingRaver"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1019", confidence = "high", sample = { creatures = 5, sessions = 5 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 1019", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

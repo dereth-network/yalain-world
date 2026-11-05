@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-4745"
+cell = 0x879C0007
+at = [11.9, 133.6, 79.4]
+radius = 5.0
+spots = [{ cell = 0x879C0007, at = [12.01, 133.71, 79.41] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700222E, weight = 2 }]
+profile = 30
+profile_name = "GP_CampBeetleShear"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4745", confidence = "medium", sample = { creatures = 2, sessions = 4 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 4745", confidence = "medium" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

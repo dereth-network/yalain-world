@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-276"
+cell = 0x67680036
+at = [120.9, 102.1, 94.3]
+radius = 37.1
+spots = [{ cell = 0x6768002D, at = [106.2, 95.94, 94.29] }, { cell = 0x67680035, at = [135.18, 83.51, 94.31] }, { cell = 0x67680036, at = [127.81, 118.98, 94.29] }, { cell = 0x6768003D, at = [145.8, 99.08, 94.29] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x47001A3F, weight = 15 }, { template = 0x47001A3D, weight = 14 }, { template = 0x47001A3E, weight = 14 }, { template = 0x470021DE, weight = 12 }]
+profile = 11
+profile_name = "GP_CampArmoredilloSteppe"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 276", confidence = "high", sample = { creatures = 55, sessions = 12 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 276", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
