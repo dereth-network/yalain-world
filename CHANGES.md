@@ -26,6 +26,7 @@
 - More people stand where players' guides of the time put them, with no recording to say so. New pack `guide-people/`.
 - A third mine, a grove and a farm stand where players' guides of the time put them, each for a fee. New pack `guide-mines/`.
 - Those people and others now give the quests players' guides of the time name them for; some can't be finished yet. New pack `guide-givers/`.
+- Recorded chests draw treasure of their own level, the arenas have their other rooms, and practice gems make their dummies. Packs `chest-loot/`, `gauntlets/`, `practice-gems/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 

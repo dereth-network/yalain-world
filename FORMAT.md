@@ -218,7 +218,8 @@ room of a row sends a player to one of them, free of players and with its creatu
 **`[[loot]]`**: what a dead creature leaves. `profile` and `profile_name` (its death-loot profile),
 `counts` (the chance of 0, 1, 2, ... items), `items` (`{ template, weight }`, what a draw picks
 from), `extras` (`{ template, chance }`, items with a chance of their own). A creature's trophies
-are its template's and are not rows.
+are its template's and are not rows. A chest's row may name `level` and `value` (`[low, high]`): what it
+draws is then treasure of that level, each piece worth a draw from that band; its extras aren't.
 
 **`[[keeper]]`**: a storekeeper. `template`, `store`† (the store template it opens), `greeting` /
 `greeting_text`.
