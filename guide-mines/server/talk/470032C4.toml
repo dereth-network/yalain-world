@@ -1,0 +1,35 @@
+# These people's lines, tied to what they ask; edit an authored pack instead.
+
+[[talk]]
+key = "t-32c4-11eecd9a"
+who = 0x470032C4
+line = { table = 0x25002A83, string = 0x11EECD9A }
+line_name = "ID_Give_Coins"
+role = "refuse-give"
+how = "tell"
+when = "give"
+quest = 0x800002F3
+item = 0x47000538
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A83, confidence = "low", fields = { quest = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time and the person's own line; no recording", confidence = "low" }, item = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time and the person's own line; no recording", confidence = "low" } } }
+
+[[talk]]
+key = "t-32c4-09200efe"
+who = 0x470032C4
+line = { table = 0x25002A83, string = 0x09200EFE }
+line_name = "ID_Other"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x800002F3
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A83, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time and the person's own line; no recording", confidence = "low" } } }
+
+[[talk]]
+key = "t-32c4-cde80fb2"
+who = 0x470032C4
+line = { table = 0x25002A83, string = 0xCDE80FB2 }
+line_name = "ID_Underway"
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800002F3
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A83, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time and the person's own line; no recording", confidence = "low" } } }

@@ -24,6 +24,7 @@
 - Outdoor camps with no place to stand appear where they were first seen. New pack `camp-ground-spots/`.
 - A jeweler pays by the size of the gem handed in, and the last gem earns her tool. New pack `gem-fees/`.
 - More people stand where players' guides of the time put them, with no recording to say so. New pack `guide-people/`.
+- A third mine, a grove and a farm stand where players' guides of the time put them, each for a fee. New pack `guide-mines/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 
