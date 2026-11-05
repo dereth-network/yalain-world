@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12267"
+cell = 0x06F801BC
+at = [-101.1, -147.1, 24.3]
+radius = 0.0
+spots = [{ cell = 0x06F801BC, at = [-103.0, -144.3, 24.6] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A1A, weight = 2 }]
+profile = 344
+profile_name = "GP_CampSclavusAste"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12267", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-WALKER-SPOTS-2017", ref = "camp 12267", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

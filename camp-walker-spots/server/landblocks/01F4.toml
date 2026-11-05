@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12270"
+cell = 0x01F4012B
+at = [-77.9, 41.7, 76.5]
+radius = 0.0
+spots = [{ cell = 0x01F4012B, at = [-73.0, 4.2, 72.9] }, { cell = 0x01F4012B, at = [-72.8, 5.9, 72.8] }, { cell = 0x01F4012B, at = [-72.7, 5.6, 72.7] }, { cell = 0x01F40142, at = [-44.3, 40.7, 76.6] }, { cell = 0x01F40152, at = [-76.0, 52.8, 76.5] }, { cell = 0x01F40154, at = [-78.5, 75.0, 76.6] }, { cell = 0x01F40154, at = [-77.4, 74.6, 76.6] }, { cell = 0x01F40155, at = [-104.5, 41.8, 76.6] }, { cell = 0x01F40155, at = [-104.3, 41.8, 76.6] }, { cell = 0x01F4016A, at = [-90.8, 54.4, 76.5] }, { cell = 0x01F40170, at = [-70.8, 53.2, 76.5] }]
+population = 7
+regen = 192.0
+spawns = [{ template = 0x470027B6, weight = 11 }, { template = 0x470027BA, weight = 4 }]
+profile = 316
+profile_name = "GP_CampMimbuTolen"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12270", confidence = "medium", sample = { creatures = 15, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-WALKER-SPOTS-2017", ref = "camp 12270", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

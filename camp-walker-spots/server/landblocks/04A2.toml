@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12776"
+cell = 0x04A2011E
+at = [7.0, 38.4, 2.3]
+radius = 0.0
+spots = [{ cell = 0x04A2011E, at = [-1.0, 50.8, 2.3] }, { cell = 0x04A2011E, at = [5.0, 30.6, 2.3] }, { cell = 0x04A2011E, at = [5.0, 32.4, 2.3] }, { cell = 0x04A2011E, at = [5.0, 53.4, 2.3] }, { cell = 0x04A2011E, at = [5.7, 36.8, 2.3] }, { cell = 0x04A2011E, at = [7.3, 31.0, 2.4] }, { cell = 0x04A2011E, at = [7.6, 44.2, 2.3] }, { cell = 0x04A2011E, at = [8.8, 25.4, 2.4] }, { cell = 0x04A2011E, at = [8.9, 31.7, 2.4] }, { cell = 0x04A2011E, at = [10.2, 28.3, 2.3] }, { cell = 0x04A2011E, at = [14.9, 26.5, 2.3] }, { cell = 0x04A2011E, at = [17.4, 36.6, 2.3] }]
+population = 5
+regen = 192.0
+spawns = [{ template = 0x47002A1B, weight = 11 }, { template = 0x47002A1C, weight = 3 }]
+profile = 345
+profile_name = "GP_CampSclavusEssa"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12776", confidence = "medium", sample = { creatures = 14, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-WALKER-SPOTS-2017", ref = "camp 12776", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-5684"
+cell = 0x01EB0105
+at = [-58.4, -1.0, 148.4]
+radius = 0.0
+spots = [{ cell = 0x01EB0105, at = [-48.0, -19.6, 77.1] }, { cell = 0x01EB0115, at = [-77.2, 2.8, 148.7] }, { cell = 0x01EB0115, at = [-38.337, 0.419, 148.626] }, { cell = 0x01EB0115, at = [-38.3, 0.4, 148.6] }, { cell = 0x01EB0116, at = [-101.9, 16.4, 88.5] }, { cell = 0x01EB0116, at = [-31.2, 7.3, 148.6] }]
+population = 6
+regen = 192.0
+spawns = [{ template = 0x470023A8, weight = 18 }]
+profile = 47
+profile_name = "GP_CampDrudgeOutcast"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5684", confidence = "high", sample = { creatures = 18, sessions = 3 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-WALKER-SPOTS-2017", ref = "camp 5684", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

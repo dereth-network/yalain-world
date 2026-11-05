@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12561"
+cell = 0x01E30102
+at = [73.7, 8.2, 7.3]
+radius = 0.0
+spots = [{ cell = 0x01E30102, at = [74.4, 9.6, 7.3] }, { cell = 0x01E30102, at = [76.9, 5.8, 7.3] }, { cell = 0x01E30102, at = [78.5, 5.8, 7.4] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002A21, weight = 4 }, { template = 0x47002A24, weight = 2 }]
+profile = 347
+profile_name = "GP_CampSclavusSata"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12561", confidence = "medium", sample = { creatures = 6, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-WALKER-SPOTS-2017", ref = "camp 12561", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

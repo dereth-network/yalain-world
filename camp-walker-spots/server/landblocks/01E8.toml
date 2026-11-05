@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12196"
+cell = 0x01E8010E
+at = [-146.6, 52.7, -96.9]
+radius = 0.0
+spots = [{ cell = 0x01E8010E, at = [-146.042, 60.981, -97.445] }, { cell = 0x01E8010E, at = [-146.0, 61.0, -97.4] }, { cell = 0x01E8010E, at = [-143.6, 65.8, -96.9] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700236E, weight = 6 }]
+profile = 43
+profile_name = "GP_CampDrudgeMurk"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12196", confidence = "medium", sample = { creatures = 6, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-WALKER-SPOTS-2017", ref = "camp 12196", confidence = "medium" }, population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12196", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

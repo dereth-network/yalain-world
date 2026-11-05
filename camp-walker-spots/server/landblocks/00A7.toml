@@ -1,0 +1,27 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12232"
+cell = 0x00A70108
+at = [-79.2, -111.9, -27.3]
+radius = 0.0
+spots = [{ cell = 0x00A70108, at = [-40.277, -51.082, -23.0] }, { cell = 0x00A7010C, at = [-72.191, -36.776, -23.068] }, { cell = 0x00A70112, at = [-39.388, -91.418, -23.512] }, { cell = 0x00A70117, at = [-97.4, -120.3, -43.5] }, { cell = 0x00A70117, at = [-73.4, -112.9, -23.8] }, { cell = 0x00A70117, at = [-73.397, -112.873, -23.827] }]
+population = 6
+regen = 192.0
+spawns = [{ template = 0x4700080E, weight = 6 }]
+profile = 49
+profile_name = "GP_CampDrudgeRobber"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12232", confidence = "medium", sample = { creatures = 6, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-WALKER-SPOTS-2017", ref = "camp 12232", confidence = "medium" }, population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12232", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-12237"
+cell = 0x00A7011B
+at = [-27.2, -199.2, -45.6]
+radius = 0.0
+spots = [{ cell = 0x00A7011B, at = [-46.8, -193.2, -45.6] }, { cell = 0x00A7011B, at = [-43.1, -188.9, -45.6] }, { cell = 0x00A7011C, at = [-35.5, -217.4, -45.6] }, { cell = 0x00A7011C, at = [-17.7, -205.2, -45.6] }, { cell = 0x00A7011C, at = [-15.5, -218.0, -45.6] }, { cell = 0x00A7013A, at = [-36.4, -234.8, -45.6] }, { cell = 0x00A70145, at = [-36.2, -168.6, -26.1] }, { cell = 0x00A70145, at = [-7.8, -166.8, -28.0] }]
+population = 8
+regen = 192.0
+spawns = [{ template = 0x4700080E, weight = 16 }]
+profile = 49
+profile_name = "GP_CampDrudgeRobber"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12237", confidence = "medium", sample = { creatures = 16, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-WALKER-SPOTS-2017", ref = "camp 12237", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
