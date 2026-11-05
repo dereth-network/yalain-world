@@ -1,0 +1,27 @@
+# What a body may move on, for camps whose every place holds it fast; edit an authored pack instead.
+
+[[camp]]
+key = "c-6227"
+cell = 0x97980024
+at = [84.3, 64.4, 192.5]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002376, weight = 1 }]
+profile = 49
+profile_name = "GP_CampDrudgeRobber"
+spots = [{ cell = 0x97980023, at = [89.96, 58.74, 210.10] }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6227", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { spots = { from = "authored", by = "Dereth Network", note = "the nearest place a body moves: no place it was seen lets one", confidence = "low" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-7350"
+cell = 0x97980020
+at = [78.7, 152.4, 206.1]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002346, weight = 1 }]
+profile = 50
+profile_name = "GP_CampDrudgeScowl"
+spots = [{ cell = 0x97980020, at = [69.77, 151.32, 230.89] }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7350", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { spots = { from = "authored", by = "Dereth Network", note = "the nearest place a body moves: no place it was seen lets one", confidence = "low" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
