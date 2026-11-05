@@ -1,0 +1,22 @@
+# A person's gems by level; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000380
+id_name = "Quest_DeadlyDummy60"
+state = 0x6F000C41
+challenge = 60
+retry = 518400
+duration = 90
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:f5865fc3", confidence = "high", sample = { sessions = 4 }, fields = { retry = { from = "authored", by = "Dereth Network", note = "as the other quests of its person", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "as the other quests of its person", confidence = "low" } } }
+
+[[step]]
+key = "practice-gem-80000380"
+quest = 0x80000382
+needs = 0
+trigger = { use = 0x4700326D }
+update = "complete"
+tell = { table = 0x25002A55, string = 0x5AA6E843 }
+gives = [0x47001856]
+least_level = 55
+most_level = 64
+prov = { from = "authored", by = "Dereth Network", note = "the nearest ten to the levels recorded", confidence = "low" }

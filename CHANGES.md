@@ -19,6 +19,7 @@
 - Some creatures' deaths make helpers around their killers. New pack `death-spawns/`.
 - Two camps in a city's yard, recorded only on the servers' last day, are gone. New pack `last-day-crowds/`.
 - The arena quests run by level, each kill leading on. New pack `gauntlets/`.
+- A person's practice gems go by level, one a week. New pack `practice-gems/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 
