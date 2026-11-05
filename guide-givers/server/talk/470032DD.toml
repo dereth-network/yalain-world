@@ -1,0 +1,12 @@
+# A person's under-level line, tied to the quest a player's guide of the time says the person gives; edit an authored pack instead.
+
+[[talk]]
+key = "t-32dd-68f492a3"
+who = 0x470032DD
+line = { table = 0x25002A9C, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x80000309
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A9C, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's under-level line, for the quest a player's guide of the time says the person gives; no recording", confidence = "low" } } }
