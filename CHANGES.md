@@ -23,6 +23,7 @@
 - Indoor camps' spots a creature can't move from are gone or moved. New pack `camp-walker-spots/`.
 - Outdoor camps with no place to stand appear where they were first seen. New pack `camp-ground-spots/`.
 - A jeweler pays by the size of the gem handed in, and the last gem earns her tool. New pack `gem-fees/`.
+- More people stand where players' guides of the time put them, with no recording to say so. New pack `guide-people/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 
