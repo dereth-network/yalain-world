@@ -25,6 +25,7 @@
 - A jeweler pays by the size of the gem handed in, and the last gem earns her tool. New pack `gem-fees/`.
 - More people stand where players' guides of the time put them, with no recording to say so. New pack `guide-people/`.
 - A third mine, a grove and a farm stand where players' guides of the time put them, each for a fee. New pack `guide-mines/`.
+- Those people and others now give the quests players' guides of the time name them for; some can't be finished yet. New pack `guide-givers/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 

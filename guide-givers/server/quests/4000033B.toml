@@ -1,0 +1,18 @@
+# Who gives this quest, from a player's guide of the time; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000033B
+id_name = "QuestCCPScholars"
+state = 0x6F000768
+challenge = 59
+duration = 14400
+retry = 1209600
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:3a3039b5", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000768 }, retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" } } }
+
+[[step]]
+key = "w-given"
+quest = 0x4000033B
+needs = 0
+trigger = { use = 0x47002F55 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; no recording", confidence = "low" }

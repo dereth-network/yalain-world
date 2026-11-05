@@ -1,0 +1,17 @@
+# Who gives this quest, from a player's guide of the time; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000322
+id_name = "QuestDeepRoots"
+state = 0x6F0008A9
+challenge = 30
+duration = 86400
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:b3823803", confidence = "high", sample = { sessions = 19 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" } } }
+
+[[step]]
+key = "w-given"
+quest = 0x80000322
+needs = 0
+trigger = { use = 0x47002FEB }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; no recording", confidence = "low" }

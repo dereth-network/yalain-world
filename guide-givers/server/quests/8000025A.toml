@@ -1,0 +1,18 @@
+# Who gives this quest, from a player's guide of the time; edit an authored pack instead.
+
+[[quest]]
+id = 0x8000025A
+id_name = "QuestMapquest"
+state = 0x6F000B44
+challenge = 50
+retry = 5162400
+duration = 129600
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:af362d75", confidence = "high", sample = { sessions = 50 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" } } }
+
+[[step]]
+key = "w-given"
+quest = 0x8000025A
+needs = 0
+trigger = { use = 0x47003153 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; no recording", confidence = "low" }

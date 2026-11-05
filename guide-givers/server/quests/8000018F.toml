@@ -1,0 +1,17 @@
+# Who gives this quest, from a player's guide of the time; edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x8000018F
+needs = 0
+trigger = { use = 0x470030CA }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; no recording", confidence = "low" }
+
+[[step]]
+key = "w-end"
+quest = 0x8000018F
+needs = 2
+trigger = { use = 0x470030CA }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "who its last journal says takes it back; no recording", confidence = "low" }

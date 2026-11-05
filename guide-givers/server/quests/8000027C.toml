@@ -1,0 +1,19 @@
+# Who gives this quest, from a player's guide of the time; edit an authored pack instead.
+
+[[quest]]
+id = 0x8000027C
+id_name = "QuestSiegeStores"
+state = 0x6F000B66
+challenge = 40
+cancellable = true
+retry = 518400
+duration = 36000
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:78b5b140", confidence = "high", sample = { sessions = 76 }, fields = { retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" } } }
+
+[[step]]
+key = "w-given"
+quest = 0x8000027C
+needs = 0
+trigger = { use = 0x4700315E }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; no recording", confidence = "low" }

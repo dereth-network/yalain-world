@@ -1,0 +1,16 @@
+# Who gives this quest, from a player's guide of the time; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002D8
+id_name = "Quest_KQ1_FleshfeastFrenzy"
+state = 0x6F000CC4
+retry = 518400
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F000CC4, confidence = "low", fields = { retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" } } }
+
+[[step]]
+key = "w-given"
+quest = 0x800002D8
+needs = 0
+trigger = { use = 0x470032D5 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; no recording", confidence = "low" }

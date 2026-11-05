@@ -1,0 +1,27 @@
+# Who gives this quest, from a player's guide of the time; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000390
+id_name = "Quest_DorasDeadlyDuffle"
+state = 0x6F000AAC
+challenge = 65
+cancellable = true
+retry = 518400
+duration = 604800
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:5d36a8e9", confidence = "medium", sample = { sessions = 2 }, fields = { retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" } } }
+
+[[step]]
+key = "w-given"
+quest = 0x80000390
+needs = 0
+trigger = { use = 0x470030F6 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; no recording", confidence = "low" }
+
+[[step]]
+key = "w-end"
+quest = 0x80000390
+needs = 3
+trigger = { use = 0x470030F6 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "who its last journal says takes it back; no recording", confidence = "low" }

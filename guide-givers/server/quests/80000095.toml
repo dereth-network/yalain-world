@@ -1,0 +1,17 @@
+# Who gives this quest, from a player's guide of the time; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000095
+id_name = "QuestStubbington"
+state = 0x6F000D12
+challenge = 40
+duration = 7200
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:ce122ee7", confidence = "high", sample = { sessions = 56 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" } } }
+
+[[step]]
+key = "w-given"
+quest = 0x80000095
+needs = 0
+trigger = { use = 0x47003359 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; no recording", confidence = "low" }
