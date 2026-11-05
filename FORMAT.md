@@ -249,7 +249,7 @@ time in the world after the last it gave (it says its `too-soon` line).
 
 **`[[step]]`**: what moves a quest on. `key`, `quest`, `needs` (the phase it must be at; 0 for not
 under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`bestow`, `advance`,
-`complete`, `fail`: a step that fails its quest needs it under way), `phase` (for `advance`), `xp`, `gives` (templates), `counts` (how many of each item
+`complete`, `fail`: a step that fails its quest needs it under way; `none`: it moves no quest, and only says, gives and sends), `phase` (for `advance`), `xp`, `xp_share` (a share of what the player's level takes to reach the next, whole), `least_level`, `most_level` (the levels it runs for),  `gives` (templates), `counts` (how many of each item
 given, in order; 1 when left out), `requires`, `takes`, `to`, `effects` (the effects it puts on the
 player, by their saved states: a blessing, a recipe learned or forgotten), `text` (a text shown
 after the effects, `{ table, string }`), `fellows` (true: the update is made for each of the

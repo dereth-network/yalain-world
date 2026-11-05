@@ -18,6 +18,7 @@
 - Quests with no setup pay what was recorded, or a guide's figure. New pack `quest-pay/`.
 - Some creatures' deaths make helpers around their killers. New pack `death-spawns/`.
 - Two camps in a city's yard, recorded only on the servers' last day, are gone. New pack `last-day-crowds/`.
+- The arena quests run by level, each kill leading on. New pack `gauntlets/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 

@@ -3,7 +3,7 @@ format_version = 1
 key = "yalain-world"
 game = "ac2"
 era = "eor"
-packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines", "postings", "quest-refusals", "posting-pay", "shard-quests", "quest-points", "recorded-givings", "under-level-lines", "phase-reminders", "antechamber-code", "quest-reminders", "quest-points-more", "subquest-hand-ins", "hand-in-counts", "search-portals", "give-quests", "mine-tolls", "gives-kept", "give-lines", "ulkas-mines", "journal-hand-ins", "ryvenna-gems", "quest-waits", "quest-timed-phases", "give-broadcasts", "mine-ways-down", "bestowal-chains", "sclavus-cabals", "skyport-maint", "mirra-rouge", "under-level-more", "camp-counts", "camp-first-places", "camp-outdoor-spots", "quest-pay", "death-spawns", "last-day-crowds"]
+packs = ["seed-2017", "seed-2017-talk", "fix-start", "start-crafting", "story-scenes", "craft-butchery", "market-doors", "fix-camps-summons", "creature-weapons", "fix-camps-turrets", "door-locks", "chest-loot", "glyph-vaults", "quest-catalog", "hoard-veins", "creature-emotes", "hidden-quests", "patrol-routes", "quest-durations", "hoard-keys", "people-routes", "portal-gates", "hoard-entrances", "object-lines", "quest-uses", "gives", "quest-hand-ins", "maps-and-mines", "store-listings", "portal-recall", "conflict-areas", "lying-items", "spawned-chests", "portal-trips", "kill-quests", "fix-portal-landings", "fill-quest-givers", "kill-quest-givers", "kill-quest-returns", "required-quests", "person-trips", "quest-lines", "postings", "quest-refusals", "posting-pay", "shard-quests", "quest-points", "recorded-givings", "under-level-lines", "phase-reminders", "antechamber-code", "quest-reminders", "quest-points-more", "subquest-hand-ins", "hand-in-counts", "search-portals", "give-quests", "mine-tolls", "gives-kept", "give-lines", "ulkas-mines", "journal-hand-ins", "ryvenna-gems", "quest-waits", "quest-timed-phases", "give-broadcasts", "mine-ways-down", "bestowal-chains", "sclavus-cabals", "skyport-maint", "mirra-rouge", "under-level-more", "camp-counts", "camp-first-places", "camp-outdoor-spots", "quest-pay", "death-spawns", "last-day-crowds", "gauntlets"]
 
 [[override]]
 pack = "fix-start"
@@ -534,3 +534,18 @@ items = ["quest 0x400001AF", "quest 0x80000043"]
 pack = "quest-pay"
 over = "seed-2017"
 items = ["quest 0x4000007A", "quest 0x40000115", "quest 0x4000011D", "quest 0x40000125", "quest 0x4000015B", "quest 0x40000175", "quest 0x40000179", "quest 0x4000017A", "quest 0x400001AD", "quest 0x400001AE", "quest 0x400001AF", "quest 0x400001B0", "quest 0x400001B1", "quest 0x400001B5", "quest 0x400001B8", "quest 0x400001B9", "quest 0x400001F2", "quest 0x400001F5", "quest 0x400001F6", "quest 0x400001F7", "quest 0x400001F8", "quest 0x4000027C", "quest 0x4000027E", "quest 0x4000027F", "quest 0x4000028C", "quest 0x40000313", "quest 0x4000032A", "quest 0x4000032B", "quest 0x4000032D", "quest 0x4000032E", "quest 0x4000032F", "quest 0x40000330", "quest 0x40000331", "quest 0x40000332", "quest 0x40000335", "quest 0x40000336", "quest 0x4000037A", "quest 0x80000043", "quest 0x800000B2", "quest 0x800000B3", "quest 0x800000B4", "quest 0x800000B5", "quest 0x800000B6", "quest 0x800000B7", "quest 0x800000B8", "quest 0x800000B9", "quest 0x800000BE", "quest 0x800000BF", "quest 0x800000C1", "quest 0x800000C2", "quest 0x800000C3", "quest 0x800000C4", "quest 0x800000C6", "quest 0x800000C7", "quest 0x800000C8", "quest 0x800000C9", "quest 0x800000CA", "quest 0x800002D2", "quest 0x800002DD", "quest 0x800002DE", "quest 0x800002DF", "quest 0x800002E4", "quest 0x80000319", "quest 0x8000031C", "quest 0x8000031E", "quest 0x80000321", "quest 0x80000324", "quest 0x80000342", "quest 0x80000343", "quest 0x80000344", "quest 0x80000346", "quest 0x80000348", "quest 0x80000353", "quest 0x80000354", "quest 0x80000359", "quest 0x8000035E", "quest 0x80000360", "quest 0x80000363", "quest 0x80000364", "quest 0x80000366", "quest 0x80000367", "quest 0x80000368", "quest 0x80000374", "quest 0x80000376", "quest 0x80000377", "quest 0x80000379", "quest 0x8000037A", "quest 0x8000037B", "quest 0x8000037D", "quest 0x8000037E", "quest 0x80000385", "quest 0x8000038D", "quest 0x8000038F"]
+
+[[override]]
+pack = "gauntlets"
+over = "quest-durations"
+items = ["quest 0x8000004F", "quest 0x80000050", "quest 0x80000051", "quest 0x80000052", "quest 0x80000053", "quest 0x80000054"]
+
+[[override]]
+pack = "gauntlets"
+over = "quest-waits"
+items = ["quest 0x8000004F", "quest 0x80000050", "quest 0x80000051", "quest 0x80000052", "quest 0x80000053", "quest 0x80000054"]
+
+[[override]]
+pack = "gauntlets"
+over = "seed-2017"
+items = ["quest 0x8000004F", "quest 0x80000050", "quest 0x80000051", "quest 0x80000052", "quest 0x80000053", "quest 0x80000054"]

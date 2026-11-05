@@ -1,0 +1,199 @@
+# The arena quests by level; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000052
+id_name = "QuestGauntlet35to39"
+state = 0x6F000806
+challenge = -999
+cancellable = false
+duration = 7200.0
+retry = 79200
+fails_on_death = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:dc7d3370", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:dac0de9e", confidence = "medium", sample = { sessions = 3 } }, retry = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-WAITS-2017", ref = "c:6b0fa281", confidence = "medium", sample = { sessions = 8 } }, fails_on_death = { from = "authored", by = "Dereth Network", note = "as the quest's description says", confidence = "low" } } }
+
+[[step]]
+key = "gauntlet-80000052-give"
+quest = 0x80000052
+needs = 0
+trigger = { use = 0x47002FD2 }
+update = "bestow"
+tell = { table = 0x25002925, string = 0x2A6B091E }
+least_level = 35
+most_level = 39
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-enter"
+quest = 0x80000052
+needs = 1
+trigger = { use = 0x47002FD4 }
+update = "none"
+to = "gauntlet-049b0131"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-kill-2"
+quest = 0x80000052
+needs = 1
+trigger = { kill = 0x4700244F }
+update = "advance"
+phase = 2
+to = "gauntlet-049a0130"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-kill-3"
+quest = 0x80000052
+needs = 2
+trigger = { kill = 0x4700247F }
+update = "advance"
+phase = 3
+to = "gauntlet-049e0167"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-kill-4"
+quest = 0x80000052
+needs = 3
+trigger = { kill = 0x4700246E }
+update = "advance"
+phase = 4
+to = "gauntlet-049d0161"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-kill-5"
+quest = 0x80000052
+needs = 4
+trigger = { kill = 0x47002450 }
+update = "advance"
+phase = 5
+to = "gauntlet-049c0161"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-kill-6"
+quest = 0x80000052
+needs = 5
+trigger = { kill = 0x4700247C }
+update = "advance"
+phase = 6
+to = "gauntlet-049b0160"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-kill-7"
+quest = 0x80000052
+needs = 6
+trigger = { kill = 0x4700247B }
+update = "advance"
+phase = 7
+to = "gauntlet-049a0160"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-kill-8"
+quest = 0x80000052
+needs = 7
+trigger = { kill = 0x47002482 }
+update = "advance"
+phase = 8
+to = "gauntlet-049e0173"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-kill-9"
+quest = 0x80000052
+needs = 8
+trigger = { kill = 0x47002479 }
+update = "advance"
+phase = 9
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-flee-1"
+quest = 0x80000052
+needs = 1
+trigger = { use = 0x47002FD2 }
+update = "fail"
+tell = { table = 0x25002925, string = 0xA96499A4 }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-flee-2"
+quest = 0x80000052
+needs = 2
+trigger = { use = 0x47002FD2 }
+update = "fail"
+tell = { table = 0x25002925, string = 0x2968FD1E }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-flee-3"
+quest = 0x80000052
+needs = 3
+trigger = { use = 0x47002FD2 }
+update = "fail"
+tell = { table = 0x25002925, string = 0x2968FD1E }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GAUNTLETS-2017", ref = "c:d8f3cdd6", confidence = "medium", sample = { sessions = 22 } }
+
+[[step]]
+key = "gauntlet-80000052-flee-4"
+quest = 0x80000052
+needs = 4
+trigger = { use = 0x47002FD2 }
+update = "fail"
+tell = { table = 0x25002925, string = 0x2968FD1E }
+xp_share = 0.105
+prov = { from = "authored", by = "Dereth Network", note = "the band's rate past what the recordings reach", confidence = "low" }
+
+[[step]]
+key = "gauntlet-80000052-flee-5"
+quest = 0x80000052
+needs = 5
+trigger = { use = 0x47002FD2 }
+update = "fail"
+tell = { table = 0x25002925, string = 0x2968FD1E }
+xp_share = 0.12
+prov = { from = "authored", by = "Dereth Network", note = "the band's rate past what the recordings reach", confidence = "low" }
+
+[[step]]
+key = "gauntlet-80000052-flee-6"
+quest = 0x80000052
+needs = 6
+trigger = { use = 0x47002FD2 }
+update = "fail"
+tell = { table = 0x25002925, string = 0x2968FD1E }
+xp_share = 0.135
+prov = { from = "authored", by = "Dereth Network", note = "the band's rate past what the recordings reach", confidence = "low" }
+
+[[step]]
+key = "gauntlet-80000052-flee-7"
+quest = 0x80000052
+needs = 7
+trigger = { use = 0x47002FD2 }
+update = "fail"
+tell = { table = 0x25002925, string = 0x2968FD1E }
+xp_share = 0.15
+prov = { from = "authored", by = "Dereth Network", note = "the band's rate past what the recordings reach", confidence = "low" }
+
+[[step]]
+key = "gauntlet-80000052-flee-8"
+quest = 0x80000052
+needs = 8
+trigger = { use = 0x47002FD2 }
+update = "fail"
+tell = { table = 0x25002925, string = 0x2968FD1E }
+xp_share = 0.165
+prov = { from = "authored", by = "Dereth Network", note = "the band's rate past what the recordings reach", confidence = "low" }
+
+[[step]]
+key = "gauntlet-80000052-won"
+quest = 0x80000052
+needs = 9
+trigger = { use = 0x47002FD2 }
+update = "complete"
+tell = { table = 0x25002925, string = 0xB8CD58F5 }
+gives = [0x470014A9]
+xp_share = 0.18
+prov = { from = "authored", by = "Dereth Network", note = "the band's rate past what the recordings reach", confidence = "low" }
