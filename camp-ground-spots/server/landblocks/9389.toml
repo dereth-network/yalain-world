@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-7442"
+cell = 0x93890022
+at = [99.6, 35.4, 181.2]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002326, weight = 1 }]
+profile = 44
+profile_name = "GP_CampDrudgeMystic"
+spots = [{ cell = 0x9389001D, at = [70.578, 82.939, 182.51] }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7442", confidence = "low", sample = { creatures = 1, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-GROUND-SPOTS-2017", ref = "camp 7442", confidence = "low" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
