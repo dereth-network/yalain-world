@@ -40,6 +40,7 @@
 - Knorr's named creatures stand where guides of the time put them. New pack `knorr-bounties/`.
 - More of Knorr's hunts and bounties can be taken and finished. New pack `knorr-hunts/`.
 - Four of Knorr's five mushroom hunts can be done. New pack `knorr-mushrooms/`.
+- More of Knorr's creatures, where a recording of 2005 shows them. New pack `knorr-seen-2005/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 

@@ -1,0 +1,11 @@
+# Creatures a recording of 2005 shows on Knorr where nothing later says; edit an authored pack instead.
+
+[[camp]]
+key = "k5-25c8"
+cell = 0xB13C0020
+at = [68.44, 143.86, 83.79]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470025C8, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KNORR-2005", ref = "c:fa100be6", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
