@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Quests whose steps teach a recipe teach it, as the recordings show. New pack `quest-recipes/`.
+- A quest's last item lies where the recordings show it. New pack `quest-spots/`.
 
 ## v0.30.0
 

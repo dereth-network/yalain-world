@@ -1,0 +1,12 @@
+# Items a quest needs, lying where the January 2017 recordings show them; edit an authored pack instead.
+
+[[camp]]
+key = "spot-1337"
+cell = 0x05F9015A
+at = [146.66, 226.54, -22.54]
+radius = 0.0
+spots = [{ cell = 0x05F9015A, at = [146.66, 226.54, -22.54] }]
+population = 1
+regen = 20.0
+spawns = [{ template = 0x47001337, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-SPOTS-2017", ref = "c:efd301e1", confidence = "low", sample = { sessions = 1, views = 1 }, fields = { regen = { from = "derived", rule = "item-spot-regen" } } }
