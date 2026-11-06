@@ -1,0 +1,11 @@
+# Kinds of creature Knorr's hunts ask for, inside the areas players' maps mark; edit an authored pack instead.
+
+[[camp]]
+key = "m-2bfc-04"
+cell = 0xBF2B001A
+at = [70.7, 25.25, 73.6]
+radius = 20.0
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002BFC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "inside the area a player's map of 2013 marks for its kind, one spot of it, read off the picture to about 40 m; no recording; its height is the land's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
