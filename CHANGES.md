@@ -32,6 +32,7 @@
 - Portals refuse a player below the least level recordings show on them; lifestones and workshop objects show theirs. New pack `portal-levels/`.
 - Tyrants and two kinds of Darkenfowl leave the trophies and eggs players counted or were told of; no recording opened one, and only two of the Tyrants have camps yet. New pack `tyrant-trophies/`.
 - More camps that were really players' pets are gone.
+- Knorr can be reached by its portal, and its hub's gateways lead somewhere. New pack `knorr-gateway/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 
