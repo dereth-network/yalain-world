@@ -1,0 +1,8 @@
+# What a pet's skill fires at what it takes on, by the object its effect names: the same object a summoning skill's nest makes.
+
+[[pet]]
+effect = 0x70001FAE
+template = 0x47000856
+flags = 0
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }

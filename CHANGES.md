@@ -44,6 +44,7 @@
 - Five portals keep to the kingdom their pages name. New pack `portal-kingdoms/`.
 - Tyrants and two kinds of Darkenfowl leave the trophies and eggs players counted or were told of; no recording opened one, and only two of the Tyrants have camps yet. New pack `tyrant-trophies/`.
 - Every summoning skill and contract says what it makes and how many a skill allows, and pets have the health they were seen with. New pack `pet-kinds/`.
+- A pet's skill that makes another pet has its row. New pack `pet-hive-wasps/`.
 - More camps that were really players' pets are gone.
 - Knorr can be reached by its portal, and its hub's gateways lead somewhere. New pack `knorr-gateway/`.
 - Three of Knorr's towns have more of their people, and a fort its lifestone. New pack `knorr-people/`.
