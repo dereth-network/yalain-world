@@ -1,0 +1,34 @@
+# What recorded steps teach, by the recipes characters went on to make; edit an authored pack instead.
+
+[[step]]
+key = "h-2"
+quest = 0x400000D3
+needs = 1
+trigger = { take = 0x47000B23 }
+update = "advance"
+phase = 2
+effects = [0x6F001A9E]
+text = { table = 0x250010AF, string = 0x912EFF1D }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:ddae7b97", confidence = "low", sample = { sessions = 1 }, fields = { effects = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-RECIPES-2017", ref = "c:61b6c717", confidence = "medium", sample = { sessions = 2 } }, text = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-RECIPES-2017", ref = "c:61b6c717", confidence = "medium", sample = { sessions = 2 } } } }
+
+[[step]]
+key = "h-2-b22"
+quest = 0x400000D3
+needs = 1
+trigger = { take = 0x47000B22 }
+update = "advance"
+phase = 2
+effects = [0x6F001A9E]
+text = { table = 0x250010AF, string = 0x912EFF1D }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-RECIPES-2017", ref = "c:61b6c717", confidence = "medium", sample = { sessions = 2 }, fields = { trigger = { from = "authored", note = "the template's own acquiring effect moves the quest as this one's does; recorded for a sibling" } } }
+
+[[step]]
+key = "h-2-b24"
+quest = 0x400000D3
+needs = 1
+trigger = { take = 0x47000B24 }
+update = "advance"
+phase = 2
+effects = [0x6F001A9E]
+text = { table = 0x250010AF, string = 0x912EFF1D }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-RECIPES-2017", ref = "c:61b6c717", confidence = "medium", sample = { sessions = 2 }, fields = { trigger = { from = "authored", note = "the template's own acquiring effect moves the quest as this one's does; recorded for a sibling" } } }

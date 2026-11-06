@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- Quests whose steps teach a recipe teach it, as the recordings show. New pack `quest-recipes/`.
+
 ## v0.30.0
 
 - A mine's hidden quests run: a guard's death gives them to whoever paid the fee, each find counts, and the last ends the fee. New pack `ulkas-mines/`; a step's `trigger` may be `given`.
