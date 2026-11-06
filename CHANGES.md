@@ -35,6 +35,7 @@
 - Knorr can be reached by its portal, and its hub's gateways lead somewhere. New pack `knorr-gateway/`.
 - Three of Knorr's towns have more of their people, and a fort its lifestone. New pack `knorr-people/`.
 - Knorr's named creatures stand where guides of the time put them. New pack `knorr-bounties/`.
+- More of Knorr's hunts and bounties can be taken and finished. New pack `knorr-hunts/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 

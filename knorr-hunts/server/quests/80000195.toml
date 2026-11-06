@@ -1,0 +1,17 @@
+# Who gives this quest and takes it back, from a player's guide of the time; edit an authored pack instead.
+
+[[step]]
+key = "k-given"
+quest = 0x80000195
+needs = 0
+trigger = { use = 0x470030D6 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of 2005 to 2013; no recording", confidence = "low" }
+
+[[step]]
+key = "k-end"
+quest = 0x80000195
+needs = 2
+trigger = { use = 0x470030D6 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "who takes it back, from a player's guide of 2005 to 2013 and the quest's own journal; no recording", confidence = "low" }
