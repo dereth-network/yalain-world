@@ -36,6 +36,7 @@
 - Three of Knorr's towns have more of their people, and a fort its lifestone. New pack `knorr-people/`.
 - Knorr's named creatures stand where guides of the time put them. New pack `knorr-bounties/`.
 - More of Knorr's hunts and bounties can be taken and finished. New pack `knorr-hunts/`.
+- Four of Knorr's five mushroom hunts can be done. New pack `knorr-mushrooms/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 

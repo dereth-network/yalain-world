@@ -1,0 +1,11 @@
+# A mushroom handed to its vendor, from a player's guide of the time; edit an authored pack instead.
+
+[[step]]
+key = "k-give"
+quest = 0x80000271
+needs = 1
+trigger = { give = 0x470008B5, to = 0x47003159 }
+update = "complete"
+takes = [0x470008B5]
+tell = { table = 0x250029ED, string = 0xE327E989 }
+prov = { from = "authored", by = "Dereth Network", note = "who takes it, from a player's guide of 2013; no recording", confidence = "low" }

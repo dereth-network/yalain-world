@@ -1,0 +1,28 @@
+# A vendor's mushroom hunt, from a player's guide of the time and the vendor's own lines; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000277
+id_name = "QuestGardensMH"
+state = 0x6F000B61
+prov = { from = "derived", rule = "quest-definition", record = 0x6F000B61, confidence = "medium", fields = { retry = { from = "authored", by = "Dereth Network", note = "as a player's guide of 2005 to 2013 gives it; no setup says; the vendor's own line says a month", confidence = "low" } } }
+retry = 2678400
+
+[[step]]
+key = "k-given"
+quest = 0x80000277
+needs = 0
+trigger = { use = 0x47003157 }
+update = "bestow"
+tell = { table = 0x250029EB, string = 0x3CB31FB3 }
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of 2013; no recording", confidence = "low" }
+
+[[step]]
+key = "k-end"
+quest = 0x80000277
+needs = 2
+trigger = { use = 0x47003157 }
+update = "complete"
+tell = { table = 0x250029EB, string = 0x1E63D936 }
+gives = [0x470008C2]
+effects = [0x6F000E43]
+prov = { from = "authored", by = "Dereth Network", note = "who takes it back, from a player's guide of 2013 and the quest's own journal; no recording", confidence = "low" }

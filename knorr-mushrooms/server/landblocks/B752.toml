@@ -1,0 +1,12 @@
+# Knorr's mushrooms where a player's guide of the time puts them; edit an authored pack instead.
+
+[[camp]]
+key = "k-08cc"
+cell = 0xB7520024
+at = [85.36, 66.4, 77.43]
+radius = 0.0
+spots = [{ cell = 0xB7520024, at = [85.36, 66.4, 77.43] }]
+population = 1
+regen = 20.0
+spawns = [{ template = 0x470008CC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "where a player's guide of 2013 puts it, to about 20 m; no recording; its height is the land's", confidence = "low", fields = { regen = { from = "derived", rule = "item-spot-regen" } } }

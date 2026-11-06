@@ -1,0 +1,21 @@
+# A vendor's mushroom hunt, from a player's guide of the time and the vendor's own lines; edit an authored pack instead.
+
+[[step]]
+key = "k-given"
+quest = 0x80000279
+needs = 0
+trigger = { use = 0x47003155 }
+update = "bestow"
+tell = { table = 0x250029E9, string = 0x3CB31FB3 }
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of 2013; no recording", confidence = "low" }
+
+[[step]]
+key = "k-end"
+quest = 0x80000279
+needs = 2
+trigger = { use = 0x47003155 }
+update = "complete"
+tell = { table = 0x250029E9, string = 0x1E63D936 }
+gives = [0x470008CE]
+effects = [0x6F000E47]
+prov = { from = "authored", by = "Dereth Network", note = "who takes it back, from a player's guide of 2013 and the quest's own journal; no recording", confidence = "low" }
