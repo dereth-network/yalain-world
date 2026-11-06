@@ -137,6 +137,33 @@
 - Nobody who gives nothing here tells a player it is too weak. New pack `under-level-more/`.
 - 494 camps keep as many creatures as the recordings show alive together, 620 more in all. New pack `camp-counts/`.
 - Four camps of a jumping creature appear on the floor where the recordings first show them, not in midair. New pack `camp-first-places/`.
+- 178 outdoor camps appear at the fixed places the recordings show, not anywhere in a circle. New pack `camp-outdoor-spots/`.
+- Quests with no setup pay what was recorded, or a guide's figure. New pack `quest-pay/`.
+- Some creatures' deaths make helpers around their killers. New pack `death-spawns/`.
+- Two camps in a city's yard, recorded only on the servers' last day, are gone. New pack `last-day-crowds/`.
+- The arena quests run by level, each kill leading on. New pack `gauntlets/`.
+- A person's practice gems go by level, one a week. New pack `practice-gems/`.
+- Indoor camps' spots a creature can't move from are gone or moved. New pack `camp-walker-spots/`.
+- Outdoor camps with no place to stand appear where they were first seen. New pack `camp-ground-spots/`.
+- Camps whose every place held a creature fast appear at the nearest place it can move. New pack `camp-slope-spots/`.
+- A jeweler pays by the size of the gem handed in, and the last gem earns her tool. New pack `gem-fees/`.
+- More people stand where players' guides of the time put them, with no recording to say so. New pack `guide-people/`.
+- A third mine, a grove and a farm stand where players' guides of the time put them, each for a fee. New pack `guide-mines/`.
+- Those people and others now give the quests players' guides of the time name them for; some can't be finished yet. New pack `guide-givers/`.
+- Recorded chests draw treasure of their own level, the arenas have their other rooms, and practice gems make their dummies. Packs `chest-loot/`, `gauntlets/`, `practice-gems/`.
+- A practice gem's dummy goes after its ninety seconds. Pack `practice-gems/`.
+- Portals refuse a player below the least level recordings show on them; lifestones and workshop objects show theirs. New pack `portal-levels/`.
+- Six portals ask for the quest their pages name; each quest can be finished. New pack `page-quests/`.
+- Five portals keep to the kingdom their pages name. New pack `portal-kingdoms/`.
+- Nine places keep to heroes alone, as their pages say. New pack `portal-heroes/`.
+- Tyrants and two kinds of Darkenfowl leave the trophies and eggs players counted or were told of; no recording opened one, and only two of the Tyrants have camps yet. New pack `tyrant-trophies/`.
+- Every summoning skill and contract says what it makes and how many a skill allows, and pets have the health they were seen with. New pack `pet-kinds/`.
+- More camps that were really players' pets are gone.
+- Knorr can be reached by its portal, and its hub's gateways lead somewhere. New pack `knorr-gateway/`.
+- Three of Knorr's towns have more of their people, and a fort its lifestone. New pack `knorr-people/`.
+- Knorr's named creatures stand where guides of the time put them. New pack `knorr-bounties/`.
+- More of Knorr's hunts and bounties can be taken and finished. New pack `knorr-hunts/`.
+- Four of Knorr's five mushroom hunts can be done. New pack `knorr-mushrooms/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 
