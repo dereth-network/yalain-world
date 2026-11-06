@@ -1,0 +1,11 @@
+# Knorr's named creatures where a player's guide or their quest's own journal puts them; edit an authored pack instead.
+
+[[camp]]
+key = "k-2306"
+cell = 0xB6470040
+at = [143.34, 153.6, 81.02]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002306, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "where a player's guide of 2013 puts it, to about 20 m; no recording; its height is the land's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

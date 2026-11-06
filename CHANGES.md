@@ -34,6 +34,7 @@
 - More camps that were really players' pets are gone.
 - Knorr can be reached by its portal, and its hub's gateways lead somewhere. New pack `knorr-gateway/`.
 - Three of Knorr's towns have more of their people, and a fort its lifestone. New pack `knorr-people/`.
+- Knorr's named creatures stand where guides of the time put them. New pack `knorr-bounties/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 
