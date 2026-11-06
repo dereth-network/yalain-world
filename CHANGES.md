@@ -41,6 +41,7 @@
 - More of Knorr's hunts and bounties can be taken and finished. New pack `knorr-hunts/`.
 - Four of Knorr's five mushroom hunts can be done. New pack `knorr-mushrooms/`.
 - More of Knorr's creatures, where a recording of 2005 shows them. New pack `knorr-seen-2005/`.
+- The floating city's upper level and hub can be reached by their doors, and two of the hub's far gateways lead back. New pack `knorr-doors/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 
