@@ -1,0 +1,773 @@
+# What the pet effects and contracts make, from the install's effect descriptions and the January 2017 recordings; edit an authored pack instead.
+
+[[pet]]
+effect = 0x70001EF2
+template = 0x4700082E
+flags = 32
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x70001EF7
+template = 0x47000831
+flags = 0
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70001EF4
+template = 0x4700082F
+flags = 32
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x70001EF5
+template = 0x47000830
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70000736
+template = 0x47000832
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000073C
+template = 0x47000834
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000073D
+template = 0x47000835
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000073E
+template = 0x47000833
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70000747
+template = 0x47000836
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70000748
+template = 0x47000837
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70000769
+template = 0x47000838
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000076A
+template = 0x47000838
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000076B
+template = 0x47000838
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000076C
+template = 0x47000838
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000076D
+template = 0x47000838
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000076E
+template = 0x47000839
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70000783
+template = 0x4700083A
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70000784
+template = 0x4700083B
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70001F1A
+template = 0x4700083C
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 12, health = 236 }, { level = 14, health = 273 }, { level = 40, health = 918 }, { level = 43, health = 1038 }, { level = 54, health = 1553 }, { level = 68, health = 2135 }, { level = 89, health = 3189 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700083C", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x70001F20
+template = 0x4700083F
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70001F22
+template = 0x47000840
+flags = 1096
+health = [{ level = 1, health = 40 }, { level = 73, health = 2928 }, { level = 89, health = 3986 }]
+per_level_squared = 0.04
+variance = 0.35
+lands = 0.8
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000840", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000840", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x70001F1D
+template = 0x4700083D
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 12, health = 236 }, { level = 14, health = 273 }, { level = 40, health = 918 }, { level = 43, health = 1038 }, { level = 54, health = 1553 }, { level = 68, health = 2135 }, { level = 89, health = 3189 }]
+per_level_squared = 0.08
+variance = 0.35
+lands = 0.8
+swing = 4
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700083D", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 4700083D", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x70001F1F
+template = 0x4700083E
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 12, health = 236 }, { level = 14, health = 273 }, { level = 40, health = 918 }, { level = 43, health = 1038 }, { level = 54, health = 1553 }, { level = 68, health = 2135 }, { level = 89, health = 3189 }]
+taunts = true
+corpse_after = 1.1
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700083E", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x70001F42
+template = 0x47000841
+flags = 32
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x70001F56
+template = 0x47000842
+flags = 32
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x70001F57
+template = 0x47000844
+flags = 32
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x70000805
+template = 0x47000846
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 21, health = 427 }, { level = 29, health = 663 }, { level = 45, health = 1393 }, { level = 47, health = 1495 }, { level = 50, health = 1663 }, { level = 52, health = 1762 }, { level = 53, health = 1813 }, { level = 54, health = 1863 }]
+per_level_squared = 0.075
+variance = 0.45
+lands = 0.78
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000846", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000846", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x70000829
+template = 0x47000847
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+tends = { whom = "owner", effect = 0x700006D8, every = 30.0, below = 0.75 }
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" }, tends = { from = "authored", note = "its template names this heal; how often and when is our choice" } } }
+
+[[pet]]
+effect = 0x70001F5F
+template = 0x4700084F
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000082A
+template = 0x47000848
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000082B
+template = 0x47000849
+flags = 1184
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x7000082C
+template = 0x4700084A
+flags = 1096
+health = [{ level = 1, health = 26 }, { level = 56, health = 1451 }, { level = 57, health = 1503 }, { level = 59, health = 1557 }, { level = 61, health = 1672 }, { level = 72, health = 2148 }]
+per_level_squared = 0.08
+variance = 0.35
+lands = 0.84
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700084A", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 4700084A", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x7000082D
+template = 0x4700084B
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 55, health = 1082 }, { level = 57, health = 1203 }, { level = 59, health = 1246 }, { level = 60, health = 1291 }, { level = 72, health = 1719 }, { level = 82, health = 2052 }]
+per_level_squared = 0.08
+variance = 0.35
+lands = 0.84
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700084B", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 4700084B", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x7000082E
+template = 0x4700084C
+flags = 1096
+health = [{ level = 1, health = 22 }, { level = 27, health = 582 }]
+per_level_squared = 0.08
+variance = 0.35
+lands = 0.84
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700084C", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 4700084C", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x7000082F
+template = 0x4700084D
+flags = 1184
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x70000830
+template = 0x4700084E
+flags = 1184
+stays = true
+health = [{ level = 1, health = 7 }, { level = 65, health = 459 }, { level = 86, health = 776 }]
+per_level_squared = 0.035
+variance = 0.5
+lands = 0.73
+area = 10.0
+no_corpse = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700084E", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 4700084E", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x70001F87
+template = 0x4700082B
+flags = 1096
+health = [{ level = 1, health = 241 }, { level = 24, health = 5920 }, { level = 27, health = 6648 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700082B", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x700008B4
+template = 0x47000850
+flags = 32
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x700008B5
+template = 0x47000841
+flags = 32
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x70001F8A
+template = 0x47000855
+flags = 32
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x700008B7
+template = 0x47000851
+flags = 3128
+stays = true
+health = [{ level = 1, health = 118 }, { level = 58, health = 6876 }]
+per_level_squared = 0.07
+variance = 0.5
+lands = 0.75
+outdoors_only = true
+corpse_after = 2.8
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000851", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000851", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x700008BC
+template = 0x47000852
+flags = 32
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x700008BD
+template = 0x47000853
+flags = 3128
+stays = true
+health = [{ level = 1, health = 89 }, { level = 58, health = 5157 }]
+per_level_squared = 0.05
+variance = 0.5
+lands = 0.75
+outdoors_only = true
+corpse_after = 2.8
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000853", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000853", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x700008BF
+template = 0x47000854
+flags = 32
+stays = true
+health = [{ level = 1, health = 29 }, { level = 84, health = 2454 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000854", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x70001FD9
+template = 0x47000861
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70001FD4
+template = 0x47000857
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 93, health = 1886 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000857", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x70001FD5
+template = 0x47000858
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 93, health = 1886 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000858", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x70001FD6
+template = 0x47000859
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 93, health = 1886 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000859", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x700008FF
+template = 0x4700085A
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70000900
+template = 0x4700085B
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70000901
+template = 0x4700085C
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70000902
+template = 0x4700085D
+flags = 1096
+health = [{ level = 1, health = 45 }, { level = 62, health = 2829 }]
+per_level_squared = 0.09
+variance = 0.35
+lands = 0.68
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700085D", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 4700085D", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x70000903
+template = 0x4700085E
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x70000904
+template = 0x4700085F
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+tends = { whom = "owner", effect = 0x700006D8, every = 30.0, below = 0.75 }
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" }, tends = { from = "authored", note = "its template names this heal; how often and when is our choice" } } }
+
+[[pet]]
+effect = 0x70000905
+template = 0x47000860
+flags = 1096
+health = [{ level = 1, health = 22 }, { level = 93, health = 2074 }, { level = 94, health = 2119 }, { level = 102, health = 2488 }]
+per_level_squared = 0.028
+variance = 0.35
+lands = 0.67
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000860", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000860", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x7000092A
+template = 0x47000862
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000092B
+template = 0x4700082A
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000092C
+template = 0x47000863
+flags = 1096
+health = [{ level = 1, health = 23 }, { level = 58, health = 1321 }, { level = 60, health = 1377 }, { level = 63, health = 1495 }, { level = 76, health = 2142 }, { level = 136, health = 4638 }, { level = 145, health = 5013 }]
+per_level_squared = 0.047
+variance = 0.35
+lands = 0.77
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000863", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000863", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x70002008
+template = 0x47000864
+flags = 32
+stays = true
+count = 4
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x7000095F
+template = 0x47000856
+flags = 0
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000200D
+template = 0x47000868
+flags = 32
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x7000200E
+template = 0x47000869
+flags = 0
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" } } }
+
+[[pet]]
+effect = 0x7000096D
+template = 0x47000866
+flags = 1096
+health = [{ level = 1, health = 30 }, { level = 54, health = 1641 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000866", confidence = "medium" } } }
+
+[[pet]]
+effect = 0x7000096E
+template = 0x47000867
+flags = 32
+stays = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet]]
+effect = 0x470018D1
+template = 0x47003453
+flags = 1096
+per_level_squared = 0.05
+variance = 0.1
+lands = 0.8
+hire = { class = 0x100000, seconds = 3600.0, level = 20.0 }
+prov = { from = "authored", note = "the summons a contract would run are in no data held; these numbers are our own" }
+
+[[pet]]
+effect = 0x470018D2
+template = 0x47003455
+flags = 1096
+per_level_squared = 0.05
+variance = 0.1
+lands = 0.8
+hire = { class = 0x100000, seconds = 3600.0, level = 20.0 }
+tends = { whom = "owners-pets", effect = 0x70000772, every = 30.0, below = 0.75 }
+prov = { from = "authored", note = "the summons a contract would run are in no data held; these numbers are our own" }
+
+[[pet]]
+effect = 0x470018D3
+template = 0x47003457
+flags = 1096
+per_level_squared = 0.05
+variance = 0.1
+lands = 0.8
+hire = { class = 0x100000, seconds = 3600.0, level = 20.0 }
+tends = { whom = "owner", effect = 0x70000772, every = 30.0, below = 0.75 }
+prov = { from = "authored", note = "the summons a contract would run are in no data held; these numbers are our own" }
+
+[[pet_limit]]
+skill = 27
+limits = [{ most = 1, classes = 0x7 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 30
+limits = [{ most = 1, classes = 0x7 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 38
+limits = [{ most = 1, classes = 0x7 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 39
+limits = [{ most = 1, classes = 0x7 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 59
+limits = [{ most = 1, classes = 0x7 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 60
+limits = [{ most = 1, classes = 0x7 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 69
+limits = [{ most = 1, classes = 0x8 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 70
+limits = [{ most = 1, classes = 0x8 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 227
+limits = [{ most = 1, classes = 0x10 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 262
+limits = [{ most = 1, classes = 0x20000000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 263
+limits = [{ most = 1, classes = 0x80 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 264
+limits = [{ most = 1, classes = 0x80 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 265
+limits = [{ most = 1, classes = 0x20000000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 266
+limits = [{ most = 1, classes = 0x40 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 267
+limits = [{ most = 1, classes = 0x40 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 268
+limits = [{ most = 1, classes = 0x80 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 269
+limits = [{ most = 1, classes = 0x80 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 444
+limits = [{ most = 2, classes = 0x100 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 450
+limits = [{ most = 2, classes = 0x100 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 659
+limits = [{ most = 3, classes = 0x400 }, { most = 1, classes = 0x800 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 660
+limits = [{ most = 3, classes = 0x400 }, { most = 1, classes = 0x800 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 661
+limits = [{ most = 3, classes = 0x400 }, { most = 1, classes = 0x800 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 662
+limits = [{ most = 2, classes = 0x800 }, { most = 1, classes = 0x4000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 663
+limits = [{ most = 2, classes = 0x800 }, { most = 1, classes = 0x8000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 664
+limits = [{ most = 2, classes = 0x800 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 665
+limits = [{ most = 2, classes = 0x800 }, { most = 1, classes = 0x10000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 704
+limits = [{ most = 1, classes = 0x1000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 705
+limits = [{ most = 1, classes = 0x1000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 706
+limits = [{ most = 1, classes = 0x1000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 769
+limits = [{ most = 3, classes = 0x2000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 782
+limits = [{ most = 1, classes = 0x2000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 783
+limits = [{ most = 3, classes = 0x2000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1007
+limits = [{ most = 1, classes = 0x8 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1009
+limits = [{ most = 1, classes = 0x8 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1011
+limits = [{ most = 1, classes = 0x8 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1057
+limits = [{ most = 1, classes = 0x8000000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1066
+limits = [{ most = 3, classes = 0x2000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1081
+limits = [{ most = 1, classes = 0x8000000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1084
+limits = [{ most = 1, classes = 0x8000000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1191
+limits = [{ most = 1, classes = 0x8000000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1369
+limits = [{ most = 1, classes = 0x8000000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1386
+limits = [{ most = 1, classes = 0x400 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1387
+limits = [{ most = 1, classes = 0x400 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 1388
+limits = [{ most = 1, classes = 0x400 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 2099
+limits = [{ most = 1, classes = 0x40000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 2101
+limits = [{ most = 1, classes = 0x20000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 2118
+limits = [{ most = 1, classes = 0x80000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }
+
+[[pet_limit]]
+skill = 2161
+limits = [{ most = 5, classes = 0x8000000 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high" }

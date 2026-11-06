@@ -31,6 +31,7 @@
 - A practice gem's dummy goes after its ninety seconds. Pack `practice-gems/`.
 - Portals refuse a player below the least level recordings show on them; lifestones and workshop objects show theirs. New pack `portal-levels/`.
 - Tyrants and two kinds of Darkenfowl leave the trophies and eggs players counted or were told of; no recording opened one, and only two of the Tyrants have camps yet. New pack `tyrant-trophies/`.
+- Every summoning skill and contract says what it makes and how many a skill allows, and pets have the health they were seen with. New pack `pet-kinds/`.
 - More camps that were really players' pets are gone.
 - Knorr can be reached by its portal, and its hub's gateways lead somewhere. New pack `knorr-gateway/`.
 - Three of Knorr's towns have more of their people, and a fort its lifestone. New pack `knorr-people/`.
@@ -41,6 +42,7 @@
 Marked `authored` and `low` in this version, rather than recorded:
 
 - `tyrant-trophies/`: all 8 rows: 6 from players' counts of kills, 2 from rates stated at the time.
+- `pet-kinds/`: the health of the pets no recording's player looked at, two helpers' heals, and the three mercenaries' numbers.
 - `ulkas-mines/`: 6 of its 9 steps: the last find ending a fee. The 3 givings are captured, but what sets them off is inferred from who they reach.
 - `journal-hand-ins/`: 30 of its 31 steps, since no hand-in for these quests is recorded; the other is one recorded giving, also `low`. All 32 of its lines are tied by the journals alone, `low`.
 - `ryvenna-gems/`: all 131 hand-ins and their fees, by one recorded fee's rule, and her last line. The 33 givings and their order are captured.
