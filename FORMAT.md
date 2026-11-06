@@ -187,6 +187,7 @@ A field marked † is read from the install when left out.
 | `route`, `route_start`, `route_direction` | people | the `[[route]]` a person walks (`key`, or `pack:key`), the waypoint it sets out toward (from 0) and `forward` or `backward`, as a camp's creatures do |
 | `recall`, `summon` | statics | a portal a player who used it may recall to (`recall = true`: a recall to the last portal used returns there) and summon a portal to (`summon = true`); left out, neither |
 | `requires` | statics | the quest a player must hold to use it (a portal this placement keeps closed, over its template's): `{ quest = Q, done = true }` (completed), `{ quest = Q, underway = true }` (under way at any phase) or `{ quest = Q, phase = N }` (under way at that phase); a use or a walk-in it keeps out is refused at once |
+| `min_level` | statics | the least level a player must be to use it, over its template's; its examination names it, and a use or a walk-in of a portal below it is refused at once |
 
 **`[[camp]]`**: a spawn camp.
 

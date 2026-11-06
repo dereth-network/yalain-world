@@ -29,6 +29,7 @@
 - Those people and others now give the quests players' guides of the time name them for; some can't be finished yet. New pack `guide-givers/`.
 - Recorded chests draw treasure of their own level, the arenas have their other rooms, and practice gems make their dummies. Packs `chest-loot/`, `gauntlets/`, `practice-gems/`.
 - A practice gem's dummy goes after its ninety seconds. Pack `practice-gems/`.
+- Portals refuse a player below the least level recordings show on them; lifestones and workshop objects show theirs. New pack `portal-levels/`.
 - More camps that were really players' pets are gone.
 
 Marked `authored` and `low` in this version, rather than recorded:

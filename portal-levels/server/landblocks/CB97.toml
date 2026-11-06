@@ -1,0 +1,28 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x40CB970000000001
+template = 0x47001143
+cell = 0xCB970038
+at = [133.0804, 146.568, 106.402]
+rotation = [1.0, 0.0, 0.0, 0.0]
+landings = [{ cell = 0xCB970038, at = [128.28, 143.19, 106.51], heading = 53.6, seen = 1 }, { cell = 0xCB970038, at = [127.0, 145.15, 106.51], heading = 76.2, seen = 1 }, { cell = 0xCB970038, at = [126.17, 145.15, 106.51], heading = 60.7, seen = 1 }, { cell = 0xCB970038, at = [128.16, 143.26, 106.51], heading = 55.1, seen = 1 }]
+min_level = 15
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:fd39f97d", confidence = "high", sample = { sessions = 9 }, fields = { min_level = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-LEVELS-2017", ref = "c:1cc97dc8", confidence = "high", sample = { views = 7 } }, landings = { from = "capture", evidence = "AC2-EVID-WDB-PLACES-2017", ref = "c:1531bad5", confidence = "high", sample = { trips = 4 } } } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x40CB970000000002
+template = 0x4700114D
+cell = 0xCB97000D
+at = [39.0, 88.0, 107.1983]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B43, string = 0x98CCF21C }
+to = "seed-2017:p-bc950035"
+recall = true
+summon = true
+min_level = 15
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:1532081f", confidence = "high", sample = { sessions = 9 }, fields = { min_level = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-LEVELS-2017", ref = "c:1d33c3b6", confidence = "high", sample = { views = 6 } }, recall = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-RECALL-2017", ref = "c:ea4c3b79", confidence = "high", sample = { sessions = 6 } }, summon = { from = "capture", evidence = "AC2-EVID-WDB-PORTAL-RECALL-2017", ref = "c:ea4c3b79", confidence = "high", sample = { sessions = 6 } } } }
