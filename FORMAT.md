@@ -186,8 +186,10 @@ A field marked † is read from the install when left out.
 | `lock` | | a locked door's key id: the id (a key's `Lock_KeyID`) a key must carry to open it; none known: no key does |
 | `route`, `route_start`, `route_direction` | people | the `[[route]]` a person walks (`key`, or `pack:key`), the waypoint it sets out toward (from 0) and `forward` or `backward`, as a camp's creatures do |
 | `recall`, `summon` | statics | a portal a player who used it may recall to (`recall = true`: a recall to the last portal used returns there) and summon a portal to (`summon = true`); left out, neither |
-| `requires` | statics | the quest a player must hold to use it (a portal this placement keeps closed, over its template's): `{ quest = Q, done = true }` (completed), `{ quest = Q, underway = true }` (under way at any phase) or `{ quest = Q, phase = N }` (under way at that phase); a use or a walk-in it keeps out is refused at once |
+| `requires` | statics | the quest a player must hold to use it (a portal this placement keeps closed, over its template's): `{ quest = Q, done = true }` (completed), `{ quest = Q, underway = true }` (under way at any phase), `{ quest = Q, phase = N }` (under way at that phase) or `{ quest = Q, had = true }` (failed, completed or under way); a use or a walk-in it keeps out is refused at once |
 | `min_level` | statics | the least level a player must be to use it, over its template's; its examination names it, and a use or a walk-in of a portal below it is refused at once |
+| `hero` | statics | true: only a hero may use it; its examination says so, and anyone else's use or walk-in of a portal is refused at once |
+| `kingdom` | statics | the kingdom a player must be of to use it, by the number a character's description names it: 1, 2 or 4; its examination names it, and anyone else's use or walk-in is refused at once |
 
 **`[[camp]]`**: a spawn camp.
 
