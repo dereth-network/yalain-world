@@ -31,6 +31,7 @@
 - A practice gem's dummy goes after its ninety seconds. Pack `practice-gems/`.
 - Portals refuse a player below the least level recordings show on them; lifestones and workshop objects show theirs. New pack `portal-levels/`.
 - Six portals ask for the quest their pages name; each quest can be finished. New pack `page-quests/`.
+- Five portals keep to the kingdom their pages name. New pack `portal-kingdoms/`.
 - Tyrants and two kinds of Darkenfowl leave the trophies and eggs players counted or were told of; no recording opened one, and only two of the Tyrants have camps yet. New pack `tyrant-trophies/`.
 - Every summoning skill and contract says what it makes and how many a skill allows, and pets have the health they were seen with. New pack `pet-kinds/`.
 - More camps that were really players' pets are gone.
