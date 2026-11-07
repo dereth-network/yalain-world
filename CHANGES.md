@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- A summoned decoy does nothing, as its skill names nothing that exists. New pack `decoy-idle/`.
 - Quests whose steps teach a recipe teach it, as the recordings show. New pack `quest-recipes/`.
 - A quest's last item lies where the recordings show it. New pack `quest-spots/`.
 - A summoned statue taunts what it strikes. New pack `pet-taunts/`.

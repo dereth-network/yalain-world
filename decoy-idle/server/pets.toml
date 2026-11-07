@@ -1,0 +1,10 @@
+# Pet 4700082F's skill 2114 names its effect by a name the client's library doesn't hold, so it struck
+# and taunted nothing. No recording holds one. Its strikes never land, so they harm and taunt nothing.
+
+[[pet]]
+effect = 0x70001EF4
+template = 0x4700082F
+flags = 32
+stays = true
+lands = 0.0
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { lands = { from = "authored", note = "its skill's effect isn't in the library", confidence = "low" } } }
