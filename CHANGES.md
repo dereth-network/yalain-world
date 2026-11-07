@@ -44,7 +44,7 @@
 - Camps whose places held a creature fast appear at the nearest place it can move. New pack `camp-slope-spots/`.
 - A jeweler pays by the size of the gem handed in, and the last gem earns her tool. New pack `gem-fees/`.
 - More people stand where players' guides of the time put them, with no recording to say so. New pack `guide-people/`.
-- A third mine, a grove and a farm stand where players' guides of the time put them, each for a fee. New pack `guide-mines/`.
+- Two more mines, a grove and a farm stand where players' guides of the time put them, each for a fee. New pack `guide-mines/`.
 - Those people and others now give the quests players' guides of the time name them for; some can't be finished yet. New pack `guide-givers/`.
 - Recorded chests draw treasure of their own level, the arenas have their other rooms, and practice gems make their dummies. Packs `chest-loot/`, `gauntlets/`, `practice-gems/`.
 - A practice gem's dummy goes after its ninety seconds. Pack `practice-gems/`.
