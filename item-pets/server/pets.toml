@@ -1,0 +1,17 @@
+# A kit's use names an effect the install doesn't hold; its description says it creates the turret
+# a summoning skill's own effect makes, so its use makes that pet, at the kit's own spellcraft for
+# the effect. No recording holds a kit's use.
+
+[[pet]]
+effect = 0x700008B7
+template = 0x47000851
+flags = 3128
+stays = true
+health = [{ level = 1, health = 118 }, { level = 58, health = 6876 }]
+per_level_squared = 0.07
+variance = 0.5
+lands = 0.75
+outdoors_only = true
+corpse_after = 2.8
+item_effects = ["Eff_Tsys_Item_Summon_LargeTurret"]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000851", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000851", confidence = "medium" }, item_effects = { from = "dat", record = 0x47001C83, confidence = "medium" } } }
