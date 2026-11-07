@@ -8,6 +8,7 @@
 - Three portals the servers made stand where they were seen; one leads to its kingdom's headquarters. New pack `made-portals/`.
 - A mine's toll lies where the recordings show it, so the portals past the mine open. New pack `toll-spots/`.
 - Four more quests can be finished: the items they ask for lie where the recordings show them, or come from the step that gave them. New pack `quest-sources/`.
+- Two gems the jeweler asks for now drop, rarely, so her list can go on past them. New pack `quest-gems/`.
 
 ## v0.30.0
 
