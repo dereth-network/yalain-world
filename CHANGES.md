@@ -18,6 +18,7 @@
 - Traps end as their one strike lands. New pack `trap-ends/`.
 - A rare decoy's use sets down the decoy it describes, for a minute. New pack `item-decoy/`.
 - The hub's last open gateway asks for the gateway quest its page names, which a trip from the far side now finishes. Pack `page-quests/` 0.2.0.
+- A portal gem takes its user where it says, and two stones give what they promise for as long as they say. New pack `used-items/`.
 
 ## v0.30.0
 
