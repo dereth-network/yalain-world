@@ -1,0 +1,102 @@
+# A person's lines, tied to the quest a player's guide of the time says the person gives; edit an authored pack instead.
+
+[[talk]]
+key = "t-30eb-276e1293"
+who = 0x470030EB
+line = { table = 0x250029AF, string = 0x276E1293 }
+line_name = "ID_Begin_C1"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x800001C1
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AF, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "his first offer line, for the quest a player's guide of 2013 says he gives; said by its step", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30eb-27761293"
+who = 0x470030EB
+line = { table = 0x250029AF, string = 0x27761293 }
+line_name = "ID_Begin_C2"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+quest = 0x800001C1
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AF, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "his second offer line, for the quest a player's guide of 2013 says he gives", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30eb-68f492a3"
+who = 0x470030EB
+line = { table = 0x250029AF, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x800001C1
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AF, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "his under-level line, for the quest a player's guide of 2013 says he gives", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30eb-bb476896"
+who = 0x470030EB
+line = { table = 0x250029AF, string = 0xBB476896 }
+line_name = "ID_Complete_C"
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x800001C1
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AF, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "his line once it's done, said by its step there; the quest ends elsewhere, so no update at him", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30eb-f573186e"
+who = 0x470030EB
+line = { table = 0x250029AF, string = 0xF573186E }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800001C1
+prov = { from = "authored", by = "Dereth Network", note = "his own line asking after the report; no recording", confidence = "medium" }
+
+[[talk]]
+key = "t-30eb-f57b186e"
+who = 0x470030EB
+line = { table = 0x250029AF, string = 0xF57B186E }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800001C0
+prov = { from = "authored", by = "Dereth Network", note = "his own line asking for his knapsack, which a player's guide of 2013 quotes; no recording", confidence = "medium" }
+
+[[talk]]
+key = "t-30eb-09200e98"
+who = 0x470030EB
+line = { table = 0x250029AF, string = 0x09200E98 }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "his own line sending players to the town's people first, said at a use when no step runs; no recording", confidence = "low" }
+
+[[talk]]
+key = "t-30eb-09200e9a"
+who = 0x470030EB
+line = { table = 0x250029AF, string = 0x09200E9A }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "his own line on the island, said at a use when no step runs; no recording", confidence = "low" }
+
+[[talk]]
+key = "t-30eb-09200e9c"
+who = 0x470030EB
+line = { table = 0x250029AF, string = 0x09200E9C }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "his own line on the town, said at a use when no step runs; no recording", confidence = "low" }
+
+[[talk]]
+key = "t-30eb-21fb0fbe"
+who = 0x470030EB
+line = { table = 0x250029AF, string = 0x21FB0FBE }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "his own line offering the town's history, said at a use when no step runs; no recording", confidence = "low" }

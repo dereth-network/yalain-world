@@ -1,0 +1,41 @@
+# Who gives this quest, from a player's guide of the time; edit an authored pack instead.
+
+[[quest]]
+id = 0x800001C1
+id_name = "Quest_Connector_C"
+state = 0x6F000AA7
+duration = 604800
+once = true
+min_level = 60
+xp = 47624866
+xp_whole = true
+prov = { from = "derived", rule = "quest-definition", record = 0x6F000AA7, confidence = "medium", fields = { duration = { from = "authored", by = "Dereth Network", note = "a player's guide of 2013: 7 days", confidence = "medium" }, once = { from = "authored", by = "Dereth Network", note = "a player's guide of 2013 and the wiki: no reset", confidence = "medium" }, min_level = { from = "authored", by = "Dereth Network", note = "a player's guide of 2013 and the wiki: level 60", confidence = "medium" }, xp = { from = "authored", by = "Dereth Network", note = "the wiki: 1% capped at 47,624,866 at level 60, which is what anyone 60 and up gets", confidence = "medium" }, xp_whole = { from = "authored", by = "Dereth Network", note = "the wiki's cap", confidence = "medium" } } }
+
+[[step]]
+key = "w-given"
+quest = 0x800001C1
+needs = 0
+trigger = { use = 0x470030EB }
+update = "bestow"
+tell = { table = 0x250029AF, string = 0x276E1293 }
+requires = [{ quest = 0x800001F9, done = true }, { quest = 0x800001FA, done = true }, { quest = 0x800001FB, done = true }, { quest = 0x800001FC, done = true }, { quest = 0x800001FD, done = true }, { quest = 0x800001FE, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "a player's guide of 2013 and the wiki: after all six of the gardens' kill tasks; one of them (the second) can't be finished here yet, so for now nobody gets it", confidence = "medium" }
+
+[[step]]
+key = "w-reported"
+quest = 0x800001C1
+needs = 1
+trigger = { use = 0x470030ED }
+update = "complete"
+tell = { table = 0x250029B0, string = 0xF570086E }
+prov = { from = "authored", by = "Dereth Network", note = "a player's guide of 2013: report to the person it names, and his line there, which is his in the install; no recording", confidence = "medium" }
+
+[[step]]
+key = "w-thanks"
+quest = 0x800001C1
+needs = 0
+trigger = { use = 0x470030EB }
+update = "none"
+tell = { table = 0x250029AF, string = 0xBB476896 }
+requires = [{ quest = 0x800001C1, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "his line once it's done, from his own lines; the quest ends elsewhere, not at him; no recording", confidence = "low" }

@@ -21,3 +21,65 @@ when = "use"
 update = "complete"
 quest = 0x800001BF
 prov = { from = "authored", by = "Dereth Network", note = "her second line on the report, quoted by a player's guide of 2013 after her first (the step's); hers in the install; no recording", confidence = "medium" }
+
+[[talk]]
+key = "t-30e9-236e1293"
+who = 0x470030E9
+line = { table = 0x250029AE, string = 0x236E1293 }
+line_name = "ID_Begin_B1"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x800001C0
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AE, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "her first offer line, for the quest a player's guide of 2013 says she gives; said by its step", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30e9-23761293"
+who = 0x470030E9
+line = { table = 0x250029AE, string = 0x23761293 }
+line_name = "ID_Begin_B2"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+quest = 0x800001C0
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AE, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "her second offer line, for the quest a player's guide of 2013 says she gives", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30e9-bb4768b6"
+who = 0x470030E9
+line = { table = 0x250029AE, string = 0xBB4768B6 }
+line_name = "ID_Complete_B"
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x800001C0
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AE, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "her line once it's done, said by its step there; the quest ends elsewhere, so no update at her", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30e9-f57b186e"
+who = 0x470030E9
+line = { table = 0x250029AE, string = 0xF57B186E }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800001C0
+prov = { from = "authored", by = "Dereth Network", note = "her own line asking after the knapsack; no recording", confidence = "medium" }
+
+[[talk]]
+key = "t-30e9-f560286e"
+who = 0x470030E9
+line = { table = 0x250029AE, string = 0xF560286E }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "her own line sending players to the outpost's people first, said at a use when no step runs; no recording", confidence = "low" }
+
+[[talk]]
+key = "t-30e9-f560386e"
+who = 0x470030E9
+line = { table = 0x250029AE, string = 0xF560386E }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "her own line on the island, said at a use when no step runs; no recording", confidence = "low" }

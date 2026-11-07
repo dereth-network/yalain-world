@@ -10,3 +10,76 @@ how = "tell"
 when = "use"
 quest = 0x800001C2
 prov = { from = "derived", rule = "talk-token-role", record = 0x250029B0, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's under-level line, for the quest a player's guide of the time says the person gives; no recording", confidence = "low" } } }
+
+[[talk]]
+key = "t-30ed-3b6e1293"
+who = 0x470030ED
+line = { table = 0x250029B0, string = 0x3B6E1293 }
+line_name = "ID_Begin_D1"
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x800001C2
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029B0, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "his first offer line, for the quest a player's guide of 2013 says he gives; said by its step", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30ed-3b761293"
+who = 0x470030ED
+line = { table = 0x250029B0, string = 0x3B761293 }
+line_name = "ID_Begin_D2"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+quest = 0x800001C2
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029B0, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "his second offer line, for the quest a player's guide of 2013 says he gives", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30ed-bb476876"
+who = 0x470030ED
+line = { table = 0x250029B0, string = 0xBB476876 }
+line_name = "ID_Complete_D"
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x800001C2
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029B0, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "his line once it's done, said by its step there; the quest ends elsewhere, so no update at him", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30ed-f54b186e"
+who = 0x470030ED
+line = { table = 0x250029B0, string = 0xF54B186E }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800001C2
+prov = { from = "authored", by = "Dereth Network", note = "his own line asking after the report; no recording", confidence = "medium" }
+
+[[talk]]
+key = "t-30ed-f570004e"
+who = 0x470030ED
+line = { table = 0x250029B0, string = 0xF570004E }
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+quest = 0x800001C1
+prov = { from = "authored", by = "Dereth Network", note = "his second line on the report he's sent, after his first (the step's); his in the install; no recording", confidence = "medium" }
+
+[[talk]]
+key = "t-30ed-f570286e"
+who = 0x470030ED
+line = { table = 0x250029B0, string = 0xF570286E }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "his own line sending players to the camp's people first, said at a use when no step runs; no recording", confidence = "low" }
+
+[[talk]]
+key = "t-30ed-f570386e"
+who = 0x470030ED
+line = { table = 0x250029B0, string = 0xF570386E }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "his own line on the fortress, said at a use when no step runs; no recording", confidence = "low" }
