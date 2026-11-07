@@ -1,0 +1,12 @@
+# Camp spots in the cell that holds them.
+
+[[camp]]
+key = "c-12315"
+cell = 0x01D10113
+at = [19.9, 2.9, 7.1]
+radius = 0.0
+spots = [{ cell = 0x01D10113, at = [19.9, 6.8, 7.1] }, { cell = 0x01D10114, at = [20.0, -1.0, 7.1] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700267D, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12315", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-SPOT-CELLS-2017", ref = "camp 12315", confidence = "medium" } } }

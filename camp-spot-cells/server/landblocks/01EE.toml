@@ -1,0 +1,12 @@
+# Camp spots in the cell that holds them.
+
+[[camp]]
+key = "c-12562"
+cell = 0x01EE0115
+at = [-0.8, 16.9, 81.8]
+radius = 0.0
+spots = [{ cell = 0x01EE0115, at = [-17.4, -19.8, 102.7] }, { cell = 0x01EE0117, at = [19.4, 30.0, 102.7] }, { cell = 0x01EE0138, at = [8.9, -13.9, 81.5] }, { cell = 0x01EE0159, at = [22.3, 9.3, 105.7] }, { cell = 0x01EE015D, at = [-19.6, 0.5, 105.7] }, { cell = 0x01EE0160, at = [5.4, 15.3, 105.7] }, { cell = 0x01EE016A, at = [10.4, 7.3, 81.8] }, { cell = 0x01EE0170, at = [-10.1, 31.2, 81.8] }, { cell = 0x01EE016F, at = [-9.7, 20.3, 81.8] }, { cell = 0x01EE017A, at = [-17.2, 43.4, 71.7] }, { cell = 0x01EE017A, at = [-15.8, 44.0, 71.7] }, { cell = 0x01EE019F, at = [-16.2, 51.2, 81.5] }]
+population = 7
+regen = 192.0
+spawns = [{ template = 0x47002BE5, weight = 9 }, { template = 0x47002BE3, weight = 9 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12562", confidence = "high", sample = { creatures = 18, sessions = 3 }, fields = { population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 12562", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" }, spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-SPOT-CELLS-2017", ref = "camp 12562", confidence = "high" } } }

@@ -1,0 +1,25 @@
+# Camp spots in the cell that holds them.
+
+[[camp]]
+key = "c-12473"
+cell = 0x048B0171
+at = [-184.8, 59.9, 98.2]
+radius = 0.0
+spots = [{ cell = 0x048B0174, at = [-184.8, 59.9, 98.2] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002792, weight = 1 }]
+route = "patrol-routes:shreth-guard-2"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12473", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { route = { from = "capture", evidence = "AC2-EVID-WDB-ROUTES-2017", ref = "c:559c0d18", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" }, spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-SPOT-CELLS-2017", ref = "camp 12473", confidence = "low" } } }
+
+[[camp]]
+key = "c-12474"
+cell = 0x048B0171
+at = [-185.1, -48.3, 98.2]
+radius = 0.0
+spots = [{ cell = 0x048B016F, at = [-185.1, -48.3, 98.2] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002791, weight = 1 }]
+route = "patrol-routes:shreth-guard-1"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12474", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { route = { from = "capture", evidence = "AC2-EVID-WDB-ROUTES-2017", ref = "c:5d566ad5", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" }, spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-SPOT-CELLS-2017", ref = "camp 12474", confidence = "low" } } }

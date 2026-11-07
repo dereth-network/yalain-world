@@ -1,0 +1,14 @@
+# Camp spots in the cell that holds them.
+
+[[camp]]
+key = "c-12322"
+cell = 0x01D9017A
+at = [-16.3, -154.5, -1.2]
+radius = 0.0
+spots = [{ cell = 0x01D90176, at = [-22.7, -152.1, -1.2] }, { cell = 0x01D9017A, at = [-15.1, -154.9, -1.2] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700221A, weight = 6 }]
+profile = 20
+profile_name = "GP_CampBanderlingRaver"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12322", confidence = "high", sample = { creatures = 6, sessions = 4 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" }, spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-SPOT-CELLS-2017", ref = "camp 12322", confidence = "high" } } }

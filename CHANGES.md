@@ -21,6 +21,7 @@
 - The hub's last open gateway asks for the gateway quest its page names, which a trip from the far side now finishes. Pack `page-quests/` 0.2.0.
 - A portal gem takes its user where it says, and two stones give what they promise for as long as they say. New pack `used-items/`.
 - Turrets pay for their shots with vigor, which comes back slowly. New pack `turret-vigor/`.
+- Camp spots name the room that holds them. New pack `camp-spot-cells/`.
 
 ## v0.30.0
 

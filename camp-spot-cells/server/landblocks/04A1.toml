@@ -1,0 +1,12 @@
+# Camp spots in the cell that holds them.
+
+[[camp]]
+key = "c-12793"
+cell = 0x04A1010E
+at = [100.9, -99.5, 102.8]
+radius = 0.0
+spots = [{ cell = 0x04A1010E, at = [100.0, -89.4, 102.9] }, { cell = 0x04A1010E, at = [100.2, -91.4, 103.0] }, { cell = 0x04A1010E, at = [100.5, -104.6, 102.7] }, { cell = 0x04A1010F, at = [103.0, -112.6, 102.6] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002BC7, weight = 4 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12793", confidence = "medium", sample = { creatures = 4, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-SPOT-CELLS-2017", ref = "camp 12793", confidence = "medium" } } }

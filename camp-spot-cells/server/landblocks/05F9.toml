@@ -1,0 +1,23 @@
+# Camp spots in the cell that holds them.
+
+[[camp]]
+key = "c-12215"
+cell = 0x05F90108
+at = [-12.6, 60.6, -42.2]
+radius = 0.0
+spots = [{ cell = 0x05F90108, at = [22.5, 55.5, -42.1] }, { cell = 0x05F90108, at = [22.8, 55.9, -42.1] }, { cell = 0x05F90136, at = [-17.8, 69.0, -42.0] }, { cell = 0x05F90136, at = [-8.0, 67.9, -42.0] }, { cell = 0x05F90109, at = [2.7, 69.0, -41.7] }, { cell = 0x05F90136, at = [-38.5, 65.3, -42.3] }, { cell = 0x05F90136, at = [-21.6, 64.1, -42.5] }, { cell = 0x05F90136, at = [-15.6, 64.4, -42.4] }, { cell = 0x05F90136, at = [-1.7, 64.8, -42.5] }, { cell = 0x05F90143, at = [-21.5, 44.2, -40.1] }, { cell = 0x05F90143, at = [-21.5, 46.8, -40.4] }]
+population = 6
+regen = 192.0
+spawns = [{ template = 0x4700238C, weight = 12 }, { template = 0x4700238D, weight = 6 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12215", confidence = "medium", sample = { creatures = 18, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-SPOT-CELLS-2017", ref = "camp 12215", confidence = "medium" } } }
+
+[[camp]]
+key = "c-12217"
+cell = 0x05F9011B
+at = [169.8, 8.6, -32.5]
+radius = 0.0
+spots = [{ cell = 0x05F9011B, at = [144.7, -15.1, -32.1] }, { cell = 0x05F9011D, at = [131.9, 8.4, -32.5] }, { cell = 0x05F9011D, at = [136.7, 20.7, -32.5] }, { cell = 0x05F9011D, at = [142.8, 20.6, -32.5] }, { cell = 0x05F9011D, at = [143.9, 2.9, -32.5] }, { cell = 0x05F9011D, at = [149.8, 5.0, -32.5] }, { cell = 0x05F9011D, at = [151.3, 6.1, -32.5] }, { cell = 0x05F9011D, at = [162.3, 31.4, -32.5] }, { cell = 0x05F9011D, at = [163.8, 32.1, -32.5] }, { cell = 0x05F9011E, at = [198.4, 27.7, -32.5] }, { cell = 0x05F90120, at = [95.5, 12.4, -30.6] }, { cell = 0x05F90120, at = [106.1, 15.1, -30.2] }, { cell = 0x05F90120, at = [127.4, 7.7, -32.4] }, { cell = 0x05F90120, at = [128.3, 7.0, -32.5] }, { cell = 0x05F90129, at = [172.6, -18.2, -32.0] }, { cell = 0x05F90129, at = [181.6, -16.3, -31.9] }, { cell = 0x05F9012E, at = [214.3, 8.9, -32.5] }, { cell = 0x05F9012E, at = [222.5, 27.2, -32.5] }, { cell = 0x05F9012E, at = [228.6, 13.8, -32.5] }, { cell = 0x05F9012E, at = [229.9, 14.2, -32.4] }, { cell = 0x05F9012E, at = [233.6, 20.7, -32.5] }, { cell = 0x05F9012E, at = [234.4, 6.5, -32.5] }, { cell = 0x05F9012E, at = [248.4, 5.4, -32.5] }, { cell = 0x05F90129, at = [203.8, -13.7, -31.7] }, { cell = 0x05F90140, at = [209.4, -13.7, -31.7] }]
+population = 17
+regen = 192.0
+spawns = [{ template = 0x4700238B, weight = 17 }, { template = 0x4700238D, weight = 15 }, { template = 0x4700238C, weight = 10 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12217", confidence = "medium", sample = { creatures = 42, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-SPOT-CELLS-2017", ref = "camp 12217", confidence = "medium" } } }

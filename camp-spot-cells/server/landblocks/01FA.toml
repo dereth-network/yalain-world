@@ -1,0 +1,14 @@
+# Camp spots in the cell that holds them.
+
+[[camp]]
+key = "c-10168"
+cell = 0x01FA011F
+at = [-8.2, 7.2, 55.2]
+radius = 0.0
+spots = [{ cell = 0x01FA011F, at = [31.9, 35.1, 42.3] }, { cell = 0x01FA011E, at = [15.5, 25.3, 42.3] }, { cell = 0x01FA0123, at = [18.3, -5.7, 45.3] }, { cell = 0x01FA0125, at = [-46.5, 24.6, 45.3] }, { cell = 0x01FA0125, at = [-43.6, 20.2, 45.3] }, { cell = 0x01FA0129, at = [-6.2, 40.0, 54.3] }, { cell = 0x01FA0129, at = [-4.9, 38.1, 55.3] }, { cell = 0x01FA012B, at = [-4.8, -18.8, 55.2] }, { cell = 0x01FA012B, at = [1.9, -24.4, 53.9] }, { cell = 0x01FA012E, at = [-7.3, 6.4, 57.2] }, { cell = 0x01FA013F, at = [22.5, 1.9, 67.3] }, { cell = 0x01FA0140, at = [12.6, 19.7, 67.3] }, { cell = 0x01FA0158, at = [-31.1, -2.0, 67.3] }, { cell = 0x01FA015C, at = [-4.6, -16.6, 67.3] }, { cell = 0x01FA0172, at = [-21.9, -16.0, 42.3] }]
+population = 9
+regen = 192.0
+spawns = [{ template = 0x4700238A, weight = 21 }, { template = 0x47002387, weight = 2 }]
+profile = 48
+profile_name = "GP_CampDrudgeProwler"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 10168", confidence = "medium", sample = { creatures = 23, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" }, spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-SPOT-CELLS-2017", ref = "camp 10168", confidence = "medium" } } }

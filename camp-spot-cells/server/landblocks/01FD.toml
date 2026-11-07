@@ -1,0 +1,25 @@
+# Camp spots in the cell that holds them.
+
+[[camp]]
+key = "c-12175"
+cell = 0x01FD0136
+at = [40.1, -35.1, 48.5]
+radius = 0.0
+spots = [{ cell = 0x01FD0151, at = [42.4, -36.2, 48.5] }, { cell = 0x01FD015D, at = [37.8, -34.0, 48.5] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470023AA, weight = 2 }]
+profile = 47
+profile_name = "GP_CampDrudgeOutcast"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12175", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" }, spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-SPOT-CELLS-2017", ref = "camp 12175", confidence = "low" } } }
+
+[[camp]]
+key = "c-12180"
+cell = 0x01FD018B
+at = [-133.3, -23.6, 13.5]
+radius = 0.0
+spots = [{ cell = 0x01FD018B, at = [-82.3, -37.5, 33.5] }, { cell = 0x01FD01A2, at = [-106.8, -16.2, 23.6] }, { cell = 0x01FD01BF, at = [-126.0, -21.6, 23.6] }, { cell = 0x01FD01CA, at = [-105.2, -49.6, 23.6] }, { cell = 0x01FD01F0, at = [-106.0, -36.0, 3.5] }, { cell = 0x01FD01F1, at = [-112.0, -22.0, 3.5] }, { cell = 0x01FD01FA, at = [-131.6, -13.5, 3.5] }, { cell = 0x01FD01FC, at = [-150.0, -8.0, 3.5] }, { cell = 0x01FD0202, at = [-142.0, -27.0, 3.5] }, { cell = 0x01FD020D, at = [-185.0, -22.0, 13.5] }, { cell = 0x01FD0219, at = [-176.0, -10.0, 13.5] }, { cell = 0x01FD021B, at = [-177.1, -19.2, 13.5] }]
+population = 9
+regen = 192.0
+spawns = [{ template = 0x470023AB, weight = 7 }, { template = 0x470023AD, weight = 5 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12180", confidence = "low", sample = { creatures = 12, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-SPOT-CELLS-2017", ref = "camp 12180", confidence = "low" } } }
