@@ -17,6 +17,7 @@
 - Knorr's gateway quests are done on arriving in the hub through a region's far gateway, so the hub's locked gateway opens. New pack `gateway-arrivals/`; a step's `arrive` trigger may name the one portal it came `from`.
 - Traps end as their one strike lands. New pack `trap-ends/`.
 - A rare decoy's use sets down the decoy it describes, for a minute. New pack `item-decoy/`.
+- The hub's last open gateway asks for the gateway quest its page names, which a trip from the far side now finishes. Pack `page-quests/` 0.2.0.
 
 ## v0.30.0
 
