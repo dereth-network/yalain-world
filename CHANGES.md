@@ -12,6 +12,7 @@
 - Two gems the jeweler asks for now drop, rarely, so her list can go on past them. New pack `quest-gems/`.
 - Four Tyrants of the crater have camps, so their trophies can drop; no recording places them. New pack `crater-tyrants/`.
 - Three apprentices' armor quests run step by step, as their journals name them, up to the recipe. New pack `armorsmiths-lament/`.
+- Two pets use only the attacks they were seen using, as often as recorded. New pack `pet-attacks/`.
 
 ## v0.30.0
 

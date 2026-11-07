@@ -1,0 +1,24 @@
+# Pet 47000846 uses two of the seven attacks its template names, 840 three times for every two of
+# 838 where both reach (2017: 1,872 and 1,273 within 4 m; the other five 0 in 12,779 attacks).
+# Pet 4700083E strikes with 1024 alone (213 of 213); its 1021 comes only as it dies.
+
+[[pet]]
+effect = 0x70000805
+template = 0x47000846
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 21, health = 427 }, { level = 29, health = 663 }, { level = 45, health = 1393 }, { level = 47, health = 1495 }, { level = 50, health = 1663 }, { level = 52, health = 1762 }, { level = 53, health = 1813 }, { level = 54, health = 1863 }]
+per_level_squared = 0.075
+variance = 0.45
+lands = 0.78
+attacks = [{ skill = 840, weight = 3 }, { skill = 838, weight = 2 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000846", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000846", confidence = "medium" }, attacks = { from = "capture", evidence = "AC2-EVID-WDB-PET-ATTACKS-2017", ref = "pet 47000846", confidence = "high", sample = { sessions = 74 } } } }
+
+[[pet]]
+effect = 0x70001F1F
+template = 0x4700083E
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 12, health = 236 }, { level = 14, health = 273 }, { level = 40, health = 918 }, { level = 43, health = 1038 }, { level = 54, health = 1553 }, { level = 68, health = 2135 }, { level = 89, health = 3189 }]
+taunts = true
+corpse_after = 1.1
+attacks = [{ skill = 1024, weight = 1 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700083E", confidence = "medium" }, attacks = { from = "capture", evidence = "AC2-EVID-WDB-PET-ATTACKS-2017", ref = "pet 4700083E", confidence = "high" } } }
