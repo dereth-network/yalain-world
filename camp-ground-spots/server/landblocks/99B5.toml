@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-5711"
+cell = 0x99B50009
+at = [27.2, 13.2, 111.7]
+radius = 5.0
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C11, weight = 2 }]
+profile = 367
+profile_name = "GP_CampThornlingRogue"
+spots = [{ cell = 0x99B5000A, at = [39.62, 27.75, 122.13] }, { cell = 0x99B50001, at = [18.21, 5.12, 103.34] }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5711", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-GROUND-SPOTS-2017", ref = "camp 5711", confidence = "low" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

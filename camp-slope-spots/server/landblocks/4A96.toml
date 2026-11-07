@@ -1,0 +1,12 @@
+# What a body may move on, for camps whose every place holds it fast; edit an authored pack instead.
+
+[[camp]]
+key = "c-6667"
+cell = 0x4A96001F
+at = [75.2, 138.2, 73.9]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700274F, weight = 1 }]
+spots = [{ cell = 0x4A960027, at = [80.12, 139.07, 78.61] }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6667", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { spots = { from = "authored", by = "Dereth Network", note = "the nearest place a body moves: no place it was seen lets one", confidence = "low" }, radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }

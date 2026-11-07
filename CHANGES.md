@@ -35,8 +35,8 @@
 - The arena quests run by level, each kill leading on. New pack `gauntlets/`.
 - A person's practice gems go by level, one a week. New pack `practice-gems/`.
 - Indoor camps' spots a creature can't move from are gone or moved. New pack `camp-walker-spots/`.
-- Outdoor camps with no place to stand appear where they were first seen. New pack `camp-ground-spots/`.
-- Camps whose every place held a creature fast appear at the nearest place it can move. New pack `camp-slope-spots/`.
+- Outdoor camps with little or no place to stand appear where they were first seen. New pack `camp-ground-spots/`.
+- Camps whose places held a creature fast appear at the nearest place it can move. New pack `camp-slope-spots/`.
 - A jeweler pays by the size of the gem handed in, and the last gem earns her tool. New pack `gem-fees/`.
 - More people stand where players' guides of the time put them, with no recording to say so. New pack `guide-people/`.
 - A third mine, a grove and a farm stand where players' guides of the time put them, each for a fee. New pack `guide-mines/`.
