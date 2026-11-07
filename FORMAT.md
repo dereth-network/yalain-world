@@ -270,6 +270,7 @@ back, with the person's `refuse-give` line naming the quest and the `item` if it
 | `{ use = I, on = T }` | uses a held item of template I on an object of template T |
 | `{ give = I, to = T }` | gives an item of template I to a person or an object of template T (drags it onto it) |
 | `{ arrive = T }` | arrives through a portal of template T |
+| `{ arrive = T, from = O }` | arrives through the one placed portal O (its `id`), of template T |
 | `{ take = T }` | takes an item of template T |
 | `{ kill = T }` | kills a creature of template T (the effects its template names at its death need no step: they move their quests whatever a step says, on any quest no step moved at that kill) |
 | `{ done = Q }` | completes quest Q |

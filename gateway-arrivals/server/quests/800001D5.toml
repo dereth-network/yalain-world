@@ -1,0 +1,9 @@
+# A gateway quest, done on arrival in the hub through its region's far gateway; edit an authored pack instead.
+
+[[step]]
+key = "from-far-gateway"
+quest = 0x800001D5
+needs = 0
+trigger = { arrive = 0x47001161, from = 0x40C04000000000A1 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "as its sister quest was recorded moving, through the far gateway of the region whose hub gateway asks for this quest; no recording of this one", confidence = "low" }

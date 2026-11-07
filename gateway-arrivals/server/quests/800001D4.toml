@@ -1,0 +1,9 @@
+# A gateway quest, done on arrival in the hub through its region's far gateway; edit an authored pack instead.
+
+[[step]]
+key = "from-far-gateway"
+quest = 0x800001D4
+needs = 0
+trigger = { arrive = 0x47001161, from = 0x40C1560000000009 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GATEWAY-ARRIVALS-2017", ref = "c:80d58699", confidence = "low", sample = { trips = 1 } }
