@@ -1,0 +1,12 @@
+# Written from the January 2017 recordings.
+
+[[camp]]
+key = "c-12881"
+cell = 0x09F70168
+at = [60.4, -48.3, 141.6]
+radius = 0.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002262, weight = 2 }]
+spots = [{ cell = 0x09F7016D, at = [50.6, -42.5, 145.4] }, { cell = 0x09F70168, at = [71.37, -57.46, 136.13] }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12881", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { spots = { from = "authored", by = "Dereth Network", note = "where its creatures walked in 2017, each in the cell that holds it: the place one was made holds a body fast, so the next place on its walk", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" } } }
