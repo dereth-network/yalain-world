@@ -1,0 +1,36 @@
+# A turret pays each shot's vigor, and uses a shot only when it can pay for it. Its vigor is 80 for each
+# level for the bigger kind and 60 for the smaller (its one recording; the two kinds' health stands in the
+# same ratio). How fast it comes back is authored: no recording shows a turret's vigor fall or rise. At 6.5
+# a second, a full turret of level 39 or more could pay for every shot the twelve turrets recorded in
+# January 2017 fired (713 shots, of 1, 20 and 40 vigor each).
+
+[[pet]]
+effect = 0x700008B7
+template = 0x47000851
+flags = 3128
+stays = true
+health = [{ level = 1, health = 118 }, { level = 58, health = 6876 }]
+per_level_squared = 0.07
+variance = 0.5
+lands = 0.75
+outdoors_only = true
+corpse_after = 2.8
+item_effects = ["Eff_Tsys_Item_Summon_LargeTurret"]
+vigor_per_level = 80
+vigor_per_second = 6.5
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000851", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000851", confidence = "medium" }, item_effects = { from = "dat", record = 0x47001C83, confidence = "medium" }, vigor_per_level = { from = "authored", confidence = "low" }, vigor_per_second = { from = "authored", confidence = "low" } } }
+
+[[pet]]
+effect = 0x700008BD
+template = 0x47000853
+flags = 3128
+stays = true
+health = [{ level = 1, health = 89 }, { level = 58, health = 5157 }]
+per_level_squared = 0.05
+variance = 0.5
+lands = 0.75
+outdoors_only = true
+corpse_after = 2.8
+vigor_per_level = 60
+vigor_per_second = 6.5
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000853", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000853", confidence = "medium" }, vigor_per_level = { from = "authored", confidence = "low" }, vigor_per_second = { from = "authored", confidence = "low" } } }
