@@ -17,7 +17,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/quests/QQQQQQQQ.toml [[quest]], [[step]] of one quest
 <pack>/server/gives/TTTTTTTT.toml  [[give]] of one template given to
 <pack>/server/talk/TTTTTTTT.toml   [[talk]] of one template
-<pack>/server/crafting.toml        [[craft]]
+<pack>/server/crafting.toml        [[craft]], [[tool]]
 <pack>/server/story.toml           [[scene]], [[shard]]
 <pack>/server/butchery.toml        [[butchery]]
 <pack>/server/weapons.toml         [[weapon]]
@@ -323,6 +323,9 @@ names), or one its `teleport` lines name as their `item`. Any other map, or one 
 
 **`[[craft]]`**: a craft skill (`skill`, its saved state) or a recipe (`recipe`) every new character
 starts with, at level 1 for a craft skill. One of the two.
+
+**`[[tool]]`**: what a gathering tool yields when it was not made: `template` (the tool's) and `yield`
+(a count). A made tool's yield is its own; a knife that was not made and that no row names yields 1.
 
 **`[[scene]]`**: a scene of the story, as a client plays it.
 
