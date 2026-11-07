@@ -5,6 +5,7 @@
 - Quests whose steps teach a recipe teach it, as the recordings show. New pack `quest-recipes/`.
 - A quest's last item lies where the recordings show it. New pack `quest-spots/`.
 - A summoned statue taunts what it strikes. New pack `pet-taunts/`.
+- Three portals the servers made stand where they were seen; one leads to its kingdom's headquarters. New pack `made-portals/`.
 
 ## v0.30.0
 
