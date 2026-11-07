@@ -210,6 +210,7 @@ A field marked † is read from the install when left out.
 | `uses_doors` | | over their template's: whether they open doors (default true) |
 | `route` | | the `[[route]]` its creatures walk at rest (`key`, or `pack:key`), in place of wandering, indoors too |
 | `route_start`, `route_direction` | | the waypoint they set off toward (from 0; default 0) and which way they go on: `forward` (default) or `backward` |
+| `name` | | the name its creatures are told by, examined by and their corpses named after, in place of their template's: `{ table, string }`, a string of the install (a creature of an ordinary kind that a quest names as one) |
 
 **`[[place]]`**: a destination. `key`, `cell`, `at`, `rotation` / `heading`, `named_by` (templates
 whose destination names it: a portal's, or a surveyor's map's, whose holder a person who sends players by
@@ -273,6 +274,7 @@ back, with the person's `refuse-give` line naming the quest and the `item` if it
 | `{ arrive = T, from = O }` | arrives through the one placed portal O (its `id`), of template T |
 | `{ take = T }` | takes an item of template T |
 | `{ kill = T }` | kills a creature of template T (the effects its template names at its death need no step: they move their quests whatever a step says, on any quest no step moved at that kill) |
+| `{ kill = T, camp = K }` | kills a creature of template T that the one camp K made: its `key`, or `key@XXYY` where camps of several landblocks share the key; the camp must make T. A quest a step of T alone moved at that kill isn't moved again |
 | `{ done = Q }` | completes quest Q |
 | `{ given = Q }` | is given quest Q, shown or kept hidden, by whatever gives it |
 
