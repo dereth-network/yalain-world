@@ -10,3 +10,14 @@ how = "tell"
 when = "use"
 quest = 0x800001C0
 prov = { from = "derived", rule = "talk-token-role", record = 0x250029AE, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "the person's under-level line, for the quest a player's guide of the time says the person gives; no recording", confidence = "low" } } }
+
+[[talk]]
+key = "t-30e9-f560004e"
+who = 0x470030E9
+line = { table = 0x250029AE, string = 0xF560004E }
+role = "complete"
+how = "tell"
+when = "use"
+update = "complete"
+quest = 0x800001BF
+prov = { from = "authored", by = "Dereth Network", note = "her second line on the report, quoted by a player's guide of 2013 after her first (the step's); hers in the install; no recording", confidence = "medium" }

@@ -1,0 +1,63 @@
+# A person's lines, tied to the quest a player's guide of the time says the person gives; edit an authored pack instead.
+
+[[talk]]
+key = "t-30e7-68f492a3"
+who = 0x470030E7
+line = { table = 0x250029AD, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x800001BF
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AD, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "her under-level line, for the quest a player's guide of 2013 says she gives", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30e7-2ee61293"
+who = 0x470030E7
+line = { table = 0x250029AD, string = 0x2EE61293 }
+line_name = "ID_Begin_A"
+role = "offer"
+how = "tell"
+when = "use"
+update = "bestow"
+quest = 0x800001BF
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AD, confidence = "medium", fields = { quest = { from = "authored", by = "Dereth Network", note = "her offer, for the quest a player's guide of 2013 says she gives; the guide quotes it", confidence = "medium" } } }
+
+[[talk]]
+key = "t-30e7-bb4768d6"
+who = 0x470030E7
+line = { table = 0x250029AD, string = 0xBB4768D6 }
+line_name = "ID_Complete_A"
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x800001BF
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029AD, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "her line once the quest a player's guide of 2013 says she gives is done, said by its step there; the quest ends elsewhere, so no update at her", confidence = "low" } } }
+
+[[talk]]
+key = "t-30e7-f563186e"
+who = 0x470030E7
+line = { table = 0x250029AD, string = 0xF563186E }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800001BF
+prov = { from = "authored", by = "Dereth Network", note = "her own line asking after the report, for the quest a player's guide of 2013 says she gives; no recording", confidence = "medium" }
+
+[[talk]]
+key = "t-30e7-09200e9a"
+who = 0x470030E7
+line = { table = 0x250029AD, string = 0x09200E9A }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "her own line sending players to the region's people first, said at a use when no step runs; no recording", confidence = "low" }
+
+[[talk]]
+key = "t-30e7-09200e9c"
+who = 0x470030E7
+line = { table = 0x250029AD, string = 0x09200E9C }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "her own greeting, said at a use when no step runs; no recording", confidence = "low" }

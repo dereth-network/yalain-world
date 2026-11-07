@@ -77,7 +77,7 @@ Marked `authored` and `low` in this version, rather than recorded:
 - `sclavus-cabals/`: the last hand-in and all 6 reminders. What moves its phases is the install's; where its items drop is not built.
 - `skyport-maint/`: the giving, its wait, the alembic's 2 steps, all 10 lines and where the shards lie. The alembic and the stibnite aren't placed.
 - `mirra-rouge/`: all 4 steps and 1 give, by the three recorded mirras.
-- `under-level-more/`: 2 lines tied by the quest's description, 3 lines taken away.
+- `under-level-more/`: 3 lines taken away; its 2 lines tied by a quest's description are now `guide-givers/`'s.
 
 ## v0.29.0
 
