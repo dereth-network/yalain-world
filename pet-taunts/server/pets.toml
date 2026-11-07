@@ -1,0 +1,10 @@
+# A summoned statue's attack puts a taunt on what it strikes: its skill's target effect turns a
+# monster on it by a share of the monster's health, as a taunting orb's does. No recording holds one.
+
+[[pet]]
+effect = 0x7000096E
+template = 0x47000867
+flags = 32
+stays = true
+taunts = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { taunts = { from = "dat", record = 0x700008C4 } } }
