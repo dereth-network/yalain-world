@@ -6,6 +6,7 @@
 - A quest's last item lies where the recordings show it. New pack `quest-spots/`.
 - A summoned statue taunts what it strikes. New pack `pet-taunts/`.
 - Three portals the servers made stand where they were seen; one leads to its kingdom's headquarters. New pack `made-portals/`.
+- A mine's toll lies where the recordings show it, so the portals past the mine open. New pack `toll-spots/`.
 
 ## v0.30.0
 
