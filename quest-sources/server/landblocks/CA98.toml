@@ -1,0 +1,23 @@
+# Where quest items come from, as the January 2017 recordings show them; edit an authored pack instead.
+
+[[camp]]
+key = "src-0b37-19"
+cell = 0xCA980016
+at = [57.80, 103.05, 88.85]
+radius = 0.0
+spots = [{ cell = 0xCA980016, at = [57.80, 103.05, 88.85] }]
+population = 1
+regen = 20.0
+spawns = [{ template = 0x47000B37, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-SPOTS-2017", ref = "c:5ea0de47", confidence = "low", sample = { sessions = 1, views = 1 }, fields = { regen = { from = "derived", rule = "item-spot-regen" } } }
+
+[[camp]]
+key = "src-0b37-20"
+cell = 0xCA98003C
+at = [155.40, 72.00, 77.26]
+radius = 0.0
+spots = [{ cell = 0xCA98003C, at = [155.40, 72.00, 77.26] }]
+population = 1
+regen = 20.0
+spawns = [{ template = 0x47000B37, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-SPOTS-2017", ref = "c:17637bdb", confidence = "low", sample = { sessions = 1, views = 1 }, fields = { regen = { from = "derived", rule = "item-spot-regen" } } }

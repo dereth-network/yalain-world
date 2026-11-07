@@ -1,0 +1,12 @@
+# Where quest items come from, as the January 2017 recordings show them; edit an authored pack instead.
+
+[[camp]]
+key = "src-0aff-12"
+cell = 0x92840031
+at = [133.07, 19.08, 195.52]
+radius = 0.0
+spots = [{ cell = 0x92840031, at = [133.07, 19.08, 195.52] }]
+population = 1
+regen = 20.0
+spawns = [{ template = 0x47000AFF, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-SPOTS-2017", ref = "c:f2d03867", confidence = "low", sample = { sessions = 1, views = 1 }, fields = { regen = { from = "derived", rule = "item-spot-regen" } } }
