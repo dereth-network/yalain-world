@@ -1,0 +1,35 @@
+# Each of these pets has one attack, whose effect on its user is a bare effect that ends it: it
+# strikes once, what the strike carries lands, and it is gone. No recording holds one.
+
+[[pet]]
+effect = 0x70001EF2
+template = 0x4700082E
+flags = 32
+stays = true
+ends_on_strike = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { ends_on_strike = { from = "dat", record = 0x70000977 } } }
+
+[[pet]]
+effect = 0x70001F56
+template = 0x47000842
+flags = 32
+stays = true
+ends_on_strike = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { ends_on_strike = { from = "dat", record = 0x70000977 } } }
+
+[[pet]]
+effect = 0x70001F57
+template = 0x47000844
+flags = 32
+stays = true
+ends_on_strike = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { ends_on_strike = { from = "dat", record = 0x70000977 } } }
+
+[[pet]]
+effect = 0x70002008
+template = 0x47000864
+flags = 32
+stays = true
+count = 4
+ends_on_strike = true
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { ends_on_strike = { from = "dat", record = 0x70000977 } } }
