@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Creatures and chests no longer drop the rarities a single recording put on them, until a treasure system brings them back. New pack `rares-out/`.
 - A summoned decoy does nothing, as its skill names nothing that exists. New pack `decoy-idle/`.
 - A rare kit's use makes the turret it describes for its user. New pack `item-pets/`.
 - Quests whose steps teach a recipe teach it, as the recordings show. New pack `quest-recipes/`.
