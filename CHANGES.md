@@ -11,6 +11,7 @@
 - Four more quests can be finished: the items they ask for lie where the recordings show them, or come from the step that gave them. New pack `quest-sources/`.
 - Two gems the jeweler asks for now drop, rarely, so her list can go on past them. New pack `quest-gems/`.
 - Four Tyrants of the crater have camps, so their trophies can drop; no recording places them. New pack `crater-tyrants/`.
+- Three apprentices' armor quests run step by step, as their journals name them, up to the recipe. New pack `armorsmiths-lament/`.
 
 ## v0.30.0
 

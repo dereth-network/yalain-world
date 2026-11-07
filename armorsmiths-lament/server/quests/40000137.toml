@@ -1,0 +1,76 @@
+# Steps no recording shows, as the quest's journal and its people's lines name them; edit an authored pack instead.
+
+[[step]]
+key = "l-1"
+quest = 0x40000137
+needs = 0
+trigger = { use = 0x47002F0C }
+tell = { table = 0x250028C2, string = 0x2AE6122C }
+update = "bestow"
+gives = [0x470011F7]
+races = [1, 2, 4]
+prov = { from = "authored", by = "Dereth Network", note = "the note by a player's guide of 2003 to 2005; the rest as its phase's journal and the people's lines name it; no recording", confidence = "low" }
+
+[[step]]
+key = "l-2"
+quest = 0x40000137
+needs = 1
+trigger = { give = 0x470011F7, to = 0x47002F08 }
+tell = { table = 0x250028C0, string = 0x6BC0E11A }
+update = "advance"
+phase = 2
+takes = [0x470011F7]
+gives = [0x47001209]
+races = [1, 2, 4]
+prov = { from = "authored", by = "Dereth Network", note = "the note by a player's guide of 2003 to 2005; the rest as its phase's journal and the people's lines name it; no recording", confidence = "low" }
+
+[[step]]
+key = "l-3"
+quest = 0x40000137
+needs = 2
+trigger = { give = 0x47001209, to = 0x47002F0C }
+tell = { table = 0x250028C2, string = 0xA8641968 }
+update = "advance"
+phase = 3
+takes = [0x47001209]
+races = [1, 2, 4]
+prov = { from = "authored", by = "Dereth Network", note = "the trigger as its phase's journal and the people's lines name it; no recording", confidence = "low" }
+
+[[step]]
+key = "l-4-1"
+quest = 0x40000137
+needs = 3
+trigger = { give = 0x47000AF0, to = 0x47002F0C }
+tell = { table = 0x250028C2, string = 0xAA52FC5F }
+update = "advance"
+phase = 4
+takes = [0x47000AF0]
+effects = [0x6F001945]
+races = [1]
+prov = { from = "authored", by = "Dereth Network", note = "the trigger as its phase's journal and the people's lines name it; no recording; the recipe by the race its armor is for", confidence = "low" }
+
+[[step]]
+key = "l-4-2"
+quest = 0x40000137
+needs = 3
+trigger = { give = 0x47000AF0, to = 0x47002F0C }
+tell = { table = 0x250028C2, string = 0xAA52FC5F }
+update = "advance"
+phase = 4
+takes = [0x47000AF0]
+effects = [0x6F001947]
+races = [2]
+prov = { from = "authored", by = "Dereth Network", note = "the trigger as its phase's journal and the people's lines name it; no recording; the recipe by the race its armor is for", confidence = "low" }
+
+[[step]]
+key = "l-4-4"
+quest = 0x40000137
+needs = 3
+trigger = { give = 0x47000AF0, to = 0x47002F0C }
+tell = { table = 0x250028C2, string = 0xAA52FC5F }
+update = "advance"
+phase = 4
+takes = [0x47000AF0]
+effects = [0x6F001948]
+races = [4]
+prov = { from = "authored", by = "Dereth Network", note = "the trigger as its phase's journal and the people's lines name it; no recording; the recipe by the race its armor is for", confidence = "low" }
