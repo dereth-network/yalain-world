@@ -1,0 +1,12 @@
+# An item's use names a pet effect the install holds, of a decoy's class, lasting a minute. Its
+# description says it distracts monsters with a very weak attack, and the decoy's template is the
+# creature that does so: it stands where it is set down and its strikes taunt. No recording holds one.
+
+[[pet]]
+effect = 0x6F0025EA
+template = 0x47003462
+flags = 32
+stays = true
+taunts = true
+item_effects = ["Eff_Tsys_Item_Summon_SummonDecoy"]
+prov = { from = "dat", record = 0x6F0025EA, confidence = "medium", fields = { flags = { from = "authored", note = "as the other decoy's", confidence = "low" }, taunts = { from = "authored", note = "its description: it distracts monsters", confidence = "low" }, item_effects = { from = "dat", record = 0x47001C72, confidence = "high" } } }

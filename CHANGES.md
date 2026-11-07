@@ -16,6 +16,7 @@
 - Two pets use only the attacks they were seen using, as often as recorded. New pack `pet-attacks/`.
 - Knorr's gateway quests are done on arriving in the hub through a region's far gateway, so the hub's locked gateway opens. New pack `gateway-arrivals/`; a step's `arrive` trigger may name the one portal it came `from`.
 - Traps end as their one strike lands. New pack `trap-ends/`.
+- A rare decoy's use sets down the decoy it describes, for a minute. New pack `item-decoy/`.
 
 ## v0.30.0
 
