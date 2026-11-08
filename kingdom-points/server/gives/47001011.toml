@@ -1,0 +1,30 @@
+# The Shadow's shrine takes its own players' gems, one at a time, for kingdom points.
+[[give]]
+key = "sliver-shadow"
+to = 0x47001011
+item = 0x4700080F
+wants = 1
+effects = [0x6F00188E]
+text = { table = 0x25001147, string = 0xA727FC98 }
+requires = [{ kingdom = "shadow" }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki of 2013 has them handed in at your kingdom's stronghold; no recording names the taker; the line is the install's for the same points", confidence = "low" }
+
+[[give]]
+key = "shard-shadow"
+to = 0x47001011
+item = 0x470016AB
+wants = 1
+effects = [0x6F00188D]
+text = { table = 0x25001147, string = 0xA727FC98 }
+requires = [{ kingdom = "shadow" }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki of 2013 has them handed in at your kingdom's stronghold; no recording names the taker; the line is the install's for the same points", confidence = "low" }
+
+[[give]]
+key = "fragment-shadow"
+to = 0x47001011
+item = 0x470016AA
+wants = 1
+effects = [0x6F00188C]
+text = { table = 0x25001147, string = 0xA727FC98 }
+requires = [{ kingdom = "shadow" }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki of 2013 has them handed in at your kingdom's stronghold; no recording names the taker; the line is the install's for the same points", confidence = "low" }

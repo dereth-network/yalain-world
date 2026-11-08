@@ -29,6 +29,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/events.toml          [[event]]
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
+<pack>/server/kingdoms.toml        [[points_bonus]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -304,6 +305,11 @@ transformation into a hero (`0x6F001C6F`) runs when the transformation is throug
 through portal space: an item's use on an object makes its update on arrival; a use of a person or
 an object tells its update at once and takes the player after.
 
+A step's or a give's `requires` may also name one kingdom, `{ kingdom = "order" }`: `neutral`, `shadow`,
+`order` or `dominion`. It then runs only for players of that kingdom, a player in no kingdom counting as of
+the neutral one, as at a faction shrine, and only when its other requirements are met too. A give it
+refuses is refused as any other, the item handed back. Any other word, or a second kingdom, is a problem.
+
 **`[[give]]`**: what a person or an object does with an item given it that moves no quest (a toll is a
 quest, even one kept hidden, and is a step). `key`, `to` (the template given to), `item` (the template
 given; left out, any item), `wants` (exactly how many of it: any other count is refused, the stack handed
@@ -422,6 +428,24 @@ kingdoms may fight, neutral players stay out of it), `kingdom-vs-kingdom` (playe
 may fight) or `free-for-all` (any player may fight any other). A landblock no row names is a peace
 area. Players are told the kind of where they are as they enter, walk or arrive; who may fight whom
 there is the client's own rule.
+
+**`[[points_bonus]]`**: what an effect does to the kingdom points of the player it is put on (by a give or a
+quest step), where the install's record of the effect gives no amount. `effect` (its saved state, one the install
+holds), `add` (above 0) and `up_to` (kingdom points, a whole number the points can hold): the points rise by
+`add`, never above `up_to`, and points already at or above it stay as they are. A give that gives nothing and
+whose only effects are such bonuses, the player's points already at or above every one's `up_to`, is refused as a
+give no row takes: the item is handed back. A player's points start at 500
+and are kept with the character. After the rise, the kingdom skills the player's own kingdom's shrine grants
+at those points are granted at once, as a use of the shrine grants them. One row per effect.
+
+```toml
+# <pack>/server/kingdoms.toml
+[[points_bonus]]
+effect = 0x6F00188E
+add = 200
+up_to = 1500
+prov = { from = "authored", by = "you" }
+```
 
 **`[[clearing]]`**: ground in a landblock kept free of what the land grows, written in
 `server/landblocks/XXYY.toml`. `key` (unique in its landblock in its pack), `at` (`[x, y, z]`, x and y in
