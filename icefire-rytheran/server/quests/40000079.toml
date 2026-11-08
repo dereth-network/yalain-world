@@ -1,0 +1,252 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000079
+id_name = "QuestIcefire"
+state = 0x6F0008BD
+challenge = 46
+retry = 518400
+cancellable = true
+duration = 72000.0
+qp = 50000
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:044e0b25", confidence = "high", sample = { sessions = 4 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:1dc672dd", confidence = "medium", sample = { sessions = 2 } }, qp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-POINTS-2017", ref = "c:85210e62", confidence = "medium", sample = { sessions = 2 } }, fellows = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:4029b5a9", confidence = "low", sample = { sessions = 2 } } } }
+
+[[step]]
+key = "s-given"
+quest = 0x40000079
+needs = 0
+trigger = { use = 0x47003006 }
+update = "bestow"
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:fd90dc41", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "a fellow in reach of the giver as every recorded fellow was given it in one tick; the fellow was not recorded, so the use is read from its reach and the giver being a person other recorded steps use", confidence = "low" } } }
+
+[[step]]
+key = "trophy-taken"
+quest = 0x40000079
+needs = 2
+trigger = { take = 0x470014D8 }
+update = "advance"
+phase = 3
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:5931aaf2", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "the trophy taken was never shown to a recording player; its template is the one trophy the install sets up for this quest", confidence = "low" } } }
+
+[[step]]
+key = "trophy-given"
+quest = 0x40000079
+needs = 3
+trigger = { give = 0x470014D8, to = 0x47003006 }
+update = "advance"
+phase = 4
+takes = [0x470014D8]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:809dd0f7", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "the item given was the trophy taken at phase 3, its template read as there", confidence = "low" } } }
+
+[[step]]
+key = "done-11c7"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011C7, to = 0x47003005 }
+update = "complete"
+gives = [0x470014CE]
+takes = [0x470011C7]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11c8"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011C8, to = 0x47003005 }
+update = "complete"
+gives = [0x470014CF]
+takes = [0x470011C8]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11c9"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011C9, to = 0x47003005 }
+update = "complete"
+gives = [0x470014D0]
+takes = [0x470011C9]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11ca"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011CA, to = 0x47003005 }
+update = "complete"
+gives = [0x470014D1]
+takes = [0x470011CA]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11cb"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011CB, to = 0x47003005 }
+update = "complete"
+gives = [0x470014D2]
+takes = [0x470011CB]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11cc"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011CC, to = 0x47003005 }
+update = "complete"
+gives = [0x470014D3]
+takes = [0x470011CC]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11cd"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011CD, to = 0x47003005 }
+update = "complete"
+gives = [0x470014D4]
+takes = [0x470011CD]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11ce"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011CE, to = 0x47003005 }
+update = "complete"
+gives = [0x470014D5]
+takes = [0x470011CE]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-2056"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x47002056, to = 0x47003005 }
+update = "complete"
+gives = [0x47002058]
+takes = [0x47002056]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11d1"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011D1, to = 0x47003005 }
+update = "complete"
+gives = [0x470014D7]
+takes = [0x470011D1]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11d4"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011D4, to = 0x47003005 }
+update = "complete"
+gives = [0x470014DB]
+takes = [0x470011D4]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11d5"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011D5, to = 0x47003005 }
+update = "complete"
+gives = [0x470014DC]
+takes = [0x470011D5]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11d6"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011D6, to = 0x47003005 }
+update = "complete"
+gives = [0x470014DD]
+takes = [0x470011D6]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11d7"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011D7, to = 0x47003005 }
+update = "complete"
+gives = [0x470014DE]
+takes = [0x470011D7]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11d8"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011D8, to = 0x47003005 }
+update = "complete"
+gives = [0x470014DF]
+takes = [0x470011D8]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11d9"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011D9, to = 0x47003005 }
+update = "complete"
+gives = [0x470014E0]
+takes = [0x470011D9]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11da"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011DA, to = 0x47003005 }
+update = "complete"
+gives = [0x470014E1]
+takes = [0x470011DA]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11db"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011DB, to = 0x47003005 }
+update = "complete"
+gives = [0x470014E2]
+takes = [0x470011DB]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
+
+[[step]]
+key = "done-11dc"
+quest = 0x40000079
+needs = 4
+trigger = { give = 0x470011DC, to = 0x47003005 }
+update = "complete"
+gives = [0x470014E3]
+takes = [0x470011DC]
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ICEFIRE-RYTHERAN-2017", ref = "c:539bbfcf", confidence = "low", sample = { sessions = 2 }, fields = { trigger = { from = "authored", by = "Dereth Network", note = "one weapon was recorded given; the others are the rest of the install pairs of the weapon it was", confidence = "low" }, gives = { from = "authored", by = "Dereth Network", note = "the weapon it becomes is the install pair of the weapon given; a recorded player held one of them after an earlier run, and no recording shows the giver", confidence = "low" } } }
