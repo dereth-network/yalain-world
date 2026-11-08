@@ -23,3 +23,14 @@ spawns = [{ template = 0x470021F5, weight = 5 }]
 profile = 20
 profile_name = "GP_CampBanderlingRaver"
 prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 983", confidence = "high", sample = { creatures = 5, sessions = 5 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 983", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-982"
+cell = 0x6767001C
+at = [77.7, 62.6, 93.4]
+radius = 39.5
+spots = [{ cell = 0x67670023, at = [89.09, 56.27, 93.43] }, { cell = 0x67670023, at = [90.27, 59.7, 92.85] }, { cell = 0x67670023, at = [91.42, 56.19, 93.38] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470021F8, weight = 9 }, { template = 0x470021F5, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 982", confidence = "medium", sample = { creatures = 10, sessions = 2 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 982", confidence = "medium" }, regen = { from = "derived", rule = "camp-regen-median" } } }
