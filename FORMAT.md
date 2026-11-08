@@ -23,6 +23,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/weapons.toml         [[weapon]]
 <pack>/server/death_spawns.toml    [[death_spawn]]
 <pack>/server/death_treasures.toml [[death_treasure]]
+<pack>/server/pools.toml           [[treasure_pool]]
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
 ```
@@ -103,6 +104,7 @@ Every row sets one **item**, named by its key:
 | `weapon NAME` | the weapon's name, as creatures' templates write it |
 | `area XXYY` | the area's landblock |
 | `death_treasure KEY` | the row's `key` |
+| `treasure_pool NAME` | the pool's name |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -165,6 +167,7 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `hoard-teleport-place` | a hoard's stockpile leads to the place its mine quest's teleport sends a player out from, where the recordings show players of one hoard arriving |
 | `talk-quest-name` | a person's quest line numbered k goes with the quest named after the person's own table and k |
 | `map-marked-place` | a surveyor's map leads where the recordings show maps marking the same area (the same search rectangle) leading, whatever their material |
+| `treasure-pool-fit` | a pool's templates are those the corpses recorded in 2017 held, each drawn where the dropper's loot base lies in its window (the middle 90% of the bases it dropped at, from 8 drops; the bases seen widened by 3 below that); the kinds lowest in a pool reach down to level 0 and the highest, and those mostly dropped from 45 up, are open above; each weight is fit so that the windows and weights give back each template's recorded count at the recorded bases |
 | `item-spot-regen` | an item a camp keeps lying whose return no recording timed comes back as the timed spots of its template did, else 20 s after its taking, as every timed quest item lying alone did |
 
 ## Record kinds
@@ -359,6 +362,10 @@ with, where its template sets none).
 **`[[death_spawn]]`**: what a creature's death effect makes around its killer, or an item's use effect around its user, where the install names it by a name it doesn't resolve. `effect` (the death effect, as creatures' templates name it), `template` (what it makes), `count` (how many it tries to make; 1 when left out), `chance` (that each is made; 1 when left out) and `offset` (where each stands, in meters from the killer as the killer faces, `[x, y, z]`, on the ground), and `lasts` (how long each stands, in seconds). They stay until killed when it's left out; a kill's make no more than 24 of one effect's at once, and a use has no such limit.
 
 **`[[death_treasure]]`**: a fixed item a creature leaves at its death, or a chest at an opening, at a chance of its own. `key`; `template` (every creature or chest of it) or `camp` (every creature the camp keeps: `key@XXYY`, or `pack:key@XXYY` in another pack), one of them; `item` (the item's template) and `chance` (above 0, at most 1). Each is rolled once as the corpse is made, after the rest of what the creature leaves, and a full corpse still holds it. Only a creature a camp keeps leaves one, so it comes no faster than the camp makes the creature again; a chest's comes only with an opening its key paid for, as a chest is filled anew at every opening. A corpse or chest holds an item once, and two rows giving the same creatures or chests one item are refused.
+
+A `[[loot]]` row may draw its items from treasure pools instead of `items`: `draws` (`{ pool, weight, least, most }`, each draw one of them by weight among those whose window holds the level of the item; `least` and `most` may be left out), and `rare` (`{ pool, chance }`, rolled once a corpse). The level of the item is the creature's loot base, its loot quality in tens, else its level. Its `counts` and the template's bounds give how many items, its extras among them and its template's trophies beside them.
+
+**`[[treasure_pool]]`**: a named pool treasure is drawn from. `name` (the install's name for it, `GP_...`); `pools` (`{ pool, weight, least, most }`) and `items` (`{ template, weight, least, most }`): a draw takes one of them by weight among those whose window holds the level of the item and goes on down until it reaches a template, giving nothing where none holds the level; `race` (`human`, `lugian`, `tumerok`, `drudge`, `empyrean`) and `own` (a share): a draw from its parent by a killer of its race takes this pool at that share outright, the rest drawn by weight. A pool may not lead back to itself, and a draw goes at most eight pools deep.
 
 **`[[route]]`**: places creatures (and people that name it) walk at rest in turn. `key`; `waypoints` (`{ cell, at, rest }`, `rest`
 the seconds a creature stands there, else the route's); `shape`, `back-and-forth` (turn back at either

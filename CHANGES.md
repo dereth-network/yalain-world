@@ -3,6 +3,7 @@
 ## Unreleased
 
 - 11 more of Knorr's bounties can be finished: each named target has a camp where guides or a recording put it. Pack `knorr-bounties/` 0.2.0.
+- Creatures that dropped nothing but trophies now drop treasure of their level, from shared treasure pools. New pack `treasure-pools/`.
 - A rarity a recorded creature left comes back as its death treasure, at a low chance. New pack `death-treasures/`.
 - Creatures and chests no longer drop the rarities a single recording put on them, until a treasure system brings them back. New pack `rares-out/`.
 - A knife that was not made cuts by the yield its new `[[tool]]` row gives. In `craft-butchery/`.
