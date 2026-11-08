@@ -1,0 +1,27 @@
+# Steps from the wiki of the time; edit an authored pack instead.
+
+[[step]]
+key = "tree-root"
+quest = 0x4000002D
+needs = 1
+trigger = { use = 0x47002FDC }
+update = "complete"
+requires = [{ quest = 0x4000002C, phase = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "from the wiki of the time; no recording", confidence = "low" }
+
+[[step]]
+key = "tree-limb"
+quest = 0x4000002E
+needs = 1
+trigger = { use = 0x47002FDB }
+update = "complete"
+requires = [{ quest = 0x4000002C, phase = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "from the wiki of the time; no recording", confidence = "low" }
+
+[[step]]
+key = "tree-ends"
+quest = 0x4000002C
+needs = 2
+trigger = { use = 0x47002FD9 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "from the wiki of the time; no recording", confidence = "low" }
