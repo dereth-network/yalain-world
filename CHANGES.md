@@ -76,7 +76,7 @@
 - Turrets pay for their shots with vigor, which comes back slowly. New pack `turret-vigor/`.
 - Camp spots name the room that holds them. New pack `camp-spot-cells/`.
 - Quests that pay on completion are given only from the level they were meant for. New pack `quest-pay-levels/`.
-- Creatures 30 quests ask for stand where guides of the time put them, or among their kind, and 25 of those quests can now be finished. New pack `guide-camps/`.
+- Creatures 30 quests ask for stand where guides of the time put them, or among their kind, and 26 of those quests can now be finished; four bounties now end back at their giver. New pack `guide-camps/`.
 - Fifteen incursions can be started: their leaders stand among their packs. New pack `incursion-leaders/`.
 - Six raids and three dungeon bosses' quests can be started: the creatures that start them stand among their kind. New pack `kill-starters/`.
 

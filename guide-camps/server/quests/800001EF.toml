@@ -1,4 +1,12 @@
-# Who takes this quest back, from its own journal and the guides of the time; edit an authored pack instead.
+# Who gives and takes back this quest, from its own journal and the guides of the time; edit an authored pack instead.
+
+[[step]]
+key = "s-guide-given"
+quest = 0x800001EF
+needs = 0
+trigger = { use = 0x4700311A }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it: the wiki of the time and AC2 Hero; no recording", confidence = "medium" }
 
 [[step]]
 key = "s-guide-end"
