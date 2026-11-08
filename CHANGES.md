@@ -81,6 +81,7 @@
 - Twelve raids and three dungeon bosses' quests can be started: the creatures that start them stand among their kind. New pack `kill-starters/`.
 - Treasure's numbers are rows a world can change; these are the ones it drew by already. New pack `treasure-numbers/`.
 - The words before treasure names are rows a world can change. New pack `treasure-words/`.
+- The looks treasure draws are rows a world can change. New pack `treasure-looks/`.
 
 ## v0.30.0
 
