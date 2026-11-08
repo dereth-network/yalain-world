@@ -31,6 +31,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/areas.toml           [[area]]
 <pack>/server/kingdoms.toml        [[points_bonus]]
 <pack>/server/popups.toml          [[popup]]
+<pack>/server/treasure.toml        [[treasure_rules]], [[treasure_sort]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -112,6 +113,8 @@ Every row sets one **item**, named by its key:
 | `treasure_pool NAME` | the pool's name |
 | `pet 0xEFFECT` | the pet effect (or the contract's template) |
 | `pet_limit 0xSKILL` | the summoning skill |
+| `treasure_rules` | the world's one row |
+| `treasure_sort SORT` | the sort: `weapon`, `armor`, `shield` or `jewelry` |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -492,6 +495,51 @@ effect = 0x6F002672
 ward = { classes = [48, 1119, 5013], chance = 0.15 }
 prov = { from = "authored", by = "you" }
 ```
+
+**`[[treasure_rules]]`**: what every treasure item draws by, whatever its sort. `above_base`: weights of an
+item's own least level standing 0, 1, 2, ... above its dropper's base (numbers from 0, at least one above 0);
+`most_level`: the highest least level an item's own may be (1 or more); `lore = { above, from, to }`: an item needs
+lore to use only when its dropper's base is above `above`, read through the game's lore table at a level drawn
+evenly from the base plus `from` to the base plus `to` (`from` at most `to`); `potion_tiers`: the least dropper
+level of each of a treasure potion's five tiers, from 0 and rising; `potion_spellcraft = [least, most]`: a potion's
+spellcraft, drawn evenly; `look = { glow_most, round_chance, round_from, round_tenths }`: a glow is drawn evenly up
+to `glow_most`, and a color whose key's highest is `round_from` or more is, by `round_chance`, one of the first
+`round_tenths` round tenths (0, 0.1, ...), else drawn in hundredths up to its key's highest (the first three from 0
+to 1, `round_tenths` 1 or more). A world has one row, or none and the server's own.
+
+**`[[treasure_sort]]`**: the numbers one sort of treasure item draws by. `sort` (`weapon`, `armor`, `shield` or
+`jewelry`) and `counts`: bands of the item's own level, `[{ from, weights }]`, `from` the band's least level (the
+first 0, then rising), `weights` how often an item of the band has 0, 1, 2, ... enchantments (from 0, at least one
+above 0); weapons, armor and shields have six bands, as the words before their names are drawn by the same bands.
+Beside them, each sort has its own fields and no others:
+
+- weapons and shields: `damage_share = [least, most]`, their greatest damage as a share of a made weapon's at their
+  level, drawn evenly; `vigor`, bands of the vigor they cost, `[{ from, least, most, every }]` (`from` the first 0
+  and rising, `least` 1 or more and at most `most`), each drawn evenly from `least` to `most`; `every`, only on the
+  last band, adds one to both for each that many levels above its `from`;
+- shields: `span = [least, most]`, their span of damage when their template names none, drawn evenly;
+- weapons, armor and shields: `delays = { from, weights }`, how often each delay between blows from `from` (0 or
+  more) up is drawn;
+- armor and shields: `rating_share`, their rating as a share of a made one's at their level, as points `[[level,
+  share], ...]` (levels from 0 and rising, shares from 0 to 1) in proportion between them and held past the ends;
+  `rating_spread`, how far either side of it each is drawn, evenly; `slot_chance`, how often one has an
+  enchantment slot (robes always have three, weapons one).
+
+Shares and chances are from 0 to 1, least at most most. A world gives all four sorts or none: a world with none
+has the server's own, and one with some but not all is refused. A sort's families of enchantments and its words
+are the server's own.
+
+```toml
+# <pack>/server/treasure.toml
+[[treasure_sort]]
+sort = "jewelry"
+counts = [{ from = 0, weights = [9.0, 1.0] }, { from = 25, weights = [1.0, 1.0] }]
+prov = { from = "authored", by = "you" }
+```
+
+A world with no `[[treasure_rules]]` or no `[[treasure_sort]]` rows plays the server's own numbers of that kind,
+those fit to the 2017 servers' items, and its server says so at start. A kind's rows are taken whole, never mixed
+with the server's.
 
 **`[[event]]`**: a named state of the world, on for its times. `key` (lowercase letters, digits and
 hyphens); `game_event`, a value of the install's game events it stands for (optional; `yalain world check
