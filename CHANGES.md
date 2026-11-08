@@ -19,6 +19,7 @@
 - Three more quests can be taken and finished, as the wiki of the time tells them. New pack `guide-quest-steps/`.
 - 36 more quests are given by the people the guides of the time name, some not finishable yet. New pack `source-givers/`.
 - Two more quests can be taken by a whole fellowship and finished. New pack `icefire-rytheran/`.
+- A fellowship quest's breastplate reward is now given when you return to its giver. Pack `icefire-rytheran/`.
 - A town's stone search can be taken while the quest it leads to is under way, and its last line is said once. New pack `search-completions/`.
 - Every town's search stones cast their blessing, and a stone touched again says so. New pack `search-blessings/`.
 - Recorded chests draw treasure of their own level, the arenas have their other rooms, and practice gems make their dummies. Packs `chest-loot/`, `gauntlets/`, `practice-gems/`.

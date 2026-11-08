@@ -1,0 +1,37 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+# The reward quest is given as the quest before it is done (that completion's own effect, every recorded fellow), and
+# is done at the player's next use of the giver: its line, then a breastplate of the player's own race, 3 of 3. A
+# player who already held one from an earlier run was given another, so it is given at every finish.
+
+[[step]]
+key = "s-done-tumerok"
+quest = 0x4000007D
+needs = 1
+trigger = { use = 0x4700328A }
+update = "complete"
+xp = 0
+gives = [0x4700187D]
+races = [4]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-RYTHERAN-REWARD-2017", ref = "c:f947a2e6", confidence = "medium", sample = { sessions = 3 } }
+
+[[step]]
+key = "s-done-human"
+quest = 0x4000007D
+needs = 1
+trigger = { use = 0x4700328A }
+update = "complete"
+xp = 0
+gives = [0x4700187B]
+races = [1]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-RYTHERAN-REWARD-2017", ref = "c:f947a2e6", confidence = "low", sample = { sessions = 3 }, fields = { gives = { from = "capture", evidence = "AC2-EVID-WDB-RYTHERAN-REWARD-2017", ref = "c:d309dc6e", confidence = "low", sample = { sessions = 1 } } }, note = "no human was recorded at the giving; the human breastplate of this quest was recorded held by a human" }
+
+[[step]]
+key = "s-done-lugian"
+quest = 0x4000007D
+needs = 1
+trigger = { use = 0x4700328A }
+update = "complete"
+xp = 0
+gives = [0x4700187C]
+races = [2]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-RYTHERAN-REWARD-2017", ref = "c:f947a2e6", confidence = "low", sample = { sessions = 3 }, fields = { gives = { from = "capture", evidence = "AC2-EVID-WDB-RYTHERAN-REWARD-2017", ref = "c:1fda9cb9", confidence = "low", sample = { sessions = 1 } } }, note = "no Lugian was recorded at the giving; the Lugian breastplate of this quest was recorded held by a Lugian" }
