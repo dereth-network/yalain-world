@@ -22,6 +22,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/butchery.toml        [[butchery]]
 <pack>/server/weapons.toml         [[weapon]]
 <pack>/server/death_spawns.toml    [[death_spawn]]
+<pack>/server/death_treasures.toml [[death_treasure]]
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
 ```
@@ -101,6 +102,7 @@ Every row sets one **item**, named by its key:
 | `butchery 0xPROFILE` | the butchery profile |
 | `weapon NAME` | the weapon's name, as creatures' templates write it |
 | `area XXYY` | the area's landblock |
+| `death_treasure KEY` | the row's `key` |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -355,6 +357,8 @@ given two, the rest one; every one is given two when left out) and `stance` (the
 with, where its template sets none).
 
 **`[[death_spawn]]`**: what a creature's death effect makes around its killer, or an item's use effect around its user, where the install names it by a name it doesn't resolve. `effect` (the death effect, as creatures' templates name it), `template` (what it makes), `count` (how many it tries to make; 1 when left out), `chance` (that each is made; 1 when left out) and `offset` (where each stands, in meters from the killer as the killer faces, `[x, y, z]`, on the ground), and `lasts` (how long each stands, in seconds). They stay until killed when it's left out; a kill's make no more than 24 of one effect's at once, and a use has no such limit.
+
+**`[[death_treasure]]`**: a fixed item a creature leaves at its death, or a chest at an opening, at a chance of its own. `key`; `template` (every creature or chest of it) or `camp` (every creature the camp keeps: `key@XXYY`, or `pack:key@XXYY` in another pack), one of them; `item` (the item's template) and `chance` (above 0, at most 1). Each is rolled once as the corpse is made, after the rest of what the creature leaves, and a full corpse still holds it. Only a creature a camp keeps leaves one, so it comes no faster than the camp makes the creature again; a chest's comes only with an opening its key paid for, as a chest is filled anew at every opening. A corpse or chest holds an item once, and two rows giving the same creatures or chests one item are refused.
 
 **`[[route]]`**: places creatures (and people that name it) walk at rest in turn. `key`; `waypoints` (`{ cell, at, rest }`, `rest`
 the seconds a creature stands there, else the route's); `shape`, `back-and-forth` (turn back at either
