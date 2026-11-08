@@ -27,6 +27,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/pools.toml           [[treasure_pool]]
 <pack>/server/effects.toml         [[effect_name]], [[effect_rule]]
 <pack>/server/events.toml          [[event]]
+<pack>/server/values.toml          [[treasure_value]]
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
 <pack>/server/kingdoms.toml        [[points_bonus]]
@@ -123,6 +124,7 @@ Every row sets one **item**, named by its key:
 | `treasure_look 0xTEMPLATE` | the template |
 | `treasure_potion KIND` | the kind's name |
 | `treasure_family SORT ORDER` | the sort and the family's `order` |
+| `treasure_value LEVEL` | the creatures' level |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -426,6 +428,8 @@ at least one `{ most, classes }`: a use is refused while its user has `most` pet
 with `classes`, a pet's class being its effect's. A skill no row names goes by each kind of pet's own limit
 of its class; a pet an item's use makes keeps to the limits of a skill that makes the same pet; and no
 player has more pets in all than the server allows.
+
+**`[[treasure_value]]`**: what treasure a creature of a level leaves is worth. `level` (the creature's level) and `values` (whole numbers, at least one): each treasure item the creature leaves carries one of them as its own value, drawn evenly, so a value listed twice comes twice as often; selling it pays that. A level with no row draws from the nearest level that has one (the lower of two as near); a world with none has the server's own instead, a band of values for each ten levels up to 50. A rare and a trump of the tarot never carry one.
 
 **`[[route]]`**: places creatures (and people that name it) walk at rest in turn. `key`; `waypoints` (`{ cell, at, rest }`, `rest`
 the seconds a creature stands there, else the route's); `shape`, `back-and-forth` (turn back at either

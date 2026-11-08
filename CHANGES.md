@@ -84,6 +84,7 @@
 - The looks treasure draws are rows a world can change. New pack `treasure-looks/`.
 - The kinds of treasure potion are rows a world can change. New pack `treasure-potions/`.
 - The enchantments treasure draws are rows a world can change. New pack `treasure-enchantments/`.
+- Treasure from creatures is worth what 2017's was at each creature's level. New pack `treasure-values/`.
 
 ## v0.30.0
 
