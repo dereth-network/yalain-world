@@ -1,0 +1,12 @@
+# A person's under-level line tied to the quests later packs make it give, and how low that is; edit an authored pack instead.
+
+[[talk]]
+key = "q-800002d3-68f492a3"
+who = 0x470032C2
+line = { table = 0x25002A81, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x800002D3
+prov = { from = "derived", rule = "talk-token-role", record = 0x25002A81, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "a person's under-level line, for each quest it gives: guide-givers gives this one", confidence = "medium" } } }
