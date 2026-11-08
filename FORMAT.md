@@ -10,7 +10,7 @@ holds a database to all of it.
 world.toml                         the world: key, game, era, packs in load order, overrides
 world.lock                         ids given to authored symbols, kept across builds
 <pack>/pack.toml                   name, version, game, authors, license, description
-<pack>/server/landblocks/XXYY.toml [[object]] and [[camp]] rows standing in landblock XXYY
+<pack>/server/landblocks/XXYY.toml [[object]], [[camp]] and [[clearing]] rows standing in landblock XXYY
 <pack>/server/places.toml          [[place]]
 <pack>/server/loot.toml            [[loot]]
 <pack>/server/stores.toml          [[keeper]], [[sale]]
@@ -23,6 +23,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/weapons.toml         [[weapon]]
 <pack>/server/death_spawns.toml    [[death_spawn]]
 <pack>/server/death_treasures.toml [[death_treasure]]
+<pack>/server/pets.toml            [[pet]], [[pet_limit]]
 <pack>/server/pools.toml           [[treasure_pool]]
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
@@ -89,7 +90,7 @@ Every row sets one **item**, named by its key:
 
 | item | key |
 |---|---|
-| `object KEY@XXYY`, `camp KEY@XXYY` | the row's `key`, unique within its landblock in its pack |
+| `object KEY@XXYY`, `camp KEY@XXYY`, `clearing KEY@XXYY` | the row's `key`, unique within its landblock in its pack |
 | `place KEY` | the row's `key` |
 | `loot 0xVALUE` | the profile's value |
 | `keeper 0xTEMPLATE` | the storekeeper template |
@@ -105,6 +106,8 @@ Every row sets one **item**, named by its key:
 | `area XXYY` | the area's landblock |
 | `death_treasure KEY` | the row's `key` |
 | `treasure_pool NAME` | the pool's name |
+| `pet 0xEFFECT` | the pet effect (or the contract's template) |
+| `pet_limit 0xSKILL` | the summoning skill |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -183,6 +186,7 @@ A field marked † is read from the install when left out.
 | `id` | statics | the world id (the live servers' own, for the seed's) |
 | `template` | required | what it is |
 | `cell`, `at`, `rotation` / `heading` | `at` required | where it stands |
+| `scale` | | how large it stands, in place of the scale its template gives; a compile keeps the template's, with a warning, when it isn't above 0 |
 | `name`, `name_text` | | a name the server gives it (a portal named for where it leads); else the template's |
 | `to` | | the place using it takes a player to; a person says its line for a use as it does |
 | `landings` | | a lifestone's recall spots: `{ cell, at, heading, seen }` |
@@ -367,6 +371,38 @@ A `[[loot]]` row may draw its items from treasure pools instead of `items`: `dra
 
 **`[[treasure_pool]]`**: a named pool treasure is drawn from. `name` (the install's name for it, `GP_...`); `pools` (`{ pool, weight, least, most }`) and `items` (`{ template, weight, least, most }`): a draw takes one of them by weight among those whose window holds the level of the item and goes on down until it reaches a template, giving nothing where none holds the level; `race` (`human`, `lugian`, `tumerok`, `drudge`, `empyrean`) and `own` (a share): a draw from its parent by a killer of its race takes this pool at that share outright, the rest drawn by weight. A pool may not lead back to itself, and a draw goes at most eight pools deep.
 
+**`[[pet]]`**: what a pet effect makes, or what a contract hires, as the effect's description gives it and
+the recordings show it fight. One row for each effect.
+
+| field | | meaning |
+|---|---|---|
+| `effect` | required | the pet effect's saved state, or the contract's template |
+| `template` | required | what it makes; a compile refuses a template the install lacks |
+| `flags` | | the flags of its pet data as its owner is told them; 0 when left out |
+| `count` | | how many the effect makes at once, at least 1; 1 when left out |
+| `stays` | | true: it stays where it is made and never follows, taking on what comes within its reach |
+| `health` | | its greatest health at levels, `{ level, health }`, levels going up: between two the line, beyond the first and last held; its template's when left out |
+| `per_level_squared`, `variance`, `lands` | | what a hit of it takes: `per_level_squared` times its level squared (0.05 when left out), varied by `variance` either side (0.35), less the target's armor; `lands` is the share of its strikes that land, from 0 to 1 (0.8) |
+| `swing` | | hits a swing on its one target, at least 1; 1 when left out |
+| `area` | | its missile lands on every creature this many meters from where it falls; left out, on its target alone |
+| `taunts` | | true: its strikes taunt, and the creature may turn on it; whether they harm is its skill's |
+| `ends_on_strike` | | true: it ends as its first strike lands, what the strike carries landing first |
+| `vigor_per_level` | | its greatest vigor for each level; the pets' own when left out |
+| `vigor_per_second` | | it pays its attacks' vigor, which comes back this much a second; left out, its attacks cost it nothing |
+| `outdoors_only` | | true: it can't be set down indoors, and a summoning there fails |
+| `attacks` | | the attacks it uses, `{ skill, weight }`, each skill once and each weight at least 1: of those that reach its target it draws one by weight. Each skill must be one its template names, or a compile refuses the row. Left out: every attack its template names, all alike |
+| `corpse_after` | | seconds after its death its corpse comes; 1.5 when left out |
+| `no_corpse` | | true: it leaves no corpse |
+| `tends` | | whom it tends: `{ whom = "owner" or "owners-pets", effect, every, below }`, the effect it puts on them at its own level, every `every` seconds, while their health is below the share `below` of the whole |
+| `hire` | | a contract's terms, the row's `effect` being the contract's template: `{ class, seconds, level }`, the mercenary's class of pet, how many seconds it stays and its level |
+| `item_effects` | | names of effects an item's use may name that no install holds, each making this pet as its own effect does |
+
+**`[[pet_limit]]`**: how many pets a summoning skill allows its user. `skill` (the skill's id) and `limits`,
+at least one `{ most, classes }`: a use is refused while its user has `most` pets of a class sharing a bit
+with `classes`, a pet's class being its effect's. A skill no row names goes by each kind of pet's own limit
+of its class; a pet an item's use makes keeps to the limits of a skill that makes the same pet; and no
+player has more pets in all than the server allows.
+
 **`[[route]]`**: places creatures (and people that name it) walk at rest in turn. `key`; `waypoints` (`{ cell, at, rest }`, `rest`
 the seconds a creature stands there, else the route's); `shape`, `back-and-forth` (turn back at either
 end, the default) or `loop` (on from the last to the first); `gait`, `walk` (the default) or `run`;
@@ -380,6 +416,13 @@ kingdoms may fight, neutral players stay out of it), `kingdom-vs-kingdom` (playe
 may fight) or `free-for-all` (any player may fight any other). A landblock no row names is a peace
 area. Players are told the kind of where they are as they enter, walk or arrive; who may fight whom
 there is the client's own rule.
+
+**`[[clearing]]`**: ground in a landblock kept free of what the land grows, written in
+`server/landblocks/XXYY.toml`. `key` (unique in its landblock in its pack), `at` (`[x, y, z]`, x and y in
+meters within the landblock, from 0 up to 160), and its shape, one of: `radius` (a circle) or `size`
+(`[x, y]`, a rectangle along its own axes), each above 0 and at most 240 meters; `heading` turns a
+rectangle, in degrees clockwise from north. The world builder builds it into the client's data; the
+server has no use for it.
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 
