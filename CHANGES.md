@@ -77,6 +77,7 @@
 - Camp spots name the room that holds them. New pack `camp-spot-cells/`.
 - Quests that pay on completion are given only from the level they were meant for. New pack `quest-pay-levels/`.
 - Creatures 30 quests ask for stand where guides of the time put them, or among their kind, and 25 of those quests can now be finished. New pack `guide-camps/`.
+- Fifteen incursions can be started: their leaders stand among their packs. New pack `incursion-leaders/`.
 
 ## v0.30.0
 
