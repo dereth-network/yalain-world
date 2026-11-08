@@ -35,6 +35,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/treasure_words.toml  [[treasure_word]]
 <pack>/server/treasure_looks.toml  [[treasure_look]]
 <pack>/server/treasure_potions.toml [[treasure_potion]]
+<pack>/server/treasure_families.toml [[treasure_family]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -121,6 +122,7 @@ Every row sets one **item**, named by its key:
 | `treasure_word SORT 0xWORD` | the sort and the word's string |
 | `treasure_look 0xTEMPLATE` | the template |
 | `treasure_potion KIND` | the kind's name |
+| `treasure_family SORT ORDER` | the sort and the family's `order` |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -571,6 +573,34 @@ drawn in (a record of the install); `keys`, one to three `{ key, most }`, each k
 place in the order the kinds are drawn in, each once) and `states`, its effect's saved state at each tier from the
 lowest, one a tier of `[[treasure_rules]]`'s `potion_tiers` (the world's, or the server's own five). A treasure potion
 draws its kind evenly and takes its dropper's tier.
+
+**`[[treasure_family]]`**: a family of enchantments one sort of treasure item draws from. `sort` (`weapon`,
+`armor`, `shield` or `jewelry`); `order`, its place in the order its sort's families are drawn in; `when` (`permanent`,
+on the item itself; `equipped`, on whoever wields or wears it; `hit`, on what it hits); `weight`, how often it is
+drawn against its sort's others (0 or more: a family of weight 0 comes only as another's pair); `by_level`, whether an
+item's level takes the family's one tier it reaches last, else any tier it reaches, evenly; and `tiers`, at least one,
+each `{ least, state, puts_on, chance, glow, pair, named }`: `least`, the least level of an item that reaches it (from 0, and
+rising in a family by level); `state`, the enchantment (a saved state of the install, a tier of one family alone);
+`puts_on`, what it puts on what the item hits, only in a family of `hit` (left out: nothing); `chance`, how often it
+does, from 0 to 1; `glow`, the glow it gives weapons (0 for none), from 0 to 1; `pair`, an enchantment (a tier's
+state in some family) that comes with it in the same draw; `named = false`, never the one an item is named for. An
+item draws no family twice. A world that gives any families gives every sort's it means to: a sort with none draws no
+enchantments. `yalain world check` warns of the server's own enchantments a world's families leave out: an item that
+carries one keeps it, but it puts nothing on what the item hits and shows as the item's own.
+
+```toml
+# <pack>/server/treasure_families.toml
+[[treasure_family]]
+sort = "jewelry"
+order = 0
+when = "equipped"
+weight = 1.0
+by_level = false
+tiers = [
+    { least = 44, state = 0x6F000664, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "authored", by = "you" }
+```
 
 A world with no rows of one of these kinds plays the server's own of that kind, those fit to the 2017 servers'
 items, and its server says so at start. A kind's rows are taken whole, never mixed with the server's.

@@ -83,6 +83,7 @@
 - The words before treasure names are rows a world can change. New pack `treasure-words/`.
 - The looks treasure draws are rows a world can change. New pack `treasure-looks/`.
 - The kinds of treasure potion are rows a world can change. New pack `treasure-potions/`.
+- The enchantments treasure draws are rows a world can change. New pack `treasure-enchantments/`.
 
 ## v0.30.0
 

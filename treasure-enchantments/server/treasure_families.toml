@@ -1,0 +1,766 @@
+# The families of enchantments treasure draws, by sort: when each applies, its weight, whether an item's level
+# takes its one tier, and its tiers from the lowest, as fit to the 2017 servers' items. `order` is the order
+# the server draws them in; a tier's `pair` comes with it, and nothing is named for a tier `named = false`.
+
+[[treasure_family]]
+sort = "weapon"
+order = 0
+when = "hit"
+weight = 27.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F0024E5, puts_on = 0x6F00038B, chance = 0.1, glow = 0.92 },
+    { least = 16, state = 0x6F0024E1, puts_on = 0x6F000389, chance = 0.1, glow = 0.92 },
+    { least = 30, state = 0x6F0024E0, puts_on = 0x6F000388, chance = 0.1, glow = 0.92 },
+    { least = 40, state = 0x6F0024DF, puts_on = 0x6F000387, chance = 0.1, glow = 0.92 },
+    { least = 45, state = 0x6F0024E3, puts_on = 0x6F00038A, chance = 0.1, glow = 0.92 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 1
+when = "hit"
+weight = 29.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F0024E8, puts_on = 0x6F00038C, chance = 0.1, glow = 0.88 },
+    { least = 16, state = 0x6F0024F0, puts_on = 0x6F000390, chance = 0.1, glow = 0.88 },
+    { least = 30, state = 0x6F0024EE, puts_on = 0x6F00038F, chance = 0.1, glow = 0.88 },
+    { least = 40, state = 0x6F0024E9, puts_on = 0x6F00038D, chance = 0.1, glow = 0.88 },
+    { least = 45, state = 0x6F0024EA, puts_on = 0x6F00038E, chance = 0.1, glow = 0.88 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 2
+when = "hit"
+weight = 27.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F0024FE, puts_on = 0x6F000395, chance = 0.1, glow = 0.7 },
+    { least = 16, state = 0x6F0024F9, puts_on = 0x6F000393, chance = 0.1, glow = 0.7 },
+    { least = 30, state = 0x6F0024F3, puts_on = 0x6F000391, chance = 0.1, glow = 0.7 },
+    { least = 40, state = 0x6F0024F5, puts_on = 0x6F000392, chance = 0.1, glow = 0.7 },
+    { least = 45, state = 0x6F0024FD, puts_on = 0x6F000394, chance = 0.1, glow = 0.7 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 3
+when = "hit"
+weight = 25.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F002502, puts_on = 0x6F000397, chance = 0.1, glow = 0.8 },
+    { least = 16, state = 0x6F002503, puts_on = 0x6F000398, chance = 0.1, glow = 0.8 },
+    { least = 30, state = 0x6F002505, puts_on = 0x6F00039A, chance = 0.1, glow = 0.8 },
+    { least = 40, state = 0x6F002501, puts_on = 0x6F000396, chance = 0.1, glow = 0.85 },
+    { least = 45, state = 0x6F002504, puts_on = 0x6F000399, chance = 0.1, glow = 0.8 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 4
+when = "hit"
+weight = 25.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F002524, puts_on = 0x6F00039E, chance = 0.1, glow = 0.84 },
+    { least = 16, state = 0x6F002525, puts_on = 0x6F00039F, chance = 0.1, glow = 0.84 },
+    { least = 30, state = 0x6F002523, puts_on = 0x6F00039D, chance = 0.1, glow = 0.84 },
+    { least = 40, state = 0x6F002522, puts_on = 0x6F00039C, chance = 0.1, glow = 0.84 },
+    { least = 45, state = 0x6F002521, puts_on = 0x6F00039B, chance = 0.1, glow = 0.84 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 5
+when = "hit"
+weight = 20.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F002526, puts_on = 0x6F0003A0, chance = 0.1, glow = 0.0 },
+    { least = 16, state = 0x6F002528, puts_on = 0x6F0003A2, chance = 0.1, glow = 0.0 },
+    { least = 30, state = 0x6F002529, puts_on = 0x6F0003A3, chance = 0.1, glow = 0.0 },
+    { least = 40, state = 0x6F00252A, puts_on = 0x6F0003A4, chance = 0.1, glow = 0.0 },
+    { least = 45, state = 0x6F002527, puts_on = 0x6F0003A1, chance = 0.1, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 6
+when = "hit"
+weight = 25.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F00252E, puts_on = 0x6F0003A8, chance = 0.1, glow = 0.88 },
+    { least = 16, state = 0x6F00252F, puts_on = 0x6F0003A9, chance = 0.1, glow = 0.88 },
+    { least = 30, state = 0x6F00252B, puts_on = 0x6F0003A5, chance = 0.1, glow = 0.88 },
+    { least = 40, state = 0x6F00252D, puts_on = 0x6F0003A7, chance = 0.1, glow = 0.88 },
+    { least = 45, state = 0x6F00252C, puts_on = 0x6F0003A6, chance = 0.1, glow = 0.88 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 7
+when = "hit"
+weight = 27.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F002533, puts_on = 0x6F0003AB, chance = 0.1, glow = 0.84 },
+    { least = 16, state = 0x6F002537, puts_on = 0x6F0003AE, chance = 0.1, glow = 0.84 },
+    { least = 30, state = 0x6F002535, puts_on = 0x6F0003AD, chance = 0.1, glow = 0.84 },
+    { least = 40, state = 0x6F002534, puts_on = 0x6F0003AC, chance = 0.1, glow = 0.84 },
+    { least = 45, state = 0x6F002531, puts_on = 0x6F0003AA, chance = 0.1, glow = 0.84 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 8
+when = "hit"
+weight = 32.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F002616, puts_on = 0x6F0003DD, chance = 0.1, glow = 0.76 },
+    { least = 16, state = 0x6F0003DB, puts_on = 0x6F0003DB, chance = 0.1, glow = 0.76 },
+    { least = 30, state = 0x6F002618, puts_on = 0x6F0003DF, chance = 0.1, glow = 0.76 },
+    { least = 40, state = 0x6F002617, puts_on = 0x6F0003DE, chance = 0.1, glow = 0.76 },
+    { least = 45, state = 0x6F002615, puts_on = 0x6F0003DC, chance = 0.1, glow = 0.76 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 9
+when = "hit"
+weight = 20.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F002621, puts_on = 0x6F0003E3, chance = 0.1, glow = 0.96 },
+    { least = 16, state = 0x6F00261F, puts_on = 0x6F0003E2, chance = 0.1, glow = 0.96 },
+    { least = 30, state = 0x6F002624, puts_on = 0x6F0003E4, chance = 0.1, glow = 0.96 },
+    { least = 40, state = 0x6F00261E, puts_on = 0x6F0003E1, chance = 0.1, glow = 0.96 },
+    { least = 45, state = 0x6F0003E0, puts_on = 0x6F0003E0, chance = 0.1, glow = 0.96 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 10
+when = "permanent"
+weight = 29.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F0003D2, chance = 1.0, glow = 1.0 },
+    { least = 16, state = 0x6F0003D5, chance = 1.0, glow = 1.0 },
+    { least = 30, state = 0x6F0003D3, chance = 1.0, glow = 1.0 },
+    { least = 40, state = 0x6F0003D4, chance = 1.0, glow = 1.0 },
+    { least = 45, state = 0x6F0003D1, chance = 1.0, glow = 0.92 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 11
+when = "permanent"
+weight = 26.0
+by_level = true
+tiers = [
+    { least = 0, state = 0x6F0003DA, chance = 1.0, glow = 0.92 },
+    { least = 16, state = 0x6F0003D6, chance = 1.0, glow = 0.92 },
+    { least = 30, state = 0x6F0003D9, chance = 1.0, glow = 0.92 },
+    { least = 40, state = 0x6F0003D8, chance = 1.0, glow = 0.92 },
+    { least = 45, state = 0x6F0003D7, chance = 1.0, glow = 0.92 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCHANT", ref = "fit enchantments", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 12
+when = "permanent"
+weight = 37.0
+by_level = false
+tiers = [
+    { least = 18, state = 0x6F0024D7, chance = 1.0, glow = 0.0 },
+    { least = 3, state = 0x6F0024D6, chance = 1.0, glow = 0.0 },
+    { least = 30, state = 0x6F0024D5, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 13
+when = "permanent"
+weight = 11.0
+by_level = false
+tiers = [
+    { least = 6, state = 0x6F00251D, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 14
+when = "equipped"
+weight = 12.0
+by_level = false
+tiers = [
+    { least = 19, state = 0x6F0004B0, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 15
+when = "permanent"
+weight = 11.0
+by_level = false
+tiers = [
+    { least = 6, state = 0x6F00057A, chance = 1.0, glow = 0.0 },
+    { least = 6, state = 0x6F00057B, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 16
+when = "equipped"
+weight = 10.0
+by_level = false
+tiers = [
+    { least = 50, state = 0x6F002675, chance = 1.0, glow = 0.0 },
+    { least = 50, state = 0x6F002672, chance = 1.0, glow = 0.0 },
+    { least = 50, state = 0x6F002671, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 17
+when = "equipped"
+weight = 5.0
+by_level = false
+tiers = [
+    { least = 50, state = 0x6F002646, chance = 1.0, glow = 0.0 },
+    { least = 50, state = 0x6F002648, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 18
+when = "hit"
+weight = 12.0
+by_level = false
+tiers = [
+    { least = 50, state = 0x6F002620, puts_on = 0x6F002620, chance = 0.1, glow = 0.0 },
+    { least = 50, state = 0x6F0024FC, puts_on = 0x6F0024FC, chance = 0.1, glow = 0.0 },
+    { least = 50, state = 0x6F0024E2, puts_on = 0x6F0024E2, chance = 0.1, glow = 0.0 },
+    { least = 50, state = 0x6F00261C, puts_on = 0x6F00261C, chance = 0.1, glow = 0.0 },
+    { least = 50, state = 0x6F0024EB, puts_on = 0x6F0024EB, chance = 0.1, glow = 0.0 },
+    { least = 50, state = 0x6F002532, puts_on = 0x6F002532, chance = 0.1, glow = 0.0 },
+    { least = 50, state = 0x6F002530, puts_on = 0x6F002530, chance = 0.1, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 19
+when = "hit"
+weight = 4.0
+by_level = false
+tiers = [
+    { least = 45, state = 0x6F000574, puts_on = 0x6F002607, chance = 0.1, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 20
+when = "equipped"
+weight = 7.0
+by_level = false
+tiers = [
+    { least = 37, state = 0x6F0024C8, chance = 1.0, glow = 0.0, pair = 0x6F00266E, named = false },
+    { least = 37, state = 0x6F0024CB, chance = 1.0, glow = 0.0, pair = 0x6F00266E, named = false },
+    { least = 37, state = 0x6F0024CE, chance = 1.0, glow = 0.0, pair = 0x6F00266E, named = false },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-PAIRS", ref = "fit pairs", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 21
+when = "hit"
+weight = 3.0
+by_level = false
+tiers = [
+    { least = 47, state = 0x6F002500, puts_on = 0x6F002500, chance = 0.1, glow = 0.0, pair = 0x6F0024F4, named = false },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-PAIRS", ref = "fit pairs", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 22
+when = "equipped"
+weight = 0.0
+by_level = false
+tiers = [
+    { least = 0, state = 0x6F00266E, chance = 1.0, glow = 0.0, named = false },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-PAIRS", ref = "fit pairs", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 23
+when = "permanent"
+weight = 0.0
+by_level = false
+tiers = [
+    { least = 0, state = 0x6F0024F4, chance = 1.0, glow = 0.7 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "weapon"
+order = 24
+when = "hit"
+weight = 11.0
+by_level = false
+tiers = [
+    { least = 17, state = 0x6F0003AF, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003B0, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003B1, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003B2, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003B3, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003B4, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003B5, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003B6, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003B7, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003B8, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003B9, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003BA, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003BB, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003BC, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003BD, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003BE, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003BF, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003C0, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003C1, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003C2, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003C3, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003C4, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003C5, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003C6, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003C7, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003C8, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003C9, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003CA, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003CB, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003CC, chance = 1.0, glow = 0.0 },
+    { least = 17, state = 0x6F0003CD, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "armor"
+order = 0
+when = "permanent"
+weight = 182.0
+by_level = false
+tiers = [
+    { least = 6, state = 0x6F0024C0, chance = 1.0, glow = 0.0 },
+    { least = 31, state = 0x6F0024C4, chance = 1.0, glow = 0.0 },
+    { least = 16, state = 0x6F0024C5, chance = 1.0, glow = 0.0 },
+    { least = 31, state = 0x6F0024C3, chance = 1.0, glow = 0.0 },
+    { least = 48, state = 0x6F0024C2, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "armor"
+order = 1
+when = "equipped"
+weight = 32.0
+by_level = false
+tiers = [
+    { least = 0, state = 0x6F0003E6, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003E7, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003E8, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003E9, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003EB, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003EC, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003ED, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003EE, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003EF, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003F0, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003F1, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003F2, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003F3, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003F4, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003F5, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003F6, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003F7, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003F8, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003F9, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003FA, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003FB, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003FC, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003FD, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003FE, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0003FF, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000400, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000401, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000402, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000403, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000404, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000405, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000406, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000407, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000408, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000409, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00040A, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00040B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00040C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00040D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00040E, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00040F, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000410, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000411, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000412, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000413, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000414, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000415, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000416, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000417, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000418, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000419, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00041A, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00041B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00041C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00041D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00041E, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00041F, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000420, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000421, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000422, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000423, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000424, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000425, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000426, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000427, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000428, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000429, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00042A, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00042B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00042C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00042D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00042E, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00042F, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000430, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000431, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000432, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000433, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000434, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000435, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000436, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000437, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000438, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000439, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00043A, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00043B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00043C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00043D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00043E, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00043F, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000440, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000441, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000442, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000443, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000444, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000445, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000446, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000447, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000448, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000449, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00044A, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00044B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00044C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00044D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00044E, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00044F, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000450, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000451, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000452, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000453, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000454, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000455, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000456, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000457, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000458, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000459, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00045A, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00045B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00045C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00045D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00045E, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00045F, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000460, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000461, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000462, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000463, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000464, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000465, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000466, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000467, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000468, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000469, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00046A, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00046B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00046C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00046D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00046E, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00046F, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000470, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000471, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000472, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000473, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000474, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000475, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000476, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000477, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000478, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000479, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00047A, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00047B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00047C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00047D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00047E, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00047F, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000480, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000481, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000482, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000483, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000484, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000485, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000486, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000487, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000488, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000489, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00048A, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00048B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00048C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00048D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00048E, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00048F, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000490, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000491, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000492, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000493, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000494, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000495, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000496, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000497, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000498, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F000499, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00049A, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00049B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00049C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00049D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00049E, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00049F, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004A0, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004A1, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004A2, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004A3, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004A4, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004A5, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004A6, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004A7, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004A8, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004A9, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004AA, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004AB, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004AC, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004AD, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004AE, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F0004AF, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00062A, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00062B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00062C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00062D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F002755, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F002756, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F002757, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F002758, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00275B, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00275C, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00275D, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00275E, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F00275F, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F002760, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F002887, chance = 1.0, glow = 0.0 },
+    { least = 0, state = 0x6F002888, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "shield"
+order = 0
+when = "permanent"
+weight = 19.0
+by_level = false
+tiers = [
+    { least = 9, state = 0x6F0024D9, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "shield"
+order = 1
+when = "permanent"
+weight = 9.0
+by_level = false
+tiers = [
+    { least = 7, state = 0x6F00251E, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "shield"
+order = 2
+when = "equipped"
+weight = 8.0
+by_level = false
+tiers = [
+    { least = 21, state = 0x6F0003E5, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "jewelry"
+order = 0
+when = "equipped"
+weight = 19.0
+by_level = false
+tiers = [
+    { least = 11, state = 0x6F00054B, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "jewelry"
+order = 1
+when = "equipped"
+weight = 16.0
+by_level = false
+tiers = [
+    { least = 6, state = 0x6F00054A, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "jewelry"
+order = 2
+when = "equipped"
+weight = 12.0
+by_level = false
+tiers = [
+    { least = 11, state = 0x6F00054C, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "jewelry"
+order = 3
+when = "equipped"
+weight = 10.0
+by_level = false
+tiers = [
+    { least = 8, state = 0x6F00054E, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "jewelry"
+order = 4
+when = "equipped"
+weight = 8.0
+by_level = false
+tiers = [
+    { least = 18, state = 0x6F00054D, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "jewelry"
+order = 5
+when = "equipped"
+weight = 3.0
+by_level = false
+tiers = [
+    { least = 43, state = 0x6F000554, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "jewelry"
+order = 6
+when = "equipped"
+weight = 1.0
+by_level = false
+tiers = [
+    { least = 50, state = 0x6F000550, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "jewelry"
+order = 7
+when = "equipped"
+weight = 1.0
+by_level = false
+tiers = [
+    { least = 42, state = 0x6F000552, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "jewelry"
+order = 8
+when = "equipped"
+weight = 1.0
+by_level = false
+tiers = [
+    { least = 50, state = 0x6F000555, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "jewelry"
+order = 9
+when = "equipped"
+weight = 1.0
+by_level = false
+tiers = [
+    { least = 50, state = 0x6F000556, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
+
+[[treasure_family]]
+sort = "jewelry"
+order = 10
+when = "equipped"
+weight = 1.0
+by_level = false
+tiers = [
+    { least = 44, state = 0x6F000664, chance = 1.0, glow = 0.0 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-RARER", ref = "fit rarer", confidence = "medium" }
