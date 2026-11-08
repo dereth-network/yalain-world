@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- People who give a quest a later pack added now refuse a player too low for it, and three of those quests have a least level. New pack `quest-refusals-more/`.
+- People who give a quest a later pack added now refuse a player too low for it, and 22 of those quests have a least level. New pack `quest-refusals-more/`.
 - Loot counts are recounted without the trophies drawn beside them. New pack `loot-counts-recounted/`.
 - 11 more of Knorr's bounties can be finished: each named target has a camp where guides or a recording put it. Pack `knorr-bounties/` 0.2.0.
 - Creatures that dropped nothing but trophies now drop treasure of their level, from shared treasure pools. New pack `treasure-pools/`.

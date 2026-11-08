@@ -1,0 +1,11 @@
+# A person's under-level line tied to the quests later packs make it give, and how low that is; edit an authored pack instead.
+
+[[quest]]
+id = 0x800001F8
+id_name = "Quest_KQ2G_SkeletonLancer"
+state = 0x6F000AE2
+xp_share = 0.025
+xp_share_level = 56
+retry = 604800
+min_level = 56
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F000AE2, confidence = "low", fields = { xp_share = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it; guide-givers gives it", confidence = "low" } } }
