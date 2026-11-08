@@ -1,6 +1,7 @@
 # Changes
 
-## Unreleased
+## v0.32.0
+
 - Players can hand gems in at their own kingdom's shrine for kingdom points. New pack `kingdom-points/`.
 - 186 outdoor camps appear at the fixed places the recordings show, not anywhere in a circle. New pack `camp-outdoor-spots/`.
 - Quests with no setup pay what was recorded, or a guide's figure. New pack `quest-pay/`.
