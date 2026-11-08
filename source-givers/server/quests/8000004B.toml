@@ -1,0 +1,10 @@
+# Who gives this quest, from the guides of the time; edit an authored pack instead.
+
+[[step]]
+key = "s-given"
+quest = 0x8000004B
+needs = 0
+trigger = { use = 0x4700319A }
+update = "bestow"
+requires = [{ quest = 0x80000049, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "who gives it: the wiki of the time; after the quest it requires; no recording", confidence = "low" }

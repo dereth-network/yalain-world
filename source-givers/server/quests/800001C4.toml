@@ -1,0 +1,10 @@
+# Who gives this quest, from the guides of the time; edit an authored pack instead.
+
+[[step]]
+key = "s-given"
+quest = 0x800001C4
+needs = 0
+trigger = { use = 0x470030F1 }
+update = "bestow"
+requires = [{ quest = 0x800001C3, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "who gives it: the wiki of the time, AC2 Hero and the AC2 Vault; after the quest it requires; no recording", confidence = "medium" }
