@@ -25,6 +25,8 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/death_treasures.toml [[death_treasure]]
 <pack>/server/pets.toml            [[pet]], [[pet_limit]]
 <pack>/server/pools.toml           [[treasure_pool]]
+<pack>/server/effects.toml         [[effect_name]]
+<pack>/server/events.toml          [[event]]
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
 ```
@@ -199,6 +201,7 @@ A field marked † is read from the install when left out.
 | `min_level` | statics | the least level a player must be to use it, over its template's; its examination names it, and a use or a walk-in of a portal below it is refused at once |
 | `hero` | statics | true: only a hero may use it; its examination says so, and anyone else's use or walk-in of a portal is refused at once |
 | `kingdom` | statics | the kingdom a player must be of to use it, by the number a character's description names it: 1, 2 or 4; its examination names it, and anyone else's use or walk-in is refused at once |
+| `event` | | the `[[event]]` (its `key`) it stands for: it is in the world only while the event is on, made for those who see it as the event starts and forgotten as it ends; while it is off a use of it, a walk into it or a give to it finds nothing |
 
 **`[[camp]]`**: a spawn camp.
 
@@ -220,6 +223,7 @@ A field marked † is read from the install when left out.
 | `route` | | the `[[route]]` its creatures walk at rest (`key`, or `pack:key`), in place of wandering, indoors too |
 | `route_start`, `route_direction` | | the waypoint they set off toward (from 0; default 0) and which way they go on: `forward` (default) or `backward` |
 | `name` | | the name its creatures are told by, examined by and their corpses named after, in place of their template's: `{ table, string }`, a string of the install (a creature of an ordinary kind that a quest names as one) |
+| `event` | | the `[[event]]` (its `key`) it keeps its creatures for: none while the event is off, filled as it starts, and its creatures leave the world as it ends |
 
 **`[[place]]`**: a destination. `key`, `cell`, `at`, `rotation` / `heading`, `named_by` (templates
 whose destination names it: a portal's, or a surveyor's map's, whose holder a person who sends players by
@@ -289,7 +293,8 @@ back, with the person's `refuse-give` line naming the quest and the `item` if it
 
 `requires` lists other quests the step needs, each `{ quest = Q, phase = N }` (under way at that
 phase; phase 0: not under way), `{ quest = Q, done = true }` or `{ quest = Q, free = true }` (free to
-be given: not under way, and never had or its wait over). `takes` lists templates of items taken from the player's
+be given: not under way, and never had or its wait over); and `{ event = "key" }`, an `[[event]]` that
+must be on for the step to run. `takes` lists templates of items taken from the player's
 pack, which the player must hold (a hand-in); a give's step that takes the item given keeps it (the rest of a
 stack stays), one that does not hands it back after its update, and a give no step takes is handed back with the
 person's refusal of a give (its `refuse-give` line). The items a give's step gives come from the person, and one
@@ -423,6 +428,33 @@ meters within the landblock, from 0 up to 160), and its shape, one of: `radius` 
 (`[x, y]`, a rectangle along its own axes), each above 0 and at most 240 meters; `heading` turns a
 rectangle, in degrees clockwise from north. The world builder builds it into the client's data; the
 server has no use for it.
+
+**`[[effect_name]]`**: the saved state an effect's name stands for, where the install names the effect
+(an item's use, a wearer's or a death's effect) and the server can't resolve the name: `name` (the name, as
+text) and `state` (the saved state, `0x6F...` or `0x70...`). A name the server already resolves (by its effect
+enumeration's value and the install's one effect of that value, or by a package of the name) can't be given a
+row: `yalain world check --dats <install>` says which state it resolves to.
+
+**`[[event]]`**: a named state of the world, on for its times. `key` (lowercase letters, digits and
+hyphens); `game_event`, a value of the install's game events it stands for (optional; `yalain world check
+--dats <install>` holds it to them); `when`, at least one window: `{ from, until }`, a dated one, each a UTC time
+`YYYY-MM-DDTHH:MMZ` (seconds may follow), the end after the start and not included; or `{ days, from, until }`,
+a weekly one, `days` from `mon`, `tue`, `wed`, `thu`, `fri`, `sat`, `sun` and the times of day `HH:MM`, UTC,
+running into the next day when `until` is not after `from` (the same time: a whole day); `on_players`, effects
+(saved states) every player in the world holds while it is on, each put on at spellcraft 1 and running out as
+the event ends, and given to a player who comes into the world while it is on (one already holding a running
+record of the effect isn't given a second). Times are UTC for every world, whoever plays it. What an event
+gates names it: a camp's or an object's `event`, a step's `requires = [{ event = "key" }]`; each must name an
+event of the world. A world with no events gates nothing.
+
+```toml
+# <pack>/server/events.toml
+[[event]]
+key = "harvest-fair"
+when = [{ days = ["sat", "sun"], from = "18:00", until = "02:00" }]
+on_players = [0x6F001C71]
+prov = { from = "authored", by = "you" }
+```
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 
