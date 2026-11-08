@@ -80,6 +80,7 @@
 - Fifteen incursions can be started: their leaders stand among their packs. New pack `incursion-leaders/`.
 - Twelve raids and three dungeon bosses' quests can be started: the creatures that start them stand among their kind. New pack `kill-starters/`.
 - Treasure's numbers are rows a world can change; these are the ones it drew by already. New pack `treasure-numbers/`.
+- The words before treasure names are rows a world can change. New pack `treasure-words/`.
 
 ## v0.30.0
 

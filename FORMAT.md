@@ -32,6 +32,9 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/kingdoms.toml        [[points_bonus]]
 <pack>/server/popups.toml          [[popup]]
 <pack>/server/treasure.toml        [[treasure_rules]], [[treasure_sort]]
+<pack>/server/treasure_words.toml  [[treasure_word]]
+<pack>/server/treasure_looks.toml  [[treasure_look]]
+<pack>/server/treasure_potions.toml [[treasure_potion]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -115,6 +118,9 @@ Every row sets one **item**, named by its key:
 | `pet_limit 0xSKILL` | the summoning skill |
 | `treasure_rules` | the world's one row |
 | `treasure_sort SORT` | the sort: `weapon`, `armor`, `shield` or `jewelry` |
+| `treasure_word SORT 0xWORD` | the sort and the word's string |
+| `treasure_look 0xTEMPLATE` | the template |
+| `treasure_potion KIND` | the kind's name |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -537,9 +543,37 @@ counts = [{ from = 0, weights = [9.0, 1.0] }, { from = 25, weights = [1.0, 1.0] 
 prov = { from = "authored", by = "you" }
 ```
 
-A world with no `[[treasure_rules]]` or no `[[treasure_sort]]` rows plays the server's own numbers of that kind,
-those fit to the 2017 servers' items, and its server says so at start. A kind's rows are taken whole, never mixed
-with the server's.
+**`[[treasure_word]]`**: a word before treasure items' names. `sort` (`weapon`, `armor` or `shield`); `order`, its
+place in the order its sort's words are drawn in (each once in a sort); `word`, its string in the install's table of
+these words (`0x2500035F`); `delays = [least, most]`, the delays between blows it goes with; `weights`, its weight in
+each band of its sort's `counts`, one a band (the world's bands, or the server's own six), from 0 and at least one
+above 0. Once its effects have changed an item's numbers, the item takes one of the words that go with its delay, by
+their weights in its level's band, else one of its band's; with none weighted in the band, the plain word. A world
+whose sorts' counts have other bands than the server's own six gives its own words. The check warns of a band no word
+of a sort is weighted in.
+
+```toml
+# <pack>/server/treasure_words.toml
+[[treasure_word]]
+sort = "weapon"
+order = 0
+word = 0xEF4F89B9
+delays = [7, 18]
+weights = [0.0, 136.0, 149.0, 29.0, 0.0, 0.0]
+prov = { from = "authored", by = "you" }
+```
+
+**`[[treasure_look]]`**: the look a template's treasure items draw. `template`; `table`, the appearance table it is
+drawn in (a record of the install); `keys`, one to three `{ key, most }`, each key and the highest value it draws, from
+0 to 1, drawn as `[[treasure_rules]]`'s `look` says. A template with no row draws no look of its own.
+
+**`[[treasure_potion]]`**: a kind of treasure potion. `kind` (lowercase letters, digits and hyphens), `order` (its
+place in the order the kinds are drawn in, each once) and `states`, its effect's saved state at each tier from the
+lowest, one a tier of `[[treasure_rules]]`'s `potion_tiers` (the world's, or the server's own five). A treasure potion
+draws its kind evenly and takes its dropper's tier.
+
+A world with no rows of one of these kinds plays the server's own of that kind, those fit to the 2017 servers'
+items, and its server says so at start. A kind's rows are taken whole, never mixed with the server's.
 
 **`[[event]]`**: a named state of the world, on for its times. `key` (lowercase letters, digits and
 hyphens); `game_event`, a value of the install's game events it stands for (optional; `yalain world check
