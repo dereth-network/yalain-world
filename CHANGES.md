@@ -1,6 +1,42 @@
 # Changes
 
 ## Unreleased
+- 178 outdoor camps appear at the fixed places the recordings show, not anywhere in a circle. New pack `camp-outdoor-spots/`.
+- Quests with no setup pay what was recorded, or a guide's figure. New pack `quest-pay/`.
+- Some creatures' deaths make helpers around their killers. New pack `death-spawns/`.
+- Two camps in a city's yard, recorded only on the servers' last day, are gone. New pack `last-day-crowds/`.
+- The arena quests run by level, each kill leading on. New pack `gauntlets/`.
+- A person's practice gems go by level, one a week. New pack `practice-gems/`.
+- Indoor camps' spots a creature can't move from are gone or moved. New pack `camp-walker-spots/`.
+- Outdoor camps with little or no place to stand appear where they were first seen. New pack `camp-ground-spots/`.
+- Camps whose places held a creature fast appear at the nearest place it can move. New pack `camp-slope-spots/`.
+- A jeweler pays by the size of the gem handed in, and the last gem earns her tool. New pack `gem-fees/`.
+- More people stand where players' guides of the time put them, with no recording to say so. New pack `guide-people/`.
+- Two more mines, a grove and a farm stand where players' guides of the time put them, each for a fee. New pack `guide-mines/`.
+- Those people and others now give the quests players' guides of the time name them for; some can't be finished yet. New pack `guide-givers/`.
+- Recorded chests draw treasure of their own level, the arenas have their other rooms, and practice gems make their dummies. Packs `chest-loot/`, `gauntlets/`, `practice-gems/`.
+- A practice gem's dummy goes after its ninety seconds. Pack `practice-gems/`.
+- Portals refuse a player below the least level recordings show on them; lifestones and workshop objects show theirs. New pack `portal-levels/`.
+- Six portals ask for the quest their pages name; each quest can be finished. New pack `page-quests/`.
+- Five portals keep to the kingdom their pages name. New pack `portal-kingdoms/`.
+- Tyrants and two kinds of Darkenfowl leave the trophies and eggs players counted or were told of; no recording opened one, and only two of the Tyrants have camps yet. New pack `tyrant-trophies/`.
+- Every summoning skill and contract says what it makes and how many a skill allows, and pets have the health they were seen with. New pack `pet-kinds/`.
+- A pet's skill that makes another pet has its row. New pack `pet-hive-wasps/`.
+- More camps that were really players' pets are gone.
+- Knorr can be reached by its portal, and its hub's gateways lead somewhere. New pack `knorr-gateway/`.
+- Three of Knorr's towns have more of their people, and a fort its lifestone. New pack `knorr-people/`.
+- Knorr's named creatures stand where guides of the time put them. New pack `knorr-bounties/`.
+- More of Knorr's hunts and bounties can be taken and finished. New pack `knorr-hunts/`.
+- Four of Knorr's five mushroom hunts can be done. New pack `knorr-mushrooms/`.
+- More of Knorr's creatures, where a recording of 2005 shows them. New pack `knorr-seen-2005/`.
+- The floating city's upper level and hub can be reached by their doors, and two of the hub's far gateways lead back. New pack `knorr-doors/`.
+- Knorr's people stand where a player can reach them. New pack `knorr-walked/`.
+- Three more of Knorr's hunts can be finished. New pack `knorr-map-hunts/`.
+- A southern fort's three inside people are at its door, and the last of Knorr's mushroom hunts can be done. New pack `knorr-fort/`.
+- `tyrant-trophies/`: all 8 rows: 6 from players' counts of kills, 2 from rates stated at the time.
+- `pet-kinds/`: the health of the pets no recording's player looked at, two helpers' heals, and the three mercenaries' numbers.
+- `skyport-maint/`: the giving, its wait, the alembic's 2 steps, all 10 lines and where the shards lie. The alembic and the stibnite aren't placed.
+- `under-level-more/`: 3 lines taken away; its 2 lines tied by a quest's description are now `guide-givers/`'s.
 
 - People who give a quest a later pack added now refuse a player too low for it, and 22 of those quests have a least level. New pack `quest-refusals-more/`.
 - Loot counts are recounted without the trophies drawn beside them. New pack `loot-counts-recounted/`.
@@ -44,52 +80,16 @@
 - Nobody who gives nothing here tells a player it is too weak. New pack `under-level-more/`.
 - 494 camps keep as many creatures as the recordings show alive together, 620 more in all. New pack `camp-counts/`.
 - Four camps of a jumping creature appear on the floor where the recordings first show them, not in midair. New pack `camp-first-places/`.
-- 178 outdoor camps appear at the fixed places the recordings show, not anywhere in a circle. New pack `camp-outdoor-spots/`.
-- Quests with no setup pay what was recorded, or a guide's figure. New pack `quest-pay/`.
-- Some creatures' deaths make helpers around their killers. New pack `death-spawns/`.
-- Two camps in a city's yard, recorded only on the servers' last day, are gone. New pack `last-day-crowds/`.
-- The arena quests run by level, each kill leading on. New pack `gauntlets/`.
-- A person's practice gems go by level, one a week. New pack `practice-gems/`.
-- Indoor camps' spots a creature can't move from are gone or moved. New pack `camp-walker-spots/`.
-- Outdoor camps with little or no place to stand appear where they were first seen. New pack `camp-ground-spots/`.
-- Camps whose places held a creature fast appear at the nearest place it can move. New pack `camp-slope-spots/`.
-- A jeweler pays by the size of the gem handed in, and the last gem earns her tool. New pack `gem-fees/`.
-- More people stand where players' guides of the time put them, with no recording to say so. New pack `guide-people/`.
-- Two more mines, a grove and a farm stand where players' guides of the time put them, each for a fee. New pack `guide-mines/`.
-- Those people and others now give the quests players' guides of the time name them for; some can't be finished yet. New pack `guide-givers/`.
-- Recorded chests draw treasure of their own level, the arenas have their other rooms, and practice gems make their dummies. Packs `chest-loot/`, `gauntlets/`, `practice-gems/`.
-- A practice gem's dummy goes after its ninety seconds. Pack `practice-gems/`.
-- Portals refuse a player below the least level recordings show on them; lifestones and workshop objects show theirs. New pack `portal-levels/`.
-- Six portals ask for the quest their pages name; each quest can be finished. New pack `page-quests/`.
-- Five portals keep to the kingdom their pages name. New pack `portal-kingdoms/`.
-- Tyrants and two kinds of Darkenfowl leave the trophies and eggs players counted or were told of; no recording opened one, and only two of the Tyrants have camps yet. New pack `tyrant-trophies/`.
-- Every summoning skill and contract says what it makes and how many a skill allows, and pets have the health they were seen with. New pack `pet-kinds/`.
-- A pet's skill that makes another pet has its row. New pack `pet-hive-wasps/`.
-- More camps that were really players' pets are gone.
-- Knorr can be reached by its portal, and its hub's gateways lead somewhere. New pack `knorr-gateway/`.
-- Three of Knorr's towns have more of their people, and a fort its lifestone. New pack `knorr-people/`.
-- Knorr's named creatures stand where guides of the time put them. New pack `knorr-bounties/`.
-- More of Knorr's hunts and bounties can be taken and finished. New pack `knorr-hunts/`.
-- Four of Knorr's five mushroom hunts can be done. New pack `knorr-mushrooms/`.
-- More of Knorr's creatures, where a recording of 2005 shows them. New pack `knorr-seen-2005/`.
-- The floating city's upper level and hub can be reached by their doors, and two of the hub's far gateways lead back. New pack `knorr-doors/`.
-- Knorr's people stand where a player can reach them. New pack `knorr-walked/`.
-- Three more of Knorr's hunts can be finished. New pack `knorr-map-hunts/`.
-- A southern fort's three inside people are at its door, and the last of Knorr's mushroom hunts can be done. New pack `knorr-fort/`.
 
 Marked `authored` and `low` in this version, rather than recorded:
 
-- `tyrant-trophies/`: all 8 rows: 6 from players' counts of kills, 2 from rates stated at the time.
-- `pet-kinds/`: the health of the pets no recording's player looked at, two helpers' heals, and the three mercenaries' numbers.
 - `ulkas-mines/`: 6 of its 9 steps: the last find ending a fee. The 3 givings are captured, but what sets them off is inferred from who they reach.
 - `journal-hand-ins/`: 30 of its 31 steps, since no hand-in for these quests is recorded; the other is one recorded giving, also `low`. All 32 of its lines are tied by the journals alone, `low`.
 - `ryvenna-gems/`: all 131 hand-ins and their fees, by one recorded fee's rule, and her last line. The 33 givings and their order are captured.
 - `mine-ways-down/`: all of it: 4 portals' destinations by their own names, and 1 landing where recorded players stood at the way in.
 - `bestowal-chains/`: all 13 steps, 18 lines and 1 give, since neither crafter's second half is recorded.
 - `sclavus-cabals/`: the last hand-in and all 6 reminders. What moves its phases is the install's; where its items drop is not built.
-- `skyport-maint/`: the giving, its wait, the alembic's 2 steps, all 10 lines and where the shards lie. The alembic and the stibnite aren't placed.
 - `mirra-rouge/`: all 4 steps and 1 give, by the three recorded mirras.
-- `under-level-more/`: 3 lines taken away; its 2 lines tied by a quest's description are now `guide-givers/`'s.
 
 ## v0.29.0
 
