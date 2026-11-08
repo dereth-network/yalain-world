@@ -30,6 +30,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
 <pack>/server/kingdoms.toml        [[points_bonus]]
+<pack>/server/popups.toml          [[popup]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -444,6 +445,22 @@ at those points are granted at once, as a use of the shrine grants them. One row
 effect = 0x6F00188E
 add = 200
 up_to = 1500
+prov = { from = "authored", by = "you" }
+```
+
+**`[[popup]]`**: a tip a player is shown once, in a box of its own, the first time a moment comes for its
+character. `on`, the moment: `first-entry` (the character's first entry into the world, as its session starts),
+`level-up` (its first level gained, after the level's own line) or `glyph` (when a glyph first comes into its
+hands, taken or given, before any quest the glyph moves); `effect`, the saved state of an effect of the install,
+whose description is the tip (`yalain world check --dats <install>` holds it to the install and to having a
+description). Each moment comes once per character, a tip or none: a tip added later is not shown for a moment a
+character passed before it, and a character kept before tips were shown has passed them all. One row per moment.
+
+```toml
+# <pack>/server/popups.toml
+[[popup]]
+on = "level-up"
+effect = 0x6F001925
 prov = { from = "authored", by = "you" }
 ```
 
