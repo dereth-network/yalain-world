@@ -1,0 +1,12 @@
+# Named creatures where players' guides or a recording put them; edit an authored pack instead.
+
+[[camp]]
+key = "k-bm3a"
+cell = 0xC04B001B
+at = [62.43, 44.0, 77.75]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A72, weight = 1 }]
+name = { table = 0x2500270F, string = 0xC01CE5E7 }
+prov = { from = "authored", by = "Dereth Network", note = "a guide of 2013's and the wiki's spot, to about 20 m, 1 m west, as a body can't leave theirs; the template of its string table with the guides' level and health; no recording; the land's height", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

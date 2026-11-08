@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- 11 more of Knorr's bounties can be finished: each named target has a camp where guides or a recording put it. Pack `knorr-bounties/` 0.2.0.
 - Creatures and chests no longer drop the rarities a single recording put on them, until a treasure system brings them back. New pack `rares-out/`.
 - A knife that was not made cuts by the yield its new `[[tool]]` row gives. In `craft-butchery/`.
 - A summoned decoy does nothing, as its skill names nothing that exists. New pack `decoy-idle/`.

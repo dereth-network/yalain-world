@@ -1,0 +1,22 @@
+# Named creatures where players' guides or a recording put them; edit an authored pack instead.
+
+[[camp]]
+key = "k-bm2c"
+cell = 0xC654003E
+at = [150.36, 115.06, 132.59]
+radius = 0.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D97, weight = 1 }]
+name = { table = 0x2500284B, string = 0xE77B18D7 }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12576", confidence = "low", sample = { creatures = 1, sessions = 1 }, note = "the one of the camp's three a recording of 2017 created with a name, where it was created", fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-12576"
+cell = 0xC654003F
+at = [146.4, 120.1, 132.6]
+radius = 21.9
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002D97, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 12576", confidence = "low", sample = { creatures = 3, sessions = 1 }, fields = { population = { from = "authored", by = "Dereth Network", note = "the third, the named one, has its own camp" }, regen = { from = "derived", rule = "camp-regen-median" } } }

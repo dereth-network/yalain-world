@@ -1,0 +1,26 @@
+# A bounty's kill, from players' guides; edit an authored pack instead.
+
+[[step]]
+key = "k-given"
+quest = 0x80000193
+needs = 0
+trigger = { use = 0x470030D2 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of 2013; no recording", confidence = "low" }
+
+[[step]]
+key = "k-killed"
+quest = 0x80000193
+needs = 1
+trigger = { kill = 0x47002BEA, camp = "k-bm4c" }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "its target, as players' guides of 2013 and the wiki name it; no recording of the kill", confidence = "low" }
+
+[[step]]
+key = "k-end"
+quest = 0x80000193
+needs = 2
+trigger = { use = 0x470030D2 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "who takes it back, from a player's guide of 2013; no recording", confidence = "low" }
