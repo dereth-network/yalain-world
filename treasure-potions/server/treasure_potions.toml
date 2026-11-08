@@ -1,0 +1,56 @@
+# The kinds of treasure potion, each with its effect at each tier from the lowest, as the 2017 servers'
+# potions showed. `order` is the order the server draws them in.
+
+[[treasure_potion]]
+kind = "attack-speed"
+order = 0
+states = [0x700009F7, 0x700009F4, 0x700009F5, 0x700009F8, 0x700009F6]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }
+
+[[treasure_potion]]
+kind = "damage-reflected"
+order = 1
+states = [0x700009FD, 0x700009FC, 0x700009F9, 0x700009FA, 0x700009FB]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }
+
+[[treasure_potion]]
+kind = "health-over-time"
+order = 2
+states = [0x70000A00, 0x700009FE, 0x700009FF, 0x70000A01, 0x70000A02]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }
+
+[[treasure_potion]]
+kind = "health-regained"
+order = 3
+states = [0x70000A06, 0x70000A04, 0x70000A03, 0x70000A05, 0x70000A07]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }
+
+[[treasure_potion]]
+kind = "greatest-health"
+order = 4
+states = [0x70000A0C, 0x70000A08, 0x70000A0B, 0x70000A09, 0x70000A0A]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }
+
+[[treasure_potion]]
+kind = "greatest-vigor"
+order = 5
+states = [0x70000A10, 0x70000A0F, 0x70000A0E, 0x70000A0D, 0x70000A11]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }
+
+[[treasure_potion]]
+kind = "run-speed"
+order = 6
+states = [0x70000A13, 0x70000A14, 0x70000A15, 0x70000A16, 0x70000A12]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }
+
+[[treasure_potion]]
+kind = "vigor-over-time"
+order = 7
+states = [0x70000A18, 0x70000A17, 0x70000A1B, 0x70000A19, 0x70000A1A]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }
+
+[[treasure_potion]]
+kind = "vigor-regained"
+order = 8
+states = [0x70000A1C, 0x70000A20, 0x70000A1E, 0x70000A1F, 0x70000A1D]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }
