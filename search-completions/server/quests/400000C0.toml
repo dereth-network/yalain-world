@@ -1,0 +1,31 @@
+# Written from the January 2017 recordings; edit an authored pack instead.
+# Each of the 18 finished searches recorded was followed by the explorer's one line and this quest's giving
+# (7 given, 11 refused as under way or waiting), whatever the player held: so it is given by the finish, not
+# by a use, and the line is the explorer's completion line alone.
+
+[[step]]
+key = "s1"
+quest = 0x400000C0
+needs = 0
+trigger = { done = 0x40000016 }
+update = "bestow"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-NEW-PLAYERS-2017", ref = "c:81060a3d", confidence = "high", sample = { sessions = 4 } }
+
+[[step]]
+key = "s2"
+quest = 0x400000C0
+needs = 0
+trigger = { done = 0x40000017 }
+update = "bestow"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-NEW-PLAYERS-2017", ref = "c:9f306796", confidence = "high", sample = { sessions = 7 } }
+
+[[step]]
+key = "s3"
+quest = 0x400000C0
+needs = 0
+trigger = { done = 0x40000018 }
+update = "bestow"
+xp = 0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-NEW-PLAYERS-2017", ref = "c:8d5975bc", confidence = "high", sample = { sessions = 7 } }
