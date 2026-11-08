@@ -25,7 +25,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/death_treasures.toml [[death_treasure]]
 <pack>/server/pets.toml            [[pet]], [[pet_limit]]
 <pack>/server/pools.toml           [[treasure_pool]]
-<pack>/server/effects.toml         [[effect_name]]
+<pack>/server/effects.toml         [[effect_name]], [[effect_rule]]
 <pack>/server/events.toml          [[event]]
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
@@ -476,6 +476,22 @@ server has no use for it.
 text) and `state` (the saved state, `0x6F...` or `0x70...`). A name the server already resolves (by its effect
 enumeration's value and the install's one effect of that value, or by a package of the name) can't be given a
 row: `yalain world check --dats <install>` says which state it resolves to.
+
+**`[[effect_rule]]`**: what an effect of the install does where its own data says nothing. `effect` (its saved
+state, one the install holds) and `ward`: `{ classes, effects, chance }`, what a player holding it keeps off:
+effects of these classes and these effects (saved states the install holds), at least one of either, each kept off
+by `chance`, above 0 and at most 1, at any spellcraft. Of a player's wards of one class only the top one draws. A
+ward whose own data names what it keeps off needs no row. A world with no ward rows has the server's own (fire,
+poison and what lowers vigor, a 15% chance each, and three that keep off what lowers armor always); a world with
+any has its rows alone, so a world that adds one writes those too. One row per effect.
+
+```toml
+# <pack>/server/effects.toml
+[[effect_rule]]
+effect = 0x6F002672
+ward = { classes = [48, 1119, 5013], chance = 0.15 }
+prov = { from = "authored", by = "you" }
+```
 
 **`[[event]]`**: a named state of the world, on for its times. `key` (lowercase letters, digits and
 hyphens); `game_event`, a value of the install's game events it stands for (optional; `yalain world check

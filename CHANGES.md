@@ -46,6 +46,7 @@
 - `skyport-maint/`: the giving, its wait, the alembic's 2 steps, all 10 lines and where the shards lie. The alembic and the stibnite aren't placed.
 - `under-level-more/`: 3 lines taken away; its 2 lines tied by a quest's description are now `guide-givers/`'s.
 - New players are shown the welcome, and a tip the first time they gain a level and find a glyph. New pack `new-player-tips/`.
+- Another warder stone now gives its ward, which keeps off what bars skills. New pack `effect-rules/`.
 
 - People who give a quest a later pack added now refuse a player too low for it, and 22 of those quests have a least level. New pack `quest-refusals-more/`.
 - Loot counts are recounted without the trophies drawn beside them. New pack `loot-counts-recounted/`.

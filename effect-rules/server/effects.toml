@@ -1,0 +1,47 @@
+# A ward's own data names nothing it keeps off: its description names the kind, and these name the classes the
+# install's effects of that kind are in (or, for a kind with no class of its own, the effects). A world with no
+# ward rows has the server's own, which are the first six here.
+
+[[effect_rule]]
+effect = 0x6F002672
+ward = { classes = [48, 1119, 5013], chance = 0.15 }
+prov = { from = "dat", record = 0x6F002672, confidence = "low", note = "the kind and the chance its description gives", fields = { ward = { from = "dat", record = 0x70001F48, confidence = "low", note = "the classes the install's protection from fire names" } } }
+
+[[effect_rule]]
+effect = 0x6F002671
+ward = { classes = [49, 5014, 26, 4015, 5043, 5050], chance = 0.15 }
+prov = { from = "dat", record = 0x6F002671, confidence = "low", note = "the kind and the chance its description gives", fields = { ward = { from = "dat", record = 0x70001F63, confidence = "low", note = "the classes the install's protection from disease names" } } }
+
+[[effect_rule]]
+effect = 0x6F002675
+ward = { classes = [53, 5007, 5022, 5046], chance = 0.15 }
+prov = { from = "dat", record = 0x6F002675, confidence = "low", note = "the kind and the chance its description gives", fields = { ward = { from = "authored", by = "Dereth Network", confidence = "low", note = "the classes the install's poisons are in, not those of what puts them on" } } }
+
+[[effect_rule]]
+effect = 0x6F00266E
+ward = { classes = [22, 5061], chance = 1.0 }
+prov = { from = "dat", record = 0x6F00266E, confidence = "low", note = "the kind its description gives, always", fields = { ward = { from = "authored", by = "Dereth Network", confidence = "low", note = "the classes most of the install's effects that lower armor are in" } } }
+
+[[effect_rule]]
+effect = 0x6F002670
+ward = { classes = [22, 5061], chance = 1.0 }
+prov = { from = "dat", record = 0x6F002670, confidence = "low", note = "the kind its description gives, always", fields = { ward = { from = "authored", by = "Dereth Network", confidence = "low", note = "the classes most of the install's effects that lower armor are in" } } }
+
+[[effect_rule]]
+effect = 0x6F002674
+ward = { classes = [22, 5061], chance = 1.0 }
+prov = { from = "dat", record = 0x6F002674, confidence = "low", note = "the kind its description gives, always", fields = { ward = { from = "authored", by = "Dereth Network", confidence = "low", note = "the classes most of the install's effects that lower armor are in" } } }
+
+# The ward a stone's quest puts on against what bars skills: the three effects every tyrant's magic puts on bar
+# magic, melee and missile skills, one class each.
+[[effect_rule]]
+effect = 0x6F000E94
+ward = { classes = [93, 94, 95], chance = 1.0 }
+prov = { from = "dat", record = 0x6F000E94, confidence = "low", note = "the kind its description gives, always", fields = { ward = { from = "dat", record = 0x7000195D, confidence = "low", note = "the classes of the effects the tyrants' three skills that bar skills put on" } } }
+
+# The ward a stone's quest puts on against the warath's knockback: the one effect their attacks put on that throws
+# its target back, whose class is no class of its own. Nothing a server does yet throws a player back.
+[[effect_rule]]
+effect = 0x6F000E95
+ward = { effects = [0x700006C6], chance = 1.0 }
+prov = { from = "dat", record = 0x6F000E95, confidence = "low", note = "the kind its description gives, always", fields = { ward = { from = "dat", record = 0x70003666, confidence = "low", note = "the knockback its attack puts on" } } }
