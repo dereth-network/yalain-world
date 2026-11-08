@@ -89,7 +89,9 @@ Marked `authored` and `low` in this version, rather than recorded:
 - `mine-ways-down/`: all of it: 4 portals' destinations by their own names, and 1 landing where recorded players stood at the way in.
 - `bestowal-chains/`: all 13 steps, 18 lines and 1 give, since neither crafter's second half is recorded.
 - `sclavus-cabals/`: the last hand-in and all 6 reminders. What moves its phases is the install's; where its items drop is not built.
+- `skyport-maint/`: the giving, its wait, the alembic's 2 steps and all 10 lines. The alembic isn't placed.
 - `mirra-rouge/`: all 4 steps and 1 give, by the three recorded mirras.
+- `under-level-more/`: 2 lines tied by the quest's description, 3 lines taken away.
 
 ## v0.29.0
 
