@@ -1,0 +1,13 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800001F5
+id_name = "Quest_KQ2D_RavenousLasher"
+state = 0x6F000ADF
+challenge = 52
+cancellable = true
+xp_share = 0.03
+xp_share_level = 52
+retry = 604800
+min_level = 50
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:82fe36a9", confidence = "low", sample = { sessions = 1 }, fields = { xp_share = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

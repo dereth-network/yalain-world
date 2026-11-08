@@ -1,0 +1,13 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000379
+id_name = "Quest_BestFriend_1"
+state = 0x6F0006C7
+challenge = 30
+retry = 518400
+cancellable = true
+xp = 200000
+xp_whole = true
+min_level = 25
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:d07d2677", confidence = "high", sample = { sessions = 4 }, fields = { xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:b7dc9d60", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:b7dc9d60", confidence = "low", sample = { sessions = 1 } }, min_level = { from = "authored", by = "Dereth Network", confidence = "low", note = "its challenge less 5, ours: no guide gives a level, and the lowest level recorded completing it is 32" } } }

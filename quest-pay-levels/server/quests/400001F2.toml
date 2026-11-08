@@ -1,0 +1,14 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x400001F2
+id_name = "QuestHeroicSlayer1"
+state = 0x6F0008B1
+challenge = 50
+retry = 86400
+cancellable = false
+duration = 7200.0
+xp = 3000000
+xp_whole = true
+min_level = 45
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:5b66ba89", confidence = "high", sample = { sessions = 10 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:20a05b1f", confidence = "medium", sample = { sessions = 6 } }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:aedfb4b4", confidence = "medium", sample = { sessions = 4 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:aedfb4b4", confidence = "medium", sample = { sessions = 4 } }, min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

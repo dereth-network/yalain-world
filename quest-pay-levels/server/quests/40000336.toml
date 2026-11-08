@@ -1,0 +1,13 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000336
+id_name = "QuestStubby4"
+state = 0x6F000D16
+challenge = 40
+cancellable = false
+duration = 7200.0
+xp_share = 0.02
+xp_most = 5000000
+min_level = 40
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:ee960ccb", confidence = "high", sample = { sessions = 12 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:b1466ddd", confidence = "medium", sample = { sessions = 4 } }, xp_share = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_most = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

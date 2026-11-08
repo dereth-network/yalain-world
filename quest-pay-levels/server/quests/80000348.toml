@@ -1,0 +1,13 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000348
+id_name = "QuestBurunOrders"
+state = 0x6F0008A6
+challenge = 30
+cancellable = true
+duration = 86400.0
+xp = 50000
+xp_whole = true
+min_level = 25
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:22359956", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:ea340922", confidence = "low", sample = { sessions = 1 } }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:e45d3c10", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:e45d3c10", confidence = "low", sample = { sessions = 1 } }, min_level = { from = "authored", by = "Dereth Network", confidence = "low", note = "its challenge less 5, ours: no guide gives a level, and the lowest level recorded completing it is 31" } } }

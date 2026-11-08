@@ -1,0 +1,13 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x8000035E
+id_name = "Quest_ErobalRemains"
+state = 0x6F000D83
+challenge = 22
+retry = 518400
+cancellable = true
+xp = 15000
+xp_whole = true
+min_level = 17
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:210a95ba", confidence = "medium", sample = { sessions = 2 }, fields = { xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:06ee9be7", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:06ee9be7", confidence = "low", sample = { sessions = 1 } }, min_level = { from = "authored", by = "Dereth Network", confidence = "low", note = "its challenge less 5, ours: no guide gives a level, and the lowest level recorded completing it is 26" } } }

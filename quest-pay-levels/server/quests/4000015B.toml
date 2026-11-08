@@ -1,0 +1,15 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000015B
+id_name = "QuestArmorKnights"
+state = 0x6F0006E4
+challenge = 20
+retry = 518400
+cancellable = true
+duration = 172800.0
+qp = 10000
+xp = 50000
+xp_whole = true
+min_level = 15
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:9224b7d5", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:dcc046b2", confidence = "low", sample = { sessions = 1 } }, qp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-POINTS-2017", ref = "c:a891a3d6", confidence = "medium", sample = { sessions = 1 } }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:e9610b1b", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:e9610b1b", confidence = "low", sample = { sessions = 1 } }, min_level = { from = "authored", by = "Dereth Network", confidence = "low", note = "its challenge less 5, ours: no guide gives a level, and the lowest level recorded completing it is 21" } } }

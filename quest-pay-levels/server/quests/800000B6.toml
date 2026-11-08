@@ -1,0 +1,13 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x800000B6
+id_name = "QuestHakA_AwaroErobal"
+state = 0x6F0009BE
+challenge = 28
+retry = 72000
+cancellable = true
+xp = 100000
+xp_whole = true
+min_level = 23
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:f0dc09b5", confidence = "high", sample = { sessions = 4 }, fields = { xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:3a9d99a7", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:3a9d99a7", confidence = "low", sample = { sessions = 1 } }, min_level = { from = "authored", by = "Dereth Network", confidence = "low", note = "its challenge less 5, ours: no guide gives a level, and the lowest level recorded completing it is 31" } } }

@@ -1,0 +1,13 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000032B
+id_name = "QuestImperatorDilloRancher"
+state = 0x6F0008C6
+challenge = 45
+retry = 518400
+cancellable = true
+xp_share = 0.1
+xp_share_level = 45
+min_level = 40
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:32125b9c", confidence = "medium", sample = { sessions = 2 }, fields = { xp_share = { from = "authored", by = "Dereth Network", note = "as the others of its person are recorded", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "as the others of its person are recorded", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

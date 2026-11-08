@@ -1,0 +1,13 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000332
+id_name = "QuestImperatorWildHare"
+state = 0x6F0008D2
+challenge = 45
+retry = 518400
+cancellable = true
+xp_share = 0.1
+xp_share_level = 45
+min_level = 40
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:ceb0a506", confidence = "high", sample = { sessions = 3 }, fields = { xp_share = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:57473111", confidence = "medium", sample = { sessions = 2 } }, xp_share_level = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:57473111", confidence = "medium", sample = { sessions = 2 } }, min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

@@ -1,0 +1,14 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000324
+id_name = "QuestMoarsmanMania"
+state = 0x6F0008AB
+challenge = 30
+retry = 518400
+cancellable = true
+duration = 86400.0
+xp = 170000
+xp_whole = true
+min_level = 25
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:9899b0a6", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:f139fad9", confidence = "medium", sample = { sessions = 2 } }, xp = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:b22ca0c6", confidence = "low", sample = { sessions = 1 } }, xp_whole = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-PAY-2017", ref = "c:b22ca0c6", confidence = "low", sample = { sessions = 1 } }, min_level = { from = "authored", by = "Dereth Network", confidence = "low", note = "its challenge less 5, ours: no guide gives a level, and the lowest level recorded completing it is 31" } } }

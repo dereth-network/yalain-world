@@ -1,0 +1,11 @@
+# The least level of a quest that pays on completion; edit an authored pack instead.
+
+[[quest]]
+id = 0x400001F9
+id_name = "QuestHeroicSlayer8"
+state = 0x6F0008B8
+xp = 7000000
+xp_whole = true
+retry = 86400
+min_level = 45
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F0008B8, confidence = "low", fields = { xp = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_whole = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" } } }

@@ -70,6 +70,7 @@
 - A portal gem takes its user where it says, and two stones give what they promise for as long as they say. New pack `used-items/`.
 - Turrets pay for their shots with vigor, which comes back slowly. New pack `turret-vigor/`.
 - Camp spots name the room that holds them. New pack `camp-spot-cells/`.
+- Quests that pay on completion are given only from the level they were meant for. New pack `quest-pay-levels/`.
 
 ## v0.30.0
 
