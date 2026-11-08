@@ -78,7 +78,7 @@
 - Quests that pay on completion are given only from the level they were meant for. New pack `quest-pay-levels/`.
 - Creatures 30 quests ask for stand where guides of the time put them, or among their kind, and 26 of those quests can now be finished; four bounties now end back at their giver. New pack `guide-camps/`.
 - Fifteen incursions can be started: their leaders stand among their packs. New pack `incursion-leaders/`.
-- Six raids and three dungeon bosses' quests can be started: the creatures that start them stand among their kind. New pack `kill-starters/`.
+- Twelve raids and three dungeon bosses' quests can be started: the creatures that start them stand among their kind. New pack `kill-starters/`.
 
 ## v0.30.0
 
