@@ -1,0 +1,68 @@
+# The armor a pet shows against a creature's plain hit in the January 2017 recordings, by the pet's own
+# level. A creature's hit on it is its natural damage less this, as on a player. Each figure is the median,
+# over that level's hits that armor leaves clear of the floor, of natural x (1 - variance / 2) less the hit,
+# at every level with 20 such hits or more. None at level 1 is ours, so a pet below the levels recorded has
+# less. A turret's level is its vigor over 80. The rest of each row is as the pack it came from has it:
+# pet-attacks for pet 47000846, turret-vigor for pet 47000851, pet-kinds for the other three.
+
+[[pet]]
+effect = 0x70000805
+template = 0x47000846
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 21, health = 427 }, { level = 29, health = 663 }, { level = 45, health = 1393 }, { level = 47, health = 1495 }, { level = 50, health = 1663 }, { level = 52, health = 1762 }, { level = 53, health = 1813 }, { level = 54, health = 1863 }]
+armor = [{ level = 1, armor = 0 }, { level = 29, armor = 21 }, { level = 52, armor = 237 }, { level = 53, armor = 251 }, { level = 54, armor = 245 }]
+per_level_squared = 0.075
+variance = 0.45
+lands = 0.78
+attacks = [{ skill = 840, weight = 3 }, { skill = 838, weight = 2 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000846", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000846", confidence = "medium" }, attacks = { from = "capture", evidence = "AC2-EVID-WDB-PET-ATTACKS-2017", ref = "pet 47000846", confidence = "high", sample = { sessions = 74 } }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 47000846", confidence = "medium", sample = { sessions = 83 } } } }
+
+[[pet]]
+effect = 0x7000092C
+template = 0x47000863
+flags = 1096
+health = [{ level = 1, health = 23 }, { level = 58, health = 1321 }, { level = 60, health = 1377 }, { level = 63, health = 1495 }, { level = 76, health = 2142 }, { level = 136, health = 4638 }, { level = 145, health = 5013 }]
+armor = [{ level = 1, armor = 0 }, { level = 58, armor = 89 }, { level = 60, armor = 97 }, { level = 76, armor = 158 }]
+per_level_squared = 0.047
+variance = 0.35
+lands = 0.77
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000863", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000863", confidence = "medium" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 47000863", confidence = "medium", sample = { sessions = 35 } } } }
+
+[[pet]]
+effect = 0x7000082C
+template = 0x4700084A
+flags = 1096
+health = [{ level = 1, health = 26 }, { level = 56, health = 1451 }, { level = 57, health = 1503 }, { level = 59, health = 1557 }, { level = 61, health = 1672 }, { level = 72, health = 2148 }]
+armor = [{ level = 1, armor = 0 }, { level = 56, armor = 216 }, { level = 59, armor = 235 }, { level = 72, armor = 302 }]
+per_level_squared = 0.08
+variance = 0.35
+lands = 0.84
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700084A", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 4700084A", confidence = "medium" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 4700084A", confidence = "medium", sample = { sessions = 25 } } } }
+
+[[pet]]
+effect = 0x7000082D
+template = 0x4700084B
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 55, health = 1082 }, { level = 57, health = 1203 }, { level = 59, health = 1246 }, { level = 60, health = 1291 }, { level = 72, health = 1719 }, { level = 82, health = 2052 }]
+armor = [{ level = 1, armor = 0 }, { level = 55, armor = 98 }, { level = 58, armor = 111 }, { level = 72, armor = 177 }]
+per_level_squared = 0.08
+variance = 0.35
+lands = 0.84
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700084B", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 4700084B", confidence = "medium" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 4700084B", confidence = "low", sample = { sessions = 17 } } } }
+
+[[pet]]
+effect = 0x700008B7
+template = 0x47000851
+flags = 3128
+stays = true
+health = [{ level = 1, health = 118 }, { level = 58, health = 6876 }]
+armor = [{ level = 1, armor = 0 }, { level = 58, armor = 250 }]
+per_level_squared = 0.07
+variance = 0.5
+lands = 0.75
+outdoors_only = true
+corpse_after = 2.8
+item_effects = ["Eff_Tsys_Item_Summon_LargeTurret"]
+vigor_per_level = 80
+vigor_per_second = 6.5
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000851", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000851", confidence = "medium" }, item_effects = { from = "dat", record = 0x47001C83, confidence = "medium" }, vigor_per_level = { from = "authored", confidence = "low" }, vigor_per_second = { from = "authored", confidence = "low" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 47000851", confidence = "low", sample = { sessions = 3 } } } }

@@ -455,6 +455,7 @@ the recordings show it fight. One row for each effect.
 | `count` | | how many the effect makes at once, at least 1; 1 when left out |
 | `stays` | | true: it stays where it is made and never follows, taking on what comes within its reach |
 | `health` | | its greatest health at levels, `{ level, health }`, levels going up: between two the line, beyond the first and last held; its template's when left out |
+| `armor` | | its armor against a creature's hit at levels, `{ level, armor }`, levels going up, each 0 or more: between two the line, beyond the first and last held. A creature's hit on it takes this off, as a player's armor does; left out, the hit is a share of the creature's by the pet's level. A world where no row gives it is told so as the server starts |
 | `per_level_squared`, `variance`, `lands` | | what a hit of it takes: `per_level_squared` times its level squared (0.05 when left out), varied by `variance` either side (0.35), less the target's armor; `lands` is the share of its strikes that land, from 0 to 1 (0.8) |
 | `swing` | | hits a swing on its one target, at least 1; 1 when left out |
 | `area` | | its missile lands on every creature this many meters from where it falls; left out, on its target alone |

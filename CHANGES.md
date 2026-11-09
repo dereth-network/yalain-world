@@ -8,6 +8,7 @@
 - Two rare summoning items now summon their pair. New pack `rare-uses/`.
 - Two rare explosive items now harm the monsters around their user. Pack `rare-uses/`.
 - Item uses, books and new characters' first gift are now rows of the world. New packs `item-uses/`, `books/` and `start-items/`.
+- Five kinds of pet have armor against monsters' hits, rising with their level. New pack `pet-armor/`.
 
 ## v0.32.0
 
