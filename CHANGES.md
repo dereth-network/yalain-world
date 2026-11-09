@@ -1,5 +1,7 @@
 # Changes
 
+## Unreleased
+
 ## v0.32.0
 
 - Players can hand gems in at their own kingdom's shrine for kingdom points. New pack `kingdom-points/`.
