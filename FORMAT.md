@@ -292,7 +292,7 @@ player's fellows in the world as well, each told it alone; what the step takes a
 needs only the phase and what the step requires), `races` (the races it is for, by number: 1 human, 2
 Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out), `effects_last` (true: the
 quest's update is told before the effects and their text, not after them), `wants` (for a give, exactly how many of the item it wants: any other count is refused and handed
-back, with the person's `refuse-give` line naming the quest and the `item` if it has one, else its plain refusal; left out, it runs for whatever is given and takes it all).
+back, with the person's `refuse-give` line naming the quest and the `item` if it has one, else its plain refusal; left out, it runs for whatever is given and takes it all), `transforms` (a give's step that makes its player a hero: `{ seconds, fx, behavior, text, name }`, below).
 
 | `trigger` | moves the quest when the player |
 |---|---|
@@ -314,8 +314,12 @@ must be on for the step to run. `takes` lists templates of items taken from the 
 pack, which the player must hold (a hand-in); a give's step that takes the item given keeps it (the rest of a
 stack stays), one that does not hands it back after its update, and a give no step takes is handed back with the
 person's refusal of a give (its `refuse-give` line). The items a give's step gives come from the person, and one
-that moves a quest when taken (`{ take = T }`) moves it after the step's update. A give's step whose effects include the
-transformation into a hero (`0x6F001C6F`) runs when the transformation is through, 25.59 s after the give. `to` names a place the step takes the player to,
+that moves a quest when taken (`{ take = T }`) moves it after the step's update. A give's step that `transforms` its
+player keeps the gift at once and plays the appearances `fx` and the `behavior` on the player, and runs `seconds` (from 0)
+after the give's answer, if it still may (at once if the player leaves the world first): the player is then made a hero,
+before its effects, and told `text` (`{ table, string }`), its name in the text's variable `name` (only with a text). A world
+whose steps name no `transforms` has the server's own on a give's step putting on the hero's transformation (`0x6F001C6F`):
+25.59 s, as 2017's; a world with any has its rows alone. `to` names a place the step takes the player to,
 through portal space: an item's use on an object makes its update on arrival; a use of a person or
 an object tells its update at once and takes the player after.
 
@@ -493,18 +497,25 @@ enumeration's value and the install's one effect of that value, or by a package 
 row: `yalain world check --dats <install>` says which state it resolves to.
 
 **`[[effect_rule]]`**: what an effect of the install does where its own data says nothing. `effect` (its saved
-state, one the install holds) and `ward`: `{ classes, effects, chance }`, what a player holding it keeps off:
+state, one the install holds), and a `ward`, a `vitae_share` or both. `vitae_share`: the share of its player's vitae
+the effect takes when it is put on, above 0 and at most 1, the effect's own appearance played on the player; a world
+whose rules name none has the server's own (the tap `0x6F001C64`, a tenth), one with any its rows alone.
+`ward`: `{ classes, effects, chance }`, what a player holding it keeps off:
 effects of these classes and these effects (saved states the install holds), at least one of either, each kept off
 by `chance`, above 0 and at most 1, at any spellcraft. Of a player's wards of one class only the top one draws. A
-ward whose own data names what it keeps off needs no row. A world with no ward rows has the server's own (fire,
-poison and what lowers vigor, a 15% chance each, and three that keep off what lowers armor always); a world with
-any has its rows alone, so a world that adds one writes those too. One row per effect.
+ward whose own data names what it keeps off needs no row; one whose data names nothing keeps off nothing without
+one. One row per effect.
 
 ```toml
 # <pack>/server/effects.toml
 [[effect_rule]]
 effect = 0x6F002672
 ward = { classes = [48, 1119, 5013], chance = 0.15 }
+prov = { from = "authored", by = "you" }
+
+[[effect_rule]]
+effect = 0x6F001C64
+vitae_share = 0.1
 prov = { from = "authored", by = "you" }
 ```
 
