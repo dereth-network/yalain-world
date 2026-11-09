@@ -17,9 +17,9 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/quests/QQQQQQQQ.toml [[quest]], [[step]] of one quest
 <pack>/server/gives/TTTTTTTT.toml  [[give]] of one template given to
 <pack>/server/talk/TTTTTTTT.toml   [[talk]] of one template
-<pack>/server/crafting.toml        [[craft]], [[tool]]
+<pack>/server/crafting.toml        [[craft]], [[tool]], [[spellbinding]], [[refining]]
 <pack>/server/mines.toml           [[mine]]
-<pack>/server/maps.toml            [[map_region]]
+<pack>/server/maps.toml            [[map_region]], [[map_recipes]]
 <pack>/server/story.toml           [[scene]], [[shard]]
 <pack>/server/butchery.toml        [[butchery]]
 <pack>/server/weapons.toml         [[weapon]]
@@ -193,6 +193,7 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `talk-quest-name` | a person's quest line numbered k goes with the quest named after the person's own table and k |
 | `map-marked-place` | a surveyor's map leads where the recordings show maps marking the same area (the same search rectangle) leading, whatever their material |
 | `treasure-pool-fit` | a pool's templates are those the corpses recorded in 2017 held, each drawn where the dropper's loot base lies in its window (the middle 90% of the bases it dropped at, from 8 drops; the bases seen widened by 3 below that); the kinds lowest in a pool reach down to level 0 and the highest, and those mostly dropped from 45 up, are open above; each weight is fit so that the windows and weights give back each template's recorded count at the recorded bases |
+| `refining-product-name` | a refining recipe's product is the template its script package's own product name names, as the one recorded refining's was |
 | `item-spot-regen` | an item a camp keeps lying whose return no recording timed comes back as the timed spots of its template did, else 20 s after its taking, as every timed quest item lying alone did |
 
 ## Record kinds
@@ -410,6 +411,51 @@ hyphens) and `nodes`, at least one `{ effect, node }`: the name of an effect a m
 conjures where the map leads (a template the install gives a material when mined). A map whose effects no row names
 is no map. A world with no `[[map_region]]` rows has the server's own, Linvak's, Omishan's and Osteth's; a world with
 any has its rows alone.
+
+**`[[map_recipes]]`**: a region's surveyor's map recipes, which wait together. One row per region.
+
+| field | | meaning |
+|---|---|---|
+| `region` | required | a key: lowercase letters, digits and hyphens |
+| `drawn` | required | the effect (its saved state) a drawing of one of the region's maps puts on its drawer: every recipe of the row then waits `wait` seconds, told in one call |
+| `found` | required | the name of the effect a find of one of the region's maps puts on: every recipe of the row may then be drawn again |
+| `recipes` | required | at least one recipe (its saved state), in the order the call lists them |
+| `wait` | | seconds of game time, from 0; 300 when left out |
+
+A world with no `[[map_recipes]]` rows has the server's own, Linvak's, Omishan's and Osteth's five each; a world
+with any has its rows alone.
+
+```toml
+# <pack>/server/maps.toml
+[[map_recipes]]
+region = "hills"
+drawn = 0x6F00170C
+found = "Eff_ResetHillsResetTimers"
+recipes = [0x6F00109B, 0x6F001099, 0x6F00109C, 0x6F00109D, 0x6F00109A]
+wait = 300.0
+prov = { from = "authored", by = "you" }
+```
+
+**`[[spellbinding]]`**: the totem spellbinding makes of a sort of item taken apart. `sort` (`weapon`, `shield` or
+`armor`: a shield by its class, and anything that is neither weapon nor shield counts as armor), `template` (the totem's) and `word` (the
+string id its profile shows for what it goes on). One row per sort. A totem goes only on an item of its sort, and a
+sort no row names makes no totem. A world with no `[[spellbinding]]` rows has the server's own three; a world with any
+has its rows alone.
+
+**`[[refining]]`**: what a refining recipe yields. `recipe` (the name of the recipe's script package, such as
+`SteelRefiningRecipe`; every recipe of that package is the row's), `product` (the template of what it yields, added to
+the player's stack) and `full_at` (a craft skill level from 2: a refining yields a third of what it takes at level 1,
+growing evenly to all of it at this level; 150 when left out). A refining recipe no row names makes nothing of its
+own. A world with no `[[refining]]` rows has the server's own ten; a world with any has its rows alone.
+
+```toml
+# <pack>/server/crafting.toml
+[[refining]]
+recipe = "SteelRefiningRecipe"
+product = 0x47000B40
+full_at = 150
+prov = { from = "authored", by = "you" }
+```
 
 **`[[scene]]`**: a scene of the story, as a client plays it.
 

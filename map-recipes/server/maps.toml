@@ -1,0 +1,28 @@
+# Each region's surveyor's map recipes, in the order their call lists them (crystal, iron, stone, wood, silver): drawing
+# one puts on the region's effect `drawn`, which has all five wait `wait` seconds; a find of one of the region's maps puts
+# on `found`, which lets them be drawn again. The January 2017 recordings listed Linvak's 68 times, Omishan's 41 and
+# Osteth's 3, each in this order, and every drawing set all five 300 seconds ahead.
+
+[[map_recipes]]
+region = "linvak"
+drawn = 0x6F00170C
+found = "Eff_ResetLinvakResetTimers"
+recipes = [0x6F00109B, 0x6F001099, 0x6F00109C, 0x6F00109D, 0x6F00109A]
+wait = 300.0
+prov = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-SET", ref = "region linvak", confidence = "high", fields = { found = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-RESET", ref = "region linvak", confidence = "high" } } }
+
+[[map_recipes]]
+region = "omishan"
+drawn = 0x6F00170D
+found = "Eff_ResetOmishanResetTimers"
+recipes = [0x6F001096, 0x6F001094, 0x6F001097, 0x6F001098, 0x6F001095]
+wait = 300.0
+prov = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-SET", ref = "region omishan", confidence = "high", fields = { found = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-RESET", ref = "region omishan", confidence = "high" } } }
+
+[[map_recipes]]
+region = "osteth"
+drawn = 0x6F00170E
+found = "Eff_ResetOstethResetTimers"
+recipes = [0x6F001091, 0x6F00108F, 0x6F001092, 0x6F001093, 0x6F001090]
+wait = 300.0
+prov = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-SET", ref = "region osteth", confidence = "medium", fields = { found = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-RESET", ref = "region osteth", confidence = "medium" } } }

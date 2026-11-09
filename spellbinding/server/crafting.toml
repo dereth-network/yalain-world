@@ -1,0 +1,21 @@
+# The totem spellbinding makes of each sort of item taken apart, and the word it says it goes on. The January 2017
+# recordings made 13: 11 from weapons, 2 from armor. None took a shield apart: a shield, told by its class, makes the
+# shield totem as its recipes, which take the shields' class alone, say.
+
+[[spellbinding]]
+sort = "weapon"
+template = 0x47000CCB
+word = 0xEE40CD5E
+prov = { from = "capture", evidence = "AC2-EVID-SRV-SPELLBINDING", ref = "totem weapon", confidence = "high" }
+
+[[spellbinding]]
+sort = "shield"
+template = 0x47000CC9
+word = 0x3B284FFE
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TOTEM-SHIELD-BY-CLASS", ref = "totem shield", confidence = "low" }
+
+[[spellbinding]]
+sort = "armor"
+template = 0x47000CC7
+word = 0xCED7169A
+prov = { from = "capture", evidence = "AC2-EVID-SRV-SPELLBINDING", ref = "totem armor", confidence = "medium" }

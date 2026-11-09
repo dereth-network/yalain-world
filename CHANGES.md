@@ -9,6 +9,7 @@
 - Two rare explosive items now harm the monsters around their user. Pack `rare-uses/`.
 - Item uses, books and new characters' first gift are now rows of the world. New packs `item-uses/`, `books/` and `start-items/`.
 - Five kinds of pet have armor against monsters' hits, rising with their level. New pack `pet-armor/`.
+- Map recipes' waits, spellbinding's totems and refining's products are now rows. New packs `map-recipes/`, `spellbinding/` and `refining/`.
 
 ## v0.32.0
 

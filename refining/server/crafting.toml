@@ -1,0 +1,64 @@
+# What each refining recipe yields, by its script package: its product, and the craft skill level at which it yields
+# all it takes. A refining yields a third of what it takes at the lowest levels (2017: 100 of each gave 34, twice, at
+# level 2), growing to all of it at `full_at`; how it grows is not recorded. Only Steel was refined in the recordings;
+# the others' products are the templates their recipes' own product names name.
+
+[[refining]]
+recipe = "SteelRefiningRecipe"
+product = 0x47000B40
+full_at = 150
+prov = { from = "capture", evidence = "AC2-EVID-SRV-REFINING-YIELD", ref = "refining steel", confidence = "high", fields = { full_at = { from = "authored", note = "low: only level 2 is recorded, and the recipes say only that the yield grows with the skill" } } }
+
+[[refining]]
+recipe = "DramasticRefiningRecipe"
+product = 0x47000B46
+full_at = 150
+prov = { from = "derived", rule = "refining-product-name", fields = { full_at = { from = "authored", note = "low: only level 2 is recorded, and the recipes say only that the yield grows with the skill" } } }
+
+[[refining]]
+recipe = "MoonglassRefiningRecipe"
+product = 0x470008FC
+full_at = 150
+prov = { from = "derived", rule = "refining-product-name", fields = { full_at = { from = "authored", note = "low: only level 2 is recorded, and the recipes say only that the yield grows with the skill" } } }
+
+[[refining]]
+recipe = "RunewoodRefiningRecipe"
+product = 0x470008DA
+full_at = 150
+prov = { from = "derived", rule = "refining-product-name", fields = { full_at = { from = "authored", note = "low: only level 2 is recorded, and the recipes say only that the yield grows with the skill" } } }
+
+[[refining]]
+recipe = "TukaliteRefiningRecipe"
+product = 0x470008D3
+full_at = 150
+prov = { from = "derived", rule = "refining-product-name", fields = { full_at = { from = "authored", note = "low: only level 2 is recorded, and the recipes say only that the yield grows with the skill" } } }
+
+[[refining]]
+recipe = "TileRefiningRecipe"
+product = 0x47000657
+full_at = 150
+prov = { from = "derived", rule = "refining-product-name", fields = { full_at = { from = "authored", note = "low: only level 2 is recorded, and the recipes say only that the yield grows with the skill" } } }
+
+[[refining]]
+recipe = "BlockRefiningRecipe"
+product = 0x47000658
+full_at = 150
+prov = { from = "derived", rule = "refining-product-name", fields = { full_at = { from = "authored", note = "low: only level 2 is recorded, and the recipes say only that the yield grows with the skill" } } }
+
+[[refining]]
+recipe = "BoardRefiningRecipe"
+product = 0x47000659
+full_at = 150
+prov = { from = "derived", rule = "refining-product-name", fields = { full_at = { from = "authored", note = "low: only level 2 is recorded, and the recipes say only that the yield grows with the skill" } } }
+
+[[refining]]
+recipe = "BrickRefiningRecipe"
+product = 0x47000655
+full_at = 150
+prov = { from = "derived", rule = "refining-product-name", fields = { full_at = { from = "authored", note = "low: only level 2 is recorded, and the recipes say only that the yield grows with the skill" } } }
+
+[[refining]]
+recipe = "PlasterRefiningRecipe"
+product = 0x47000656
+full_at = 150
+prov = { from = "derived", rule = "refining-product-name", fields = { full_at = { from = "authored", note = "low: only level 2 is recorded, and the recipes say only that the yield grows with the skill" } } }
