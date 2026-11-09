@@ -40,6 +40,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/treasure_potions.toml [[treasure_potion]]
 <pack>/server/treasure_families.toml [[treasure_family]]
 <pack>/server/items.toml           [[item_use]], [[book]], [[start_item]]
+<pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -760,6 +761,52 @@ when = [{ days = ["sat", "sun"], from = "18:00", until = "02:00" }]
 on_players = [0x6F001C71]
 prov = { from = "authored", by = "you" }
 ```
+
+**`[[concealing]]`**: what creatures make of the holder of a concealing effect. `effect` (the effect, one the install
+holds), `class` (the creatures' class of behavior, a value of their `AI_AISuperClass`; left out, every creature) and
+`regard`: `spares` (they come at the holder only once it hurts them) or `hates` (they come at it, even those that never
+attack a player first). Where a player's effects give both for a creature, hate wins. One row per effect and class:
+an effect for two classes has a row for each.
+
+**`[[npc_table]]`**: what the world says of the creatures of a behavior table, by its `name` (the install's table,
+their `AI_NPCTable`): `heals_kin` (true: a healer of the table heals its badly hurt kin as well as itself).
+
+**`[[friend_table]]`**: what the world says of the creatures of a friend table, by its number (`table`, their
+`AI_LoveTable`): `attacks_first` (false: they never attack a player first, only one that attacks them or that a
+concealing effect makes hated). A creature whose template says it never attacks first never does, whatever its table.
+
+**`[[creature]]`**: what the world says of the creatures of a `template`: its shooting rhythm, `shot_gap` (the gap
+between its shots, times its shot's time scale) and `windup` (from the start of its shot until the missile leaves,
+at the creatures' median time scale 1.296), in seconds above 0, the two together. A shooter with no row shoots with
+a gap of 1.63 and a windup of 0.55.
+
+```toml
+# <pack>/server/creatures.toml
+[[concealing]]
+effect = 0x6F001C46
+class = 0x17
+regard = "spares"
+prov = { from = "authored", by = "you" }
+
+[[npc_table]]
+name = "NPCTable_RiverHealers"
+heals_kin = true
+prov = { from = "authored", by = "you" }
+
+[[friend_table]]
+table = 0x0E
+attacks_first = false
+prov = { from = "authored", by = "you" }
+
+[[creature]]
+template = 0x47002398
+shot_gap = 2.37
+windup = 0.79
+prov = { from = "authored", by = "you" }
+```
+
+A world with no rows of one of these kinds has the server's own of that kind (those of `creature-regard/` and
+`creature-rhythm/`), and its server says so at start. A kind's rows are taken whole, never mixed with the server's.
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 
