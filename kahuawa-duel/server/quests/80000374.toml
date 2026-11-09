@@ -1,0 +1,20 @@
+# A quest's duel, as the one January 2017 recording of it shows; edit an authored pack instead.
+
+[[step]]
+key = "r3"
+quest = 0x80000374
+needs = 3
+trigger = { use = 0x47003279 }
+update = "advance"
+phase = 4
+to = "sent-03d70102"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KILL-GIVERS-2017", ref = "c:c7fd7df7", confidence = "low", sample = { sessions = 1 }, fields = { to = { from = "capture", evidence = "AC2-EVID-WDB-STEP-TRIPS-2017", ref = "c:54259263", confidence = "low", sample = { sessions = 1 } } } }
+
+[[step]]
+key = "r1"
+quest = 0x80000374
+needs = 5
+trigger = { use = 0x47003279 }
+update = "complete"
+gives = [0x47001852]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KILL-GIVERS-2017", ref = "c:6275f47f", confidence = "low", sample = { sessions = 1 }, fields = { gives = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-GIFTS-2017", ref = "c:bedceb84", confidence = "low", sample = { sessions = 1 } } } }

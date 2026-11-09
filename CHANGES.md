@@ -8,6 +8,7 @@
 - The Crystalabra now gives its user and their fellowship back 2% vitae. Pack `rare-uses/`.
 - Pollinated plants now give seeds for most pollens, as a 2013 guide charts them. New pack `dye-plant-crosses/`.
 - Worn looks of items whose data names none are now rows of the world. New pack `worn-looks/`.
+- A quest's duel now sends players to it, and its end gives what a later quest asks for. New pack `kahuawa-duel/`.
 
 ## v0.33.0
 
