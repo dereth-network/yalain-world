@@ -4,6 +4,7 @@
 
 - Concealing effects, kin heals, who attacks first and shooters' rhythms are now rows of the world. New packs `creature-regard/` and `creature-rhythm/`.
 - Dye plant kinds and their crosses are now rows of the world. New pack `dye-plants/`.
+- Crowd control immunities are now rows of the world. Pack `effect-rules/`.
 
 ## v0.33.0
 

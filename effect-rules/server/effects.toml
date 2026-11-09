@@ -45,3 +45,128 @@ prov = { from = "dat", record = 0x6F000E94, confidence = "low", note = "the kind
 effect = 0x6F000E95
 ward = { effects = [0x700006C6], chance = 1.0 }
 prov = { from = "dat", record = 0x6F000E95, confidence = "low", note = "the kind its description gives, always", fields = { ward = { from = "dat", record = 0x70003666, confidence = "low", note = "the knockback its attack puts on" } } }
+
+# The crowd control immunities: the short effect a skill puts on with its stun, slowing, root, cold, numbing or
+# oubliette, which leaves the long one as it ends, and the classes the long one keeps off for certain. Their saved
+# states hold neither; the install's own class for each immunity names both. Each kind has two sets of states. A
+# world with no immunity rows has the server's own, which are these.
+
+[[effect_rule]]
+effect = 0x70000718
+then = 0x70000719
+prov = { from = "dat", record = 0x70000718, confidence = "low", note = "an immunity to cold, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x70000719
+ward = { classes = [52, 5015, 98], chance = 1.0 }
+prov = { from = "dat", record = 0x70000719, confidence = "medium", note = "the immunity to cold the install's class for it names the classes it keeps off, always" }
+
+[[effect_rule]]
+effect = 0x6F002103
+then = 0x6F002104
+prov = { from = "dat", record = 0x6F002103, confidence = "low", note = "an immunity to cold, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x6F002104
+ward = { classes = [52, 5015, 98], chance = 1.0 }
+prov = { from = "dat", record = 0x6F002104, confidence = "medium", note = "the immunity to cold the install's class for it names the classes it keeps off, always" }
+
+[[effect_rule]]
+effect = 0x7000071A
+then = 0x7000071B
+prov = { from = "dat", record = 0x7000071A, confidence = "low", note = "an immunity to numbing, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x7000071B
+ward = { classes = [51, 5017, 99], chance = 1.0 }
+prov = { from = "dat", record = 0x7000071B, confidence = "medium", note = "the immunity to numbing the install's class for it names the classes it keeps off, always" }
+
+[[effect_rule]]
+effect = 0x6F002105
+then = 0x6F002106
+prov = { from = "dat", record = 0x6F002105, confidence = "low", note = "an immunity to numbing, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x6F002106
+ward = { classes = [51, 5017, 99], chance = 1.0 }
+prov = { from = "dat", record = 0x6F002106, confidence = "medium", note = "the immunity to numbing the install's class for it names the classes it keeps off, always" }
+
+[[effect_rule]]
+effect = 0x7000071C
+then = 0x7000071D
+prov = { from = "dat", record = 0x7000071C, confidence = "low", note = "an immunity to rooting, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x7000071D
+ward = { classes = [77, 101], chance = 1.0 }
+prov = { from = "dat", record = 0x7000071D, confidence = "medium", note = "the immunity to rooting the install's class for it names the classes it keeps off, always" }
+
+[[effect_rule]]
+effect = 0x6F002109
+then = 0x6F00210A
+prov = { from = "dat", record = 0x6F002109, confidence = "low", note = "an immunity to rooting, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x6F00210A
+ward = { classes = [77, 101], chance = 1.0 }
+prov = { from = "dat", record = 0x6F00210A, confidence = "medium", note = "the immunity to rooting the install's class for it names the classes it keeps off, always" }
+
+[[effect_rule]]
+effect = 0x7000071E
+then = 0x7000071F
+prov = { from = "dat", record = 0x7000071E, confidence = "low", note = "an immunity to slowing, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x7000071F
+ward = { classes = [52, 5015, 51, 5017, 97], chance = 1.0 }
+prov = { from = "dat", record = 0x7000071F, confidence = "medium", note = "the immunity to slowing the install's class for it names the classes it keeps off, always" }
+
+[[effect_rule]]
+effect = 0x6F00210B
+then = 0x6F00210C
+prov = { from = "dat", record = 0x6F00210B, confidence = "low", note = "an immunity to slowing, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x6F00210C
+ward = { classes = [52, 5015, 51, 5017, 97], chance = 1.0 }
+prov = { from = "dat", record = 0x6F00210C, confidence = "medium", note = "the immunity to slowing the install's class for it names the classes it keeps off, always" }
+
+[[effect_rule]]
+effect = 0x70000720
+then = 0x70000721
+prov = { from = "dat", record = 0x70000720, confidence = "low", note = "an immunity to stuns, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x70000721
+ward = { classes = [55, 100], chance = 1.0 }
+prov = { from = "dat", record = 0x70000721, confidence = "medium", note = "the immunity to stuns the install's class for it names the classes it keeps off, always" }
+
+[[effect_rule]]
+effect = 0x6F00210D
+then = 0x6F00210E
+prov = { from = "dat", record = 0x6F00210D, confidence = "low", note = "an immunity to stuns, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x6F00210E
+ward = { classes = [55, 100], chance = 1.0 }
+prov = { from = "dat", record = 0x6F00210E, confidence = "medium", note = "the immunity to stuns the install's class for it names the classes it keeps off, always" }
+
+[[effect_rule]]
+effect = 0x70001EDF
+then = 0x70001EE0
+prov = { from = "dat", record = 0x70001EDF, confidence = "low", note = "an immunity to the oubliette, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x70001EE0
+ward = { classes = [1124], chance = 1.0 }
+prov = { from = "dat", record = 0x70001EE0, confidence = "medium", note = "the immunity to the oubliette the install's class for it names the classes it keeps off, always" }
+
+[[effect_rule]]
+effect = 0x6F002107
+then = 0x6F002108
+prov = { from = "dat", record = 0x6F002107, confidence = "low", note = "an immunity to the oubliette, hidden; the install names the long one beside it, and that its end puts that on fits the 2017 recordings" }
+
+[[effect_rule]]
+effect = 0x6F002108
+ward = { classes = [1124], chance = 1.0 }
+prov = { from = "dat", record = 0x6F002108, confidence = "medium", note = "the immunity to the oubliette the install's class for it names the classes it keeps off, always" }

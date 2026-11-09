@@ -629,14 +629,17 @@ enumeration's value and the install's one effect of that value, or by a package 
 row: `yalain world check --dats <install>` says which state it resolves to.
 
 **`[[effect_rule]]`**: what an effect of the install does where its own data says nothing. `effect` (its saved
-state, one the install holds), and a `ward`, a `vitae_share` or both. `vitae_share`: the share of its player's vitae
+state, one the install holds), and a `ward`, a `vitae_share`, a `then` or more than one. `vitae_share`: the share of its player's vitae
 the effect takes when it is put on, above 0 and at most 1, the effect's own appearance played on the player; a world
 whose rules name none has the server's own (the tap `0x6F001C64`, a tenth), one with any its rows alone.
 `ward`: `{ classes, effects, chance }`, what a player holding it keeps off:
 effects of these classes and these effects (saved states the install holds), at least one of either, each kept off
 by `chance`, above 0 and at most 1, at any spellcraft. Of a player's wards of one class only the top one draws. A
 ward whose own data names what it keeps off needs no row; one whose data names nothing keeps off nothing without
-one. One row per effect.
+one. `then`: the effect is an immunity under way, hidden from its holder, and leaves this effect (a saved state the
+install holds, not its own) as it ends; that effect's own row gives its `ward`. A world whose rules name no `then`
+has the server's own twelve crowd control immunities, each with its long effect's ward; one with any its rows alone.
+One row per effect.
 
 ```toml
 # <pack>/server/effects.toml
@@ -648,6 +651,16 @@ prov = { from = "authored", by = "you" }
 [[effect_rule]]
 effect = 0x6F001C64
 vitae_share = 0.1
+prov = { from = "authored", by = "you" }
+
+[[effect_rule]]
+effect = 0x70000720
+then = 0x70000721
+prov = { from = "authored", by = "you" }
+
+[[effect_rule]]
+effect = 0x70000721
+ward = { classes = [55, 100], chance = 1.0 }
 prov = { from = "authored", by = "you" }
 ```
 
