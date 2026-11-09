@@ -1,0 +1,7 @@
+# The Crystalabra's cure: its own data says only "Restores 2% of your Vitae"; the item's description says the
+# 2% goes "to you and everyone in your fellowship" and does nothing for one at 100.
+
+[[effect_rule]]
+effect = 0x6F000DCC
+vitae_restore = { points = 2.0, fellows = true }
+prov = { from = "dat", record = 0x6F000DCC, confidence = "medium", note = "two points of vitae, as its description says", fields = { vitae_restore = { from = "dat", record = 0x47001C6D, confidence = "medium", note = "the item's description names the user's fellowship" } } }
