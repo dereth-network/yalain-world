@@ -5,6 +5,7 @@
 - Some quests wait five hours after a cancel, as in 2017. New pack `quest-cancel-waits/`.
 - A hero's transformation and a tap of vitae come from rows, as in 2017. New pack `hero-transformation/`.
 - Mining and what surveyor's maps find are now rows of the world. New packs `mines/` and `map-regions/`.
+- Two rare summoning items now summon their pair. New pack `rare-uses/`.
 
 ## v0.32.0
 
