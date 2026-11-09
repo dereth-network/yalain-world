@@ -25,3 +25,39 @@ effect = 0x6F0025FC
 template = 0x4700346D
 flags = 1096
 prov = { from = "dat", record = 0x6F0025FC, confidence = "medium", note = "the second item's second: the creature its name names", fields = { flags = { from = "authored", by = "Dereth Network", confidence = "low", note = "as the pets that fight beside their owner" } } }
+
+# Two more rare items each name an effect no install holds; each one's description says it releases an
+# explosion that harms the monsters near and nobody else, and the install holds the flame it makes, whose one
+# attack, aimed at itself, reaches everything within 20 m. The row's class is that of the install's
+# other rare items' pets, its level the item's spellcraft, its hit its own natural damage.
+# It ends at its strike, and leaves no corpse, as its template says. No recording holds either's use.
+
+[[pet]]
+effect = 0x47001C74
+template = 0x47003464
+flags = 32
+stays = true
+ends_on_strike = true
+no_corpse = true
+per_level_squared = 0.4
+variance = 0.02
+lands = 1.0
+attacks = [{ skill = 0x4CF, weight = 1 }]
+hire = { class = 0x4000000, seconds = 10.0, level = 50.0 }
+item_effects = ["Eff_Destrucflux_SummonFire"]
+prov = { from = "dat", record = 0x47003464, confidence = "low", note = "the flame its description and the install's template name; its attack and reach the template's skill", fields = { hire = { from = "authored", by = "Dereth Network", confidence = "low", note = "class as the install's other rares' pets, level the item's spellcraft, ten seconds to strike" }, per_level_squared = { from = "dat", record = 0x47003464, confidence = "low", note = "its natural damage, 1,000, at its level" }, ends_on_strike = { from = "authored", by = "Dereth Network", confidence = "low", note = "an explosion, once" }, lands = { from = "authored", by = "Dereth Network", confidence = "low", note = "an explosion reaches all near" } } }
+
+[[pet]]
+effect = 0x47001C75
+template = 0x47003466
+flags = 32
+stays = true
+ends_on_strike = true
+no_corpse = true
+per_level_squared = 0.6
+variance = 0.02
+lands = 1.0
+attacks = [{ skill = 0x4EC, weight = 1 }]
+hire = { class = 0x4000000, seconds = 10.0, level = 50.0 }
+item_effects = ["Eff_DestrucfluxMassive_SummonFire"]
+prov = { from = "dat", record = 0x47003466, confidence = "low", note = "the flame its description and the install's template name; its attack and reach the template's skill", fields = { hire = { from = "authored", by = "Dereth Network", confidence = "low", note = "class as the install's other rares' pets, level the item's spellcraft, ten seconds to strike" }, per_level_squared = { from = "dat", record = 0x47003466, confidence = "low", note = "its natural damage, 1,500, at its level" }, ends_on_strike = { from = "authored", by = "Dereth Network", confidence = "low", note = "an explosion, once" }, lands = { from = "authored", by = "Dereth Network", confidence = "low", note = "an explosion reaches all near" } } }

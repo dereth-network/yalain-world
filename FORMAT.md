@@ -448,7 +448,7 @@ the recordings show it fight. One row for each effect.
 
 | field | | meaning |
 |---|---|---|
-| `effect` | required | the pet effect's saved state, or the contract's template |
+| `effect` | required | the pet effect's saved state, or the contract's template, or for a pet only items make (one with `item_effects` and no pet effect of the install) the item's template |
 | `template` | required | what it makes; a compile refuses a template the install lacks |
 | `flags` | | the flags of its pet data as its owner is told them; 0 when left out |
 | `count` | | how many the effect makes at once, at least 1; 1 when left out |
@@ -466,7 +466,7 @@ the recordings show it fight. One row for each effect.
 | `corpse_after` | | seconds after its death its corpse comes; 1.5 when left out |
 | `no_corpse` | | true: it leaves no corpse |
 | `tends` | | whom it tends: `{ whom = "owner" or "owners-pets", effect, every, below }`, the effect it puts on them at its own level, every `every` seconds, while their health is below the share `below` of the whole |
-| `hire` | | a contract's terms, the row's `effect` being the contract's template: `{ class, seconds, level }`, the mercenary's class of pet, how many seconds it stays and its level |
+| `hire` | | a contract's terms, the row's `effect` being the contract's template: `{ class, seconds, level }`, the mercenary's class of pet, how many seconds it stays and its level. On a row with `item_effects` whose `effect` is no pet effect of the install, the terms the item's pet is made on, and the row is no contract |
 | `item_effects` | | names of effects an item's use may name that no install holds, each making this pet as its own effect does |
 
 **`[[pet_limit]]`**: how many pets a summoning skill allows its user. `skill` (the skill's id) and `limits`,
