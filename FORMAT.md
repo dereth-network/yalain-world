@@ -26,6 +26,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/death_spawns.toml    [[death_spawn]]
 <pack>/server/death_treasures.toml [[death_treasure]]
 <pack>/server/pets.toml            [[pet]], [[pet_limit]]
+<pack>/server/plants.toml          [[plant]], [[plant_cross]]
 <pack>/server/pools.toml           [[treasure_pool]]
 <pack>/server/effects.toml         [[effect_name]], [[effect_rule]]
 <pack>/server/events.toml          [[event]]
@@ -195,6 +196,8 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `map-marked-place` | a surveyor's map leads where the recordings show maps marking the same area (the same search rectangle) leading, whatever their material |
 | `treasure-pool-fit` | a pool's templates are those the corpses recorded in 2017 held, each drawn where the dropper's loot base lies in its window (the middle 90% of the bases it dropped at, from 8 drops; the bases seen widened by 3 below that); the kinds lowest in a pool reach down to level 0 and the highest, and those mostly dropped from 45 up, are open above; each weight is fit so that the windows and weights give back each template's recorded count at the recorded bases |
 | `refining-product-name` | a refining recipe's product is the template its script package's own product name names, as the one recorded refining's was |
+| `dye-plant-color` | a dye plant's seed is the template whose planting effect names the color its plant's NPC table names, and its plant item the one plant item of its plant's name (`record`: the seed) |
+| `dye-plant-name` | a dye plant's pollen is the pollen template of its plant's name, and the pollen's name the plants' text of that name |
 | `item-spot-regen` | an item a camp keeps lying whose return no recording timed comes back as the timed spots of its template did, else 20 s after its taking, as every timed quest item lying alone did |
 
 ## Record kinds
@@ -523,6 +526,44 @@ at least one `{ most, classes }`: a use is refused while its user has `most` pet
 with `classes`, a pet's class being its effect's. A skill no row names goes by each kind of pet's own limit
 of its class; a pet an item's use makes keeps to the limits of a skill that makes the same pet; and no
 player has more pets in all than the server allows.
+
+**`[[plant]]`**: a species of dye plant. One row per plant.
+
+| field | | meaning |
+|---|---|---|
+| `plant` | required | the template of the plant a seed plants |
+| `seed` | required | the template of its seed: a seed no row names plants nothing |
+| `pollen` | | the template of the pollen a ripe plant gives with its plant item, and that may be brushed onto any plant; with `name` or not at all |
+| `name` | | the pollen's name among the plants' texts (its string id), which a plant it is brushed onto shows |
+| `harvest` | required | the template of the plant item a ripe plant gives |
+
+A world with no `[[plant]]` rows has the server's own thirteen; a world with any has its rows alone.
+
+```toml
+# <pack>/server/plants.toml
+[[plant]]
+plant = 0x47003420
+seed = 0x47001454
+pollen = 0x47001448
+name = 0x811B71D6
+harvest = 0x47000FF9
+prov = { from = "authored", by = "you" }
+```
+
+**`[[plant_cross]]`**: what a ripe plant pollinated with a pollen gives in place of its plant item and pollen.
+`plant` and `pollen` (the plant's template and the pollen's; one row per pair), `seeds` (the template of the seeds it
+gives) and `count` (1, 2 or 3, as the plants' texts say). A pollinated plant of a pair no row names gives its plant
+item and pollen. A world with no `[[plant_cross]]` rows has the server's own two; a world with any has its rows alone.
+
+```toml
+# <pack>/server/plants.toml
+[[plant_cross]]
+plant = 0x47003420
+pollen = 0x47001451
+seeds = 0x47001453
+count = 3
+prov = { from = "authored", by = "you" }
+```
 
 **`[[treasure_value]]`**: what treasure a creature of a level leaves is worth. `level` (the creature's level) and `values` (whole numbers, at least one): each treasure item the creature leaves carries one of them as its own value, drawn evenly, so a value listed twice comes twice as often; selling it pays that. A level with no row draws from the nearest level that has one (the lower of two as near); a world with none has the server's own instead, a band of values for each ten levels up to 50. A rare and a trump of the tarot never carry one.
 

@@ -1,0 +1,136 @@
+# The thirteen species of dye plant, by color. Each species' plant and seed pair by the color the seed's planting and
+# the plant's table name, and its plant item is the one of the plant's name; its pollen is the pollen named for it, and
+# the pollen's name the plants' text of that name. The clear one has no pollen.
+
+# black
+[[plant]]
+plant = 0x4700341D
+seed = 0x47001452
+pollen = 0x47001446
+name = 0x812971D6
+harvest = 0x47000FF5
+prov = { from = "derived", rule = "dye-plant-color", record = 0x47001452, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# bronze
+[[plant]]
+plant = 0x4700341F
+seed = 0x47001453
+pollen = 0x47001447
+name = 0x839B71D6
+harvest = 0x47000FF7
+prov = { from = "derived", rule = "dye-plant-color", record = 0x47001453, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# brown
+[[plant]]
+plant = 0x47003420
+seed = 0x47001454
+pollen = 0x47001448
+name = 0x811B71D6
+harvest = 0x47000FF9
+prov = { from = "derived", rule = "dye-plant-color", record = 0x47001454, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# clear
+[[plant]]
+plant = 0x47003421
+seed = 0x47001455
+harvest = 0x47000FFB
+prov = { from = "derived", rule = "dye-plant-color", record = 0x47001455 }
+
+# dark blue
+[[plant]]
+plant = 0x47003422
+seed = 0x47001456
+pollen = 0x47001449
+name = 0x821B71D6
+harvest = 0x47000FFD
+prov = { from = "derived", rule = "dye-plant-color", record = 0x47001456, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# dark green
+[[plant]]
+plant = 0x47003423
+seed = 0x47001457
+pollen = 0x4700144A
+name = 0x801B71D6
+harvest = 0x47000FFF
+prov = { from = "derived", rule = "dye-plant-color", record = 0x47001457, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# gold
+[[plant]]
+plant = 0x47003424
+seed = 0x47001458
+pollen = 0x4700144B
+name = 0x831B71D6
+harvest = 0x47001001
+prov = { from = "derived", rule = "dye-plant-color", record = 0x47001458, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# light blue
+[[plant]]
+plant = 0x47003425
+seed = 0x47001459
+pollen = 0x4700144C
+name = 0x859B71D6
+harvest = 0x47001003
+prov = { from = "derived", rule = "dye-plant-color", record = 0x47001459, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# light green
+[[plant]]
+plant = 0x47003426
+seed = 0x4700145A
+pollen = 0x4700144D
+name = 0x829B71D6
+harvest = 0x47001005
+prov = { from = "derived", rule = "dye-plant-color", record = 0x4700145A, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# orange
+[[plant]]
+plant = 0x47003427
+seed = 0x4700145B
+pollen = 0x4700144E
+name = 0x812B71D6
+harvest = 0x47001006
+prov = { from = "derived", rule = "dye-plant-color", record = 0x4700145B, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# pink
+[[plant]]
+plant = 0x47003428
+seed = 0x4700145C
+pollen = 0x4700144F
+name = 0x812A71D6
+harvest = 0x47001007
+prov = { from = "derived", rule = "dye-plant-color", record = 0x4700145C, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# purple
+[[plant]]
+plant = 0x47003429
+seed = 0x4700145D
+pollen = 0x47001450
+name = 0x851B71D6
+harvest = 0x47001009
+prov = { from = "derived", rule = "dye-plant-color", record = 0x4700145D, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# red
+[[plant]]
+plant = 0x4700342A
+seed = 0x4700145E
+pollen = 0x47001451
+name = 0x809B71D6
+harvest = 0x4700100A
+prov = { from = "derived", rule = "dye-plant-color", record = 0x4700145E, fields = { pollen = { from = "derived", rule = "dye-plant-name" }, name = { from = "derived", rule = "dye-plant-name" } } }
+
+# The crosses the January 2017 recordings harvested: a brown plant with red pollen gave three bronze seeds (twice), a
+# gold plant with bronze pollen two dark blue seeds (once). A pollinated plant of any other pair gives its plant item
+# and pollen.
+
+[[plant_cross]]
+plant = 0x47003420
+pollen = 0x47001451
+seeds = 0x47001453
+count = 3
+prov = { from = "capture", evidence = "AC2-EVID-SRV-DYE-PLANT-CROSS", ref = "cross brown red", confidence = "medium" }
+
+[[plant_cross]]
+plant = 0x47003424
+pollen = 0x47001447
+seeds = 0x47001456
+count = 2
+prov = { from = "capture", evidence = "AC2-EVID-SRV-DYE-PLANT-CROSS", ref = "cross gold bronze", confidence = "low" }
