@@ -1,6 +1,6 @@
 # Changes
 
-## Unreleased
+## v0.33.0
 
 - Some quests wait five hours after a cancel, as in 2017. New pack `quest-cancel-waits/`.
 - A hero's transformation and a tap of vitae come from rows, as in 2017. New pack `hero-transformation/`.
