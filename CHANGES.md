@@ -6,6 +6,7 @@
 - Dye plant kinds and their crosses are now rows of the world. New pack `dye-plants/`.
 - Crowd control immunities are now rows of the world. Pack `effect-rules/`.
 - Pollinated plants now give seeds for most pollens, as a 2013 guide charts them. New pack `dye-plant-crosses/`.
+- Worn looks of items whose data names none are now rows of the world. New pack `worn-looks/`.
 
 ## v0.33.0
 

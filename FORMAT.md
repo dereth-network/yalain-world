@@ -27,6 +27,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/death_treasures.toml [[death_treasure]]
 <pack>/server/pets.toml            [[pet]], [[pet_limit]]
 <pack>/server/plants.toml          [[plant]], [[plant_cross]]
+<pack>/server/worn.toml            [[worn]]
 <pack>/server/pools.toml           [[treasure_pool]]
 <pack>/server/effects.toml         [[effect_name]], [[effect_rule]]
 <pack>/server/events.toml          [[event]]
@@ -132,6 +133,7 @@ Every row sets one **item**, named by its key:
 | `treasure_value LEVEL` | the creatures' level |
 | `mine 0xSKILL` | the mining craft skill |
 | `map_region REGION` | the region's key |
+| `worn 0xTEMPLATE 0xRACES 0xSEXES` | the template and the races and sexes it fits |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -198,6 +200,7 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | `refining-product-name` | a refining recipe's product is the template its script package's own product name names, as the one recorded refining's was |
 | `dye-plant-color` | a dye plant's seed is the template whose planting effect names the color its plant's NPC table names, and its plant item the one plant item of its plant's name (`record`: the seed) |
 | `dye-plant-name` | a dye plant's pollen is the pollen template of its plant's name, and the pollen's name the plants' text of that name |
+| `worn-class-name` | a worn look is one the template's class names by file name, its id what the same name answers elsewhere (a class's pile appearance with its template's, another template's worn properties), else a look the 2017 servers sent for the template, else the male look for the female (`record`: the template) |
 | `item-spot-regen` | an item a camp keeps lying whose return no recording timed comes back as the timed spots of its template did, else 20 s after its taking, as every timed quest item lying alone did |
 
 ## Record kinds
@@ -562,6 +565,31 @@ plant = 0x47003420
 pollen = 0x47001451
 seeds = 0x47001453
 count = 3
+prov = { from = "authored", by = "you" }
+```
+
+**`[[worn]]`**: a look an item of a template gives its wearer, where the template's data names none. One row per
+template, races and sexes.
+
+| field | | meaning |
+|---|---|---|
+| `template` | required | the item's template |
+| `races` | required | the races it fits, a mask (1 human, 2 lugian, 4 tumerok; `0xFFFFFFFF` every race) |
+| `sexes` | required | the sexes it fits, a mask (`0x1000` male, `0x2000` female; `0xFFFFFFFF` both) |
+| `appearance` | required | the appearance it gives them |
+
+A wearer takes the first of its template's rows that fits it, in the order they stand, and a dye colors the first.
+A template holds 16 at most. A template whose data names its own worn looks keeps those, and the build warns of
+its rows. A world with no `[[worn]]` rows has the server's own, 147 looks of 75 templates, and its server says so at
+start; a world with any has its rows alone, so an item of a template no row names changes nothing on the body.
+
+```toml
+# <pack>/server/worn.toml
+[[worn]]
+template = 0x4700051E
+races = 0x1
+sexes = 0x1000
+appearance = 0x20000016
 prov = { from = "authored", by = "you" }
 ```
 
