@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Some quests wait five hours after a cancel, as in 2017. New pack `quest-cancel-waits/`.
+
 ## v0.32.0
 
 - Players can hand gems in at their own kingdom's shrine for kingdom points. New pack `kingdom-points/`.

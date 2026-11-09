@@ -1,0 +1,11 @@
+# The waits after a cancel the January 2017 records show, where they are not the rule's; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002D3
+id_name = "Quest_CravenScraven_2"
+state = 0x6F000C98
+challenge = 14
+cancellable = true
+retry = 518400
+cancel_wait = 18000
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:1b2608e0", confidence = "medium", sample = { sessions = 2 }, fields = { retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" }, cancel_wait = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CANCEL-WAITS-2017", ref = "c:f526f2c4", confidence = "low", sample = { sessions = 1 } } } }

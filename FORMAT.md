@@ -263,7 +263,7 @@ hides from a player the sales the player may not have (else shows them restricte
 install's.
 
 **`[[quest]]`**: a quest's server values. `id` and `id_name`, `state`† (its definition), `challenge`,
-`duration` (s of the player's time in the world, 0 for none), `timed_phase` (the one phase the duration runs in, from when that phase comes, shown and able to fail the quest in that phase only; left out, every phase from its giving), `retry` (s, by the calendar, in the world or not), `xp` (left out, as the quest's setup in the install says), `xp_share` (in place of an amount, the
+`duration` (s of the player's time in the world, 0 for none), `timed_phase` (the one phase the duration runs in, from when that phase comes, shown and able to fail the quest in that phase only; left out, every phase from its giving), `retry` (s, by the calendar, in the world or not), `cancel_wait` (s, by the calendar, from 0: the wait after its player cancels it before it is given again; left out, 300, except that a world whose rows name none has the server's own five hours for the quests 2017 gave them), `xp` (left out, as the quest's setup in the install says), `xp_share` (in place of an amount, the
 share of what the player's level takes to reach the next that its completion pays, whole; left out, as the setup says), `xp_share_level` (the level
 at and above which that share pays no more), `xp_least`, `xp_most` (the least and the most that share pays), `xp_whole` (true: an amount is paid whole, whatever the quest's challenge against the player's level; left out, as the setup says), `cancellable`, `visible`† (false: the quest is kept for
 its player but never shown, in no journal and no update; left out, a quest is shown when its
@@ -276,7 +276,7 @@ says is done by other quests (subquests) gives them with it, kept hidden: steps 
 move told as the quest's own record with its phase kept, and the quest moves on to its next phase
 once all of them (or one, where the definition says one is enough) are done; from its last phase it
 is done, the person who took the last of them saying its `complete` line. A quest that failed
-or was cancelled is given again only once its wait is over, as a done one is; a done quest with no wait (`retry`
+or was cancelled is given again only once its wait is over (a cancelled one's its `cancel_wait`), as a done one is; a done quest with no wait (`retry`
 0 or left out) is given again at once, unless it is done once (its setup in the install says it may be done one
 time, or the row says `once`). A person who gives several quests gives one of them at a
 use, picked at random, none while one is under way, and, when none of them has a wait, none for two hours of the player's

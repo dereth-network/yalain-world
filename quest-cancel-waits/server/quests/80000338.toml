@@ -1,0 +1,11 @@
+# The waits after a cancel the January 2017 records show, where they are not the rule's; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000338
+id_name = "Quest_DC2_Skeleton"
+state = 0x6F0007E3
+challenge = 46
+cancellable = true
+retry = 518400
+cancel_wait = 18000
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:682876fc", confidence = "low", sample = { sessions = 1 }, fields = { retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" }, cancel_wait = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CANCEL-WAITS-2017", ref = "c:73e89787", confidence = "low", sample = { sessions = 1 } } } }

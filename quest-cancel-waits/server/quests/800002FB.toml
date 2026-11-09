@@ -1,0 +1,10 @@
+# The waits after a cancel the January 2017 records show, where they are not the rule's; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002FB
+id_name = "Quest_DrudgeSpellbindingBestowal"
+state = 0x6F000CB5
+challenge = 13
+cancellable = true
+cancel_wait = 18000
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:ce8f7ff6", confidence = "high", sample = { sessions = 3 }, fields = { cancel_wait = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CANCEL-WAITS-2017", ref = "c:0bcd7622", confidence = "low", sample = { sessions = 1 } } } }

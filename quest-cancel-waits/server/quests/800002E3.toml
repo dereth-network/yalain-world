@@ -1,0 +1,10 @@
+# The waits after a cancel the January 2017 records show, where they are not the rule's; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002E3
+id_name = "Quest_DFDrudgerton"
+state = 0x6F000CA3
+challenge = 40
+cancellable = true
+cancel_wait = 18000
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:dcf3c14a", confidence = "medium", sample = { sessions = 2 }, fields = { cancel_wait = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CANCEL-WAITS-2017", ref = "c:90869b09", confidence = "low", sample = { sessions = 1 } } } }
