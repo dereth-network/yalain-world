@@ -1,0 +1,30 @@
+# A forager's food: its template names no effect for its use. Used, it plays the drink, puts on its two heals at
+# the spellcraft of 40 (the forage's in most recordings), and wears by one; at the fifth use it is gone.
+
+[[item_use]]
+template = 0x47000845
+effects = [{ effect = 0x6F002255, spellcraft = 40 }, { effect = 0x6F002251, spellcraft = 40 }]
+behavior = 0x41000023
+wears = 5
+prov = { from = "capture", evidence = "AC2-EVID-SRV-FOOD", ref = "item 47000845", confidence = "high" }
+
+# The training hall's potions: each template names no effect, but each is drunk for its one effect at the
+# spellcraft of 1 (haste, healing, thorns).
+
+[[item_use]]
+template = 0x47001AEE
+effects = [{ effect = 0x70000A13 }]
+behavior = 0x41000023
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TRAINING-POTIONS", ref = "item 47001AEE", confidence = "medium" }
+
+[[item_use]]
+template = 0x47001AEF
+effects = [{ effect = 0x70000A00 }]
+behavior = 0x41000023
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TRAINING-POTIONS", ref = "item 47001AEF", confidence = "medium" }
+
+[[item_use]]
+template = 0x47001AF0
+effects = [{ effect = 0x700009FD }]
+behavior = 0x41000023
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TRAINING-POTIONS", ref = "item 47001AF0", confidence = "low" }

@@ -39,6 +39,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/treasure_looks.toml  [[treasure_look]]
 <pack>/server/treasure_potions.toml [[treasure_potion]]
 <pack>/server/treasure_families.toml [[treasure_family]]
+<pack>/server/items.toml           [[item_use]], [[book]], [[start_item]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -661,6 +662,36 @@ prov = { from = "authored", by = "you" }
 
 A world with no rows of one of these kinds plays the server's own of that kind, those fit to the 2017 servers'
 items, and its server says so at start. A kind's rows are taken whole, never mixed with the server's.
+
+**`[[item_use]]`**: what an item's use does where its template names no effect for it. `template`;
+`effects`, `[{ effect, spellcraft }]`, at least one: each effect (a saved state or a package's, `0x6F...` or
+`0x70...`; `yalain world check --dats <install>` holds it to the install) put on its user in order, after any its
+template names, at its spellcraft (from 0; 1 when left out); `behavior`, what its use plays where its template names
+none (a use with none is carried out at once); `wears`, above 0: it wears by its uses rather than going at its first,
+down one a use, gone at the last, this many when it was not made with a durability of its own. One row per template.
+
+```toml
+# <pack>/server/items.toml
+[[item_use]]
+template = 0x47000845
+effects = [{ effect = 0x6F002255, spellcraft = 40 }, { effect = 0x6F002251, spellcraft = 40 }]
+behavior = 0x41000023
+wears = 5
+prov = { from = "authored", by = "you" }
+```
+
+**`[[book]]`**: what an item or a person of a template shows when used, where its template names nothing.
+`template`, and one of: `table`, the string table of a book's pages, shown with its page controls (a person used in
+reach answers the use first; an item from the pack opens it, then answers); or `picture`, shown with no page controls
+(a card from the pack, kept). One row per template.
+
+**`[[start_item]]`**: what every new character is given as it first enters, beside its race's starting pack.
+`template`, and `count` (above 0; 1 when left out). A character that has entered before is given nothing. One row
+per template.
+
+A world with no rows of one of these three kinds has the server's own of that kind (the food and the training
+hall's potions, the four cards and the two people, the guide book), and its server says so at start. A kind's rows
+are taken whole, never mixed with the server's.
 
 **`[[event]]`**: a named state of the world, on for its times. `key` (lowercase letters, digits and
 hyphens); `game_event`, a value of the install's game events it stands for (optional; `yalain world check

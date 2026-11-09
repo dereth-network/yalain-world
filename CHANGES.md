@@ -7,6 +7,7 @@
 - Mining and what surveyor's maps find are now rows of the world. New packs `mines/` and `map-regions/`.
 - Two rare summoning items now summon their pair. New pack `rare-uses/`.
 - Two rare explosive items now harm the monsters around their user. Pack `rare-uses/`.
+- Item uses, books and new characters' first gift are now rows of the world. New packs `item-uses/`, `books/` and `start-items/`.
 
 ## v0.32.0
 
