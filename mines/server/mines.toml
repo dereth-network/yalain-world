@@ -1,0 +1,62 @@
+# What each mining craft skill's nodes play and answer, its own tools, the node a stone's use conjures for it and what
+# a find unearths, as the January 2017 recordings show them. A find comes only from a node a map led to.
+
+[[mine]]
+skill = 0x6F00069B
+behavior = 0x41000149
+tools = [0x47000CB5, 0x47000CB6]
+answer = { table = 0x25000CEC, string = 0x486257E3 }
+rich_answer = { table = 0x25000CEC, string = 0x284F06B2 }
+delving = { effect = "Eff_SummonMine_Crystal_Delving", node = 0x47000C8A }
+lodestones = [{ from = 0, template = 0x47000C1C }, { from = 30, template = 0x47000C1A }, { from = 45, template = 0x47000C1D }, { from = 60, template = 0x47000C1F }, { from = 75, template = 0x47000C1E }]
+find_chance = 0.04242424242424243
+finds = [{ template = 0x4700052F, share = 0.2857142857142857 }]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-MINING", ref = "mine crystal", confidence = "high", fields = { tools = { from = "capture", evidence = "AC2-EVID-SRV-MINING-TOOL-PERK", ref = "mine crystal", confidence = "high" }, delving = { from = "capture", evidence = "AC2-EVID-SRV-SURVEY-DELVING", ref = "mine crystal", confidence = "high" }, lodestones = { from = "capture", evidence = "AC2-EVID-SRV-LODESTONE-QUALITY", ref = "mine crystal", confidence = "medium" }, find_chance = { from = "capture", evidence = "AC2-EVID-SRV-MINING-FIND", ref = "mine crystal", confidence = "low" }, finds = { from = "capture", evidence = "AC2-EVID-SRV-MINING-FIND", ref = "mine crystal", confidence = "low" } } }
+
+[[mine]]
+skill = 0x6F00069C
+behavior = 0x4100014D
+tools = [0x47000CC1, 0x47000CC2]
+answer = { table = 0x25000CEC, string = 0x79C276DB }
+rich_answer = { table = 0x25000CEC, string = 0x53EE7371 }
+delving = { effect = "Eff_SummonMine_Iron_Delving", node = 0x47000C8C }
+lodestones = [{ from = 0, template = 0x47000C16 }, { from = 30, template = 0x47000C14 }, { from = 45, template = 0x47000C17 }, { from = 60, template = 0x47000C19 }, { from = 75, template = 0x47000C18 }]
+find_chance = 0.04242424242424243
+finds = [{ template = 0x4700052F, share = 0.2857142857142857 }]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-MINING", ref = "mine iron", confidence = "high", fields = { tools = { from = "capture", evidence = "AC2-EVID-SRV-MINING-TOOL-PERK", ref = "mine iron", confidence = "high" }, delving = { from = "capture", evidence = "AC2-EVID-SRV-SURVEY-DELVING", ref = "mine iron", confidence = "high" }, lodestones = { from = "capture", evidence = "AC2-EVID-SRV-LODESTONE-QUALITY", ref = "mine iron", confidence = "medium" }, find_chance = { from = "capture", evidence = "AC2-EVID-SRV-MINING-FIND", ref = "mine iron", confidence = "low" }, finds = { from = "capture", evidence = "AC2-EVID-SRV-MINING-FIND", ref = "mine iron", confidence = "low" } } }
+
+[[mine]]
+skill = 0x6F00069D
+behavior = 0x4100014C
+tools = [0x47000CBF, 0x47000CC0]
+answer = { table = 0x25000CEC, string = 0xEECA8C2F }
+rich_answer = { table = 0x25000CEC, string = 0xF862249F }
+delving = { effect = "Eff_SummonMine_Silver_Delving", node = 0x47000C8E }
+lodestones = [{ from = 0, template = 0x47000C04 }, { from = 30, template = 0x47000C02 }, { from = 45, template = 0x47000C05 }, { from = 60, template = 0x47000C07 }, { from = 75, template = 0x47000C06 }]
+find_chance = 0.04242424242424243
+finds = [{ template = 0x4700052F, share = 0.2857142857142857 }]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-MINING", ref = "mine silver", confidence = "high", fields = { tools = { from = "capture", evidence = "AC2-EVID-SRV-MINING-TOOL-PERK", ref = "mine silver", confidence = "high" }, delving = { from = "capture", evidence = "AC2-EVID-SRV-SURVEY-DELVING", ref = "mine silver", confidence = "high" }, lodestones = { from = "capture", evidence = "AC2-EVID-SRV-LODESTONE-QUALITY", ref = "mine silver", confidence = "medium" }, find_chance = { from = "capture", evidence = "AC2-EVID-SRV-MINING-FIND", ref = "mine silver", confidence = "low" }, finds = { from = "capture", evidence = "AC2-EVID-SRV-MINING-FIND", ref = "mine silver", confidence = "low" } } }
+
+[[mine]]
+skill = 0x6F00069E
+behavior = 0x41000149
+tools = [0x47000CC3, 0x47000CC4]
+answer = { table = 0x25000CEC, string = 0x8EA17A36 }
+rich_answer = { table = 0x25000CEC, string = 0xDAF5223D }
+delving = { effect = "Eff_SummonMine_Stone_Delving", node = 0x47000C90 }
+lodestones = [{ from = 0, template = 0x47000C0A }, { from = 30, template = 0x47000C08 }, { from = 45, template = 0x47000C0B }, { from = 60, template = 0x47000C0D }, { from = 75, template = 0x47000C0C }]
+find_chance = 0.04242424242424243
+finds = [{ template = 0x4700052F, share = 0.2857142857142857 }]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-MINING", ref = "mine stone", confidence = "high", fields = { tools = { from = "capture", evidence = "AC2-EVID-SRV-MINING-TOOL-PERK", ref = "mine stone", confidence = "high" }, delving = { from = "capture", evidence = "AC2-EVID-SRV-SURVEY-DELVING", ref = "mine stone", confidence = "high" }, lodestones = { from = "capture", evidence = "AC2-EVID-SRV-LODESTONE-QUALITY", ref = "mine stone", confidence = "medium" }, find_chance = { from = "capture", evidence = "AC2-EVID-SRV-MINING-FIND", ref = "mine stone", confidence = "low" }, finds = { from = "capture", evidence = "AC2-EVID-SRV-MINING-FIND", ref = "mine stone", confidence = "low" } } }
+
+[[mine]]
+skill = 0x6F00069F
+behavior = 0x4100014A
+tools = [0x47000CB9, 0x47000CBA]
+answer = { table = 0x25000CEC, string = 0xF74262DC }
+rich_answer = { table = 0x25000CEC, string = 0xF74262DC }
+delving = { effect = "Eff_SummonMine_Wood_Delving", node = 0x47000C92 }
+lodestones = [{ from = 0, template = 0x47000C10 }, { from = 30, template = 0x47000C0E }, { from = 45, template = 0x47000C11 }, { from = 60, template = 0x47000C13 }, { from = 75, template = 0x47000C12 }]
+find_chance = 0.04242424242424243
+finds = [{ template = 0x4700052F, share = 0.2857142857142857 }]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-MINING", ref = "mine wood", confidence = "high", fields = { tools = { from = "capture", evidence = "AC2-EVID-SRV-MINING-TOOL-PERK", ref = "mine wood", confidence = "high" }, delving = { from = "capture", evidence = "AC2-EVID-SRV-SURVEY-DELVING", ref = "mine wood", confidence = "high" }, lodestones = { from = "capture", evidence = "AC2-EVID-SRV-LODESTONE-QUALITY", ref = "mine wood", confidence = "medium" }, find_chance = { from = "capture", evidence = "AC2-EVID-SRV-MINING-FIND", ref = "mine wood", confidence = "low" }, finds = { from = "capture", evidence = "AC2-EVID-SRV-MINING-FIND", ref = "mine wood", confidence = "low" } } }

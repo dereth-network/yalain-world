@@ -18,6 +18,8 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/gives/TTTTTTTT.toml  [[give]] of one template given to
 <pack>/server/talk/TTTTTTTT.toml   [[talk]] of one template
 <pack>/server/crafting.toml        [[craft]], [[tool]]
+<pack>/server/mines.toml           [[mine]]
+<pack>/server/maps.toml            [[map_region]]
 <pack>/server/story.toml           [[scene]], [[shard]]
 <pack>/server/butchery.toml        [[butchery]]
 <pack>/server/weapons.toml         [[weapon]]
@@ -125,6 +127,8 @@ Every row sets one **item**, named by its key:
 | `treasure_potion KIND` | the kind's name |
 | `treasure_family SORT ORDER` | the sort and the family's `order` |
 | `treasure_value LEVEL` | the creatures' level |
+| `mine 0xSKILL` | the mining craft skill |
+| `map_region REGION` | the region's key |
 
 Numbers in an item are hexadecimal after `0x`, else decimal; `keeper 0x470033D0` and
 `keeper 0x470033d0` are one item. Keys are lowercase letters, digits and hyphens. The seed's keys are
@@ -365,8 +369,46 @@ names), or one its `teleport` lines name as their `item`. Any other map, or one 
 **`[[craft]]`**: a craft skill (`skill`, its saved state) or a recipe (`recipe`) every new character
 starts with, at level 1 for a craft skill. One of the two.
 
-**`[[tool]]`**: what a gathering tool yields when it was not made: `template` (the tool's) and `yield`
-(a count). A made tool's yield is its own; a knife that was not made and that no row names yields 1.
+**`[[tool]]`**: what a gathering tool (a knife or a mining tool) yields when it was not made: `template` (the
+tool's) and `yield` (a count). A made tool's yield is its own; a tool that was not made and that no row names yields
+1, except a mining tool of a world with no `[[mine]]` rows, which yields what the server's own say.
+
+**`[[mine]]`**: what the nodes of a mining craft skill do. One row per skill.
+
+| field | | meaning |
+|---|---|---|
+| `skill` | required | the craft skill (its saved state); a node mined by it is the row's |
+| `behavior` | required | the behavior a miner plays with none of the skill's tools in hand |
+| `tools` | | the skill's own tools: one in the miner's hand plays its own use behavior, adds its yield (`[[tool]]`) to a summoned node's units, and wears |
+| `answer`, `rich_answer` | required | string references: what a use answers, plain and when it finds twice the units |
+| `delving` | | `{ effect, node }`: the name of the effect a stone's use conjures the skill's node by, and the node (a template the install gives a material when mined) |
+| `lodestones` | | `{ from, template }`, levels rising from 0: the lodestone a find unearths, the last whose `from` the finder's level reaches |
+| `find_chance` | | from 0 to 1: how often a use of the skill's node a map led to is a find in place of its material; 0 when left out |
+| `finds` | | `{ template, share }`: the other items a find may be, each by its share of finds, above 0 and at most 1 in all; the rest are lodestones |
+
+A world with no `[[mine]]` rows has the server's own, those of the five mining skills as 2017 had them; a world
+with any has its rows alone.
+
+```toml
+# <pack>/server/mines.toml
+[[mine]]
+skill = 0x6F00069C
+behavior = 0x4100014D
+tools = [0x47000CC1, 0x47000CC2]
+answer = { table = 0x25000CEC, string = 0x79C276DB }
+rich_answer = { table = 0x25000CEC, string = 0x53EE7371 }
+delving = { effect = "Eff_SummonMine_Copper_Hills", node = 0x47000C8C }
+lodestones = [{ from = 0, template = 0x47000C16 }, { from = 30, template = 0x47000C14 }]
+find_chance = 0.05
+finds = [{ template = 0x4700052F, share = 0.25 }]
+prov = { from = "authored", by = "you" }
+```
+
+**`[[map_region]]`**: the nodes a region's surveyor's maps lead to. `region` (a key: lowercase letters, digits and
+hyphens) and `nodes`, at least one `{ effect, node }`: the name of an effect a map's use names, and the node it
+conjures where the map leads (a template the install gives a material when mined). A map whose effects no row names
+is no map. A world with no `[[map_region]]` rows has the server's own, Linvak's, Omishan's and Osteth's; a world with
+any has its rows alone.
 
 **`[[scene]]`**: a scene of the story, as a client plays it.
 

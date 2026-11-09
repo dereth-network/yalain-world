@@ -1,0 +1,35 @@
+# The nodes each region's surveyor's maps lead to, one of each material, by the effect that conjures it. The recordings
+# showed six of the fifteen effects, each always its one node; the rest follow the templates' order.
+
+[[map_region]]
+region = "linvak"
+nodes = [
+    { effect = "Eff_SummonMine_Crystal_Linvak", node = 0x47000C97 },
+    { effect = "Eff_SummonMine_Iron_Linvak", node = 0x47000C98 },
+    { effect = "Eff_SummonMine_Silver_Linvak", node = 0x47000C99 },
+    { effect = "Eff_SummonMine_Stone_Linvak", node = 0x47000C9A },
+    { effect = "Eff_SummonMine_Wood_Linvak", node = 0x47000C9B },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-SURVEY-DELVING", ref = "region linvak", confidence = "medium" }
+
+[[map_region]]
+region = "omishan"
+nodes = [
+    { effect = "Eff_SummonMine_Crystal_Omishan", node = 0x47000CA1 },
+    { effect = "Eff_SummonMine_Iron_Omishan", node = 0x47000CA2 },
+    { effect = "Eff_SummonMine_Silver_Omishan", node = 0x47000CA3 },
+    { effect = "Eff_SummonMine_Stone_Omishan", node = 0x47000CA4 },
+    { effect = "Eff_SummonMine_Wood_Omishan", node = 0x47000CA5 },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-SURVEY-DELVING", ref = "region omishan", confidence = "low" }
+
+[[map_region]]
+region = "osteth"
+nodes = [
+    { effect = "Eff_SummonMine_Crystal_Osteth", node = 0x47000CA6 },
+    { effect = "Eff_SummonMine_Iron_Osteth", node = 0x47000CA7 },
+    { effect = "Eff_SummonMine_Silver_Osteth", node = 0x47000CA8 },
+    { effect = "Eff_SummonMine_Stone_Osteth", node = 0x47000CA9 },
+    { effect = "Eff_SummonMine_Wood_Osteth", node = 0x47000CAA },
+]
+prov = { from = "capture", evidence = "AC2-EVID-SRV-SURVEY-DELVING", ref = "region osteth", confidence = "low" }
