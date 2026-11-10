@@ -304,7 +304,9 @@ after the effects, `{ table, string }`), `fellows` (true: the update is made for
 player's fellows in the world as well, each told it alone; what the step takes and gives is the player's alone, and a fellow
 needs only the phase and what the step requires), `races` (the races it is for, by number: 1 human, 2
 Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out), `effects_last` (true: the
-quest's update is told before the effects and their text, not after them), `wants` (for a give, exactly how many of the item it wants: any other count is refused and handed
+quest's update is told before the effects and their text, not after them), `effects_quiet` (true: the effects tell
+none of their own lines, as a recipe or a skill they grant would, and the `text` is still told; only with
+`effects`), `wants` (for a give, exactly how many of the item it wants: any other count is refused and handed
 back, with the person's `refuse-give` line naming the quest and the `item` if it has one, else its plain refusal; left out, it runs for whatever is given and takes it all), `transforms` (a give's step that makes its player a hero: `{ seconds, fx, behavior, text, name }`, below), `chance` (above 0 and at most 1: the chance it runs each time it may, drawn once it may; one that does not come up is passed over for the rest of that moment, as if it could not run; left out, every time).
 
 | `trigger` | moves the quest when the player |
@@ -348,8 +350,8 @@ quest, even one kept hidden, and is a step). `key`, `to` (the template given to)
 given; left out, any item), `wants` (exactly how many of it: any other count is refused, the stack handed
 back, with the person's `refuse-give` line naming the item if it has one, else its plain refusal; left out,
 whatever is given is taken whole), `gives`, `counts` (what it gives in its place, from the person), `effects`,
-`text` (what it puts on the player, cast by the person, and a text after them), `fx` (what the person or the
-object plays as it takes the item), `requires` (as a step's; not met, the item is refused). A step the give
+`text` (what it puts on the player, cast by the person, and a text after them), `effects_quiet` (as a step's),
+`fx` (what the person or the object plays as it takes the item), `requires` (as a step's; not met, the item is refused). A step the give
 runs comes first, and a row for the item comes before one for any item. The person says its `accept` lines at a
 give naming the item and no quest, in their `order`, else one of those naming no item.
 

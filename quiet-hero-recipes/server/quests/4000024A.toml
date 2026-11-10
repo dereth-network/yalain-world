@@ -1,0 +1,14 @@
+# The hero initiation's recipes, taught without their effects' lines as the January 2017 records show; edit an authored pack instead.
+
+[[step]]
+key = "give-fragment"
+quest = 0x4000024A
+needs = 3
+trigger = { give = 0x470016AA, to = 0x47003040 }
+update = "advance"
+phase = 4
+takes = [0x470016AA]
+gives = [0x47001504]
+effects = [0x6F001C5D]
+effects_quiet = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-GIVES-2017", ref = "c:59c7e3c7", confidence = "low", sample = { sessions = 1 }, fields = { effects_quiet = { from = "capture", evidence = "AC2-EVID-WDB-QUIET-EFFECT-LINES-2017", ref = "c:c7971347", confidence = "low", sample = { sessions = 1 } } } }

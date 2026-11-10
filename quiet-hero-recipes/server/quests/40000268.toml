@@ -1,0 +1,11 @@
+# The hero initiation's recipes, taught without their effects' lines as the January 2017 records show; edit an authored pack instead.
+
+[[step]]
+key = "hero-shrine"
+quest = 0x40000268
+needs = 0
+trigger = { use = 0x47003049 }
+update = "complete"
+effects = [0x6F001C60, 0x6F001C62, 0x6F001C5E]
+effects_quiet = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-USES-2017", ref = "c:d56a3101", confidence = "high", sample = { sessions = 5 }, fields = { effects_quiet = { from = "capture", evidence = "AC2-EVID-WDB-QUIET-EFFECT-LINES-2017", ref = "c:45e4b0c6", confidence = "high", sample = { sessions = 5 } } } }
