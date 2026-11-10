@@ -1,0 +1,75 @@
+# The northeast Olthoi Hive's hunt creatures and its way in and out, no recording shows; edit an authored pack instead.
+
+[[camp]]
+key = "h-worker"
+cell = 0xE1A8010D
+at = [20.29, 9.04, 30.70]
+spots = [{ cell = 0xE1A8010D, at = [20.29, 9.04, 30.70] }, { cell = 0xE1A8010D, at = [14.63, 16.70, 31.20] }, { cell = 0xE1A8010D, at = [27.94, 3.38, 30.30] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002939, weight = 1 }, { template = 0x4700293A, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "in the northeast hive's deep cells, as the hunt's lines say and AC2 Hero names it; the wiki has them further in, where the world places nothing; both kinds the install names; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "h-soldier"
+cell = 0xE1A8010E
+at = [9.41, 23.92, 11.30]
+spots = [{ cell = 0xE1A8010E, at = [9.41, 23.92, 11.30] }, { cell = 0xE1A8010E, at = [1.36, 14.76, 21.20] }, { cell = 0xE1A8010E, at = [-0.03, 28.79, 11.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700292F, weight = 1 }, { template = 0x47002930, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "in the northeast hive's deep cells, as the hunt's lines say and AC2 Hero names it; the wiki has them further in, where the world places nothing; both kinds the install names; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "h-tender"
+cell = 0xE1A8010F
+at = [-5.32, 37.90, -8.70]
+spots = [{ cell = 0xE1A8010F, at = [-5.32, 37.90, -8.70] }, { cell = 0xE1A8010F, at = [-15.26, 31.60, 2.40] }, { cell = 0xE1A8010F, at = [-0.99, 48.04, -7.30] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002910, weight = 1 }, { template = 0x47002913, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "in the northeast hive's deep cells, as the hunt's lines say and AC2 Hero names it; the wiki has them further in, where the world places nothing; both kinds the install names; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "h-drone"
+cell = 0xE1A80110
+at = [-19.81, 57.21, -8.70]
+spots = [{ cell = 0xE1A80110, at = [-19.81, 57.21, -8.70] }, { cell = 0xE1A80110, at = [-24.05, 71.46, -8.50] }, { cell = 0xE1A80110, at = [-16.72, 42.94, -8.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700290D, weight = 1 }, { template = 0x4700290F, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "in the northeast hive's deep cells, as the hunt's lines say and AC2 Hero names it; the wiki has them further in, where the world places nothing; both kinds the install names; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "h-noble"
+cell = 0xE1A80111
+at = [-19.81, 75.21, -8.70]
+spots = [{ cell = 0xE1A80111, at = [-19.81, 75.21, -8.70] }, { cell = 0xE1A80111, at = [-21.22, 80.63, -8.80] }, { cell = 0xE1A80111, at = [-22.64, 72.04, -8.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002929, weight = 1 }, { template = 0x4700292A, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "in the northeast hive's deep cells, as the hunt's lines say and AC2 Hero names it; the wiki has them further in, where the world places nothing; both kinds the install names; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "h-exit"
+kind = "static"
+template = 0x47001154
+cell = 0xE1A80113
+at = [82.94, 72.57, 81.20]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "hive-ne-out"
+prov = { from = "authored", by = "Dereth Network", note = "the way out, beside where its portal's players arrive; no recording", confidence = "low" }
+
+[[object]]
+key = "h-hive"
+kind = "static"
+template = 0x47001154
+cell = 0xE1A80026
+at = [82.95, 111.61, 76.40]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0x10B56549 }
+to = "hive-ne"
+min_level = 35
+recall = true
+summon = true
+prov = { from = "authored", by = "Dereth Network", note = "at the hive's mound, where the wiki puts its portal; named by the portals' table; level 35, recalled and summoned, as the wiki says; no recording", confidence = "low" }

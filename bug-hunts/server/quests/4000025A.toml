@@ -1,0 +1,45 @@
+# One of the spirit's five Olthoi hunts, as its journal and his lines say; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000025A
+id_name = "QuestBugHuntSoldier"
+state = 0x6F00075C
+challenge = 55
+duration = 10800
+retry = 72000
+min_level = 45
+prov = { from = "derived", rule = "quest-setup-static", record = 0x6F00075C, confidence = "low" }
+
+[[step]]
+key = "h-given"
+quest = 0x4000025A
+needs = 0
+trigger = { use = 0x47002F44 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "who gives it: the quest's own journal, his lines and his table's name in the install, and AC2 Hero; no recording", confidence = "medium" }
+
+[[step]]
+key = "h-killed-292f"
+quest = 0x4000025A
+needs = 1
+trigger = { kill = 0x4700292F }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "its kill: the quest's own journal, and the creature whose table the install names for this hunt; no recording", confidence = "low" }
+
+[[step]]
+key = "h-killed-2930"
+quest = 0x4000025A
+needs = 1
+trigger = { kill = 0x47002930 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "its kill: the quest's own journal, and the creature whose table the install names for this hunt; no recording", confidence = "low" }
+
+[[step]]
+key = "h-end"
+quest = 0x4000025A
+needs = 2
+trigger = { use = 0x47002F44 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "who takes it back: the quest's own journal, his lines and his table's name in the install, and AC2 Hero; no recording", confidence = "medium" }

@@ -4,6 +4,7 @@
 
 - Storm Tyrants now also live in a second place, as a map of their time shows. Pack `crater-tyrants/`.
 - Three more Sclavus forts are placed, and every preceptor drops its talisman. New pack `sclavus-preceptors/`.
+- A spirit in the Olthoi Wastes now gives five hunts for maturing Olthoi. New pack `bug-hunts/`.
 
 ## v0.34.0
 
