@@ -5,9 +5,9 @@
 - Creatures and ways in for four dungeons no recording reached, from players' maps. New pack `acmaps-camps/`.
 - Each city's nexus now teaches its recall once the continent's act is done. New pack `city-recalls/`.
 - Patrol guards now mark the players they see, and their base's turrets shoot only the marked. New pack `turret-marks/`.
-- Players can now become heroes in play: each part's gem of the initiation may turn up on a bloodstone's kill at its stage. New pack `initiation-gems/`.
-- Players can now become heroes: the initiation's gems drop from bloodstones.
-- Creatures with a set loot quality no longer drop items needing three levels above it, as in 2017. Pack `treasure-numbers/`.
+- Players can now become heroes: the initiation's gems drop from bloodstones. New pack `initiation-gems/`.
+- Nine places keep to heroes alone, as their pages say. New pack `portal-heroes/`.
+- Creatures with a set loot quality no longer drop items three levels above it, as in 2017. Pack `treasure-numbers/`.
 
 ## v0.35.0
 
