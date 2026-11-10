@@ -874,8 +874,13 @@ concealing effect makes hated). A creature whose template says it never attacks 
 
 **`[[creature]]`**: what the world says of the creatures of a `template`: its shooting rhythm, `shot_gap` (the gap
 between its shots, times its shot's time scale) and `windup` (from the start of its shot until the missile leaves,
-at the creatures' median time scale 1.296), in seconds above 0, the two together. A shooter with no row shoots with
-a gap of 1.63 and a windup of 0.55.
+at the creatures' median time scale 1.296), in seconds above 0, the two together; `marks`, an effect (its saved state)
+it puts on each player that comes within its perception, once each time the player comes in, whether it rests or
+fights, with `mark_lines`, the line it says aloud as it does, naming the player: `{ race, line }`, one to a race (1
+human, 2 Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; with no race, for any other), `line` a string reference `{ table,
+string }`; and `only_hated` (true: it takes on only a player a concealing effect makes it hate, not one that strikes
+it nor one another creature near it fights, and gives up on one that no longer holds the effect). A row gives at
+least one of these. A shooter with no rhythm shoots with a gap of 1.63 and a windup of 0.55.
 
 ```toml
 # <pack>/server/creatures.toml
@@ -900,10 +905,23 @@ template = 0x47002398
 shot_gap = 2.37
 windup = 0.79
 prov = { from = "authored", by = "you" }
+
+[[creature]]
+template = 0x47002794
+marks = 0x6F001F31
+mark_lines = [{ race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } }]
+prov = { from = "authored", by = "you" }
+
+[[creature]]
+template = 0x47002C40
+only_hated = true
+prov = { from = "authored", by = "you" }
 ```
 
 A world with no rows of one of these kinds has the server's own of that kind (those of `creature-regard/` and
 `creature-rhythm/`), and its server says so at start. A kind's rows are taken whole, never mixed with the server's.
+A world whose `[[creature]]` rows give no `marks` has no creature mark a player, and one whose rows give no
+`only_hated` has none that takes on only the hated; its server names such a field at start.
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 

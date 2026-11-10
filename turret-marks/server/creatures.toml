@@ -1,0 +1,187 @@
+# The patrol guards of the base whose turrets these are designate targets for them, as their description says: each
+# puts the mark on a player as it comes within the guard's perception (its own template's, 10 m or 15 m), saying its
+# line for the player's race aloud; it marks the player anew only once it has left and come back. In January 2017
+# three of these guards named each of six players as they came within 10 m, the mark's record added in the same tick
+# as the line. The mark lasts four hours and goes at logout and at a teleport, as its own data says. Its description
+# makes the turrets' class hate its holder; the turrets, which never attack first, take on only those: in the one
+# recorded visit 159 of 159 of their shots at players came after a guard had named that player, and none fell in 2,329
+# seconds of unmarked players within 60 m of them.
+
+[[concealing]]
+effect = 0x6F001F31
+class = 0x75
+regard = "hates"
+prov = { from = "dat", record = 0x6F001F31, confidence = "high", note = "its description makes its holder a designated target for the turrets, whose class this is and no other creature's" }
+
+[[creature]]
+template = 0x47002C40
+only_hated = true
+prov = { from = "dat", record = 0x47002C40, confidence = "high", note = "the turret never attacks first and is of the class the mark makes hate its holder; in 2017 it shot only players a guard had marked" }
+
+[[creature]]
+template = 0x4700278F
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x4700278F, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x47002791
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x47002791, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x47002792
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x47002792, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x47002794
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x47002794, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x47002795
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x47002795, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x47002796
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x47002796, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x47002797
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x47002797, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x47002798
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x47002798, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x47002799
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x47002799, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x4700279A
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x4700279A, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x4700279B
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x4700279B, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x4700279C
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x4700279C, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x4700279D
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x4700279D, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
+
+[[creature]]
+template = 0x4700279E
+marks = 0x6F001F31
+mark_lines = [
+    { race = 1, line = { table = 0x2500261D, string = 0xC9EA911E } },
+    { race = 2, line = { table = 0x2500261D, string = 0x4DE50D1C } },
+    { race = 4, line = { table = 0x2500261D, string = 0xCBF78EB2 } },
+    { race = 8, line = { table = 0x2500261D, string = 0xCB639BF8 } },
+    { race = 16, line = { table = 0x2500261D, string = 0xF5F6899E } },
+]
+prov = { from = "dat", record = 0x4700279E, confidence = "high", note = "its description says it designates targets for the turrets; the lines are its table's, one a race" }
