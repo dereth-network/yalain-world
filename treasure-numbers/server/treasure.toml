@@ -1,15 +1,17 @@
 # The numbers treasure draws by, as the 2017 servers' items were fit: how far an item's own least level stands
-# above its dropper's, the lore it needs, a potion's tier and spellcraft and an item's look, then for each sort how
-# many enchantments by level band and its share of a made item's numbers, the vigor it costs, its delay and slot.
-# Each weighted list is in the order the server draws it. These are the server's own numbers, written as rows.
+# above its dropper's (a dropper's loot quality override has its own weights: 2017 never showed it at plus 3), the
+# lore it needs, a potion's tier and spellcraft and an item's look, then for each sort how many enchantments by level
+# band and its share of a made item's numbers, the vigor it costs, its delay and slot. Each weighted list is in the
+# order the server draws it. These are the server's own numbers, written as rows.
 [[treasure_rules]]
 above_base = [436.0, 519.0, 220.0, 39.0]
+above_base_override = [148.0, 183.0, 60.0]
 most_level = 50
 lore = { above = 51, from = -6, to = -1 }
 potion_tiers = [0, 16, 30, 40, 45]
 potion_spellcraft = [0.0, 100.0]
 look = { glow_most = 0.65, round_chance = 0.1, round_from = 0.1, round_tenths = 4 }
-prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-BY-LEVEL", ref = "fit least-level", confidence = "medium", fields = { potion_tiers = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }, potion_spellcraft = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }, look = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-LOOK", ref = "fit look", confidence = "medium" } } }
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-BY-LEVEL", ref = "fit least-level", confidence = "medium", fields = { above_base_override = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-OVERRIDE-LEAST", ref = "fit override-least-level", confidence = "medium" }, potion_tiers = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }, potion_spellcraft = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-POTIONS", ref = "fit potions", confidence = "medium" }, look = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-LOOK", ref = "fit look", confidence = "medium" } } }
 
 [[treasure_sort]]
 sort = "weapon"

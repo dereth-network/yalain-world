@@ -707,16 +707,17 @@ ward = { classes = [55, 100], chance = 1.0 }
 prov = { from = "authored", by = "you" }
 ```
 
-**`[[treasure_rules]]`**: what every treasure item draws by, whatever its sort. `above_base`: weights of an
-item's own least level standing 0, 1, 2, ... above its dropper's base (numbers from 0, at least one above 0);
-`most_level`: the highest least level an item's own may be (1 or more); `lore = { above, from, to }`: an item needs
-lore to use only when its dropper's base is above `above`, read through the game's lore table at a level drawn
-evenly from the base plus `from` to the base plus `to` (`from` at most `to`); `potion_tiers`: the least dropper
-level of each of a treasure potion's five tiers, from 0 and rising; `potion_spellcraft = [least, most]`: a potion's
-spellcraft, drawn evenly; `look = { glow_most, round_chance, round_from, round_tenths }`: a glow is drawn evenly up
-to `glow_most`, and a color whose key's highest is `round_from` or more is, by `round_chance`, one of the first
-`round_tenths` round tenths (0, 0.1, ...), else drawn in hundredths up to its key's highest (the first three from 0
-to 1, `round_tenths` 1 or more). A world has one row, or none and the server's own.
+**`[[treasure_rules]]`**: what every treasure item draws by, whatever its sort. `above_base`: weights of an item's
+own least level standing 0, 1, 2, ... above its dropper's base (numbers from 0, at least one above 0);
+`above_base_override` (optional): the same for a dropper whose base is its loot quality override, `above_base` when
+left out; `most_level`: the highest least level an item's own may be (1 or more); `lore = { above, from, to }`: an
+item needs lore to use only when its dropper's base is above `above`, read through the game's lore table at a level
+drawn evenly from the base plus `from` to the base plus `to` (`from` at most `to`); `potion_tiers`: the least
+dropper level of each of a treasure potion's five tiers, from 0 and rising; `potion_spellcraft = [least, most]`: a
+potion's spellcraft, drawn evenly; `look = { glow_most, round_chance, round_from, round_tenths }`: a glow is drawn
+evenly up to `glow_most`, and a color whose key's highest is `round_from` or more is, by `round_chance`, one of the
+first `round_tenths` round tenths (0, 0.1, ...), else drawn in hundredths up to its key's highest (the first three
+from 0 to 1, `round_tenths` 1 or more). A world has one row, or none and the server's own.
 
 **`[[treasure_sort]]`**: the numbers one sort of treasure item draws by. `sort` (`weapon`, `armor`, `shield` or
 `jewelry`) and `counts`: bands of the item's own level, `[{ from, weights }]`, `from` the band's least level (the
