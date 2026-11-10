@@ -1,0 +1,13 @@
+# The portal into the Sclavus Hierophant's temple, where a recording of 2005 shows it; edit an authored pack instead.
+
+[[object]]
+key = "h-temple"
+kind = "static"
+template = 0x47001154
+cell = 0xD58A0037
+at = [125.94, 130.64, 137.50]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0xB0D2A67C }
+to = "temple-in"
+requires = { quest = 0x40000101, underway = true }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIEROPHANT-2005", ref = "c:723bc973", confidence = "medium", sample = { trips = 1 }, fields = { template = { from = "authored", by = "Dereth Network", note = "the portals' common look; the recording holds no create of it", confidence = "low" }, name = { from = "dat", record = 0x25001B44 }, requires = { from = "authored", by = "Dereth Network", note = "its own text in the portals' table: only those working for the scholar may enter", confidence = "low" } } }

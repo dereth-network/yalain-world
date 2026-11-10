@@ -1,0 +1,156 @@
+# The Sclavus Hierophant's temple, as a recording of 2005 and the guides show it; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x4009FB0000000001
+template = 0x470018A0
+cell = 0x09FB0107
+at = [-35.00, 20.00, 7.04]
+rotation = [0.707107, 0.0, 0.0, 0.707107]
+locked = true
+lock = 0x4000004F
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIEROPHANT-2005", ref = "c:4158d4a9", confidence = "medium", sample = { sessions = 2 }, fields = { lock = { from = "dat", record = 0x470018A0 }, locked = { from = "dat", record = 0x470018A0 } } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x4009FB0000000002
+template = 0x470018A1
+cell = 0x09FB0120
+at = [20.00, -65.00, -4.96]
+rotation = [0.707107, 0.0, 0.0, 0.707107]
+locked = true
+lock = 0x40000050
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIEROPHANT-2005", ref = "c:3dd44446", confidence = "medium", sample = { sessions = 1 }, fields = { lock = { from = "dat", record = 0x470018A1 }, locked = { from = "dat", record = 0x470018A1 }, template = { from = "authored", by = "Dereth Network", note = "the door its key opens: the talisman used up at it, the install's lock of that key", confidence = "medium" } } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x4009FB0000000003
+template = 0x470018A2
+cell = 0x09FB013E
+at = [75.00, -195.00, -19.96]
+rotation = [0.707107, 0.0, 0.0, 0.707107]
+locked = true
+lock = 0x40000051
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIEROPHANT-2005", ref = "c:8bc40ea8", confidence = "medium", sample = { sessions = 1 }, fields = { lock = { from = "dat", record = 0x470018A2 }, locked = { from = "dat", record = 0x470018A2 }, template = { from = "authored", by = "Dereth Network", note = "the door its key opens: the talisman used up at it, the install's lock of that key", confidence = "medium" }, rotation = { from = "authored", by = "Dereth Network", note = "its frame's turned half round, so its front faces the way in, the side the recording's player opened it from", confidence = "low" } } }
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x4009FB0000000004
+template = 0x470018A3
+cell = 0x09FB015E
+at = [295.00, -155.00, -34.96]
+rotation = [0.0, 0.0, 0.0, 1.0]
+locked = true
+lock = 0x40000052
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIEROPHANT-2005", ref = "c:69a7f72f", confidence = "medium", sample = { sessions = 1 }, fields = { lock = { from = "dat", record = 0x470018A3 }, locked = { from = "dat", record = 0x470018A3 }, template = { from = "authored", by = "Dereth Network", note = "the door its key opens: the talisman used up at it, the install's lock of that key", confidence = "medium" }, rotation = { from = "authored", by = "Dereth Network", note = "its frame's turned half round, so its front faces the way in, the side the recording's player opened it from", confidence = "low" } } }
+
+[[object]]
+key = "s-37"
+kind = "static"
+id = 0x4009FB0000000037
+template = 0x47001154
+cell = 0x09FB0110
+at = [-72.00, 20.00, 7.50]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0x77205EAF }
+to = "temple-out"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIEROPHANT-2005", ref = "c:099ed689", confidence = "medium", sample = { sessions = 1 }, fields = { template = { from = "authored", by = "Dereth Network", note = "the portals' common look; the 2005 one's match is weak", confidence = "low" }, to = { from = "authored", by = "Dereth Network", note = "beside the temple's portal outside; no trip out recorded", confidence = "low" } } }
+
+[[object]]
+key = "h-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x09FB020C
+at = [495.00, -75.00, -18.60]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0x77205EAF }
+to = "temple-out"
+prov = { from = "authored", by = "Dereth Network", note = "on the install's portal pad at the temple's far end, as high above it as the recorded way out stands on its own pad; named as that one; no recording", confidence = "low" }
+
+[[camp]]
+key = "c-aste"
+cell = 0x09FB0100
+at = [-0.88, -1.13, 0.80]
+spots = [{ cell = 0x09FB0100, at = [-0.88, -1.13, 0.80] }, { cell = 0x09FB0102, at = [21.05, -2.70, 1.10] }, { cell = 0x09FB0101, at = [-21.10, 2.93, 1.10] }, { cell = 0x09FB0102, at = [10.80, -0.78, 1.00] }, { cell = 0x09FB0101, at = [-11.12, 0.63, 1.00] }]
+population = 5
+regen = 192.0
+spawns = [{ template = 0x47002A49, weight = 4 }, { template = 0x47002A47, weight = 1 }]
+profile = 344
+profile_name = "GP_CampSclavusAste"
+prov = { from = "authored", by = "Dereth Network", note = "behind the first door, the chambers its own text names; the kinds two guides of the time give the temple; numbers as the recorded fort's gatekeeper camp", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-essa"
+cell = 0x09FB0139
+at = [44.36, -155.06, -14.20]
+spots = [{ cell = 0x09FB0139, at = [44.36, -155.06, -14.20] }, { cell = 0x09FB013B, at = [68.17, -158.13, -13.90] }, { cell = 0x09FB013A, at = [22.20, -155.95, -13.90] }, { cell = 0x09FB013B, at = [56.75, -154.95, -14.00] }, { cell = 0x09FB013A, at = [33.87, -155.55, -14.00] }]
+population = 5
+regen = 192.0
+spawns = [{ template = 0x47002A4C, weight = 4 }, { template = 0x47002A4A, weight = 1 }]
+profile = 345
+profile_name = "GP_CampSclavusEssa"
+prov = { from = "authored", by = "Dereth Network", note = "behind the second door, the chambers its own text names; the kinds two guides of the time give the temple; numbers as the recorded fort's gatekeeper camp", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-essa-2"
+cell = 0x09FB0134
+at = [50.84, -108.57, -11.00]
+spots = [{ cell = 0x09FB0134, at = [50.84, -108.57, -11.00] }, { cell = 0x09FB0130, at = [68.02, -110.57, -11.00] }, { cell = 0x09FB0135, at = [40.36, -109.06, -11.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002A1B, weight = 1 }]
+profile = 345
+profile_name = "GP_CampSclavusEssa"
+prov = { from = "authored", by = "Dereth Network", note = "behind the second door, the plain kind the guides give the temple, as many as the recording shows behind the third", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-sata"
+cell = 0x09FB0142
+at = [124.93, -174.73, -19.81]
+spots = [{ cell = 0x09FB0142, at = [124.93, -174.73, -19.81] }, { cell = 0x09FB0145, at = [104.48, -155.60, -19.57] }, { cell = 0x09FB0144, at = [124.79, -212.74, -19.56] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002A21, weight = 1 }]
+profile = 347
+profile_name = "GP_CampSclavusSata"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIEROPHANT-2005", ref = "c:89ac53ec", confidence = "medium", sample = { creatures = 3, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-ulu"
+cell = 0x09FB015F
+at = [295.50, -134.46, -35.20]
+spots = [{ cell = 0x09FB015F, at = [295.50, -134.46, -35.20] }, { cell = 0x09FB0162, at = [273.88, -137.96, -34.90] }, { cell = 0x09FB0163, at = [317.16, -132.80, -34.90] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002A22, weight = 1 }]
+profile = 348
+profile_name = "GP_CampSclavusUlu"
+prov = { from = "authored", by = "Dereth Network", note = "behind the fourth door, the chambers its own text names: its plain kind, as many as the recording shows behind the third", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-hierophant"
+cell = 0x09FB01C6
+at = [438.80, -114.59, -25.00]
+spots = [{ cell = 0x09FB01C6, at = [438.80, -114.59, -25.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A4E, weight = 1 }]
+profile = 346
+profile_name = "GP_CampSclavusFaisi"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HIEROPHANT-2005", ref = "c:b6a2d69b", confidence = "medium", sample = { corpses = 1, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-faisi"
+cell = 0x09FB01C6
+at = [444.04, -114.95, -25.00]
+spots = [{ cell = 0x09FB01C6, at = [444.04, -114.95, -25.00] }, { cell = 0x09FB01C7, at = [440.77, -129.67, -25.00] }, { cell = 0x09FB01C4, at = [454.55, -104.31, -25.00] }, { cell = 0x09FB01C5, at = [439.70, -100.89, -25.00] }, { cell = 0x09FB01C8, at = [453.70, -120.60, -25.00] }]
+population = 5
+regen = 192.0
+spawns = [{ template = 0x47002A50, weight = 4 }, { template = 0x47002A4D, weight = 1 }]
+profile = 346
+profile_name = "GP_CampSclavusFaisi"
+prov = { from = "authored", by = "Dereth Network", note = "in the last room with the one their own text says they serve; numbers as the recorded fort's gatekeeper camp", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
