@@ -305,7 +305,7 @@ player's fellows in the world as well, each told it alone; what the step takes a
 needs only the phase and what the step requires), `races` (the races it is for, by number: 1 human, 2
 Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out), `effects_last` (true: the
 quest's update is told before the effects and their text, not after them), `wants` (for a give, exactly how many of the item it wants: any other count is refused and handed
-back, with the person's `refuse-give` line naming the quest and the `item` if it has one, else its plain refusal; left out, it runs for whatever is given and takes it all), `transforms` (a give's step that makes its player a hero: `{ seconds, fx, behavior, text, name }`, below).
+back, with the person's `refuse-give` line naming the quest and the `item` if it has one, else its plain refusal; left out, it runs for whatever is given and takes it all), `transforms` (a give's step that makes its player a hero: `{ seconds, fx, behavior, text, name }`, below), `chance` (above 0 and at most 1: the chance it runs each time it may, drawn once it may; one that does not come up is passed over for the rest of that moment, as if it could not run; left out, every time).
 
 | `trigger` | moves the quest when the player |
 |---|---|
