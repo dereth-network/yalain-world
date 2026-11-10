@@ -1,0 +1,19 @@
+# A city's recall, taught where its continent's act is whole: the hidden quest that keeps it to one, and the use.
+
+[[quest]]
+id = 0x40000132
+id_name = "QuestCityRecallCragstone"
+state = 0x6F000773
+visible = false
+once = true
+prov = { from = "dat", record = 0x6F000773, note = "a hidden quest solved at most once, no description and no experience" }
+
+[[step]]
+key = "taught"
+quest = 0x40000132
+needs = 0
+trigger = { use = 0x47002F68 }
+update = "complete"
+requires = [{ act = 0x40000005 }]
+effects = [0x6F001A98]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CITY-RECALLS-2017", ref = "c:a3ec2d58", confidence = "medium", sample = { sessions = 2 }, fields = { requires = { from = "capture", evidence = "AC2-EVID-WDB-CITY-RECALLS-2017", ref = "c:1be30c83", confidence = "high", note = "held in 296 of the 433 recorded lists of skills, exactly those whose act was whole" } } }

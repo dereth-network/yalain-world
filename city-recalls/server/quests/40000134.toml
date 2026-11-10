@@ -1,0 +1,19 @@
+# A city's recall, taught where its continent's act is whole: the hidden quest that keeps it to one, and the use.
+
+[[quest]]
+id = 0x40000134
+id_name = "QuestCityRecallLinvakTukal"
+state = 0x6F000775
+visible = false
+once = true
+prov = { from = "dat", record = 0x6F000775, note = "a hidden quest solved at most once, no description and no experience" }
+
+[[step]]
+key = "taught"
+quest = 0x40000134
+needs = 0
+trigger = { use = 0x47002F6C }
+update = "complete"
+requires = [{ act = 0x40000006 }]
+effects = [0x6F001A9A]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CITY-RECALLS-2017", ref = "c:581c0057", confidence = "medium", sample = { sessions = 1 }, fields = { requires = { from = "capture", evidence = "AC2-EVID-WDB-CITY-RECALLS-2017", ref = "c:7ab86b0a", confidence = "high", note = "held in 51 of the 433 recorded lists of skills, exactly those whose act was whole" } } }

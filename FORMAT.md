@@ -322,8 +322,10 @@ back, with the person's `refuse-give` line naming the quest and the `item` if it
 
 `requires` lists other quests the step needs, each `{ quest = Q, phase = N }` (under way at that
 phase; phase 0: not under way), `{ quest = Q, done = true }` or `{ quest = Q, free = true }` (free to
-be given: not under way, and never had or its wait over); and `{ event = "key" }`, an `[[event]]` that
-must be on for the step to run. `takes` lists templates of items taken from the player's
+be given: not under way, and never had or its wait over); `{ event = "key" }`, an `[[event]]` that
+must be on for the step to run; and `{ act = A }`, an act the player must hold whole: seven of its scenes, its hidden
+ones aside (a scene of the act must be served; a give names none). A use of a person whose steps don't run says its
+own line at a use, as one that moves nothing does. `takes` lists templates of items taken from the player's
 pack, which the player must hold (a hand-in); a give's step that takes the item given keeps it (the rest of a
 stack stays), one that does not hands it back after its update, and a give no step takes is handed back with the
 person's refusal of a give (its `refuse-give` line). The items a give's step gives come from the person, and one
@@ -657,7 +659,8 @@ enumeration's value and the install's one effect of that value, or by a package 
 row: `yalain world check --dats <install>` says which state it resolves to.
 
 **`[[effect_rule]]`**: what an effect of the install does where its own data says nothing. `effect` (its saved
-state, one the install holds), and a `ward`, a `vitae_share`, a `vitae_restore`, a `then` or more than one. `vitae_share`: the share of its player's vitae
+state, one the install holds), and a `ward`, a `vitae_share`, a `vitae_restore`, a `then`, a `reset`, a `skill` or more
+than one. `vitae_share`: the share of its player's vitae
 the effect takes when it is put on, above 0 and at most 1, the effect's own appearance played on the player; a world
 whose rules name none has the server's own (the tap `0x6F001C64`, a tenth), one with any its rows alone.
 `vitae_restore`: `{ points, fellows }`, the vitae the effect gives back when it is put on, `points` above 0 and at
@@ -671,7 +674,10 @@ ward whose own data names what it keeps off needs no row; one whose data names n
 one. `then`: the effect is an immunity under way, hidden from its holder, and leaves this effect (a saved state the
 install holds, not its own) as it ends; that effect's own row gives its `ward`. A world whose rules name no `then`
 has the server's own twelve crowd control immunities, each with its long effect's ward; one with any its rows alone.
-One row per effect.
+`reset`: `skills` or `hero-skills`, putting it on grants its player one complete reset of that kind, which
+`/skills reset` or `/heroskills reset` uses. `skill`: a skill, by its number (one the install has): putting the effect
+on a player trains it that skill for good, at level 1 by the grant, unraisable and at no cost, told with the effect's
+own line and appearance; a player who holds it already gains nothing. One row per effect.
 
 ```toml
 # <pack>/server/effects.toml
