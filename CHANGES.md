@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Creatures with no recorded loot now drop all six talismans, not only Heartstone. Pack `treasure-pools/`.
+- Creatures with no recorded loot now drop all six talismans. Pack `treasure-pools/`.
 - Creatures and ways in for four dungeons no recording reached, from players' maps. New pack `acmaps-camps/`.
 - Each city's nexus now teaches its recall once the continent's act is done. New pack `city-recalls/`.
 - Patrol guards now mark the players they see, and their base's turrets shoot only the marked. New pack `turret-marks/`.
