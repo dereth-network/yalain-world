@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Four dungeons no recording reached get creatures where players' maps put them, and four get their ways in. New pack `acmaps-camps/`.
+- Creatures and ways in for four dungeons no recording reached, from players' maps. New pack `acmaps-camps/`.
 
 ## v0.35.0
 
