@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- Four dungeons no recording reached get creatures where players' maps put them, and four get their ways in. New pack `acmaps-camps/`.
+
 ## v0.35.0
 
 - Storm Tyrants now also live in a second place, as a map of their time shows. Pack `crater-tyrants/`.
