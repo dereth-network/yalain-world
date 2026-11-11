@@ -1,0 +1,16 @@
+# The device the refinery's last door takes: on the workshop master's corpse, its taking the quest's own.
+
+[[quest]]
+id = 0x8000029A
+id_name = "QuestDirectionsShipyard"
+state = 0x6F000B87
+prov = { from = "derived", rule = "quest-definition", record = 0x6F000B87, confidence = "medium" }
+
+[[step]]
+key = "sy-device"
+quest = 0x8000029A
+needs = 0
+trigger = { kill = 0x47002CEB }
+update = "none"
+gives = [0x4700169D]
+prov = { from = "authored", by = "Dereth Network", note = "the workshop master's death hands over the device, whose taking gives and finishes the quest, as players' guides tell it; no recording", confidence = "low" }

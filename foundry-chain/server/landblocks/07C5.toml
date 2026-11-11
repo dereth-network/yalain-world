@@ -1,0 +1,135 @@
+# The refinery's doors, guard, upkeep golem and chief; no recording.
+
+[[object]]
+key = "foremans-office-back"
+kind = "static"
+template = 0x47001154
+cell = 0x07C50136
+at = [-45.00, -49.00, 116.25]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x05FF2020 }
+to = "foreman-back"
+prov = { from = "authored", by = "Dereth Network", note = "a way back, 3 m behind the landing a list of the game's destinations gives on its far side; the install's portal name; no recording", confidence = "low" }
+
+[[object]]
+key = "maintenance"
+kind = "static"
+id = 0x4007C50000000001
+template = 0x47001154
+cell = 0x07C50125
+at = [14.12, 32.12, 134.20]
+rotation = [0.923880, 0, 0, -0.382683]
+name = { table = 0x25001B44, string = 0x5D509C71 }
+to = "maint-in"
+requires = { quest = 0x800001C9, had = true }
+prov = { from = "authored", by = "Dereth Network", note = "3 m ahead of the gem's pad players aim for, the pad a list of destinations names five times in eight; open to whoever has had the refinery's quest; no recording", confidence = "low" }
+
+[[object]]
+key = "vent-shaft-back"
+kind = "static"
+template = 0x47001154
+cell = 0x07C50138
+at = [35.81, 50.37, 132.40]
+rotation = [-0.675590, 0, 0, 0.737277]
+name = { table = 0x25001B44, string = 0x22A3A958 }
+to = "pad-5"
+prov = { from = "authored", by = "Dereth Network", note = "a way back, 2 m behind the landing a list of the game's destinations gives on its far side; the install's portal name; no recording", confidence = "low" }
+
+[[object]]
+key = "sluice-gates"
+kind = "static"
+template = 0x47001154
+cell = 0x07C50138
+at = [48.80, 57.40, 132.01]
+rotation = [0, 0, 0, 1]
+name = { table = 0x25001B44, string = 0x823F1CAA }
+to = "sluice-in"
+requires = { quest = 0x800001C9, had = true }
+prov = { from = "authored", by = "Dereth Network", note = "3 m behind the landing a list of destinations gives for coming back from the gates, where the client draws a door; no recording", confidence = "low" }
+
+[[object]]
+key = "chiefs-workshop"
+kind = "static"
+template = 0x47001154
+cell = 0x07C50137
+at = [62.80, 50.20, 132.38]
+rotation = [0.707107, 0, 0, 0.707107]
+name = { table = 0x25001B44, string = 0x7B59A864 }
+to = "chief-in"
+requires = { quest = 0x800001C9, had = true }
+prov = { from = "authored", by = "Dereth Network", note = "3 m behind the landing a list of destinations gives for coming back from the workshop; open to whoever has had the refinery's quest, as the steps keep its order; no recording", confidence = "low" }
+
+[[object]]
+key = "maintenance-back"
+kind = "static"
+template = 0x47001154
+cell = 0x07C50160
+at = [95.00, 50.10, 132.19]
+rotation = [0.707107, 0, 0, -0.707107]
+name = { table = 0x25001B44, string = 0x5D509C71 }
+to = "maint-back-chief"
+prov = { from = "authored", by = "Dereth Network", note = "a way back, 3 m behind the landing a list of the game's destinations gives on its far side; the install's portal name; no recording", confidence = "low" }
+
+[[object]]
+key = "ore-processing"
+kind = "static"
+template = 0x47001154
+cell = 0x07C50157
+at = [130.04, 14.38, 132.31]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0xFA9B2872 }
+to = "ore-in"
+requires = { quest = 0x800001C9, had = true }
+prov = { from = "authored", by = "Dereth Network", note = "2 m behind the landing a list of destinations gives for coming back from the ore room; open to whoever has had the refinery's quest, as the steps keep its order; no recording", confidence = "low" }
+
+[[object]]
+key = "chiefs-workshop-back"
+kind = "static"
+template = 0x47001154
+cell = 0x07C50158
+at = [129.20, -12.70, 132.16]
+rotation = [0, 0, 0, 1]
+name = { table = 0x25001B44, string = 0x7B59A864 }
+to = "chief-back"
+prov = { from = "authored", by = "Dereth Network", note = "a way back, 3 m behind the landing a list of the game's destinations gives on its far side; the install's portal name; no recording", confidence = "low" }
+
+[[object]]
+key = "smiths-chambers"
+kind = "static"
+template = 0x470011A6
+cell = 0x07C50151
+at = [129.20, -51.70, 132.12]
+rotation = [-1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x22A3A950 }
+to = "smith-in"
+requires = { quest = 0x800001C9, done = true }
+prov = { from = "authored", by = "Dereth Network", note = "the door the device is used on, 3 m behind the landing a list of destinations gives for coming back from the chambers; open once the refinery's quest is done; no recording", confidence = "low" }
+
+[[camp]]
+key = "vent-guard"
+cell = 0x07C50115
+at = [18.00, 15.00, 118.20]
+spots = [{ cell = 0x07C50115, at = [18.00, 15.00, 118.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002558, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "on a pad of the vent shaft its gem works around, where a list of the game's destinations lands players; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "chief"
+cell = 0x07C50150
+at = [120.00, 45.00, 132.08]
+spots = [{ cell = 0x07C50150, at = [120.00, 45.00, 132.08] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002CDA, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "in the workshop a list of the game's destinations names for him, short of its forge and crucibles; where in it is a guess; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "maintenance-golem"
+kind = "npc"
+template = 0x47003100
+cell = 0x07C50138
+at = [45.00, 48.00, 132.14]
+rotation = [0.707107, 0, 0, 0.707107]
+prov = { from = "authored", by = "Dereth Network", note = "in the room a list of the game's destinations names for it, between its landing and its two doors; no recording", confidence = "low" }

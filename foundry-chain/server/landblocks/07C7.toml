@@ -1,0 +1,119 @@
+# The factory's doors, guardian, gear, battery, slab and foreman; no recording.
+
+[[object]]
+key = "factory-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x07C70153
+at = [-55.30, -104.00, 104.46]
+rotation = [0, 0, 0, 1]
+name = { table = 0x25001B44, string = 0x9C211DFB }
+to = "factory-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way back, 3 m behind the landing a list of the game's destinations gives on its far side; the install's portal name; no recording", confidence = "low" }
+
+[[object]]
+key = "control-rooms"
+kind = "static"
+template = 0x47001154
+cell = 0x07C7014E
+at = [10.00, -135.00, 100.19]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x8B8D6FEA }
+to = "control-in"
+requires = { quest = 0x800001C8, had = true }
+prov = { from = "authored", by = "Dereth Network", note = "in the guardian's room, its way on to the gear rooms; where in the room is a guess; open to whoever has had the factory's quest, given at the guardian's death; no recording", confidence = "low" }
+
+[[object]]
+key = "factory-back"
+kind = "static"
+template = 0x47001154
+cell = 0x07C70106
+at = [0.00, -33.00, 100.12]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x22A3A940 }
+to = "control-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way back, 3 m behind the landing a list of the game's destinations gives on its far side; the install's portal name; no recording", confidence = "low" }
+
+[[object]]
+key = "foremans-office"
+kind = "static"
+template = 0x47001154
+cell = 0x07C70105
+at = [0.00, 33.00, 100.12]
+rotation = [0, 0, 0, 1]
+name = { table = 0x25001B44, string = 0x05FF2020 }
+to = "foreman-in"
+requires = { quest = 0x800001DA, done = true }
+prov = { from = "authored", by = "Dereth Network", note = "3 m behind the landing a list of destinations gives for coming back from the office, where the client draws a door; open once the golem's heart is done; no recording", confidence = "low" }
+
+[[object]]
+key = "control-rooms-back"
+kind = "static"
+template = 0x47001154
+cell = 0x07C70148
+at = [216.00, 97.00, 100.03]
+rotation = [0.707107, 0, 0, -0.707107]
+name = { table = 0x25001B44, string = 0x8B8D6FEA }
+to = "gear-back"
+prov = { from = "authored", by = "Dereth Network", note = "a way back, 3 m behind the landing a list of the game's destinations gives on its far side; the install's portal name; no recording", confidence = "low" }
+
+[[object]]
+key = "vent-shaft"
+kind = "static"
+template = 0x47001154
+cell = 0x07C70148
+at = [229.00, 84.80, 100.01]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x22A3A958 }
+to = "vent-in"
+requires = { quest = 0x800001C8, done = true }
+prov = { from = "authored", by = "Dereth Network", note = "3 m behind the landing a list of destinations gives for coming back from the vent shaft; open once the factory's quest is done, at the foreman's death; no recording", confidence = "low" }
+
+[[camp]]
+key = "protector"
+cell = 0x07C7014C
+at = [-3.00, -129.10, 100.02]
+spots = [{ cell = 0x07C7014C, at = [-3.00, -129.10, 100.02] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002559, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "at the guardian spot a list of the game's destinations gives in the factory; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "gear"
+cell = 0x07C70100
+at = [0.00, 0.00, 100.10]
+spots = [{ cell = 0x07C70100, at = [0.00, 0.00, 100.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470030FF, weight = 1 }]
+movement = "stationary"
+prov = { from = "authored", by = "Dereth Network", note = "at the middle of the gear room, where a players' guide has the golem the heart makes attack the gear; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "foreman"
+cell = 0x07C70143
+at = [232.00, 104.00, 100.06]
+spots = [{ cell = 0x07C70143, at = [232.00, 104.00, 100.06] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002CD8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "in the office a list of the game's destinations names for him, among its books and table; where in it is a guess; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "mana-battery"
+kind = "npc"
+template = 0x47003101
+cell = 0x07C7011D
+at = [75.00, 0.00, 100.10]
+rotation = [0.707107, 0, 0, 0.707107]
+prov = { from = "authored", by = "Dereth Network", note = "in the room east of the gear room, as a players' guide puts it to the right of the gears; where in it is a guess; no recording", confidence = "low" }
+
+[[object]]
+key = "black-slab"
+kind = "npc"
+template = 0x470030FD
+cell = 0x07C70129
+at = [-60.00, 0.00, 100.43]
+rotation = [0.707107, 0, 0, -0.707107]
+prov = { from = "authored", by = "Dereth Network", note = "at the far end of the corridor west of the gear room, across the gears from the battery as a players' guide puts it; where is a guess; no recording", confidence = "low" }

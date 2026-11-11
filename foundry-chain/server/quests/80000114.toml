@@ -1,0 +1,78 @@
+# Aerfalle's Generals: the report that gives it, each general's key, each key on the entrance.
+
+[[step]]
+key = "ag-report"
+quest = 0x80000114
+needs = 0
+trigger = { kill = 0x47002CE8 }
+update = "none"
+gives = [0x47001531]
+prov = { from = "authored", by = "Dereth Network", note = "the hall master's death hands over the report, whose taking gives the quest, as players' guides tell it; no recording", confidence = "low" }
+
+[[step]]
+key = "ag-key-a"
+quest = 0x80000115
+needs = 1
+trigger = { kill = 0x47002CD0 }
+update = "none"
+gives = [0x4700152D]
+prov = { from = "authored", by = "Dereth Network", note = "the general's death hands over its key, whose taking finishes this part, as players' guides tell it; no recording", confidence = "low" }
+
+[[step]]
+key = "ag-key-b"
+quest = 0x80000116
+needs = 1
+trigger = { kill = 0x47002B38 }
+update = "none"
+gives = [0x4700152E]
+prov = { from = "authored", by = "Dereth Network", note = "the general's death hands over its key, whose taking finishes this part, as players' guides tell it; no recording", confidence = "low" }
+
+[[step]]
+key = "ag-key-c"
+quest = 0x80000117
+needs = 1
+trigger = { kill = 0x47002CD1 }
+update = "none"
+gives = [0x4700152F]
+prov = { from = "authored", by = "Dereth Network", note = "the general's death hands over its key, whose taking finishes this part, as players' guides tell it; no recording", confidence = "low" }
+
+[[step]]
+key = "ag-key-d"
+quest = 0x80000118
+needs = 1
+trigger = { kill = 0x47002CD2 }
+update = "none"
+gives = [0x47001530]
+prov = { from = "authored", by = "Dereth Network", note = "the general's death hands over its key, whose taking finishes this part, as players' guides tell it; no recording", confidence = "low" }
+
+[[step]]
+key = "ag-lock-1"
+quest = 0x80000119
+needs = 1
+trigger = { use = 0x4700152D, on = 0x470011A5 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the key used on the entrance, as its journal says; the key's own interaction uses it up; no recording", confidence = "low" }
+
+[[step]]
+key = "ag-lock-2"
+quest = 0x8000011A
+needs = 1
+trigger = { use = 0x4700152E, on = 0x470011A5 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the key used on the entrance, as its journal says; the key's own interaction uses it up; no recording", confidence = "low" }
+
+[[step]]
+key = "ag-lock-3"
+quest = 0x8000011B
+needs = 1
+trigger = { use = 0x4700152F, on = 0x470011A5 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the key used on the entrance, as its journal says; the key's own interaction uses it up; no recording", confidence = "low" }
+
+[[step]]
+key = "ag-lock-4"
+quest = 0x8000011C
+needs = 1
+trigger = { use = 0x47001530, on = 0x470011A5 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the key used on the entrance, as its journal says; the key's own interaction uses it up; no recording", confidence = "low" }

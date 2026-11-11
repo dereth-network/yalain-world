@@ -7,6 +7,7 @@
 - The shaman's maintenance quest can now be finished. Pack `skyport-mine/`.
 - Ways into the Foundry and its forge, opened by their quests. Pack `foundry-forge/`.
 - An egg, a hoard map and a bean now have sources. Pack `quest-item-sources/`.
+- The Foundry's quests can now be done, which opens its doors and its forge. Pack `foundry-chain/`.
 
 ## v0.36.0
 

@@ -1,0 +1,137 @@
+# Refinery: the guard, the gem's door, the upkeep golem, ten magma golems, the chief (his own effect), the device.
+
+[[step]]
+key = "r-guard"
+quest = 0x800001C9
+needs = 0
+trigger = { kill = 0x47002558 }
+update = "bestow"
+gives = [0x470015B0]
+prov = { from = "authored", by = "Dereth Network", note = "the guard's death gives the quest (its own effect) and hands over its gem, as players' guides tell it; no recording", confidence = "low" }
+
+[[step]]
+key = "r-door"
+quest = 0x800001C9
+needs = 1
+trigger = { arrive = 0x47001154, from = 0x4007C50000000001 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "through the door the gem's pad is beside, as the journal's first phase says; no recording", confidence = "low" }
+
+[[step]]
+key = "r-task"
+quest = 0x800001C9
+needs = 2
+trigger = { use = 0x47003100 }
+update = "advance"
+phase = 3
+tell = { table = 0x250029BC, string = 0xB4E37BD8 }
+prov = { from = "authored", by = "Dereth Network", note = "the upkeep golem's task, in its own line, as the journal and a players' guide say; no recording", confidence = "low" }
+
+[[step]]
+key = "r-magma-3"
+quest = 0x800001C9
+needs = 3
+trigger = { kill = 0x47002556 }
+update = "advance"
+phase = 4
+prov = { from = "authored", by = "Dereth Network", note = "a magma golem's death counts one of the ten the journal's phases count down; no recording", confidence = "low" }
+
+[[step]]
+key = "r-magma-4"
+quest = 0x800001C9
+needs = 4
+trigger = { kill = 0x47002556 }
+update = "advance"
+phase = 5
+prov = { from = "authored", by = "Dereth Network", note = "a magma golem's death counts one of the ten the journal's phases count down; no recording", confidence = "low" }
+
+[[step]]
+key = "r-magma-5"
+quest = 0x800001C9
+needs = 5
+trigger = { kill = 0x47002556 }
+update = "advance"
+phase = 6
+prov = { from = "authored", by = "Dereth Network", note = "a magma golem's death counts one of the ten the journal's phases count down; no recording", confidence = "low" }
+
+[[step]]
+key = "r-magma-6"
+quest = 0x800001C9
+needs = 6
+trigger = { kill = 0x47002556 }
+update = "advance"
+phase = 7
+prov = { from = "authored", by = "Dereth Network", note = "a magma golem's death counts one of the ten the journal's phases count down; no recording", confidence = "low" }
+
+[[step]]
+key = "r-magma-7"
+quest = 0x800001C9
+needs = 7
+trigger = { kill = 0x47002556 }
+update = "advance"
+phase = 8
+prov = { from = "authored", by = "Dereth Network", note = "a magma golem's death counts one of the ten the journal's phases count down; no recording", confidence = "low" }
+
+[[step]]
+key = "r-magma-8"
+quest = 0x800001C9
+needs = 8
+trigger = { kill = 0x47002556 }
+update = "advance"
+phase = 9
+prov = { from = "authored", by = "Dereth Network", note = "a magma golem's death counts one of the ten the journal's phases count down; no recording", confidence = "low" }
+
+[[step]]
+key = "r-magma-9"
+quest = 0x800001C9
+needs = 9
+trigger = { kill = 0x47002556 }
+update = "advance"
+phase = 10
+prov = { from = "authored", by = "Dereth Network", note = "a magma golem's death counts one of the ten the journal's phases count down; no recording", confidence = "low" }
+
+[[step]]
+key = "r-magma-10"
+quest = 0x800001C9
+needs = 10
+trigger = { kill = 0x47002556 }
+update = "advance"
+phase = 11
+prov = { from = "authored", by = "Dereth Network", note = "a magma golem's death counts one of the ten the journal's phases count down; no recording", confidence = "low" }
+
+[[step]]
+key = "r-magma-11"
+quest = 0x800001C9
+needs = 11
+trigger = { kill = 0x47002556 }
+update = "advance"
+phase = 12
+prov = { from = "authored", by = "Dereth Network", note = "a magma golem's death counts one of the ten the journal's phases count down; no recording", confidence = "low" }
+
+[[step]]
+key = "r-magma-12"
+quest = 0x800001C9
+needs = 12
+trigger = { kill = 0x47002556 }
+update = "advance"
+phase = 13
+prov = { from = "authored", by = "Dereth Network", note = "a magma golem's death counts one of the ten the journal's phases count down; no recording", confidence = "low" }
+
+[[step]]
+key = "r-done"
+quest = 0x800001C9
+needs = 13
+trigger = { use = 0x47003100 }
+update = "advance"
+phase = 14
+tell = { table = 0x250029BC, string = 0xADE37BA3 }
+prov = { from = "authored", by = "Dereth Network", note = "back at the upkeep golem, its own line; the journal's next phase unlocks the chief's workshop; no recording", confidence = "low" }
+
+[[step]]
+key = "r-device"
+quest = 0x800001C9
+needs = 15
+trigger = { use = 0x4700169D, on = 0x470011A6 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the device used on the chambers' door ends it, as a players' guide says; the device's own interaction names that door and uses it up; no recording", confidence = "low" }

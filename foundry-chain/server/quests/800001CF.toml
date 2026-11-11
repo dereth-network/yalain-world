@@ -1,0 +1,9 @@
+# Smith's Chambers: given as the refinery's quest ends; the blank emblem's taking and the smith's death are their own.
+
+[[step]]
+key = "s-given"
+quest = 0x800001CF
+needs = 0
+trigger = { done = 0x800001C9 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "given at the chambers' door as the refinery's quest ends there, as a players' guide says; no recording", confidence = "low" }

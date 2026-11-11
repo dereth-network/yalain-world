@@ -1,0 +1,18 @@
+# Factory: given at the guardian's death (its own effect); the office door, its overseer's death.
+
+[[step]]
+key = "f-door"
+quest = 0x800001C8
+needs = 1
+trigger = { done = 0x800001DA }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the gear's end unlocks the office door, as the journal's second phase and a players' guide say; no recording", confidence = "low" }
+
+[[step]]
+key = "f-foreman"
+quest = 0x800001C8
+needs = 2
+trigger = { kill = 0x47002CD8 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's death ends it, as a players' guide says (his own death effect is a spell on those around); no recording", confidence = "low" }

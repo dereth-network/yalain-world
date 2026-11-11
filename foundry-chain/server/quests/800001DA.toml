@@ -1,0 +1,52 @@
+# Heart of Stone: the heart, the ore, the battery and the slab, the gear.
+
+[[step]]
+key = "hs-heart"
+quest = 0x800001DA
+needs = 0
+trigger = { kill = 0x47002CE7 }
+update = "none"
+gives = [0x47001622]
+prov = { from = "authored", by = "Dereth Network", note = "the house master's death hands over the heart, whose taking gives the quest, as players' guides tell it; no recording", confidence = "low" }
+
+[[step]]
+key = "hs-ore"
+quest = 0x800001DA
+needs = 1
+trigger = { use = 0x47001622, on = 0x470015B4 }
+update = "advance"
+phase = 2
+takes = [0x470015B4]
+gives = [0x47001623]
+prov = { from = "authored", by = "Dereth Network", note = "the damaged heart used on the ore, as the journal and a players' guide say, makes it whole; its interaction uses it up; no recording", confidence = "low" }
+
+[[step]]
+key = "hs-battery"
+quest = 0x800001DA
+needs = 2
+trigger = { give = 0x47001623, to = 0x47003101 }
+update = "none"
+tell = { table = 0x250029BD, string = 0x9716307B }
+takes = [0x47001623]
+gives = [0x4700161F]
+prov = { from = "authored", by = "Dereth Network", note = "the whole heart given to the battery comes back charged, as a players' guide says; the battery's own line; no recording", confidence = "low" }
+
+[[step]]
+key = "hs-slab"
+quest = 0x800001DA
+needs = 2
+trigger = { give = 0x4700161F, to = 0x470030FD }
+update = "advance"
+phase = 3
+tell = { table = 0x250029BA, string = 0x498AF3F3 }
+takes = [0x4700161F]
+gives = [0x47001620]
+prov = { from = "authored", by = "Dereth Network", note = "the charged heart given to the slab comes back imprinted, as a players' guide says; the slab's own line; no recording", confidence = "low" }
+
+[[step]]
+key = "hs-gear"
+quest = 0x800001DA
+needs = 3
+trigger = { kill = 0x470030FF }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the gear's end, which a players' guide says the golem the heart makes works at, ends the quest and opens the office; no recording", confidence = "low" }
