@@ -1,0 +1,18 @@
+# Who fights whom in the mound's strike, and the pillar players can't bring down, from players' guides; edit an authored pack instead.
+
+[[friend_table]]
+table = 0x4B
+attacks_first = false
+fights = [0x16]
+prov = { from = "authored", by = "Dereth Network", note = "the strike company's gear soldiers go at the mound's pillar, never at a player first, only one that strikes them, as the wiki's walkthrough has it; their friend table is their own; no recording", confidence = "low" }
+
+[[friend_table]]
+table = 0x4C
+fights = [0x4B]
+prov = { from = "authored", by = "Dereth Network", note = "the mound's tunnelers go at the strike company's gear soldiers as at the players there, as the wiki's walkthrough has it; the install gives them a friend table of their own; no recording", confidence = "low" }
+
+[[creature]]
+template = 0x4700163D
+players_kept_out = true
+kept_out_line = { table = 0x250025F5, string = 0x383D0528 }
+prov = { from = "authored", by = "Dereth Network", note = "the mound's pillar can't be brought down by players, its own line says so, and the wiki's walkthrough has the gear soldiers wear it down; no recording", confidence = "low" }

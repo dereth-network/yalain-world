@@ -112,6 +112,15 @@ takes = [0x4700163E]
 prov = { from = "authored", by = "Dereth Network", note = "the programmed baton given the captain opens his portal to the mound, as the wiki's walkthrough of 2013 has it, the line the speaker's own in the install; no recording", confidence = "low" }
 
 [[step]]
+key = "r-strike"
+quest = 0x80000259
+needs = 11
+trigger = { kill = 0x4700163D, within = 150 }
+update = "advance"
+phase = 12
+prov = { from = "authored", by = "Dereth Network", note = "the pillar brought down moves it on for every player in its chamber, whoever struck it, as the wiki's walkthrough has it; the reach is the install's own for the strike's end; no recording", confidence = "low" }
+
+[[step]]
 key = "r-end"
 quest = 0x80000259
 needs = 12

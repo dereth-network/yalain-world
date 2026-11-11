@@ -43,3 +43,33 @@ regen = 192.0
 spawns = [{ template = 0x4700163D, weight = 1 }]
 movement = "stationary"
 prov = { from = "authored", by = "Dereth Network", note = "the pillar holding up the middle of the mound's chamber, as the wiki's walkthrough has it; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "strike-company"
+cell = 0x09C70107
+at = [229.60, 110.10, 101.80]
+spots = [{ cell = 0x09C70107, at = [230.60, 106.10, 101.80] }, { cell = 0x09C70107, at = [230.60, 114.10, 101.80] }, { cell = 0x09C70107, at = [233.60, 110.10, 101.80] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470024B2, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the strike company's gear soldiers between the chamber's way in and its pillar, come to bring it down, as the wiki's walkthrough has it; how many is a guess; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "strike-captain"
+cell = 0x09C70107
+at = [229.60, 110.10, 101.80]
+spots = [{ cell = 0x09C70107, at = [229.60, 110.10, 101.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024B5, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the gear captain leading his strike company at the pillar, as the wiki's walkthrough has him gone from his outpost to the mound; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "strike-tunnelers"
+cell = 0x09C70107
+at = [199.60, 110.10, 101.80]
+spots = [{ cell = 0x09C70107, at = [198.60, 110.10, 101.80] }, { cell = 0x09C70107, at = [204.60, 95.10, 101.80] }, { cell = 0x09C70107, at = [204.60, 125.10, 101.80] }]
+population = 3
+regen = 90.0
+spawns = [{ template = 0x470028F9, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "tunnelers coming back at the strike company and the players in the pillar's chamber, at its far side, as the wiki's walkthrough has them; how many and how often are a guess; no recording", confidence = "low" }
