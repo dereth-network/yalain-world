@@ -1,10 +1,16 @@
 # Builds and publishes a world release from a tag.
 #
-# To release: build the archive with the pinned `yalain` (`yalain world release . --tag v<version>`
-# prints its SHA-256), set `version` and the hash in release.toml, commit, tag `v<version>` on
-# Forgejo, and push the tag there. The mirror carries it here, and this workflow does the rest. Tags
-# always start on Forgejo, so the mirror can't prune them. Nothing here pushes to any repository; it
-# only makes the release. The pin a server build follows still moves by a commit in dereth.
+# To release: build the archive with the pinned `yalain` (`yalain world release . --tag v<version>
+# --package-only` prints its SHA-256), set `version` and the hash in release.toml, commit, tag
+# `v<version>` on Forgejo, and push the tag there. The mirror carries it here, and this workflow does
+# the rest. Tags always start on Forgejo, so the mirror can't prune them. Nothing here pushes to any
+# repository; it only makes the release. The pin a server build follows still moves by a commit in
+# dereth.
+#
+# The archive is packaged with --package-only: the files must read, but their rows aren't checked,
+# so the builder can be an older `yalain` than the one the rows are written for. The rows are
+# checked before the tag, by `yalain world check` with a build that knows them. A build that knows
+# every row packages the same bytes with or without it. The builder must be one that has the flag.
 #
 # It refuses to publish when the archive's hash differs from release.toml's, or when what it built
 # with isn't what release.toml pins. Running it by hand on main is a dry run: the same builds and
@@ -67,7 +73,7 @@ jobs:
         run: |
           # The change log's section runs from the release before this one.
           previous=$(git tag --list 'v*' --sort=-v:refname | grep -vxF "$TAG" | head -n 1)
-          builder/target/release/yalain world release . --tag "$TAG" ${previous:+--since "$previous"} --out release
+          builder/target/release/yalain world release . --tag "$TAG" ${previous:+--since "$previous"} --out release --package-only
 
       - name: Refuse anything but what release.toml states
         env:
