@@ -1,0 +1,12 @@
+# Named creatures where players' guides or a recording put them; edit an authored pack instead.
+
+[[camp]]
+key = "k-bm1b"
+cell = 0xAE590019
+at = [75.70, 7.20, 106.78]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A6D, weight = 1 }]
+name = { table = 0x2500270F, string = 0xA39BA4A0 }
+prov = { from = "authored", by = "Dereth Network", note = "where a player's guide of 2013 puts the target, to about 20 m, in the hills the journal names; its kind at the quest's challenge level, named by its own table; no recording; the land's height", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

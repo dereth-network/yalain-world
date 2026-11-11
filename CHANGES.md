@@ -12,6 +12,7 @@
 - The quest for the Foundry's gates can now be done, down the houses' trap doors. Pack `foundry-gates/`.
 - The last of the Foundry houses' masters now carries his report. Pack `foundry-houses/`.
 - The Foundry's smith now leaves his weapon recipes, its emblems can be imprinted from weapons, and its ore turned into motes. Pack `atlan-weapons/`.
+- One more of Knorr's bounties, in the hills east of the Skyport, can now be done. Pack `knorr-bounties/`.
 
 ## v0.36.0
 
