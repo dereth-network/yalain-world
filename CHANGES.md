@@ -13,6 +13,8 @@
 - The last of the Foundry houses' masters now carries his report. Pack `foundry-houses/`.
 - The Foundry's smith now leaves his weapon recipes, its emblems can be imprinted from weapons, and its ore turned into motes. Pack `atlan-weapons/`.
 - One more of Knorr's bounties, in the hills east of the Skyport, can now be done. Pack `knorr-bounties/`.
+- Ways into the estate mansion southeast of Greenstone and its hidden room. Pack `knorr-doors/`.
+- The estate's ward towers quest can now be done. New pack `knorr-estate/`.
 
 ## v0.36.0
 

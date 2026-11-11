@@ -1,0 +1,19 @@
+# The estate's ward quest: the shrine charges a spent stone; edit an authored pack instead.
+
+[[give]]
+key = "shrine-empowers"
+item = 0x47001AEA
+to = 0x47003194
+gives = [0x47001AEB]
+requires = [{ quest = 0x800002B7, phase = 2 }]
+prov = { from = "authored", by = "Dereth Network", note = "the shrine charges a spent stone while the stones are to be replaced, as a player's guide of 2013 and the shrine's own line say; no recording", confidence = "low" }
+
+[[talk]]
+key = "shrine-empowers"
+who = 0x47003194
+line = { table = 0x25002A0A, string = 0x232175E8 }
+role = "accept"
+how = "tell"
+when = "give"
+item = 0x47001AEA
+prov = { from = "authored", by = "Dereth Network", note = "the shrine's own line for a stone it empowers, said as it takes one", confidence = "low" }

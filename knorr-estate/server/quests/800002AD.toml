@@ -1,0 +1,19 @@
+# The estate's ward quest: a tower's stone taken, marked once; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002AD
+id_name = "QuestTBCollect4"
+visible = false
+duration = 14400
+prov = { from = "authored", by = "Dereth Network", note = "a tower's own mark that its stone was taken, kept hidden and lasting as the quest does, so each tower gives its stone once a time through", confidence = "low" }
+
+[[step]]
+key = "c-quartus"
+quest = 0x800002AD
+needs = 0
+trigger = { use = 0x47003191 }
+update = "bestow"
+tell = { table = 0x25002A09, string = 0xB0683596 }
+gives = [0x47001AEA]
+requires = [{ quest = 0x800002B7, phase = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the Quartus tower's pedestal gives its spent stone once while the quest wants stones, with its own line; no recording", confidence = "low" }

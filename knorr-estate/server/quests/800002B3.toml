@@ -1,0 +1,19 @@
+# The estate's ward quest: a tower's stone replaced, marked once; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002B3
+id_name = "QuestTBReplace3"
+visible = false
+duration = 14400
+prov = { from = "authored", by = "Dereth Network", note = "a tower's own mark that its stone was replaced, kept hidden and lasting as the quest does, so each tower takes one stone a time through", confidence = "low" }
+
+[[step]]
+key = "r-tertius"
+quest = 0x800002B3
+needs = 0
+trigger = { give = 0x47001AEB, to = 0x47003190 }
+update = "bestow"
+tell = { table = 0x25002A09, string = 0xC4395631 }
+takes = [0x47001AEB]
+requires = [{ quest = 0x800002B7, phase = 2 }]
+prov = { from = "authored", by = "Dereth Network", note = "a charged stone given back to the Tertius tower's pedestal, with its own line; no recording", confidence = "low" }
