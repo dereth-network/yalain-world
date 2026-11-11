@@ -1,0 +1,41 @@
+# A southern fort's floors, people and the south's quest places, from players' guides; edit an authored pack instead.
+
+[[object]]
+key = "fort-basement-up"
+kind = "static"
+template = 0x4700117F
+cell = 0x09BD0110
+at = [-7.54, 45.93, 101.60]
+rotation = [0, 0, 0, 1]
+name = { table = 0x25001B44, string = 0x7FBD0D07 }
+to = "fort-main-up"
+prov = { from = "authored", by = "Dereth Network", note = "the basement's way up to the main floor, beside their foot; no recording", confidence = "low" }
+
+[[object]]
+key = "fort-armory-door"
+kind = "static"
+template = 0x47001634
+cell = 0x09BD010F
+at = [-52.18, -6.64, 101.60]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x5164A695 }
+to = "fort-armory-in"
+prov = { from = "authored", by = "Dereth Network", note = "the armory's door in the basement, behind its way back's landing; no recording", confidence = "low" }
+
+[[object]]
+key = "gear-master"
+kind = "npc"
+template = 0x4700314D
+cell = 0x09BD0126
+at = [-45.07, -2.60, 101.60]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "in the basement, 7 m right of the armory's door, as the wiki's walkthroughs put him (down the stairs, the armory to his left); no recording", confidence = "low" }
+
+[[object]]
+key = "mardolph-journal"
+kind = "npc"
+template = 0x4700310A
+cell = 0x09BD012B
+at = [-41.07, 0.40, 101.60]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the book in the master engineer's room, 5 m from him, as the wiki's walkthrough puts it; no recording", confidence = "low" }

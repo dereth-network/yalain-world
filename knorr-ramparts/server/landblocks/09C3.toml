@@ -1,0 +1,49 @@
+# A southern fort's floors, people and the south's quest places, from players' guides; edit an authored pack instead.
+
+[[object]]
+key = "colony-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x09C30150
+at = [-29.34, 6.22, 49.70]
+rotation = [0.92388, 0, 0, 0.382684]
+name = { table = 0x25001B44, string = 0x915E241E }
+to = "colony-out"
+prov = { from = "authored", by = "Dereth Network", note = "the colony's way out, beside its landing, to the door outside; no recording", confidence = "low" }
+
+[[camp]]
+key = "gf-lairmaster"
+cell = 0x09C3014B
+at = [160.78, -31.14, -45.10]
+spots = [{ cell = 0x09C3014B, at = [160.78, -31.14, -45.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002599, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the lair's master, in the middle of the colony's deepest chamber, as the wiki's walkthrough has it (lefts and down to the lair); no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "gf-egg1"
+kind = "npc"
+template = 0x47003108
+cell = 0x09C3014B
+at = [174.78, -31.14, -45.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "one of the lair's three eggs, 14 m from its middle, as the wiki's walkthrough has three spots in the room; no recording", confidence = "low" }
+
+[[object]]
+key = "gf-egg2"
+kind = "npc"
+template = 0x47003108
+cell = 0x09C3014B
+at = [160.78, -17.14, -45.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "one of the lair's three eggs, 14 m from its middle, as the wiki's walkthrough has three spots in the room; no recording", confidence = "low" }
+
+[[object]]
+key = "gf-egg3"
+kind = "npc"
+template = 0x47003108
+cell = 0x09C3014B
+at = [160.78, -45.14, -45.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "one of the lair's three eggs, 14 m from its middle, as the wiki's walkthrough has three spots in the room; no recording", confidence = "low" }

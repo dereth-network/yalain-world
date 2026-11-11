@@ -1,0 +1,35 @@
+# A southern fort's floors, people and the south's quest places, from players' guides; edit an authored pack instead.
+
+[[camp]]
+key = "bod-nightmares"
+cell = 0x09C10117
+at = [80.00, 120.00, 100.00]
+spots = [{ cell = 0x09C10111, at = [61.38, 58.64, 100.00] }, { cell = 0x09C10112, at = [51.00, 72.48, 100.00] }, { cell = 0x09C10112, at = [47.32, 89.33, 100.00] }, { cell = 0x09C10116, at = [52.89, 105.38, 100.00] }, { cell = 0x09C10117, at = [64.47, 118.44, 100.00] }, { cell = 0x09C10117, at = [80.00, 120.00, 100.00] }, { cell = 0x09C10117, at = [93.97, 116.85, 100.00] }, { cell = 0x09C10118, at = [106.14, 103.15, 100.00] }, { cell = 0x09C10115, at = [110.44, 88.78, 100.00] }, { cell = 0x09C10115, at = [107.42, 73.77, 100.00] }, { cell = 0x09C10113, at = [98.16, 60.08, 100.00] }]
+population = 6
+regen = 192.0
+spawns = [{ template = 0x470024AE, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the nightmare gears, on the battlefield's ring of named spots, as the wiki's walkthrough has them (level 74, solo); how many is a guess; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "bod-spirit"
+kind = "static"
+id = 0x4009C10000000001
+template = 0x47001154
+cell = 0x09C10113
+at = [80.10, 87.00, 100.00]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x0CCF84AB }
+to = "bod-platform"
+requires = { quest = 0x8000011D, phase = 17 }
+prov = { from = "authored", by = "Dereth Network", note = "the portal of spirits in the battlefield's middle, open once the badge is charged, to the platform, as the wiki's walkthrough has it; no recording", confidence = "low" }
+
+[[object]]
+key = "bod-back"
+kind = "static"
+template = 0x47001154
+cell = 0x09C10113
+at = [74.45, 72.95, 156.10]
+rotation = [0.92388, 0, 0, -0.382683]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "fort-byros"
+prov = { from = "authored", by = "Dereth Network", note = "the portal home on the platform, beside its landing, back to the ghost's room, as the wiki's walkthrough has it; no recording", confidence = "low" }

@@ -1,0 +1,32 @@
+# A southern fort's floors, people and the south's quest places, from players' guides; edit an authored pack instead.
+
+[[object]]
+key = "armory-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x09C60100
+at = [-15.00, -7.00, 95.70]
+rotation = [0.707107, 0, 0, -0.707107]
+name = { table = 0x25001B44, string = 0x7DBF39F3 }
+to = "fort-armory-out"
+prov = { from = "authored", by = "Dereth Network", note = "the armory's way out, beside its landing, to the basement beside its door; no recording", confidence = "low" }
+
+[[camp]]
+key = "armory-guards"
+cell = 0x09C6011B
+at = [79.90, 116.20, 95.70]
+spots = [{ cell = 0x09C6011B, at = [79.90, 116.20, 95.70] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700249B, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "three gear soldiers in the armory's northeast room, as the wiki's walkthrough has it; which kind is a guess; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "armory-baton"
+cell = 0x09C60125
+at = [178.17, 60.31, 86.10]
+spots = [{ cell = 0x09C60125, at = [178.17, 60.31, 86.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700163B, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the 3rd Assault Legion's baton lying in the inner armory's north room, as the wiki's walkthrough has it; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

@@ -1,0 +1,43 @@
+# A southern fort's floors, people and the south's quest places, from players' guides; edit an authored pack instead.
+
+[[object]]
+key = "fort-exit"
+kind = "static"
+template = 0x4700117F
+cell = 0x09BE0127
+at = [-22.50, -6.00, 101.60]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x7DBF39F3 }
+to = "fort-out"
+prov = { from = "authored", by = "Dereth Network", note = "the fort's way out, beside its way in's landing, to the gate outside; no recording", confidence = "low" }
+
+[[object]]
+key = "fort-stairs-down"
+kind = "static"
+template = 0x4700117F
+cell = 0x09BE011E
+at = [-9.24, 46.51, 101.60]
+rotation = [0, 0, 0, 1]
+name = { table = 0x25001B44, string = 0x7D9AF6E9 }
+to = "fort-basement"
+prov = { from = "authored", by = "Dereth Network", note = "the way down to the basement, beside the head of the way up from it; no recording", confidence = "low" }
+
+[[object]]
+key = "fort-stairs-up"
+kind = "static"
+template = 0x4700117F
+cell = 0x09BE012C
+at = [2.19, 46.04, 101.60]
+rotation = [0, 0, 0, 1]
+name = { table = 0x25001B44, string = 0x7FBD0D07 }
+to = "fort-upper"
+prov = { from = "authored", by = "Dereth Network", note = "the way up to the upper floor, beside the foot of the way down from it; no recording", confidence = "low" }
+
+[[object]]
+key = "malatawa"
+kind = "npc"
+template = 0x47003150
+cell = 0x09BE010B
+at = [-12.64, 3.36, 101.60]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "on the fort's main floor, 10 m in from its gate, as the wiki's walkthrough puts her (inside the fort); no recording", confidence = "low" }

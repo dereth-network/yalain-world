@@ -1,0 +1,33 @@
+# A southern fort's floors, people and the south's quest places, from players' guides; edit an authored pack instead.
+
+[[object]]
+key = "outpost-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x09C50119
+at = [-21.42, -2.22, 100.40]
+rotation = [0.707107, 0, 0, -0.707107]
+name = { table = 0x25001B44, string = 0x915E241E }
+to = "outpost-out"
+prov = { from = "authored", by = "Dereth Network", note = "the outpost's way out, beside its landing, to the pedestal outside; no recording", confidence = "low" }
+
+[[object]]
+key = "ratchet"
+kind = "npc"
+template = 0x47003152
+cell = 0x09C50118
+at = [182.00, 20.20, 80.40]
+rotation = [0.670866, 0, 0, 0.741579]
+prov = { from = "authored", by = "Dereth Network", note = "the company's captain, in the low hall past the long corridor's crossing, as the wiki's walkthrough has it (left and down the stairs); no recording", confidence = "low" }
+
+[[object]]
+key = "strike-portal"
+kind = "static"
+template = 0x47001154
+cell = 0x09C50118
+at = [188.00, 20.20, 80.40]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x1589098B }
+to = "mound-strike"
+requires = { quest = 0x80000259, phase = 11 }
+prov = { from = "authored", by = "Dereth Network", note = "the portal the captain opens behind him to the mound, open once he has his orders, as the wiki's walkthrough has it; no recording", confidence = "low" }

@@ -1,0 +1,121 @@
+# Steps of a south quest, from the wiki's walkthroughs and the install's lines; edit an authored pack instead.
+
+[[step]]
+key = "r-given"
+quest = 0x80000259
+needs = 0
+trigger = { use = 0x47003150 }
+update = "bestow"
+tell = { table = 0x250029E7, string = 0x144B0987 }
+prov = { from = "authored", by = "Dereth Network", note = "the fort's officer gives it, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-mound"
+quest = 0x80000259
+needs = 1
+trigger = { use = 0x47003150 }
+update = "advance"
+phase = 2
+tell = { table = 0x250029E7, string = 0xAD11840A }
+prov = { from = "authored", by = "Dereth Network", note = "the fort's officer, spoken to again, sends a player to the mound, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-pillar"
+quest = 0x80000259
+needs = 2
+trigger = { use = 0x4700163D }
+update = "advance"
+phase = 3
+tell = { table = 0x250025F5, string = 0x9FE6BE76 }
+prov = { from = "authored", by = "Dereth Network", note = "the pillar in the mound, used, moves it on, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-report"
+quest = 0x80000259
+needs = 3
+trigger = { use = 0x47003150 }
+update = "advance"
+phase = 4
+tell = { table = 0x250029E7, string = 0xAD11A40A }
+prov = { from = "authored", by = "Dereth Network", note = "the fort's officer hears the report and sends a player to the master engineer, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-gears"
+quest = 0x80000259
+needs = 4
+trigger = { use = 0x4700314D }
+update = "advance"
+phase = 5
+tell = { table = 0x250029E6, string = 0xAD11D84A }
+prov = { from = "authored", by = "Dereth Network", note = "the master engineer sends a player to a working pedestal, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-outpost"
+quest = 0x80000259
+needs = 5
+trigger = { arrive = 0x47001644, from = 0x40A83C00000000F1 }
+update = "advance"
+phase = 6
+prov = { from = "authored", by = "Dereth Network", note = "arriving in the outpost by the working pedestal moves it on, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-ratchet"
+quest = 0x80000259
+needs = 6
+trigger = { use = 0x47003152 }
+update = "advance"
+phase = 7
+tell = { table = 0x2500253C, string = 0xE7AF04B7 }
+prov = { from = "authored", by = "Dereth Network", note = "the captain, found, moves it on, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-baton"
+quest = 0x80000259
+needs = 7
+trigger = { use = 0x4700314D }
+update = "advance"
+phase = 8
+tell = { table = 0x250029E6, string = 0xAD11E40A }
+prov = { from = "authored", by = "Dereth Network", note = "the master engineer asks for the 3rd Assault Legion's baton, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-programmable"
+quest = 0x80000259
+needs = 8
+trigger = { give = 0x4700163B, to = 0x4700314D }
+update = "advance"
+phase = 9
+tell = { table = 0x250029E6, string = 0x7DDEDEBE }
+gives = [0x4700163C]
+takes = [0x4700163B]
+prov = { from = "authored", by = "Dereth Network", note = "the baton given the master engineer comes back programmable, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-programmed"
+quest = 0x80000259
+needs = 9
+trigger = { use = 0x4700163C, on = 0x4700163D }
+update = "advance"
+phase = 10
+takes = [0x4700163C]
+prov = { from = "authored", by = "Dereth Network", note = "the baton used on the mound's pillar sets the strike's target, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-orders"
+quest = 0x80000259
+needs = 10
+trigger = { give = 0x4700163E, to = 0x47003152 }
+update = "advance"
+phase = 11
+tell = { table = 0x2500253C, string = 0x3DDED8C6 }
+takes = [0x4700163E]
+prov = { from = "authored", by = "Dereth Network", note = "the programmed baton given the captain opens his portal to the mound, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-end"
+quest = 0x80000259
+needs = 12
+trigger = { use = 0x47003150 }
+update = "complete"
+tell = { table = 0x250029E7, string = 0xAD11824A }
+prov = { from = "authored", by = "Dereth Network", note = "the fort's officer hears of the legion's last stand and ends it, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }

@@ -1,0 +1,40 @@
+# Steps of a south quest, from the wiki's walkthroughs and the install's lines; edit an authored pack instead.
+
+[[step]]
+key = "r-given"
+quest = 0x8000011D
+needs = 0
+trigger = { give = 0x47001596, to = 0x4700314D }
+update = "bestow"
+tell = { table = 0x250029E6, string = 0x8C47E99F }
+prov = { from = "authored", by = "Dereth Network", note = "the unusual badge given the master engineer, handed back, gives it, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-spark"
+quest = 0x8000011D
+needs = 1
+trigger = { use = 0x47001596, on = 0x470030AF }
+update = "advance"
+phase = 2
+tell = { table = 0x25002993, string = 0xC5FB868A }
+to = "bod-in"
+prov = { from = "authored", by = "Dereth Network", note = "the badge on the ghost sends a player to the battlefield (the wiki: handed him; a give's step sends nobody), wiki's walkthrough of 2013, with the speake", confidence = "low" }
+
+[[step]]
+key = "r-spirit"
+quest = 0x8000011D
+needs = 17
+trigger = { arrive = 0x47001154, from = 0x4009C10000000001 }
+update = "advance"
+phase = 18
+prov = { from = "authored", by = "Dereth Network", note = "arriving on the platform by the portal of spirits moves it on, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "r-end"
+quest = 0x8000011D
+needs = 18
+trigger = { give = 0x47001596, to = 0x470030AF }
+update = "complete"
+tell = { table = 0x25002993, string = 0x3D9E68FE }
+takes = [0x47001596]
+prov = { from = "authored", by = "Dereth Network", note = "the badge given the ghost once more ends it, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
