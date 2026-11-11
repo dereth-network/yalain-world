@@ -3,13 +3,14 @@
 [[object]]
 key = "desolation-storeroom-door"
 kind = "static"
-template = 0x4700117F
+template = 0x470011AC
 cell = 0x0AC4017F
 at = [-225.11, 159.21, 81.81]
 rotation = [-0.382683, 0, 0, 0.92388]
 to = "desolation-storeroom-in"
-requires = { quest = 0x80000298, phase = 6 }
-prov = { from = "authored", by = "Dereth Network", note = "the store room's door, behind the place outside it; shut to a plain use, its key's use takes a player in, as the wiki's walkthrough of 2013 says", confidence = "low" }
+locked = true
+lock = 0x40000090
+prov = { from = "authored", by = "Dereth Network", note = "the store room's door, of the install's own kind for it, behind the place outside it; locked to the key its kind names, which carries a player in, as the wiki's walkthrough of 2013 says", confidence = "low" }
 
 [[object]]
 key = "desolation-storeroom-exit"
@@ -24,13 +25,14 @@ prov = { from = "authored", by = "Dereth Network", note = "the store room's door
 [[object]]
 key = "desolation-maproom-door"
 kind = "static"
-template = 0x47000FC1
+template = 0x470011AA
 cell = 0x0AC4013E
 at = [-81.20, -262.40, 81.80]
 rotation = [1, 0, 0, 0]
 to = "desolation-maproom-in"
-requires = { quest = 0x80000298, phase = 6 }
-prov = { from = "authored", by = "Dereth Network", note = "the room of the wells's door, behind the place outside it; shut to a plain use, its key's use takes a player in, as the wiki's walkthrough of 2013 says", confidence = "low" }
+locked = true
+lock = 0x40000091
+prov = { from = "authored", by = "Dereth Network", note = "the room of the wells's door, of the install's own kind for it, behind the place outside it; locked to the key its kind names, which carries a player in, as the wiki's walkthrough of 2013 says", confidence = "low" }
 
 [[object]]
 key = "desolation-maproom-exit"

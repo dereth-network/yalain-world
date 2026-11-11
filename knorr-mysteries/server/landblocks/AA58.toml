@@ -10,5 +10,6 @@ at = [146.3871, 134.8225, 252.4303]
 rotation = [0.722364, 0.0, 0.0, -0.691513]
 name = { table = 0x25001B44, string = 0xEAE78D8C }
 to = "mys-nexus-in"
-requires = { quest = 0x8000027D, phase = 11 }
-prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:ed80deba", confidence = "low", sample = { sessions = 1 }, fields = { to = { from = "authored", by = "Dereth Network", note = "to the nexus' way in from a list of the game's destinations; its key opens it, and it lets in a player whose quest waits on the nexus, as the wiki's walkthrough of 2013 says", confidence = "low" }, requires = { from = "authored", by = "Dereth Network", note = "a player whose quest waits on the nexus", confidence = "low" } } }
+locked = true
+lock = 0x400000AD
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:ed80deba", confidence = "low", sample = { sessions = 1 }, fields = { to = { from = "authored", by = "Dereth Network", note = "to the nexus' way in from a list of the game's destinations; its key carries a player in, as the wiki's walkthrough of 2013 says", confidence = "low" }, locked = { from = "authored", by = "Dereth Network", note = "locked to the key its kind names", confidence = "low" }, lock = { from = "authored", by = "Dereth Network", note = "the key id its kind names", confidence = "low" } } }

@@ -13,13 +13,14 @@ prov = { from = "authored", by = "Dereth Network", note = "the way back from Dia
 [[object]]
 key = "mys-study-door"
 kind = "static"
-template = 0x47000FC1
+template = 0x4700117F
 cell = 0x06C30128
 at = [-76.15, -263.94, 194.88]
 rotation = [0.707107, 0, 0, -0.707107]
 to = "mys-study-in"
-requires = { quest = 0x8000027D, phase = 5 }
-prov = { from = "authored", by = "Dereth Network", note = "the study's door, behind the place a list of the game's destinations gives outside it; its key opens it, and it lets in a player whose quest waits in the study, as the wiki's walkthrough of 2013 says", confidence = "low" }
+locked = true
+lock = 0x400000A9
+prov = { from = "authored", by = "Dereth Network", note = "the study's door behind the place a list of the game's destinations gives outside it, of the house's doors' look; its key carries a player in, as the wiki's walkthrough of 2013 says", confidence = "low" }
 
 [[object]]
 key = "mys-study-exit"
