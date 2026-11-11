@@ -11,7 +11,7 @@
 - The egg from the plateau can now be hatched for a hero's mount. Pack `egg-hatching/`.
 - The quest for the Foundry's gates can now be done, down the houses' trap doors. Pack `foundry-gates/`.
 - The last of the Foundry houses' masters now carries his report. Pack `foundry-houses/`.
-- The Foundry's weapons can now be made at its forge, and its ore turned into motes. Pack `atlan-weapons/`.
+- The Foundry's smith now leaves his weapon recipes, its emblems can be imprinted from weapons, and its ore turned into motes. Pack `atlan-weapons/`.
 
 ## v0.36.0
 
