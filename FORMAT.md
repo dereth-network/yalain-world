@@ -17,7 +17,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/quests/QQQQQQQQ.toml [[quest]], [[step]] of one quest
 <pack>/server/gives/TTTTTTTT.toml  [[give]] of one template given to
 <pack>/server/talk/TTTTTTTT.toml   [[talk]] of one template
-<pack>/server/crafting.toml        [[craft]], [[tool]], [[spellbinding]], [[refining]]
+<pack>/server/crafting.toml        [[craft]], [[tool]], [[spellbinding]], [[refining]], [[recipe]]
 <pack>/server/mines.toml           [[mine]]
 <pack>/server/maps.toml            [[map_region]], [[map_recipes]]
 <pack>/server/story.toml           [[scene]], [[shard]]
@@ -115,6 +115,7 @@ Every row sets one **item**, named by its key:
 | `step 0xQUEST KEY` | the quest and the step's `key` |
 | `talk KEY` | the row's `key` |
 | `craft 0xID` | the craft skill or recipe |
+| `recipe 0xID` | the recipe's id |
 | `scene 0xID` | the scene's id |
 | `shard 0xOBJECT` | the shard's world id |
 | `butchery 0xPROFILE` | the butchery profile |
@@ -300,7 +301,8 @@ under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`b
 `complete`, `fail`: a step that fails its quest needs it under way; `none`: it moves no quest, and only says, gives and sends), `phase` (for `advance`), `xp`, `xp_share` (a share of what the player's level takes to reach the next, whole), `least_level`, `most_level` (the levels it runs for),  `gives` (templates), `counts` (how many of each item
 given, in order; 1 when left out), `requires`, `takes`, `to`, `effects` (the effects it puts on the
 player, by their saved states: a blessing, a recipe learned or forgotten), `text` (a text shown
-after the effects, `{ table, string }`), `fellows` (true: the update is made for each of the
+after the effects, `{ table, string }`), `recipes` (recipes it teaches, by id: the install's, or the world's
+`[[recipe]]` rows'; learned after its update and its effects), `fellows` (true: the update is made for each of the
 player's fellows in the world as well, each told it alone; what the step takes and gives is the player's alone, and a fellow
 needs only the phase and what the step requires), `races` (the races it is for, by number: 1 human, 2
 Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out), `effects_last` (true: the
@@ -470,6 +472,28 @@ server's own ten; a world with any has its rows alone.
 recipe = "SteelRefiningRecipe"
 product = 0x47000B40
 full_at = 150
+prov = { from = "authored", by = "you" }
+```
+
+**`[[recipe]]`**: a recipe the world defines where the install holds none, made from an install recipe. `recipe` (its
+id: a saved state id, `0x6F...`, no record of the install holds), `like` (the install recipe it is made from, its saved
+state), `name` (a string reference), `description` (a string reference; none when left out), `ingredients` (its slots,
+in order, at least one: `{ items, count, name }`, the templates any of which goes in it, how many it takes, 1 when left
+out, and a string reference for what the slot says it wants, none when left out), `product` (the template of what it
+makes), `count` (above 0; 1 when left out), `skill` (its craft skill, a saved state) and `category` (its category in
+its craft skill, by number), each the install recipe's when left out. Everything else (its animation, checks and cost)
+is the install recipe's. Its outcomes make the row's product, stamp it with its maker and use up each of its slots;
+whatever else the install recipe's outcomes did is left out. A client is sent its record when it asks for one. A
+step's `recipes` teaches it.
+
+```toml
+# <pack>/server/crafting.toml
+[[recipe]]
+recipe = 0x6F7E0001
+like = 0x6F0002BE
+name = { table = 0x25002007, string = 0x00DD730E }
+ingredients = [{ items = [0x47001600] }, { items = [0x47001609], count = 2 }]
+product = 0x47001601
 prov = { from = "authored", by = "you" }
 ```
 
