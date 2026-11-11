@@ -539,7 +539,7 @@ with `classes`, a pet's class being its effect's. A skill no row names goes by e
 of its class; a pet an item's use makes keeps to the limits of a skill that makes the same pet; and no
 player has more pets in all than the server allows.
 
-**`[[plant]]`**: a species of dye plant. One row per plant.
+**`[[plant]]`**: a species of plant a seed plants. One row per plant.
 
 | field | | meaning |
 |---|---|---|
@@ -547,7 +547,13 @@ player has more pets in all than the server allows.
 | `seed` | required | the template of its seed: a seed no row names plants nothing |
 | `pollen` | | the template of the pollen a ripe plant gives with its plant item, and that may be brushed onto any plant; with `name` or not at all |
 | `name` | | the pollen's name among the plants' texts (its string id), which a plant it is brushed onto shows |
-| `harvest` | required | the template of the plant item a ripe plant gives |
+| `harvest` | required | the template of the plant item a ripe plant gives; it comes to hand as an item taken, moving the quests its taking moves |
+| `count` | | how many plants one seed plants, spread across the planter's heading; 1 when left out |
+| `ripe` | | seconds from its planting until it is ripe, above 0; 180 when left out |
+| `tended` | | false: it needs no water or fertilizer, never withers and keeps its own look until harvested; true when left out |
+| `texts` | | `{ table, maturity_in, mature, harvest }`: the string table of its lines, which holds the lines for a plant not yet ripe and one its user did not plant under the garden plants' ids, and the ids of its examination's countdown label, its line once ripe and its harvest's line; the garden plants' when left out |
+
+Planting moves the quests the seed's template names for its use.
 
 A world with no `[[plant]]` rows has the server's own thirteen; a world with any has its rows alone.
 
