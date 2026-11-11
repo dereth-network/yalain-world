@@ -42,6 +42,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/treasure_potions.toml [[treasure_potion]]
 <pack>/server/treasure_families.toml [[treasure_family]]
 <pack>/server/items.toml           [[item_use]], [[book]], [[start_item]], [[interaction]]
+<pack>/server/puzzles.toml         [[object_states]], [[sequence]]
 <pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]]
 ```
 
@@ -122,6 +123,7 @@ Every row sets one **item**, named by its key:
 | `weapon NAME` | the weapon's name, as creatures' templates write it |
 | `area XXYY` | the area's landblock |
 | `death_treasure KEY` | the row's `key` |
+| `object_states KEY`, `sequence KEY` | the row's `key` |
 | `treasure_pool NAME` | the pool's name |
 | `pet 0xEFFECT` | the pet effect (or the contract's template) |
 | `pet_limit 0xSKILL` | the summoning skill |
@@ -885,6 +887,41 @@ on, or `on_class`, a class (a script package, by number) the item's table names,
 `gives`, the template of what it makes; and `count` (above 0; 1 when left out). The user is given it after the quest
 steps the use triggers and before the item is used up. A use takes the row for the item that names the target's
 template, else the first that names a class the target counts in. One row per key.
+
+**`[[object_states]]`**: the states the world's objects of some templates hold. `key` (lowercase letters, digits and
+hyphens); `templates`, `{ template, start }`: a template whose objects hold a state and the state they start in;
+`states`, the states' names (lowercase letters, digits and hyphens), two or more, each once; `reverts`, seconds after
+its last change an object goes back to its first state (above 0; never when left out); `changes`, `{ item, from, to }`:
+an item given to an object in state `from` puts it in state `to`, an item and a state once. The item is handed back,
+nothing used up; an item no change names is answered as any other give. The state is the object's, the same for every
+player. A template holds the states of one row at most.
+
+**`[[sequence]]`**: uses in an order, judged against the used objects' states. `key`; `quest`, whose phase counts the
+right uses a player has made; `uses`, `{ use, state }` in order: the template used and the state its object must be in
+(an `[[object_states]]` row loaded before names it; any state when left out); `right` and `wrong`, what the object used
+says at a right use and a wrong one (`{ table, string }`). A use of the next in the state named moves the quest on a
+phase, the first giving it, with what its definition names for that update; a use of any other object the row names,
+or of the next in another state, takes the quest away from a player who has it under way, and the order starts over.
+Every row naming the object used is judged at each use, so one use may move several on. A row whose quest is past its
+last use, or done and not to be given again, is not judged. The object says the `right` line of the first row a use
+moved on, else the `wrong` line of the first it judged; a use of an object a row names runs no quest step of its own.
+
+```toml
+# <pack>/server/puzzles.toml
+[[object_states]]
+key = "lamps"
+templates = [{ template = 0x470030DE, start = "dark" }]
+states = ["dark", "lit"]
+reverts = 60
+changes = [{ item = 0x4700159D, from = "dark", to = "lit" }]
+prov = { from = "authored", by = "you" }
+
+[[sequence]]
+key = "lamps-lit"
+quest = 0x800001A3
+uses = [{ use = 0x470030DE, state = "lit" }]
+prov = { from = "authored", by = "you" }
+```
 
 **`[[event]]`**: a named state of the world, on for its times. `key` (lowercase letters, digits and
 hyphens); `game_event`, a value of the install's game events it stands for (optional; `yalain world check
