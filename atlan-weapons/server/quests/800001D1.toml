@@ -5,11 +5,3 @@ id = 0x800001D1
 id_name = "QuestFoundryLevel3RecipeBook"
 state = 0x6F000ABB
 prov = { from = "derived", rule = "quest-definition", record = 0x6F000ABB, confidence = "medium" }
-
-[[step]]
-key = "rb-taken"
-quest = 0x800001D1
-needs = 1
-trigger = { given = 0x800001D1 }
-update = "fail"
-prov = { from = "authored", by = "Dereth Network", note = "failed as soon as the book's taking gives it, as the next chambers' giving would, so the book can be read from the pack, as players' guides say it is; a guess at how; no recording", confidence = "low" }

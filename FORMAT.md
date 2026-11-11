@@ -41,7 +41,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/treasure_looks.toml  [[treasure_look]]
 <pack>/server/treasure_potions.toml [[treasure_potion]]
 <pack>/server/treasure_families.toml [[treasure_family]]
-<pack>/server/items.toml           [[item_use]], [[book]], [[start_item]]
+<pack>/server/items.toml           [[item_use]], [[book]], [[start_item]], [[interaction]]
 <pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]]
 ```
 
@@ -845,6 +845,14 @@ per template.
 A world with no rows of one of these three kinds has the server's own of that kind (the food and the training
 hall's potions, the four cards and the two people, the guide book), and its server says so at start. A kind's rows
 are taken whole, never mixed with the server's.
+
+**`[[interaction]]`**: what an item used on another makes, where the item's interaction table lets it be used so and
+the table's outcome names nothing made (an emblem imprinted from one of the weapons its user holds). `key`
+(lowercase letters, digits and hyphens); `item`, the template of the item used; one of `on`, a template it is used
+on, or `on_class`, a class (a script package, by number) the item's table names, any template of which counts;
+`gives`, the template of what it makes; and `count` (above 0; 1 when left out). The user is given it after the quest
+steps the use triggers and before the item is used up. A use takes the row for the item that names the target's
+template, else the first that names a class the target counts in. One row per key.
 
 **`[[event]]`**: a named state of the world, on for its times. `key` (lowercase letters, digits and
 hyphens); `game_event`, a value of the install's game events it stands for (optional; `yalain world check
