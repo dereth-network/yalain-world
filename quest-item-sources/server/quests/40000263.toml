@@ -1,0 +1,32 @@
+# The egg's quest up to its hatching, as a players' guide of the time tells it, with the lines the install gives each person.
+
+[[step]]
+key = "e-given"
+quest = 0x40000263
+needs = 0
+trigger = { give = 0x470014CD, to = 0x47002F80 }
+update = "bestow"
+tell = { table = 0x250028FC, string = 0x34B1FEF3 }
+prov = { from = "authored", by = "Dereth Network", note = "a players' guide of the time: giving her the egg starts the quest, and she sends the player to the temple to cleanse it, as the journal's first phase says; no recording", confidence = "low" }
+
+[[step]]
+key = "e-cleansed"
+quest = 0x40000263
+needs = 1
+trigger = { give = 0x470014CD, to = 0x47002FFD }
+update = "advance"
+phase = 2
+takes = [0x470014CD]
+gives = [0x470014C8]
+tell = { table = 0x2500293D, string = 0x75BCA5F1 }
+prov = { from = "authored", by = "Dereth Network", note = "a players' guide of the time: the egg handed to the font in the temple's deeper chamber comes back cleansed, as the cleansed egg's own description and the font's line say; no recording", confidence = "low" }
+
+[[step]]
+key = "e-back"
+quest = 0x40000263
+needs = 2
+trigger = { give = 0x470014C8, to = 0x47002F80 }
+update = "advance"
+phase = 3
+tell = { table = 0x250028FC, string = 0xDC5E903A }
+prov = { from = "authored", by = "Dereth Network", note = "a players' guide of the time: the cleansed egg taken back to her, who cannot hatch it and names who could, as the journal's last phase says; no recording", confidence = "low" }
