@@ -2,16 +2,16 @@
 
 ## Unreleased
 
-- Creatures' loot now comes from the treasure pools. Pack `loot-from-pools/`.
+- Creatures' loot now comes from the treasure pools. New pack `loot-from-pools/`.
 - Creatures and ways in for more of the Foundry's houses and one more dungeon, from players' maps. Pack `acmaps-camps/`.
-- The shaman's maintenance quest can now be finished. Pack `skyport-mine/`.
-- Ways into the Foundry and its forge, opened by their quests. Pack `foundry-forge/`.
-- An egg, a hoard map and a bean now have sources. Pack `quest-item-sources/`.
-- The Foundry's quests can now be done, which opens its doors and its forge. Pack `foundry-chain/`.
-- The egg from the plateau can now be hatched for a hero's mount. Pack `egg-hatching/`.
-- The quest for the Foundry's gates can now be done, down the houses' trap doors. Pack `foundry-gates/`.
-- The last of the Foundry houses' masters now carries his report. Pack `foundry-houses/`.
-- The Foundry's smith now leaves his weapon recipes, its emblems can be imprinted from weapons, and its ore turned into motes. Pack `atlan-weapons/`.
+- The shaman's maintenance quest can now be finished. New pack `skyport-mine/`.
+- Ways into the Foundry and its forge, opened by their quests. New pack `foundry-forge/`.
+- An egg, a hoard map and a bean now have sources. New pack `quest-item-sources/`.
+- The Foundry's quests can now be done, which opens its doors and its forge. New pack `foundry-chain/`.
+- The egg from the plateau can now be hatched for a hero's mount. New pack `egg-hatching/`.
+- The quest for the Foundry's gates can now be done, down the houses' trap doors. New pack `foundry-gates/`.
+- The last of the Foundry houses' masters now carries his report. New pack `foundry-houses/`.
+- The Foundry's smith now leaves his weapon recipes, its emblems can be imprinted from weapons, and its ore turned into motes. New pack `atlan-weapons/`.
 - One more of Knorr's bounties, in the hills east of the Skyport, can now be done. Pack `knorr-bounties/`.
 - Ways into the estate mansion southeast of Greenstone and its hidden room. Pack `knorr-doors/`.
 - The estate's ward towers quest can now be done. New pack `knorr-estate/`.
