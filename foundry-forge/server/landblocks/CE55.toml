@@ -1,0 +1,25 @@
+# The Foundry's door and the forge's portal beside it; no recording.
+
+[[object]]
+key = "foundry"
+kind = "static"
+template = 0x47001154
+cell = 0xCE550032
+at = [126.9, 34.2, 220.7]
+rotation = [0.707107, 0.0, 0.0, 0.707107]
+name = { table = 0x25001B44, string = 0x9C2D9DFB }
+to = "foundry-in"
+requires = { quest = 0x80000114, done = true }
+prov = { from = "authored", by = "Dereth Network", note = "at the surface end a list of the game's destinations gives, where players' guides put the door; the install's portal name; open once the quest whose journal uses four keys on it is done; no recording", confidence = "low" }
+
+[[object]]
+key = "forge"
+kind = "static"
+template = 0x47001154
+cell = 0xCE550032
+at = [126.9, 30.2, 220.5]
+rotation = [0.707107, 0.0, 0.0, 0.707107]
+name = { table = 0x25001B44, string = 0x26A78E4D }
+to = "forge-in"
+requires = { quest = 0x800001CF, phase = 3 }
+prov = { from = "authored", by = "Dereth Network", note = "near the door, where a players' guide of 2013 puts the forge's portal; the install's portal name; open at the phase whose journal says a death uncovered it; no recording", confidence = "low" }
