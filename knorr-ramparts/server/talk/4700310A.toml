@@ -1,0 +1,12 @@
+# The book's under-level line, for the quest it gives; edit an authored pack instead.
+
+[[talk]]
+key = "t-310a-68f492a3"
+who = 0x4700310A
+line = { table = 0x250029C4, string = 0x68F492A3 }
+line_name = "ID_TooLow"
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x800001D8
+prov = { from = "derived", rule = "talk-token-role", record = 0x250029C4, confidence = "high", fields = { quest = { from = "authored", by = "Dereth Network", note = "the book's under-level line, for the quest it gives", confidence = "low" } } }
