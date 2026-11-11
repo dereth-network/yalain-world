@@ -1,0 +1,22 @@
+# The Skyport's mysteries: the dungeons' ways, people, keys and crystals, from players' guides and a list of the game's destinations; edit an authored pack instead.
+
+[[object]]
+key = "mys-bridge-back"
+kind = "static"
+template = 0x4700117F
+cell = 0xB75B000C
+at = [21.81, 74.34, 179.29]
+rotation = [0.707107, 0, 0, -0.707107]
+to = "mys-bridge-down"
+prov = { from = "authored", by = "Dereth Network", note = "the way back down into the tunnels, behind the hilltop place a list of the game's destinations gives; no recording", confidence = "low" }
+
+[[object]]
+key = "mys-prototype-door"
+kind = "static"
+template = 0x47001671
+cell = 0xB75B002C
+at = [106.72, 73.34, 199.49]
+rotation = [0.707107, 0, 0, 0.707107]
+to = "mys-prototype-in"
+requires = { quest = 0x8000027D, phase = 9 }
+prov = { from = "authored", by = "Dereth Network", note = "the prototype's door on the hilltop, locked, behind the place a list of the game's destinations gives outside it; its key opens it, and it lets in a player whose quest waits in the room", confidence = "low" }

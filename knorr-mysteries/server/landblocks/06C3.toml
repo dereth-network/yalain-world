@@ -1,0 +1,112 @@
+# The Skyport's mysteries: the dungeons' ways, people, keys and crystals, from players' guides and a list of the game's destinations; edit an authored pack instead.
+
+[[object]]
+key = "mys-house-exit"
+kind = "static"
+template = 0x4700117F
+cell = 0x06C30113
+at = [-60.75, -343.40, 194.95]
+rotation = [1, 0, 0, 0]
+to = "mys-house-out"
+prov = { from = "authored", by = "Dereth Network", note = "the way back from Dianech's house on the northwest island, beside its landing, to its surface end; no recording", confidence = "low" }
+
+[[object]]
+key = "mys-study-door"
+kind = "static"
+template = 0x47000FC1
+cell = 0x06C30128
+at = [-76.15, -263.94, 194.88]
+rotation = [0.707107, 0, 0, -0.707107]
+to = "mys-study-in"
+requires = { quest = 0x8000027D, phase = 5 }
+prov = { from = "authored", by = "Dereth Network", note = "the study's door, behind the place a list of the game's destinations gives outside it; its key opens it, and it lets in a player whose quest waits in the study, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[object]]
+key = "mys-study-exit"
+kind = "static"
+template = 0x4700117F
+cell = 0x06C3014B
+at = [-155.00, -266.00, 196.85]
+rotation = [0.707107, 0, 0, 0.707107]
+to = "mys-study-out"
+prov = { from = "authored", by = "Dereth Network", note = "the study's door from inside, behind its landing, to the corridor; no recording", confidence = "low" }
+
+[[object]]
+key = "mys-servitor"
+kind = "npc"
+template = 0x47003160
+cell = 0x06C30148
+at = [-161.00, -266.00, 196.81]
+rotation = [0.707107, 0, 0, -0.707107]
+prov = { from = "authored", by = "Dereth Network", note = "the study's servitor, as the wiki's walkthrough of 2013 says; his place in it a guess; no recording", confidence = "low" }
+
+[[camp]]
+key = "mys-key-guards"
+cell = 0x06C30127
+at = [-66.15, -263.94, 194.80]
+spots = [{ cell = 0x06C30127, at = [-66.15, -263.94, 194.80] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002AA5, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the Imperial Servitor Guards the wiki's map marks as key droppers, along the corridor outside the study, as its walkthrough of 2013 says; where in it a guess; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "mys-bookcase"
+kind = "static"
+id = 0x4006C300000000F1
+template = 0x4700117D
+cell = 0x06C30143
+at = [-173.16, -257.40, 197.02]
+rotation = [1, 0, 0, 0]
+to = "mys-archive-in"
+requires = { quest = 0x8000027D, had = true }
+prov = { from = "authored", by = "Dereth Network", note = "the bookcase's hidden door, where the install places one in the study by the place a list of the game's destinations gives, to the hidden archive; open to anyone who has had the quest", confidence = "low" }
+
+[[object]]
+key = "mys-archive-exit"
+kind = "static"
+template = 0x4700117D
+cell = 0x06C30165
+at = [-173.25, -187.50, 201.23]
+rotation = [1, 0, 0, 0]
+to = "mys-archive-out"
+prov = { from = "authored", by = "Dereth Network", note = "the hidden archive's way back to the study, behind its landing; no recording", confidence = "low" }
+
+[[camp]]
+key = "mys-amulet-guards"
+cell = 0x06C301CE
+at = [-11.86, -225.19, 138.21]
+spots = [{ cell = 0x06C301CE, at = [-11.86, -225.19, 138.21] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002AA5, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the three servitors whose corpses hold the amulet that lets a player past the others, at the place a list of the game's destinations names for them, as the wiki's walkthrough says", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "mys-final-journal"
+cell = 0x06C301E1
+at = [-74.50, -32.00, 113.88]
+spots = [{ cell = 0x06C301E1, at = [-74.50, -32.00, 113.88] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47000E4F, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the last part of Dianech's journal, on the floor at the archive's far end, as the wiki's walkthrough of 2013 says; where there a guess; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "mys-chest-key"
+cell = 0x06C301E1
+at = [-71.50, -32.00, 113.88]
+spots = [{ cell = 0x06C301E1, at = [-71.50, -32.00, 113.88] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47001105, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the key to the archive's chest, at the table at the archive's far end, as the wiki's walkthrough of 2013 says; where there a guess; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "mys-archive-chest"
+kind = "static"
+template = 0x47000F29
+cell = 0x06C301E1
+at = [-73.00, -29.00, 113.98]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the chest at the archive's far end, as the wiki's walkthrough of 2013 says; where there a guess; no recording", confidence = "low" }

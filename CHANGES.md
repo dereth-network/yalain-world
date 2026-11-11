@@ -15,6 +15,7 @@
 - One more of Knorr's bounties, in the hills east of the Skyport, can now be done. Pack `knorr-bounties/`.
 - Ways into the estate mansion southeast of Greenstone and its hidden room. Pack `knorr-doors/`.
 - The estate's ward towers and crypt quests can now be done. New pack `knorr-estate/`.
+- The Skyport's mysteries quest can now be done, through its four dungeons. New pack `knorr-mysteries/`.
 
 ## v0.36.0
 

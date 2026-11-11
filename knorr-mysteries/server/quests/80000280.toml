@@ -1,0 +1,16 @@
+# The Skyport's mysteries: the unsealed journal handed in; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000280
+id_name = "QuestSkyportA"
+prov = { from = "authored", by = "Dereth Network", note = "the last phase's first part, as its journal says; its definition the install's, a row so its steps and its parent's phase can move it", confidence = "low" }
+
+[[step]]
+key = "j-unsealed"
+quest = 0x80000280
+needs = 1
+trigger = { give = 0x47000E4E, to = 0x47003166 }
+update = "complete"
+tell = { table = 0x250029F7, string = 0x167E5E54 }
+takes = [0x47000E4E]
+prov = { from = "authored", by = "Dereth Network", note = "the unsealed journal given to the scholar, as its journal says, from the wiki's walkthrough of 2013 and AC2 Hero's page, with the speaker's own line in the install; no recording", confidence = "low" }

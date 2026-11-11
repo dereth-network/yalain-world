@@ -1,0 +1,14 @@
+# The Skyport's mysteries: the crystal imbued at the prototype's heart; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002C5
+id_name = "QuestSkyport9B"
+prov = { from = "authored", by = "Dereth Network", note = "the prototype's second part, the crystal imbued; its definition the install's, a row so its steps and its parent's phase can move it", confidence = "low" }
+
+[[step]]
+key = "p-imbued"
+quest = 0x800002C5
+needs = 1
+trigger = { use = 0x47001672, on = 0x47001673 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the crystal used on the prototype's heart, as the wiki's walkthrough of 2013 says; its table uses it up; no recording", confidence = "low" }

@@ -1,0 +1,45 @@
+# The scholar's lines for the mysteries, his own; edit an authored pack instead.
+
+[[talk]]
+key = "sky-student"
+who = 0x47003166
+line = { table = 0x250029F7, string = 0x8B6B186F }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x8000027D
+phase = 1
+prov = { from = "authored", by = "Dereth Network", note = "said while his student is sought, his own line for it", confidence = "low" }
+
+[[talk]]
+key = "sky-island"
+who = 0x47003166
+line = { table = 0x250029F7, string = 0xD42F1F6B }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x8000027D
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "said while the journal waits to be unsealed, his own line for it", confidence = "low" }
+
+[[talk]]
+key = "sky-nexus"
+who = 0x47003166
+line = { table = 0x250029F7, string = 0xD62F1F6B }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x8000027D
+phase = 11
+prov = { from = "authored", by = "Dereth Network", note = "said while the nexus waits, his own line for it", confidence = "low" }
+
+[[talk]]
+key = "sky-done"
+who = 0x47003166
+line = { table = 0x250029F7, string = 0xC21CD27B }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x8000027D
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "said as the last journal ends it, his own line for it", confidence = "low" }

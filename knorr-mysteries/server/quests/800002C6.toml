@@ -1,0 +1,24 @@
+# The Skyport's mysteries: the bookcase's hidden door found; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002C6
+id_name = "QuestSkyportHiddenDoor"
+visible = false
+prov = { from = "authored", by = "Dereth Network", note = "the mark that the bookcase's hidden door was found, kept hidden: its journal says nothing; its definition the install's, a row so its steps and its parent's phase can move it", confidence = "low" }
+
+[[step]]
+key = "h-found"
+quest = 0x800002C6
+needs = 0
+trigger = { arrive = 0x4700117D, from = 0x4006C300000000F1 }
+update = "bestow"
+requires = [{ quest = 0x8000027D, phase = 5 }]
+prov = { from = "authored", by = "Dereth Network", note = "through the bookcase's hidden door while the journal says to look for it, as the wiki's walkthrough of 2013 says; no recording", confidence = "low" }
+
+[[step]]
+key = "h-done"
+quest = 0x800002C6
+needs = 1
+trigger = { given = 0x800002C6 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "found at once", confidence = "low" }

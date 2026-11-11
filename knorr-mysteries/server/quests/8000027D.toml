@@ -1,0 +1,90 @@
+# The Skyport's mysteries, from players' guides; edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x8000027D
+needs = 0
+trigger = { use = 0x47003166 }
+update = "bestow"
+tell = { table = 0x250029F7, string = 0x645DDF78 }
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from the wiki's walkthrough of 2013 and AC2 Hero's page, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "m-student"
+quest = 0x8000027D
+needs = 1
+trigger = { use = 0x4700316D }
+update = "advance"
+phase = 2
+tell = { table = 0x250029F9, string = 0xC0FE54D5 }
+gives = [0x4700166A]
+prov = { from = "authored", by = "Dereth Network", note = "the student found in the mine gives the sealed journal, from the wiki's walkthrough of 2013 and AC2 Hero's page, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "m-sealed"
+quest = 0x8000027D
+needs = 2
+trigger = { give = 0x4700166A, to = 0x47003166 }
+update = "advance"
+phase = 3
+tell = { table = 0x250029F7, string = 0xF01AF208 }
+prov = { from = "authored", by = "Dereth Network", note = "the scholar can't unseal it and hands it back, from the wiki's walkthrough of 2013 and AC2 Hero's page, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "m-study-key"
+quest = 0x8000027D
+needs = 3
+trigger = { use = 0x47001106, on = 0x47000FC1 }
+update = "none"
+to = "mys-study-in"
+prov = { from = "authored", by = "Dereth Network", note = "the study's key used on its door lets a player in, as the wiki's walkthrough of 2013 says; no recording", confidence = "low" }
+
+[[step]]
+key = "m-unsealed"
+quest = 0x8000027D
+needs = 3
+trigger = { give = 0x4700166A, to = 0x47003160 }
+update = "advance"
+phase = 4
+tell = { table = 0x250029F2, string = 0xF06AF208 }
+gives = [0x47000E4E]
+takes = [0x4700166A]
+prov = { from = "authored", by = "Dereth Network", note = "the study's servitor unseals it (the unsealed part's taking moves it on again), from the wiki's walkthrough of 2013 and AC2 Hero's page, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "m-prototype"
+quest = 0x8000027D
+needs = 8
+trigger = { use = 0x4700166C, on = 0x47001671 }
+update = "advance"
+phase = 9
+to = "mys-prototype-in"
+prov = { from = "authored", by = "Dereth Network", note = "the prototype's key used on its door, the room entered, as the wiki's walkthrough of 2013 and the journal say; no recording", confidence = "low" }
+
+[[step]]
+key = "m-nexus"
+quest = 0x8000027D
+needs = 10
+trigger = { use = 0x4700166B, on = 0x47001670 }
+update = "advance"
+phase = 11
+to = "mys-nexus-in"
+prov = { from = "authored", by = "Dereth Network", note = "the nexus' key used on the Skyport's nexus door, the door unlocked, as the wiki's walkthrough of 2013 and the journal say; no recording", confidence = "low" }
+
+[[step]]
+key = "m-heart"
+quest = 0x8000027D
+needs = 11
+trigger = { use = 0x47001674, on = 0x47001676 }
+update = "advance"
+phase = 12
+prov = { from = "authored", by = "Dereth Network", note = "the imbued crystal used on the nexus heart, its table using it up, as the wiki's walkthrough of 2013 and the crystal's own text say; no recording", confidence = "low" }
+
+[[step]]
+key = "m-hidden"
+quest = 0x8000027D
+needs = 5
+trigger = { given = 0x800002C6 }
+update = "advance"
+phase = 6
+prov = { from = "authored", by = "Dereth Network", note = "the hidden area found through the bookcase, as the journal says", confidence = "low" }
