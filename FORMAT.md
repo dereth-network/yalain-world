@@ -899,8 +899,9 @@ player. A template holds the states of one row at most.
 **`[[sequence]]`**: uses in an order, judged against the used objects' states. `key`; `quest`, whose phase counts the
 right uses a player has made; `uses`, `{ use, state }` in order: the template used and the state its object must be in
 (an `[[object_states]]` row loaded before names it; any state when left out); `right` and `wrong`, what the object used
-says at a right use and a wrong one (`{ table, string }`). A use of the next in the state named moves the quest on a
-phase, the first giving it, with what its definition names for that update; a use of any other object the row names,
+says at a right use and a wrong one (`{ table, string }`); `to`, the place the last right use takes the player to,
+through portal space (`key`, or `pack:key`). A use of the next in the state named moves the quest on a
+phase, the first giving it, with what its definition names for that update, and the last takes the player to `to`; a use of any other object the row names,
 or of the next in another state, takes the quest away from a player who has it under way, and the order starts over.
 Every row naming the object used is judged at each use, so one use may move several on. A row whose quest is past its
 last use, or done and not to be given again, is not judged. The object says the `right` line of the first row a use
