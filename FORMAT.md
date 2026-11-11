@@ -323,8 +323,11 @@ back, with the person's `refuse-give` line naming the quest and the `item` if it
 | `{ given = Q }` | is given quest Q, shown or kept hidden, by whatever gives it |
 
 `requires` lists other quests the step needs, each `{ quest = Q, phase = N }` (under way at that
-phase; phase 0: not under way), `{ quest = Q, done = true }` or `{ quest = Q, free = true }` (free to
-be given: not under way, and never had or its wait over); `{ event = "key" }`, an `[[event]]` that
+phase; phase 0: not under way), `{ quest = Q, done = true }`, `{ quest = Q, free = true }` (free to
+be given: not under way, and never had or its wait over) or `{ quest = Q, failed = true }` (failed, by a
+step or its time run out, and for a step of a quest under way, given since that quest was: a hidden
+timer given along the way is waited on until it runs out, and one from an earlier time through the quest
+does not count); `{ event = "key" }`, an `[[event]]` that
 must be on for the step to run; and `{ act = A }`, an act the player must hold whole: seven of its scenes, its hidden
 ones aside (a scene of the act must be served; a give names none). A use of a person whose steps don't run says its
 own line at a use, as one that moves nothing does. `takes` lists templates of items taken from the player's
