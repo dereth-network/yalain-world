@@ -1,13 +1,5 @@
-# Heart of Stone: the heart, the ore, the battery and the slab, the gear.
-
-[[step]]
-key = "hs-heart"
-quest = 0x800001DA
-needs = 0
-trigger = { kill = 0x47002CE7 }
-update = "none"
-gives = [0x47001622]
-prov = { from = "authored", by = "Dereth Network", note = "the house master's death hands over the heart, whose taking gives the quest, as players' guides tell it; no recording", confidence = "low" }
+# Heart of Stone: the ore, the battery and the slab, the gear. The heart lies on the house master's corpse
+# (loot.toml).
 
 [[step]]
 key = "hs-ore"
