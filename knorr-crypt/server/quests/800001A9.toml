@@ -1,0 +1,19 @@
+# The crypt's puzzle quests, from players' guides; edit an authored pack instead.
+
+[[step]]
+key = "vault-center"
+quest = 0x800001A9
+needs = 0
+trigger = { use = 0x470030DB }
+update = "bestow"
+requires = [{ quest = 0x8000019D, done = true }, { quest = 0x8000019E, done = true }, { quest = 0x8000019F, done = true }, { quest = 0x800001A0, done = true }, { quest = 0x800001A1, done = true }, { quest = 0x800001A2, done = true }]
+to = "cerulean-in"
+prov = { from = "authored", by = "Dereth Network", note = "the star's middle tile used with the puzzle's six solutions done begins the vault and sends the player to the throne's dungeon, as the wiki's walkthrough says", confidence = "low" }
+
+[[step]]
+key = "vault-done"
+quest = 0x800001A9
+needs = 1
+trigger = { given = 0x800001A9 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "done as it is given", confidence = "low" }

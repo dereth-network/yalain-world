@@ -1,0 +1,59 @@
+# The estate's crypt, its tile puzzle's room and the throne's dungeon, from players' guides; edit an authored pack instead.
+
+[[object]]
+key = "cerulean-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x08C60100
+at = [2.54, -0.03, 101.16]
+rotation = [0, 0, 0, 1]
+to = "chroma-cerulean"
+prov = { from = "authored", by = "Dereth Network", note = "the throne dungeon's way back to the puzzle's room, beside its landing; no recording", confidence = "low" }
+
+[[object]]
+key = "cerulean-equerry"
+kind = "npc"
+template = 0x470030DA
+cell = 0x08C60106
+at = [0.00, -74.00, 100.90]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the spirit equerry south of the dungeon's way in, before the throne room's door, as the wiki's walkthrough puts him; no recording", confidence = "low" }
+
+[[object]]
+key = "cerulean-throne"
+kind = "npc"
+template = 0x470030D8
+cell = 0x08C60151
+at = [0.00, -161.00, 101.00]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the throne on the dais at the throne room's south end; no recording", confidence = "low" }
+
+[[camp]]
+key = "cerulean-guards"
+cell = 0x08C60128
+at = [0.00, -136.00, 101.00]
+spots = [{ cell = 0x08C60142, at = [-18.00, -122.00, 101.00] }, { cell = 0x08C6014E, at = [18.00, -122.00, 101.00] }, { cell = 0x08C60128, at = [0.00, -136.00, 101.00] }]
+population = 3
+regen = 120.0
+spawns = [{ template = 0x470023DC, weight = 1 }, { template = 0x470023DF, weight = 1 }, { template = 0x470023E0, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the guards of the throne's hall the wiki's walkthrough names, who come back quickly; no recording", confidence = "low" }
+
+[[camp]]
+key = "cerulean-servitors-west"
+cell = 0x08C6015A
+at = [-63.00, -165.00, 101.00]
+spots = [{ cell = 0x08C6015A, at = [-63.00, -165.00, 101.00] }, { cell = 0x08C6015A, at = [-57.00, -165.00, 101.00] }]
+population = 2
+regen = 300.0
+spawns = [{ template = 0x47002A9A, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the servitors of the side rooms the wiki's walkthrough names; no recording", confidence = "low" }
+
+[[camp]]
+key = "cerulean-servitors-east"
+cell = 0x08C60166
+at = [57.00, -165.00, 101.00]
+spots = [{ cell = 0x08C60166, at = [57.00, -165.00, 101.00] }, { cell = 0x08C60166, at = [63.00, -165.00, 101.00] }]
+population = 2
+regen = 300.0
+spawns = [{ template = 0x47002A9A, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the servitors of the side rooms the wiki's walkthrough names; no recording", confidence = "low" }

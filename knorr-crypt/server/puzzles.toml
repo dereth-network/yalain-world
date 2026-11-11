@@ -1,0 +1,57 @@
+# The puzzle room's tiles and the six orders of their clicks, from players' guides; edit an authored pack instead.
+
+[[object_states]]
+key = "chroma-tiles"
+templates = [{ template = 0x470030DE, start = "red" }, { template = 0x470030E0, start = "green" }, { template = 0x470030E1, start = "blue" }, { template = 0x470030E2, start = "cyan" }, { template = 0x470030E3, start = "magenta" }, { template = 0x470030E4, start = "yellow" }]
+states = ["black", "blue", "green", "cyan", "red", "magenta", "yellow", "white"]
+reverts = 90
+changes = [{ item = 0x47001598, from = "black", to = "blue" }, { item = 0x47001598, from = "blue", to = "black" }, { item = 0x47001598, from = "green", to = "cyan" }, { item = 0x47001598, from = "cyan", to = "green" }, { item = 0x47001598, from = "red", to = "magenta" }, { item = 0x47001598, from = "magenta", to = "red" }, { item = 0x47001598, from = "yellow", to = "white" }, { item = 0x47001598, from = "white", to = "yellow" }, { item = 0x47001599, from = "black", to = "red" }, { item = 0x47001599, from = "blue", to = "magenta" }, { item = 0x47001599, from = "green", to = "yellow" }, { item = 0x47001599, from = "cyan", to = "white" }, { item = 0x47001599, from = "red", to = "black" }, { item = 0x47001599, from = "magenta", to = "blue" }, { item = 0x47001599, from = "yellow", to = "green" }, { item = 0x47001599, from = "white", to = "cyan" }, { item = 0x4700159A, from = "black", to = "green" }, { item = 0x4700159A, from = "blue", to = "cyan" }, { item = 0x4700159A, from = "green", to = "black" }, { item = 0x4700159A, from = "cyan", to = "blue" }, { item = 0x4700159A, from = "red", to = "yellow" }, { item = 0x4700159A, from = "magenta", to = "white" }, { item = 0x4700159A, from = "yellow", to = "red" }, { item = 0x4700159A, from = "white", to = "magenta" }, { item = 0x4700159B, from = "black", to = "green" }, { item = 0x4700159B, from = "blue", to = "cyan" }, { item = 0x4700159B, from = "green", to = "black" }, { item = 0x4700159B, from = "cyan", to = "blue" }, { item = 0x4700159B, from = "red", to = "yellow" }, { item = 0x4700159B, from = "magenta", to = "white" }, { item = 0x4700159B, from = "yellow", to = "red" }, { item = 0x4700159B, from = "white", to = "magenta" }, { item = 0x4700159C, from = "black", to = "red" }, { item = 0x4700159C, from = "blue", to = "magenta" }, { item = 0x4700159C, from = "green", to = "yellow" }, { item = 0x4700159C, from = "cyan", to = "white" }, { item = 0x4700159C, from = "red", to = "black" }, { item = 0x4700159C, from = "magenta", to = "blue" }, { item = 0x4700159C, from = "yellow", to = "green" }, { item = 0x4700159C, from = "white", to = "cyan" }, { item = 0x4700159D, from = "black", to = "blue" }, { item = 0x4700159D, from = "blue", to = "black" }, { item = 0x4700159D, from = "green", to = "cyan" }, { item = 0x4700159D, from = "cyan", to = "green" }, { item = 0x4700159D, from = "red", to = "magenta" }, { item = 0x4700159D, from = "magenta", to = "red" }, { item = 0x4700159D, from = "yellow", to = "white" }, { item = 0x4700159D, from = "white", to = "yellow" }]
+prov = { from = "authored", by = "Dereth Network", note = "the six tiles, red to yellow clockwise from the top; a sphere turns one of a tile's three lights on or off, the rule giving each of the wiki's six tables; back to the first after a minute or two", confidence = "low" }
+
+[[sequence]]
+key = "chroma-solution-1"
+quest = 0x800001A3
+uses = [{ use = 0x470030DE, state = "white" }, { use = 0x470030E0, state = "white" }, { use = 0x470030E1, state = "white" }, { use = 0x470030E2, state = "white" }, { use = 0x470030E3, state = "white" }, { use = 0x470030E4, state = "white" }]
+right = { table = 0x250029AC, string = 0x257C1464 }
+wrong = { table = 0x250029AC, string = 0xFFFB8534 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's solution 1: each tile's color and the order of the clicks; a click on a tile set right, a clack on one set wrong", confidence = "low" }
+
+[[sequence]]
+key = "chroma-solution-2"
+quest = 0x800001A4
+uses = [{ use = 0x470030DE, state = "black" }, { use = 0x470030E4, state = "black" }, { use = 0x470030E3, state = "black" }, { use = 0x470030E2, state = "black" }, { use = 0x470030E1, state = "black" }, { use = 0x470030E0, state = "black" }]
+right = { table = 0x250029AC, string = 0x257C1464 }
+wrong = { table = 0x250029AC, string = 0xFFFB8534 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's solution 2: each tile's color and the order of the clicks; a click on a tile set right, a clack on one set wrong", confidence = "low" }
+
+[[sequence]]
+key = "chroma-solution-3"
+quest = 0x800001A5
+uses = [{ use = 0x470030E3, state = "white" }, { use = 0x470030DE, state = "white" }, { use = 0x470030E1, state = "white" }, { use = 0x470030E4, state = "black" }, { use = 0x470030E0, state = "black" }, { use = 0x470030E2, state = "black" }]
+right = { table = 0x250029AC, string = 0x257C1464 }
+wrong = { table = 0x250029AC, string = 0xFFFB8534 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's solution 3: each tile's color and the order of the clicks; a click on a tile set right, a clack on one set wrong", confidence = "low" }
+
+[[sequence]]
+key = "chroma-solution-4"
+quest = 0x800001A6
+uses = [{ use = 0x470030E4, state = "white" }, { use = 0x470030E0, state = "white" }, { use = 0x470030E2, state = "white" }, { use = 0x470030E3, state = "black" }, { use = 0x470030DE, state = "black" }, { use = 0x470030E1, state = "black" }]
+right = { table = 0x250029AC, string = 0x257C1464 }
+wrong = { table = 0x250029AC, string = 0xFFFB8534 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's solution 4: each tile's color and the order of the clicks; a click on a tile set right, a clack on one set wrong", confidence = "low" }
+
+[[sequence]]
+key = "chroma-solution-5"
+quest = 0x800001A7
+uses = [{ use = 0x470030DE, state = "white" }, { use = 0x470030E2, state = "red" }, { use = 0x470030E0, state = "white" }, { use = 0x470030E3, state = "green" }, { use = 0x470030E1, state = "white" }, { use = 0x470030E4, state = "blue" }]
+right = { table = 0x250029AC, string = 0x257C1464 }
+wrong = { table = 0x250029AC, string = 0xFFFB8534 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's solution 5: each tile's color and the order of the clicks; a click on a tile set right, a clack on one set wrong", confidence = "low" }
+
+[[sequence]]
+key = "chroma-solution-6"
+quest = 0x800001A8
+uses = [{ use = 0x470030E2, state = "black" }, { use = 0x470030DE, state = "cyan" }, { use = 0x470030E3, state = "black" }, { use = 0x470030E0, state = "magenta" }, { use = 0x470030E4, state = "black" }, { use = 0x470030E1, state = "yellow" }]
+right = { table = 0x250029AC, string = 0x257C1464 }
+wrong = { table = 0x250029AC, string = 0xFFFB8534 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's solution 6: each tile's color and the order of the clicks; a click on a tile set right, a clack on one set wrong", confidence = "low" }

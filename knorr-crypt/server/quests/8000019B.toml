@@ -1,0 +1,15 @@
+# The crypt's puzzle quests, from players' guides; edit an authored pack instead.
+
+[[quest]]
+id = 0x8000019B
+id_name = "QuestChromaChest5"
+visible = false
+prov = { from = "authored", by = "Dereth Network", note = "the mark that a player opened the chest of the puzzle's solution, kept hidden; a row so the chest's use gives it and its step ends it", confidence = "low" }
+
+[[step]]
+key = "chest5-done"
+quest = 0x8000019B
+needs = 1
+trigger = { given = 0x8000019B }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "done as it is given: the chest opens once to each player", confidence = "low" }

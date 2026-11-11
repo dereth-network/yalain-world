@@ -1,0 +1,20 @@
+# The crypt's puzzle quests, from players' guides; edit an authored pack instead.
+
+[[step]]
+key = "throne-touched"
+quest = 0x80000196
+needs = 0
+trigger = { use = 0x470030D8 }
+update = "bestow"
+tell = { table = 0x250029A8, string = 0xC1AB9B33 }
+effects = [0x6F001C93]
+requires = [{ quest = 0x800001A9, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the throne touched with the vault done, its line, and the focus its residual power gives for 8 hours, as the wiki's walkthrough says", confidence = "low" }
+
+[[step]]
+key = "throne-done"
+quest = 0x80000196
+needs = 1
+trigger = { given = 0x80000196 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "done as it is given", confidence = "low" }
