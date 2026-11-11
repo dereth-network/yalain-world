@@ -114,6 +114,33 @@ tell = { table = 0x25002A07, string = 0xA497D214 }
 prov = { from = "authored", by = "Dereth Network", note = "the shapers' servitor wants the cube's instructions, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
 
 [[step]]
+key = "t-storeroom-key-3"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x47001108, on = 0x4700117F }
+update = "none"
+to = "desolation-storeroom-in"
+prov = { from = "authored", by = "Dereth Network", note = "the room's key used on its door takes a player in, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-storeroom-key-4"
+quest = 0x80000298
+needs = 4
+trigger = { use = 0x47001108, on = 0x4700117F }
+update = "none"
+to = "desolation-storeroom-in"
+prov = { from = "authored", by = "Dereth Network", note = "the room's key used on its door takes a player in, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-maproom-key-3"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x47001107, on = 0x47000FC1 }
+update = "none"
+to = "desolation-maproom-in"
+prov = { from = "authored", by = "Dereth Network", note = "the room's key used on its door takes a player in, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
 key = "t-block-well"
 quest = 0x80000298
 needs = 3
