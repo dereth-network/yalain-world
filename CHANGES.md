@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Creatures' loot now comes from the treasure pools. Pack `loot-from-pools/`.
 - Creatures and ways in for more of the Foundry's houses, from players' maps. Pack `acmaps-camps/`.
 
 ## v0.36.0
