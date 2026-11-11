@@ -476,15 +476,16 @@ prov = { from = "authored", by = "you" }
 ```
 
 **`[[recipe]]`**: a recipe the world defines where the install holds none, made from an install recipe. `recipe` (its
-id: a saved state id, `0x6F...`, no record of the install holds), `like` (the install recipe it is made from, its saved
-state), `name` (a string reference), `description` (a string reference; none when left out), `ingredients` (its slots,
-in order, at least one: `{ items, count, name }`, the templates any of which goes in it, how many it takes, 1 when left
-out, and a string reference for what the slot says it wants, none when left out), `product` (the template of what it
-makes), `count` (above 0; 1 when left out), `skill` (its craft skill, a saved state) and `category` (its category in
-its craft skill, by number), each the install recipe's when left out. Everything else (its animation, checks and cost)
-is the install recipe's. Its outcomes make the row's product, stamp it with its maker and use up each of its slots;
-whatever else the install recipe's outcomes did is left out. A client is sent its record when it asks for one. A
-step's `recipes` teaches it.
+id: a saved state id from `0x6F7E0000` to `0x6F7EFFFF`, the world's recipes' own, which no record of the install holds;
+a shop's copy of its store template takes one below them, from `0x6F100000` to `0x6F7DFFFF`, so the two never share
+one), `like` (the install recipe it is made from, its saved state), `name` (a string reference), `description` (a string
+reference; none when left out), `ingredients` (its slots, in order, at least one: `{ items, count, name }`, the
+templates any of which goes in it, how many it takes, 1 when left out, and a string reference for what the slot says it
+wants, none when left out), `product` (the template of what it makes), `count` (above 0; 1 when left out), `skill` (its
+craft skill, a saved state) and `category` (its category in its craft skill, by number), each the install recipe's when
+left out. Everything else (its animation, checks and cost) is the install recipe's. Its outcomes make the row's product,
+stamp it with its maker and use up each of its slots; whatever else the install recipe's outcomes did is left out. A
+client is sent its record when it asks for one. A step's `recipes` teaches it.
 
 ```toml
 # <pack>/server/crafting.toml
