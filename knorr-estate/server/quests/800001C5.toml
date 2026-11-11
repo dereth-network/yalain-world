@@ -1,0 +1,71 @@
+# The second crypt quest, from players' guides; edit an authored pack instead.
+
+[[quest]]
+id = 0x800001C5
+id_name = "QuestCryptKeys2"
+state = 0x6F000AAB
+challenge = 55
+xp_share = 0.05
+xp_share_level = 65
+min_level = 55
+duration = 36000
+once = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:ab7a622e", confidence = "high", sample = { sessions = 4 }, fields = { xp_share = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of 2013: 10 hours", confidence = "low" }, once = { from = "authored", by = "Dereth Network", note = "from a player's guide of 2013: one time only", confidence = "low" } } }
+
+[[step]]
+key = "w-given"
+quest = 0x800001C5
+needs = 0
+trigger = { done = 0x800001C3 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "given as the first crypt quest is done, at the guardian who ends it (a player's guide of 2013 has him give it at the next word); no recording", confidence = "low" }
+
+[[step]]
+key = "l-slaughter"
+quest = 0x800001C5
+needs = 1
+trigger = { given = 0x800001C4 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "its first task is the guardian's slaughter, as its journal and a player's guide of 2013 say", confidence = "low" }
+
+[[step]]
+key = "a-zroth"
+quest = 0x800001C5
+needs = 2
+trigger = { use = 0x470030F1 }
+update = "advance"
+phase = 3
+tell = { table = 0x250029B2, string = 0x1BCAF3AD }
+requires = [{ quest = 0x800001C4, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "back to the guardian once the slaughter is done, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "z-duel"
+quest = 0x800001C5
+needs = 3
+trigger = { use = 0x470030F5 }
+update = "advance"
+phase = 4
+tell = { table = 0x25002521, string = 0x26D1DD33 }
+to = "estate-duel1"
+prov = { from = "authored", by = "Dereth Network", note = "the sorcerer challenged takes a player to a duel room of his own, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "z-again"
+quest = 0x800001C5
+needs = 4
+trigger = { use = 0x470030F5 }
+update = "none"
+tell = { table = 0x25002521, string = 0x21D1DD33 }
+to = "estate-duel1"
+prov = { from = "authored", by = "Dereth Network", note = "challenged again after a death, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "w-end"
+quest = 0x800001C5
+needs = 5
+trigger = { use = 0x470030F1 }
+update = "complete"
+tell = { table = 0x250029B2, string = 0x20D1DD33 }
+prov = { from = "authored", by = "Dereth Network", note = "back to the guardian once the sorcerer is slain, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }

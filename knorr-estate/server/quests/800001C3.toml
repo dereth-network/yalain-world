@@ -1,0 +1,104 @@
+# The first crypt quest, from players' guides; edit an authored pack instead.
+
+[[quest]]
+id = 0x800001C3
+id_name = "QuestCryptKeys"
+state = 0x6F000AA9
+challenge = 55
+xp_share = 0.05
+xp_share_level = 65
+min_level = 55
+duration = 36000
+once = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:17ea455c", confidence = "high", sample = { sessions = 4 }, fields = { xp_share = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide of the time gives it", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of 2013: 10 hours", confidence = "low" }, once = { from = "authored", by = "Dereth Network", note = "from a player's guide of 2013: one time only", confidence = "low" } } }
+
+[[step]]
+key = "w-given"
+quest = 0x800001C3
+needs = 0
+trigger = { use = 0x470030F5 }
+update = "bestow"
+tell = { table = 0x25002521, string = 0xBC637BFB }
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "z-proposition"
+quest = 0x800001C3
+needs = 1
+trigger = { use = 0x470030F5 }
+update = "advance"
+phase = 2
+tell = { table = 0x25002521, string = 0xD5439910 }
+prov = { from = "authored", by = "Dereth Network", note = "his proposition at the next use, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "a-tourist"
+quest = 0x800001C3
+needs = 2
+trigger = { use = 0x470030F1 }
+update = "advance"
+phase = 3
+tell = { table = 0x250029B2, string = 0x55439911 }
+prov = { from = "authored", by = "Dereth Network", note = "the guardian spoken to several times, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "a-crypts"
+quest = 0x800001C3
+needs = 3
+trigger = { use = 0x470030F1 }
+update = "advance"
+phase = 4
+tell = { table = 0x250029B2, string = 0xD5439911 }
+prov = { from = "authored", by = "Dereth Network", note = "the guardian spoken to several times, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "a-service"
+quest = 0x800001C3
+needs = 4
+trigger = { use = 0x470030F1 }
+update = "advance"
+phase = 5
+tell = { table = 0x250029B2, string = 0x4FECC684 }
+prov = { from = "authored", by = "Dereth Network", note = "he asks for the major-domo's task, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "a-keys"
+quest = 0x800001C3
+needs = 5
+trigger = { use = 0x470030F1 }
+update = "advance"
+phase = 6
+tell = { table = 0x250029B2, string = 0x06DE3768 }
+gives = [0x470015A8]
+requires = [{ quest = 0x800002B7, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the key once the wards quest is done, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "z-key"
+quest = 0x800001C3
+needs = 6
+trigger = { give = 0x470015A8, to = 0x470030F5 }
+update = "advance"
+phase = 7
+tell = { table = 0x25002521, string = 0x4AA037B6 }
+takes = [0x470015A8]
+prov = { from = "authored", by = "Dereth Network", note = "the key brought to the sorcerer, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "z-trap"
+quest = 0x800001C3
+needs = 7
+trigger = { use = 0x470030F5 }
+update = "none"
+tell = { table = 0x25002521, string = 0x99486B36 }
+to = "estate-ck-trap"
+prov = { from = "authored", by = "Dereth Network", note = "the tricked sorcerer sends a player among the Falatacot, as a player's guide of 2013 says he does as the key is given; his line for it in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "a-end"
+quest = 0x800001C3
+needs = 7
+trigger = { use = 0x470030F1 }
+update = "complete"
+tell = { table = 0x250029B2, string = 0xD5439913 }
+prov = { from = "authored", by = "Dereth Network", note = "back to the guardian, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }

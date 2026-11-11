@@ -1,0 +1,40 @@
+# The guardian's slaughter, from players' guides; edit an authored pack instead.
+
+[[quest]]
+id = 0x800001C4
+id_name = "QuestCKSlaughter"
+state = 0x6F000AAA
+challenge = 55
+duration = 10800
+retry = 172800
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:0bbddedf", confidence = "high", sample = { sessions = 4 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of 2013: 3 hours", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of 2013: 2 days", confidence = "low" } } }
+
+[[step]]
+key = "s-given"
+quest = 0x800001C4
+needs = 0
+trigger = { use = 0x470030F1 }
+update = "bestow"
+tell = { table = 0x250029B2, string = 0x24D1DD33 }
+requires = [{ quest = 0x800001C5, phase = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the guardian gives it as the second crypt quest's first task, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "s-retry"
+quest = 0x800001C4
+needs = 0
+trigger = { use = 0x470030F1 }
+update = "bestow"
+tell = { table = 0x250029B2, string = 0x8CDF90C9 }
+requires = [{ quest = 0x800001C5, phase = 2 }]
+prov = { from = "authored", by = "Dereth Network", note = "given again while the second crypt quest waits on it, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "s-again"
+quest = 0x800001C4
+needs = 0
+trigger = { use = 0x470030F1 }
+update = "bestow"
+tell = { table = 0x250029B2, string = 0x8CDF90C9 }
+requires = [{ quest = 0x800001C5, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "given again once the second crypt quest is done, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }

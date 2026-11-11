@@ -1092,4 +1092,29 @@ items = ["step 0x80000096 w-given"]
 [[override]]
 pack = "knorr-estate"
 over = "quest-catalog"
-items = ["quest 0x800002B7"]
+items = ["quest 0x800001C3", "quest 0x800001C4", "quest 0x800001C5", "quest 0x800002B7"]
+
+[[override]]
+pack = "knorr-estate"
+over = "quest-pay"
+items = ["quest 0x800001C3", "quest 0x800001C5"]
+
+[[override]]
+pack = "knorr-estate"
+over = "quest-pay-levels"
+items = ["quest 0x800001C3", "quest 0x800001C5"]
+
+[[override]]
+pack = "knorr-estate"
+over = "guide-givers"
+items = ["step 0x800001C3 w-given", "step 0x800001C5 w-given", "step 0x800001C5 w-end"]
+
+[[override]]
+pack = "knorr-estate"
+over = "source-givers"
+items = ["step 0x800001C4 s-given"]
+
+[[override]]
+pack = "knorr-estate"
+over = "guide-people"
+items = ["object g-15a9@CA33"]

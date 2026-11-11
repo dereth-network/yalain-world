@@ -1,0 +1,11 @@
+# The first crypt quest's trap, from players' guides; edit an authored pack instead.
+
+[[camp]]
+key = "estate-ck-trap"
+cell = 0xC8350023
+at = [96.00, 50.00, 75.95]
+radius = 6.0
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002412, weight = 1 }, { template = 0x470029DC, weight = 1 }, { template = 0x47002302, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a small group of Falatacot where the sorcerer sends a player who brings him the key, as a player's guide of 2013 says; three of the estate's kinds; the land's height; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
