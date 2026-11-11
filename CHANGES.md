@@ -17,6 +17,7 @@
 - The estate's ward towers and crypt quests can now be done. New pack `knorr-estate/`.
 - The Skyport's mysteries quest can now be done, through its four dungeons. New pack `knorr-mysteries/`.
 - The Skyport supplymaster's grain quest can now be done. New pack `knorr-siege-stores/`.
+- The Desolation south of the Shield Wall can now be reached, with its gate, outpost and postings. New pack `knorr-desolation/`.
 
 ## v0.36.0
 

@@ -1,0 +1,163 @@
+# The outpost's tunnels: its rooms' doors, the shapers' servitor, the cubes, the stylus, the wells and the key gearknights, from players' guides; edit an authored pack instead.
+
+[[object]]
+key = "desolation-storeroom-door"
+kind = "static"
+template = 0x4700117F
+cell = 0x0AC4017F
+at = [-225.11, 159.21, 81.81]
+rotation = [-0.382683, 0, 0, 0.92388]
+to = "desolation-storeroom-in"
+locked = true
+lock = 0x40000090
+prov = { from = "authored", by = "Dereth Network", note = "the store room's door, behind the place outside it; its key opens it, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[object]]
+key = "desolation-storeroom-exit"
+kind = "static"
+template = 0x4700117F
+cell = 0x0AC4018F
+at = [206.40, -200.00, 100.37]
+rotation = [0.707107, 0, 0, 0.707107]
+to = "desolation-storeroom-out"
+prov = { from = "authored", by = "Dereth Network", note = "the store room's door from inside, behind its landing, to the tunnels; no recording", confidence = "low" }
+
+[[object]]
+key = "desolation-maproom-door"
+kind = "static"
+template = 0x4700117F
+cell = 0x0AC4013E
+at = [-81.20, -262.40, 81.80]
+rotation = [1, 0, 0, 0]
+to = "desolation-maproom-in"
+locked = true
+lock = 0x40000091
+prov = { from = "authored", by = "Dereth Network", note = "the room of the wells's door, behind the place outside it; its key opens it, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[object]]
+key = "desolation-maproom-exit"
+kind = "static"
+template = 0x4700117F
+cell = 0x0AC4018B
+at = [0.00, 204.00, 100.37]
+rotation = [0, 0, 0, 1]
+to = "desolation-maproom-out"
+prov = { from = "authored", by = "Dereth Network", note = "the room of the wells's door from inside, behind its landing, to the tunnels; no recording", confidence = "low" }
+
+[[object]]
+key = "desolation-shop-door"
+kind = "static"
+template = 0x4700117F
+cell = 0x0AC40155
+at = [-226.71, -111.61, 81.82]
+rotation = [0.92388, 0, 0, -0.382683]
+to = "desolation-shop-in"
+prov = { from = "authored", by = "Dereth Network", note = "the shapers' room's door, behind the place outside it; no key needed, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[object]]
+key = "desolation-shop-exit"
+kind = "static"
+template = 0x4700117F
+cell = 0x0AC40190
+at = [180.00, 175.75, 100.37]
+rotation = [1, 0, 0, 0]
+to = "desolation-shop-out"
+prov = { from = "authored", by = "Dereth Network", note = "the shapers' room's door from inside, behind its landing, to the tunnels; no recording", confidence = "low" }
+
+[[object]]
+key = "desolation-tibri-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x0AC40125
+at = [355.81, -109.59, 146.95]
+rotation = [0.92388, 0, 0, 0.382684]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "desolation-tibri-out"
+prov = { from = "authored", by = "Dereth Network", note = "the tunnels' way out, beside the landing, to the surface; no recording", confidence = "low" }
+
+[[object]]
+key = "desolation-foreman"
+kind = "npc"
+template = 0x4700318A
+cell = 0x0AC40190
+at = [180.00, 183.75, 100.37]
+rotation = [-0, 0, 0, 1]
+prov = { from = "authored", by = "Dereth Network", note = "the shapers' servitor, as the wiki's walkthrough of 2013 says; where in it a guess; no recording", confidence = "low" }
+
+[[object]]
+key = "desolation-block-well"
+kind = "static"
+template = 0x47001690
+cell = 0x0AC4018B
+at = [6.00, 192.00, 100.37]
+rotation = [0, 0, 0, 1]
+prov = { from = "authored", by = "Dereth Network", note = "the block runes' well in the room of the wells, as the wiki's walkthrough of 2013 says; where in it a guess", confidence = "low" }
+
+[[object]]
+key = "desolation-dot-well"
+kind = "static"
+template = 0x47001691
+cell = 0x0AC4018B
+at = [-6.00, 192.00, 100.37]
+rotation = [0, 0, 0, 1]
+prov = { from = "authored", by = "Dereth Network", note = "the dot runes' well in the room of the wells, as the wiki's walkthrough of 2013 says; where in it a guess", confidence = "low" }
+
+[[camp]]
+key = "desolation-runic-cube"
+cell = 0x0AC4018F
+at = [198.40, -200.00, 100.37]
+spots = [{ cell = 0x0AC4018F, at = [198.40, -200.00, 100.37] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47000E5E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the cube to engrave lying in the store room, as the wiki's walkthrough of 2013 says; where in it a guess", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "desolation-mnemonic-cube"
+cell = 0x0AC4018F
+at = [194.40, -208.00, 100.37]
+spots = [{ cell = 0x0AC4018F, at = [194.40, -208.00, 100.37] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700168D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the blank cube for the cipher lying at the back left of the store room, as the wiki's walkthrough of 2013 says", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "desolation-stylus"
+cell = 0x0AC4018B
+at = [-4.00, 196.00, 100.37]
+spots = [{ cell = 0x0AC4018B, at = [-4.00, 196.00, 100.37] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47001693, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a stylus lying on a table at the map room's side, as the wiki's walkthrough of 2013 says; where a guess", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "desolation-key-knights-1"
+cell = 0x0AC4010B
+at = [-30.00, 4.00, 81.82]
+spots = [{ cell = 0x0AC4010B, at = [-30.00, 4.00, 81.82] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470024A6, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outpost tunnels' gearknights, whose corpses hold the rooms' keys, as the wiki's walkthrough of 2013 says; where a guess; the kind a 2005 recording held at the wall", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "desolation-key-knights-2"
+cell = 0x0AC4017F
+at = [-206.00, 140.00, 81.86]
+spots = [{ cell = 0x0AC4017F, at = [-206.00, 140.00, 81.86] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470024A6, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outpost tunnels' gearknights, whose corpses hold the rooms' keys, as the wiki's walkthrough of 2013 says; where a guess; the kind a 2005 recording held at the wall", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "desolation-key-knights-3"
+cell = 0x0AC4013E
+at = [-79.00, -235.00, 81.80]
+spots = [{ cell = 0x0AC4013E, at = [-79.00, -235.00, 81.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470024A6, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outpost tunnels' gearknights, whose corpses hold the rooms' keys, as the wiki's walkthrough of 2013 says; where a guess; the kind a 2005 recording held at the wall", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

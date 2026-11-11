@@ -1,0 +1,336 @@
+# Tibri Outpost, from players' guides; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000298
+id_name = "QuestTibriOutpost"
+state = 0x6F000B85
+challenge = 0
+once = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:13ae53ff", confidence = "high", sample = { sessions = 3 }, fields = { once = { from = "authored", by = "Dereth Network", note = "not repeatable, as a player's guide says", confidence = "low" } } }
+
+[[step]]
+key = "t-tunnel-0"
+quest = 0x80000298
+needs = 0
+trigger = { use = 0x4700315B }
+update = "none"
+tell = { table = 0x250029EF, string = 0xF03FF167 }
+requires = [{ quest = 0x8000027B, done = true }]
+to = "desolation-tunnel-in"
+prov = { from = "authored", by = "Dereth Network", note = "the sentinel sends a player past the test, not yet registered at the gate, into the tunnel, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-tunnel-1"
+quest = 0x80000298
+needs = 1
+trigger = { use = 0x4700315B }
+update = "none"
+tell = { table = 0x250029EF, string = 0xF03FF167 }
+requires = [{ quest = 0x8000027B, done = true }]
+to = "desolation-tunnel-in"
+prov = { from = "authored", by = "Dereth Network", note = "the sentinel sends a player past the test, not yet registered at the gate, into the tunnel, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-tunnel-2"
+quest = 0x80000298
+needs = 2
+trigger = { use = 0x4700315B }
+update = "none"
+tell = { table = 0x250029EF, string = 0xF03FF167 }
+requires = [{ quest = 0x8000027B, done = true }]
+to = "desolation-tunnel-in"
+prov = { from = "authored", by = "Dereth Network", note = "the sentinel sends a player past the test, not yet registered at the gate, into the tunnel, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-tunnel-3"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x4700315B }
+update = "none"
+tell = { table = 0x250029EF, string = 0xF03FF167 }
+requires = [{ quest = 0x8000027B, done = true }]
+to = "desolation-tunnel-in"
+prov = { from = "authored", by = "Dereth Network", note = "the sentinel sends a player past the test, not yet registered at the gate, into the tunnel, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-tunnel-4"
+quest = 0x80000298
+needs = 4
+trigger = { use = 0x4700315B }
+update = "none"
+tell = { table = 0x250029EF, string = 0xF03FF167 }
+requires = [{ quest = 0x8000027B, done = true }]
+to = "desolation-tunnel-in"
+prov = { from = "authored", by = "Dereth Network", note = "the sentinel sends a player past the test, not yet registered at the gate, into the tunnel, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-tunnel-5"
+quest = 0x80000298
+needs = 5
+trigger = { use = 0x4700315B }
+update = "none"
+tell = { table = 0x250029EF, string = 0xF03FF167 }
+requires = [{ quest = 0x8000027B, done = true }]
+to = "desolation-tunnel-in"
+prov = { from = "authored", by = "Dereth Network", note = "the sentinel sends a player past the test, not yet registered at the gate, into the tunnel, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-given"
+quest = 0x80000298
+needs = 0
+trigger = { use = 0x4700317A }
+update = "bestow"
+tell = { table = 0x25002A00, string = 0x68B77630 }
+requires = [{ quest = 0x8000027B, done = true }, { quest = 0x80000298, free = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the leftenant greets a player through the tunnel, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-register"
+quest = 0x80000298
+needs = 1
+trigger = { use = 0x4700317A }
+update = "advance"
+phase = 2
+tell = { table = 0x25002A00, string = 0x6AB77630 }
+prov = { from = "authored", by = "Dereth Network", note = "the leftenant tells of registering with the gate, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-ruins"
+quest = 0x80000298
+needs = 2
+trigger = { use = 0x4700317A }
+update = "none"
+tell = { table = 0x25002A00, string = 0x6CB77630 }
+prov = { from = "authored", by = "Dereth Network", note = "the leftenant sends a player to the outpost's ruins for a cube, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-foreman"
+quest = 0x80000298
+needs = 2
+trigger = { use = 0x4700318A }
+update = "advance"
+phase = 3
+tell = { table = 0x25002A07, string = 0xA497D214 }
+prov = { from = "authored", by = "Dereth Network", note = "the shapers' servitor wants the cube's instructions, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-block-well"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x47001693, on = 0x47001690 }
+update = "none"
+gives = [0x4700168E]
+takes = [0x47001693]
+prov = { from = "authored", by = "Dereth Network", note = "the stylus in the block well takes its rune, as the well's text and the wiki's walkthrough of 2013 say (the well's table plays its own behavior, so a step makes it)", confidence = "low" }
+
+[[step]]
+key = "t-dot-well"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x47001693, on = 0x47001691 }
+update = "none"
+gives = [0x47001692]
+takes = [0x47001693]
+prov = { from = "authored", by = "Dereth Network", note = "the stylus in the dot well takes its rune, as the well's text and the wiki's walkthrough of 2013 say (the well's table plays its own behavior, so a step makes it)", confidence = "low" }
+
+[[step]]
+key = "t-rune-1"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x4700168E, on = 0x47000E5E }
+update = "none"
+gives = [0x47001693]
+takes = [0x47000E5E]
+prov = { from = "authored", by = "Dereth Network", note = "the code's rune 1 engraved: the cube taken for its next look (the item's interaction row) and the plain stylus back, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-rune-2"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x4700168E, on = 0x47000E53 }
+update = "none"
+gives = [0x47001693]
+takes = [0x47000E53]
+prov = { from = "authored", by = "Dereth Network", note = "the code's rune 2 engraved: the cube taken for its next look (the item's interaction row) and the plain stylus back, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-rune-3"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x4700168E, on = 0x47000E55 }
+update = "none"
+gives = [0x47001693]
+takes = [0x47000E55]
+prov = { from = "authored", by = "Dereth Network", note = "the code's rune 3 engraved: the cube taken for its next look (the item's interaction row) and the plain stylus back, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-rune-4"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x47001692, on = 0x47000E56 }
+update = "none"
+gives = [0x47001693]
+takes = [0x47000E56]
+prov = { from = "authored", by = "Dereth Network", note = "the code's rune 4 engraved: the cube taken for its next look (the item's interaction row) and the plain stylus back, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-rune-5"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x47001692, on = 0x47000E57 }
+update = "none"
+gives = [0x47001693]
+takes = [0x47000E57]
+prov = { from = "authored", by = "Dereth Network", note = "the code's rune 5 engraved: the cube taken for its next look (the item's interaction row) and the plain stylus back, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-rune-6"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x47001692, on = 0x47000E59 }
+update = "none"
+gives = [0x47001693]
+takes = [0x47000E59]
+prov = { from = "authored", by = "Dereth Network", note = "the code's rune 6 engraved: the cube taken for its next look (the item's interaction row) and the plain stylus back, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-rune-7"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x4700168E, on = 0x47000E5B }
+update = "none"
+gives = [0x47001693]
+takes = [0x47000E5B]
+prov = { from = "authored", by = "Dereth Network", note = "the code's rune 7 engraved: the cube taken for its next look (the item's interaction row) and the plain stylus back, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-rune-8"
+quest = 0x80000298
+needs = 3
+trigger = { use = 0x47001692, on = 0x47000E5C }
+update = "none"
+gives = [0x47001693]
+takes = [0x47000E5C]
+prov = { from = "authored", by = "Dereth Network", note = "the code's rune 8 engraved: the cube taken for its next look (the item's interaction row) and the plain stylus back, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-instructions"
+quest = 0x80000298
+needs = 3
+trigger = { give = 0x47000E5D, to = 0x4700318A }
+update = "advance"
+phase = 4
+tell = { table = 0x25002A07, string = 0x1114F315 }
+takes = [0x47000E5D]
+prov = { from = "authored", by = "Dereth Network", note = "the engraved cube handed in, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-wrong-e5e"
+quest = 0x80000298
+needs = 3
+trigger = { give = 0x47000E5E, to = 0x4700318A }
+update = "none"
+tell = { table = 0x25002A07, string = 0xD2CC702A }
+prov = { from = "authored", by = "Dereth Network", note = "a cube not engraved with the whole code handed back, with the Foreman's own line; as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-wrong-e53"
+quest = 0x80000298
+needs = 3
+trigger = { give = 0x47000E53, to = 0x4700318A }
+update = "none"
+tell = { table = 0x25002A07, string = 0xD2CC702A }
+prov = { from = "authored", by = "Dereth Network", note = "a cube not engraved with the whole code handed back, with the Foreman's own line; as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-wrong-e55"
+quest = 0x80000298
+needs = 3
+trigger = { give = 0x47000E55, to = 0x4700318A }
+update = "none"
+tell = { table = 0x25002A07, string = 0xD2CC702A }
+prov = { from = "authored", by = "Dereth Network", note = "a cube not engraved with the whole code handed back, with the Foreman's own line; as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-wrong-e56"
+quest = 0x80000298
+needs = 3
+trigger = { give = 0x47000E56, to = 0x4700318A }
+update = "none"
+tell = { table = 0x25002A07, string = 0xD2CC702A }
+prov = { from = "authored", by = "Dereth Network", note = "a cube not engraved with the whole code handed back, with the Foreman's own line; as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-wrong-e57"
+quest = 0x80000298
+needs = 3
+trigger = { give = 0x47000E57, to = 0x4700318A }
+update = "none"
+tell = { table = 0x25002A07, string = 0xD2CC702A }
+prov = { from = "authored", by = "Dereth Network", note = "a cube not engraved with the whole code handed back, with the Foreman's own line; as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-wrong-e58"
+quest = 0x80000298
+needs = 3
+trigger = { give = 0x47000E58, to = 0x4700318A }
+update = "none"
+tell = { table = 0x25002A07, string = 0xD2CC702A }
+prov = { from = "authored", by = "Dereth Network", note = "a cube not engraved with the whole code handed back, with the Foreman's own line; as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-wrong-e59"
+quest = 0x80000298
+needs = 3
+trigger = { give = 0x47000E59, to = 0x4700318A }
+update = "none"
+tell = { table = 0x25002A07, string = 0xD2CC702A }
+prov = { from = "authored", by = "Dereth Network", note = "a cube not engraved with the whole code handed back, with the Foreman's own line; as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-wrong-e5a"
+quest = 0x80000298
+needs = 3
+trigger = { give = 0x47000E5A, to = 0x4700318A }
+update = "none"
+tell = { table = 0x25002A07, string = 0xD2CC702A }
+prov = { from = "authored", by = "Dereth Network", note = "a cube not engraved with the whole code handed back, with the Foreman's own line; as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-wrong-e5b"
+quest = 0x80000298
+needs = 3
+trigger = { give = 0x47000E5B, to = 0x4700318A }
+update = "none"
+tell = { table = 0x25002A07, string = 0xD2CC702A }
+prov = { from = "authored", by = "Dereth Network", note = "a cube not engraved with the whole code handed back, with the Foreman's own line; as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-wrong-e5c"
+quest = 0x80000298
+needs = 3
+trigger = { give = 0x47000E5C, to = 0x4700318A }
+update = "none"
+tell = { table = 0x25002A07, string = 0xD2CC702A }
+prov = { from = "authored", by = "Dereth Network", note = "a cube not engraved with the whole code handed back, with the Foreman's own line; as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "t-cipher"
+quest = 0x80000298
+needs = 4
+trigger = { give = 0x4700168D, to = 0x4700318A }
+update = "advance"
+phase = 5
+tell = { table = 0x25002A07, string = 0xA81CEC00 }
+gives = [0x4700168C]
+takes = [0x4700168D]
+prov = { from = "authored", by = "Dereth Network", note = "the blank cube made into the ciphered one, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "t-gate"
+quest = 0x80000298
+needs = 5
+trigger = { use = 0x4700168C, on = 0x470011AB }
+update = "complete"
+takes = [0x4700168C]
+prov = { from = "authored", by = "Dereth Network", note = "the ciphered cube used on the gate registers its player and is used up, as its own table and the wiki's walkthrough of 2013 say", confidence = "low" }

@@ -1,0 +1,10 @@
+# How the postings boards give the postings no other pack gives, from the boards' own lists; edit an authored pack instead.
+
+[[step]]
+key = "g1"
+quest = 0x80000250
+needs = 0
+trigger = { use = 0x47003180 }
+update = "bestow"
+requires = [{ quest = 0x8000028C, phase = 0 }, { quest = 0x8000028B, free = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the board whose description lists it, now that the creatures it counts have camps; one at a time, with the board's wait", confidence = "medium" }

@@ -1,0 +1,58 @@
+# The wall's test, from a 2005 recording and players' guides; edit an authored pack instead.
+
+[[quest]]
+id = 0x8000027B
+id_name = "QuestPiercingTheShield"
+state = 0x6F000B65
+challenge = 65
+min_level = 65
+once = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:d3ef944b", confidence = "high", sample = { sessions = 3 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "as a player's guide gives it", confidence = "low" }, once = { from = "authored", by = "Dereth Network", note = "not repeatable, as a player's guide says", confidence = "low" } } }
+
+[[step]]
+key = "p-given"
+quest = 0x8000027B
+needs = 0
+trigger = { use = 0x4700315B }
+update = "bestow"
+tell = { table = 0x250029EF, string = 0xED1C4F5A }
+requires = [{ quest = 0x8000027B, free = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the sentinel offers the test, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "p-ready"
+quest = 0x8000027B
+needs = 1
+trigger = { use = 0x4700315B }
+update = "advance"
+phase = 2
+tell = { table = 0x250029EF, string = 0x7F1261EC }
+prov = { from = "authored", by = "Dereth Network", note = "the sentinel readies the test, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "p-test"
+quest = 0x8000027B
+needs = 2
+trigger = { use = 0x4700315B }
+update = "none"
+tell = { table = 0x250029EF, string = 0x7F1261F4 }
+to = "desolation-duel-in"
+prov = { from = "authored", by = "Dereth Network", note = "the sentinel sends a player to the combat test, as a 2005 recording and the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "p-won"
+quest = 0x8000027B
+needs = 2
+trigger = { kill = 0x4700249D, camp = "desolation-automaton" }
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "the group gearknight of the combat test killed, which opens the way into the tunnel, as the wiki's walkthrough of 2013 says", confidence = "low" }
+
+[[step]]
+key = "p-end"
+quest = 0x8000027B
+needs = 3
+trigger = { use = 0x4700315C }
+update = "complete"
+tell = { table = 0x250029F0, string = 0x7F1261FC }
+prov = { from = "authored", by = "Dereth Network", note = "the expedition's greeter greets a player through the tunnel, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
