@@ -1,0 +1,21 @@
+# The hidden timer the hatching waits on, given as the tyrant takes the egg into her nest.
+
+[[quest]]
+id = 0x40000265
+id_name = "QuestHeroMountEggTimer"
+state = 0x700030C3
+challenge = 50
+duration = 14400
+visible = false
+prov = { from = "derived", rule = "quest-setup-static", record = 0x700030C3, confidence = "high", fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x700030C3, confidence = "medium", note = "the install's setup gives four hours; a players' guide of the time says five hours of play, offline time not counting" } } }
+
+[[step]]
+key = "t-sat-on"
+quest = 0x40000265
+needs = 0
+trigger = { give = 0x470014C8, to = 0x47002FFF }
+update = "bestow"
+takes = [0x470014C8]
+requires = [{ quest = 0x40000263, phase = 3 }]
+text = { table = 0x2500293E, string = 0x36D50738 }
+prov = { from = "authored", by = "Dereth Network", note = "a players' guide of the time: the cleansed egg handed to her, who keeps it in her nest, as her line says; the wait starts then; no recording", confidence = "low" }

@@ -1,0 +1,48 @@
+# The egg's hatching at the tyrant's nest, as a players' guide of the time tells it: used while she
+# sits on it, she sits on; used once the wait has run out, it hatches into one of three eggs, each
+# as likely.
+
+[[step]]
+key = "h-sitting"
+quest = 0x40000263
+needs = 3
+trigger = { use = 0x47002FFF }
+update = "none"
+requires = [{ quest = 0x40000265, phase = 1 }]
+text = { table = 0x2500293E, string = 0x27A9EDCA }
+prov = { from = "authored", by = "Dereth Network", note = "her line for nudging the egg and sitting back down on it, said while the wait runs; no recording", confidence = "low" }
+
+[[step]]
+key = "h-hatched-1"
+quest = 0x40000263
+needs = 3
+trigger = { use = 0x47002FFF }
+update = "complete"
+requires = [{ quest = 0x40000265, failed = true }]
+gives = [0x470014CA]
+text = { table = 0x2500293E, string = 0x107CE3B6 }
+chance = 0.3333
+prov = { from = "authored", by = "Dereth Network", note = "a players' guide of the time: used once the hours are over, the egg hatches and the quest is done; one of three colors, as 2017's players held all three", confidence = "low" }
+
+[[step]]
+key = "h-hatched-2"
+quest = 0x40000263
+needs = 3
+trigger = { use = 0x47002FFF }
+update = "complete"
+requires = [{ quest = 0x40000265, failed = true }]
+gives = [0x470014CB]
+text = { table = 0x2500293E, string = 0x107CE3B6 }
+chance = 0.5
+prov = { from = "authored", by = "Dereth Network", note = "as the first color's step, for the second; tried only when the first did not come up, so each color is as likely", confidence = "low" }
+
+[[step]]
+key = "h-hatched-3"
+quest = 0x40000263
+needs = 3
+trigger = { use = 0x47002FFF }
+update = "complete"
+requires = [{ quest = 0x40000265, failed = true }]
+gives = [0x470014CC]
+text = { table = 0x2500293E, string = 0x107CE3B6 }
+prov = { from = "authored", by = "Dereth Network", note = "as the first color's step, for the third, when neither of the others came up", confidence = "low" }
