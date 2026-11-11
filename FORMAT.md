@@ -455,9 +455,11 @@ has its rows alone.
 
 **`[[refining]]`**: what a refining recipe yields. `recipe` (the name of the recipe's script package, such as
 `SteelRefiningRecipe`; every recipe of that package is the row's), `product` (the template of what it yields, added to
-the player's stack) and `full_at` (a craft skill level from 2: a refining yields a third of what it takes at level 1,
-growing evenly to all of it at this level; 150 when left out). A refining recipe no row names makes nothing of its
-own. A world with no `[[refining]]` rows has the server's own ten; a world with any has its rows alone.
+the player's stack), `full_at` (a craft skill level from 2 at which a refining yields all it takes; 150 when left out)
+and `start` (a percent from 0 to 100: what a refining yields of what it takes before any skill; 34 when left out). The
+yield grows evenly from `start` to all of it at `full_at`, rounded down: 34 and 150 give 34 of 100 at level 2 and 78 at
+level 100. A refining recipe no row names makes nothing of its own. A world with no `[[refining]]` rows has the
+server's own ten; a world with any has its rows alone.
 
 ```toml
 # <pack>/server/crafting.toml
