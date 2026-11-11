@@ -10,6 +10,7 @@
 - The Foundry's quests can now be done, which opens its doors and its forge. Pack `foundry-chain/`.
 - The egg from the plateau can now be hatched for a hero's mount. Pack `egg-hatching/`.
 - The quest for the Foundry's gates can now be done, down the houses' trap doors. Pack `foundry-gates/`.
+- The last of the Foundry houses' masters now carries his report. Pack `foundry-houses/`.
 
 ## v0.36.0
 
