@@ -321,6 +321,7 @@ back, with the person's `refuse-give` line naming the quest and the `item` if it
 | `{ take = T }` | takes an item of template T |
 | `{ kill = T }` | kills a creature of template T (the effects its template names at its death need no step: they move their quests whatever a step says, on any quest no step moved at that kill) |
 | `{ kill = T, camp = K }` | kills a creature of template T that the one camp K made: its `key`, or `key@XXYY` where camps of several landblocks share the key; the camp must make T. A quest a step of T alone moved at that kill isn't moved again |
+| `{ kill = T, within = M }` | is within M meters (a whole number above 0) of a creature of template T as it dies, whoever kills it (another creature too): every player in the world, out of portal space and alive that near is moved, each alone |
 | `{ done = Q }` | completes quest Q |
 | `{ given = Q }` | is given quest Q, shown or kept hidden, by whatever gives it |
 
@@ -917,7 +918,10 @@ their `AI_NPCTable`): `heals_kin` (true: a healer of the table heals its badly h
 
 **`[[friend_table]]`**: what the world says of the creatures of a friend table, by its number (`table`, their
 `AI_LoveTable`): `attacks_first` (false: they never attack a player first, only one that attacks them or that a
-concealing effect makes hated). A creature whose template says it never attacks first never does, whatever its table.
+concealing effect makes hated) and `fights` (the friend tables, by number, whose creatures they take on: the nearest
+within their perception, nearer than any player they would take on, while a player is in their landblock or one beside
+it; they strike it as a pet is struck, and turn from it only to a player that hurts them). A row gives at least one of
+the two. A creature whose template says it never attacks first never does, whatever its table.
 
 **`[[creature]]`**: what the world says of the creatures of a `template`: its shooting rhythm, `shot_gap` (the gap
 between its shots, times its shot's time scale) and `windup` (from the start of its shot until the missile leaves,
@@ -925,8 +929,10 @@ at the creatures' median time scale 1.296), in seconds above 0, the two together
 it puts on each player that comes within its perception, once each time the player comes in, whether it rests or
 fights, with `mark_lines`, the line it says aloud as it does, naming the player: `{ race, line }`, one to a race (1
 human, 2 Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; with no race, for any other), `line` a string reference `{ table,
-string }`; and `only_hated` (true: it takes on only a player a concealing effect makes it hate, not one that strikes
-it nor one another creature near it fights, and gives up on one that no longer holds the effect). A row gives at
+string }`; `only_hated` (true: it takes on only a player a concealing effect makes it hate, not one that strikes
+it nor one another creature near it fights, and gives up on one that no longer holds the effect); and
+`players_kept_out` (true: players and their pets may not harm it, an attack or a skill on it refused), with
+`kept_out_line`, the line a player's attack on it is told (a string reference `{ table, string }`). A row gives at
 least one of these. A shooter with no rhythm shoots with a gap of 1.63 and a windup of 0.55.
 
 ```toml
@@ -963,12 +969,25 @@ prov = { from = "authored", by = "you" }
 template = 0x47002C40
 only_hated = true
 prov = { from = "authored", by = "you" }
+
+[[friend_table]]
+table = 0x4B
+fights = [0x16, 0x4C]
+prov = { from = "authored", by = "you" }
+
+[[creature]]
+template = 0x4700163D
+players_kept_out = true
+kept_out_line = { table = 0x250025F5, string = 0x383D0528 }
+prov = { from = "authored", by = "you" }
 ```
 
 A world with no rows of one of these kinds has the server's own of that kind (those of `creature-regard/` and
 `creature-rhythm/`), and its server says so at start. A kind's rows are taken whole, never mixed with the server's.
-A world whose `[[creature]]` rows give no `marks` has no creature mark a player, and one whose rows give no
-`only_hated` has none that takes on only the hated; its server names such a field at start.
+A world whose `[[creature]]` rows give no `marks` has no creature mark a player, one whose rows give no
+`only_hated` has none that takes on only the hated, and one whose rows give no `players_kept_out` has none players
+may not harm; one whose `[[friend_table]]` rows give no `fights` has no creature fight another that is not a pet; its
+server names such a field at start.
 
 **`[[remove]]`**: `items` (or `item`), the items a pack takes away.
 
