@@ -1,0 +1,59 @@
+# Siege Stores: the harvest, the baker and the bread taken back; edit an authored pack instead.
+
+[[step]]
+key = "s-harvested"
+quest = 0x8000027C
+needs = 3
+trigger = { take = 0x47001666 }
+update = "advance"
+phase = 4
+prov = { from = "authored", by = "Dereth Network", note = "the grain harvested moves it on, as its journal says", confidence = "low" }
+
+[[step]]
+key = "s-baked"
+quest = 0x8000027C
+needs = 4
+trigger = { give = 0x47001666, to = 0x4700316F }
+update = "advance"
+phase = 5
+tell = { table = 0x250029FA, string = 0x23887E1D }
+takes = [0x47001666]
+gives = [0x47001665]
+wants = 1
+prov = { from = "authored", by = "Dereth Network", note = "the baker bakes a sheaf into a bread, as a player guide and her own line say", confidence = "low" }
+
+[[step]]
+key = "s-baked-more"
+quest = 0x8000027C
+needs = 5
+trigger = { give = 0x47001666, to = 0x4700316F }
+update = "none"
+tell = { table = 0x250029FA, string = 0xC5B860A7 }
+takes = [0x47001666]
+gives = [0x47001665]
+wants = 1
+prov = { from = "authored", by = "Dereth Network", note = "the baker bakes each further sheaf, as a player guide and her own line say", confidence = "low" }
+
+[[step]]
+key = "s-ended"
+quest = 0x8000027C
+needs = 5
+trigger = { give = 0x47001665, to = 0x4700315E }
+update = "complete"
+tell = { table = 0x250029F1, string = 0x4DAF1F71 }
+takes = [0x47001665]
+wants = 1
+prov = { from = "authored", by = "Dereth Network", note = "one bread taken back ends it, as a player guide and her own line say", confidence = "low" }
+
+[[step]]
+key = "s-more-bread"
+quest = 0x8000027C
+needs = 0
+trigger = { give = 0x47001665, to = 0x4700315E }
+update = "none"
+tell = { table = 0x250029F1, string = 0xA3D7B3BA }
+xp = 30000
+takes = [0x47001665]
+wants = 1
+requires = [{ quest = 0x8000027C, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "each further bread taken back pays 30,000, as a player guide says", confidence = "low" }
