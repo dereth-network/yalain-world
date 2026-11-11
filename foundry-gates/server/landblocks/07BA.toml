@@ -1,0 +1,23 @@
+# The house's hatch down, and its basement's way out; no recording.
+
+[[object]]
+key = "inquisitor-trap-door"
+kind = "static"
+template = 0x4700119F
+cell = 0x07BA0100
+at = [-3.93, -13.55, 140.17]
+rotation = [1, 0, 0, 0]
+to = "inquisitor-basement"
+requires = { quest = 0x8000029E, done = true }
+prov = { from = "authored", by = "Dereth Network", note = "in the room, 4 m from its landing, away from its way out (a guess); down to the basement; open once the gates' quest is done, as guides send players here after it; no recording", confidence = "low" }
+
+[[object]]
+key = "inquisitor-basement-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x07BA014C
+at = [2.03, -9.84, 116.17]
+rotation = [-1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "acmaps-camps:house-inquisitor-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out to the surface 2 m beside the basement's landing, as players' guides take one after the boss; no recording", confidence = "low" }

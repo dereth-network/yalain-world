@@ -9,6 +9,7 @@
 - An egg, a hoard map and a bean now have sources. Pack `quest-item-sources/`.
 - The Foundry's quests can now be done, which opens its doors and its forge. Pack `foundry-chain/`.
 - The egg from the plateau can now be hatched for a hero's mount. Pack `egg-hatching/`.
+- The quest for the Foundry's gates can now be done, down the houses' trap doors. Pack `foundry-gates/`.
 
 ## v0.36.0
 

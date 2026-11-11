@@ -1,0 +1,44 @@
+# The tower's master who holds a glyph, its way out, its hatch down and its basement's way out; no recording.
+
+[[object]]
+key = "tower-trap-door"
+kind = "static"
+template = 0x4700119F
+cell = 0x07C00109
+at = [-3.54, 3.18, 101.00]
+rotation = [1, 0, 0, 0]
+to = "tower-basement"
+requires = { quest = 0x8000029C, underway = true }
+prov = { from = "authored", by = "Dereth Network", note = "on the bottom floor, above the hatch the client draws in the basement's ceiling; down to the basement; open from the gates' quest's second phase, which gives its second door; no recording", confidence = "low" }
+
+[[object]]
+key = "tower-basement-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x07C00117
+at = [2.00, 0.00, 90.36]
+rotation = [0, 0, 0, 1]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "tower-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out to the surface 2 m beside the basement's landing, as players' guides take one after the boss; no recording", confidence = "low" }
+
+[[object]]
+key = "house-tower-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x07C00109
+at = [2.00, 0.00, 101.00]
+rotation = [0.707107, 0, 0, -0.707107]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "tower-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out beside the landing, to the surface end the list of destinations gives; no recording", confidence = "low" }
+
+[[camp]]
+key = "elish"
+cell = 0x07C00153
+at = [39.00, 10.00, 40.37]
+spots = [{ cell = 0x07C00153, at = [39.00, 10.00, 40.37] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002CEC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the house's master, at the spot a list of the game's destinations gives for its quest's boss; a players' guide has a glyph on its corpse; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

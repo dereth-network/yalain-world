@@ -1,0 +1,69 @@
+# The gates' quest: the passkey, its three glyphs set into it in their order, the passkey used on the gates.
+
+[[step]]
+key = "fg-daroa-2"
+quest = 0x8000029E
+needs = 2
+trigger = { use = 0x47001697, on = 0x47001698 }
+update = "none"
+takes = [0x47001698]
+gives = [0x47001699]
+prov = { from = "authored", by = "Dereth Network", note = "the glyph set into the passkey, in the order its interaction takes them, as players' guides say; the glyph's own interaction uses it up; no recording", confidence = "low" }
+
+[[step]]
+key = "fg-daroa-3"
+quest = 0x8000029E
+needs = 3
+trigger = { use = 0x47001697, on = 0x47001698 }
+update = "none"
+takes = [0x47001698]
+gives = [0x47001699]
+prov = { from = "authored", by = "Dereth Network", note = "the glyph set into the passkey, in the order its interaction takes them, as players' guides say; the glyph's own interaction uses it up; no recording", confidence = "low" }
+
+[[step]]
+key = "fg-aerdu-2"
+quest = 0x8000029E
+needs = 2
+trigger = { use = 0x4700169B, on = 0x47001699 }
+update = "none"
+takes = [0x47001699]
+gives = [0x4700169A]
+prov = { from = "authored", by = "Dereth Network", note = "the glyph set into the passkey, in the order its interaction takes them, as players' guides say; the glyph's own interaction uses it up; no recording", confidence = "low" }
+
+[[step]]
+key = "fg-aerdu-3"
+quest = 0x8000029E
+needs = 3
+trigger = { use = 0x4700169B, on = 0x47001699 }
+update = "none"
+takes = [0x47001699]
+gives = [0x4700169A]
+prov = { from = "authored", by = "Dereth Network", note = "the glyph set into the passkey, in the order its interaction takes them, as players' guides say; the glyph's own interaction uses it up; no recording", confidence = "low" }
+
+[[step]]
+key = "fg-eltau-2"
+quest = 0x8000029E
+needs = 2
+trigger = { use = 0x4700169C, on = 0x4700169A }
+update = "none"
+takes = [0x4700169A]
+gives = [0x4700169E]
+prov = { from = "authored", by = "Dereth Network", note = "the glyph set into the passkey, in the order its interaction takes them, as players' guides say; the glyph's own interaction uses it up; no recording", confidence = "low" }
+
+[[step]]
+key = "fg-eltau-3"
+quest = 0x8000029E
+needs = 3
+trigger = { use = 0x4700169C, on = 0x4700169A }
+update = "none"
+takes = [0x4700169A]
+gives = [0x4700169E]
+prov = { from = "authored", by = "Dereth Network", note = "the glyph set into the passkey, in the order its interaction takes them, as players' guides say; the glyph's own interaction uses it up; no recording", confidence = "low" }
+
+[[step]]
+key = "fg-unlock"
+quest = 0x8000029E
+needs = 3
+trigger = { use = 0x4700169E, on = 0x4700169F }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the whole passkey used on the gates, as the journal's last phase and players' guides say; its interaction uses it up; no recording", confidence = "low" }
