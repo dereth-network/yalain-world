@@ -22,6 +22,7 @@
 - A southern fort's inside can be reached, and five of its quests done. New pack `knorr-ramparts/`.
 - A cartographer's drawing of Knorr can now be finished, region by region. New pack `knorr-map-quest/`.
 - The estate crypt's tile puzzle and the throne past it can now be done. New pack `knorr-crypt/`.
+- Finishing all five of Knorr's mushroom hunts now earns their bonus. Pack `knorr-mushrooms/`.
 
 ## v0.36.0
 

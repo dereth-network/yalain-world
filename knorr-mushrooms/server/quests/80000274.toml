@@ -1,0 +1,106 @@
+# The five mushroom hunts' bonus, from the wiki's walkthrough and the vendors' own lines; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000274
+id_name = "QuestAllMH"
+state = 0x6F000B5E
+challenge = 0
+once = true
+xp = 1066287486
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:95cc46c0", confidence = "high", sample = { sessions = 86 }, fields = { once = { from = "authored", by = "Dereth Network", note = "the wiki says it is not repeatable; no setup says", confidence = "low" }, xp = { from = "authored", by = "Dereth Network", note = "the wiki's reward; no setup says", confidence = "low" }, xp_whole = { from = "authored", by = "Dereth Network", note = "the wiki gives one amount at any level", confidence = "low" } } }
+
+[[step]]
+key = "k-begun-wild"
+quest = 0x80000274
+needs = 0
+trigger = { given = 0x80000279 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: it begins with any of the five hunts", confidence = "low" }
+
+[[step]]
+key = "k-begun-foundry"
+quest = 0x80000274
+needs = 0
+trigger = { given = 0x80000276 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: it begins with any of the five hunts", confidence = "low" }
+
+[[step]]
+key = "k-begun-gardens"
+quest = 0x80000274
+needs = 0
+trigger = { given = 0x80000277 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: it begins with any of the five hunts", confidence = "low" }
+
+[[step]]
+key = "k-begun-ramparts"
+quest = 0x80000274
+needs = 0
+trigger = { given = 0x80000278 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: it begins with any of the five hunts", confidence = "low" }
+
+[[step]]
+key = "k-begun-desolation"
+quest = 0x80000274
+needs = 0
+trigger = { given = 0x80000275 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: it begins with any of the five hunts", confidence = "low" }
+
+[[step]]
+key = "k-end-wild"
+quest = 0x80000274
+needs = 1
+trigger = { use = 0x47003155 }
+update = "complete"
+least_level = 75
+requires = [{ quest = 0x80000279, done = true }, { quest = 0x80000276, done = true }, { quest = 0x80000277, done = true }, { quest = 0x80000278, done = true }, { quest = 0x80000275, done = true }]
+tell = { table = 0x250029E9, string = 0x37EDF24E }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once all five are done a vendor ends it, at level 75 or above; the line is the vendor's own", confidence = "low" }
+
+[[step]]
+key = "k-end-foundry"
+quest = 0x80000274
+needs = 1
+trigger = { use = 0x47003156 }
+update = "complete"
+least_level = 75
+requires = [{ quest = 0x80000279, done = true }, { quest = 0x80000276, done = true }, { quest = 0x80000277, done = true }, { quest = 0x80000278, done = true }, { quest = 0x80000275, done = true }]
+tell = { table = 0x250029EA, string = 0x37EDF24E }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once all five are done a vendor ends it, at level 75 or above; the line is the vendor's own", confidence = "low" }
+
+[[step]]
+key = "k-end-gardens"
+quest = 0x80000274
+needs = 1
+trigger = { use = 0x47003157 }
+update = "complete"
+least_level = 75
+requires = [{ quest = 0x80000279, done = true }, { quest = 0x80000276, done = true }, { quest = 0x80000277, done = true }, { quest = 0x80000278, done = true }, { quest = 0x80000275, done = true }]
+tell = { table = 0x250029EB, string = 0x37EDF24E }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once all five are done a vendor ends it, at level 75 or above; the line is the vendor's own", confidence = "low" }
+
+[[step]]
+key = "k-end-ramparts"
+quest = 0x80000274
+needs = 1
+trigger = { use = 0x47003158 }
+update = "complete"
+least_level = 75
+requires = [{ quest = 0x80000279, done = true }, { quest = 0x80000276, done = true }, { quest = 0x80000277, done = true }, { quest = 0x80000278, done = true }, { quest = 0x80000275, done = true }]
+tell = { table = 0x250029EC, string = 0x37EDF24E }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once all five are done a vendor ends it, at level 75 or above; the line is the vendor's own", confidence = "low" }
+
+[[step]]
+key = "k-end-desolation"
+quest = 0x80000274
+needs = 1
+trigger = { use = 0x47003159 }
+update = "complete"
+least_level = 75
+requires = [{ quest = 0x80000279, done = true }, { quest = 0x80000276, done = true }, { quest = 0x80000277, done = true }, { quest = 0x80000278, done = true }, { quest = 0x80000275, done = true }]
+tell = { table = 0x250029ED, string = 0x37EDF24E }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once all five are done a vendor ends it, at level 75 or above; the line is the vendor's own", confidence = "low" }
