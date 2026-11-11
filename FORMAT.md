@@ -346,7 +346,9 @@ before its effects, and told `text` (`{ table, string }`), its name in the text'
 whose steps name no `transforms` has the server's own on a give's step putting on the hero's transformation (`0x6F001C6F`):
 25.59 s, as 2017's; a world with any has its rows alone. `to` names a place the step takes the player to,
 through portal space: an item's use on an object makes its update on arrival; a use of a person or
-an object tells its update at once and takes the player after.
+an object tells its update at once and takes the player after. A recall the quest's definition names for an update
+takes the player itself, through portal space, the update told as the player comes out; a step with `to` takes the player
+to `to` instead, and the recall stays put.
 
 A step's or a give's `requires` may also name one kingdom, `{ kingdom = "order" }`: `neutral`, `shadow`,
 `order` or `dominion`. It then runs only for players of that kingdom, a player in no kingdom counting as of
@@ -900,7 +902,8 @@ player. A template holds the states of one row at most.
 right uses a player has made; `uses`, `{ use, state }` in order: the template used and the state its object must be in
 (an `[[object_states]]` row loaded before names it; any state when left out); `right` and `wrong`, what the object used
 says at a right use and a wrong one (`{ table, string }`); `to`, the place the last right use takes the player to,
-through portal space (`key`, or `pack:key`). A use of the next in the state named moves the quest on a
+through portal space (`key`, or `pack:key`), in place of a recall the quest's definition names for that update (without
+`to`, such a recall takes the player). A use of the next in the state named moves the quest on a
 phase, the first giving it, with what its definition names for that update, and the last takes the player to `to`; a use of any other object the row names,
 or of the next in another state, takes the quest away from a player who has it under way, and the order starts over.
 Every row naming the object used is judged at each use, so one use may move several on. A row whose quest is past its
