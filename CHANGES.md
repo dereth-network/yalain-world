@@ -19,7 +19,7 @@
 - The Skyport supplymaster's grain quest can now be done. New pack `knorr-siege-stores/`.
 - The far south of Knorr can now be reached, with its gate, outpost and postings. New pack `knorr-desolation/`.
 - The ruined town's undead now count toward its quest. Pack `knorr-hunts/`.
-- A southern fort's inside can be reached, and three of its quests done. New pack `knorr-ramparts/`.
+- A southern fort's inside can be reached, and four of its quests done. New pack `knorr-ramparts/`.
 - A cartographer's drawing of Knorr can now be finished, region by region. New pack `knorr-map-quest/`.
 
 ## v0.36.0
