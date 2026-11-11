@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- Creatures and ways in for more of the Foundry's houses, from players' maps. Pack `acmaps-camps/`.
+
 ## v0.36.0
 
 - Creatures with no recorded loot now drop all six talismans. Pack `treasure-pools/`.
