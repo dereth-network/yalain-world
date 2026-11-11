@@ -20,6 +20,7 @@
 - The far south of Knorr can now be reached, with its gate, outpost and postings. New pack `knorr-desolation/`.
 - The ruined town's undead now count toward its quest. Pack `knorr-hunts/`.
 - A southern fort's inside can be reached, and three of its quests done. New pack `knorr-ramparts/`.
+- Knorr's map quest can be done as far as its last region. New pack `knorr-map-quest/`.
 
 ## v0.36.0
 

@@ -1,0 +1,70 @@
+# a cartographer's map quest's steps, from the wiki's walkthrough and the install; edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x8000025A
+needs = 0
+trigger = { use = 0x47003153 }
+update = "bestow"
+tell = { table = 0x250029E8, string = 0x7D1B8FF7 }
+gives = [0x47000E46]
+prov = { from = "authored", by = "Dereth Network", note = "the cartographer gives it and her parchment, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "m-draw1"
+quest = 0x8000025A
+needs = 2
+trigger = { use = 0x47001645, on = 0x47000E46 }
+update = "advance"
+phase = 3
+takes = [0x47000E46]
+prov = { from = "authored", by = "Dereth Network", note = "a cache's quill used on the map draws its region and moves it on, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "m-draw2"
+quest = 0x8000025A
+needs = 4
+trigger = { use = 0x47001646, on = 0x47000E47 }
+update = "advance"
+phase = 5
+takes = [0x47000E47]
+prov = { from = "authored", by = "Dereth Network", note = "a cache's quill used on the map draws its region and moves it on, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "m-draw3"
+quest = 0x8000025A
+needs = 6
+trigger = { use = 0x47001647, on = 0x47000E48 }
+update = "advance"
+phase = 7
+takes = [0x47000E48]
+prov = { from = "authored", by = "Dereth Network", note = "a cache's quill used on the map draws its region and moves it on, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "m-draw4"
+quest = 0x8000025A
+needs = 8
+trigger = { use = 0x47001648, on = 0x47000E49 }
+update = "advance"
+phase = 9
+takes = [0x47000E49]
+prov = { from = "authored", by = "Dereth Network", note = "a cache's quill used on the map draws its region and moves it on, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "m-draw5"
+quest = 0x8000025A
+needs = 10
+trigger = { use = 0x47001649, on = 0x47000E4A }
+update = "advance"
+phase = 11
+takes = [0x47000E4A]
+prov = { from = "authored", by = "Dereth Network", note = "a cache's quill used on the map draws its region and moves it on, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+
+[[step]]
+key = "m-end"
+quest = 0x8000025A
+needs = 11
+trigger = { give = 0x47000E4B, to = 0x47003153 }
+update = "complete"
+tell = { table = 0x250029E8, string = 0x55707B70 }
+prov = { from = "authored", by = "Dereth Network", note = "the finished map given the cartographer, handed back, ends it, wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
