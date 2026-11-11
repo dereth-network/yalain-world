@@ -3,7 +3,7 @@
 ## Unreleased
 
 - Creatures' loot now comes from the treasure pools. Pack `loot-from-pools/`.
-- Creatures and ways in for more of the Foundry's houses, from players' maps. Pack `acmaps-camps/`.
+- Creatures and ways in for more of the Foundry's houses and one more dungeon, from players' maps. Pack `acmaps-camps/`.
 - The shaman's maintenance quest can now be finished. Pack `skyport-mine/`.
 - Ways into the Foundry and its forge, opened by their quests. Pack `foundry-forge/`.
 - An egg, a hoard map and a bean now have sources. Pack `quest-item-sources/`.
