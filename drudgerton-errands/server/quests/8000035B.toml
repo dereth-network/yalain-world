@@ -1,0 +1,17 @@
+# The guard's reward once the third trounce is done, from a players' guide and her own line; edit an authored pack instead.
+
+[[quest]]
+id = 0x8000035B
+id_name = "Quest_BanderlingTrounce_Control"
+state = 0x6F0007DB
+prov = { from = "dat", record = 0x6F0007DB }
+
+[[step]]
+key = "verily-reward"
+quest = 0x8000035B
+needs = 1
+trigger = { use = 0x47002FAF }
+update = "complete"
+tell = { table = 0x25002911, string = 0x34582868 }
+gives = [0x47000BCE]
+prov = { from = "authored", by = "Dereth Network", note = "a players' guide: given as the third trounce ends (its completion's own effect), ended at her use with a hero skill credit token; her line names it", confidence = "low" }

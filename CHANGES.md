@@ -51,6 +51,7 @@
 - Nine dungeon kill quests can now be done, with ways into four more dungeons. New pack `dungeon-bosses/`.
 - Rare recruits near seven besieged outposts now start their beacon quests. New pack `beacon-blowouts/`.
 - A father's search for his runaway son in Linvak can now be finished. New pack `stubbington-search/`.
+- The festival guard's reward after the third trounce can now be claimed. New pack `drudgerton-errands/`.
 
 ## v0.36.0
 
