@@ -4,9 +4,18 @@
 key = "scout-given"
 quest = 0x400000CC
 needs = 0
+trigger = { given = 0x400000D4 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "2017: given with the corporal's own errand at one use (2 of 2 sessions that held neither)", confidence = "medium" }
+
+[[step]]
+key = "scout-after"
+quest = 0x400000CC
+needs = 0
 trigger = { use = 0x47002FD0 }
 update = "bestow"
-prov = { from = "authored", by = "Dereth Network", note = "2017: given at the corporal's use (2 sessions); the wiki: his own errand need not be done first", confidence = "medium" }
+requires = [{ quest = 0x400000D4, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "2017: given alone at the corporal's use once its own errand was done (1 session)", confidence = "medium" }
 
 [[step]]
 key = "scout-found"

@@ -4,9 +4,18 @@
 key = "corporal-given"
 quest = 0x400000D1
 needs = 0
+trigger = { given = 0x400000D3 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "2017: given with the warder's own errand at one use (2 of 2 sessions that held neither)", confidence = "medium" }
+
+[[step]]
+key = "corporal-after"
+quest = 0x400000D1
+needs = 0
 trigger = { use = 0x47002F7E }
 update = "bestow"
-prov = { from = "authored", by = "Dereth Network", note = "2017: given at the warder's use (3 sessions)", confidence = "medium" }
+requires = [{ quest = 0x400000D3, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "2017: given alone at the warder's use once its own errand was done (1 session)", confidence = "medium" }
 
 [[step]]
 key = "corporal-found"
