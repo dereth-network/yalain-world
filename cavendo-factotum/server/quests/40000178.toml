@@ -1,0 +1,69 @@
+# The factotum's errand, from a player's guide of the time and his own lines; edit an authored pack instead.
+
+[[step]]
+key = "boots-given"
+quest = 0x40000178
+needs = 0
+trigger = { use = 0x47003346 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the factotum gives one of his errands at random; this one with his line for it (his talk row)", confidence = "low" }
+
+[[step]]
+key = "boots-1"
+quest = 0x40000178
+needs = 1
+trigger = { give = 0x47000617, to = 0x47003346 }
+update = "complete"
+takes = [0x47000617]
+wants = 1
+gives = [0x47000538]
+counts = [500]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and his line: a pair of the shrine's boots, any race's; his thanks say he pays in gold, how much unrecorded (his other errands paid 125 to 500)", confidence = "low" }
+
+[[step]]
+key = "boots-2"
+quest = 0x40000178
+needs = 1
+trigger = { give = 0x47000618, to = 0x47003346 }
+update = "complete"
+takes = [0x47000618]
+wants = 1
+gives = [0x47000538]
+counts = [500]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and his line: a pair of the shrine's boots, any race's; his thanks say he pays in gold, how much unrecorded (his other errands paid 125 to 500)", confidence = "low" }
+
+[[step]]
+key = "boots-3"
+quest = 0x40000178
+needs = 1
+trigger = { give = 0x47000619, to = 0x47003346 }
+update = "complete"
+takes = [0x47000619]
+wants = 1
+gives = [0x47000538]
+counts = [500]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and his line: a pair of the shrine's boots, any race's; his thanks say he pays in gold, how much unrecorded (his other errands paid 125 to 500)", confidence = "low" }
+
+[[step]]
+key = "boots-4"
+quest = 0x40000178
+needs = 1
+trigger = { give = 0x4700061A, to = 0x47003346 }
+update = "complete"
+takes = [0x4700061A]
+wants = 1
+gives = [0x47000538]
+counts = [500]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and his line: a pair of the shrine's boots, any race's; his thanks say he pays in gold, how much unrecorded (his other errands paid 125 to 500)", confidence = "low" }
+
+[[step]]
+key = "boots-5"
+quest = 0x40000178
+needs = 1
+trigger = { give = 0x4700061B, to = 0x47003346 }
+update = "complete"
+takes = [0x4700061B]
+wants = 1
+gives = [0x47000538]
+counts = [500]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and his line: a pair of the shrine's boots, any race's; his thanks say he pays in gold, how much unrecorded (his other errands paid 125 to 500)", confidence = "low" }

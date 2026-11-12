@@ -1,0 +1,13 @@
+# The factotum's errand, from a player's guide of the time and his own lines; edit an authored pack instead.
+
+[[step]]
+key = "pipes-back"
+quest = 0x4000017D
+needs = 1
+trigger = { give = 0x4700065B, to = 0x47003346 }
+update = "complete"
+takes = [0x4700065B]
+wants = 1
+gives = [0x47000538]
+counts = [500]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and his line: pan pipes, the plain ones treasure and the town's shops have; a guide of the time: 500 coins", confidence = "low" }
