@@ -1,11 +1,11 @@
 # The dead prospectors and the stockpiles; edit this pack's rows.
 
-[[object]]
+[[camp]]
 key = "prospector"
-kind = "static"
-id = 0x40EC910000000102
-template = 0x470012D8
 cell = 0xEC910031
 at = [125.17, 18.60, 95.68]
-rotation = [1.0, 0.0, 0.0, 0.0]
-prov = { from = "authored", by = "Dereth Network", note = "January 2017's one corpse stood here, beside the moarsmen, holding a key of its kind; 1 recording", confidence = "low" }
+radius = 50.0
+population = 1
+regen = 86400.0
+spawns = [{ template = 0x470012D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "January 2017's one corpse stood here, beside the moarsmen, holding a key of its kind; 1 recording", confidence = "low", fields = { radius = { from = "authored", by = "Dereth Network", note = "about as far as the creatures the corpse lies beside", confidence = "low" }, regen = { from = "authored", by = "Dereth Network", note = "a day: the wiki says it lies there very rarely; nothing recorded times it", confidence = "low" } } }

@@ -81,7 +81,7 @@
 - The Radiant Temple's smith now asks for a new hearthstone and teaches ancient armor. New pack `radiant-temple-forge/`.
 - Diamonds, pyreum and starstones now drop, so the gem quests can be finished. New pack `rare-gems/`.
 - Mirras now drop, very rarely, from creatures of level 45 and over. New pack `mirra-drops/`.
-- Dead prospectors now hold hoard keys, and every hoard has its stockpile. New pack `prospector-corpses/`.
+- Dead prospectors now turn up now and then holding hoard keys, and every hoard has its stockpile. New pack `prospector-corpses/`.
 - The Molwirth shrine's broken opal can now be mended in the caverns to its west. New pack `molwirth-opal/`.
 - The rathunter grutts' charm's vermin hunt can now be finished. New pack `rat-smasher/`.
 - The alchemist's third geyser now fills his alembic, which opens the kings' armor. New pack `shoyanen-emeralds/`.
