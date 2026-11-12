@@ -90,7 +90,7 @@
 - The last of Omishan's vault glyphs now drops, so any four can be decoded. New pack `lumari-glyphs/`.
 - The crypt north of Esper can now be walked through to its hoard. New pack `ancient-crypt/`.
 - Vargil now gives his sword quest, with a quest for the bearer's fellows.
-- Four more of Arramora's exigencies can now be done. New pack `arramora-exigencies/`.
+- Ten more of Arramora's exigencies can now be done. New pack `arramora-exigencies/`.
 - The doomed sword quest in Arramora now has its sword and its creature. New pack `doomed-hero-sword/`.
 - The plague cure in the Knorr Ramparts now takes six maws, one at a time. New pack `magnan-plague-cure/`.
 - The queen's quest in Lake Artefon's catacombs can now be done. New pack `artefon-salvation/`.
