@@ -80,6 +80,7 @@
 - The totem in Ikeras can now be mended with the gem stolen from it. New pack `ikeras-totem/`.
 - The Radiant Temple's smith now asks for a new hearthstone and teaches ancient armor. New pack `radiant-temple-forge/`.
 - Diamonds, pyreum and starstones now drop, so the gem quests can be finished. New pack `rare-gems/`.
+- Mirras now drop, very rarely, from creatures of level 45 and over. New pack `mirra-drops/`.
 
 ## v0.36.0
 
