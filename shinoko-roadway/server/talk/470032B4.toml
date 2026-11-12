@@ -1,0 +1,21 @@
+# The guard's welcome, by the roads; edit an authored pack instead.
+
+[[talk]]
+key = "welcome-unsafe"
+who = 0x470032B4
+line = { table = 0x25002A77, string = 0xE9260613 }
+role = "near"
+how = "say"
+when = "near"
+requires = [{ tally = "shinoko-roadway", full = false }]
+prov = { from = "authored", by = "Dereth Network", note = "his welcome while the roads are unsafe: made it here without incident", confidence = "low" }
+
+[[talk]]
+key = "welcome-safe"
+who = 0x470032B4
+line = { table = 0x25002A77, string = 0xC93C4E2F }
+role = "near"
+how = "say"
+when = "near"
+requires = [{ tally = "shinoko-roadway", full = true }]
+prov = { from = "authored", by = "Dereth Network", note = "his welcome once the roads are cleared: tell your friends the roadways are safe", confidence = "low" }

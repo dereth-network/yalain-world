@@ -1,0 +1,16 @@
+# The guard's notice for the board, which each road quest's completion gives; edit an authored pack instead.
+
+[[quest]]
+id = 0x8000032C
+id_name = "QuestShinokoKillControl"
+state = 0x6F000C80
+prov = { from = "authored", by = "Dereth Network", note = "given by each road quest's completion (its own update effect)", confidence = "low" }
+
+[[step]]
+key = "posted"
+quest = 0x8000032C
+needs = 1
+trigger = { use = 0x470032B6 }
+update = "complete"
+adds = { tally = "shinoko-roadway", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "the guard's last favor: the new travel advisory put up on the town's board lowers it a step", confidence = "low" }

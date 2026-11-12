@@ -1,0 +1,13 @@
+# The advisory, shared by the whole town, and the peddler's return it brings; edit an authored pack instead.
+
+[[event]]
+key = "shinoko-peddler"
+game_event = 0x400002D8
+prov = { from = "authored", by = "Dereth Network", note = "the install's game event for Shinoko's peddler; on only while the cleared roads start it", confidence = "low" }
+
+[[tally]]
+key = "shinoko-roadway"
+full = 9
+starts = { event = "shinoko-peddler", lasts = 604800 }
+resets = { event = "shinoko-peddler" }
+prov = { from = "authored", by = "Dereth Network", note = "the board's ten advisories: nine notices lower it to none, and then the peddler the guard says stays away from unsafe roads is back; 2017's board read none, the peddler there; the week is ours", confidence = "low" }

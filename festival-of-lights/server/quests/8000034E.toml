@@ -1,0 +1,76 @@
+# Dansova's decorating errand, once the supplies are gathered; edit an authored pack instead.
+
+[[quest]]
+id = 0x8000034E
+id_name = "QuestPlaceFoL"
+state = 0x6F000C7C
+challenge = 20
+min_level = 20
+xp = 720
+duration = 86400.0
+cancellable = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: as her errands, given again at once (no retry, so that the step after its completion runs); the decoration's use in Shinoko completes it (its own use effect)", confidence = "low" }
+
+[[step]]
+key = "given-banner-1"
+quest = 0x8000034E
+needs = 0
+trigger = { use = 0x470032B2 }
+update = "bestow"
+gives = [0x4700081F]
+tell = { table = 0x25002A76, string = 0x3705844E }
+requires = [{ tally = "fol-supplies", full = true }, { tally = "fol-decorations", full = false }]
+prov = { from = "authored", by = "Dereth Network", note = "one of her decorations at random once the supplies are gathered and while decorations are wanted; her line asking the player to place a banner", confidence = "low" }
+
+[[step]]
+key = "given-banner-2"
+quest = 0x8000034E
+needs = 0
+trigger = { use = 0x470032B2 }
+update = "bestow"
+gives = [0x47000820]
+tell = { table = 0x25002A76, string = 0x3705844E }
+requires = [{ tally = "fol-supplies", full = true }, { tally = "fol-decorations", full = false }]
+prov = { from = "authored", by = "Dereth Network", note = "one of her decorations at random once the supplies are gathered and while decorations are wanted; her line asking the player to place a banner", confidence = "low" }
+
+[[step]]
+key = "given-torch-3"
+quest = 0x8000034E
+needs = 0
+trigger = { use = 0x470032B2 }
+update = "bestow"
+gives = [0x47000821]
+tell = { table = 0x25002A76, string = 0x3A1C8FC0 }
+requires = [{ tally = "fol-supplies", full = true }, { tally = "fol-decorations", full = false }]
+prov = { from = "authored", by = "Dereth Network", note = "one of her decorations at random once the supplies are gathered and while decorations are wanted; her line asking the player to place a torch", confidence = "low" }
+
+[[step]]
+key = "given-plant-4"
+quest = 0x8000034E
+needs = 0
+trigger = { use = 0x470032B2 }
+update = "bestow"
+gives = [0x47000822]
+tell = { table = 0x25002A76, string = 0x37CECD40 }
+requires = [{ tally = "fol-supplies", full = true }, { tally = "fol-decorations", full = false }]
+prov = { from = "authored", by = "Dereth Network", note = "one of her decorations at random once the supplies are gathered and while decorations are wanted; her line asking the player to place a plant", confidence = "low" }
+
+[[step]]
+key = "given-firepot-5"
+quest = 0x8000034E
+needs = 0
+trigger = { use = 0x470032B2 }
+update = "bestow"
+gives = [0x47000823]
+tell = { table = 0x25002A76, string = 0x3C2F71E0 }
+requires = [{ tally = "fol-supplies", full = true }, { tally = "fol-decorations", full = false }]
+prov = { from = "authored", by = "Dereth Network", note = "one of her decorations at random once the supplies are gathered and while decorations are wanted; her line asking the player to place a firepot", confidence = "low" }
+
+[[step]]
+key = "placed"
+quest = 0x8000034E
+needs = 0
+trigger = { done = 0x8000034E }
+update = "none"
+adds = { tally = "fol-decorations", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "a decoration placed counts toward the festival's start", confidence = "low" }

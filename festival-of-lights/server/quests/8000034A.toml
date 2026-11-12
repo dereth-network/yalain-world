@@ -1,0 +1,69 @@
+# One of Dansova's four festival errands: given while the supplies are wanted, handed in for the shared count; edit an authored pack instead.
+
+[[quest]]
+id = 0x8000034A
+id_name = "QuestGatherHatchetFoL"
+state = 0x6F000C78
+challenge = 20
+min_level = 20
+xp = 720
+duration = 86400.0
+retry = 1.0
+cancellable = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: level 20, 720 experience, a day to do it, repeatable at once (a retry of 1 s, so that she gives the next errand at once); her pay in gold is not given", confidence = "low" }
+
+[[step]]
+key = "given"
+quest = 0x8000034A
+needs = 0
+trigger = { use = 0x470032B2 }
+update = "bestow"
+tell = { table = 0x25002A76, string = 0xB518FF72 }
+requires = [{ tally = "fol-supplies", full = false }]
+prov = { from = "authored", by = "Dereth Network", note = "one of her four errands at random while the supplies are wanted; her line asking for a hatchet: the install's two woodcutting hatchets and its plain weapon one", confidence = "low" }
+
+[[step]]
+key = "handed-1"
+quest = 0x8000034A
+needs = 1
+trigger = { give = 0x47000CB9, to = 0x470032B2 }
+update = "complete"
+takes = [0x47000CB9]
+tell = { table = 0x25002A76, string = 0x0980FB37 }
+requires = [{ tally = "fol-supplies", full = false }]
+adds = { tally = "fol-supplies", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "a hatchet: the install's two woodcutting hatchets and its plain weapon one handed to her while the supplies are wanted adds to them; her thanks", confidence = "low" }
+
+[[step]]
+key = "handed-2"
+quest = 0x8000034A
+needs = 1
+trigger = { give = 0x47000CBA, to = 0x470032B2 }
+update = "complete"
+takes = [0x47000CBA]
+tell = { table = 0x25002A76, string = 0x0980FB37 }
+requires = [{ tally = "fol-supplies", full = false }]
+adds = { tally = "fol-supplies", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "a hatchet: the install's two woodcutting hatchets and its plain weapon one handed to her while the supplies are wanted adds to them; her thanks", confidence = "low" }
+
+[[step]]
+key = "handed-3"
+quest = 0x8000034A
+needs = 1
+trigger = { give = 0x47000785, to = 0x470032B2 }
+update = "complete"
+takes = [0x47000785]
+tell = { table = 0x25002A76, string = 0x0980FB37 }
+requires = [{ tally = "fol-supplies", full = false }]
+adds = { tally = "fol-supplies", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "a hatchet: the install's two woodcutting hatchets and its plain weapon one handed to her while the supplies are wanted adds to them; her thanks", confidence = "low" }
+
+[[step]]
+key = "not-needed"
+quest = 0x8000034A
+needs = 1
+trigger = { use = 0x470032B2 }
+update = "fail"
+tell = { table = 0x25002A76, string = 0xC54FBBE5 }
+requires = [{ tally = "fol-supplies", full = true }]
+prov = { from = "authored", by = "Dereth Network", note = "once the supplies are all gathered an errand still under way is over: her line that she has everything and needs help setting up, so that she can hand out a decoration", confidence = "low" }

@@ -1,0 +1,49 @@
+# Linvak's power conduits: each crystal down until it stands again, and the archon's way open while all three are; edit an authored pack instead.
+
+[[event]]
+key = "linvak-conduit-a-down"
+game_event = 0x4000015D
+prov = { from = "authored", by = "Dereth Network", note = "the install's game event for the west conduit's crystal destroyed; on while it is down", confidence = "low" }
+
+[[tally]]
+key = "linvak-conduit-a"
+full = 1
+starts = { event = "linvak-conduit-a-down", lasts = 1790 }
+resets = { event = "linvak-conduit-a-down" }
+prov = { from = "authored", by = "Dereth Network", note = "the west conduit's crystal down, until it stands again (its 1790 s)", confidence = "low" }
+
+[[event]]
+key = "linvak-conduit-b-down"
+game_event = 0x4000015E
+prov = { from = "authored", by = "Dereth Network", note = "the install's game event for the east conduit's crystal destroyed; on while it is down", confidence = "low" }
+
+[[tally]]
+key = "linvak-conduit-b"
+full = 1
+starts = { event = "linvak-conduit-b-down", lasts = 1790 }
+resets = { event = "linvak-conduit-b-down" }
+prov = { from = "authored", by = "Dereth Network", note = "the east conduit's crystal down, until it stands again (its 1790 s)", confidence = "low" }
+
+[[event]]
+key = "linvak-conduit-c-down"
+game_event = 0x4000015F
+prov = { from = "authored", by = "Dereth Network", note = "the install's game event for the south conduit's crystal destroyed; on while it is down", confidence = "low" }
+
+[[tally]]
+key = "linvak-conduit-c"
+full = 1
+starts = { event = "linvak-conduit-c-down", lasts = 1790 }
+resets = { event = "linvak-conduit-c-down" }
+prov = { from = "authored", by = "Dereth Network", note = "the south conduit's crystal down, until it stands again (its 1790 s)", confidence = "low" }
+
+[[event]]
+key = "linvak-archon-way"
+game_event = 0x40000161
+prov = { from = "authored", by = "Dereth Network", note = "the install's game event for all three crystals destroyed; on while it opens the archon's way", confidence = "low" }
+
+[[tally]]
+key = "linvak-conduits"
+full = 1
+starts = { event = "linvak-archon-way", lasts = 1790 }
+resets = { event = "linvak-archon-way" }
+prov = { from = "authored", by = "Dereth Network", note = "the three crystals down at once opens the way to the archon for as long as a crystal stays down (its 1790 s)", confidence = "low" }

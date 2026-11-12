@@ -27,3 +27,60 @@ trigger = { use = 0x47002F92 }
 update = "complete"
 gives = [0x470013E3]
 prov = { from = "authored", by = "Dereth Network", note = "the menhir's touch ends it with the vault's crystallized vitae (its own line and the vitae's description), as 2017's Osteth twin", confidence = "low" }
+
+[[step]]
+key = "crystal-a-down"
+quest = 0x400002B4
+needs = 1
+trigger = { kill = 0x470026C9, within = 40 }
+update = "none"
+adds = { tally = "linvak-conduit-a", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "the west conduit's crystal destroyed near a player at the quest's first phase: down until it stands again", confidence = "low" }
+
+[[step]]
+key = "crystal-a-last"
+quest = 0x400002B4
+needs = 1
+trigger = { kill = 0x470026C9 }
+update = "none"
+requires = [{ tally = "linvak-conduit-b", full = true }, { tally = "linvak-conduit-c", full = true }]
+adds = { tally = "linvak-conduits", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "the west conduit's crystal destroyed while the other two are down opens the way to the archon", confidence = "low" }
+
+[[step]]
+key = "crystal-b-down"
+quest = 0x400002B4
+needs = 1
+trigger = { kill = 0x470026CB, within = 40 }
+update = "none"
+adds = { tally = "linvak-conduit-b", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "the east conduit's crystal destroyed near a player at the quest's first phase: down until it stands again", confidence = "low" }
+
+[[step]]
+key = "crystal-b-last"
+quest = 0x400002B4
+needs = 1
+trigger = { kill = 0x470026CB }
+update = "none"
+requires = [{ tally = "linvak-conduit-a", full = true }, { tally = "linvak-conduit-c", full = true }]
+adds = { tally = "linvak-conduits", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "the east conduit's crystal destroyed while the other two are down opens the way to the archon", confidence = "low" }
+
+[[step]]
+key = "crystal-c-down"
+quest = 0x400002B4
+needs = 1
+trigger = { kill = 0x470026CC, within = 40 }
+update = "none"
+adds = { tally = "linvak-conduit-c", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "the south conduit's crystal destroyed near a player at the quest's first phase: down until it stands again", confidence = "low" }
+
+[[step]]
+key = "crystal-c-last"
+quest = 0x400002B4
+needs = 1
+trigger = { kill = 0x470026CC }
+update = "none"
+requires = [{ tally = "linvak-conduit-a", full = true }, { tally = "linvak-conduit-b", full = true }]
+adds = { tally = "linvak-conduits", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "the south conduit's crystal destroyed while the other two are down opens the way to the archon", confidence = "low" }

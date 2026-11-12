@@ -1,0 +1,221 @@
+# The board's roadway advisory, by how far the roads have been cleared; edit an authored pack instead.
+
+[[talk]]
+key = "advisory-0"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D3F87 }
+role = "use"
+how = "tell"
+when = "use"
+requires = [{ tally = "shinoko-roadway", below = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the board's roadway advisory while it stands at Highest", confidence = "low" }
+
+[[talk]]
+key = "posted-0"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D3F87 }
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x8000032C
+update = "complete"
+requires = [{ tally = "shinoko-roadway", below = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the advisory the notice just put up: Highest", confidence = "low" }
+
+[[talk]]
+key = "advisory-1"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D0F87 }
+role = "use"
+how = "tell"
+when = "use"
+requires = [{ tally = "shinoko-roadway", at_least = 1, below = 2 }]
+prov = { from = "authored", by = "Dereth Network", note = "the board's roadway advisory while it stands at Higher", confidence = "low" }
+
+[[talk]]
+key = "posted-1"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D0F87 }
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x8000032C
+update = "complete"
+requires = [{ tally = "shinoko-roadway", at_least = 1, below = 2 }]
+prov = { from = "authored", by = "Dereth Network", note = "the advisory the notice just put up: Higher", confidence = "low" }
+
+[[talk]]
+key = "advisory-2"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D1F87 }
+role = "use"
+how = "tell"
+when = "use"
+requires = [{ tally = "shinoko-roadway", at_least = 2, below = 3 }]
+prov = { from = "authored", by = "Dereth Network", note = "the board's roadway advisory while it stands at High", confidence = "low" }
+
+[[talk]]
+key = "posted-2"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D1F87 }
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x8000032C
+update = "complete"
+requires = [{ tally = "shinoko-roadway", at_least = 2, below = 3 }]
+prov = { from = "authored", by = "Dereth Network", note = "the advisory the notice just put up: High", confidence = "low" }
+
+[[talk]]
+key = "advisory-3"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D6F87 }
+role = "use"
+how = "tell"
+when = "use"
+requires = [{ tally = "shinoko-roadway", at_least = 3, below = 4 }]
+prov = { from = "authored", by = "Dereth Network", note = "the board's roadway advisory while it stands at Medium-High", confidence = "low" }
+
+[[talk]]
+key = "posted-3"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D6F87 }
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x8000032C
+update = "complete"
+requires = [{ tally = "shinoko-roadway", at_least = 3, below = 4 }]
+prov = { from = "authored", by = "Dereth Network", note = "the advisory the notice just put up: Medium-High", confidence = "low" }
+
+[[talk]]
+key = "advisory-4"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D7F87 }
+role = "use"
+how = "tell"
+when = "use"
+requires = [{ tally = "shinoko-roadway", at_least = 4, below = 5 }]
+prov = { from = "authored", by = "Dereth Network", note = "the board's roadway advisory while it stands at Medium", confidence = "low" }
+
+[[talk]]
+key = "posted-4"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D7F87 }
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x8000032C
+update = "complete"
+requires = [{ tally = "shinoko-roadway", at_least = 4, below = 5 }]
+prov = { from = "authored", by = "Dereth Network", note = "the advisory the notice just put up: Medium", confidence = "low" }
+
+[[talk]]
+key = "advisory-5"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D4F87 }
+role = "use"
+how = "tell"
+when = "use"
+requires = [{ tally = "shinoko-roadway", at_least = 5, below = 6 }]
+prov = { from = "authored", by = "Dereth Network", note = "the board's roadway advisory while it stands at Low-Medium", confidence = "low" }
+
+[[talk]]
+key = "posted-5"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D4F87 }
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x8000032C
+update = "complete"
+requires = [{ tally = "shinoko-roadway", at_least = 5, below = 6 }]
+prov = { from = "authored", by = "Dereth Network", note = "the advisory the notice just put up: Low-Medium", confidence = "low" }
+
+[[talk]]
+key = "advisory-6"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D5F87 }
+role = "use"
+how = "tell"
+when = "use"
+requires = [{ tally = "shinoko-roadway", at_least = 6, below = 7 }]
+prov = { from = "authored", by = "Dereth Network", note = "the board's roadway advisory while it stands at Low", confidence = "low" }
+
+[[talk]]
+key = "posted-6"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D5F87 }
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x8000032C
+update = "complete"
+requires = [{ tally = "shinoko-roadway", at_least = 6, below = 7 }]
+prov = { from = "authored", by = "Dereth Network", note = "the advisory the notice just put up: Low", confidence = "low" }
+
+[[talk]]
+key = "advisory-7"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7DAF87 }
+role = "use"
+how = "tell"
+when = "use"
+requires = [{ tally = "shinoko-roadway", at_least = 7, below = 8 }]
+prov = { from = "authored", by = "Dereth Network", note = "the board's roadway advisory while it stands at Lower", confidence = "low" }
+
+[[talk]]
+key = "posted-7"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7DAF87 }
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x8000032C
+update = "complete"
+requires = [{ tally = "shinoko-roadway", at_least = 7, below = 8 }]
+prov = { from = "authored", by = "Dereth Network", note = "the advisory the notice just put up: Lower", confidence = "low" }
+
+[[talk]]
+key = "advisory-8"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7DBF87 }
+role = "use"
+how = "tell"
+when = "use"
+requires = [{ tally = "shinoko-roadway", at_least = 8, below = 9 }]
+prov = { from = "authored", by = "Dereth Network", note = "the board's roadway advisory while it stands at Lowest", confidence = "low" }
+
+[[talk]]
+key = "posted-8"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7DBF87 }
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x8000032C
+update = "complete"
+requires = [{ tally = "shinoko-roadway", at_least = 8, below = 9 }]
+prov = { from = "authored", by = "Dereth Network", note = "the advisory the notice just put up: Lowest", confidence = "low" }
+
+[[talk]]
+key = "advisory-9"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D3987 }
+role = "use"
+how = "tell"
+when = "use"
+requires = [{ tally = "shinoko-roadway", full = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the board's roadway advisory while it stands at None", confidence = "low" }
+
+[[talk]]
+key = "posted-9"
+who = 0x470032B6
+line = { table = 0x25002A78, string = 0x4C7D3987 }
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x8000032C
+update = "complete"
+requires = [{ tally = "shinoko-roadway", full = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the advisory the notice just put up: None", confidence = "low" }

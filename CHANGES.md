@@ -57,6 +57,8 @@
 - The tyrants' dungeon east of Gevoth can be walked room to room, its bosses leaving their scales. New pack `tyrants-loft/`.
 - The tyrant lair on the egg-shaped Vesayan island has its portal, rooms and boss. New pack `silvas-lair/`.
 - The apprentices give their trophy back, and their father's helm quest can now be done. Pack `armorsmiths-lament/`.
+- Shinoko's festival on the water can now be prepared, decorated and held. New pack `festival-of-lights/`.
+- Clearing Shinoko's roads now lowers the board's advisory and brings the peddler back. New pack `shinoko-roadway/`.
 
 ## v0.36.0
 

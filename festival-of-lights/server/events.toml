@@ -1,0 +1,20 @@
+# The festival's stages, shared by the whole town: the supplies gathered, then the decorations placed, start the festival a few minutes later; both start again as it ends; edit an authored pack instead.
+
+[[event]]
+key = "shinoko-festival"
+game_event = 0x400002DA
+prov = { from = "authored", by = "Dereth Network", note = "the install's game event for the festival; on only while the decorations' tally starts it", confidence = "low" }
+
+[[tally]]
+key = "fol-supplies"
+full = 40
+resets = { event = "shinoko-festival" }
+prov = { from = "authored", by = "Dereth Network", note = "her count of the supplies gathered, said in percent; her errands add their pay in quarters (hatchet 1 to wood 4), so a few players fill it in an evening; the number is ours", confidence = "low" }
+
+[[tally]]
+key = "fol-decorations"
+full = 10
+starts = { event = "shinoko-festival", after = 180, lasts = 1800 }
+resets = { event = "shinoko-festival" }
+clears = [0x470018C5, 0x470018C7, 0x470018CB, 0x470018CD, 0x470018CF]
+prov = { from = "authored", by = "Dereth Network", note = "the decorations placed; once all is set it should start in a few minutes (her line); the count, the festival's length and the clearing of what was placed as it ends are ours", confidence = "low" }
