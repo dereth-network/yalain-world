@@ -1,0 +1,11 @@
+# Osteth's dungeon bosses, the rare creatures that give their quests, and the drudge city's ways in and out; edit an authored pack instead.
+
+[[camp]]
+key = "edge-beetle-queen"
+cell = 0x99C4010E
+at = [116.03, 154.29, 71.50]
+spots = [{ cell = 0x99C4010E, at = [116.03, 154.29, 71.50] }, { cell = 0x99C4011A, at = [164.46, 153.71, 71.40] }, { cell = 0x99C4011C, at = [174.00, 90.41, 71.40] }, { cell = 0x99C4011B, at = [163.88, 45.92, 71.40] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700223C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the mound lists the queen among its beetles without marking her; here its four far chambers, where the walk from its mouth ends, one at a time", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

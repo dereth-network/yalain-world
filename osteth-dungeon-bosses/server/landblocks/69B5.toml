@@ -1,0 +1,11 @@
+# Osteth's dungeon bosses, the rare creatures that give their quests, and the drudge city's ways in and out; edit an authored pack instead.
+
+[[camp]]
+key = "clutter-vermin"
+cell = 0x69B50004
+at = [15.00, 70.00, 139.00]
+spots = [{ cell = 0x69B50004, at = [15.00, 70.00, 139.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D3C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a rare one at a time south of the dungeon's mouth and across the water below it, on its east side, where the wiki finds it most; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

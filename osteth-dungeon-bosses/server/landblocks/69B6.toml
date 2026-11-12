@@ -1,0 +1,11 @@
+# Osteth's dungeon bosses, the rare creatures that give their quests, and the drudge city's ways in and out; edit an authored pack instead.
+
+[[camp]]
+key = "vermin-excavator"
+cell = 0x69B60135
+at = [175.87, 190.45, 121.40]
+spots = [{ cell = 0x69B60135, at = [175.87, 190.45, 121.40] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D3E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the dungeon draws the boss in the low passage that runs down to the chest it draws, at the passage's upper end", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

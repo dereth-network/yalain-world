@@ -1,0 +1,33 @@
+# Osteth's dungeon bosses, the rare creatures that give their quests, and the drudge city's ways in and out; edit an authored pack instead.
+
+[[camp]]
+key = "revered-one"
+cell = 0x05FA0148
+at = [82.02, 340.01, 10.40]
+spots = [{ cell = 0x05FA0148, at = [82.02, 340.01, 10.40] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470022C8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the dungeon draws the boss at the east end of its second hall from the north", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "drudge-city-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x05FA016B
+at = [32.19, -0.21, 2.20]
+rotation = [0.700909, 0.0, 0.0, -0.71325]
+name = { table = 0x25001B44, string = 0xD7175CDE }
+to = "drudge-city-out"
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the dungeon draws an exit portal beside the landing; to the surface end a list of the game's destinations gives for this dungeon", confidence = "low" }
+
+[[object]]
+key = "drudge-city-north-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x05FA0175
+at = [85.26, 674.48, -0.60]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0xD7175CDE }
+to = "drudge-city-out"
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the dungeon draws an exit portal at the city's north end; to the surface end a list of the game's destinations gives for this dungeon", confidence = "low" }

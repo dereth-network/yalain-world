@@ -67,6 +67,7 @@
 - The ranger's missing pet can now be found and brought home. New pack `ranger-den/`.
 - The spirit's purification at the shrines of Omishan can now be done. New pack `tonk-shrines/`.
 - The tormented spirits' purification at the sea shrine can now be done. New pack `rea-bal-purification/`.
+- Three Osteth dungeon kill quests can now be done, and the drudge city entered. New pack `osteth-dungeon-bosses/`.
 
 ## v0.36.0
 
