@@ -1,28 +1,23 @@
-# The master engineer's device recipes, from the wiki's walkthrough; edit an authored pack instead.
+# The master engineer's device recipes: the install's two assembly recipes, which name no product, and what the
+# wiki's walkthrough says each set of parts and systems makes; edit an authored pack instead.
 
-[[recipe]]
-recipe = 0x6F7E1601
-like = 0x6F0002BE
-name = { table = 0x25002007, string = 0x00DD730E }
-ingredients = [{ items = [0x47001600], name = { table = 0x25002007, string = 0x2FF03B27 } }, { items = [0x47001609], name = { table = 0x25002007, string = 0x1FE02C07 } }, { items = [0x47001608], name = { table = 0x25002007, string = 0x34603F33 } }]
+[[combination]]
+key = "cogitator-system"
+recipe = 0x6F001CF6
+items = [0x47001600, 0x47001609, 0x47001608]
 product = 0x47001601
-category = 605
-prov = { from = "authored", by = "Dereth Network", note = "the first system the master engineer teaches, of its three parts in the wiki's walkthrough of 2013; made from an install quest recipe, in the category the library names for them; no recording", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "the first system the master engineer teaches, of its three parts in the wiki's walkthrough of 2013, at the install's three-part assembly; no recording", confidence = "low" }
 
-[[recipe]]
-recipe = 0x6F7E1604
-like = 0x6F0002BE
-name = { table = 0x25002007, string = 0x0FD66809 }
-ingredients = [{ items = [0x4700161B], name = { table = 0x25002007, string = 0x0F177633 } }, { items = [0x4700161A], name = { table = 0x25002007, string = 0x38602E33 } }, { items = [0x47001605], name = { table = 0x25002007, string = 0x0FC02931 } }]
+[[combination]]
+key = "drive-system"
+recipe = 0x6F001CF6
+items = [0x4700161B, 0x4700161A, 0x47001605]
 product = 0x47001604
-category = 605
-prov = { from = "authored", by = "Dereth Network", note = "the second system the master engineer teaches, of its three parts in the wiki's walkthrough of 2013; made from an install quest recipe, in the category the library names for them; no recording", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "the second system the master engineer teaches, of its three parts in the wiki's walkthrough of 2013, at the install's three-part assembly; no recording", confidence = "low" }
 
-[[recipe]]
-recipe = 0x6F7E1606
-like = 0x6F0002BE
-name = { table = 0x25002007, string = 0xA56F2EDD }
-ingredients = [{ items = [0x47001601], name = { table = 0x25002007, string = 0x00DD730E } }, { items = [0x47001604], name = { table = 0x25002007, string = 0x0FD66809 } }]
+[[combination]]
+key = "gizmobulator"
+recipe = 0x6F001CF4
+items = [0x47001601, 0x47001604]
 product = 0x47001606
-category = 605
-prov = { from = "authored", by = "Dereth Network", note = "the device the master engineer teaches, of the two systems in the wiki's walkthrough of 2013; made from an install quest recipe, in the category the library names for them; no recording", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "the device the master engineer teaches, of the two systems in the wiki's walkthrough of 2013, at the install's two-system assembly; no recording", confidence = "low" }
