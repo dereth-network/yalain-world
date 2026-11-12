@@ -44,6 +44,7 @@
 - The master vaults' gems can now be made, their portal creatures killed in order. New pack `master-vault-gems/`.
 - Arramora's lair quests can now be done, from the gems their holders drop. New pack `arramora-lairs/`.
 - The blowouts' portal shards and the master vaults' gems now open their portals. New pack `item-portals/`.
+- The scholars' vault in north-west Osteth can now be entered and left. New pack `arcanum-vault/`.
 - People no longer say names, descriptions or lines meant for other moments. New pack `misnamed-lines/`.
 
 ## v0.36.0
