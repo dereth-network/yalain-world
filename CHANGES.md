@@ -33,6 +33,7 @@
 - The egg collector's two roost hunts can now be done. New pack `kydi-eggs/`.
 - The Shinoko raft mender's lost meal can now be fetched around the isles. New pack `shinoko-errands/`.
 - The Rakani ranger's revenge and the hivekeeper's blossoms can now be done. New pack `naderu-errands/`.
+- The spirit in the ruins southwest of Zu now waits for its four kills. New pack `lin-ruins/`.
 
 ## v0.36.0
 
