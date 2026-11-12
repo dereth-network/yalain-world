@@ -1,0 +1,32 @@
+# The hunt master's reminder and refusal, from his own lines; edit an authored pack instead.
+
+[[talk]]
+key = "hunt-remind"
+who = 0x4700332D
+line = { table = 0x25002AB0, string = 0x09643513 }
+how = "tell"
+when = "use"
+role = "remind"
+quest = 0x40000379
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "his line sending the player to the new slithis' grounds", confidence = "low" }
+
+[[talk]]
+key = "hunt-remind-seeds"
+who = 0x4700332D
+line = { table = 0x25002AB0, string = 0x61B457E8 }
+how = "tell"
+when = "use"
+role = "remind"
+quest = 0x40000379
+prov = { from = "authored", by = "Dereth Network", note = "his line asking for more seeds", confidence = "low" }
+
+[[talk]]
+key = "hunt-wrong"
+who = 0x4700332D
+line = { table = 0x25002AB0, string = 0x5B3B05D5 }
+how = "tell"
+when = "give"
+role = "refuse-give"
+quest = 0x40000379
+prov = { from = "authored", by = "Dereth Network", note = "his line for an item that is no slithis trophy", confidence = "low" }

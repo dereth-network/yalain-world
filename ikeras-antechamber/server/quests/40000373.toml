@@ -1,0 +1,17 @@
+# The charge to destroy a shade that lingers in the keep, from 2017's recordings; edit an authored pack instead.
+
+[[step]]
+key = "shadow-given"
+quest = 0x40000373
+needs = 0
+trigger = { use = 0x4700305C }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "2017: given at his use with his two lines (1 session); the device beside him leads to the keep", confidence = "medium" }
+
+[[step]]
+key = "shadow-destroyed"
+quest = 0x40000373
+needs = 1
+trigger = { kill = 0x470026A0 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "2017: ended at the shadow's death in the keep's last hall, its line as it fell (1 session, 20 minutes after the giving)", confidence = "medium" }

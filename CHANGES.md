@@ -34,6 +34,7 @@
 - The Shinoko raft mender's lost meal can now be fetched around the isles. New pack `shinoko-errands/`.
 - The Rakani ranger's revenge and the hivekeeper's blossoms can now be done. New pack `naderu-errands/`.
 - The spirit in the ruins southwest of Zu now waits for its four kills. New pack `lin-ruins/`.
+- Two Shadow quests from the Ikeras antechamber can now be done. New pack `ikeras-antechamber/`.
 
 ## v0.36.0
 
