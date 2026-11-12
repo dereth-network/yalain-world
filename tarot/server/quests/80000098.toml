@@ -1,0 +1,102 @@
+# Trumped: a contract from Jayna to the teller in Cavendo, a greater trump to the teller, her counter-offer back, a Vigor fate card to the teller, and Jayna's pay.
+
+[[quest]]
+id = 0x80000098
+id_name = "QuestWFTrumped"
+state = 0x6F000D57
+challenge = -999
+retry = 518400
+cancellable = true
+duration = 36000.0
+min_level = 46
+xp_share = 0.05
+xp_share_level = 56
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:086e8516", confidence = "high", sample = { sessions = 54 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "the wiki: ten hours to finish it", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "the wiki and the guides: level 46", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "the wiki: 5% of a level, to level 56", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "the wiki: 5% of a level, to level 56", confidence = "low" } } }
+
+[[step]]
+key = "j-given"
+quest = 0x80000098
+needs = 0
+trigger = { use = 0x47003397 }
+update = "bestow"
+gives = [0x47001B47]
+tell = { table = 0x25002ADD, string = 0x93C5D7AE }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: she gives it with her contract for the teller; the line is hers asking it", confidence = "low" }
+
+[[step]]
+key = "t-contract"
+quest = 0x80000098
+needs = 1
+trigger = { give = 0x47001B47, to = 0x47002F90 }
+update = "advance"
+phase = 2
+takes = [0x47001B47]
+tell = { table = 0x25002901, string = 0x65E9B46D }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the contract handed the teller; her line asks the player to prove a Seeker", confidence = "low" }
+
+[[step]]
+key = "t-seeker"
+quest = 0x80000098
+needs = 2
+trigger = { give = 0x470013D4, to = 0x47002F90 }
+update = "advance"
+phase = 3
+gives = [0x47001B45]
+takes = [0x470013D4]
+tell = { table = 0x25002901, string = 0xFF369820 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: that greater trump handed her gives her counter-offer; her line hands it over", confidence = "low" }
+
+[[step]]
+key = "j-counter"
+quest = 0x80000098
+needs = 3
+trigger = { give = 0x47001B45, to = 0x47003397 }
+update = "advance"
+phase = 4
+takes = [0x47001B45]
+tell = { table = 0x25002ADD, string = 0xEF07139A }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the counter-offer back to her; her line asks for a Vigor fate card", confidence = "low" }
+
+[[step]]
+key = "t-vigor-lesser"
+quest = 0x80000098
+needs = 4
+trigger = { give = 0x470013A6, to = 0x47002F90 }
+update = "advance"
+phase = 5
+takes = [0x470013A6]
+tell = { table = 0x25002901, string = 0x61F8D6CE }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a lesser, plain or greater Vigor fate card, any of them, handed the teller; her line signs the agreement", confidence = "low" }
+
+[[step]]
+key = "t-vigor-plain"
+quest = 0x80000098
+needs = 4
+trigger = { give = 0x470013A4, to = 0x47002F90 }
+update = "advance"
+phase = 5
+takes = [0x470013A4]
+tell = { table = 0x25002901, string = 0x61F8D6CE }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a lesser, plain or greater Vigor fate card, any of them, handed the teller; her line signs the agreement", confidence = "low" }
+
+[[step]]
+key = "t-vigor-greater"
+quest = 0x80000098
+needs = 4
+trigger = { give = 0x470013A5, to = 0x47002F90 }
+update = "advance"
+phase = 5
+takes = [0x470013A5]
+tell = { table = 0x25002901, string = 0x61F8D6CE }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a lesser, plain or greater Vigor fate card, any of them, handed the teller; her line signs the agreement", confidence = "low" }
+
+[[step]]
+key = "j-paid"
+quest = 0x80000098
+needs = 5
+trigger = { use = 0x47003397 }
+update = "complete"
+gives = [0x47000538]
+counts = [5000]
+tell = { table = 0x25002ADD, string = 0x954AB52B }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: back to her for 5,000 coins; the line is her thanks with her fee", confidence = "low" }
