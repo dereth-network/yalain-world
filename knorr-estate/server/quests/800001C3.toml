@@ -82,7 +82,8 @@ update = "advance"
 phase = 7
 tell = { table = 0x25002521, string = 0x4AA037B6 }
 takes = [0x470015A8]
-prov = { from = "authored", by = "Dereth Network", note = "the key brought to the sorcerer, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
+to = "estate-ck-trap"
+prov = { from = "authored", by = "Dereth Network", note = "the key brought to the sorcerer, who takes it and sends a player among the Falatacot, from the wiki's walkthrough of 2013, with the speaker's own line in the install; no recording", confidence = "low" }
 
 [[step]]
 key = "z-trap"
@@ -91,8 +92,7 @@ needs = 7
 trigger = { use = 0x470030F5 }
 update = "none"
 tell = { table = 0x25002521, string = 0x99486B36 }
-to = "estate-ck-trap"
-prov = { from = "authored", by = "Dereth Network", note = "the tricked sorcerer sends a player among the Falatacot, as a player's guide of 2013 says he does as the key is given; his line for it in the install; no recording", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "the tricked sorcerer, spoken to again once he has the key, says his line of being mocked; no recording", confidence = "low" }
 
 [[step]]
 key = "a-end"
