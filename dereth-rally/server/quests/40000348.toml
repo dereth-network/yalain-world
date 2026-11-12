@@ -8,7 +8,8 @@ challenge = -999
 duration = 2700.0
 retry = 3600.0
 min_level = 16
-prov = { from = "authored", by = "Dereth Network", note = "a course 2017's lists did not hold, its challenge as the six they did; 45 minutes (its regulating effect's 2700 s), the guides' hour's wait and level 16", confidence = "medium" }
+fails_on_teleport = true
+prov = { from = "authored", by = "Dereth Network", note = "a course 2017's lists did not hold, its challenge as the six they did; 45 minutes (its regulating effect's 2700 s), the guides' hour's wait and level 16", confidence = "medium", fields = { fails_on_teleport = { from = "authored", by = "Dereth Network", note = "the wiki: a portal or a recall used during the race fails it at once", confidence = "medium" } } }
 
 [[step]]
 key = "start"

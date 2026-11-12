@@ -8,7 +8,8 @@ challenge = -999
 duration = 2700.0
 retry = 3600.0
 min_level = 16
-prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:dd9a7b3e", confidence = "high", sample = { sessions = 50 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "45 minutes a race: the race's own regulating effect lasts 2700 s, and the wiki says 45", confidence = "medium" }, retry = { from = "authored", by = "Dereth Network", note = "the 2004 guides' hour before the same race again", confidence = "medium" }, min_level = { from = "authored", by = "Dereth Network", note = "level 16, as the wiki and the 2004 guides say", confidence = "medium" } } }
+fails_on_teleport = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:dd9a7b3e", confidence = "high", sample = { sessions = 50 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "45 minutes a race: the race's own regulating effect lasts 2700 s, and the wiki says 45", confidence = "medium" }, retry = { from = "authored", by = "Dereth Network", note = "the 2004 guides' hour before the same race again", confidence = "medium" }, min_level = { from = "authored", by = "Dereth Network", note = "level 16, as the wiki and the 2004 guides say", confidence = "medium" }, fails_on_teleport = { from = "authored", by = "Dereth Network", note = "the wiki: a portal or a recall used during the race fails it at once", confidence = "medium" } } }
 
 [[step]]
 key = "start"
