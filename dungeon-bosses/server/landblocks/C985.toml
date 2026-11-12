@@ -1,0 +1,22 @@
+# Dungeon bosses, the rare creatures that give their quests, and ways in; edit an authored pack instead.
+
+[[camp]]
+key = "forgotten-one"
+cell = 0xC985000A
+at = [34.50, 32.30, 162.89]
+spots = [{ cell = 0xC985000A, at = [34.50, 32.30, 162.89] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470023F4, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a guess: one at a time 30 m west of the mines' mouth; no source places it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "ghost-mines"
+kind = "static"
+template = 0x47001154
+cell = 0xC985001A
+at = [64.55, 32.28, 157.45]
+rotation = [-0.25038, 0.0, 0.0, 0.968148]
+name = { table = 0x25001B44, string = 0x5A33928C }
+to = "ghost-mines-in"
+prov = { from = "authored", by = "Dereth Network", note = "at the surface end a list of the game's destinations gives for this dungeon, named with the install's own portal name for it; no recording", confidence = "low" }

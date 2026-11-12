@@ -1,0 +1,11 @@
+# Dungeon bosses, the rare creatures that give their quests, and ways in; edit an authored pack instead.
+
+[[camp]]
+key = "keerik-polluter"
+cell = 0xD6A10024
+at = [80.50, 62.80, 77.52]
+spots = [{ cell = 0xD6A10024, at = [80.50, 62.80, 77.52] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470022A3, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a rare one at a time at the camp of the same kind nearest the tunnels' mouth, by the north-east outpost of the peninsula the wiki names; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

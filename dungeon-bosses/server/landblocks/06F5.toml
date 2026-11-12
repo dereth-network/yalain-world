@@ -1,0 +1,22 @@
+# Dungeon bosses, the rare creatures that give their quests, and ways in; edit an authored pack instead.
+
+[[camp]]
+key = "drone-nymph"
+cell = 0x06F5018B
+at = [-128.89, 200.65, 143.90]
+spots = [{ cell = 0x06F5018B, at = [-128.89, 200.65, 143.90] }, { cell = 0x06F50186, at = [-174.14, 127.88, 154.00] }, { cell = 0x06F5017A, at = [11.31, 148.89, 146.50] }, { cell = 0x06F50171, at = [33.88, 97.39, 153.90] }, { cell = 0x06F50189, at = [-128.89, 167.07, 143.80] }, { cell = 0x06F50184, at = [-137.29, 111.03, 153.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700295E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the other hive marks the nymph's spawns in its far chambers; here this hive's far chambers, where the walk from the landing ends, one at a time", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "olthoi-hive-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x06F50162
+at = [50.64, -1.97, 157.10]
+rotation = [0.5, 0.0, 0.0, 0.866025]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "olthoi-hive-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out beside the landing, where a players' map draws one; to the mound's deep cells; no recording", confidence = "low" }

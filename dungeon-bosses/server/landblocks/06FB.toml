@@ -1,0 +1,33 @@
+# Dungeon bosses, the rare creatures that give their quests, and ways in; edit an authored pack instead.
+
+[[camp]]
+key = "remembrance"
+cell = 0x06FB0272
+at = [-184.57, -205.21, -29.00]
+spots = [{ cell = 0x06FB0272, at = [-184.57, -205.21, -29.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470023F0, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the dungeon draws the boss in the far west room, before its exit portal", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "remembrance-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x06FB0273
+at = [-204.57, -203.21, -28.90]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0xC40C054A }
+to = "ghost-mines-out"
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the dungeon draws an exit portal at the far west end of the boss's room", confidence = "low" }
+
+[[object]]
+key = "ghost-mines-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x06FB0251
+at = [8.74, -0.79, 1.00]
+rotation = [0.707107, 0.0, 0.0, 0.707106]
+name = { table = 0x25001B44, string = 0xC40C054A }
+to = "ghost-mines-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out beside the landing, to the surface end the list of destinations gives; no recording", confidence = "low" }

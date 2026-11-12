@@ -1,0 +1,22 @@
+# Dungeon bosses, the rare creatures that give their quests, and ways in; edit an authored pack instead.
+
+[[camp]]
+key = "malik"
+cell = 0x07FD0178
+at = [121.31, -31.90, -23.90]
+spots = [{ cell = 0x07FD0178, at = [121.31, -31.90, -23.90] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002204, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the dungeon draws the boss at the east end of its eastmost hall, beside the trove", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "banderling-delve-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x07FD016C
+at = [-11.93, 2.07, -14.00]
+rotation = [0.707107, 0.0, 0.0, -0.707107]
+name = { table = 0x25001B44, string = 0x8C0BC0BA }
+to = "banderling-delve-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out beside the landing, to the surface end the list of destinations gives; no recording", confidence = "low" }

@@ -1,0 +1,22 @@
+# Dungeon bosses, the rare creatures that give their quests, and ways in; edit an authored pack instead.
+
+[[camp]]
+key = "foultamer"
+cell = 0x06FC01EB
+at = [-62.23, -119.98, -48.20]
+spots = [{ cell = 0x06FC01EB, at = [-62.23, -119.98, -48.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470027B3, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the dungeon draws no boss; on its deepest level, between the stair from the level above and the room with its exit portal", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "foultamer-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x06FC01D2
+at = [-82.02, -120.70, -49.00]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0x1F93A3DB }
+to = "acmaps-camps:darkenfowl-pens-out"
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the dungeon draws an exit portal in the round room of its deepest level", confidence = "low" }
