@@ -1,0 +1,23 @@
+# The ranger's lines for his quest, from his own table; edit an authored pack instead.
+
+[[talk]]
+key = "terror-offer"
+who = 0x4700326B
+line = { table = 0x25002A54, string = 0x4B020308 }
+how = "tell"
+when = "use"
+role = "offer"
+quest = 0x80000383
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a player's guide quotes this line at the giving", confidence = "low" }
+
+[[talk]]
+key = "terror-remind"
+who = 0x4700326B
+line = { table = 0x25002A54, string = 0x69327B7C }
+how = "tell"
+when = "use"
+role = "remind"
+quest = 0x80000383
+phase = 1
+prov = { from = "authored", by = "Dereth Network", note = "his line sending the player after the terror", confidence = "low" }

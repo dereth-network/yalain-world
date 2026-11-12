@@ -1,0 +1,10 @@
+# The ranger's revenge on the beast of the marshes, from a player's guide of the time and his own lines; edit an authored pack instead.
+
+[[step]]
+key = "terror-killed"
+quest = 0x80000383
+needs = 2
+trigger = { use = 0x4700326B }
+update = "complete"
+tell = { table = 0x25002A54, string = 0xF86B035C }
+prov = { from = "authored", by = "Dereth Network", note = "a player's guide: back to him once the terror is dead (its death moves it to phase 2, its own effect); his line of thanks", confidence = "low" }
