@@ -44,6 +44,7 @@
 - The master vaults' gems can now be made, their portal creatures killed in order. New pack `master-vault-gems/`.
 - Arramora's lair gems now drop, and the lairs have their bosses and ways out. New pack `arramora-lairs/`.
 - Arramora's eleven lair quests can now be done, from the gems their holders drop. New pack `arramora-lairs/`.
+- Arramora's lair quests can now be done, from the gems their holders drop. New pack `arramora-lairs/`.
 
 ## v0.36.0
 
