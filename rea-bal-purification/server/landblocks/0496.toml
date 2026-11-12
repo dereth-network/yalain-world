@@ -1,0 +1,31 @@
+# The purification room's master and spirits, from the wiki's walkthrough; edit an authored pack instead.
+
+[[camp]]
+key = "cursed-master"
+cell = 0x04960108
+at = [-21.56, 14.73, 3.50]
+spots = [{ cell = 0x04960108, at = [-21.56, 14.73, 3.50] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470023EC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: in the room's south-west corner, opposite the landing; one at a time", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cursed-spirits"
+cell = 0x04960109
+at = [-21.47, 38.07, 2.40]
+spots = [{ cell = 0x04960109, at = [-21.47, 38.07, 2.40] }, { cell = 0x04960101, at = [20.75, 20.88, 2.20] }, { cell = 0x04960106, at = [14.74, 69.18, 2.60] }, { cell = 0x04960105, at = [44.74, 69.18, 2.70] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x470023E8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: cursed spirits fill the room, to be drawn off one at a time; four, a guess, along its sides, where their bodies move", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "tormented-spirits"
+cell = 0x04960100
+at = [-3.44, 20.10, 2.70]
+spots = [{ cell = 0x04960100, at = [-3.44, 20.10, 2.70] }, { cell = 0x04960101, at = [32.65, 20.77, 2.80] }, { cell = 0x04960106, at = [2.74, 69.18, 2.40] }, { cell = 0x04960107, at = [-21.26, 69.18, 2.60] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x470023ED, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: and tormented spirits, to be left alone; four, a guess, along its sides", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

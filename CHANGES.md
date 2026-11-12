@@ -66,6 +66,7 @@
 - The counselor's errand in the Burun lair south of Ankoro can now be done. New pack `burun-clutch-fetish/`.
 - The ranger's missing pet can now be found and brought home. New pack `ranger-den/`.
 - The spirit's purification at the shrines of Omishan can now be done. New pack `tonk-shrines/`.
+- The tormented spirits' purification at the sea shrine can now be done. New pack `rea-bal-purification/`.
 
 ## v0.36.0
 
