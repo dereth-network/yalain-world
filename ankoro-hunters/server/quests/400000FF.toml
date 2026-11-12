@@ -1,0 +1,23 @@
+# The mushroom collector's two glands, from 2017's recordings of the first and the wiki's walkthrough of the second; edit an authored pack instead.
+
+[[step]]
+key = "h-3"
+quest = 0x400000FF
+needs = 2
+trigger = { give = 0x47001754, to = 0x470031CA }
+update = "advance"
+phase = 3
+takes = [0x47001754]
+recipes = [0x6F0002D6]
+prov = { from = "authored", by = "Dereth Network", note = "2017: the first gland handed in moved it to phase 3 with his line for teaching a refreshing potion (1 session); the wiki: he teaches the vigor potion then", confidence = "medium" }
+
+[[step]]
+key = "devolved-gland"
+quest = 0x400000FF
+needs = 4
+trigger = { give = 0x47001755, to = 0x470031CA }
+update = "complete"
+takes = [0x47001755]
+recipes = [0x6F0002D5]
+tell = { table = 0x25002A25, string = 0x0B015D5A }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the second gland back to him ends it and teaches the health potion; his line for teaching a revitalizing potion; the gland's taking moves it to phase 4 (its own effect)", confidence = "low" }
