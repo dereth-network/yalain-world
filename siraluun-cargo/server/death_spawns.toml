@@ -1,0 +1,19 @@
+# The two Gurog guarding the cargo chest a map of buried cargo uncovers; edit an authored pack instead.
+
+[[death_spawn]]
+effect = "Eff_SummonGurogShamanSH"
+template = 0x47002616
+count = 1
+chance = 1.0
+offset = [-2.0, 5.0, 0.0]
+lasts = 1200.0
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a level 48 shaman guards the chest; the install's shaman of the Gurog of Linvak is level 45, the nearest", confidence = "low" }
+
+[[death_spawn]]
+effect = "Eff_SummonGurogGladiatorSH"
+template = 0x4700265F
+count = 1
+chance = 1.0
+offset = [2.0, 5.0, 0.0]
+lasts = 1200.0
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a level 46 gladiator guards the chest; the install's gladiator of the Gurog of Linvak is level 46", confidence = "low" }

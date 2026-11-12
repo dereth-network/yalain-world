@@ -94,7 +94,7 @@
 - The doomed sword quest in Arramora can now be done, the sword worn against its creature. New pack `doomed-hero-sword/`.
 - The plague cure in the Knorr Ramparts now takes six maws, one at a time. New pack `magnan-plague-cure/`.
 - The queen's quest in Lake Artefon's catacombs can now be done. New pack `artefon-salvation/`.
-- Drudgerton's stolen feathers quest can now be done, from maps the Gurog drop. New pack `siraluun-cargo/`.
+- Drudgerton's stolen feathers quest can now be done, from the guarded chests the Gurog's maps uncover. New pack `siraluun-cargo/`.
 - The shreth pit north-east of Rakani is open, and its warden's quest can be done. New pack `shreth-spawning-pit/`.
 - The tyrants' blood quest in Linvak can now be done, from the ravine's chest. New pack `tyrant-heart/`.
 - People who give quests in a series now give them in order. New pack `quest-series/`.
