@@ -1,0 +1,11 @@
+# The besieged outposts' recruits and beacons; edit an authored pack instead.
+
+[[camp]]
+key = "beacon-ec"
+cell = 0x51770025
+at = [90.10, 80.10, 170.50]
+spots = [{ cell = 0x51770025, at = [90.10, 80.10, 170.50] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700299F, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outpost's beacon, one at a time, at the middle of the guard camp 2017 recorded where Hero puts the central outpost, as the beacons 2017 did record stand among theirs; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

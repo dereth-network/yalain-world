@@ -49,6 +49,7 @@
 - People no longer say names, descriptions or lines meant for other moments. New pack `misnamed-lines/`.
 - The archons of the Linvak and Omishan master vaults can now be fought and their quests finished. New pack `linvak-omishan-vaults/`.
 - Nine dungeon kill quests can now be done, with ways into four more dungeons. New pack `dungeon-bosses/`.
+- Rare recruits near seven besieged outposts now start their beacon quests. New pack `beacon-blowouts/`.
 
 ## v0.36.0
 

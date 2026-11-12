@@ -1,0 +1,11 @@
+# The besieged outposts' recruits and beacons; edit an authored pack instead.
+
+[[camp]]
+key = "recruit-ec"
+cell = 0x51760027
+at = [90.10, 120.10, 151.47]
+spots = [{ cell = 0x51760027, at = [90.10, 120.10, 151.47] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002631, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a rare one at a time 120 m south of the central outpost's beacon placed here, on his way to it as the quest's text says; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
