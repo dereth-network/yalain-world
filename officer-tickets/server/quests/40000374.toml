@@ -1,0 +1,19 @@
+# The town officer's ticket for his own killing; edit an authored pack instead.
+
+[[step]]
+key = "officer-killed"
+quest = 0x40000374
+needs = 0
+trigger = { kill = 0x470031F5 }
+update = "bestow"
+gives = [0x4700177B]
+prov = { from = "authored", by = "Dereth Network", note = "the journal's one phase: he was killed; a players' guide of the time: the kill gives the quest and a ticket; no recording of a ticket; how it ends is unknown, so nothing here ends it", confidence = "low" }
+
+[[step]]
+key = "officer-killed-again"
+quest = 0x40000374
+needs = 1
+trigger = { kill = 0x470031F5 }
+update = "none"
+gives = [0x4700177B]
+prov = { from = "authored", by = "Dereth Network", note = "a players' guide of the time: each kill another ticket", confidence = "low" }
