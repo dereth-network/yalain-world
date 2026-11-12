@@ -1,0 +1,1063 @@
+# The walk to the recluse past the citadel without a drudge killed, from the wiki's walkthrough and the recluse's own lines; edit an authored pack instead.
+
+[[step]]
+key = "recluse-found"
+quest = 0x400001B5
+needs = 1
+trigger = { use = 0x47003345 }
+update = "complete"
+tell = { table = 0x25002ABD, string = 0x04F53505 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: speaking with the recluse ends it; his line for a quiet arrival", confidence = "low" }
+
+[[step]]
+key = "recluse-bloodied"
+quest = 0x400001B5
+needs = 2
+trigger = { use = 0x47003345 }
+update = "fail"
+tell = { table = 0x25002ABD, string = 0x1FA5C72F }
+prov = { from = "authored", by = "Dereth Network", note = "his line for one who killed a drudge on the way: the quest fails; the second phase marks the kill, its journal the first's", confidence = "low" }
+
+[[step]]
+key = "drudge-4700080e"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700080E }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47000811"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47000811 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002322"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002322 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002324"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002324 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002325"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002325 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002326"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002326 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002327"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002327 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002329"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002329 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700232b"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700232B }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700232c"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700232C }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700232d"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700232D }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700232e"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700232E }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002331"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002331 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002332"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002332 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002334"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002334 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002335"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002335 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002337"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002337 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002338"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002338 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700233a"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700233A }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700233b"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700233B }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700233c"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700233C }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002340"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002340 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002341"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002341 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002343"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002343 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002344"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002344 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002345"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002345 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002346"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002346 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002347"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002347 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002348"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002348 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002349"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002349 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700234b"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700234B }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700234c"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700234C }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700234d"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700234D }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700234f"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700234F }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002351"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002351 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002352"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002352 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002353"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002353 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002354"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002354 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002355"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002355 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002356"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002356 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002359"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002359 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700235a"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700235A }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700235c"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700235C }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700235d"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700235D }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700235f"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700235F }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002360"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002360 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002362"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002362 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002363"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002363 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002365"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002365 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002366"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002366 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002367"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002367 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002369"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002369 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700236a"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700236A }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700236b"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700236B }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700236c"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700236C }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700236d"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700236D }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700236e"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700236E }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700236f"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700236F }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002372"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002372 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002373"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002373 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002375"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002375 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002376"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002376 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002377"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002377 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002378"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002378 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002379"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002379 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700237b"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700237B }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700237c"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700237C }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700237d"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700237D }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700237e"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700237E }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002381"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002381 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002382"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002382 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002383"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002383 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002384"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002384 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002385"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002385 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002387"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002387 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002388"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002388 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002389"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002389 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700238a"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700238A }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700238b"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700238B }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700238c"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700238C }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700238d"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700238D }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002390"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002390 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002393"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002393 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002394"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002394 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002396"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002396 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002397"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002397 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002398"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002398 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002399"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002399 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700239a"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700239A }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700239b"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700239B }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700239c"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700239C }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700239e"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700239E }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-4700239f"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x4700239F }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023a0"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023A0 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023a2"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023A2 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023a4"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023A4 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023a5"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023A5 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023a6"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023A6 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023a7"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023A7 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023a8"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023A8 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023a9"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023A9 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023aa"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023AA }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023ab"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023AB }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023ac"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023AC }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023ad"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023AD }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023ae"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023AE }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023b3"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023B3 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023b4"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023B4 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023b5"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023B5 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023b6"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023B6 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023b7"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023B7 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023b8"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023B8 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470023b9"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470023B9 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-470026cd"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x470026CD }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002c02"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002C02 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
+
+[[step]]
+key = "drudge-47002c03"
+quest = 0x400001B5
+needs = 1
+trigger = { kill = 0x47002C03 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the factotum's line: no drudge killed on the way; any creature of the drudges' kind killed marks it", confidence = "low" }
