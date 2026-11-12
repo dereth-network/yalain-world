@@ -1,0 +1,15 @@
+# A hidden quest of the install's kept while the renegade lord is shown the evidence: the shield given. Edit an authored pack instead.
+
+[[quest]]
+id = 0x800000A6
+id_name = "QuestConvinceAunTanua6"
+visible = false
+prov = { from = "authored", by = "Dereth Network", note = "hidden: one of the install's quests kept while the renegade lord is shown the evidence, which its own journal names nothing for", confidence = "low" }
+
+[[step]]
+key = "shield-kept-done"
+quest = 0x800000A6
+needs = 1
+trigger = { done = 0x800000A0 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the hidden quest keeping the evidence given ends with the quest", confidence = "low" }

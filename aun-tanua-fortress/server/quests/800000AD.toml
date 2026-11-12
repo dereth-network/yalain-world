@@ -1,0 +1,36 @@
+# The fortress's door: the glyph given to the orb keeps a hidden quest of the install's under way, and the orb then takes
+# its holder inside; Kogun's death ends it, as the next giving brings a new glyph. Edit an authored pack instead.
+
+[[quest]]
+id = 0x800000AD
+id_name = "QuestEnterFortress"
+visible = false
+prov = { from = "authored", by = "Dereth Network", note = "hidden: the install's quest for having given the glyph to the orb, which its own journal names nothing for", confidence = "low" }
+
+[[step]]
+key = "orb-takes-glyph"
+quest = 0x800000AD
+needs = 0
+trigger = { give = 0x47001282, to = 0x47002F3D }
+update = "bestow"
+takes = [0x47001282]
+tell = { table = 0x250028DB, string = 0xBB07C987 }
+prov = { from = "authored", by = "Dereth Network", note = "the glyph given to the orb vanishes (the orb's line for it; the wiki: give the glyph to the orb)", confidence = "low" }
+
+[[step]]
+key = "orb-takes-inside"
+quest = 0x800000AD
+needs = 1
+trigger = { use = 0x47002F3D }
+update = "none"
+to = "atl-entrance"
+tell = { table = 0x250028DB, string = 0x468B34C6 }
+prov = { from = "authored", by = "Dereth Network", note = "after the glyph, a use of the orb takes its user to the far side of the door (the orb's line for it)", confidence = "low" }
+
+[[step]]
+key = "orb-done"
+quest = 0x800000AD
+needs = 1
+trigger = { done = 0x8000009F }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "Kogun's death ends it: the next giving of the quest brings a new glyph", confidence = "low" }

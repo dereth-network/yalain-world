@@ -1,0 +1,124 @@
+# The renegade lord's quest: given with the quest against Kogun, then the evidence handed to him in the wiki's order, each moving it on for the
+# carrier's fellows, and every fellow's doctrine of the Order ending it, once (the wiki). The shield and the sword are kept
+# by two hidden quests of the install's, done with it. Edit an authored pack instead.
+
+[[quest]]
+id = 0x800000A0
+id_name = "QuestStopAunTanua"
+state = 0x6F00070D
+challenge = -999
+once = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:2293ddfe", confidence = "high", sample = { sessions = 3 }, fields = { once = { from = "authored", by = "Dereth Network", note = "the wiki: not repeatable", confidence = "low" } } }
+
+[[step]]
+key = "thromer-also-gives"
+quest = 0x800000A0
+needs = 0
+trigger = { given = 0x8000009F }
+update = "bestow"
+tell = { table = 0x25002950, string = 0x2050C23F }
+prov = { from = "authored", by = "Dereth Network", note = "given with the quest against Kogun by whoever gives that (the wiki: the starter gives both), with the Dominion's ruler's line about the renegade lord", confidence = "low" }
+
+[[step]]
+key = "evidence-1"
+quest = 0x800000A0
+needs = 1
+trigger = { give = 0x47001B44, to = 0x47002F3B }
+update = "advance"
+phase = 2
+takes = [0x47001B44]
+fellows = true
+tell = { table = 0x250028DA, string = 0x1DC038A2 }
+prov = { from = "authored", by = "Dereth Network", note = "the doll handed to him, in the wiki's order, moves it on for the carrier's fellows too (the wiki), with his line for it", confidence = "low" }
+
+[[step]]
+key = "evidence-2"
+quest = 0x800000A0
+needs = 2
+trigger = { give = 0x4700127F, to = 0x47002F3B }
+update = "advance"
+phase = 3
+takes = [0x4700127F]
+fellows = true
+tell = { table = 0x250028DA, string = 0x2937AE8E }
+prov = { from = "authored", by = "Dereth Network", note = "the guard's journal handed to him, in the wiki's order, moves it on for the carrier's fellows too (the wiki), with his line for it", confidence = "low" }
+
+[[step]]
+key = "evidence-3"
+quest = 0x800000A0
+needs = 3
+trigger = { give = 0x47001280, to = 0x47002F3B }
+update = "advance"
+phase = 4
+takes = [0x47001280]
+fellows = true
+tell = { table = 0x250028DA, string = 0x2937AEEE }
+prov = { from = "authored", by = "Dereth Network", note = "the zealot's journal handed to him, in the wiki's order, moves it on for the carrier's fellows too (the wiki), with his line for it", confidence = "low" }
+
+[[step]]
+key = "evidence-4"
+quest = 0x800000A0
+needs = 4
+trigger = { give = 0x47001284, to = 0x47002F3B }
+update = "advance"
+phase = 5
+takes = [0x47001284]
+fellows = true
+tell = { table = 0x250028DA, string = 0x7D066EF6 }
+prov = { from = "authored", by = "Dereth Network", note = "the soldier's letter handed to him, in the wiki's order, moves it on for the carrier's fellows too (the wiki), with his line for it", confidence = "low" }
+
+[[step]]
+key = "evidence-5"
+quest = 0x800000A0
+needs = 5
+trigger = { give = 0x47001285, to = 0x47002F3B }
+update = "advance"
+phase = 6
+takes = [0x47001285]
+fellows = true
+tell = { table = 0x250028DA, string = 0xFDEF07BA }
+prov = { from = "authored", by = "Dereth Network", note = "the fetish handed to him, in the wiki's order, moves it on for the carrier's fellows too (the wiki), with his line for it", confidence = "low" }
+
+[[step]]
+key = "evidence-shield"
+quest = 0x800000A6
+needs = 0
+trigger = { give = 0x4700127D, to = 0x47002F3B }
+update = "bestow"
+takes = [0x4700127D]
+requires = [{ quest = 0x800000A0, phase = 6 }]
+fellows = true
+tell = { table = 0x250028DA, string = 0xC597A8FF }
+prov = { from = "authored", by = "Dereth Network", note = "the shield handed to him after the fetish (the wiki's order), with his line for it; a hidden quest of the install keeps it given", confidence = "low" }
+
+[[step]]
+key = "evidence-sword"
+quest = 0x800000A7
+needs = 0
+trigger = { give = 0x4700127E, to = 0x47002F3B }
+update = "bestow"
+takes = [0x4700127E]
+requires = [{ quest = 0x800000A0, phase = 6 }, { quest = 0x800000A6, phase = 1 }]
+fellows = true
+tell = { table = 0x250028DA, string = 0xEA1186DC }
+prov = { from = "authored", by = "Dereth Network", note = "the sword handed to him after the shield (the wiki's order), with his line for it; a hidden quest of the install keeps it given", confidence = "low" }
+
+[[step]]
+key = "doctrine-ends"
+quest = 0x800000A0
+needs = 6
+trigger = { give = 0x47001A54, to = 0x47002F3B }
+update = "complete"
+takes = [0x47001A54]
+requires = [{ quest = 0x800000A7, phase = 1 }]
+tell = { table = 0x250028DA, string = 0x93871599 }
+prov = { from = "authored", by = "Dereth Network", note = "each fellow's doctrine of the Order, after the sword, ends it (the wiki: the last item; every fellow turns one in), with his line for it", confidence = "low" }
+
+[[step]]
+key = "doctrine-at-the-stone"
+quest = 0x800000A0
+needs = 6
+trigger = { use = 0x47003364 }
+update = "none"
+gives = [0x47001A54]
+prov = { from = "authored", by = "Dereth Network", note = "the Order's stone of the doctrines' quest gives a doctrine to hand him (the wiki: from the Order shrine of that quest)", confidence = "low" }

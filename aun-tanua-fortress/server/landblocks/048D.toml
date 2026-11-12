@@ -1,0 +1,70 @@
+# Kogun and his fanatics, the renegade lord and his, and the inner rooms' ways out; edit an authored pack instead.
+
+[[object]]
+key = "atl-inner-out"
+kind = "static"
+template = 0x47001154
+cell = 0x048D0103
+at = [-22.98, -19.02, 3.10]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "atl-foot"
+prov = { from = "authored", by = "Dereth Network", note = "the exit portal by the inner rooms' landing (the wiki's map), to the mountain's foot", confidence = "low" }
+
+[[object]]
+key = "atl-last-out"
+kind = "static"
+template = 0x47001154
+cell = 0x048D0189
+at = [-19.97, -357.87, 3.10]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "atl-foot"
+prov = { from = "authored", by = "Dereth Network", note = "the exit portal past the renegade lord's room (the wiki's map), to the mountain's foot", confidence = "low" }
+
+[[camp]]
+key = "atl-kogun"
+cell = 0x048D013D
+at = [0.33, -204.86, 3.00]
+spots = [{ cell = 0x048D013D, at = [0.33, -204.86, 3.00] }]
+population = 1
+regen = 600.0
+spawns = [{ template = 0x4700276C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "Kogun at the middle of his room (the wiki's map); his death ends the Dominion's ruler's quest (the install); never recorded", confidence = "low" }
+
+[[camp]]
+key = "atl-kogun-guard-west"
+cell = 0x048D0134
+at = [-19.98, -211.78, 3.00]
+spots = [{ cell = 0x048D0134, at = [-19.98, -211.78, 3.00] }, { cell = 0x048D0133, at = [-25.23, -205.02, 3.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700276E, weight = 1 }, { template = 0x4700268A, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "fanatics of the fortress's own kinds in Kogun's room, west side (the wiki's map); they leave the disguised alone (the wiki)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "atl-kogun-guard-east"
+cell = 0x048D0138
+at = [20.01, -212.33, 3.00]
+spots = [{ cell = 0x048D0138, at = [20.01, -212.33, 3.00] }, { cell = 0x048D013A, at = [24.66, -204.99, 3.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700276E, weight = 1 }, { template = 0x4700268A, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "fanatics of the fortress's own kinds in Kogun's room, east side, as the west's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "atl-aun-tanua"
+kind = "npc"
+template = 0x47002F3B
+cell = 0x048D0199
+at = [-20.05, -321.97, 3.00]
+rotation = [0.707107, 0.0, 0.0, 0.707107]
+prov = { from = "authored", by = "Dereth Network", note = "The renegade lord in his room past Kogun's (the wiki and its map); he hears the evidence; never recorded", confidence = "low" }
+
+[[camp]]
+key = "atl-tanua-guard"
+cell = 0x048D0195
+at = [-34.91, -312.17, 3.00]
+spots = [{ cell = 0x048D0195, at = [-34.91, -312.17, 3.00] }, { cell = 0x048D019B, at = [-5.27, -312.21, 3.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700276E, weight = 1 }, { template = 0x4700268A, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "fanatics of the fortress's own kinds in the renegade lord's room (the wiki's map)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
