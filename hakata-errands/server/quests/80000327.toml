@@ -1,0 +1,41 @@
+# The chieftain's search for the hidden temple past his story, from the wiki's walkthrough, the shrines' and the stone's own lines; edit an authored pack instead.
+
+[[step]]
+key = "shrine-answers"
+quest = 0x80000327
+needs = 5
+trigger = { give = 0x4700060F, to = 0x470031DE }
+update = "advance"
+phase = 6
+tell = { table = 0x25002A30, string = 0xBB812C71 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: of the 11 shrines one answers, the amulet handed back with an urge to touch it again; the journal names the blind spirit's; that shrine's line", confidence = "low" }
+
+[[step]]
+key = "shrine-touched"
+quest = 0x80000327
+needs = 6
+trigger = { use = 0x470031DE }
+update = "advance"
+phase = 7
+to = "menhir-hill"
+tell = { table = 0x25002A30, string = 0xBB812071 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: touched again, the shrine portals the player to the standing stone; its line of the vision of the hill", confidence = "low" }
+
+[[step]]
+key = "menhir-traced"
+quest = 0x80000327
+needs = 7
+trigger = { use = 0x47002FE1 }
+update = "advance"
+phase = 8
+tell = { table = 0x2500292D, string = 0x246456E6 }
+prov = { from = "authored", by = "Dereth Network", note = "the journal: this stone marks the temple's way in, then back to the chieftain; the stone's line for its runes", confidence = "low" }
+
+[[step]]
+key = "temple-found"
+quest = 0x80000327
+needs = 8
+trigger = { use = 0x47002FDF }
+update = "complete"
+tell = { table = 0x2500292C, string = 0x95CBED5A }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: back to the chieftain ends it; his line that the temple remains to be explored", confidence = "low" }

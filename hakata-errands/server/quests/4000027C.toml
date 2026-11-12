@@ -1,0 +1,57 @@
+# Either plain javelin for each of the five, as 2017's hand-ins took both kinds; edit an authored pack instead.
+
+[[step]]
+key = "throwing-1"
+quest = 0x4000027C
+needs = 1
+trigger = { give = 0x4700077E, to = 0x47003353 }
+update = "advance"
+phase = 2
+takes = [0x4700077E]
+wants = 1
+prov = { from = "authored", by = "Dereth Network", note = "2017: she took the starting javelin at phases 1-3 and the thrown one at 4 and 5 (1 session); the journal: plain javelins, looted or crafted, so either at each", confidence = "low" }
+
+[[step]]
+key = "throwing-2"
+quest = 0x4000027C
+needs = 2
+trigger = { give = 0x4700077E, to = 0x47003353 }
+update = "advance"
+phase = 3
+takes = [0x4700077E]
+wants = 1
+prov = { from = "authored", by = "Dereth Network", note = "2017: she took the starting javelin at phases 1-3 and the thrown one at 4 and 5 (1 session); the journal: plain javelins, looted or crafted, so either at each", confidence = "low" }
+
+[[step]]
+key = "throwing-3"
+quest = 0x4000027C
+needs = 3
+trigger = { give = 0x4700077E, to = 0x47003353 }
+update = "advance"
+phase = 4
+takes = [0x4700077E]
+wants = 1
+prov = { from = "authored", by = "Dereth Network", note = "2017: she took the starting javelin at phases 1-3 and the thrown one at 4 and 5 (1 session); the journal: plain javelins, looted or crafted, so either at each", confidence = "low" }
+
+[[step]]
+key = "starter-4"
+quest = 0x4000027C
+needs = 4
+trigger = { give = 0x47000522, to = 0x47003353 }
+update = "advance"
+phase = 5
+takes = [0x47000522]
+wants = 1
+prov = { from = "authored", by = "Dereth Network", note = "2017: she took the starting javelin at phases 1-3 and the thrown one at 4 and 5 (1 session); the journal: plain javelins, looted or crafted, so either at each", confidence = "low" }
+
+[[step]]
+key = "starter-5"
+quest = 0x4000027C
+needs = 5
+trigger = { give = 0x47000522, to = 0x47003353 }
+update = "complete"
+takes = [0x47000522]
+wants = 1
+gives = [0x47000538]
+counts = [1000]
+prov = { from = "authored", by = "Dereth Network", note = "2017: she took the starting javelin at phases 1-3 and the thrown one at 4 and 5 (1 session); the journal: plain javelins, looted or crafted, so either at each", confidence = "low" }
