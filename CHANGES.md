@@ -6,7 +6,7 @@
 - Creatures and ways in for more of the Foundry's houses and one more dungeon, from players' maps. Pack `acmaps-camps/`.
 - The shaman's maintenance quest can now be finished. New pack `skyport-mine/`.
 - Ways into the Foundry and its forge, opened by their quests. New pack `foundry-forge/`.
-- An egg, a hoard map and a bean now have sources. New pack `quest-item-sources/`.
+- An egg, a hoard map, a bean, the pit's gear parts and the scouts' orders now have sources. New pack `quest-item-sources/`.
 - The Foundry's quests can now be done, which opens its doors and its forge. New pack `foundry-chain/`.
 - The egg from the plateau can now be hatched for a hero's mount. New pack `egg-hatching/`.
 - The quest for the Foundry's gates can now be done, down the houses' trap doors. New pack `foundry-gates/`.
