@@ -91,7 +91,7 @@
 - The crypt north of Esper can now be walked through to its hoard. New pack `ancient-crypt/`.
 - Vargil now gives his sword quest, with a quest for the bearer's fellows.
 - Ten more of Arramora's exigencies can now be done. New pack `arramora-exigencies/`.
-- The doomed sword quest in Arramora now has its sword and its creature. New pack `doomed-hero-sword/`.
+- The doomed sword quest in Arramora can now be done, the sword worn against its creature. New pack `doomed-hero-sword/`.
 - The plague cure in the Knorr Ramparts now takes six maws, one at a time. New pack `magnan-plague-cure/`.
 - The queen's quest in Lake Artefon's catacombs can now be done. New pack `artefon-salvation/`.
 - Drudgerton's stolen feathers quest can now be done, from maps the Gurog drop. New pack `siraluun-cargo/`.
