@@ -1,0 +1,81 @@
+# The armor Tima Drokh teaches, its five pieces' subquests and its recipes by race, from 2017's recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000015E
+id_name = "QuestArmorKnightsBreastplate"
+state = 0x6F0006E6
+prov = { from = "authored", by = "Dereth Network", note = "one piece of the armor, completed as its recipe is crafted (the recipe's own effect); its definition the install's, a row so that effect and its parent's phase can move it", confidence = "medium" }
+
+[[quest]]
+id = 0x4000015D
+id_name = "QuestArmorKnightsGloves"
+state = 0x6F0006E7
+prov = { from = "authored", by = "Dereth Network", note = "one piece of the armor, completed as its recipe is crafted (the recipe's own effect); its definition the install's, a row so that effect and its parent's phase can move it", confidence = "medium" }
+
+[[quest]]
+id = 0x40000160
+id_name = "QuestArmorKnightsBoots"
+state = 0x6F0006E5
+prov = { from = "authored", by = "Dereth Network", note = "one piece of the armor, completed as its recipe is crafted (the recipe's own effect); its definition the install's, a row so that effect and its parent's phase can move it", confidence = "medium" }
+
+[[quest]]
+id = 0x4000015F
+id_name = "QuestArmorKnightsGreaves"
+state = 0x6F0006E8
+prov = { from = "authored", by = "Dereth Network", note = "one piece of the armor, completed as its recipe is crafted (the recipe's own effect); its definition the install's, a row so that effect and its parent's phase can move it", confidence = "medium" }
+
+[[quest]]
+id = 0x4000015C
+id_name = "QuestArmorKnightsHelm"
+state = 0x6F0006E9
+prov = { from = "authored", by = "Dereth Network", note = "one piece of the armor, completed as its recipe is crafted (the recipe's own effect); its definition the install's, a row so that effect and its parent's phase can move it", confidence = "medium" }
+
+[[step]]
+key = "knights-armor-human"
+quest = 0x4000015B
+needs = 0
+trigger = { done = 0x40000139 }
+update = "bestow"
+races = [1]
+recipes = [0x6F000288, 0x6F00028B, 0x6F00028E, 0x6F000291, 0x6F000294]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-armor", confidence = "medium", note = "given as the tomb quest is completed, with the five recipes of the player's race" }
+
+[[step]]
+key = "knights-armor-lugian"
+quest = 0x4000015B
+needs = 0
+trigger = { done = 0x40000139 }
+update = "bestow"
+races = [2]
+recipes = [0x6F000289, 0x6F00028C, 0x6F00028F, 0x6F000292, 0x6F000295]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-armor", confidence = "medium", note = "given as the tomb quest is completed, with the five recipes of the player's race" }
+
+[[step]]
+key = "knights-armor-tumerok"
+quest = 0x4000015B
+needs = 0
+trigger = { done = 0x40000139 }
+update = "bestow"
+races = [4]
+recipes = [0x6F00028A, 0x6F00028D, 0x6F000290, 0x6F000293, 0x6F000296]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-armor", confidence = "medium", note = "given as the tomb quest is completed, with the five recipes of the player's race" }
+
+[[step]]
+key = "knights-armor-drudge"
+quest = 0x4000015B
+needs = 0
+trigger = { done = 0x40000139 }
+update = "bestow"
+races = [8]
+recipes = [0x6F001993, 0x6F00199C, 0x6F0019A5, 0x6F0019AE, 0x6F0019B7]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-armor", confidence = "low", note = "given as the tomb quest is completed, with the five recipes of the player's race (no recording of this race; the install's recipes for it)" }
+
+[[step]]
+key = "knights-armor-empyrean"
+quest = 0x4000015B
+needs = 0
+trigger = { done = 0x40000139 }
+update = "bestow"
+races = [16]
+recipes = [0x6F001996, 0x6F00199F, 0x6F0019A8, 0x6F0019B1, 0x6F0019BA]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-armor", confidence = "low", note = "given as the tomb quest is completed, with the five recipes of the player's race (no recording of this race; the install's recipes for it)" }

@@ -1,0 +1,101 @@
+# Simlan's six tombs and the armor after them, from 2017's recordings; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000168
+id_name = "QuestFindTombKingsAulatah"
+state = 0x6F0006DE
+prov = { from = "authored", by = "Dereth Network", note = "Aun Aulatah's Burial Mound, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+
+[[quest]]
+id = 0x40000169
+id_name = "QuestFindTombKingsBorelean"
+state = 0x6F0006DF
+prov = { from = "authored", by = "Dereth Network", note = "Borelean Strathelar's Tomb, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+
+[[quest]]
+id = 0x4000016A
+id_name = "QuestFindTombKingsElysa"
+state = 0x6F0006E0
+prov = { from = "authored", by = "Dereth Network", note = "Elysa Strathelar's Tomb, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+
+[[quest]]
+id = 0x4000016B
+id_name = "QuestFindTombKingsKei"
+state = 0x6F0006E1
+prov = { from = "authored", by = "Dereth Network", note = "Hoshino Kei's Tomb, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+
+[[quest]]
+id = 0x4000016C
+id_name = "QuestFindTombKingsKresovus"
+state = 0x6F0006E2
+prov = { from = "authored", by = "Dereth Network", note = "Lord Kresovus' Tomb, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+
+[[quest]]
+id = 0x4000016D
+id_name = "QuestFindTombKingsThorsten"
+state = 0x6F0006E3
+prov = { from = "authored", by = "Dereth Network", note = "Thorsten Cragstone's Tomb, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+
+[[step]]
+key = "kings-given"
+quest = 0x40000167
+needs = 0
+trigger = { use = 0x47002F10 }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "kings-given", confidence = "medium", sample = { sessions = 2 } }
+
+[[step]]
+key = "kings-tomb-aulatah"
+quest = 0x40000168
+needs = 1
+trigger = { use = 0x47002F12 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "kings-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+
+[[step]]
+key = "kings-tomb-borelean"
+quest = 0x40000169
+needs = 1
+trigger = { use = 0x47002F14 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "kings-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+
+[[step]]
+key = "kings-tomb-elysa"
+quest = 0x4000016A
+needs = 1
+trigger = { use = 0x47002F16 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "kings-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+
+[[step]]
+key = "kings-tomb-kei"
+quest = 0x4000016B
+needs = 1
+trigger = { use = 0x47002F18 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "kings-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+
+[[step]]
+key = "kings-tomb-kresovus"
+quest = 0x4000016C
+needs = 1
+trigger = { use = 0x47002F19 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "kings-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+
+[[step]]
+key = "kings-tomb-thorsten"
+quest = 0x4000016D
+needs = 1
+trigger = { use = 0x47002F1B }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "kings-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+
+[[step]]
+key = "kings-back"
+quest = 0x40000167
+needs = 2
+trigger = { use = 0x47002F10 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "kings-back", confidence = "medium", note = "back to Simlan once the six tombs are done" }
