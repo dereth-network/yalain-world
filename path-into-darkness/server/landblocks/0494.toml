@@ -1,0 +1,42 @@
+# The Order's scriptorium as the Order's hand opens it: the renegades raiding it, their leader at the top of its
+# stairs, and a way back; edit an authored pack instead.
+
+[[object]]
+key = "ld-scriptorium-2-out"
+kind = "static"
+template = 0x47001154
+cell = 0x04940101
+at = [-20.05, 91.42, 25.70]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "ld-hand"
+prov = { from = "authored", by = "Dereth Network", note = "a way back 2 m behind the scriptorium's landing, to the Order's hand; no source names one", confidence = "low" }
+
+[[camp]]
+key = "ld-renegade-leader"
+cell = 0x049401E5
+at = [34.22, -319.24, 88.00]
+spots = [{ cell = 0x049401E5, at = [34.22, -319.24, 88.00] }]
+population = 1
+regen = 300.0
+spawns = [{ template = 0x470026AB, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the renegades' leader at the top of the stairs, where the scroll is kept; his death moves both paths of light on (the install)", confidence = "low" }
+
+[[camp]]
+key = "ld-scriptorium-2-raiders"
+cell = 0x049401D5
+at = [29.68, -325.70, 88.00]
+spots = [{ cell = 0x049401D5, at = [29.68, -325.70, 88.00] }, { cell = 0x049401D7, at = [38.46, -312.00, 88.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470026AF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "renegade swordsmen with their leader (a players' guide: renegade swordsmen)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ld-scriptorium-2-hall"
+cell = 0x0494011D
+at = [18.89, -94.84, 40.60]
+spots = [{ cell = 0x0494011D, at = [18.89, -94.84, 40.60] }, { cell = 0x04940105, at = [10.12, -79.79, 40.60] }, { cell = 0x04940122, at = [28.30, -109.91, 40.60] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470026AF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "renegade swordsmen in the scribes' room", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

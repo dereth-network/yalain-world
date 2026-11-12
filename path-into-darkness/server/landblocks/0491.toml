@@ -1,0 +1,42 @@
+# The Shadows' vault as its thieves find it: its protectors, the codex at the end of its top corridor, and the way out
+# at the other end; edit an authored pack instead.
+
+[[object]]
+key = "ld-vault-1-out"
+kind = "static"
+template = 0x47001154
+cell = 0x04910143
+at = [244.27, 15.01, -9.40]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "fix-portal-landings:trip-0bf30100"
+prov = { from = "authored", by = "Dereth Network", note = "the exit portal at the other end of the codex's corridor (the wiki's map), to the Shadows' antechamber", confidence = "low" }
+
+[[camp]]
+key = "ld-codex"
+cell = 0x04910144
+at = [244.10, -25.04, -9.40]
+spots = [{ cell = 0x04910144, at = [244.10, -25.04, -9.40] }]
+population = 1
+regen = 120.0
+spawns = [{ template = 0x470016AD, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the codex at the end of the vault's top corridor (the wiki and its map), a new one soon after it is taken (the wiki)", confidence = "low" }
+
+[[camp]]
+key = "ld-vault-1-hall"
+cell = 0x04910117
+at = [94.79, -19.77, -10.50]
+spots = [{ cell = 0x04910117, at = [94.79, -19.77, -10.50] }, { cell = 0x04910118, at = [94.74, 10.15, -10.40] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002AEC, weight = 1 }, { template = 0x47002AEA, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "Shadow protectors in the main hall (the wiki's map: level 50 and 55)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ld-vault-1-grid"
+cell = 0x04910139
+at = [199.80, -5.54, -9.70]
+spots = [{ cell = 0x04910139, at = [199.80, -5.54, -9.70] }, { cell = 0x0491012E, at = [162.20, 29.95, -9.70] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002AEA, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "Shadow protectors in the halls of locked doors (the wiki's map)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

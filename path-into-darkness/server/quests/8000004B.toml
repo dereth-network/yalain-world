@@ -1,0 +1,174 @@
+# The Path Into Light: Lataua's talisman, the agent of the dark refused, and the three treasure houses defended from the
+# renegades, given once (the wiki); the talisman's uses and the renegades' deaths move it by the install's own effects.
+# Edit an authored pack instead.
+
+[[quest]]
+id = 0x8000004B
+id_name = "QuestLDLight"
+state = 0x6F000B9C
+challenge = 55
+once = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:900b9e04", confidence = "high", sample = { sessions = 30 }, fields = { once = { from = "authored", by = "Dereth Network", note = "the wiki: retracing it is the repeatable form", confidence = "low" } } }
+[[step]]
+key = "s-given"
+quest = 0x8000004B
+needs = 0
+trigger = { use = 0x4700319A }
+update = "bestow"
+requires = [{ quest = 0x80000049, done = true }]
+tell = { table = 0x25002A0F, string = 0xAAE688AF }
+prov = { from = "authored", by = "Dereth Network", note = "Lataua gives it after the path into the dark (the wiki), with her line for it", confidence = "low" }
+
+[[step]]
+key = "lataua-talisman"
+quest = 0x8000004B
+needs = 1
+trigger = { use = 0x4700319A }
+update = "advance"
+phase = 2
+gives = [0x470016BC]
+tell = { table = 0x25002A0F, string = 0xB12096D7 }
+prov = { from = "authored", by = "Dereth Network", note = "Lataua gives the talisman and sends the player to the agent of the dark, with her line for it (the wiki)", confidence = "low" }
+
+[[step]]
+key = "agent-tempts"
+quest = 0x8000004B
+needs = 2
+trigger = { use = 0x47003198 }
+update = "advance"
+phase = 3
+tell = { table = 0x25002A0E, string = 0x7708C009 }
+prov = { from = "authored", by = "Dereth Network", note = "the agent of the dark tempts the player to give up the talisman, with his line for it (the wiki)", confidence = "low" }
+
+[[step]]
+key = "lataua-steadfast"
+quest = 0x8000004B
+needs = 3
+trigger = { use = 0x4700319A }
+update = "advance"
+phase = 4
+tell = { table = 0x25002A0F, string = 0xB02096D7 }
+prov = { from = "authored", by = "Dereth Network", note = "back to Lataua, keeping the talisman (the wiki), with her line for it", confidence = "low" }
+
+[[step]]
+key = "agent-takes-talisman"
+quest = 0x8000004B
+needs = 3
+trigger = { give = 0x470016BC, to = 0x47003198 }
+update = "fail"
+takes = [0x470016BC]
+tell = { table = 0x25002A0E, string = 0x6AEF1506 }
+prov = { from = "authored", by = "Dereth Network", note = "the talisman given to the agent of the dark chooses darkness (the wiki), with his line for it", confidence = "low" }
+
+[[step]]
+key = "hand-scriptorium"
+quest = 0x8000004B
+needs = 5
+trigger = { use = 0x4700309C }
+update = "advance"
+phase = 6
+to = "ld-scriptorium-2"
+tell = { table = 0x2500298C, string = 0x020D957D }
+prov = { from = "authored", by = "Dereth Network", note = "the Order's hand lets the player into the scriptorium at Lataua's word, with his line for it", confidence = "low" }
+
+[[step]]
+key = "hand-scriptorium-again"
+quest = 0x8000004B
+needs = 6
+trigger = { use = 0x4700309C }
+update = "none"
+to = "ld-scriptorium-2"
+tell = { table = 0x2500298C, string = 0x020D957D }
+prov = { from = "authored", by = "Dereth Network", note = "the Order's hand sends the player back while the renegades' leader lives", confidence = "low" }
+
+[[step]]
+key = "lataua-7"
+quest = 0x8000004B
+needs = 7
+trigger = { use = 0x4700319A }
+update = "advance"
+phase = 8
+tell = { table = 0x25002A0F, string = 0xB22096D7 }
+prov = { from = "authored", by = "Dereth Network", note = "back to Lataua after the leader's death, with her line for it", confidence = "low" }
+
+[[step]]
+key = "welcomer-museum"
+quest = 0x8000004B
+needs = 9
+trigger = { use = 0x4700302E }
+update = "advance"
+phase = 10
+to = "ld-museum-2"
+tell = { table = 0x25002954, string = 0x3A6B0987 }
+prov = { from = "authored", by = "Dereth Network", note = "the first welcomer of Dominion Center opens the museum (Lataua's line), with its line for it", confidence = "low" }
+
+[[step]]
+key = "welcomer-museum-again"
+quest = 0x8000004B
+needs = 10
+trigger = { use = 0x4700302E }
+update = "none"
+to = "ld-museum-2"
+tell = { table = 0x25002954, string = 0x3A6B0987 }
+prov = { from = "authored", by = "Dereth Network", note = "the welcomer sends the player back while the renegades' archmage lives", confidence = "low" }
+
+[[step]]
+key = "lataua-11"
+quest = 0x8000004B
+needs = 11
+trigger = { use = 0x4700319A }
+update = "advance"
+phase = 12
+tell = { table = 0x25002A0F, string = 0xB11196D7 }
+prov = { from = "authored", by = "Dereth Network", note = "back to Lataua after the archmage's death, with her line for it", confidence = "low" }
+
+[[step]]
+key = "naokim-vault"
+quest = 0x8000004B
+needs = 13
+trigger = { use = 0x470030AB }
+update = "advance"
+phase = 14
+to = "ld-vault-2"
+tell = { table = 0x25002992, string = 0x2D627CDE }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim lets the player into the vault at Lataua's word, with his line for it", confidence = "low" }
+
+[[step]]
+key = "naokim-vault-b"
+quest = 0x8000004B
+needs = 13
+trigger = { use = 0x470030AE }
+update = "advance"
+phase = 14
+to = "ld-vault-2"
+tell = { table = 0x25002992, string = 0x2D627CDE }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim lets the player into the vault at Lataua's word, with his line for it", confidence = "low" }
+
+[[step]]
+key = "naokim-vault-again"
+quest = 0x8000004B
+needs = 14
+trigger = { use = 0x470030AB }
+update = "none"
+to = "ld-vault-2"
+tell = { table = 0x25002992, string = 0x2D627CDE }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim sends the player back while the renegades' captain lives", confidence = "low" }
+
+[[step]]
+key = "naokim-vault-again-b"
+quest = 0x8000004B
+needs = 14
+trigger = { use = 0x470030AE }
+update = "none"
+to = "ld-vault-2"
+tell = { table = 0x25002992, string = 0x2D627CDE }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim sends the player back while the renegades' captain lives", confidence = "low" }
+
+[[step]]
+key = "lataua-done"
+quest = 0x8000004B
+needs = 15
+trigger = { use = 0x4700319A }
+update = "complete"
+tell = { table = 0x25002A0F, string = 0xB11596D7 }
+prov = { from = "authored", by = "Dereth Network", note = "back to Lataua after the captain's death ends it, with her line for it", confidence = "low" }

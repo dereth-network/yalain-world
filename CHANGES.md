@@ -99,6 +99,7 @@
 - The tyrants' blood quest in Linvak can now be done, from the ravine's chest. New pack `tyrant-heart/`.
 - People who give quests in a series now give them in order. New pack `quest-series/`.
 - The renegades' fortress south of Mayoi and its two quests can now be done. New pack `aun-tanua-fortress/`.
+- The paths into darkness and light can now be done. New pack `path-into-darkness/`.
 
 ## v0.36.0
 

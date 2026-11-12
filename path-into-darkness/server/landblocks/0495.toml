@@ -1,0 +1,42 @@
+# The Order's scriptorium as the agent of the dark's key opens it: its scribes, its guards, the scroll at the top of its stairs
+# and a way back; edit an authored pack instead.
+
+[[object]]
+key = "ld-scriptorium-1-out"
+kind = "static"
+template = 0x47001154
+cell = 0x04950187
+at = [-19.89, 111.41, 25.70]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "ld-agent"
+prov = { from = "authored", by = "Dereth Network", note = "a way back 2 m behind the scriptorium's landing, to the agent of the dark; no source names one", confidence = "low" }
+
+[[camp]]
+key = "ld-scroll"
+cell = 0x049501E6
+at = [33.85, -298.56, 87.90]
+spots = [{ cell = 0x049501E6, at = [33.85, -298.56, 87.90] }]
+population = 1
+regen = 120.0
+spawns = [{ template = 0x470016BB, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the scroll at the top of the stairs past the scribes' room (the wiki), a new one about two minutes after it is taken (the wiki)", confidence = "low" }
+
+[[camp]]
+key = "ld-scriptorium-1-guards"
+cell = 0x049501E5
+at = [30.02, -305.73, 87.90]
+spots = [{ cell = 0x049501E5, at = [30.02, -305.73, 87.90] }, { cell = 0x049501E3, at = [38.09, -292.31, 87.90] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002777, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the guards at the top of the stairs defending the scroll (the wiki)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ld-scriptorium-1-scribes"
+cell = 0x04950135
+at = [19.31, -74.84, 40.60]
+spots = [{ cell = 0x04950135, at = [19.31, -74.84, 40.60] }, { cell = 0x0495012D, at = [10.12, -59.79, 40.60] }, { cell = 0x0495013C, at = [27.80, -89.91, 40.60] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470026B1, weight = 1 }, { template = 0x47002777, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the scribes and guards of the scribes' room, who attack the thief (the wiki)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

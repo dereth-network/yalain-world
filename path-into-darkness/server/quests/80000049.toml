@@ -1,0 +1,159 @@
+# The path into the dark: the agent of the dark's giving to the corrupted, with the key to the Order's scriptorium; the scroll
+# back to him; the museum, by the Dominion's welcomer, and the lens back; Naokim talked round into letting the thief into
+# the Shadows' vault, and the codex back. Edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x80000049
+needs = 0
+trigger = { use = 0x47003198 }
+update = "bestow"
+least_level = 46
+gives = [0x470016BA]
+requires = [{ quest = 0x40000378, phase = 1 }]
+tell = { table = 0x25002A0E, string = 0xAFA74D4C }
+prov = { from = "authored", by = "Dereth Network", note = "the agent of the dark gives it at a use to one corrupted by a slithis's seed (the wiki, AC2 Hero), with the key and his line; from level 46 (the wiki)", confidence = "low" }
+
+[[step]]
+key = "scroll-given"
+quest = 0x80000049
+needs = 1
+trigger = { give = 0x470016BB, to = 0x47003198 }
+update = "advance"
+phase = 2
+takes = [0x470016BB]
+tell = { table = 0x25002A0E, string = 0x65DEE23A }
+prov = { from = "authored", by = "Dereth Network", note = "the scroll given to him moves it on (the wiki), with his line for it", confidence = "low" }
+
+[[step]]
+key = "welcomer-museum"
+quest = 0x80000049
+needs = 2
+trigger = { use = 0x4700302E }
+update = "none"
+to = "ld-museum-1"
+tell = { table = 0x25002954, string = 0x3A6B0987 }
+prov = { from = "authored", by = "Dereth Network", note = "the first welcomer of Dominion Center opens the museum (the wiki: speak to the first welcomer), with its line for it", confidence = "low" }
+
+[[step]]
+key = "lens-given"
+quest = 0x80000049
+needs = 2
+trigger = { give = 0x470016AF, to = 0x47003198 }
+update = "advance"
+phase = 3
+takes = [0x470016AF]
+tell = { table = 0x25002A0E, string = 0x153830B6 }
+prov = { from = "authored", by = "Dereth Network", note = "the lens given to him moves it on (the wiki), with his line for it", confidence = "low" }
+
+[[step]]
+key = "naokim-3"
+quest = 0x80000049
+needs = 3
+trigger = { use = 0x470030AB }
+update = "advance"
+phase = 4
+tell = { table = 0x25002992, string = 0xFB15D412 }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim talked to a first time, with his line refusing the vault (the wiki: talk to him several times)", confidence = "low" }
+
+[[step]]
+key = "naokim-3-b"
+quest = 0x80000049
+needs = 3
+trigger = { use = 0x470030AE }
+update = "advance"
+phase = 4
+tell = { table = 0x25002992, string = 0xFB15D412 }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim talked to a first time, with his line refusing the vault (the wiki: talk to him several times)", confidence = "low" }
+
+[[step]]
+key = "naokim-4"
+quest = 0x80000049
+needs = 4
+trigger = { use = 0x470030AB }
+update = "advance"
+phase = 5
+tell = { table = 0x25002992, string = 0xFB65D412 }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim talked to a second time, with his line refusing the vault (the wiki: talk to him several times)", confidence = "low" }
+
+[[step]]
+key = "naokim-4-b"
+quest = 0x80000049
+needs = 4
+trigger = { use = 0x470030AE }
+update = "advance"
+phase = 5
+tell = { table = 0x25002992, string = 0xFB65D412 }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim talked to a second time, with his line refusing the vault (the wiki: talk to him several times)", confidence = "low" }
+
+[[step]]
+key = "naokim-5"
+quest = 0x80000049
+needs = 5
+trigger = { use = 0x470030AB }
+update = "advance"
+phase = 6
+tell = { table = 0x25002992, string = 0xFB75D412 }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim talked to a third time, with his line refusing the vault (the wiki: talk to him several times)", confidence = "low" }
+
+[[step]]
+key = "naokim-5-b"
+quest = 0x80000049
+needs = 5
+trigger = { use = 0x470030AE }
+update = "advance"
+phase = 6
+tell = { table = 0x25002992, string = 0xFB75D412 }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim talked to a third time, with his line refusing the vault (the wiki: talk to him several times)", confidence = "low" }
+
+[[step]]
+key = "naokim-6"
+quest = 0x80000049
+needs = 6
+trigger = { use = 0x470030AB }
+update = "advance"
+phase = 7
+to = "ld-vault-1"
+tell = { table = 0x25002992, string = 0xFB45D412 }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim talked to a fourth time lets the thief into the vault, with his line for it (the wiki)", confidence = "low" }
+
+[[step]]
+key = "naokim-6-b"
+quest = 0x80000049
+needs = 6
+trigger = { use = 0x470030AE }
+update = "advance"
+phase = 7
+to = "ld-vault-1"
+tell = { table = 0x25002992, string = 0xFB45D412 }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim talked to a fourth time lets the thief into the vault, with his line for it (the wiki)", confidence = "low" }
+
+[[step]]
+key = "naokim-7"
+quest = 0x80000049
+needs = 7
+trigger = { use = 0x470030AB }
+update = "none"
+to = "ld-vault-1"
+tell = { table = 0x25002992, string = 0xFB45D412 }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim sends the thief back to the vault while the codex is still to be brought, with his line for it", confidence = "low" }
+
+[[step]]
+key = "naokim-7-b"
+quest = 0x80000049
+needs = 7
+trigger = { use = 0x470030AE }
+update = "none"
+to = "ld-vault-1"
+tell = { table = 0x25002992, string = 0xFB45D412 }
+prov = { from = "authored", by = "Dereth Network", note = "Naokim sends the thief back to the vault while the codex is still to be brought, with his line for it", confidence = "low" }
+
+[[step]]
+key = "codex-given"
+quest = 0x80000049
+needs = 7
+trigger = { give = 0x470016AD, to = 0x47003198 }
+update = "complete"
+takes = [0x470016AD]
+tell = { table = 0x25002A0E, string = 0x3D8FBFA2 }
+prov = { from = "authored", by = "Dereth Network", note = "the codex given to him ends it (the wiki), with his line for it", confidence = "low" }

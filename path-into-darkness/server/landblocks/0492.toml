@@ -1,0 +1,32 @@
+# The Dominion's museum as its defenders find it: the renegades' archmage at its top, his mages, and a way back; edit an
+# authored pack instead.
+
+[[object]]
+key = "ld-museum-2-out"
+kind = "static"
+template = 0x47001154
+cell = 0x04920104
+at = [-40.20, 52.57, 50.30]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "seed-2017:p-04990126"
+prov = { from = "authored", by = "Dereth Network", note = "a way back beside the museum's landing, to Dominion Center's prime portal; no source names one", confidence = "low" }
+
+[[camp]]
+key = "ld-renegade-archmage"
+cell = 0x04920105
+at = [-19.63, 50.68, 91.20]
+spots = [{ cell = 0x04920105, at = [-19.63, 50.68, 91.20] }]
+population = 1
+regen = 300.0
+spawns = [{ template = 0x470026A7, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the renegades' archmage by the lens at the museum's top; his death moves both paths of light on (the install)", confidence = "low" }
+
+[[camp]]
+key = "ld-museum-2-raiders"
+cell = 0x04920107
+at = [-25.03, 15.90, 61.90]
+spots = [{ cell = 0x04920107, at = [-25.03, 15.90, 61.90] }, { cell = 0x04920106, at = [-76.52, -1.90, 60.20] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470026AD, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "renegade mages on the way up", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

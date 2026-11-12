@@ -1,0 +1,19 @@
+# Descent Into Darkness: given and ended at the agent of the dark's next use after the path; edit an authored pack instead.
+
+[[step]]
+key = "agent-touches"
+quest = 0x8000004A
+needs = 0
+trigger = { use = 0x47003198 }
+update = "bestow"
+requires = [{ quest = 0x80000049, done = true }, { quest = 0x8000004B, phase = 0 }]
+tell = { table = 0x25002A0E, string = 0xAFA74E4C }
+prov = { from = "authored", by = "Dereth Network", note = "the agent of the dark's use after the path into the dark gives it (the wiki: speak to him again), with his line for it", confidence = "low" }
+
+[[step]]
+key = "agent-touched"
+quest = 0x8000004A
+needs = 1
+trigger = { given = 0x8000004A }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "it starts and ends at once (the wiki)", confidence = "low" }

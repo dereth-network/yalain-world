@@ -1,0 +1,32 @@
+# The Dominion's museum as its thieves find it: its caretakers, the lens at its top, and a way back; edit an authored
+# pack instead.
+
+[[object]]
+key = "ld-museum-1-out"
+kind = "static"
+template = 0x47001154
+cell = 0x04930105
+at = [-40.20, 49.72, 50.10]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "seed-2017:p-04990126"
+prov = { from = "authored", by = "Dereth Network", note = "a way back beside the museum's landing, to Dominion Center's prime portal; no source names one", confidence = "low" }
+
+[[camp]]
+key = "ld-lens"
+cell = 0x04930106
+at = [-19.50, 47.57, 91.00]
+spots = [{ cell = 0x04930106, at = [-19.50, 47.57, 91.00] }]
+population = 1
+regen = 120.0
+spawns = [{ template = 0x470016AF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the lens at the museum's top (the wiki), a new one soon after it is taken (the wiki: it respawns fairly quickly)", confidence = "low" }
+
+[[camp]]
+key = "ld-museum-1-caretakers"
+cell = 0x04930107
+at = [-24.54, 12.55, 61.70]
+spots = [{ cell = 0x04930107, at = [-24.54, 12.55, 61.70] }, { cell = 0x04930104, at = [-76.29, -4.80, 60.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002D87, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the museum's caretakers, who fight the thief (the wiki: caretakers of level 50)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
