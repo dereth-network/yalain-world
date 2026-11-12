@@ -1,0 +1,11 @@
+# The scarred hunter, alone near the north-east Naderu mine; edit an authored pack instead.
+
+[[camp]]
+key = "scarred-hunter"
+cell = 0xD6B1001D
+at = [63.10, 84.80, 115.50]
+radius = 10.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002B12, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "AC2 Vault: the scarred hunter near the mine at 39.2N 68.1E; her line puts it in north-east Naderu; one at a time", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

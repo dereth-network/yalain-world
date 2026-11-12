@@ -1,0 +1,41 @@
+# The leather's steps, from the journal, AC2 Vault's steps and her own lines; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000280
+id_name = "QuestLupe5"
+state = 0x6F000D0C
+prov = { from = "dat", record = 0x6F000D0C }
+
+[[step]]
+key = "rawhide"
+quest = 0x40000280
+needs = 1
+trigger = { give = 0x47001A35, to = 0x47003353 }
+update = "advance"
+phase = 2
+tell = { table = 0x25002AC5, string = 0xABA04963 }
+takes = [0x47001A35]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the Vault: the scarred hunter's rawhide brought to her; her line asking for tallow to tan it", confidence = "low" }
+
+[[step]]
+key = "tallow"
+quest = 0x40000280
+needs = 2
+trigger = { give = 0x470006CC, to = 0x47003353 }
+update = "advance"
+phase = 3
+tell = { table = 0x25002AC5, string = 0xA7A04963 }
+gives = [0x47001A33]
+takes = [0x470006CC]
+wants = 100
+prov = { from = "authored", by = "Dereth Network", note = "the journal: a hundred tallow (the Vault's acid is an older form); her line handing over the leather for the war captain", confidence = "low" }
+
+[[step]]
+key = "leather"
+quest = 0x40000280
+needs = 3
+trigger = { give = 0x47001A33, to = 0x47003351 }
+update = "complete"
+tell = { table = 0x25002AC4, string = 0x4B5FC8F1 }
+takes = [0x47001A33]
+prov = { from = "authored", by = "Dereth Network", note = "the journal: the leather delivered to the war captain in Whitebay; his line of her leather", confidence = "low" }

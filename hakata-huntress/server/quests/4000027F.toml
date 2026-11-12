@@ -1,0 +1,82 @@
+# The guide's recipe taught at its giving and the seven trackers' scrolls, from 2017 and her own line; edit an authored pack instead.
+
+[[step]]
+key = "h-1"
+quest = 0x4000027F
+needs = 0
+trigger = { use = 0x47003353 }
+update = "bestow"
+gives = [0x47000927]
+requires = [{ quest = 0x4000027C, phase = 0 }, { quest = 0x4000027E, phase = 0 }, { quest = 0x4000028C, phase = 0 }, { quest = 0x4000028D, phase = 0 }]
+recipes = [0x6F00034C]
+prov = { from = "authored", by = "Dereth Network", note = "2017 recorded her giving it with her manuscript (1 session); her line asks for the trackers' scrolls copied in with her recipe, taught here", confidence = "medium" }
+
+[[step]]
+key = "scroll-ankoro"
+quest = 0x4000027F
+needs = 1
+trigger = { use = 0x47003220 }
+update = "none"
+tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
+gives = [0x4700092D]
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+
+[[step]]
+key = "scroll-hakata"
+quest = 0x4000027F
+needs = 1
+trigger = { use = 0x4700322C }
+update = "none"
+tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
+gives = [0x4700092E]
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+
+[[step]]
+key = "scroll-ikeras"
+quest = 0x4000027F
+needs = 1
+trigger = { use = 0x4700322E }
+update = "none"
+tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
+gives = [0x47000928]
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+
+[[step]]
+key = "scroll-mayoi"
+quest = 0x4000027F
+needs = 1
+trigger = { use = 0x47003234 }
+update = "none"
+tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
+gives = [0x4700092B]
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+
+[[step]]
+key = "scroll-rakani"
+quest = 0x4000027F
+needs = 1
+trigger = { use = 0x4700323D }
+update = "none"
+tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
+gives = [0x4700092C]
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+
+[[step]]
+key = "scroll-shinoko"
+quest = 0x4000027F
+needs = 1
+trigger = { use = 0x47003241 }
+update = "none"
+tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
+gives = [0x4700092A]
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+
+[[step]]
+key = "scroll-zu"
+quest = 0x4000027F
+needs = 1
+trigger = { use = 0x47003247 }
+update = "none"
+tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
+gives = [0x47000929]
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }

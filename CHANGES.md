@@ -62,6 +62,7 @@
 - The Silent City and the Yokketh Bell Tower are open, and their boots and totem quests can be done. New pack `lost-heroes-crypts/`.
 - Linvak's secret base quest can now be done, from the ravine's scrap to the leader's plans. New pack `shreth-base-ultra/`.
 - The southern outpost's crafter can now be helped with his knights, and the knights he loses count for his second quest. New pack `ludward-gear-knights/`.
+- Three of the Hakata huntress's errands can now be done. New pack `hakata-huntress/`.
 
 ## v0.36.0
 
