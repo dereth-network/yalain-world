@@ -7,7 +7,8 @@ needs = 0
 trigger = { use = 0x47002FD5 }
 update = "bestow"
 recipes = [0x6F001BDF, 0x6F001BE2, 0x6F001BE5, 0x6F001BFA, 0x6F001C03, 0x6F001C1E, 0x6F001C21, 0x6F001C24, 0x6F001C27, 0x6F001C2A, 0x6F001C2D]
-prov = { from = "authored", by = "Dereth Network", note = "the wiki: Ludward's use gives it and a recipe in a craft the player knows; every kind's basic recipe is taught here (the server can't pick one by craft skill), each made only by its own skill", confidence = "low" }
+requires = [{ craft = [0x6F000692, 0x6F000694, 0x6F000696, 0x6F000697, 0x6F000699, 0x6F00069A, 0x6F0006A9, 0x6F0006AA, 0x6F000691, 0x6F000693, 0x6F000695, 0x6F000698, 0x6F0006A8, 0x6F0006A6, 0x6F0006A7], at_least = 100 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: given with a recipe in a craft the player knows, at 100 in weapons, armor (any race or kind), spellbinding or toolmaking; every kind's basic recipe is taught, each made only by its own skill", confidence = "low" }
 
 [[step]]
 key = "armor-basic"
