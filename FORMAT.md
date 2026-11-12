@@ -308,7 +308,11 @@ player, by their saved states: a blessing, a recipe learned or forgotten), `text
 after the effects, `{ table, string }`), `recipes` (recipes it teaches, by id: the install's, or the world's
 `[[recipe]]` rows'; learned after its update and its effects), `fellows` (true: the update is made for each of the
 player's fellows in the world as well, each told it alone; what the step takes and gives is the player's alone, and a fellow
-needs only the phase and what the step requires), `races` (the races it is for, by number: 1 human, 2
+needs only the phase and what the step requires), `to_fellows` (true, with `to`: each of the player's fellows in the
+world goes there too, through portal space, wherever it is, as the player goes, and for a kill at the kill; a fellow who is
+dead, whose scene isn't drawn yet or who is already on its way somewhere stays; where `to` is a room of a row, each goes to
+a room of its own; it moves no fellow's quest, which `fellows` does), `gives_one_of` (one more item it gives, one of several
+picked by weight each time it runs: at least two `{ template, weight }`, each a whole weight above 0), `races` (the races it is for, by number: 1 human, 2
 Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out), `effects_last` (true: the
 quest's update is told before the effects and their text, not after them), `effects_quiet` (true: the effects tell
 none of their own lines, as a recipe or a skill they grant would, and the `text` is still told; only with
@@ -335,7 +339,10 @@ be given: not under way, and never had or its wait over) or `{ quest = Q, failed
 step or its time run out, and for a step of a quest under way, given since that quest was: a hidden
 timer given along the way is waited on until it runs out, and one from an earlier time through the quest
 does not count); `{ event = "key" }`, an `[[event]]` that
-must be on for the step to run; and `{ act = A }`, an act the player must hold whole: seven of its scenes, its hidden
+must be on for the step to run; `{ craft = S, at_least = N }`, a craft skill (its saved state) at level N (above 0) or
+above as a making reads it, with what the player's effects add, or `craft = [S, ...]` for any one of several (a bestowing
+step a player meets all else of but this says its person's `refuse-use` line for the quest, as one under the quest's least
+level does); and `{ act = A }`, an act the player must hold whole: seven of its scenes, its hidden
 ones aside (a scene of the act must be served; a give names none). A use of a person whose steps don't run says its
 own line at a use, as one that moves nothing does. `takes` lists templates of items taken from the player's
 pack, which the player must hold (a hand-in); a give's step that takes the item given keeps it (the rest of a
@@ -361,7 +368,8 @@ refuses is refused as any other, the item handed back. Any other word, or a seco
 quest, even one kept hidden, and is a step). `key`, `to` (the template given to), `item` (the template
 given; left out, any item), `wants` (exactly how many of it: any other count is refused, the stack handed
 back, with the person's `refuse-give` line naming the item if it has one, else its plain refusal; left out,
-whatever is given is taken whole), `gives`, `counts` (what it gives in its place, from the person), `effects`,
+whatever is given is taken whole), `gives`, `counts` (what it gives in its place, from the person), `gives_one_of`
+(as a step's), `effects`,
 `text` (what it puts on the player, cast by the person, and a text after them), `effects_quiet` (as a step's),
 `fx` (what the person or the object plays as it takes the item), `requires` (as a step's; not met, the item is refused). A step the give
 runs comes first, and a row for the item comes before one for any item. The person says its `accept` lines at a
@@ -906,8 +914,9 @@ are taken whole, never mixed with the server's.
 the table's outcome names nothing made (an emblem imprinted from one of the weapons its user holds). `key`
 (lowercase letters, digits and hyphens); `item`, the template of the item used; one of `on`, a template it is used
 on, or `on_class`, a class (a script package, by number) the item's table names, any template of which counts;
-`gives`, the template of what it makes; `gated_gives`, what it makes instead where the interaction the use met is for
-some characters only (`gives` when left out); and `count` (above 0; 1 when left out). The user is given it after the
+`gives`, the template of what it makes, or `gives_one_of`, one of several picked by weight each use (as a step's: a
+meld making one of a fortune card's two sets), one of them; `gated_gives` or `gated_gives_one_of`, what it makes instead
+where the interaction the use met is for some characters only (`gives` when left out); and `count` (above 0; 1 when left out). The user is given it after the
 quest steps the use triggers and before the item is used up. A use takes the row for the item that names the target's
 template, else the first that names a class the target counts in. One row per key.
 
