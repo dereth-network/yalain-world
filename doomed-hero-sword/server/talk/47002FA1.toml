@@ -1,0 +1,22 @@
+# A doomed man's cursed sword and the creature only it can kill; edit an authored pack instead.
+
+[[talk]]
+key = "t-2fa1-6b6b987a-give"
+who = 0x47002FA1
+line = { table = 0x25002908, string = 0x6B6B987A }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x400001FA
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "his thanks as he hands over the blade, after his line for the sword made whole", confidence = "low" }
+
+[[talk]]
+key = "t-2fa1-f8ca5ddc"
+who = 0x47002FA1
+line = { table = 0x25002908, string = 0xF8CA5DDC }
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x470013F7
+prov = { from = "authored", by = "Dereth Network", note = "his line for the sword brought back with the creature still alive", confidence = "low" }

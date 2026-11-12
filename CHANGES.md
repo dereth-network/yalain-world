@@ -91,6 +91,7 @@
 - The crypt north of Esper can now be walked through to its hoard. New pack `ancient-crypt/`.
 - Vargil now gives his sword quest, with a quest for the bearer's fellows.
 - Four more of Arramora's exigencies can now be done. New pack `arramora-exigencies/`.
+- The doomed sword quest in Arramora now has its sword and its creature. New pack `doomed-hero-sword/`.
 
 ## v0.36.0
 

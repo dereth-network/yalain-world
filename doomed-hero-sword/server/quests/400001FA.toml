@@ -1,0 +1,21 @@
+# A doomed man's cursed sword and the creature only it can kill; edit an authored pack instead.
+
+[[step]]
+key = "sword-taken"
+quest = 0x400001FA
+needs = 1
+trigger = { take = 0x470013F7 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the journal: find the sword; its wearing moves it on, which no row can do, so its taking stands in; only one on the quest may take it (its own rule)", confidence = "low" }
+
+[[step]]
+key = "w-end"
+quest = 0x400001FA
+needs = 3
+trigger = { give = 0x470013F7, to = 0x47002FA1 }
+update = "complete"
+takes = [0x470013F7]
+gives = [0x470006FE]
+tell = { table = 0x25002908, string = 0x6B6B987C }
+prov = { from = "authored", by = "Dereth Network", note = "the journal's last phase: return the sword to him; a 2003 guide and the wiki: the sword delivered, a blade of his given; his line for the sword made whole", confidence = "low" }
