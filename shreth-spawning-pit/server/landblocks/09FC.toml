@@ -1,0 +1,205 @@
+# The pit: its two ways out, its shreth and Burun from the cave down to the last chamber, the doorkeeper and the locked
+# door beside him, and the warden behind it; edit an authored pack instead.
+
+[[object]]
+key = "spawning-pit-exit-south"
+kind = "static"
+template = 0x47001154
+cell = 0x09FC01A4
+at = [-54.35, -420.13, 27.60]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0xF744A010 }
+to = "spawning-pit-out"
+prov = { from = "authored", by = "Dereth Network", note = "beside the landing, where the install marks a portal's room; to the land (the wiki's map: two exits)", confidence = "low" }
+
+[[object]]
+key = "spawning-pit-exit-north"
+kind = "static"
+template = 0x47001154
+cell = 0x09FC021C
+at = [40.00, 409.64, -28.00]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0xF744A010 }
+to = "spawning-pit-out"
+prov = { from = "authored", by = "Dereth Network", note = "past the last chamber, where the install marks a portal's room; to the land (the wiki's map: two exits; its guide: exit the dungeon)", confidence = "low" }
+
+[[object]]
+key = "spawning-pit-door"
+kind = "static"
+template = 0x47001940
+cell = 0x09FC015B
+at = [12.00, 315.00, -34.96]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+lock = 0x4000004E
+prov = { from = "authored", by = "Dereth Network", note = "on the frame for a door the install stands in the passage from the doorkeeper's room to the last chamber, locked to its key (the wiki: the door right beside the doorkeeper)", confidence = "medium" }
+
+[[camp]]
+key = "pit-cave-top"
+cell = 0x09FC0195
+at = [-40.14, -260.15, 11.90]
+spots = [{ cell = 0x09FC0195, at = [-40.14, -260.15, 11.90] }, { cell = 0x09FC0195, at = [-45.20, -262.09, 11.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002AFC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the cave below the landing: shreth hunters (a guide of 2005: the cave is loaded with them)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-cave-middle"
+cell = 0x09FC0112
+at = [-20.19, -219.62, 11.90]
+spots = [{ cell = 0x09FC0112, at = [-20.19, -219.62, 11.90] }, { cell = 0x09FC0112, at = [-19.19, -222.45, 11.90] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002AFC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "further down the cave: shreth hunters, as above", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-cave-bottom"
+cell = 0x09FC0109
+at = [-0.76, -104.25, 1.60]
+spots = [{ cell = 0x09FC0109, at = [-0.76, -104.25, 1.60] }, { cell = 0x09FC0109, at = [-2.30, -110.12, 2.40] }, { cell = 0x09FC0109, at = [3.77, -124.95, 1.90] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002AFC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the cave's last stretch above the cavern: shreth hunters, at the wiki map's dots", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-cavern-shreth"
+cell = 0x09FC0101
+at = [19.63, -37.48, 0.80]
+spots = [{ cell = 0x09FC0101, at = [19.63, -37.48, 0.80] }, { cell = 0x09FC0101, at = [-3.17, -36.85, 1.20] }, { cell = 0x09FC0101, at = [7.73, -40.18, 1.50] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002AFC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the great cavern: three shreth hunters (a guide of 2005), at the wiki map's dots", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-cavern-burun"
+cell = 0x09FC0101
+at = [-10.51, -40.27, 1.60]
+spots = [{ cell = 0x09FC0101, at = [-10.51, -40.27, 1.60] }, { cell = 0x09FC0106, at = [-0.34, -60.27, 0.30] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470022B1, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the great cavern: two Burun of the guide's kind (a guide of 2005)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-halls-way-in"
+cell = 0x09FC0100
+at = [1.07, 5.32, 1.00]
+spots = [{ cell = 0x09FC0100, at = [1.07, 5.32, 1.00] }, { cell = 0x09FC0115, at = [1.07, 11.32, 0.20] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470022B1, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the passage from the cavern into the Burun halls: Burun, at the wiki map's two dots", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-first-room"
+cell = 0x09FC011D
+at = [13.23, 69.61, -11.00]
+spots = [{ cell = 0x09FC011D, at = [13.23, 69.61, -11.00] }, { cell = 0x09FC011B, at = [18.88, 63.78, -11.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470022B1, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the first hall past the cavern: Burun, at the wiki map's dots", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-first-sides"
+cell = 0x09FC01CB
+at = [-31.67, 80.51, -14.00]
+spots = [{ cell = 0x09FC01CB, at = [-31.67, 80.51, -14.00] }, { cell = 0x09FC01E2, at = [66.20, 75.10, -14.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47000824, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the first hall's two side rooms: the darkened hunters (the wiki: their area before the doorkeeper)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-ring-room"
+cell = 0x09FC0128
+at = [0.81, 147.03, -20.00]
+spots = [{ cell = 0x09FC0128, at = [0.81, 147.03, -20.00] }, { cell = 0x09FC0133, at = [37.38, 144.23, -20.00] }, { cell = 0x09FC0128, at = [-0.31, 139.15, -20.00] }, { cell = 0x09FC0133, at = [37.38, 137.23, -20.00] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x470022B1, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the ringed hall: Burun, at the wiki map's four dots", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-ring-sides"
+cell = 0x09FC0131
+at = [-24.26, 141.10, -20.00]
+spots = [{ cell = 0x09FC0131, at = [-24.26, 141.10, -20.00] }, { cell = 0x09FC01F4, at = [62.33, 137.18, -20.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47000824, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the ringed hall's two side rooms: the darkened hunters, at the wiki map's dots", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-third-room"
+cell = 0x09FC013F
+at = [25.13, 228.93, -23.00]
+spots = [{ cell = 0x09FC013F, at = [25.13, 228.93, -23.00] }, { cell = 0x09FC013D, at = [17.47, 227.27, -23.00] }, { cell = 0x09FC013D, at = [21.00, 220.81, -23.00] }, { cell = 0x09FC0138, at = [21.00, 210.81, -23.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470022B1, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the hall with ways left, right and on: Burun (a guide of 2005)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-third-sides"
+cell = 0x09FC0145
+at = [-8.17, 238.00, -22.90]
+spots = [{ cell = 0x09FC0145, at = [-8.17, 238.00, -22.90] }, { cell = 0x09FC0144, at = [49.52, 235.00, -22.90] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47000824, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "that hall's left and right ways: the darkened hunters (a guide of 2005)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-way-down"
+cell = 0x09FC0148
+at = [40.13, 282.90, -35.00]
+spots = [{ cell = 0x09FC0148, at = [40.13, 282.90, -35.00] }, { cell = 0x09FC0146, at = [23.42, 261.22, -26.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47000824, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the way down to the doorkeeper's room: the darkened hunters, at the wiki map's dots", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-doorkeeper"
+cell = 0x09FC0153
+at = [36.30, 316.90, -35.00]
+spots = [{ cell = 0x09FC0153, at = [36.30, 316.90, -35.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700228D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the room before the last chamber, beside its door (the wiki); one at a time; he leaves its key", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-doorkeeper-guards"
+cell = 0x09FC0158
+at = [36.30, 322.90, -35.00]
+spots = [{ cell = 0x09FC0158, at = [36.30, 322.90, -35.00] }, { cell = 0x09FC0153, at = [36.30, 310.90, -35.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470022B1, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the doorkeeper's room: Burun, at the wiki map's other two dots there", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-warden"
+cell = 0x09FC016B
+at = [-13.67, 382.86, -35.00]
+spots = [{ cell = 0x09FC016B, at = [-13.67, 382.86, -35.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470022A9, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the last chamber, at the wiki map's mark for him; one at a time; his death moves the scholar's quest on and he leaves his head", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "pit-warden-shreth"
+cell = 0x09FC0168
+at = [-10.13, 374.57, -35.00]
+spots = [{ cell = 0x09FC0168, at = [-10.13, 374.57, -35.00] }, { cell = 0x09FC0168, at = [-18.20, 374.40, -35.00] }]
+population = 2
+regen = 60.0
+spawns = [{ template = 0x47000824, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "beside him: two of the darkened hunters (a guide of 2005; the wiki: a couple, quick to come again)", confidence = "low" }

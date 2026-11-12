@@ -1,0 +1,31 @@
+# The scholar's quest of the warden's head, its least level and wait, its giving and its hand-in (the warden's death
+# and his head's taking move it by their own effects); edit an authored pack instead.
+
+[[quest]]
+id = 0x40000100
+id_name = "QuestShrethGauntlet"
+state = 0x6F000CD8
+challenge = 35
+duration = 86400
+retry = 259200
+xp = 950000
+min_level = 30
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:f059428f", confidence = "high", sample = { sessions = 44 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000CD8 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000CD8 }, retry = { from = "authored", by = "Dereth Network", note = "its setup's wait of three days; guides say six hours (2005) and two days (2013)", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "its setup's least level, 30, as every guide gives it", confidence = "medium" } } }
+
+[[step]]
+key = "kiral-gives"
+quest = 0x40000100
+needs = 0
+trigger = { use = 0x47003317 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the scholar in Rakani gives it (a guide of 2005, the wiki and her own line asking for the head)", confidence = "low" }
+
+[[step]]
+key = "head-handed"
+quest = 0x40000100
+needs = 3
+trigger = { give = 0x47001943, to = 0x47003317 }
+update = "complete"
+takes = [0x47001943]
+recipes = [0x6F00032E]
+prov = { from = "authored", by = "Dereth Network", note = "the head handed to the scholar ends it and teaches the coating's recipe (a guide of 2005 and the wiki; its reward effect grants it by name)", confidence = "low" }

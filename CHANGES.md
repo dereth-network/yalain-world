@@ -95,6 +95,7 @@
 - The plague cure in the Knorr Ramparts now takes six maws, one at a time. New pack `magnan-plague-cure/`.
 - The queen's quest in Lake Artefon's catacombs can now be done. New pack `artefon-salvation/`.
 - Drudgerton's stolen feathers quest can now be done, from maps the Gurog drop. New pack `siraluun-cargo/`.
+- The shreth pit north-east of Rakani is open, and its warden's quest can be done. New pack `shreth-spawning-pit/`.
 
 ## v0.36.0
 

@@ -1,0 +1,57 @@
+# The scholar's lines as she gives and ends the quest, and her reminders at each phase; edit an authored pack
+# instead.
+
+[[talk]]
+key = "t-3317-2ae6122c"
+who = 0x47003317
+line = { table = 0x25002AA5, string = 0x2AE6122C }
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x40000100
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "her line as she gives it: the line names the pit and asks for the head of the one behind it", confidence = "low" }
+
+[[talk]]
+key = "t-3317-68a07c4d"
+who = 0x47003317
+line = { table = 0x25002AA5, string = 0x68A07C4D }
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x40000100
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "her thanks as the head ends it, the line's own words", confidence = "low" }
+
+[[talk]]
+key = "t-3317-f2ae9daa"
+who = 0x47003317
+line = { table = 0x25002AA5, string = 0xF2AE9DAA }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x40000100
+phase = 1
+prov = { from = "authored", by = "Dereth Network", note = "her reminder at the quest's phase 1: the line's own words ask after its step", confidence = "low" }
+
+[[talk]]
+key = "t-3317-f2b69daa"
+who = 0x47003317
+line = { table = 0x25002AA5, string = 0xF2B69DAA }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x40000100
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "her reminder at the quest's phase 2: the line's own words ask after its step", confidence = "low" }
+
+[[talk]]
+key = "t-3317-f2be9daa"
+who = 0x47003317
+line = { table = 0x25002AA5, string = 0xF2BE9DAA }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x40000100
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "her reminder at the quest's phase 3: the line's own words ask after its step", confidence = "low" }
