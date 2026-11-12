@@ -94,6 +94,7 @@
 - The doomed sword quest in Arramora now has its sword and its creature. New pack `doomed-hero-sword/`.
 - The plague cure in the Knorr Ramparts now takes six maws, one at a time. New pack `magnan-plague-cure/`.
 - The queen's quest in Lake Artefon's catacombs can now be done. New pack `artefon-salvation/`.
+- Drudgerton's stolen feathers quest can now be done, from maps the Gurog drop. New pack `siraluun-cargo/`.
 
 ## v0.36.0
 

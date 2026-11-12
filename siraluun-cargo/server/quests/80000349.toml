@@ -1,0 +1,69 @@
+# The feathers a map gives, the headdress made from them and its hand-in; edit an authored pack instead.
+
+[[step]]
+key = "map-feather-1-blue"
+quest = 0x80000349
+needs = 1
+trigger = { use = 0x4700141E }
+update = "none"
+takes = [0x4700141E]
+gives = [0x47001417]
+chance = 0.333333
+prov = { from = "authored", by = "Dereth Network", note = "a map used gives one feather, any of the three alike (a guide of 2005: one random feather a map, whatever the map); its chest and two Gurog guards are not made", confidence = "low" }
+
+[[step]]
+key = "map-feather-2-green"
+quest = 0x80000349
+needs = 1
+trigger = { use = 0x4700141E }
+update = "none"
+takes = [0x4700141E]
+gives = [0x47001418]
+chance = 0.500000
+prov = { from = "authored", by = "Dereth Network", note = "a map used gives one feather, any of the three alike (a guide of 2005: one random feather a map, whatever the map); its chest and two Gurog guards are not made", confidence = "low" }
+
+[[step]]
+key = "map-feather-3-iridescent"
+quest = 0x80000349
+needs = 1
+trigger = { use = 0x4700141E }
+update = "none"
+takes = [0x4700141E]
+gives = [0x47001419]
+prov = { from = "authored", by = "Dereth Network", note = "a map used gives one feather, any of the three alike (a guide of 2005: one random feather a map, whatever the map); its chest and two Gurog guards are not made", confidence = "low" }
+
+[[step]]
+key = "headdress-made-blue"
+quest = 0x80000349
+needs = 1
+trigger = { use = 0x47001417, on = 0x4700141A }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the third feather tied on a pair makes the headdress, which ends the first phase (its journal; the elder's line at the second: he smells a headdress made)", confidence = "low" }
+
+[[step]]
+key = "headdress-made-green"
+quest = 0x80000349
+needs = 1
+trigger = { use = 0x47001418, on = 0x4700141B }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the third feather tied on a pair makes the headdress, which ends the first phase (its journal; the elder's line at the second: he smells a headdress made)", confidence = "low" }
+
+[[step]]
+key = "headdress-made-iridescent"
+quest = 0x80000349
+needs = 1
+trigger = { use = 0x47001419, on = 0x4700141C }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the third feather tied on a pair makes the headdress, which ends the first phase (its journal; the elder's line at the second: he smells a headdress made)", confidence = "low" }
+
+[[step]]
+key = "headdress-handed"
+quest = 0x80000349
+needs = 2
+trigger = { give = 0x4700141D, to = 0x47002FBB }
+update = "complete"
+takes = [0x4700141D]
+prov = { from = "authored", by = "Dereth Network", note = "the headdress the feathers make, handed to the elder, ends it (the journal and a guide of 2005); the old mystic one the journal also names ends it too, as before", confidence = "low" }
