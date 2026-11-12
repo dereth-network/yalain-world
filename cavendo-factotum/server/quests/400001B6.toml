@@ -1,0 +1,25 @@
+# Business Transaction, from Hero's walkthrough and the factotum's own lines; edit an authored pack instead.
+
+[[quest]]
+id = 0x400001B6
+id_name = "QuestKanten8"
+state = 0x6F000D03
+prov = { from = "authored", by = "Dereth Network", note = "its definition the install's, a row so its steps can move it", confidence = "medium" }
+
+[[step]]
+key = "wings-given"
+quest = 0x400001B6
+needs = 0
+trigger = { use = 0x47003346 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the factotum gives one of his errands at random; this one with his line for it (his talk row)", confidence = "low" }
+
+[[step]]
+key = "wings-back"
+quest = 0x400001B6
+needs = 1
+trigger = { give = 0x47001A42, to = 0x47003346 }
+update = "complete"
+takes = [0x47001A42]
+wants = 2
+prov = { from = "authored", by = "Dereth Network", note = "Hero and the journal: a pair of wasp wings; the install's only wasp wing is the onyx wasp's, so two of it", confidence = "low" }

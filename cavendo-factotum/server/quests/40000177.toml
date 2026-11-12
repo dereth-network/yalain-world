@@ -1,0 +1,41 @@
+# Keys to Success, from Hero's walkthrough and the factotum's own lines; edit an authored pack instead.
+
+[[step]]
+key = "keys-given"
+quest = 0x40000177
+needs = 0
+trigger = { use = 0x47003346 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the factotum gives one of his errands at random; this one with his line for it (his talk row)", confidence = "low" }
+
+[[step]]
+key = "emblem-1"
+quest = 0x40000177
+needs = 1
+trigger = { give = 0x4700111C, to = 0x47003346 }
+update = "advance"
+phase = 2
+takes = [0x4700111C]
+wants = 1
+prov = { from = "authored", by = "Dereth Network", note = "Hero and the journal: three Emblems of Order, one at a time, each a phase", confidence = "low" }
+
+[[step]]
+key = "emblem-2"
+quest = 0x40000177
+needs = 2
+trigger = { give = 0x4700111C, to = 0x47003346 }
+update = "advance"
+phase = 3
+takes = [0x4700111C]
+wants = 1
+prov = { from = "authored", by = "Dereth Network", note = "Hero and the journal: three Emblems of Order, one at a time, each a phase", confidence = "low" }
+
+[[step]]
+key = "emblem-3"
+quest = 0x40000177
+needs = 3
+trigger = { give = 0x4700111C, to = 0x47003346 }
+update = "complete"
+takes = [0x4700111C]
+wants = 1
+prov = { from = "authored", by = "Dereth Network", note = "Hero and the journal: three Emblems of Order, one at a time, each a phase; his line for the last (his talk row)", confidence = "low" }

@@ -1,0 +1,28 @@
+# The insignia to the Factotum of Kehan, from the journal, the insignia and the factotums' own lines; edit an authored pack instead.
+
+[[quest]]
+id = 0x400001B3
+id_name = "QuestKanten6_2"
+state = 0x6F000D00
+prov = { from = "authored", by = "Dereth Network", note = "its definition the install's, a row so its steps can move it", confidence = "medium" }
+
+[[step]]
+key = "insignia-given"
+quest = 0x400001B3
+needs = 0
+trigger = { use = 0x47003346 }
+update = "bestow"
+races = [4]
+gives = [0x47001A2C]
+tell = { table = 0x25002ABE, string = 0x838D6A9B }
+prov = { from = "authored", by = "Dereth Network", note = "as the Lugian insignia's errand (2017): the factotum gives the insignia of Kehan's factotum; his line for it speaks to a Tumerok player, so a Tumerok's errand", confidence = "low" }
+
+[[step]]
+key = "insignia-delivered"
+quest = 0x400001B3
+needs = 1
+trigger = { give = 0x47001A2C, to = 0x4700334F }
+update = "complete"
+takes = [0x47001A2C]
+tell = { table = 0x25002AC3, string = 0xF221EBB3 }
+prov = { from = "authored", by = "Dereth Network", note = "the journal: deliver the insignia to Rhath'Elen; his line for it", confidence = "low" }

@@ -24,7 +24,7 @@
 - The estate crypt's tile puzzle and the throne past it can now be done. New pack `knorr-crypt/`.
 - Finishing all five of Knorr's mushroom hunts now earns their bonus. Pack `knorr-mushrooms/`.
 - Four quests from Shoushi's drudges can now be done, one in the crones' laboratories. New pack `prosper-drudges/`.
-- Two more of the Cavendo factotum's errands can now be done. New pack `cavendo-factotum/`.
+- Seven more of the Cavendo factotum's errands can now be done. New pack `cavendo-factotum/`.
 - Two of the wanderers' errands near Arwic can now be done. New pack `wandering-folk/`.
 - Lake Artefon's three tomb quests can now be done, and their armor learned. New pack `artefon-tombs/`.
 
