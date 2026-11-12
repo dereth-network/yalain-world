@@ -105,6 +105,7 @@
 - The plane of chaos under the Battlefield can now be entered, as far as the eidolon's dungeon. New pack `chaos-plane/`.
 - The tainted forge beyond the eidolon's dungeon and its quest through five platforms can now be done. New pack `chaos-forge/`.
 - Fidget's hunt for the carenzi's hidden nuts can now be finished. New pack `carenzi-hoard/`.
+- Gems from creatures now lead to the Arcanum's guarded caches, and the scholar in its vault takes their books. New pack `arcanum-caches/`.
 
 ## v0.36.0
 
