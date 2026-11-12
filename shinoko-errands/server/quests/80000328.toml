@@ -1,0 +1,57 @@
+# The family's mixed-up meals, handed on in the journal's order, from the wiki's and a player's guide's walkthroughs and their own lines; edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x80000328
+needs = 0
+trigger = { use = 0x4700329E }
+update = "bestow"
+gives = [0x470018C4]
+tell = { table = 0x25002A70, string = 0xFDC92C0F }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: given with the daughter's shake; her line asking the favor", confidence = "low" }
+
+[[step]]
+key = "shake"
+quest = 0x80000328
+needs = 1
+trigger = { give = 0x470018C4, to = 0x470032A2 }
+update = "advance"
+phase = 2
+takes = [0x470018C4]
+gives = [0x470018C1]
+tell = { table = 0x25002A72, string = 0x622D4E67 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: the shake to the daughter, who hands over the brother's sampler; her line", confidence = "low" }
+
+[[step]]
+key = "sampler"
+quest = 0x80000328
+needs = 2
+trigger = { give = 0x470018C1, to = 0x470032A4 }
+update = "advance"
+phase = 3
+takes = [0x470018C1]
+gives = [0x470018C2]
+tell = { table = 0x25002A73, string = 0x622D4E67 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: the sampler to the son in the ruins, who hands over the father's burger; his line", confidence = "low" }
+
+[[step]]
+key = "burger"
+quest = 0x80000328
+needs = 3
+trigger = { give = 0x470018C2, to = 0x4700329C }
+update = "advance"
+phase = 4
+takes = [0x470018C2]
+gives = [0x470018C3]
+tell = { table = 0x25002A6F, string = 0x622D4E67 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: the burger to the father at the outpost, who hands over the soup; his line", confidence = "low" }
+
+[[step]]
+key = "w-end"
+quest = 0x80000328
+needs = 4
+trigger = { give = 0x470018C3, to = 0x4700329E }
+update = "complete"
+takes = [0x470018C3]
+tell = { table = 0x25002A70, string = 0xC2B38E4F }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: the soup handed back ends it; her line of thanks", confidence = "low" }

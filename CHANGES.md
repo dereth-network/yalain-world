@@ -31,6 +31,7 @@
 - The tarot's card melds and their fifteen quests can now be done. New pack `tarot/`.
 - Ankoro's mushroom hunt and the ranger's collar quest can now be finished. New pack `ankoro-hunters/`.
 - The egg collector's two roost hunts can now be done. New pack `kydi-eggs/`.
+- The Shinoko raft mender's lost meal can now be fetched around the isles. New pack `shinoko-errands/`.
 
 ## v0.36.0
 
