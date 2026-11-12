@@ -42,8 +42,6 @@
 - The temple under the standing stone east of Hakata can now be entered, and its quests done. New pack `temple-of-roots/`.
 - The five Curses of the Undead can now be finished. New pack `undead-curses/`.
 - The master vaults' gems can now be made, their portal creatures killed in order. New pack `master-vault-gems/`.
-- Arramora's lair gems now drop, and the lairs have their bosses and ways out. New pack `arramora-lairs/`.
-- Arramora's eleven lair quests can now be done, from the gems their holders drop. New pack `arramora-lairs/`.
 - Arramora's lair quests can now be done, from the gems their holders drop. New pack `arramora-lairs/`.
 - The blowouts' portal shards and the master vaults' gems now open their portals. New pack `item-portals/`.
 
