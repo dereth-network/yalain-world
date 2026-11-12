@@ -19,4 +19,70 @@ spots = [{ cell = 0x06DF0164, at = [-47.45, -201.85, 175.30] }]
 population = 1
 regen = 192.0
 spawns = [{ template = 0x47002516, weight = 1 }]
-prov = { from = "authored", by = "Dereth Network", note = "the walk from the landing ends farthest in the landing's own part; the other parts are reached by portals inside, which no row places", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "authored", by = "Dereth Network", note = "the walk from the landing ends farthest in the landing's own part, the lair's deepest; the other two parts are reached by its portals inside", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "golemsgrave-a-to-c"
+kind = "static"
+template = 0x47001150
+cell = 0x06DF0131
+at = [110.71, -97.23, 197.80]
+rotation = [0.608761, 0, 0, -0.793353]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "lair-golemsgrave-c"
+prov = { from = "authored", by = "Dereth Network", note = "the lair is three parts no doorway joins; a portal 2 m behind the landing a in the east part to the landing c in the entrance's part, so each part reaches the others both ways; no recording", confidence = "low" }
+
+[[object]]
+key = "golemsgrave-b-to-e"
+kind = "static"
+template = 0x47001150
+cell = 0x06DF017C
+at = [215.73, 10.62, 177.90]
+rotation = [0, 0, 0, 1]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "lair-golemsgrave-e"
+prov = { from = "authored", by = "Dereth Network", note = "the lair is three parts no doorway joins; a portal 2 m behind the landing b in the east part to the landing e in the hall, so each part reaches the others both ways; no recording", confidence = "low" }
+
+[[object]]
+key = "golemsgrave-c-to-a"
+kind = "static"
+template = 0x47001150
+cell = 0x06DF015B
+at = [45.87, -169.76, 187.90]
+rotation = [0.707107, 0, 0, 0.707107]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "lair-golemsgrave-a"
+prov = { from = "authored", by = "Dereth Network", note = "the lair is three parts no doorway joins; a portal 2 m behind the landing c in the entrance's part to the landing a in the east part, so each part reaches the others both ways; no recording", confidence = "low" }
+
+[[object]]
+key = "golemsgrave-d-to-e"
+kind = "static"
+template = 0x47001150
+cell = 0x06DF015C
+at = [-54.65, -98.28, 167.90]
+rotation = [-0.382683, 0, 0, 0.92388]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "lair-golemsgrave-e"
+prov = { from = "authored", by = "Dereth Network", note = "the lair is three parts no doorway joins; a portal 2 m behind the landing d in the entrance's part to the landing e in the hall, so each part reaches the others both ways; no recording", confidence = "low" }
+
+[[object]]
+key = "golemsgrave-e-to-b"
+kind = "static"
+template = 0x47001150
+cell = 0x06DF0135
+at = [-23.55, -26.61, 176.00]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "lair-golemsgrave-b"
+prov = { from = "authored", by = "Dereth Network", note = "the lair is three parts no doorway joins; a portal 2 m left of the landing e in the hall to the landing b in the east part, so each part reaches the others both ways; no recording", confidence = "low" }
+
+[[object]]
+key = "golemsgrave-e-to-d"
+kind = "static"
+template = 0x47001150
+cell = 0x06DF0101
+at = [-19.14, -26.61, 176.00]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "lair-golemsgrave-d"
+prov = { from = "authored", by = "Dereth Network", note = "the lair is three parts no doorway joins; a portal 2 m right of the landing e in the hall to the landing d in the entrance's part, so each part reaches the others both ways; no recording", confidence = "low" }
