@@ -1,0 +1,48 @@
+# the Burun lord's key, and the gauntlets each of the treasury's chests holds; edit an authored pack instead.
+
+[[death_treasure]]
+key = "dd-eeruk-key"
+camp = "dd-lord-eeruk@D39D"
+item = 0x4700146C
+chance = 1.0
+prov = { from = "authored", by = "Dereth Network", note = "the Burun lord leaves the key to his treasury (the wiki, AC2 Hero); its taking asks his quest moved on, as the key's class says", confidence = "low" }
+
+[[death_treasure]]
+key = "dd-gauntlets-drudge"
+template = 0x47001461
+item = 0x47001467
+chance = 1.0
+requires = { quest = 0x4000007E, phase = 2 }
+prov = { from = "authored", by = "Dereth Network", note = "the chest for drudges holds its race's gauntlets for one whose quest the Burun lord's death moved on (the wiki: loot the chest of your race to end the quest and get the gauntlets)", confidence = "low" }
+
+[[death_treasure]]
+key = "dd-gauntlets-empyrean"
+template = 0x47001462
+item = 0x47001468
+chance = 1.0
+requires = { quest = 0x4000007E, phase = 2 }
+prov = { from = "authored", by = "Dereth Network", note = "the chest for empyreans holds its race's gauntlets for one whose quest the Burun lord's death moved on (the wiki: loot the chest of your race to end the quest and get the gauntlets)", confidence = "low" }
+
+[[death_treasure]]
+key = "dd-gauntlets-human"
+template = 0x47001463
+item = 0x47001469
+chance = 1.0
+requires = { quest = 0x4000007E, phase = 2 }
+prov = { from = "authored", by = "Dereth Network", note = "the chest for humans holds its race's gauntlets for one whose quest the Burun lord's death moved on (the wiki: loot the chest of your race to end the quest and get the gauntlets)", confidence = "low" }
+
+[[death_treasure]]
+key = "dd-gauntlets-lugian"
+template = 0x47001464
+item = 0x4700146A
+chance = 1.0
+requires = { quest = 0x4000007E, phase = 2 }
+prov = { from = "authored", by = "Dereth Network", note = "the chest for lugians holds its race's gauntlets for one whose quest the Burun lord's death moved on (the wiki: loot the chest of your race to end the quest and get the gauntlets)", confidence = "low" }
+
+[[death_treasure]]
+key = "dd-gauntlets-tumerok"
+template = 0x47001465
+item = 0x4700146B
+chance = 1.0
+requires = { quest = 0x4000007E, phase = 2 }
+prov = { from = "authored", by = "Dereth Network", note = "the chest for tumeroks holds its race's gauntlets for one whose quest the Burun lord's death moved on (the wiki: loot the chest of your race to end the quest and get the gauntlets)", confidence = "low" }

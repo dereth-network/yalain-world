@@ -1,0 +1,72 @@
+# The Arramora idol's dungeon: its way out, its Burun and Olthoi, and the immortal master in its far hall; edit an
+# authored pack instead.
+
+[[object]]
+key = "bi-arramora-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x04A70100
+at = [-1.50, -6.50, 456.20]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "bi-arramora-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out behind the Arramora idol's dungeon's landing, to its way out on the land; no source names one", confidence = "low" }
+
+[[camp]]
+key = "bi-arramora-rangers"
+cell = 0x04A7010F
+at = [-27.30, -79.70, 448.80]
+spots = [{ cell = 0x04A7010F, at = [-27.30, -79.70, 448.80] }, { cell = 0x04A7010F, at = [-131.20, -183.60, 448.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700226E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the ringed passages from the landing to the great room: Burun Rangers", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bi-arramora-drones"
+cell = 0x04A70146
+at = [-269.00, -321.20, 446.00]
+spots = [{ cell = 0x04A70146, at = [-269.00, -321.20, 446.00] }, { cell = 0x04A70146, at = [-241.10, -350.30, 446.00] }, { cell = 0x04A70146, at = [-354.00, -293.20, 446.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002903, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the large room with a ramp, packs of Olthoi scattered through it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bi-arramora-bombardiers"
+cell = 0x04A70123
+at = [-395.60, -164.40, 465.30]
+spots = [{ cell = 0x04A70123, at = [-395.60, -164.40, 465.30] }, { cell = 0x04A70123, at = [-443.40, -120.00, 469.60] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700292B, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: missile grubs on the ledges above the large room", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bi-arramora-immortal-master"
+cell = 0x04A7018F
+at = [-484.90, -75.00, 468.10]
+spots = [{ cell = 0x04A7018F, at = [-484.90, -75.00, 468.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700229A, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: past the ramp, an opening on the far side leads to the immortals' grand master (the boss), who leaves the journal and the staff; the far hall the walls' walk reaches", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bi-arramora-soldier"
+cell = 0x04A7018E
+at = [-477.80, -82.10, 468.10]
+spots = [{ cell = 0x04A7018E, at = [-477.80, -82.10, 468.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a soldier Olthoi of level 74 among the immortal master's guardians", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bi-arramora-guard-wardens"
+cell = 0x04A7018F
+at = [-480.40, -70.80, 469.70]
+spots = [{ cell = 0x04A7018F, at = [-480.40, -70.80, 469.70] }, { cell = 0x04A7018F, at = [-488.80, -80.30, 469.90] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002272, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: high level Burun among the immortal master's guardians: Burun Swarm Wardens", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

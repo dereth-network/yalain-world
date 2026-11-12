@@ -1,0 +1,34 @@
+# Eeruk's Loot: given at a use of the seeking amulet, moved on by the Burun lord's death (the install), ended by the
+# gauntlets taken from the treasury's chest of the player's race; edit an authored pack instead.
+
+[[step]]
+key = "dd-amulet-used"
+quest = 0x4000007E
+needs = 0
+trigger = { use = 0x47001460 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki, AC2 Hero: the quest begins when the seeking amulet, a Faisi Seeker's drop, is used", confidence = "low" }
+
+[[step]]
+key = "dd-gauntlets-human"
+quest = 0x4000007E
+needs = 2
+trigger = { take = 0x47001469 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the gauntlets for humans taken from the treasury's chest end the quest (the wiki), as the Drudge and Empyrean gauntlets' own taking does", confidence = "low" }
+
+[[step]]
+key = "dd-gauntlets-lugian"
+quest = 0x4000007E
+needs = 2
+trigger = { take = 0x4700146A }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the gauntlets for lugians taken from the treasury's chest end the quest (the wiki), as the Drudge and Empyrean gauntlets' own taking does", confidence = "low" }
+
+[[step]]
+key = "dd-gauntlets-tumerok"
+quest = 0x4000007E
+needs = 2
+trigger = { take = 0x4700146B }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the gauntlets for tumeroks taken from the treasury's chest end the quest (the wiki), as the Drudge and Empyrean gauntlets' own taking does", confidence = "low" }

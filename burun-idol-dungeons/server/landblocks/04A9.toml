@@ -1,0 +1,82 @@
+# The Omishan idol's dungeon: its way out, its Burun and Olthoi, and the shaman hive master at its end; edit an
+# authored pack instead.
+
+[[object]]
+key = "bi-omishan-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x04A90100
+at = [-0.20, -3.60, 253.10]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "bi-lair-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out behind the idol's dungeon's landing, to the peninsula where its idol stands; no source names one", confidence = "low" }
+
+[[camp]]
+key = "bi-omishan-wardens"
+cell = 0x04A90113
+at = [-104.50, -235.30, 220.20]
+spots = [{ cell = 0x04A90113, at = [-104.50, -235.30, 220.20] }, { cell = 0x04A90113, at = [-76.80, -262.90, 220.20] }, { cell = 0x04A90113, at = [-123.40, -253.10, 220.90] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002272, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the dungeon's great hall: Burun Swarm Wardens, the wiki's packs of Burun of 50 and more", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bi-omishan-drones"
+cell = 0x04A90126
+at = [81.00, -343.80, 215.90]
+spots = [{ cell = 0x04A90126, at = [81.00, -343.80, 215.90] }, { cell = 0x04A90126, at = [92.30, -356.10, 215.90] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002903, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the room east of the great hall: Olthoi Drones, the packs of Olthoi the wiki names", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bi-omishan-rangers"
+cell = 0x04A90242
+at = [-209.60, -410.80, 217.30]
+spots = [{ cell = 0x04A90242, at = [-209.60, -410.80, 217.30] }, { cell = 0x04A90242, at = [-210.30, -410.50, 217.30] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700226E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the room on the way to the dungeon's end: Burun Rangers", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bi-omishan-bombardiers"
+cell = 0x04A901D9
+at = [-299.60, -470.10, 217.30]
+spots = [{ cell = 0x04A901D9, at = [-299.60, -470.10, 217.30] }, { cell = 0x04A901D9, at = [-321.90, -498.30, 217.30] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700292B, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the passage into the last room: grub bombardiers", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bi-omishan-hive-master"
+cell = 0x04A90202
+at = [-349.60, -520.00, 217.20]
+spots = [{ cell = 0x04A90202, at = [-349.60, -520.00, 217.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700229D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: at the end of the dungeon, a room with a shaman hive master (the boss), who leaves the orb; the last room the walls' walk reaches from the landing; one at a time", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bi-omishan-guard-tenders"
+cell = 0x04A90203
+at = [-340.00, -509.60, 217.20]
+spots = [{ cell = 0x04A90203, at = [-340.00, -509.60, 217.20] }, { cell = 0x04A90203, at = [-329.60, -529.80, 217.20] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470022BA, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a lot of Burun and Olthoi guardians with the hive master: Burun Nymph Tenders", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bi-omishan-guard-drones"
+cell = 0x04A90201
+at = [-358.10, -530.50, 217.60]
+spots = [{ cell = 0x04A90201, at = [-358.10, -530.50, 217.60] }, { cell = 0x04A90201, at = [-370.30, -504.70, 217.20] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002903, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the hive master's Olthoi guardians (the wiki)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

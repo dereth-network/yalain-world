@@ -1,0 +1,42 @@
+# The catacombs' door back up to the lighthouse's top, the Slithis that drains the land at their bottom and the chest behind it,
+# and their spawn in the pillared hall; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x400BF10000000001
+template = 0x47001176
+cell = 0x0BF10100
+at = [6.1119, 5.9082, 100.35]
+rotation = [0.382683, 0.0, 0.0, 0.92388]
+to = "toutou-lighthouse-top"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:2ab55778", confidence = "low", sample = { sessions = 1 }, fields = { to = { from = "authored", by = "Dereth Network", note = "the door at the catacombs' landing back up to the lighthouse's top, whose door leads down here (2017); no recording of a trip through this one", confidence = "low" } } }
+
+[[camp]]
+key = "tt-sapper"
+cell = 0x0BF10120
+at = [70.20, -0.50, 0.40]
+spots = [{ cell = 0x0BF10120, at = [70.20, -0.50, 0.40] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002BA3, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "AC2 Hero, the quest's journal: the Slithis that drains the land (level 39) at the bottom of the catacombs, the round room at the foot of their last stair; one at a time, as a boss", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "tt-spawn-hall"
+cell = 0x0BF1011D
+at = [-26.20, 5.90, 10.40]
+spots = [{ cell = 0x0BF1011D, at = [-26.20, 5.90, 10.40] }, { cell = 0x0BF1011D, at = [-16.20, -6.30, 10.40] }, { cell = 0x0BF1011D, at = [-25.80, -6.00, 10.40] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002BC5, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the pillared hall on the way down, the spawn 2017 recorded in the catacombs' west ring (level 36), more of it here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "tt-dusty-chest"
+kind = "static"
+template = 0x47000F4D
+cell = 0x0BF10120
+at = [84.00, 0.50, 0.40]
+heading = 270.0
+prov = { from = "authored", by = "Dereth Network", note = "AC2 Hero: the chest behind the Slithis that drains the land holds the arrow; the install's chest that keeps this quest at its second phase, against the far wall of the round room", confidence = "low" }

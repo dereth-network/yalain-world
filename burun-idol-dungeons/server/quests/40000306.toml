@@ -1,0 +1,57 @@
+# Tuamoa's quest of the new Burun from Tuamoa's giving on: the pendant shown to him, laid on the old idol, the orb shown to him and
+# laid on the new idol, and the journal that ends it, from the wiki, a players' guide of the time and their own
+# lines; edit an authored pack instead.
+
+[[step]]
+key = "bi-pendant-shown"
+quest = 0x40000306
+needs = 1
+trigger = { give = 0x470012F5, to = 0x47002F4C }
+update = "advance"
+phase = 2
+tell = { table = 0x250028E1, string = 0x1586316B }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: return the pendant to Tuamoa and learn it is a key to another dungeon; the journal's second phase, use it to open a portal; his line for the pendant, which comes back", confidence = "low" }
+
+[[step]]
+key = "bi-pendant-laid"
+quest = 0x40000306
+needs = 2
+trigger = { give = 0x470012F5, to = 0x47002F49 }
+update = "advance"
+phase = 3
+tell = { table = 0x250028DF, string = 0x3C76FAB7 }
+takes = [0x470012F5]
+to = "bi-omishan-landing"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: hand the pendant to the old idol by the hidden portal, which keeps it and sends the player into the Omishan idol's dungeon; the journal's third phase; the idol's own line", confidence = "low" }
+
+[[step]]
+key = "bi-orb-shown"
+quest = 0x40000306
+needs = 3
+trigger = { give = 0x470012F4, to = 0x47002F4C }
+update = "advance"
+phase = 4
+tell = { table = 0x250028E1, string = 0x26A03398 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: return the orb to Tuamoa to advance; the journal's fourth phase, the orb may open a portal in Arramora's jungles; his line for the orb, which comes back", confidence = "low" }
+
+[[step]]
+key = "bi-orb-laid"
+quest = 0x40000306
+needs = 4
+trigger = { give = 0x470012F4, to = 0x47002F4A }
+update = "advance"
+phase = 5
+tell = { table = 0x250028E0, string = 0xE43F3F25 }
+takes = [0x470012F4]
+to = "bi-arramora-landing"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: hand the orb to the idol in Arramora's jungle (14.4N 51.6W, the new idol 2017 recorded), which keeps it and sends the player into its dungeon; the journal's fifth phase; the idol's own line", confidence = "low" }
+
+[[step]]
+key = "bi-journal-given"
+quest = 0x40000306
+needs = 5
+trigger = { give = 0x47000E36, to = 0x47002F4C }
+update = "complete"
+tell = { table = 0x250028E1, string = 0x7936DA99 }
+takes = [0x47000E36]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: take the journal back to Tuamoa to complete the quest; his line for the journal", confidence = "low" }

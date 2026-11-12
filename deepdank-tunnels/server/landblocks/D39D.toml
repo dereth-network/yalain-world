@@ -1,0 +1,126 @@
+# The tunnels' Burun, the Burun lord, the treasury's door and its five chests; edit an authored pack instead.
+
+[[camp]]
+key = "dd-kiree-east"
+cell = 0xD39D0146
+at = [29.60, 40.80, 86.70]
+spots = [{ cell = 0xD39D0146, at = [29.60, 40.80, 86.70] }, { cell = 0xD39D0146, at = [47.50, 43.80, 91.50] }, { cell = 0xD39D0146, at = [30.70, 42.10, 86.90] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470022AF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the tunnel in from the land, where a players' map draws the first of its spawns: Kiree, the least of the four kinds of Burun the map names (level 29)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "dd-reeshan-middle"
+cell = 0xD39D010A
+at = [-83.80, 24.70, 71.40]
+spots = [{ cell = 0xD39D010A, at = [-82.40, 38.10, 70.70] }, { cell = 0xD39D010A, at = [-83.80, 24.70, 71.40] }, { cell = 0xD39D010A, at = [-85.20, 10.10, 70.20] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700226D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the passage north and south through the middle of the tunnels, spawns on a players' map: Reeshan (level 33, as the map names them)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "dd-reeshan-south"
+cell = 0xD39D0114
+at = [-54.20, -78.40, 57.00]
+spots = [{ cell = 0xD39D0114, at = [-48.80, -88.50, 57.10] }, { cell = 0xD39D0114, at = [-54.20, -78.40, 57.00] }, { cell = 0xD39D0114, at = [-58.60, -65.60, 56.80] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700226D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the crossing passages in the south of the tunnels, spawns on a players' map: Reeshan", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "dd-kiree-west"
+cell = 0xD39D0140
+at = [-152.40, -6.30, 11.80]
+spots = [{ cell = 0xD39D0140, at = [-152.40, -6.30, 11.80] }, { cell = 0xD39D0140, at = [-149.10, -4.90, 11.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470022AF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the head of the room a players' map draws the Burun lord at the foot of: Kiree, its two spawns", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "dd-lord-eeruk"
+cell = 0xD39D013F
+at = [-153.00, -51.60, 11.90]
+spots = [{ cell = 0xD39D013F, at = [-153.00, -51.60, 11.90] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002274, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a players' map draws the Burun lord (level 34, with the key to the treasury) at the foot of the room west of the round stair; one at a time, as a boss", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "dd-ruruk-treasury"
+cell = 0xD39D012D
+at = [-56.10, 158.30, 49.40]
+spots = [{ cell = 0xD39D012D, at = [-60.30, 154.80, 49.40] }, { cell = 0xD39D012D, at = [-51.90, 154.50, 49.90] }, { cell = 0xD39D012D, at = [-56.10, 158.30, 49.40] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470022B1, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a small room with several Ruruk and the door, locked, to the treasury, the round room a players' map draws below it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "dd-reeshan-loop"
+cell = 0xD39D012C
+at = [-62.40, 137.30, 49.30]
+spots = [{ cell = 0xD39D012C, at = [-62.40, 137.30, 49.30] }, { cell = 0xD39D012C, at = [-79.90, 138.70, 49.30] }, { cell = 0xD39D012C, at = [-92.70, 123.50, 49.40] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700226D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the loop below the treasury's room, spawns on a players' map: Reeshan", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "dd-treasury-door"
+kind = "static"
+template = 0x47001466
+cell = 0xD39D014B
+at = [-56.10, 168.30, 49.30]
+heading = 180.0
+requires = { quest = 0x4000007E, phase = 2 }
+prov = { from = "authored", by = "Dereth Network", note = "the treasury's door, where a players' map draws it locked: the Burun lord's key opens it (the wiki), which no key id ties to it, so it opens for one whose quest his death moved on", confidence = "low" }
+
+[[object]]
+key = "dd-chest-drudge"
+kind = "static"
+template = 0x47001461
+cell = 0xD39D014C
+at = [-57.80, 194.50, 49.30]
+heading = 180.0
+prov = { from = "authored", by = "Dereth Network", note = "the treasury's chest for drudges, one of five, one for each race (the wiki), in the room past the door where a players' map draws them", confidence = "low" }
+
+[[object]]
+key = "dd-chest-empyrean"
+kind = "static"
+template = 0x47001462
+cell = 0xD39D014C
+at = [-54.40, 194.50, 49.30]
+heading = 180.0
+prov = { from = "authored", by = "Dereth Network", note = "the treasury's chest for empyreans, one of five, one for each race (the wiki), in the room past the door where a players' map draws them", confidence = "low" }
+
+[[object]]
+key = "dd-chest-human"
+kind = "static"
+template = 0x47001463
+cell = 0xD39D014C
+at = [-56.10, 196.00, 49.40]
+heading = 180.0
+prov = { from = "authored", by = "Dereth Network", note = "the treasury's chest for humans, one of five, one for each race (the wiki), in the room past the door where a players' map draws them", confidence = "low" }
+
+[[object]]
+key = "dd-chest-lugian"
+kind = "static"
+template = 0x47001464
+cell = 0xD39D014C
+at = [-57.80, 190.50, 49.00]
+heading = 180.0
+prov = { from = "authored", by = "Dereth Network", note = "the treasury's chest for lugians, one of five, one for each race (the wiki), in the room past the door where a players' map draws them", confidence = "low" }
+
+[[object]]
+key = "dd-chest-tumerok"
+kind = "static"
+template = 0x47001465
+cell = 0xD39D014C
+at = [-54.40, 190.50, 49.10]
+heading = 180.0
+prov = { from = "authored", by = "Dereth Network", note = "the treasury's chest for tumeroks, one of five, one for each race (the wiki), in the room past the door where a players' map draws them", confidence = "low" }

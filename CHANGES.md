@@ -74,6 +74,9 @@
 - An enslaved mosswart in Arramora can now be rescued and led home. New pack `mosswart-rescue/`.
 - Geraine's tomb on the Arramora plateau can now be entered and walked to the door at its end. New pack `geraines-tomb/`.
 - The Dereth Rally's races can now be run, five a day. New pack `dereth-rally/`.
+- Eeruk's Loot can now be done, in the Deepdank Tunnels. New pack `deepdank-tunnels/`.
+- The last of the Tou-Tou ruins quests can now be done, down the lighthouse catacombs. New pack `toutou-catacombs/`.
+- Tuamoa's quest about the new Burun can now be done, through three dungeons. New pack `burun-idol-dungeons/`.
 
 ## v0.36.0
 
