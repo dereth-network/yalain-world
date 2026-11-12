@@ -1,0 +1,9 @@
+# The bell tower keeper's quest ends at Degoda; edit an authored pack instead.
+
+[[step]]
+key = "found"
+quest = 0x4000012B
+needs = 1
+trigger = { use = 0x47003296 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the keeper's quest, given at his death (its one phase waits), ends as the player finds the spirit his crypt held", confidence = "low" }

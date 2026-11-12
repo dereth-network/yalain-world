@@ -1,0 +1,95 @@
+# the boots quest: the scholar's charge, Kartok's and Degoda's crypts and the boots' recipe; edit an authored pack instead.
+
+[[step]]
+key = "given"
+quest = 0x40000129
+needs = 0
+trigger = { use = 0x4700329A }
+update = "bestow"
+tell = { table = 0x25002A6E, string = 0x2AE6122C }
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and AC2 Hero: the Elder Scholar in Ondekodo gives it, to the fellowship too (the wiki: once you start the quest, all fellows will get it)", confidence = "low" }
+
+[[step]]
+key = "kartok"
+quest = 0x40000129
+needs = 1
+trigger = { use = 0x47003298 }
+update = "advance"
+tell = { table = 0x25002A6D, string = 0x8B6B186F }
+phase = 2
+gives = [0x47000BAD]
+requires = [{ quest = 0x4000012A, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: talk to the spirit of Kartok to get his sandals; he sends you on to Degoda", confidence = "low" }
+
+[[step]]
+key = "degoda"
+quest = 0x40000129
+needs = 2
+trigger = { use = 0x47003296 }
+update = "advance"
+tell = { table = 0x25002A6C, string = 0x8B6B1869 }
+phase = 3
+gives = [0x47000BAE]
+requires = [{ quest = 0x4000012B, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: talk to the spirit of Degoda, who gives his spirit and sends you back to the scholar", confidence = "low" }
+
+[[step]]
+key = "recipe-human"
+quest = 0x40000129
+needs = 3
+trigger = { use = 0x4700329A }
+update = "advance"
+tell = { table = 0x25002A6E, string = 0x8B6B186B }
+phase = 4
+effects = [0x6F001EF9]
+races = [1]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: talk to the Elder Scholar again to get the recipe that combines the sandals and the spirit; the install's recipe of the boots of this race, its grant effect", confidence = "low" }
+
+[[step]]
+key = "recipe-lugian"
+quest = 0x40000129
+needs = 3
+trigger = { use = 0x4700329A }
+update = "advance"
+tell = { table = 0x25002A6E, string = 0x8B6B186B }
+phase = 4
+effects = [0x6F001F01]
+races = [2]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: talk to the Elder Scholar again to get the recipe that combines the sandals and the spirit; the install's recipe of the boots of this race, its grant effect", confidence = "low" }
+
+[[step]]
+key = "recipe-tumerok"
+quest = 0x40000129
+needs = 3
+trigger = { use = 0x4700329A }
+update = "advance"
+tell = { table = 0x25002A6E, string = 0x8B6B186B }
+phase = 4
+effects = [0x6F001F00]
+races = [4]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: talk to the Elder Scholar again to get the recipe that combines the sandals and the spirit; the install's recipe of the boots of this race, its grant effect", confidence = "low" }
+
+[[step]]
+key = "recipe-drudge"
+quest = 0x40000129
+needs = 3
+trigger = { use = 0x4700329A }
+update = "advance"
+tell = { table = 0x25002A6E, string = 0x8B6B186B }
+phase = 4
+effects = [0x6F001EFA]
+races = [8]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: talk to the Elder Scholar again to get the recipe that combines the sandals and the spirit; the install's recipe of the boots of this race, its grant effect", confidence = "low" }
+
+[[step]]
+key = "recipe-empyrean"
+quest = 0x40000129
+needs = 3
+trigger = { use = 0x4700329A }
+update = "advance"
+tell = { table = 0x25002A6E, string = 0x8B6B186B }
+phase = 4
+effects = [0x6F001EFD]
+races = [16]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: talk to the Elder Scholar again to get the recipe that combines the sandals and the spirit; the install's recipe of the boots of this race, its grant effect", confidence = "low" }

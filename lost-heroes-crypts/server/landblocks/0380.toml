@@ -1,0 +1,214 @@
+# The Silent City and the Yokketh Bell Tower: ways in and out, undead, the crypt keepers' lairs and the spirits' crypts; edit an authored pack instead.
+
+[[object]]
+key = "silent-city-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x03800100
+at = [41.76, 0.69, 131.30]
+name = { table = 0x25001B44, string = 0x1BECAB4F }
+to = "silent-city-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out 3.5 m from the landing, to the surface end the list of destinations gives; no source names one", confidence = "low" }
+
+[[object]]
+key = "silent-city-to-lair-a"
+kind = "static"
+template = 0x47001154
+cell = 0x0380018C
+at = [47.12, 29.71, 121.60]
+name = { table = 0x25001B44, string = 0xA14E1084 }
+to = "silent-city-lair-a"
+requires = { quest = 0x40000129, underway = true }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: two portals at the end, each to its own copy of the boss room; the round room at the far end of the way from the landing; the install's portal text: on the boots quest to enter", confidence = "low" }
+
+[[object]]
+key = "silent-city-to-lair-b"
+kind = "static"
+template = 0x47001154
+cell = 0x0380018C
+at = [50.36, 29.79, 121.40]
+name = { table = 0x25001B44, string = 0xA14E13A4 }
+to = "silent-city-lair-b"
+requires = { quest = 0x40000129, underway = true }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: two portals at the end, each to its own copy of the boss room; the round room at the far end of the way from the landing; the install's portal text: on the boots quest to enter", confidence = "low" }
+
+[[camp]]
+key = "silent-city-undead-1"
+cell = 0x0380010B
+at = [66.01, -45.92, 132.60]
+spots = [{ cell = 0x0380010B, at = [66.01, -45.92, 132.60] }, { cell = 0x0380010B, at = [68.43, -45.92, 132.60] }, { cell = 0x0380010B, at = [63.47, -45.73, 132.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002B65, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: infested with undead (skeletons, rotting corpses, wandering eyes); camps along the way to the lairs' portals (43 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "silent-city-undead-2"
+cell = 0x03800111
+at = [50.78, -0.96, 144.60]
+spots = [{ cell = 0x03800111, at = [50.78, -0.96, 144.60] }, { cell = 0x03800111, at = [52.91, -0.67, 144.80] }, { cell = 0x03800113, at = [48.20, -0.96, 144.60] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002CF9, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: infested with undead (skeletons, rotting corpses, wandering eyes); camps along the way to the lairs' portals (89 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "silent-city-undead-3"
+cell = 0x0380011C
+at = [43.83, -65.10, 141.60]
+spots = [{ cell = 0x0380011C, at = [43.83, -65.10, 141.60] }, { cell = 0x0380011C, at = [46.65, -65.27, 141.60] }, { cell = 0x0380011C, at = [43.83, -62.10, 141.60] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002B5E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: infested with undead (skeletons, rotting corpses, wandering eyes); camps along the way to the lairs' portals (135 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "silent-city-undead-4"
+cell = 0x03800121
+at = [41.79, -89.03, 147.60]
+spots = [{ cell = 0x03800121, at = [41.79, -89.03, 147.60] }, { cell = 0x03800121, at = [44.67, -89.14, 147.60] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002BB9, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: infested with undead (skeletons, rotting corpses, wandering eyes); camps along the way to the lairs' portals (177 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "silent-city-undead-5"
+cell = 0x03800123
+at = [35.56, -47.67, 150.60]
+spots = [{ cell = 0x03800123, at = [35.56, -47.67, 150.60] }, { cell = 0x03800123, at = [37.97, -47.58, 150.60] }, { cell = 0x03800124, at = [32.97, -48.08, 150.60] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002B65, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: infested with undead (skeletons, rotting corpses, wandering eyes); camps along the way to the lairs' portals (220 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "silent-city-undead-6"
+cell = 0x03800128
+at = [87.26, -33.64, 141.60]
+spots = [{ cell = 0x03800128, at = [87.26, -33.64, 141.60] }, { cell = 0x03800128, at = [84.84, -34.05, 141.60] }, { cell = 0x03800128, at = [87.26, -31.64, 140.70] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002CF9, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: infested with undead (skeletons, rotting corpses, wandering eyes); camps along the way to the lairs' portals (266 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "silent-city-undead-7"
+cell = 0x0380012E
+at = [24.76, 4.69, 123.60]
+spots = [{ cell = 0x0380012E, at = [24.76, 4.69, 123.60] }, { cell = 0x0380012E, at = [27.18, 5.11, 123.60] }, { cell = 0x0380012E, at = [22.43, 4.33, 123.70] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002B5E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: infested with undead (skeletons, rotting corpses, wandering eyes); camps along the way to the lairs' portals (312 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "skeleton-totem"
+cell = 0x03800132
+at = [46.40, -119.11, 114.80]
+radius = 0.0
+spots = [{ cell = 0x03800132, at = [46.40, -119.11, 114.80] }]
+population = 1
+regen = 20.0
+spawns = [{ template = 0x47001413, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "Mikaci: an undead altar with a totem of bones down in the Silent City; no source says where: its lowest floor, the far south room; back after its taking as an unrecorded item spot is", confidence = "low" }
+
+[[camp]]
+key = "silent-city-keeper-a"
+cell = 0x03800203
+at = [103.00, 40.37, 220.80]
+spots = [{ cell = 0x03800203, at = [103.00, 40.37, 220.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002CFB, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the Keeper of the Silent City in the keeper's lair, each copy its own; the first boss quest's keeper (Targwin) taken as the Silent City's; in the middle of the lair's great room", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "silent-city-fire-a"
+cell = 0x03800204
+at = [103.00, 46.37, 220.80]
+spots = [{ cell = 0x03800204, at = [103.00, 46.37, 220.80] }, { cell = 0x03800204, at = [106.83, 46.19, 220.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C6D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: two fire elementals guard the keeper", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "silent-city-perchers-a"
+cell = 0x038001FF
+at = [103.00, 20.37, 220.80]
+spots = [{ cell = 0x038001FF, at = [103.00, 20.37, 220.80] }, { cell = 0x038001EF, at = [108.24, 20.61, 220.80] }, { cell = 0x03800211, at = [98.05, 20.31, 220.80] }, { cell = 0x03800201, at = [103.00, 25.37, 220.80] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x47002B5D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a lot of perchers that shoot from above guard the keeper; on the lair's floor at its near end", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "silent-city-crypt-a"
+kind = "static"
+template = 0x47001154
+cell = 0x03800210
+at = [104.41, 86.78, 221.80]
+name = { table = 0x25001B44, string = 0x3FF5C04E }
+to = "silent-city-crypt"
+requires = { quest = 0x4000012A, underway = true }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once the keeper is dead, everyone can take the portal in the room; near the lair's far end; the install's portal text: on the quest and this keeper killed", confidence = "low" }
+
+[[camp]]
+key = "silent-city-keeper-b"
+cell = 0x0380019F
+at = [42.58, 40.07, 220.80]
+spots = [{ cell = 0x0380019F, at = [42.58, 40.07, 220.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002CFB, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the Keeper of the Silent City in the keeper's lair, each copy its own; the first boss quest's keeper (Targwin) taken as the Silent City's; in the middle of the lair's great room", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "silent-city-fire-b"
+cell = 0x03800197
+at = [42.58, 46.07, 220.80]
+spots = [{ cell = 0x03800197, at = [42.58, 46.07, 220.80] }, { cell = 0x03800197, at = [46.82, 46.31, 220.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C6D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: two fire elementals guard the keeper", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "silent-city-perchers-b"
+cell = 0x038001AC
+at = [42.58, 20.07, 220.80]
+spots = [{ cell = 0x038001AC, at = [42.58, 20.07, 220.80] }, { cell = 0x038001A6, at = [47.53, 20.02, 220.80] }, { cell = 0x038001AC, at = [37.75, 19.89, 220.80] }, { cell = 0x038001A4, at = [42.58, 25.07, 220.80] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x47002B5D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a lot of perchers that shoot from above guard the keeper; on the lair's floor at its near end", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "silent-city-crypt-b"
+kind = "static"
+template = 0x47001154
+cell = 0x038001AE
+at = [39.46, 85.19, 221.30]
+name = { table = 0x25001B44, string = 0x3FF5C04E }
+to = "silent-city-crypt"
+requires = { quest = 0x4000012A, underway = true }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once the keeper is dead, everyone can take the portal in the room; near the lair's far end; the install's portal text: on the quest and this keeper killed", confidence = "low" }
+
+[[object]]
+key = "kartok"
+kind = "npc"
+template = 0x47003298
+cell = 0x0380018E
+at = [47.67, -84.57, 195.70]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: inside the portal you find the spirit of Kartok; the middle of the crypt, before its far end", confidence = "low" }
+
+[[object]]
+key = "silent-city-crypt-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x0380018D
+at = [47.67, -75.57, 195.70]
+name = { table = 0x25001B44, string = 0x1BECAB4F }
+to = "silent-city-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out of the crypt 4 m from its landing toward the spirit, to the surface (the wiki: don't use the portals to exit until all groups have their kills); no source names where", confidence = "low" }

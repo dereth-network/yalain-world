@@ -1,0 +1,203 @@
+# The Silent City and the Yokketh Bell Tower: ways in and out, undead, the crypt keepers' lairs and the spirits' crypts; edit an authored pack instead.
+
+[[object]]
+key = "bell-tower-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x03840290
+at = [-32.07, 46.60, 78.00]
+name = { table = 0x25001B44, string = 0x1BECAB4F }
+to = "bell-tower-out"
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the tower draws an exit portal (E) in the west room; at its middle", confidence = "low" }
+
+[[object]]
+key = "bell-tower-to-lair-a"
+kind = "static"
+template = 0x47001154
+cell = 0x038401D4
+at = [99.89, 111.60, 78.00]
+name = { table = 0x25001B44, string = 0x9F8444A6 }
+to = "bell-tower-lair-a"
+requires = { quest = 0x40000129, underway = true }
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the tower draws two portals (P) in the north-east room, the far end; the wiki: each to its own copy of the boss room; the install's portal text: on the boots quest to enter", confidence = "low" }
+
+[[object]]
+key = "bell-tower-to-lair-b"
+kind = "static"
+template = 0x47001154
+cell = 0x038401D2
+at = [108.89, 111.73, 78.20]
+name = { table = 0x25001B44, string = 0x9F88C4A6 }
+to = "bell-tower-lair-b"
+requires = { quest = 0x40000129, underway = true }
+prov = { from = "authored", by = "Dereth Network", note = "a players' map of the tower draws two portals (P) in the north-east room, the far end; the wiki: each to its own copy of the boss room; the install's portal text: on the boots quest to enter", confidence = "low" }
+
+[[camp]]
+key = "bell-tower-undead-1"
+cell = 0x0384015E
+at = [55.57, -35.33, 93.10]
+spots = [{ cell = 0x0384015E, at = [55.57, -35.33, 93.10] }, { cell = 0x0384015B, at = [52.57, -35.40, 93.00] }, { cell = 0x0384015E, at = [55.49, -32.48, 93.10] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002B65, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: another undead-filled dungeon, skeletons, rotting corpses and wandering eyes; camps along the way from the landing to the lairs' portals (28 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bell-tower-undead-2"
+cell = 0x03840160
+at = [37.66, -12.62, 81.00]
+spots = [{ cell = 0x03840160, at = [37.66, -12.62, 81.00] }, { cell = 0x03840160, at = [40.07, -12.62, 81.00] }, { cell = 0x0384015D, at = [34.66, -12.62, 81.70] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002CF9, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: another undead-filled dungeon, skeletons, rotting corpses and wandering eyes; camps along the way from the landing to the lairs' portals (59 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bell-tower-undead-3"
+cell = 0x03840162
+at = [44.01, 18.96, 78.00]
+spots = [{ cell = 0x03840162, at = [44.01, 18.96, 78.00] }, { cell = 0x03840162, at = [46.84, 19.13, 78.00] }, { cell = 0x03840162, at = [43.72, 21.26, 78.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002B5E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: another undead-filled dungeon, skeletons, rotting corpses and wandering eyes; camps along the way from the landing to the lairs' portals (89 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bell-tower-undead-4"
+cell = 0x03840164
+at = [22.94, 33.91, 78.20]
+spots = [{ cell = 0x03840164, at = [22.94, 33.91, 78.20] }, { cell = 0x03840164, at = [25.94, 33.91, 78.20] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002BB9, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: another undead-filled dungeon, skeletons, rotting corpses and wandering eyes; camps along the way from the landing to the lairs' portals (117 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bell-tower-undead-5"
+cell = 0x0384016C
+at = [-3.13, 27.45, 78.00]
+spots = [{ cell = 0x0384016C, at = [-3.13, 27.45, 78.00] }, { cell = 0x0384016C, at = [-0.13, 27.45, 78.00] }, { cell = 0x0384016C, at = [-5.55, 27.45, 78.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002B65, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: another undead-filled dungeon, skeletons, rotting corpses and wandering eyes; camps along the way from the landing to the lairs' portals (145 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bell-tower-undead-6"
+cell = 0x03840176
+at = [-12.87, 57.43, 78.20]
+spots = [{ cell = 0x03840176, at = [-12.87, 57.43, 78.20] }, { cell = 0x03840176, at = [-10.05, 57.60, 78.00] }, { cell = 0x03840176, at = [-12.46, 60.02, 78.20] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002CF9, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: another undead-filled dungeon, skeletons, rotting corpses and wandering eyes; camps along the way from the landing to the lairs' portals (176 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bell-tower-undead-7"
+cell = 0x038401D4
+at = [97.06, 113.77, 78.00]
+spots = [{ cell = 0x038401D4, at = [97.06, 113.77, 78.00] }, { cell = 0x038401D4, at = [99.89, 113.60, 78.00] }, { cell = 0x038401D4, at = [94.23, 113.60, 78.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002B5E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: another undead-filled dungeon, skeletons, rotting corpses and wandering eyes; camps along the way from the landing to the lairs' portals (206 m walked from the landing)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bell-tower-keeper-a"
+cell = 0x038402D3
+at = [40.28, -75.06, 3.00]
+spots = [{ cell = 0x038402D3, at = [40.28, -75.06, 3.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002CFA, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the Keeper of Lost Souls (100,000 health) in the keeper's lair, each copy its own; the second boss quest's keeper (Garlin) taken as the bell tower's; in the middle of the lair", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bell-tower-water-a"
+cell = 0x038402C5
+at = [34.28, -75.06, 3.20]
+spots = [{ cell = 0x038402C5, at = [34.28, -75.06, 3.20] }, { cell = 0x038402D3, at = [38.70, -75.06, 3.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C6F, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: two water elementals guard the keeper (absent from one copy, which a choice leaves unnamed: both have them)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bell-tower-perchers-a"
+cell = 0x038402DA
+at = [52.28, -75.06, 3.00]
+spots = [{ cell = 0x038402DA, at = [52.28, -75.06, 3.00] }, { cell = 0x038402E1, at = [57.70, -75.06, 3.00] }, { cell = 0x038402DA, at = [47.70, -75.06, 3.00] }, { cell = 0x038402D9, at = [52.28, -69.82, 3.00] }, { cell = 0x038402DB, at = [52.28, -80.30, 3.00] }, { cell = 0x038402E1, at = [57.57, -70.11, 3.00] }]
+population = 6
+regen = 192.0
+spawns = [{ template = 0x47002B5D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: six missile perchers in the room; on the lair's floor at its near end", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "bell-tower-crypt-a"
+kind = "static"
+template = 0x47001154
+cell = 0x038402AB
+at = [14.99, -74.35, 3.20]
+name = { table = 0x25001B44, string = 0x9B660CE5 }
+to = "bell-tower-crypt"
+requires = { quest = 0x4000012B, underway = true }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once the keeper is dead, all can take the portal in the room; near the far end of the lair from its landing; the install's portal text: on the quest and the bell tower's crypt keeper killed", confidence = "low" }
+
+[[camp]]
+key = "bell-tower-keeper-b"
+cell = 0x03840125
+at = [40.28, 5.04, 3.00]
+spots = [{ cell = 0x03840125, at = [40.28, 5.04, 3.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002CFA, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the Keeper of Lost Souls (100,000 health) in the keeper's lair, each copy its own; the second boss quest's keeper (Garlin) taken as the bell tower's; in the middle of the lair", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bell-tower-water-b"
+cell = 0x0384011E
+at = [34.28, 5.04, 3.30]
+spots = [{ cell = 0x0384011E, at = [34.28, 5.04, 3.30] }, { cell = 0x03840125, at = [38.70, 5.04, 3.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C6F, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: two water elementals guard the keeper (absent from one copy, which a choice leaves unnamed: both have them)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "bell-tower-perchers-b"
+cell = 0x03840126
+at = [52.28, 5.04, 3.00]
+spots = [{ cell = 0x03840126, at = [52.28, 5.04, 3.00] }, { cell = 0x03840127, at = [57.70, 5.04, 3.00] }, { cell = 0x03840126, at = [47.70, 5.04, 3.00] }, { cell = 0x03840126, at = [52.16, 9.99, 3.00] }, { cell = 0x03840129, at = [52.28, -0.20, 3.00] }, { cell = 0x03840127, at = [57.57, 9.99, 3.00] }]
+population = 6
+regen = 192.0
+spawns = [{ template = 0x47002B5D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: six missile perchers in the room; on the lair's floor at its near end", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "bell-tower-crypt-b"
+kind = "static"
+template = 0x47001154
+cell = 0x0384011D
+at = [14.99, 7.16, 3.30]
+name = { table = 0x25001B44, string = 0x9B660CE5 }
+to = "bell-tower-crypt"
+requires = { quest = 0x4000012B, underway = true }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once the keeper is dead, all can take the portal in the room; near the far end of the lair from its landing; the install's portal text: on the quest and the bell tower's crypt keeper killed", confidence = "low" }
+
+[[object]]
+key = "degoda"
+kind = "npc"
+template = 0x47003296
+cell = 0x0384028F
+at = [44.09, 7.73, 45.60]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: inside the portal you find the spirit of Degoda; the middle of the crypt, before its far end", confidence = "low" }
+
+[[object]]
+key = "bell-tower-crypt-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x0384028E
+at = [44.09, 16.15, 45.60]
+name = { table = 0x25001B44, string = 0x1BECAB4F }
+to = "bell-tower-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out of the crypt 4 m from its landing toward the spirit, to the surface; no source names where", confidence = "low" }
