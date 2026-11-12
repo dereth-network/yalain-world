@@ -8,7 +8,8 @@ trigger = { use = 0x47003267 }
 update = "bestow"
 tell = { table = 0x25002A52, string = 0x2FE893C2 }
 recipes = [0x6F000313]
-prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a 2004 guide; her line showing her broken forge and teaching its masonry, with the recipe for the hearthstone the quest asks crafted; no recording", confidence = "low" }
+requires = [{ craft = [0x6F000691, 0x6F000693, 0x6F000695, 0x6F000698, 0x6F0006A8], at_least = 200 }]
+prov = { from = "authored", by = "Dereth Network", note = "a 2004 guide: she gives it to one with armorcrafting of 200 (before armor split by race: any race's armor skill); her line on her broken forge, with the hearthstone's recipe; no recording", confidence = "low" }
 
 [[step]]
 key = "hearthstone-given"
