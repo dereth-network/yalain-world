@@ -236,6 +236,11 @@ A field marked † is read from the install when left out.
 | `kingdom` | statics | the kingdom a player must be of to use it, by the number a character's description names it: 1, 2 or 4; its examination names it, and anyone else's use or walk-in is refused at once |
 | `event` | | the `[[event]]` (its `key`) it stands for: it is in the world only while the event is on, made for those who see it as the event starts and forgotten as it ends; while it is off a use of it, a walk into it or a give to it finds nothing |
 
+A chest whose template's class goes once closed (the install's chest that deletes itself on closing: the prospectors'
+corpses, a map's cargo chest, a nut hoard's stump) leaves the world as its first opener closes it. One a row
+places is kept from the world until the server starts again; to have such a chest come back now and then, let a
+`[[camp]]` keep it.
+
 **`[[camp]]`**: a spawn camp.
 
 | field | | meaning |
@@ -246,7 +251,7 @@ A field marked † is read from the install when left out.
 | `spots` | | indoors, the points creatures appear at: `{ cell, at }` |
 | `population` | required | how many it keeps alive |
 | `regen` | required | seconds from a death to its replacement |
-| `spawns` | | what it makes: `{ template, weight }`; an item's template (one with a value, no creature) it keeps lying at its place, a new one `regen` seconds after the last is taken |
+| `spawns` | | what it makes: `{ template, weight }`; an item's template (one with a value, no creature) it keeps lying at its place, a new one `regen` seconds after the last is taken; a chest's template it keeps standing there, anyone's to open, a new one `regen` seconds after the last is gone (one of a kind that goes once closed: a dead prospector that comes back now and then, with a long `regen`) |
 | `profile`, `profile_name` | | the generator profile it stands for |
 | `parent` | | a master camp |
 | `movement` | | how its creatures may move, over their template's: `stationary` (never moves nor fights), `turn-only` (turns where it stands), `constrained-to-home` (kept near home: the default), `constrained-to-master` (follows a master), `free-range` (no distance from home ends a fight) |
@@ -442,6 +447,11 @@ hyphens) and `nodes`, at least one `{ effect, node }`: the name of an effect a m
 conjures where the map leads (a template the install gives a material when mined). A map whose effects no row names
 is no map. A world with no `[[map_region]]` rows has the server's own, Linvak's, Omishan's and Osteth's; a world with
 any has its rows alone.
+
+An item whose template gives a rectangle to be used in and whose use names no surveyor's node (a reckoning gem, a
+map to buried goods) needs no row to lead to its place: it leads to one in its rectangle as a surveyor's map does, and only
+there does its use go on, its quest steps or its effects (what `[[effect_rule]]` `places` and `[[death_spawn]]` rows
+say it makes among them).
 
 **`[[map_recipes]]`**: a region's surveyor's map recipes, which wait together. One row per region.
 
@@ -748,7 +758,12 @@ has the server's own twelve crowd control immunities, each with its long effect'
 `reset`: `skills` or `hero-skills`, putting it on grants its player one complete reset of that kind, which
 `/skills reset` or `/heroskills reset` uses. `skill`: a skill, by its number (one the install has): putting the effect
 on a player trains it that skill for good, at level 1 by the grant, unraisable and at no cost, told with the effect's
-own line and appearance; a player who holds it already gains nothing. One row per effect.
+own line and appearance; a player who holds it already gains nothing. `places`: a template, putting the effect on (by
+name: using an item whose template names it, after the use is answered) makes an object of it standing in the world
+at its player, no one's to take or use; one of a chest's template is a chest anyone may open, filled from its
+generator profile at each opening (a map's cargo chest), and what it holds goes with it; with it `offset`,
+`[across, ahead]` meters from the player as it faces, on the ground (`[0, 0]` when left out), and `lasts`, the seconds
+it stands, above 0 (left out, until a `[[tally]]` that `clears` it resets, or the server stops). One row per effect.
 
 ```toml
 # <pack>/server/effects.toml
@@ -917,7 +932,14 @@ on, or `on_class`, a class (a script package, by number) the item's table names,
 `gives`, the template of what it makes, or `gives_one_of`, one of several picked by weight each use (as a step's: a
 meld making one of a fortune card's two sets), one of them; `gated_gives` or `gated_gives_one_of`, what it makes instead
 where the interaction the use met is for some characters only (`gives` when left out); and `count` (above 0; 1 when left out). The user is given it after the
-quest steps the use triggers and before the item is used up. A use takes the row for the item that names the target's
+quest steps the use triggers and before the item is used up. A row may instead, or as well, name what the use makes
+standing in the world at the object it was used on: `places`, at least one `{ template, offset, lasts }`, each at its
+`offset` `[across, ahead]` meters from the object as the user faces (`[0, 0]` when left out), on the ground, for `lasts`
+seconds above 0 (left out, until it is killed, cleared or the server stops): a chest anyone may open, filled from its
+generator profile; another object, no one's; a creature, until it is killed (a machine used on the spot a reckoning
+gem reveals uncovers a cache and the guards it wakes). Where the item's table plays a behavior of its own the use
+plays it first; where the table's outcome uses up the object, an object an effect placed (the spot the gem revealed) leaves the
+world. A use takes the row for the item that names the target's
 template, else the first that names a class the target counts in. One row per key.
 
 An item's table may hold interactions for some characters only: those whose number (the low word of the character's
