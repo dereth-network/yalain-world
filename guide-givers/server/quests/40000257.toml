@@ -6,12 +6,14 @@ id_name = "QuestDoomswordProtector"
 state = 0x6F0007BC
 retry = 172800
 duration = 172800
-prov = { from = "derived", rule = "quest-definition", record = 0x6F0007BC, confidence = "medium", fields = { retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" } } }
+companion_of = 0x400001FA
+prov = { from = "derived", rule = "quest-definition", record = 0x6F0007BC, confidence = "medium", fields = { companion_of = { from = "authored", by = "Dereth Network", note = "its journal fails it as the sword quest fails, at its bearer's death, portal or leaving; the setup spreads it to fellows and never fails it at its own holder's death; a guide pays both", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" } } }
 
 [[step]]
 key = "w-given"
 quest = 0x40000257
 needs = 0
-trigger = { use = 0x47002FA1 }
+trigger = { given = 0x400001FA }
 update = "bestow"
-prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; no recording", confidence = "low" }
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "given with the sword quest to its bearer and the bearer's fellows, as a guide of the time and its setup say; the totem's like pair given in one tick in 2017; no recording", confidence = "low" }
