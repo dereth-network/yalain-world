@@ -1,0 +1,30 @@
+# The tomb's third level, with the way on and the lich magisters in its hall; edit an authored pack instead.
+
+[[object]]
+key = "gtomb-level-3-on"
+kind = "static"
+template = 0x47001154
+cell = 0x03C6015C
+at = [153.27, -160.66, 78.00]
+to = "gtomb-level-4"
+prov = { from = "authored", by = "Dereth Network", note = "the far end of the level from its landing, the farthest the walls' walk reaches: on to the fourth level", confidence = "low" }
+
+[[camp]]
+key = "gtomb-magisters-west"
+cell = 0x03C60121
+at = [140.63, -34.77, 77.90]
+spots = [{ cell = 0x03C60115, at = [137.81, -30.78, 77.90] }, { cell = 0x03C60124, at = [143.46, -39.12, 77.90] }, { cell = 0x03C60124, at = [139.22, -45.36, 77.90] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002CCA, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the west of the level's great hall: lich magisters of the lady's court, a step above the second level's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "gtomb-magisters-east"
+cell = 0x03C6010F
+at = [164.68, -62.19, 78.20]
+spots = [{ cell = 0x03C6010E, at = [168.92, -60.09, 77.90] }, { cell = 0x03C60152, at = [162.19, -75.94, 77.90] }, { cell = 0x03C60128, at = [164.68, -54.19, 77.90] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002CCA, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the east of the level's great hall: lich magisters of the lady's court", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

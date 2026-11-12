@@ -1,0 +1,14 @@
+# The door's line at a use when no step runs (for anyone but a hero, and once its quest is done); its line of the vision
+# is the steps' now, not any use's; edit an authored pack instead.
+
+[[remove]]
+items = ["talk t-2ef2-8a65fcfe"]
+
+[[talk]]
+key = "gtomb-door-locked"
+who = 0x47002EF2
+line = { table = 0x250028B4, string = 0x6BE71905 }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "the door's own line that it is locked with no way to open it, said at a use when no step runs: to anyone not a hero, and once the quest is done", confidence = "low" }

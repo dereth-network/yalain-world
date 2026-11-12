@@ -72,6 +72,7 @@
 - Arramora's alms and teeth errands for the Disciple can now be done. New pack `orulaan-errands/`.
 - Two Arramora raids can now be started, by the grub and the spawn that give them. New pack `arramora-raids/`.
 - An enslaved mosswart in Arramora can now be rescued and led home. New pack `mosswart-rescue/`.
+- Geraine's tomb on the Arramora plateau can now be entered and walked to the door at its end. New pack `geraines-tomb/`.
 
 ## v0.36.0
 

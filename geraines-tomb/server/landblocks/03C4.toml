@@ -1,0 +1,52 @@
+# The tomb's fifth level, with the dark revenants in its hall, the boss before the door, the door that ends the
+# quest, and a way out beside it; edit an authored pack instead.
+
+[[object]]
+key = "gtomb-antechamber-door"
+kind = "static"
+template = 0x47002EF2
+cell = 0x03C4017D
+at = [152.10, -346.79, 175.00]
+heading = 0.0
+hero = true
+prov = { from = "authored", by = "Dereth Network", note = "the door at the dungeon's end that begins and ends the quest (the wiki, a players' guide): the far wall of the fifth level's last room; heroes alone (the quest's requirement, the door's description)", confidence = "low" }
+
+[[object]]
+key = "gtomb-end-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x03C4017D
+at = [147.86, -343.28, 175.00]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "gtomb-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out beside the door, to the way out a list of the game's destinations gives; no source names one", confidence = "low" }
+
+[[camp]]
+key = "gtomb-acolyte"
+cell = 0x03C4017C
+at = [150.69, -317.62, 175.00]
+spots = [{ cell = 0x03C4017C, at = [150.69, -317.62, 175.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002CDC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "AC2 Hero: an undead boss before the door; one of the lady's court the install gives a name of its own, the least of them, in the corridor to the door's room", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "gtomb-dark-revenants-west"
+cell = 0x03C4012F
+at = [139.37, -254.80, 175.00]
+spots = [{ cell = 0x03C4011C, at = [137.96, -250.21, 175.00] }, { cell = 0x03C4012F, at = [142.20, -259.14, 175.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002CCE, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the west of the level's hall: dark revenants of the lady's court", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "gtomb-dark-revenants-east"
+cell = 0x03C40130
+at = [164.83, -254.94, 175.00]
+spots = [{ cell = 0x03C4011E, at = [166.52, -249.55, 175.20] }, { cell = 0x03C40130, at = [163.41, -259.53, 175.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002CCE, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the east of the level's hall: dark revenants of the lady's court", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

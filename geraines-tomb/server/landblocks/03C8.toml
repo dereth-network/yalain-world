@@ -1,0 +1,50 @@
+# The tomb's first level, with its way out, the bridge's far side, the way down by the shaft and the liches in the
+# cross's wings; edit an authored pack instead.
+
+[[object]]
+key = "gtomb-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x03C80100
+at = [0.08, 7.39, 46.10]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "gtomb-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out 3 m behind the landing, to the way out a list of the game's destinations gives; no source names one", confidence = "low" }
+
+[[object]]
+key = "gtomb-bridge"
+kind = "static"
+template = 0x47001154
+cell = 0x03C80192
+at = [-1.33, -90.02, 46.10]
+to = "gtomb-bridge-south"
+prov = { from = "authored", by = "Dereth Network", note = "the near end of the bridge over the pit (AC2 Hero: the door past the bridge): the walls' walk can't cross its middle, so this carries a player to its far side", confidence = "low" }
+
+[[object]]
+key = "gtomb-shaft"
+kind = "static"
+template = 0x47001154
+cell = 0x03C8012A
+at = [-19.67, -239.82, -49.90]
+to = "gtomb-level-2"
+prov = { from = "authored", by = "Dereth Network", note = "the foot of the spiral beside the column of blue sparkles (AC2 Hero: up the shaft of blue sparkles), the farthest the walls' walk reaches past the bridge: on to the second level", confidence = "low" }
+
+[[camp]]
+key = "gtomb-liches-west"
+cell = 0x03C8010E
+at = [-39.31, -224.08, 46.10]
+spots = [{ cell = 0x03C8010E, at = [-39.66, -215.49, 45.80] }, { cell = 0x03C80110, at = [-40.01, -234.91, 46.10] }, { cell = 0x03C80110, at = [-39.31, -239.56, 46.10] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002CC6, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the west wing of the cross past the bridge, where AC2 Hero's walkthrough finds its keys: liches of the lady's court, whose names her string table holds", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "gtomb-liches-east"
+cell = 0x03C8010C
+at = [40.48, -225.58, 46.10]
+spots = [{ cell = 0x03C80109, at = [39.02, -215.00, 45.80] }, { cell = 0x03C8010C, at = [40.48, -235.58, 46.10] }, { cell = 0x03C8010C, at = [40.48, -239.58, 46.10] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002CC6, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the east wing of the cross past the bridge: liches of the lady's court, as the west wing", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

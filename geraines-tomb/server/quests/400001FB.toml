@@ -1,0 +1,41 @@
+# The quest at the tomb's end, given and done at a touch of its door, from the wiki, a players' guide of the time and
+# the door's own line; edit an authored pack instead.
+
+[[quest]]
+id = 0x400001FB
+id_name = "QuestAerfallesReturn"
+state = 0x6F0006BF
+challenge = 50
+xp = 15000000
+once = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:3c6a9dbe", confidence = "medium", sample = { sessions = 2 }, fields = { xp = { from = "authored", by = "Dereth Network", note = "the wiki's reward, 15,000,000 experience; its setup in the install pays none", confidence = "low" }, once = { from = "authored", by = "Dereth Network", note = "the wiki: not repeatable", confidence = "low" } } }
+
+[[step]]
+key = "door-touched-elysa"
+quest = 0x400001FB
+needs = 0
+trigger = { use = 0x47002EF2 }
+update = "complete"
+requires = [{ quest = 0x4000024A, done = true }]
+tell = { table = 0x250028B4, string = 0x8A65FCFE }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki, a players' guide: a touch of the door at the dungeon's end gives and ends it, for heroes; the door's own line of the vision; a hero: one who did the elysa initiation", confidence = "low" }
+
+[[step]]
+key = "door-touched-kresovus"
+quest = 0x400001FB
+needs = 0
+trigger = { use = 0x47002EF2 }
+update = "complete"
+requires = [{ quest = 0x4000024B, done = true }]
+tell = { table = 0x250028B4, string = 0x8A65FCFE }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki, a players' guide: a touch of the door at the dungeon's end gives and ends it, for heroes; the door's own line of the vision; a hero: one who did the kresovus initiation", confidence = "low" }
+
+[[step]]
+key = "door-touched-aulatah"
+quest = 0x400001FB
+needs = 0
+trigger = { use = 0x47002EF2 }
+update = "complete"
+requires = [{ quest = 0x4000024C, done = true }]
+tell = { table = 0x250028B4, string = 0x8A65FCFE }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki, a players' guide: a touch of the door at the dungeon's end gives and ends it, for heroes; the door's own line of the vision; a hero: one who did the aulatah initiation", confidence = "low" }
