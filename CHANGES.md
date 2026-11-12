@@ -70,6 +70,7 @@
 - Three Osteth dungeon kill quests can now be done, and the drudge city entered. New pack `osteth-dungeon-bosses/`.
 - Rashan's quest to lay his sword on the drudges' shrine can now be done. New pack `drudge-hero-shrine/`.
 - Arramora's alms and teeth errands for the Disciple can now be done. New pack `orulaan-errands/`.
+- Two Arramora raids can now be started, by the grub and the spawn that give them. New pack `arramora-raids/`.
 
 ## v0.36.0
 
