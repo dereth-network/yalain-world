@@ -1,0 +1,22 @@
+# The spymaster's reminder and his thanks as the last report comes in; edit an authored pack instead.
+
+[[talk]]
+key = "rivet-remind"
+who = 0x470032DD
+line = { table = 0x25002A9C, string = 0x8B6B186F }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x80000309
+prov = { from = "authored", by = "Dereth Network", note = "said while the reports are out, his line for the quest under way", confidence = "low" }
+
+[[talk]]
+key = "rivet-done"
+who = 0x470032DD
+line = { table = 0x25002A9C, string = 0x68A07C4D }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x80000309
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "said as the last report ends it, his own line for its end", confidence = "low" }

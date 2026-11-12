@@ -1,0 +1,33 @@
+# The captain's quest of the crones' mistress and the one dungeon quest her attendants give, from the wiki's walkthroughs and his own lines; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000311
+id_name = "Quest_CalamityofCrones_Control"
+state = 0x6F000C8E
+prov = { from = "authored", by = "Dereth Network", note = "the reward that follows the mistress' quest; its definition the install's, a row so its steps can move it", confidence = "low" }
+
+[[step]]
+key = "corn-reward-given"
+quest = 0x80000311
+needs = 0
+trigger = { done = 0x80000312 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: with the mistress' quest done, the captain is spoken to again for the reward", confidence = "low" }
+
+[[step]]
+key = "corn-reward"
+quest = 0x80000311
+needs = 1
+trigger = { use = 0x470032BF }
+update = "complete"
+gives = [0x470018E0]
+tell = { table = 0x25002A7E, string = 0xCC1A3DB3 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: spoken to again he gives the board; the line is his own", confidence = "low" }
+
+[[step]]
+key = "mistress-killed"
+quest = 0x400000F1
+needs = 1
+trigger = { kill = 0x470022F9 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the dungeon quest her attendants' deaths give asks for her death; no effect of hers moves it", confidence = "low" }

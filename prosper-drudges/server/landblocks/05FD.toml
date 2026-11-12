@@ -1,0 +1,33 @@
+# The crones' laboratories: the way out, their mistress in the far northern room and the crones who guard her; edit an
+# authored pack instead.
+
+[[object]]
+key = "labs-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x05FD01B3
+at = [-32.92, -0.63, -44.16]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0xAAA8B049 }
+to = "labs-out"
+prov = { from = "authored", by = "Dereth Network", note = "the way back out, 2 m beside the landing; named by the portal table; no recording", confidence = "low" }
+
+[[camp]]
+key = "labs-mistress"
+cell = 0x05FD01BD
+at = [0.42, 107.84, -18.9]
+spots = [{ cell = 0x05FD01BD, at = [0.42, 107.84, -18.9] }]
+population = 1
+regen = 900.0
+spawns = [{ template = 0x470022F9, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: past the main room north, over two bridges and north again, behind the last door; the room the walls' probe finds at the far north end of that passage; how soon she returns a guess", confidence = "low" }
+
+[[camp]]
+key = "labs-guards"
+cell = 0x05FD01BC
+at = [-0.29, 92.13, -19.0]
+spots = [{ cell = 0x05FD01BC, at = [-0.29, 92.13, -19.0] }, { cell = 0x05FD01BA, at = [6.8, 85.2, -19.0] }, { cell = 0x05FD01BF, at = [-6.7, 85.5, -19.0] }, { cell = 0x05FD01BC, at = [2.54, 97.5, -19.0] }, { cell = 0x05FD01C0, at = [-0.29, 85.2, -19.0] }, { cell = 0x05FD01BB, at = [6.3, 91.5, -18.8] }, { cell = 0x05FD01BE, at = [-6.5, 91.3, -18.8] }, { cell = 0x05FD01BC, at = [-2.92, 97.0, -19.0] }, { cell = 0x05FD01C0, at = [3.54, 87.96, -19.0] }]
+population = 9
+regen = 192.0
+spawns = [{ template = 0x470022ED, weight = 1 }, { template = 0x470022EF, weight = 1 }, { template = 0x470022F1, weight = 1 }, { template = 0x470022EA, weight = 1 }, { template = 0x470022F0, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: nine crones guard her; the kinds the players' map of the laboratories names, in the room before hers; regen the recorded camps' median", confidence = "low" }

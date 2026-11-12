@@ -23,6 +23,7 @@
 - A cartographer's drawing of Knorr can now be finished, region by region. New pack `knorr-map-quest/`.
 - The estate crypt's tile puzzle and the throne past it can now be done. New pack `knorr-crypt/`.
 - Finishing all five of Knorr's mushroom hunts now earns their bonus. Pack `knorr-mushrooms/`.
+- Four quests from Shoushi's drudges can now be done, one in the crones' laboratories. New pack `prosper-drudges/`.
 
 ## v0.36.0
 
