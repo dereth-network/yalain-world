@@ -30,6 +30,7 @@
 - Three errands of the Drudge Insurgence Saga can now be done. New pack `drudge-insurgence/`.
 - The tarot's card melds and their fifteen quests can now be done. New pack `tarot/`.
 - Ankoro's mushroom hunt and the ranger's collar quest can now be finished. New pack `ankoro-hunters/`.
+- The egg collector's two roost hunts can now be done. New pack `kydi-eggs/`.
 
 ## v0.36.0
 

@@ -1,0 +1,21 @@
+# The egg collector's hunt for an egg of the roosts' deepest kind, from her own lines and the wiki's walkthrough and dialog; edit an authored pack instead.
+
+[[step]]
+key = "deep-given"
+quest = 0x400000FB
+needs = 0
+trigger = { use = 0x47002F80 }
+update = "bestow"
+tell = { table = 0x250028FC, string = 0xEC34FAB1 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's dialog: given at her use with this line; the egg's taking moves it to phase 2 (its own effect)", confidence = "low" }
+
+[[step]]
+key = "deep-egg"
+quest = 0x400000FB
+needs = 2
+trigger = { give = 0x4700133F, to = 0x47002F80 }
+update = "complete"
+takes = [0x4700133F]
+gives = [0x47001343]
+tell = { table = 0x250028FC, string = 0x9142B893 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the egg given her ends it with this line and the egg's potion", confidence = "low" }
