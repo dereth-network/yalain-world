@@ -17,7 +17,8 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/quests/QQQQQQQQ.toml [[quest]], [[step]] of one quest
 <pack>/server/gives/TTTTTTTT.toml  [[give]] of one template given to
 <pack>/server/talk/TTTTTTTT.toml   [[talk]] of one template
-<pack>/server/crafting.toml        [[craft]], [[tool]], [[spellbinding]], [[refining]], [[recipe]]
+<pack>/server/crafting.toml        [[craft]], [[tool]], [[spellbinding]], [[refining]], [[recipe]],
+                                   [[combination]]
 <pack>/server/mines.toml           [[mine]]
 <pack>/server/maps.toml            [[map_region]], [[map_recipes]]
 <pack>/server/story.toml           [[scene]], [[shard]]
@@ -117,6 +118,7 @@ Every row sets one **item**, named by its key:
 | `talk KEY` | the row's `key` |
 | `craft 0xID` | the craft skill or recipe |
 | `recipe 0xID` | the recipe's id |
+| `combination KEY` | the row's `key` |
 | `scene 0xID` | the scene's id |
 | `shard 0xOBJECT` | the shard's world id |
 | `butchery 0xPROFILE` | the butchery profile |
@@ -500,6 +502,24 @@ like = 0x6F0002BE
 name = { table = 0x25002007, string = 0x00DD730E }
 ingredients = [{ items = [0x47001600] }, { items = [0x47001609], count = 2 }]
 product = 0x47001601
+prov = { from = "authored", by = "you" }
+```
+
+**`[[combination]]`**: what a recipe that works out its own product (a card meld, an install recipe of the
+`SecretRecipe` kind, whose record names no product) makes of one set of ingredients. `key` (lowercase letters, digits
+and hyphens); `recipe` (the install recipe, its saved state); `items` (the templates its slots hold, at least one, one
+a slot in any order, a template twice where two of it go in); `product` (the template of what it makes) and `count`
+(above 0; 1 when left out). A making whose slots hold a row's templates makes its product in the maker's pack and uses
+up each slot as the recipe's outcome says; one whose slots make no row of its recipe makes nothing, says "You fail to
+produce anything.", and uses up and pays nothing. The first row of the recipe the slots make is taken.
+
+```toml
+# <pack>/server/crafting.toml
+[[combination]]
+key = "twin-moons"
+recipe = 0x6F001ABB
+items = [0x470013D0, 0x470013D8]
+product = 0x470013B5
 prov = { from = "authored", by = "you" }
 ```
 
