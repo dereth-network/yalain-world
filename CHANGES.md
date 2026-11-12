@@ -40,6 +40,7 @@
 - The two Gurog leaders' slaying quests can now be finished. New pack `malthabbor-gurog/`.
 - The Olvidan farm's herd and well pump quests can now be finished. New pack `olvidan-farm/`.
 - The temple under the standing stone east of Hakata can now be entered, and its quests done. New pack `temple-of-roots/`.
+- The five Curses of the Undead can now be finished. New pack `undead-curses/`.
 
 ## v0.36.0
 
