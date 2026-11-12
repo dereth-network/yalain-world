@@ -69,6 +69,7 @@
 - The tormented spirits' purification at the sea shrine can now be done. New pack `rea-bal-purification/`.
 - Three Osteth dungeon kill quests can now be done, and the drudge city entered. New pack `osteth-dungeon-bosses/`.
 - Rashan's quest to lay his sword on the drudges' shrine can now be done. New pack `drudge-hero-shrine/`.
+- Arramora's alms and teeth errands for the Disciple can now be done. New pack `orulaan-errands/`.
 
 ## v0.36.0
 

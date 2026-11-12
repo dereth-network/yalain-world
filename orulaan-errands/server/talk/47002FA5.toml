@@ -1,0 +1,35 @@
+# Menaluc's lines of his errand, from his table; edit an authored pack instead.
+
+[[talk]]
+key = "alms-offer"
+who = 0x47002FA5
+line = { table = 0x2500290A, string = 0xE4789E09 }
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x80000369
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "his line, from his table: the journal's steps", confidence = "low" }
+
+[[talk]]
+key = "alms-bag"
+who = 0x47002FA5
+line = { table = 0x2500290A, string = 0x6F4430AF }
+role = "advance"
+how = "tell"
+when = "use"
+quest = 0x80000369
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "his line, from his table: the journal's steps", confidence = "low" }
+
+[[talk]]
+key = "alms-remind"
+who = 0x47002FA5
+line = { table = 0x2500290A, string = 0x774430AF }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x80000369
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "his line, from his table: the journal's steps", confidence = "low" }
