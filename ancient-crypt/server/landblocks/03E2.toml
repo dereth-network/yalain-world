@@ -1,0 +1,41 @@
+# The crypt's fourth level, with the way on in its pit, under the walkway, and revenants; edit an authored pack instead.
+
+[[object]]
+key = "acrypt-4-on"
+kind = "static"
+template = 0x47001154
+cell = 0x03E20164
+at = [59.61, -15.04, -11.00]
+rotation = [1, 0, 0, 0]
+to = "acrypt-5"
+prov = { from = "authored", by = "Dereth Network", note = "the pit under the walkway west of the crossing (a players' guide: down the hallway, the blue portal below, jump down onto it): on to the fifth level", confidence = "low" }
+
+[[camp]]
+key = "acrypt-4-pit"
+cell = 0x03E20177
+at = [76.28, 3.66, -11.00]
+spots = [{ cell = 0x03E20177, at = [76.28, 3.66, -11.00] }, { cell = 0x03E2015A, at = [58.16, 4.37, -11.00] }, { cell = 0x03E20181, at = [79.27, -13.80, -11.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002C86, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the pit under the walkways: revenants, as the third level's rooms", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-4-south-west"
+cell = 0x03E2013F
+at = [23.84, -57.87, -8.00]
+spots = [{ cell = 0x03E2012A, at = [16.30, -51.92, -8.00] }, { cell = 0x03E20151, at = [32.13, -62.40, -8.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C86, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the south-west room: revenants, as the pit's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-4-north-east"
+cell = 0x03E20187
+at = [113.81, 39.55, -8.00]
+spots = [{ cell = 0x03E20192, at = [121.88, 32.48, -8.00] }, { cell = 0x03E20182, at = [112.11, 50.26, -8.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C86, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the north-east room: revenants, as the pit's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

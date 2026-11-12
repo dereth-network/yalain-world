@@ -1,0 +1,41 @@
+# The crypt's first level, with the way on in its south-west room, and revenants in its pit and rooms; edit an authored pack instead.
+
+[[object]]
+key = "acrypt-1-on"
+kind = "static"
+template = 0x47001154
+cell = 0x03E5017C
+at = [5.96, -66.20, -8.00]
+rotation = [1, 0, 0, 0]
+to = "acrypt-2"
+prov = { from = "authored", by = "Dereth Network", note = "the south-west room, reached from the pit the walkway from the way in drops into (a players' guide: go down the hallway, jump down, straight on to a blue portal): on to the second level", confidence = "low" }
+
+[[camp]]
+key = "acrypt-1-pit"
+cell = 0x03E50119
+at = [59.93, -8.11, -11.00]
+spots = [{ cell = 0x03E50119, at = [59.93, -8.11, -11.00] }, { cell = 0x03E50115, at = [53.92, -0.11, -11.00] }, { cell = 0x03E5012D, at = [68.41, -16.04, -11.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002C85, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the pit under the level's broken walkway: revenants, the least of the catacombs' kinds the crypt's levels go up through", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-1-south-west"
+cell = 0x03E50176
+at = [24.09, -59.60, -8.00]
+spots = [{ cell = 0x03E50181, at = [17.73, -55.82, -8.00] }, { cell = 0x03E50177, at = [27.92, -66.01, -8.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C85, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the south-west room by the way on: revenants, as the pit's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-1-north-east"
+cell = 0x03E5015D
+at = [115.66, 40.00, -8.00]
+spots = [{ cell = 0x03E50150, at = [111.95, 45.95, -8.00] }, { cell = 0x03E50152, at = [121.61, 36.46, -8.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C85, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the north-east room: revenants, as the pit's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

@@ -1,0 +1,84 @@
+# The crypt's sixth level, with the undead in its hall and side rooms, a key on each of the two hidden altars, the two
+# locked doors of the south hall and the way on past them; edit an authored pack instead.
+
+[[object]]
+key = "acrypt-6-first-door"
+kind = "static"
+template = 0x47000FB1
+cell = 0x03E001CE
+at = [-0.10, -264.80, -3.00]
+rotation = [1, 0, 0, 0]
+locked = true
+lock = 0x40000057
+prov = { from = "authored", by = "Dereth Network", note = "the first of the two door frames the install stands across the south hall, the door such frames hold most often; locked to the level's first key (a players' guide: two keys, two doors)", confidence = "low" }
+
+[[object]]
+key = "acrypt-6-second-door"
+kind = "static"
+template = 0x47000FB1
+cell = 0x03E00218
+at = [0.10, -295.40, -3.00]
+rotation = [1, 0, 0, 0]
+locked = true
+lock = 0x40000058
+prov = { from = "authored", by = "Dereth Network", note = "the second of the two door frames the install stands across the south hall, the door such frames hold most often; locked to the level's second key (a players' guide: two keys, two doors)", confidence = "low" }
+
+[[object]]
+key = "acrypt-6-on"
+kind = "static"
+template = 0x47001154
+cell = 0x03E00219
+at = [-0.71, -329.58, -2.90]
+rotation = [1, 0, 0, 0]
+to = "acrypt-7"
+prov = { from = "authored", by = "Dereth Network", note = "the end of the south hall past the second door, between its two braziers (a players' guide: past the second door, enter the portal): on to the seventh level", confidence = "low" }
+
+[[camp]]
+key = "acrypt-6-hall"
+cell = 0x03E00130
+at = [0.09, -111.56, 3.00]
+spots = [{ cell = 0x03E0012F, at = [-11.94, -107.95, 3.00] }, { cell = 0x03E00131, at = [11.98, -108.22, 3.00] }, { cell = 0x03E00149, at = [-0.33, -128.14, 3.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700081E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the hall south of the landing (a players' guide: a room of undead before the keys)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-6-west"
+cell = 0x03E00195
+at = [-60.01, -60.27, 3.00]
+spots = [{ cell = 0x03E00195, at = [-60.01, -60.27, 3.00] }, { cell = 0x03E00195, at = [-55.46, -62.04, 3.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700081E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the west side room off the landing's hall: undead, as the hall's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-6-east"
+cell = 0x03E00108
+at = [59.84, -60.31, 3.00]
+spots = [{ cell = 0x03E00108, at = [59.84, -60.31, 3.00] }, { cell = 0x03E0010A, at = [54.60, -62.14, 3.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700081E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the east side room off the landing's hall: undead, as the hall's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-6-key-west"
+cell = 0x03E0021C
+at = [-84.42, -204.82, 15.00]
+spots = [{ cell = 0x03E0021C, at = [-84.42, -204.82, 15.00] }]
+population = 1
+regen = 20.0
+spawns = [{ template = 0x470010CC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "on the altar at the end of the west passage (a players' guide: a key in a hidden room off the left corridor); the first door's key", confidence = "low", fields = { regen = { from = "derived", rule = "item-spot-regen" } } }
+
+[[camp]]
+key = "acrypt-6-key-east"
+cell = 0x03E0021A
+at = [75.62, -145.02, 15.00]
+spots = [{ cell = 0x03E0021A, at = [75.62, -145.02, 15.00] }]
+population = 1
+regen = 20.0
+spawns = [{ template = 0x470010CD, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "on the altar at the end of the east passage (a players' guide: the other key off the right corridor); the second door's key", confidence = "low", fields = { regen = { from = "derived", rule = "item-spot-regen" } } }

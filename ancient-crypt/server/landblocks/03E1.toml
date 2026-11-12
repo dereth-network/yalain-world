@@ -1,0 +1,62 @@
+# The crypt's fifth level, the grid of long halls, with the way on at the end of the inner spur, skeletal riders by
+# the landing and revenants at the crossings; edit an authored pack instead.
+
+[[object]]
+key = "acrypt-5-on"
+kind = "static"
+template = 0x47001154
+cell = 0x03E101B4
+at = [139.70, -139.09, 110.10]
+rotation = [1, 0, 0, 0]
+to = "acrypt-6"
+prov = { from = "authored", by = "Dereth Network", note = "the end of the one spur inside the grid, off the third hall from the north (a players' guide: a hidden wall leads to a hidden junction and a hidden green portal): on to the sixth level", confidence = "low" }
+
+[[camp]]
+key = "acrypt-5-riders"
+cell = 0x03E1011A
+at = [59.65, 4.17, 109.90]
+spots = [{ cell = 0x03E1011A, at = [52.29, 3.80, 110.10] }, { cell = 0x03E1011A, at = [67.04, 3.81, 110.10] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002B78, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the first crossing below the landing (a players' guide: riders fall on whoever comes through at once)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-5-revenants-a"
+cell = 0x03E10183
+at = [59.65, -115.83, 109.90]
+spots = [{ cell = 0x03E10183, at = [59.65, -109.83, 110.10] }, { cell = 0x03E10183, at = [66.33, -115.78, 110.10] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C86, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a crossing of the long halls (a players' guide: revenants along the way)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-5-revenants-b"
+cell = 0x03E10164
+at = [179.53, -55.94, 109.90]
+spots = [{ cell = 0x03E10164, at = [179.65, -61.89, 110.20] }, { cell = 0x03E10164, at = [172.53, -55.94, 110.10] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C86, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a crossing of the long halls, as the others", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-5-revenants-c"
+cell = 0x03E10156
+at = [239.32, -235.81, 109.90]
+spots = [{ cell = 0x03E10156, at = [239.26, -230.18, 110.00] }, { cell = 0x03E10156, at = [246.32, -235.81, 110.10] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C86, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a crossing of the long halls, as the others", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-5-revenants-d"
+cell = 0x03E10178
+at = [119.46, -115.84, 109.90]
+spots = [{ cell = 0x03E10178, at = [126.46, -115.84, 110.10] }, { cell = 0x03E10178, at = [119.28, -110.19, 110.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C86, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the crossing by the inner spur, as the others", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

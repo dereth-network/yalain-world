@@ -88,6 +88,7 @@
 - Lupe's glyph errand near Mayoi can now be done, for four enhanced glyphs. New pack `lynnestra-glyphs/`.
 - The shaman of the Mimbu village now takes grub meat, and his cookpot blesses a talisman. New pack `mimbu-grub-feast/`.
 - The last of Omishan's vault glyphs now drops, so any four can be decoded. New pack `lumari-glyphs/`.
+- The crypt north of Esper can now be walked through to its hoard. New pack `ancient-crypt/`.
 
 ## v0.36.0
 

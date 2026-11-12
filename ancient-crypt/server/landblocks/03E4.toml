@@ -1,0 +1,41 @@
+# The crypt's second level, with the way on in its north-east room, and revenants in its pit and rooms; edit an authored pack instead.
+
+[[object]]
+key = "acrypt-2-on"
+kind = "static"
+template = 0x47001154
+cell = 0x03E40193
+at = [128.38, 50.29, -8.00]
+rotation = [1, 0, 0, 0]
+to = "acrypt-3"
+prov = { from = "authored", by = "Dereth Network", note = "the north-east room, north of the pit from the landing's walkway (a players' guide: jump down, head straight north to a purple portal): on to the third level", confidence = "low" }
+
+[[camp]]
+key = "acrypt-2-pit"
+cell = 0x03E40164
+at = [60.49, -15.81, -11.00]
+spots = [{ cell = 0x03E40164, at = [60.49, -15.81, -11.00] }, { cell = 0x03E4015A, at = [56.31, 2.09, -11.00] }, { cell = 0x03E40181, at = [75.90, -18.22, -11.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002C85, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the pit under the walkways: revenants, as the first level's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-2-south-west"
+cell = 0x03E4013F
+at = [21.96, -62.31, -8.00]
+spots = [{ cell = 0x03E4012A, at = [14.18, -55.53, -8.00] }, { cell = 0x03E40151, at = [29.74, -66.09, -7.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C89, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the south-west room: revenants a step above the first level's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-2-north-east"
+cell = 0x03E40187
+at = [112.33, 35.86, -8.00]
+spots = [{ cell = 0x03E40192, at = [120.10, 28.48, -8.00] }, { cell = 0x03E40182, at = [109.55, 46.05, -8.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C89, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the north-east room by the way on: revenants a step above the first level's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

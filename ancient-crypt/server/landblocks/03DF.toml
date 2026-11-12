@@ -1,0 +1,62 @@
+# The crypt's seventh level, with revenants on the way in, the last guardian and the lord beside him, the gate past them,
+# and the gated way to the hoard at the end of the hidden west hall, with the hoard's chest in its room; edit an authored pack instead.
+
+[[camp]]
+key = "acrypt-7-revenants"
+cell = 0x03DF0114
+at = [-17.57, -250.11, 112.80]
+spots = [{ cell = 0x03DF0114, at = [-17.57, -250.11, 112.80] }, { cell = 0x03DF0122, at = [-17.57, -265.11, 112.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C86, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the hall from the landing to the great room: revenants, as the fifth level's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-7-lord"
+cell = 0x03DF017A
+at = [-13.03, -196.58, 112.80]
+spots = [{ cell = 0x03DF017A, at = [-13.03, -196.58, 112.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C7D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the great room (a players' guide: fight through and kill the lord and the guardian); one at a time", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "acrypt-7-guardian"
+cell = 0x03DF017A
+at = [-14.74, -205.28, 112.80]
+spots = [{ cell = 0x03DF017A, at = [-14.74, -205.28, 112.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470025F5, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the great room, beside the lord; one at a time: his death gives the hoard's quest (the install), as a players' guide tells it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "acrypt-7-gate"
+kind = "static"
+template = 0x47002EF5
+cell = 0x03DF0151
+at = [-16.76, -127.92, 112.75]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the gate at the north end of the room past the great room, where the install stands its frame (a players' guide: the gate of the dead's ruler, deadly to touch); it says its warning at a use", confidence = "low" }
+
+[[object]]
+key = "acrypt-7-to-hoard"
+kind = "static"
+id = 0x4003DF0000000001
+template = 0x47001154
+cell = 0x03DF018B
+at = [-217.34, -59.33, 112.80]
+rotation = [1, 0, 0, 0]
+to = "acrypt-hoard"
+requires = { quest = 0x400001F0, underway = true }
+prov = { from = "authored", by = "Dereth Network", note = "among the four pillars at the end of the hidden hall west of the great room (a players' guide: a secret wall, straight on to the hoard through a portal); open while the hoard's quest is under way", confidence = "low" }
+
+[[object]]
+key = "acrypt-7-hoard-chest"
+kind = "static"
+template = 0x47000EF7
+cell = 0x03DF018C
+at = [-150.45, 13.69, 99.50]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the north end of the hoard's room, the one room the hoard's landing reaches; the install's chest whose opening ends the hoard's quests", confidence = "low" }

@@ -1,0 +1,20 @@
+# The hidden quest the hoard's chest asks for, given to each player who comes into the hoard's room through its portal;
+# edit an authored pack instead.
+
+[[quest]]
+id = 0x400001F1
+id_name = "QuestAncientCryptChestControl"
+state = 0x6F0006C2
+challenge = 50
+duration = 7200
+retry = 518400
+visible = false
+prov = { from = "derived", rule = "quest-setup-static", record = 0x6F0006C2, confidence = "low" }
+
+[[step]]
+key = "into-the-hoard"
+quest = 0x400001F1
+needs = 0
+trigger = { arrive = 0x47001154, from = 0x4003DF0000000001 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "given to each player who comes through the hoard's portal: the chest asks for it under way, and the quest's journal has the whole fellowship enter the portal before the chest is opened", confidence = "low" }
