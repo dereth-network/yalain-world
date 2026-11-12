@@ -1,0 +1,21 @@
+# A town totem's quest for its lost gem; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000005D
+id_name = "QuestBrokenTotemProtect"
+state = 0x6F000750
+challenge = 22
+duration = -1
+cancellable = true
+retry = 72000
+companion_of = 0x4000005C
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:1d5acee5", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000750 }, retry = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-WAITS-2017", ref = "c:4e1df7d3", confidence = "medium", sample = { sessions = 2 } }, companion_of = { from = "authored", by = "Dereth Network", note = "its journal: protect the fellow sent for the emerald; 2017 gave one player both and failed both in one tick (1 session); its setup spreads it to fellows and never fails it at its own holder's death", confidence = "medium" } } }
+
+[[step]]
+key = "protect-given"
+quest = 0x4000005D
+needs = 0
+trigger = { given = 0x4000005C }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "2017 recorded the totem's use giving its player this with the return, in one tick (1 session); its setup spreads it to the fellowship, so the player's fellows are given it too", confidence = "medium" }

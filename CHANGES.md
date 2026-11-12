@@ -77,7 +77,7 @@
 - Eeruk's Loot can now be done, in the Deepdank Tunnels. New pack `deepdank-tunnels/`.
 - The last of the Tou-Tou ruins quests can now be done, down the lighthouse catacombs. New pack `toutou-catacombs/`.
 - Tuamoa's quest about the new Burun can now be done, through three dungeons. New pack `burun-idol-dungeons/`.
-- The totem in Ikeras can now be mended with the gem stolen from it. New pack `ikeras-totem/`.
+- The totem in Ikeras can now be mended with the gem stolen from it, with a quest for the bearer's fellows. New pack `ikeras-totem/`.
 - The Radiant Temple's smith now asks for a new hearthstone and teaches ancient armor. New pack `radiant-temple-forge/`.
 - Diamonds, pyreum and starstones now drop, so the gem quests can be finished. New pack `rare-gems/`.
 - Mirras now drop, very rarely, from creatures of level 45 and over. New pack `mirra-drops/`.
