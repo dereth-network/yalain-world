@@ -38,7 +38,7 @@
 - Hakata's search for the hidden temple and the huntress's spear lesson can now be finished. New pack `hakata-errands/`.
 - The Dominion's course for neonates can now be run to its end. New pack `dominion-training/`.
 - The two Gurog leaders' slaying quests can now be finished. New pack `malthabbor-gurog/`.
-- The Olvidan farm's herd and well pump quests can now be finished. New pack `olvidan-farm/`.
+- The Olvidan farm's herd, well pump and blight quests can now be finished. New pack `olvidan-farm/`.
 - The temple under the standing stone east of Hakata can now be entered, and its quests done. New pack `temple-of-roots/`.
 - The five Curses of the Undead can now be finished. New pack `undead-curses/`.
 - The master vaults' gems can now be made, their portal creatures killed in order. New pack `master-vault-gems/`.
