@@ -53,6 +53,7 @@
 - A father's search for his runaway son in Linvak can now be finished. New pack `stubbington-search/`.
 - The festival guard's reward after the third trounce can now be claimed. New pack `drudgerton-errands/`.
 - A mad sage's cure in Linvak's redoubt can now be finished, and his captain told. New pack `rustwater-redoubt/`.
+- The reliquary's inner sanctum now holds its weapons, and the white altar upgrades them. New pack `golden-age-relics/`.
 
 ## v0.36.0
 

@@ -1,0 +1,181 @@
+# The broken medallion, the piece, the medallion made and used, and one of the sanctum's weapons taken; edit an authored pack instead.
+
+[[step]]
+key = "medallion-broken"
+quest = 0x4000006D
+needs = 0
+trigger = { take = 0x470008CF }
+update = "bestow"
+recipes = [0x6F00032A]
+prov = { from = "authored", by = "Dereth Network", note = "2017: given on taking the broken medallion, 2 sessions; it teaches the mending recipe, as the giving's own effect names it", confidence = "medium" }
+
+[[step]]
+key = "medallion-piece"
+quest = 0x4000006D
+needs = 1
+trigger = { take = 0x470008D0 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "2017: moved on taking the piece from the temple's chest, 1 session", confidence = "medium" }
+
+[[step]]
+key = "medallion-made"
+quest = 0x4000006D
+needs = 2
+trigger = { take = 0x470008D1 }
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "2017: moved on making the mended medallion by the recipe its giving teaches, 1 session", confidence = "medium" }
+
+[[step]]
+key = "medallion-used"
+quest = 0x4000006D
+needs = 3
+trigger = { use = 0x470008D1 }
+update = "advance"
+phase = 4
+prov = { from = "authored", by = "Dereth Network", note = "2017: moved on using the mended medallion, 1 session", confidence = "medium" }
+
+[[step]]
+key = "weapon-1866"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001866 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (tumerok room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1868"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001868 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (tumerok room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-186c"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x4700186C }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (tumerok room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-186e"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x4700186E }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (tumerok room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1871"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001871 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (tumerok room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1873"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001873 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (tumerok room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1865"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001865 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (human room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1869"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001869 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (human room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-186a"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x4700186A }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (human room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1874"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001874 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (human room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1875"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001875 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (human room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1877"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001877 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (human room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1864"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001864 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (lugian room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-186b"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x4700186B }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (lugian room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1870"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001870 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (lugian room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1872"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001872 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (lugian room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1876"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001876 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (lugian room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
+
+[[step]]
+key = "weapon-1878"
+quest = 0x4000006D
+needs = 4
+trigger = { take = 0x47001878 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a players' guide: taking one of the sanctum's weapons (lugian room) ends the quest and sends its taker out of the reliquary; here the taker walks out by the sanctum's own way out", confidence = "low" }
