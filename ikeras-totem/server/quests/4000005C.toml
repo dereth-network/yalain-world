@@ -10,7 +10,8 @@ cancellable = true
 retry = 158400
 min_level = 20
 fails_on_death = true
-prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:02755e41", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000751 }, retry = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-WAITS-2017", ref = "c:d481420e", confidence = "medium", sample = { sessions = 5 } }, min_level = { from = "authored", by = "Dereth Network", note = "the install's own list of the land's quests names the totem's from level 20", confidence = "low" }, fails_on_death = { from = "authored", by = "Dereth Network", note = "the totem's own offer says the task fails if its player dies, and the journal asks it done without dying", confidence = "medium" } } }
+fails_on_teleport = false
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:02755e41", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000751 }, retry = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-WAITS-2017", ref = "c:d481420e", confidence = "medium", sample = { sessions = 5 } }, min_level = { from = "authored", by = "Dereth Network", note = "the install's own list of the land's quests names the totem's from level 20", confidence = "low" }, fails_on_death = { from = "authored", by = "Dereth Network", note = "the totem's own offer says the task fails if its player dies, and the journal asks it done without dying", confidence = "medium" }, fails_on_teleport = { from = "authored", by = "Dereth Network", note = "the gem's dungeon is entered and left only by portals, and every recorded completion came before the failures began, so a trip through portal space doesn't fail it here", confidence = "low" } } }
 
 [[step]]
 key = "totem-given"
