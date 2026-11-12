@@ -1,0 +1,21 @@
+# The wanderers' errand of the wheel, from the wiki's walkthrough and their own lines; edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x8000009A
+needs = 0
+trigger = { use = 0x47003399 }
+update = "bestow"
+recipes = [0x6F002050, 0x6F002052, 0x6F002054, 0x6F002056]
+tell = { table = 0x25002ADE, string = 0x89455431 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: he gives it with the recipes for the wheel's hub, rim, spokes and the wheel; the line is his own", confidence = "low" }
+
+[[step]]
+key = "wheel-back"
+quest = 0x8000009A
+needs = 1
+trigger = { give = 0x47001B4C, to = 0x47003399 }
+update = "complete"
+takes = [0x47001B4C]
+tell = { table = 0x25002ADE, string = 0x398EEBAC }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the finished wheel handed to him ends it; the line is his own", confidence = "low" }

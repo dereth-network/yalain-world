@@ -1,0 +1,101 @@
+# The refugees of the attacked caravan, from the wiki's walkthrough and the wanderers' own lines; edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x80000097
+needs = 0
+trigger = { use = 0x4700338F }
+update = "bestow"
+gives = [0x47001B4D]
+tell = { table = 0x25002AD8, string = 0xFDF53702 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: he gives it with the wand the refugees are rescued by; the line is his own", confidence = "low" }
+
+[[step]]
+key = "rescue-1-1"
+quest = 0x80000097
+needs = 1
+trigger = { use = 0x47001B4D, on = 0x47001B4E }
+update = "advance"
+phase = 2
+tell = { table = 0x25002AE0, string = 0x282AFC8C }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the wand used on each of the three refugees moves it on, the third to its last phase; the line is the refugee's own", confidence = "low" }
+
+[[step]]
+key = "rescue-1-2"
+quest = 0x80000097
+needs = 2
+trigger = { use = 0x47001B4D, on = 0x47001B4E }
+update = "advance"
+phase = 3
+tell = { table = 0x25002AE0, string = 0x282AFC8C }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the wand used on each of the three refugees moves it on, the third to its last phase; the line is the refugee's own", confidence = "low" }
+
+[[step]]
+key = "rescue-1-3"
+quest = 0x80000097
+needs = 3
+trigger = { use = 0x47001B4D, on = 0x47001B4E }
+update = "advance"
+phase = 4
+tell = { table = 0x25002AE0, string = 0x282AFC8C }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the wand used on each of the three refugees moves it on, the third to its last phase; the line is the refugee's own", confidence = "low" }
+
+[[step]]
+key = "rescue-2-1"
+quest = 0x80000097
+needs = 1
+trigger = { use = 0x47001B4D, on = 0x47001B4F }
+update = "advance"
+phase = 2
+tell = { table = 0x25002AE2, string = 0x282AFC8C }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the wand used on each of the three refugees moves it on, the third to its last phase; the line is the refugee's own", confidence = "low" }
+
+[[step]]
+key = "rescue-2-2"
+quest = 0x80000097
+needs = 2
+trigger = { use = 0x47001B4D, on = 0x47001B4F }
+update = "advance"
+phase = 3
+tell = { table = 0x25002AE2, string = 0x282AFC8C }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the wand used on each of the three refugees moves it on, the third to its last phase; the line is the refugee's own", confidence = "low" }
+
+[[step]]
+key = "rescue-2-3"
+quest = 0x80000097
+needs = 3
+trigger = { use = 0x47001B4D, on = 0x47001B4F }
+update = "advance"
+phase = 4
+tell = { table = 0x25002AE2, string = 0x282AFC8C }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the wand used on each of the three refugees moves it on, the third to its last phase; the line is the refugee's own", confidence = "low" }
+
+[[step]]
+key = "rescue-3-1"
+quest = 0x80000097
+needs = 1
+trigger = { use = 0x47001B4D, on = 0x47001B50 }
+update = "advance"
+phase = 2
+tell = { table = 0x25002AE3, string = 0x282AFC8C }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the wand used on each of the three refugees moves it on, the third to its last phase; the line is the refugee's own", confidence = "low" }
+
+[[step]]
+key = "rescue-3-2"
+quest = 0x80000097
+needs = 2
+trigger = { use = 0x47001B4D, on = 0x47001B50 }
+update = "advance"
+phase = 3
+tell = { table = 0x25002AE3, string = 0x282AFC8C }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the wand used on each of the three refugees moves it on, the third to its last phase; the line is the refugee's own", confidence = "low" }
+
+[[step]]
+key = "rescue-3-3"
+quest = 0x80000097
+needs = 3
+trigger = { use = 0x47001B4D, on = 0x47001B50 }
+update = "advance"
+phase = 4
+tell = { table = 0x25002AE3, string = 0x282AFC8C }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the wand used on each of the three refugees moves it on, the third to its last phase; the line is the refugee's own", confidence = "low" }

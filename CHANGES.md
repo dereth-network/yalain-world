@@ -25,6 +25,7 @@
 - Finishing all five of Knorr's mushroom hunts now earns their bonus. Pack `knorr-mushrooms/`.
 - Four quests from Shoushi's drudges can now be done, one in the crones' laboratories. New pack `prosper-drudges/`.
 - Two more of the Cavendo factotum's errands can now be done. New pack `cavendo-factotum/`.
+- Two of the wanderers' errands near Arwic can now be done. New pack `wandering-folk/`.
 
 ## v0.36.0
 
