@@ -38,6 +38,7 @@
 - Hakata's search for the hidden temple and the huntress's spear lesson can now be finished. New pack `hakata-errands/`.
 - The Dominion's course for neonates can now be run to its end. New pack `dominion-training/`.
 - The two Gurog leaders' slaying quests can now be finished. New pack `malthabbor-gurog/`.
+- The Olvidan farm's herd and well pump quests can now be finished. New pack `olvidan-farm/`.
 
 ## v0.36.0
 
