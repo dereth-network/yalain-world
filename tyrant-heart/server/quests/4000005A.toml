@@ -1,0 +1,22 @@
+# The tyrants' blood quest in the Frozen Ravine; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000005A
+id_name = "QuestBloodOfTyrants"
+state = 0x6F000725
+challenge = 50
+duration = 72000
+xp = 20000000
+cancellable = true
+retry = 518400
+min_level = 48
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:cc086fe8", confidence = "high", sample = { sessions = 34 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000725 }, xp = { from = "derived", rule = "quest-setup-static", record = 0x6F000725 }, cancellable = { from = "derived", rule = "quest-setup-static", record = 0x6F000725 }, retry = { from = "derived", rule = "quest-setup-static", record = 0x6F000725 }, min_level = { from = "authored", by = "Dereth Network", note = "the chest's own least level, and the wiki's 48 and up", confidence = "medium" } } }
+
+[[step]]
+key = "heart-taken"
+quest = 0x4000005A
+needs = 0
+trigger = { take = 0x47000AE9 }
+update = "bestow"
+recipes = [0x6F0002BD]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the heart looted from the chest begins it and gives its recipe, whose own effects end it; 3 of 2017's characters held it completed; no recording", confidence = "low" }

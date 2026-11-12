@@ -96,6 +96,7 @@
 - The queen's quest in Lake Artefon's catacombs can now be done. New pack `artefon-salvation/`.
 - Drudgerton's stolen feathers quest can now be done, from maps the Gurog drop. New pack `siraluun-cargo/`.
 - The shreth pit north-east of Rakani is open, and its warden's quest can be done. New pack `shreth-spawning-pit/`.
+- The tyrants' blood quest in Linvak can now be done, from the ravine's chest. New pack `tyrant-heart/`.
 
 ## v0.36.0
 
