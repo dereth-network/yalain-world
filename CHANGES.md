@@ -83,6 +83,7 @@
 - Mirras now drop, very rarely, from creatures of level 45 and over. New pack `mirra-drops/`.
 - Dead prospectors now hold hoard keys, and every hoard has its stockpile. New pack `prospector-corpses/`.
 - The Molwirth shrine's broken opal can now be mended in the caverns to its west. New pack `molwirth-opal/`.
+- The rathunter grutts' charm now starts its vermin hunt. New pack `rat-smasher/`.
 
 ## v0.36.0
 
