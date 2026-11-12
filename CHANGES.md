@@ -26,7 +26,7 @@
 - Four quests from Shoushi's drudges can now be done, one in the crones' laboratories. New pack `prosper-drudges/`.
 - Seven more of the Cavendo factotum's errands can now be done. New pack `cavendo-factotum/`.
 - Two of the wanderers' errands near Arwic can now be done. New pack `wandering-folk/`.
-- Two of Lake Artefon's three tomb quests can now be done, and their armor learned. New pack `artefon-tombs/`.
+- Lake Artefon's three tomb quests can now be done, and their armor learned. New pack `artefon-tombs/`.
 - Three errands of the Drudge Insurgence Saga can now be done. New pack `drudge-insurgence/`.
 - The tarot's card melds and their fifteen quests can now be done. New pack `tarot/`.
 
