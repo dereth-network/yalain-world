@@ -101,6 +101,7 @@
 - The renegades' fortress south of Mayoi and its two quests can now be done. New pack `aun-tanua-fortress/`.
 - The paths into darkness and light can now be done. New pack `path-into-darkness/`.
 - Killing the officer in three towns now gets you a ticket. New pack `officer-tickets/`.
+- The great tree's long trade chain near Rakani can now be finished. New pack `natures-friend/`.
 
 ## v0.36.0
 

@@ -1,0 +1,69 @@
+# The breach rooms of chaos: the corrupted lasher, the pool and the tainted rabbits in the first part, the breach in the
+# second, a way out of each; the two parts don't join for a walk; edit an authored pack instead.
+
+[[object]]
+key = "breach-1-out"
+kind = "static"
+template = 0x47001154
+cell = 0x04BB0100
+at = [2.60, 1.29, -10.60]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "item-portals:rakani-portal"
+prov = { from = "authored", by = "Dereth Network", note = "a way out 4 m behind the first part's landing, to the portal at Rakani; no source names one", confidence = "low" }
+
+[[object]]
+key = "breach-2-out"
+kind = "static"
+template = 0x47001154
+cell = 0x04BB0154
+at = [-222.31, -262.27, -66.80]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "item-portals:rakani-portal"
+prov = { from = "authored", by = "Dereth Network", note = "a way out 10 m south of the breach room's landing, to the portal at Rakani; no source names one", confidence = "low" }
+
+[[object]]
+key = "guardian"
+kind = "npc"
+template = 0x470031D5
+cell = 0x04BB0104
+at = [-6.03, -73.93, -33.80]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "authored", by = "Dereth Network", note = "the corrupted lasher in the round room below the landing's stair, taking the bone for a key (AC2 Hero); no source places it", confidence = "low" }
+
+[[object]]
+key = "pool"
+kind = "npc"
+template = 0x470031CD
+cell = 0x04BB0128
+at = [-109.80, -205.77, -66.40]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "authored", by = "Dereth Network", note = "the pool in the small room where the dungeon's own pool water stands, taking a husk (AC2 Hero)", confidence = "low" }
+
+[[object]]
+key = "breach"
+kind = "npc"
+template = 0x470031D2
+cell = 0x04BB014F
+at = [-200.02, -249.91, -67.40]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "authored", by = "Dereth Network", note = "the breach at the center of its room, where the dungeon's own breach appearance stands, taking a husk for the crystal (AC2 Hero)", confidence = "low" }
+
+[[camp]]
+key = "tainted-rabbits-north"
+cell = 0x04BB011C
+at = [-17.00, -150.00, -66.20]
+spots = [{ cell = 0x04BB011C, at = [-17.00, -150.00, -66.20] }, { cell = 0x04BB011C, at = [-11.62, -151.99, -66.20] }, { cell = 0x04BB011C, at = [-28.34, -158.24, -66.70] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470029B6, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "tainted rabbits in the great cave, whose kills give the pearls (AC2 Hero: kill tainted rabbits, get eight pearls); no source counts them", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "tainted-rabbits-south"
+cell = 0x04BB0119
+at = [11.93, -197.31, -66.20]
+spots = [{ cell = 0x04BB0119, at = [11.93, -197.31, -66.20] }, { cell = 0x04BB0119, at = [13.63, -183.81, -64.60] }, { cell = 0x04BB0119, at = [8.11, -199.96, -66.70] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470029B6, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "tainted rabbits in the great cave's south, whose kills give the pearls (AC2 Hero); no source counts them", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

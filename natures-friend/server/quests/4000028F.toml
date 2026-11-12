@@ -1,0 +1,41 @@
+# The chain's last trade, the crystal to the great tree's shrine, gives and ends the quest with the talisman and the
+# drum; the redberry bushes' berries for its middle; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000028F
+id_name = "QuestNaturesFriend"
+state = 0x6F000BE4
+challenge = 30
+duration = 3600
+retry = 518400
+min_level = 25
+prov = { from = "derived", rule = "quest-setup-static", record = 0x6F000BE4, confidence = "high" }
+
+[[step]]
+key = "redberries"
+quest = 0x4000028F
+needs = 0
+trigger = { use = 0x470031D1 }
+update = "none"
+gives = [0x4700176B]
+tell = { table = 0x25002A2A, string = 0xABE77D0D }
+prov = { from = "authored", by = "Dereth Network", note = "a bush of redberries picked gives a handful (its own line; AC2 Hero: thirteen from the bushes north of Shinoko), whatever the player's quests", confidence = "low" }
+
+[[step]]
+key = "crystal"
+quest = 0x4000028F
+needs = 0
+trigger = { give = 0x47000612, to = 0x47002FD9 }
+update = "bestow"
+takes = [0x47000612]
+tell = { table = 0x250013B2, string = 0x35A799B8 }
+prov = { from = "authored", by = "Dereth Network", note = "the crystal given to the great tree's shrine gives it (AC2 Hero: the last step starts and ends it), with its line for it; from level 25 (its setup)", confidence = "low" }
+
+[[step]]
+key = "talisman-drum"
+quest = 0x4000028F
+needs = 1
+trigger = { given = 0x4000028F }
+update = "complete"
+gives = [0x47000613, 0x47000614]
+prov = { from = "authored", by = "Dereth Network", note = "it ends at once with the talisman and the drum (the shrine's line; the wiki's and AC2 Hero's rewards)", confidence = "low" }
