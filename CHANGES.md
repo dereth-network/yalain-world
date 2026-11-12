@@ -85,6 +85,7 @@
 - The Molwirth shrine's broken opal can now be mended in the caverns to its west. New pack `molwirth-opal/`.
 - The rathunter grutts' charm now starts its vermin hunt. New pack `rat-smasher/`.
 - The alchemist's third geyser now fills his alembic, which opens the kings' armor. New pack `shoyanen-emeralds/`.
+- Lupe's glyph errand near Mayoi can now be done, for four enhanced glyphs. New pack `lynnestra-glyphs/`.
 
 ## v0.36.0
 

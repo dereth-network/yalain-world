@@ -1,0 +1,315 @@
+# The glyph scholar's four glyphs; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000028E
+id_name = "QuestLupe9"
+state = 0x6F000D10
+challenge = 35
+cancellable = false
+duration = 7200.0
+qp = 1200
+retry = 7200
+min_level = 35
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:7308e319", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:28e3abb3", confidence = "low", sample = { sessions = 1 } }, qp = { from = "authored", by = "Dereth Network", note = "as the quest-points pack set it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "a 2003 guide and a later one: two hours before it may be done again", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "a 2003 guide and the wiki: level 35 and up", confidence = "low" } } }
+
+[[step]]
+key = "lupe-gives"
+quest = 0x4000028E
+needs = 0
+trigger = { use = 0x47003353 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "2017 recorded her use giving it, her offer the line her talk row says with the giving (1 session)", confidence = "medium" }
+
+[[step]]
+key = "glyph-ad-p1"
+quest = 0x4000028E
+needs = 1
+trigger = { give = 0x470010AD, to = 0x47003355 }
+update = "advance"
+phase = 2
+takes = [0x470010AD]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b2-p1"
+quest = 0x4000028E
+needs = 1
+trigger = { give = 0x470010B2, to = 0x47003355 }
+update = "advance"
+phase = 2
+takes = [0x470010B2]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b4-p1"
+quest = 0x4000028E
+needs = 1
+trigger = { give = 0x470010B4, to = 0x47003355 }
+update = "advance"
+phase = 2
+takes = [0x470010B4]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b6-p1"
+quest = 0x4000028E
+needs = 1
+trigger = { give = 0x470010B6, to = 0x47003355 }
+update = "advance"
+phase = 2
+takes = [0x470010B6]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b9-p1"
+quest = 0x4000028E
+needs = 1
+trigger = { give = 0x470010B9, to = 0x47003355 }
+update = "advance"
+phase = 2
+takes = [0x470010B9]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-bf-p1"
+quest = 0x4000028E
+needs = 1
+trigger = { give = 0x470010BF, to = 0x47003355 }
+update = "advance"
+phase = 2
+takes = [0x470010BF]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-c0-p1"
+quest = 0x4000028E
+needs = 1
+trigger = { give = 0x470010C0, to = 0x47003355 }
+update = "advance"
+phase = 2
+takes = [0x470010C0]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-ad-p2"
+quest = 0x4000028E
+needs = 2
+trigger = { give = 0x470010AD, to = 0x47003355 }
+update = "advance"
+phase = 3
+takes = [0x470010AD]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b2-p2"
+quest = 0x4000028E
+needs = 2
+trigger = { give = 0x470010B2, to = 0x47003355 }
+update = "advance"
+phase = 3
+takes = [0x470010B2]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b4-p2"
+quest = 0x4000028E
+needs = 2
+trigger = { give = 0x470010B4, to = 0x47003355 }
+update = "advance"
+phase = 3
+takes = [0x470010B4]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b6-p2"
+quest = 0x4000028E
+needs = 2
+trigger = { give = 0x470010B6, to = 0x47003355 }
+update = "advance"
+phase = 3
+takes = [0x470010B6]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b9-p2"
+quest = 0x4000028E
+needs = 2
+trigger = { give = 0x470010B9, to = 0x47003355 }
+update = "advance"
+phase = 3
+takes = [0x470010B9]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-bf-p2"
+quest = 0x4000028E
+needs = 2
+trigger = { give = 0x470010BF, to = 0x47003355 }
+update = "advance"
+phase = 3
+takes = [0x470010BF]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-c0-p2"
+quest = 0x4000028E
+needs = 2
+trigger = { give = 0x470010C0, to = 0x47003355 }
+update = "advance"
+phase = 3
+takes = [0x470010C0]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-ad-p3"
+quest = 0x4000028E
+needs = 3
+trigger = { give = 0x470010AD, to = 0x47003355 }
+update = "advance"
+phase = 4
+takes = [0x470010AD]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b2-p3"
+quest = 0x4000028E
+needs = 3
+trigger = { give = 0x470010B2, to = 0x47003355 }
+update = "advance"
+phase = 4
+takes = [0x470010B2]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b4-p3"
+quest = 0x4000028E
+needs = 3
+trigger = { give = 0x470010B4, to = 0x47003355 }
+update = "advance"
+phase = 4
+takes = [0x470010B4]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b6-p3"
+quest = 0x4000028E
+needs = 3
+trigger = { give = 0x470010B6, to = 0x47003355 }
+update = "advance"
+phase = 4
+takes = [0x470010B6]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b9-p3"
+quest = 0x4000028E
+needs = 3
+trigger = { give = 0x470010B9, to = 0x47003355 }
+update = "advance"
+phase = 4
+takes = [0x470010B9]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-bf-p3"
+quest = 0x4000028E
+needs = 3
+trigger = { give = 0x470010BF, to = 0x47003355 }
+update = "advance"
+phase = 4
+takes = [0x470010BF]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-c0-p3"
+quest = 0x4000028E
+needs = 3
+trigger = { give = 0x470010C0, to = 0x47003355 }
+update = "advance"
+phase = 4
+takes = [0x470010C0]
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down four glyphs of Omishan, one a phase; she keeps each, her line for each count; no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-ad-p4"
+quest = 0x4000028E
+needs = 4
+trigger = { give = 0x470010AD, to = 0x47003355 }
+update = "complete"
+takes = [0x470010AD]
+gives = [0x47001A2E, 0x47001A2F, 0x47001A30, 0x47001A31, 0x47000538]
+counts = [1, 1, 1, 1, 1000]
+tell = { table = 0x25002AC6, string = 0x9E55C21A }
+prov = { from = "authored", by = "Dereth Network", note = "the journal's last phase: one last glyph of Omishan; she keeps it and gives back the four enhanced glyphs and gold (her line; a guide: 1,000 gold); no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b2-p4"
+quest = 0x4000028E
+needs = 4
+trigger = { give = 0x470010B2, to = 0x47003355 }
+update = "complete"
+takes = [0x470010B2]
+gives = [0x47001A2E, 0x47001A2F, 0x47001A30, 0x47001A31, 0x47000538]
+counts = [1, 1, 1, 1, 1000]
+tell = { table = 0x25002AC6, string = 0x9E55C21A }
+prov = { from = "authored", by = "Dereth Network", note = "the journal's last phase: one last glyph of Omishan; she keeps it and gives back the four enhanced glyphs and gold (her line; a guide: 1,000 gold); no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b4-p4"
+quest = 0x4000028E
+needs = 4
+trigger = { give = 0x470010B4, to = 0x47003355 }
+update = "complete"
+takes = [0x470010B4]
+gives = [0x47001A2E, 0x47001A2F, 0x47001A30, 0x47001A31, 0x47000538]
+counts = [1, 1, 1, 1, 1000]
+tell = { table = 0x25002AC6, string = 0x9E55C21A }
+prov = { from = "authored", by = "Dereth Network", note = "the journal's last phase: one last glyph of Omishan; she keeps it and gives back the four enhanced glyphs and gold (her line; a guide: 1,000 gold); no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b6-p4"
+quest = 0x4000028E
+needs = 4
+trigger = { give = 0x470010B6, to = 0x47003355 }
+update = "complete"
+takes = [0x470010B6]
+gives = [0x47001A2E, 0x47001A2F, 0x47001A30, 0x47001A31, 0x47000538]
+counts = [1, 1, 1, 1, 1000]
+tell = { table = 0x25002AC6, string = 0x9E55C21A }
+prov = { from = "authored", by = "Dereth Network", note = "the journal's last phase: one last glyph of Omishan; she keeps it and gives back the four enhanced glyphs and gold (her line; a guide: 1,000 gold); no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-b9-p4"
+quest = 0x4000028E
+needs = 4
+trigger = { give = 0x470010B9, to = 0x47003355 }
+update = "complete"
+takes = [0x470010B9]
+gives = [0x47001A2E, 0x47001A2F, 0x47001A30, 0x47001A31, 0x47000538]
+counts = [1, 1, 1, 1, 1000]
+tell = { table = 0x25002AC6, string = 0x9E55C21A }
+prov = { from = "authored", by = "Dereth Network", note = "the journal's last phase: one last glyph of Omishan; she keeps it and gives back the four enhanced glyphs and gold (her line; a guide: 1,000 gold); no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-bf-p4"
+quest = 0x4000028E
+needs = 4
+trigger = { give = 0x470010BF, to = 0x47003355 }
+update = "complete"
+takes = [0x470010BF]
+gives = [0x47001A2E, 0x47001A2F, 0x47001A30, 0x47001A31, 0x47000538]
+counts = [1, 1, 1, 1, 1000]
+tell = { table = 0x25002AC6, string = 0x9E55C21A }
+prov = { from = "authored", by = "Dereth Network", note = "the journal's last phase: one last glyph of Omishan; she keeps it and gives back the four enhanced glyphs and gold (her line; a guide: 1,000 gold); no recording", confidence = "low" }
+
+[[step]]
+key = "glyph-c0-p4"
+quest = 0x4000028E
+needs = 4
+trigger = { give = 0x470010C0, to = 0x47003355 }
+update = "complete"
+takes = [0x470010C0]
+gives = [0x47001A2E, 0x47001A2F, 0x47001A30, 0x47001A31, 0x47000538]
+counts = [1, 1, 1, 1, 1000]
+tell = { table = 0x25002AC6, string = 0x9E55C21A }
+prov = { from = "authored", by = "Dereth Network", note = "the journal's last phase: one last glyph of Omishan; she keeps it and gives back the four enhanced glyphs and gold (her line; a guide: 1,000 gold); no recording", confidence = "low" }
