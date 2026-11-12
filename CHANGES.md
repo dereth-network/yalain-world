@@ -73,6 +73,7 @@
 - Two Arramora raids can now be started, by the grub and the spawn that give them. New pack `arramora-raids/`.
 - An enslaved mosswart in Arramora can now be rescued and led home. New pack `mosswart-rescue/`.
 - Geraine's tomb on the Arramora plateau can now be entered and walked to the door at its end. New pack `geraines-tomb/`.
+- The Dereth Rally's races can now be run, five a day. New pack `dereth-rally/`.
 
 ## v0.36.0
 

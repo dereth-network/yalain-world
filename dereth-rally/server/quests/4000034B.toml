@@ -1,0 +1,68 @@
+# The rally's streak, counted at Rogol's prize; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000034B
+id_name = "QuestRallyChampionship"
+state = 0x6F000799
+prov = { from = "authored", by = "Dereth Network", note = "seven wins in a row; a course failed fails it (its own effect); its seven days, coins, mount and saddle are left out", confidence = "low" }
+
+[[step]]
+key = "first-win"
+quest = 0x4000034B
+needs = 0
+trigger = { done = 0x4000034D }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a prize claimed counts the first win (its journal)", confidence = "low" }
+
+[[step]]
+key = "win-2"
+quest = 0x4000034B
+needs = 1
+trigger = { done = 0x4000034D }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "a prize claimed counts win 2 in a row (its journal)", confidence = "low" }
+
+[[step]]
+key = "win-3"
+quest = 0x4000034B
+needs = 2
+trigger = { done = 0x4000034D }
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "a prize claimed counts win 3 in a row (its journal)", confidence = "low" }
+
+[[step]]
+key = "win-4"
+quest = 0x4000034B
+needs = 3
+trigger = { done = 0x4000034D }
+update = "advance"
+phase = 4
+prov = { from = "authored", by = "Dereth Network", note = "a prize claimed counts win 4 in a row (its journal)", confidence = "low" }
+
+[[step]]
+key = "win-5"
+quest = 0x4000034B
+needs = 4
+trigger = { done = 0x4000034D }
+update = "advance"
+phase = 5
+prov = { from = "authored", by = "Dereth Network", note = "a prize claimed counts win 5 in a row (its journal)", confidence = "low" }
+
+[[step]]
+key = "win-6"
+quest = 0x4000034B
+needs = 5
+trigger = { done = 0x4000034D }
+update = "advance"
+phase = 6
+prov = { from = "authored", by = "Dereth Network", note = "a prize claimed counts win 6 in a row (its journal)", confidence = "low" }
+
+[[step]]
+key = "seventh-win"
+quest = 0x4000034B
+needs = 6
+trigger = { done = 0x4000034D }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the seventh win in a row ends it (its description)", confidence = "low" }

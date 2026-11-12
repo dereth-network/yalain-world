@@ -1,0 +1,68 @@
+# A rally course: given at the start, its checkpoints in turn, won at the finish; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000349
+id_name = "QuestRally8"
+state = 0x6F000797
+challenge = -999
+duration = 2700.0
+retry = 3600.0
+min_level = 16
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:dd9a7b3e", confidence = "high", sample = { sessions = 50 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "45 minutes a race: the race's own regulating effect lasts 2700 s, and the wiki says 45", confidence = "medium" }, retry = { from = "authored", by = "Dereth Network", note = "the 2004 guides' hour before the same race again", confidence = "medium" }, min_level = { from = "authored", by = "Dereth Network", note = "level 16, as the wiki and the 2004 guides say", confidence = "medium" } } }
+
+[[step]]
+key = "start"
+quest = 0x40000349
+needs = 0
+trigger = { use = 0x47002F8F }
+update = "bestow"
+requires = [{ event = "dereth-rally-course-8" }, { quest = 0x4000034D, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "the start's touch gives the course raced now; not while a prize waits at Rogol (the prize's journal: claim it before racing again)", confidence = "medium" }
+
+[[step]]
+key = "checkpoint-1"
+quest = 0x40000349
+needs = 1
+trigger = { use = 0x47002F83 }
+update = "advance"
+phase = 2
+requires = [{ event = "dereth-rally-course-8" }]
+prov = { from = "authored", by = "Dereth Network", note = "its first stop's touch, in turn, leads on to the next place the journal names; only this course's own, there while it runs", confidence = "medium" }
+
+[[step]]
+key = "checkpoint-2"
+quest = 0x40000349
+needs = 2
+trigger = { use = 0x47002F85 }
+update = "advance"
+phase = 3
+requires = [{ event = "dereth-rally-course-8" }]
+prov = { from = "authored", by = "Dereth Network", note = "its second stop's touch, in turn, leads on to the next place the journal names; only this course's own, there while it runs", confidence = "medium" }
+
+[[step]]
+key = "checkpoint-3"
+quest = 0x40000349
+needs = 3
+trigger = { use = 0x47002F87 }
+update = "advance"
+phase = 4
+requires = [{ event = "dereth-rally-course-8" }]
+prov = { from = "authored", by = "Dereth Network", note = "its third stop's touch, in turn, leads on to the next place the journal names; only this course's own, there while it runs", confidence = "medium" }
+
+[[step]]
+key = "checkpoint-4"
+quest = 0x40000349
+needs = 4
+trigger = { use = 0x47002F89 }
+update = "advance"
+phase = 5
+requires = [{ event = "dereth-rally-course-8" }]
+prov = { from = "authored", by = "Dereth Network", note = "its fourth stop's touch, in turn, leads on to the next place the journal names; only this course's own, there while it runs", confidence = "medium" }
+
+[[step]]
+key = "finish"
+quest = 0x40000349
+needs = 5
+trigger = { use = 0x47002F8B }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the finish's touch wins it (its line); here every racer who reaches it in time, not the first alone", confidence = "medium" }

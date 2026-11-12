@@ -1,0 +1,79 @@
+# The rally's races and the course each one runs, by the week; edit an authored pack instead.
+
+[[event]]
+key = "dereth-rally"
+game_event = 0x40000218
+when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "00:00", until = "00:45" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "04:48", until = "05:33" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "09:36", until = "10:21" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "14:24", until = "15:09" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "19:12", until = "19:57" }]
+prov = { from = "authored", by = "Dereth Network", note = "a race: 45 minutes, five a day; 2017's notices came 4.3 to 5.0 hours apart, median 4.6, where a set week needs a whole number a day; no countdown, no notice", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-1"
+game_event = 0x40000219
+when = [{ days = ["mon"], from = "00:00", until = "00:45" }, { days = ["wed"], from = "09:36", until = "10:21" }, { days = ["fri"], from = "19:12", until = "19:57" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 1, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-2"
+game_event = 0x4000021A
+when = [{ days = ["mon"], from = "04:48", until = "05:33" }, { days = ["wed"], from = "14:24", until = "15:09" }, { days = ["sat"], from = "00:00", until = "00:45" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 2, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-3"
+game_event = 0x4000021B
+when = [{ days = ["mon"], from = "09:36", until = "10:21" }, { days = ["wed"], from = "19:12", until = "19:57" }, { days = ["sat"], from = "04:48", until = "05:33" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 3, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-4"
+game_event = 0x4000021C
+when = [{ days = ["mon"], from = "14:24", until = "15:09" }, { days = ["thu"], from = "00:00", until = "00:45" }, { days = ["sat"], from = "09:36", until = "10:21" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 4, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-5"
+game_event = 0x4000021D
+when = [{ days = ["mon"], from = "19:12", until = "19:57" }, { days = ["thu"], from = "04:48", until = "05:33" }, { days = ["sat"], from = "14:24", until = "15:09" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 5, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-6"
+game_event = 0x4000021E
+when = [{ days = ["tue"], from = "00:00", until = "00:45" }, { days = ["thu"], from = "09:36", until = "10:21" }, { days = ["sat"], from = "19:12", until = "19:57" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 6, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-7"
+game_event = 0x4000021F
+when = [{ days = ["tue"], from = "04:48", until = "05:33" }, { days = ["thu"], from = "14:24", until = "15:09" }, { days = ["sun"], from = "00:00", until = "00:45" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 7, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-8"
+game_event = 0x40000220
+when = [{ days = ["tue"], from = "09:36", until = "10:21" }, { days = ["thu"], from = "19:12", until = "19:57" }, { days = ["sun"], from = "04:48", until = "05:33" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 8, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-9"
+game_event = 0x40000221
+when = [{ days = ["tue"], from = "14:24", until = "15:09" }, { days = ["fri"], from = "00:00", until = "00:45" }, { days = ["sun"], from = "09:36", until = "10:21" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 9, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-10"
+game_event = 0x40000222
+when = [{ days = ["tue"], from = "19:12", until = "19:57" }, { days = ["fri"], from = "04:48", until = "05:33" }, { days = ["sun"], from = "14:24", until = "15:09" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 10, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-11"
+game_event = 0x40000223
+when = [{ days = ["wed"], from = "00:00", until = "00:45" }, { days = ["fri"], from = "09:36", until = "10:21" }, { days = ["sun"], from = "19:12", until = "19:57" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 11, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-course-12"
+game_event = 0x40000224
+when = [{ days = ["wed"], from = "04:48", until = "05:33" }, { days = ["fri"], from = "14:24", until = "15:09" }]
+prov = { from = "authored", by = "Dereth Network", note = "the race's course 12, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }

@@ -1,0 +1,114 @@
+# The winner's prize, claimed from Rogol; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000034D
+id_name = "QuestRallyReward"
+state = 0x6F00079B
+xp_share = 0.005
+xp_share_level = 60
+xp_whole = true
+prov = { from = "authored", by = "Dereth Network", note = "the prize Rogol gives a winner: the wiki's half of a level's share a race, at most a level 60's; the guides' gold by streak is left out", confidence = "medium" }
+
+[[step]]
+key = "won-1"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x4000033F }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "won-2"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x40000343 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "won-3"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x40000344 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "won-4"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x40000345 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "won-5"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x40000346 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "won-6"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x40000347 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "won-7"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x40000348 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "won-8"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x40000349 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "won-9"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x4000034A }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "won-10"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x40000340 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "won-11"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x40000341 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "won-12"
+quest = 0x4000034D
+needs = 0
+trigger = { done = 0x40000342 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
+
+[[step]]
+key = "claimed"
+quest = 0x4000034D
+needs = 1
+trigger = { use = 0x47002F8D }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "Rogol gives the prize at a use (his reward line)", confidence = "medium" }

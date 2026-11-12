@@ -1,0 +1,21 @@
+# The rally's obelisks, there only while a race runs them; edit an authored pack instead.
+
+[[object]]
+key = "rally-start"
+kind = "npc"
+template = 0x47002F8F
+cell = 0xD2850002
+at = [3.80, 36.00, 81.50]
+rotation = [1.0, 0.0, 0.0, 0.0]
+event = "dereth-rally"
+prov = { from = "authored", by = "Dereth Network", note = "Rogol says it appears as a race begins; the guides start the race at him: 5 m from him, there while a race is on (the install places none)", confidence = "low" }
+
+[[object]]
+key = "rally-finish"
+kind = "npc"
+template = 0x47002F8B
+cell = 0xD285000A
+at = [29.79, 25.60, 82.65]
+rotation = [1.0, 0.0, 0.0, 0.0]
+event = "dereth-rally"
+prov = { from = "authored", by = "Dereth Network", note = "every course's journal ends here (4.4N, 64.8E), beside Rogol; there while a race is on", confidence = "low" }
