@@ -1,0 +1,17 @@
+# Find the Warder Corporal, from 2017's recordings; edit an authored pack instead.
+
+[[step]]
+key = "corporal-given"
+quest = 0x400000D1
+needs = 0
+trigger = { use = 0x47002F7E }
+update = "bestow"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OSTETH-DRUDGE-INSURGENCE", ref = "corporal-given", confidence = "medium", sample = { sessions = 3 } }
+
+[[step]]
+key = "corporal-found"
+quest = 0x400000D1
+needs = 1
+trigger = { use = 0x47002FD0 }
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OSTETH-DRUDGE-INSURGENCE", ref = "corporal-found", confidence = "medium", sample = { sessions = 2 } }

@@ -27,6 +27,7 @@
 - Seven more of the Cavendo factotum's errands can now be done. New pack `cavendo-factotum/`.
 - Two of the wanderers' errands near Arwic can now be done. New pack `wandering-folk/`.
 - Lake Artefon's three tomb quests can now be done, and their armor learned. New pack `artefon-tombs/`.
+- Three errands of the Drudge Insurgence Saga can now be done. New pack `drudge-insurgence/`.
 
 ## v0.36.0
 
