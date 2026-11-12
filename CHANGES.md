@@ -65,6 +65,7 @@
 - Three of the Hakata huntress's errands can now be done. New pack `hakata-huntress/`.
 - The counselor's errand in the Burun lair south of Ankoro can now be done. New pack `burun-clutch-fetish/`.
 - The ranger's missing pet can now be found and brought home. New pack `ranger-den/`.
+- The spirit's purification at the shrines of Omishan can now be done. New pack `tonk-shrines/`.
 
 ## v0.36.0
 

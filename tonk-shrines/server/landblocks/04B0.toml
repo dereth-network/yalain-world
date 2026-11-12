@@ -1,0 +1,11 @@
+# The lair's shaman at its far south end; edit an authored pack instead.
+
+[[camp]]
+key = "ugruk-shaman"
+cell = 0x04B0013F
+at = [10.13, -355.26, 170.70]
+spots = [{ cell = 0x04B0013F, at = [10.13, -355.26, 170.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470022AA, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: at the end of the dungeon, south through the open room past the gates; the walls' flood from its landing reaches this far south room last; one at a time", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
