@@ -1,0 +1,10 @@
+# The leftenant's greeting of a player through the tunnel; edit an authored pack instead.
+
+[[step]]
+key = "j-found"
+quest = 0x8000027A
+needs = 1
+trigger = { use = 0x4700317A }
+update = "complete"
+tell = { table = 0x25002A00, string = 0x68B77630 }
+prov = { from = "authored", by = "Dereth Network", note = "the journal: the expedition's greeter sends the player to the leftenant; his line for one who came through the tunnels; 2017's characters held it completed (2 of them); no recording of the talk", confidence = "low" }
