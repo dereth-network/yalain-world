@@ -1,0 +1,88 @@
+# The catacombs' deeper halls' ways on and back, which 2017 recorded with no destination (the way on opens at her husband's
+# death), and the nether halls' bloodstones, undead and way back; edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x4009F70000000001
+template = 0x47001154
+cell = 0x09F7016B
+at = [83.5297, -81.5726, 131.2065]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0x129676AB }
+to = "artefon-lower-from-deeper"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:3b8ad192", confidence = "medium", sample = { sessions = 2 }, fields = { to = { from = "authored", by = "Dereth Network", note = "the portal named for the lower halls, by the deeper halls' landing: to the landing a list of the game's destinations gives for that way", confidence = "low" } } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x4009F70000000002
+template = 0x47001154
+cell = 0x09F70176
+at = [-81.4071, -126.7598, 140.9882]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0x129676AD }
+to = "artefon-nether"
+requires = { quest = 0x400001C8, underway = true }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:7fd3ce8d", confidence = "medium", sample = { sessions = 2 }, fields = { to = { from = "authored", by = "Dereth Network", note = "the portal named for the nether halls, on the path behind the undead king (the wiki); open once his death has given its hidden quest, as the install's quest is named", confidence = "low" } } }
+
+[[object]]
+key = "artefon-nether-out"
+kind = "static"
+template = 0x47001154
+cell = 0x09F70164
+at = [120.23, 146.43, 130.60]
+rotation = [0, 0, 0, 1]
+name = { table = 0x25001B44, string = 0x1296752C }
+to = "seed-2017:p-09f7016f"
+prov = { from = "authored", by = "Dereth Network", note = "a way back from the nether halls 4 m behind their landing, to the deeper halls' landing; no source names one", confidence = "low" }
+
+[[camp]]
+key = "artefon-sanguine-west"
+cell = 0x09F70130
+at = [-134.73, 254.93, 138.70]
+spots = [{ cell = 0x09F70130, at = [-134.73, 254.93, 138.70] }, { cell = 0x09F70134, at = [-140.36, 250.01, 138.80] }, { cell = 0x09F70132, at = [-129.90, 260.10, 139.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002263, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the nether halls' great hall, west side: a bloodstone of the kind whose death and fragment move the quest (the install, the wiki)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "artefon-sanguine-east"
+cell = 0x09F7012F
+at = [-98.01, 254.92, 139.10]
+spots = [{ cell = 0x09F7012F, at = [-98.01, 254.92, 139.10] }, { cell = 0x09F7012F, at = [-95.18, 249.84, 139.50] }, { cell = 0x09F70132, at = [-101.76, 260.08, 138.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002263, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the nether halls' great hall, east side: a bloodstone as the west's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "artefon-sanguine-south"
+cell = 0x09F7012D
+at = [-117.98, 212.04, 139.20]
+spots = [{ cell = 0x09F7012D, at = [-117.98, 212.04, 139.20] }, { cell = 0x09F7012D, at = [-111.73, 211.87, 140.10] }, { cell = 0x09F7012D, at = [-123.93, 211.58, 139.40] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002263, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the nether halls' great hall, by its way in: a bloodstone as the west's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "artefon-nether-undead-a"
+cell = 0x09F70141
+at = [-4.23, 109.02, 145.60]
+spots = [{ cell = 0x09F70141, at = [-4.23, 109.02, 145.60] }, { cell = 0x09F70141, at = [-6.23, 109.02, 146.10] }, { cell = 0x09F70141, at = [-1.65, 109.02, 145.60] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700081E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a crossing of the nether halls: undead, as the deeper halls' recorded ones (the wiki: groups of undead)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "artefon-nether-undead-b"
+cell = 0x09F70120
+at = [-97.74, 99.01, 135.50]
+spots = [{ cell = 0x09F70120, at = [-97.74, 99.01, 135.50] }, { cell = 0x09F70120, at = [-98.06, 104.20, 135.80] }, { cell = 0x09F7011E, at = [-96.14, 95.73, 137.60] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700081E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the hall up to the great hall: undead, as the other crossing's", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

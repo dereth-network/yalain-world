@@ -1,0 +1,27 @@
+# The catacombs' outer halls' way out and the crack to their forgotten halls, which 2017 recorded with no destination;
+# edit an authored pack instead.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x4009F90000000001
+template = 0x47001154
+cell = 0x09F90103
+at = [50.5999, -39.0996, 47.8656]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0x129675A9 }
+to = "artefon-upper-from-outer"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:67304a72", confidence = "medium", sample = { sessions = 2 }, fields = { to = { from = "authored", by = "Dereth Network", note = "the portal by the outer halls' way in, named for the upper halls: to the landing there a list of the game's destinations gives for the way back", confidence = "low" } } }
+
+[[object]]
+key = "s-88"
+kind = "static"
+id = 0x4009F90000000088
+template = 0x47001154
+cell = 0x09F901FC
+at = [75.5475, 385.1727, 40.5775]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0x129675AE }
+to = "artefon-forgotten"
+requires = { quest = 0x400001C7, underway = true }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:c57d397e", confidence = "medium", sample = { sessions = 2 }, fields = { to = { from = "authored", by = "Dereth Network", note = "the crack named for the forgotten halls (the wiki, a players' guide), to their landing; open while the queen's quest is under way, as the guides tell it is new", confidence = "low" } } }

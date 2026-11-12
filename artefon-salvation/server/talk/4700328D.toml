@@ -1,0 +1,67 @@
+# The queen's lines for a use while the quest is under way and for the bloodstone's fragment given her unpurified;
+# edit an authored pack instead.
+
+[[talk]]
+key = "artefon-kei-waiting-1"
+who = 0x4700328D
+line = { table = 0x25002A66, string = 0x57A91D16 }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x400001C7
+phase = 1
+prov = { from = "authored", by = "Dereth Network", note = "her table's line asking what you are waiting for, a purified fragment, said while it is still to be brought", confidence = "low" }
+
+[[talk]]
+key = "artefon-kei-waiting-2"
+who = 0x4700328D
+line = { table = 0x25002A66, string = 0x57A91D16 }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x400001C7
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "her table's line asking what you are waiting for, a purified fragment, said while it is still to be brought", confidence = "low" }
+
+[[talk]]
+key = "artefon-kei-waiting-3"
+who = 0x4700328D
+line = { table = 0x25002A66, string = 0x57A91D16 }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x400001C7
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "her table's line asking what you are waiting for, a purified fragment, said while it is still to be brought", confidence = "low" }
+
+[[talk]]
+key = "artefon-kei-waiting-4"
+who = 0x4700328D
+line = { table = 0x25002A66, string = 0x57A91D16 }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x400001C7
+phase = 4
+prov = { from = "authored", by = "Dereth Network", note = "her table's line asking what you are waiting for, a purified fragment, said while it is still to be brought", confidence = "low" }
+
+[[talk]]
+key = "artefon-kei-jewels"
+who = 0x4700328D
+line = { table = 0x25002A66, string = 0x9CD80FC1 }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x400001C7
+phase = 5
+prov = { from = "authored", by = "Dereth Network", note = "her table's line giving leave to take a jewel from her tomb, said while the reward is still to be claimed (the wiki: speak to her, then touch her tomb)", confidence = "low" }
+
+[[talk]]
+key = "artefon-kei-unpurified"
+who = 0x4700328D
+line = { table = 0x25002A66, string = 0x2630BA11 }
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x4700187F
+prov = { from = "authored", by = "Dereth Network", note = "her table's line refusing the fragment of evil until it is purified, said as she hands it back", confidence = "low" }

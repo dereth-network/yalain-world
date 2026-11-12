@@ -1,0 +1,48 @@
+# The queen's quest's steps: the queen's giving, the font's purifying, the purified fragment back to her, and
+# her tomb's reward, one of the crown jewels; the bloodstone's death and its fragment's taking move
+# the quest by the install's own effects. Edit an authored pack instead.
+
+[[step]]
+key = "kei-gives"
+quest = 0x400001C7
+needs = 0
+trigger = { use = 0x4700328D }
+update = "bestow"
+least_level = 45
+fellows = true
+tell = { table = 0x25002A66, string = 0x4569651E }
+prov = { from = "authored", by = "Dereth Network", note = "the queen gives it at a use, with her plea (the wiki, a players' guide, her table's line for the quest); for her fellows too, as the quest is shared; from level 45, its least", confidence = "low" }
+
+[[step]]
+key = "font-purifies"
+quest = 0x400001C7
+needs = 3
+trigger = { give = 0x4700187F, to = 0x4700328C }
+update = "advance"
+phase = 4
+takes = [0x4700187F]
+gives = [0x47001881]
+fellows = true
+tell = { table = 0x25002A65, string = 0x939EE623 }
+prov = { from = "authored", by = "Dereth Network", note = "the fragment put in the font comes back purified (the wiki, a players' guide), with the font's line for it; the phase's journal: purify it", confidence = "low" }
+
+[[step]]
+key = "kei-takes-lifestone"
+quest = 0x400001C7
+needs = 4
+trigger = { give = 0x47001881, to = 0x4700328D }
+update = "advance"
+phase = 5
+takes = [0x47001881]
+fellows = true
+tell = { table = 0x25002A66, string = 0xD9ECAE4F }
+prov = { from = "authored", by = "Dereth Network", note = "the purified fragment given back to the queen moves the quest on for all (the wiki), with her thanks and leave to take a jewel from her tomb", confidence = "low" }
+
+[[step]]
+key = "tomb-jewel"
+quest = 0x400001C7
+needs = 5
+trigger = { use = 0x47002F18 }
+update = "complete"
+gives_one_of = [{ template = 0x47000814, weight = 1 }, { template = 0x47000815, weight = 1 }, { template = 0x47000816, weight = 1 }, { template = 0x47000817, weight = 1 }, { template = 0x47000818, weight = 1 }, { template = 0x47000819, weight = 1 }, { template = 0x4700081A, weight = 1 }, { template = 0x4700081B, weight = 1 }, { template = 0x4700081C, weight = 1 }, { template = 0x4700081D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "each fellow's use of her tomb gives one of the ten crown jewels, each as likely, and ends the quest (the wiki, the install's reward effect: one of ten)", confidence = "low" }

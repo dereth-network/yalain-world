@@ -1,0 +1,32 @@
+# The forgotten halls' silver door before the font, the font, and the way back to the outer halls;
+# edit an authored pack instead.
+
+[[object]]
+key = "artefon-font-door"
+kind = "static"
+template = 0x47000FB1
+cell = 0x09F50132
+at = [-231.42, -151.59, 105.03]
+rotation = [0, 0, 0, 1]
+locked = true
+lock = 0x4000005F
+prov = { from = "authored", by = "Dereth Network", note = "at the frame the install stands before the font's apse; locked to the key of silver (the wiki: a big door to the font, opened with that key)", confidence = "low" }
+
+[[object]]
+key = "artefon-font"
+kind = "npc"
+template = 0x4700328C
+cell = 0x09F50132
+at = [-231.80, -156.94, 106.80]
+rotation = [0, 0, 0, 1]
+prov = { from = "authored", by = "Dereth Network", note = "the end of the apse behind the silver door (the wiki, a players' guide); the install's font, which purifies the bloodstone's fragment", confidence = "low" }
+
+[[object]]
+key = "artefon-forgotten-out"
+kind = "static"
+template = 0x47001154
+cell = 0x09F50100
+at = [-117.98, 12.89, 102.90]
+rotation = [0.707107, 0, 0, -0.707107]
+to = "artefon-outer-from-forgotten"
+prov = { from = "authored", by = "Dereth Network", note = "a way back 2 m behind the forgotten halls' landing, to the outer halls' landing a list of the game's destinations gives for it; no source names one", confidence = "low" }
