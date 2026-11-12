@@ -1,0 +1,150 @@
+# Ludward's recipes taught at his giving, and each kind's three parts handed to him; edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x4000035A
+needs = 0
+trigger = { use = 0x47002FD5 }
+update = "bestow"
+recipes = [0x6F001BDF, 0x6F001BE2, 0x6F001BE5, 0x6F001BFA, 0x6F001C03, 0x6F001C1E, 0x6F001C21, 0x6F001C24, 0x6F001C27, 0x6F001C2A, 0x6F001C2D]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: Ludward's use gives it and a recipe in a craft the player knows; every kind's basic recipe is taught here (the server can't pick one by craft skill), each made only by its own skill", confidence = "low" }
+
+[[step]]
+key = "armor-basic"
+quest = 0x4000035A
+needs = 1
+trigger = { give = 0x470014AA, to = 0x47002FD5 }
+update = "advance"
+phase = 2
+tell = { table = 0x25002927, string = 0x576163E9 }
+takes = [0x470014AA]
+recipes = [0x6F001BE8, 0x6F001BEB, 0x6F001BEE]
+prov = { from = "authored", by = "Dereth Network", note = "the armor kind's basic part handed to Ludward, its excellent recipes taught (the journal and the wiki: a basic recipe, then a harder one; his line of the basic part)", confidence = "low" }
+
+[[step]]
+key = "armor-excellent"
+quest = 0x4000035A
+needs = 2
+trigger = { give = 0x470014AB, to = 0x47002FD5 }
+update = "advance"
+phase = 3
+tell = { table = 0x25002927, string = 0x60061358 }
+gives = [0x470014AD]
+takes = [0x470014AB]
+recipes = [0x6F001BF1, 0x6F001BF4, 0x6F001BF7]
+prov = { from = "authored", by = "Dereth Network", note = "the armor kind's excellent part handed to Ludward: his map to a rusting part and the reforging recipes (the third journal entry, his line of the map)", confidence = "low" }
+
+[[step]]
+key = "armor-final"
+quest = 0x4000035A
+needs = 3
+trigger = { give = 0x470014AC, to = 0x47002FD5 }
+update = "complete"
+tell = { table = 0x25002927, string = 0x576161E9 }
+takes = [0x470014AC]
+prov = { from = "authored", by = "Dereth Network", note = "the armor kind's reforged part handed to Ludward ends it (his line of a component for the Archetype)", confidence = "low" }
+
+[[step]]
+key = "gear-basic"
+quest = 0x4000035A
+needs = 1
+trigger = { give = 0x470014AE, to = 0x47002FD5 }
+update = "advance"
+phase = 2
+tell = { table = 0x25002927, string = 0x576163E9 }
+takes = [0x470014AE]
+recipes = [0x6F001BFD]
+prov = { from = "authored", by = "Dereth Network", note = "the gear kind's basic part handed to Ludward, its excellent recipes taught (the journal and the wiki: a basic recipe, then a harder one; his line of the basic part)", confidence = "low" }
+
+[[step]]
+key = "gear-excellent"
+quest = 0x4000035A
+needs = 2
+trigger = { give = 0x470014AF, to = 0x47002FD5 }
+update = "advance"
+phase = 3
+tell = { table = 0x25002927, string = 0x60061358 }
+gives = [0x470014B1]
+takes = [0x470014AF]
+recipes = [0x6F001C00]
+prov = { from = "authored", by = "Dereth Network", note = "the gear kind's excellent part handed to Ludward: his map to a rusting part and the reforging recipes (the third journal entry, his line of the map)", confidence = "low" }
+
+[[step]]
+key = "gear-final"
+quest = 0x4000035A
+needs = 3
+trigger = { give = 0x470014B0, to = 0x47002FD5 }
+update = "complete"
+tell = { table = 0x25002927, string = 0x576161E9 }
+takes = [0x470014B0]
+prov = { from = "authored", by = "Dereth Network", note = "the gear kind's reforged part handed to Ludward ends it (his line of a component for the Archetype)", confidence = "low" }
+
+[[step]]
+key = "motivator-basic"
+quest = 0x4000035A
+needs = 1
+trigger = { give = 0x470014B2, to = 0x47002FD5 }
+update = "advance"
+phase = 2
+tell = { table = 0x25002927, string = 0x576163E9 }
+takes = [0x470014B2]
+recipes = [0x6F001C06]
+prov = { from = "authored", by = "Dereth Network", note = "the motivator kind's basic part handed to Ludward, its excellent recipes taught (the journal and the wiki: a basic recipe, then a harder one; his line of the basic part)", confidence = "low" }
+
+[[step]]
+key = "motivator-excellent"
+quest = 0x4000035A
+needs = 2
+trigger = { give = 0x470014B3, to = 0x47002FD5 }
+update = "advance"
+phase = 3
+tell = { table = 0x25002927, string = 0x60061358 }
+gives = [0x470014B5]
+takes = [0x470014B3]
+recipes = [0x6F001C09]
+prov = { from = "authored", by = "Dereth Network", note = "the motivator kind's excellent part handed to Ludward: his map to a rusting part and the reforging recipes (the third journal entry, his line of the map)", confidence = "low" }
+
+[[step]]
+key = "motivator-final"
+quest = 0x4000035A
+needs = 3
+trigger = { give = 0x470014B4, to = 0x47002FD5 }
+update = "complete"
+tell = { table = 0x25002927, string = 0x576161E9 }
+takes = [0x470014B4]
+prov = { from = "authored", by = "Dereth Network", note = "the motivator kind's reforged part handed to Ludward ends it (his line of a component for the Archetype)", confidence = "low" }
+
+[[step]]
+key = "sword-basic"
+quest = 0x4000035A
+needs = 1
+trigger = { give = 0x470014BE, to = 0x47002FD5 }
+update = "advance"
+phase = 2
+tell = { table = 0x25002927, string = 0x576163E9 }
+takes = [0x470014BE]
+recipes = [0x6F001C30, 0x6F001C33, 0x6F001C36, 0x6F001C39, 0x6F001C3C, 0x6F001C3F]
+prov = { from = "authored", by = "Dereth Network", note = "the sword kind's basic part handed to Ludward, its excellent recipes taught (the journal and the wiki: a basic recipe, then a harder one; his line of the basic part)", confidence = "low" }
+
+[[step]]
+key = "sword-excellent"
+quest = 0x4000035A
+needs = 2
+trigger = { give = 0x470014BF, to = 0x47002FD5 }
+update = "advance"
+phase = 3
+tell = { table = 0x25002927, string = 0x60061358 }
+gives = [0x470014BD]
+takes = [0x470014BF]
+recipes = [0x6F001C0C, 0x6F001C0F, 0x6F001C12, 0x6F001C15, 0x6F001C18, 0x6F001C1B]
+prov = { from = "authored", by = "Dereth Network", note = "the sword kind's excellent part handed to Ludward: his map to a rusting part and the reforging recipes (the third journal entry, his line of the map)", confidence = "low" }
+
+[[step]]
+key = "sword-final"
+quest = 0x4000035A
+needs = 3
+trigger = { give = 0x470014BC, to = 0x47002FD5 }
+update = "complete"
+tell = { table = 0x25002927, string = 0x576161E9 }
+takes = [0x470014BC]
+prov = { from = "authored", by = "Dereth Network", note = "the sword kind's reforged part handed to Ludward ends it (his line of a component for the Archetype)", confidence = "low" }
