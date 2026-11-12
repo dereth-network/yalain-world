@@ -64,7 +64,7 @@
 - The southern outpost's crafter can now be helped with his knights, and the knights he loses count for his second quest. New pack `ludward-gear-knights/`.
 - Three of the Hakata huntress's errands can now be done. New pack `hakata-huntress/`.
 - The counselor's errand in the Burun lair south of Ankoro can now be done. New pack `burun-clutch-fetish/`.
-- The ranger's missing pet can now be found and brought home. New pack `ranger-den/`.
+- The ranger's missing pet can now be found, and follows you home. New pack `ranger-den/`.
 - The spirit's purification at the shrines of Omishan can now be done. New pack `tonk-shrines/`.
 - The tormented spirits' purification at the sea shrine can now be done. New pack `rea-bal-purification/`.
 - Three Osteth dungeon kill quests can now be done, and the drudge city entered. New pack `osteth-dungeon-bosses/`.
