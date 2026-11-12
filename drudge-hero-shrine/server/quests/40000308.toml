@@ -1,0 +1,31 @@
+# A drudge dungeon's ways in and out, its shrine, and a spectre's quest to lay his sword on it; edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x40000308
+needs = 0
+trigger = { use = 0x47002697 }
+update = "bestow"
+tell = { table = 0x250013B9, string = 0xB83A6D67 }
+gives = [0x4700061C]
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; with the sword his line hands over, the quest item of the sword's name the journal asks laid on the shrine; no recording", confidence = "low" }
+
+[[step]]
+key = "sword-on-shrine"
+quest = 0x40000308
+needs = 1
+trigger = { give = 0x4700061C, to = 0x47002FAC }
+update = "advance"
+phase = 2
+takes = [0x4700061C]
+prov = { from = "authored", by = "Dereth Network", note = "the journal's first phase, the sword laid on the drudges' shrine, as the wiki's walkthrough does it; no recording", confidence = "low" }
+
+[[step]]
+key = "rashan-done"
+quest = 0x40000308
+needs = 2
+trigger = { use = 0x47002697 }
+update = "complete"
+tell = { table = 0x250013B9, string = 0xE89ABC8B }
+gives = [0x4700061F]
+prov = { from = "authored", by = "Dereth Network", note = "the journal's second phase, back to the spectre, with his line for it and the sword the wiki names as the reward, of the template 2017's players held; no recording", confidence = "low" }
