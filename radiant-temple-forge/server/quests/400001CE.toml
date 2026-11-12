@@ -1,0 +1,23 @@
+# The Radiant Temple's Master Smith and her hearthstone; edit an authored pack instead.
+
+[[step]]
+key = "smith-given"
+quest = 0x400001CE
+needs = 0
+trigger = { use = 0x47003267 }
+update = "bestow"
+tell = { table = 0x25002A52, string = 0x2FE893C2 }
+recipes = [0x6F000313]
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a 2004 guide; her line showing her broken forge and teaching its masonry, with the recipe for the hearthstone the quest asks crafted; no recording", confidence = "low" }
+
+[[step]]
+key = "hearthstone-given"
+quest = 0x400001CE
+needs = 1
+trigger = { give = 0x47000B96, to = 0x47003267 }
+update = "complete"
+takes = [0x47000B96]
+tell = { table = 0x25002A52, string = 0xBBE318F5 }
+recipes = [0x6F0002DE, 0x6F0002E2, 0x6F0002E6, 0x6F0002EA, 0x6F0002EE, 0x6F0002F2, 0x6F0002F6, 0x6F0002FA, 0x6F0002FE, 0x6F000302, 0x6F000306, 0x6F00030F, 0x6F000314, 0x6F000321, 0x6F000325]
+text = { table = 0x250010FC, string = 0xA727FC98 }
+prov = { from = "authored", by = "Dereth Network", note = "a 2004 guide: the hearthstone handed to her unlocks fifteen unfinished ancient armor recipes; her line for it, the fifteen recipes and the line for receiving them; no recording", confidence = "low" }
