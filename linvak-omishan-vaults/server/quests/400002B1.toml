@@ -1,0 +1,70 @@
+# One of the three crystals repaired; edit an authored pack instead.
+
+[[step]]
+key = "repaired-last-cyan"
+quest = 0x400002B1
+needs = 1
+trigger = { use = 0x470013E9, on = 0x47002F94 }
+update = "complete"
+takes = [0x470013E9]
+requires = [{ quest = 0x400002B5, phase = 1 }, { quest = 0x400002B2, done = true }, { quest = 0x400002B3, done = true }]
+to = "omishan-archon-chamber"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the last crystal repaired, all are sent to the archon's room (the fellows by a crystal's use, below)", confidence = "low" }
+
+[[step]]
+key = "repaired-last-murky"
+quest = 0x400002B1
+needs = 1
+trigger = { use = 0x470013EA, on = 0x47002F94 }
+update = "complete"
+takes = [0x470013EA]
+requires = [{ quest = 0x400002B5, phase = 1 }, { quest = 0x400002B2, done = true }, { quest = 0x400002B3, done = true }]
+to = "omishan-archon-chamber"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the last crystal repaired, all are sent to the archon's room (the fellows by a crystal's use, below)", confidence = "low" }
+
+[[step]]
+key = "repaired-last-glittering"
+quest = 0x400002B1
+needs = 1
+trigger = { use = 0x470013EB, on = 0x47002F94 }
+update = "complete"
+takes = [0x470013EB]
+requires = [{ quest = 0x400002B5, phase = 1 }, { quest = 0x400002B2, done = true }, { quest = 0x400002B3, done = true }]
+to = "omishan-archon-chamber"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the last crystal repaired, all are sent to the archon's room (the fellows by a crystal's use, below)", confidence = "low" }
+
+[[step]]
+key = "repaired-cyan"
+quest = 0x400002B1
+needs = 1
+trigger = { use = 0x470013E9, on = 0x47002F94 }
+update = "complete"
+takes = [0x470013E9]
+requires = [{ quest = 0x400002B5, phase = 1 }]
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a serum used on the crystal repairs it, for the whole fellowship; any of the three, where retail's crystal wanted one drawn at random", confidence = "low" }
+
+[[step]]
+key = "repaired-murky"
+quest = 0x400002B1
+needs = 1
+trigger = { use = 0x470013EA, on = 0x47002F94 }
+update = "complete"
+takes = [0x470013EA]
+requires = [{ quest = 0x400002B5, phase = 1 }]
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a serum used on the crystal repairs it, for the whole fellowship; any of the three, where retail's crystal wanted one drawn at random", confidence = "low" }
+
+[[step]]
+key = "repaired-glittering"
+quest = 0x400002B1
+needs = 1
+trigger = { use = 0x470013EB, on = 0x47002F94 }
+update = "complete"
+takes = [0x470013EB]
+requires = [{ quest = 0x400002B5, phase = 1 }]
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: a serum used on the crystal repairs it, for the whole fellowship; any of the three, where retail's crystal wanted one drawn at random", confidence = "low" }

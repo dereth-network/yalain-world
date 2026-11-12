@@ -1,0 +1,233 @@
+# The Linvak master vault: its way out, the portals to its three power conduits, the tapping crystals, its creatures,
+# the chamber the conduits feed, the archon's chamber and the menhir's; edit an authored pack instead.
+
+[[object]]
+key = "way-out"
+kind = "static"
+template = 0x47001154
+cell = 0x02BB0100
+at = [-9.13, -5.07, 125.60]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "linvak-vault-exit"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: the exit portal beside the landing; 2 m from it", confidence = "low" }
+
+[[object]]
+key = "conduit-portal-a"
+kind = "static"
+template = 0x47001154
+cell = 0x02BB0207
+at = [-240.16, 21.78, 143.60]
+name = { table = 0x25001B44, string = 0xCE50B9D6 }
+to = "linvak-conduit-west"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: the portal to the west power conduit, at a corridor's end; its name the install's", confidence = "low" }
+
+[[object]]
+key = "conduit-portal-b"
+kind = "static"
+template = 0x47001154
+cell = 0x02BB0392
+at = [-105.39, -36.02, 132.30]
+name = { table = 0x25001B44, string = 0xCE5039D6 }
+to = "linvak-conduit-east"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: the portal to the east power conduit, at a corridor's end; its name the install's", confidence = "low" }
+
+[[object]]
+key = "conduit-portal-c"
+kind = "static"
+template = 0x47001154
+cell = 0x02BB021A
+at = [-219.67, -98.83, 144.70]
+name = { table = 0x25001B44, string = 0xCE50F9D6 }
+to = "linvak-conduit-south"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: the portal to the south power conduit, at a corridor's end; its name the install's", confidence = "low" }
+
+[[camp]]
+key = "tapping-crystal-a"
+cell = 0x02BB022A
+at = [-99.06, 132.53, 154.60]
+spots = [{ cell = 0x02BB022A, at = [-99.06, 132.53, 154.60] }]
+population = 1
+regen = 1790.0
+spawns = [{ template = 0x470026C9, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: destroy the conduit's crystal; on the pedestal the install places at the conduit's far end, standing again once its remains have rotted (the template's 1790 s)", confidence = "low" }
+
+[[object]]
+key = "conduit-way-on-a"
+kind = "static"
+template = 0x47001154
+cell = 0x02BB0238
+at = [-72.43, 134.71, 142.10]
+name = { table = 0x25001B44, string = 0x39182936 }
+to = "linvak-convergence"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: the conduit's portal to the chamber the conduits feed, in the room below the way in; its name the install's", confidence = "low" }
+
+[[camp]]
+key = "tapping-crystal-b"
+cell = 0x02BB028A
+at = [-73.43, 239.06, 191.30]
+spots = [{ cell = 0x02BB028A, at = [-73.43, 239.06, 191.30] }]
+population = 1
+regen = 1790.0
+spawns = [{ template = 0x470026CB, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: destroy the conduit's crystal; on the pedestal the install places at the conduit's far end, standing again once its remains have rotted (the template's 1790 s)", confidence = "low" }
+
+[[object]]
+key = "conduit-way-on-b"
+kind = "static"
+template = 0x47001154
+cell = 0x02BB02A9
+at = [-46.87, 241.73, 178.70]
+name = { table = 0x25001B44, string = 0x39182936 }
+to = "linvak-convergence"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: the conduit's portal to the chamber the conduits feed, in the room below the way in; its name the install's", confidence = "low" }
+
+[[camp]]
+key = "tapping-crystal-c"
+cell = 0x02BB02D2
+at = [-69.07, 111.00, 227.80]
+spots = [{ cell = 0x02BB02D2, at = [-69.07, 111.00, 227.80] }]
+population = 1
+regen = 1790.0
+spawns = [{ template = 0x470026CC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: destroy the conduit's crystal; on the pedestal the install places at the conduit's far end, standing again once its remains have rotted (the template's 1790 s)", confidence = "low" }
+
+[[object]]
+key = "conduit-way-on-c"
+kind = "static"
+template = 0x47001154
+cell = 0x02BB02F1
+at = [-42.87, 112.72, 215.30]
+name = { table = 0x25001B44, string = 0x39182936 }
+to = "linvak-convergence"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: the conduit's portal to the chamber the conduits feed, in the room below the way in; its name the install's", confidence = "low" }
+
+[[camp]]
+key = "lg-wisps-landing"
+cell = 0x02BB0116
+at = [-30.23, 17.67, 142.70]
+spots = [{ cell = 0x02BB0116, at = [-30.23, 17.67, 142.70] }, { cell = 0x02BB0116, at = [-28.23, 17.67, 141.80] }, { cell = 0x02BB0116, at = [-32.83, 17.65, 143.60] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002DD4, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the conduits' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "lg-revenants-bridge"
+cell = 0x02BB038F
+at = [-60.09, 0.34, 161.60]
+spots = [{ cell = 0x02BB038F, at = [-60.09, 0.34, 161.60] }, { cell = 0x02BB012D, at = [-57.67, 0.34, 161.60] }, { cell = 0x02BB038F, at = [-62.09, 0.34, 161.60] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002C9E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the conduits' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "lg-golems-east"
+cell = 0x02BB0391
+at = [-104.68, 19.86, 131.60]
+spots = [{ cell = 0x02BB0391, at = [-104.68, 19.86, 131.60] }, { cell = 0x02BB0391, at = [-102.56, 19.74, 131.60] }, { cell = 0x02BB0391, at = [-107.10, 19.69, 131.80] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700250F, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the conduits' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "lg-mumiyah-west"
+cell = 0x02BB01CE
+at = [-200.43, 21.95, 143.60]
+spots = [{ cell = 0x02BB01CE, at = [-200.43, 21.95, 143.60] }, { cell = 0x02BB01CE, at = [-198.43, 21.95, 143.60] }, { cell = 0x02BB01CE, at = [-203.43, 21.95, 143.60] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002855, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the conduits' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "lg-revenants-south"
+cell = 0x02BB0216
+at = [-200.47, -77.84, 143.60]
+spots = [{ cell = 0x02BB0216, at = [-200.47, -77.84, 143.60] }, { cell = 0x02BB0216, at = [-197.88, -77.84, 143.60] }, { cell = 0x02BB0216, at = [-202.47, -77.84, 143.60] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002C9E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the conduits' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "lg-wisps-lower"
+cell = 0x02BB01F9
+at = [-140.23, 25.36, 107.60]
+spots = [{ cell = 0x02BB01F9, at = [-140.23, 25.36, 107.60] }, { cell = 0x02BB01F9, at = [-137.40, 25.53, 107.60] }, { cell = 0x02BB01F9, at = [-143.06, 25.19, 107.60] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002DD4, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the conduits' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "convergence-way-back"
+kind = "static"
+template = 0x47001154
+cell = 0x02BB0341
+at = [-232.01, 241.77, 181.90]
+name = { table = 0x25001B44, string = 0x8CD279EE }
+to = "item-portals:master-linvak-portal"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: at the top of the chamber the conduits feed a portal to the beginning", confidence = "low" }
+
+[[object]]
+key = "convergence-to-archon"
+kind = "static"
+id = 0x4002BB0000000001
+template = 0x47001154
+cell = 0x02BB035E
+at = [-211.89, 170.60, 163.60]
+name = { table = 0x25001B44, string = 0xA7E9500A }
+to = "linvak-archon-chamber"
+requires = { quest = 0x400002B4, underway = true }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: just before the top a path on the right and a portal behind it to the archon's room; kept to players with the quest under way (the conduits' fall, which made it in retail, isn't a row)", confidence = "low" }
+
+[[camp]]
+key = "hahnain"
+cell = 0x02BB0328
+at = [-220.86, 156.98, 229.30]
+spots = [{ cell = 0x02BB0328, at = [-220.86, 156.98, 229.30] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C9C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the archon alone on the platform the install places in the middle of his chamber (the wiki and its map)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hahnain-guards"
+cell = 0x02BB031A
+at = [-204.92, 148.84, 228.90]
+spots = [{ cell = 0x02BB031A, at = [-204.92, 148.84, 228.90] }, { cell = 0x02BB0334, at = [-237.00, 163.84, 228.90] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C9E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: kill the guards and the boss; two of the vault's revenants among the chamber's pillars, a choice", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "menhir-portal"
+kind = "static"
+template = 0x47001154
+cell = 0x02BB02FB
+at = [-220.86, 107.98, 229.00]
+name = { table = 0x25001B44, string = 0xE4E61538 }
+to = "linvak-menhir"
+requires = { quest = 0x400002B4, phase = 3 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: the portal to the shard at the chamber's far end, where the install places an arch; kept to players at the quest's last phase, as the archon fallen", confidence = "low" }
+
+[[object]]
+key = "menhir"
+kind = "static"
+template = 0x47002F92
+cell = 0x02BB0394
+at = [-106.62, 363.64, 330.70]
+prov = { from = "authored", by = "Dereth Network", note = "at the far end of the walkway from the landing, under the light the install places there (the wiki's picture)", confidence = "low" }
+
+[[object]]
+key = "menhir-way-out"
+kind = "static"
+template = 0x47001154
+cell = 0x02BB0394
+at = [-106.14, 218.11, 324.80]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "linvak-vault-exit"
+prov = { from = "authored", by = "Dereth Network", note = "no source names a way out of the menhir's chamber: a portal to the vault's way out on the land, by the landing, a choice", confidence = "low" }

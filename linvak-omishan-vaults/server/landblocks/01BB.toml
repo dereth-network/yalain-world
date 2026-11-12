@@ -1,0 +1,195 @@
+# The Omishan master vault: the portals to its three crystal chambers, the crystals, its creatures, the archon's
+# chamber and the menhir's; edit an authored pack instead.
+
+[[object]]
+key = "crystal-chamber-portal-a"
+kind = "static"
+template = 0x47001154
+cell = 0x01BB022F
+at = [-82.19, -24.07, 16.90]
+name = { table = 0x25001B44, string = 0xE65021D6 }
+to = "omishan-amplification-chamber"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: this chamber's portal at the west end of the lower level's crystal hall; its name the install's for the portal to it", confidence = "low" }
+
+[[object]]
+key = "crystal-chamber-portal-b"
+kind = "static"
+template = 0x47001154
+cell = 0x01BB01FF
+at = [34.65, -128.12, 14.10]
+name = { table = 0x25001B44, string = 0xE650E1D6 }
+to = "omishan-focusing-chamber"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: this chamber's portal at the south end of the vault's south-east wing; its name the install's for the portal to it", confidence = "low" }
+
+[[object]]
+key = "crystal-chamber-portal-c"
+kind = "static"
+template = 0x47001154
+cell = 0x01BB0240
+at = [59.88, -38.41, -10.80]
+name = { table = 0x25001B44, string = 0xE650A1D6 }
+to = "omishan-transmission-chamber"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: this chamber's portal at the east end of the lowest level's corridor; its name the install's for the portal to it", confidence = "low" }
+
+[[object]]
+key = "crystal-a"
+kind = "npc"
+template = 0x47002F94
+cell = 0x01BB0260
+at = [24.97, 156.55, 111.00]
+prov = { from = "authored", by = "Dereth Network", note = "on the pedestal the install places in the middle of its chamber (the wiki: each crystal repaired in its chamber)", confidence = "low" }
+
+[[object]]
+key = "crystal-chamber-way-back-a"
+kind = "static"
+template = 0x47001154
+cell = 0x01BB0263
+at = [24.97, 181.55, 112.10]
+name = { table = 0x25001B44, string = 0xA4D261EE }
+to = "item-portals:master-omishan-portal"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: use the portal to get back to the beginning; at the chamber's far end from its landing, a choice", confidence = "low" }
+
+[[object]]
+key = "crystal-b"
+kind = "npc"
+template = 0x47002F95
+cell = 0x01BB0274
+at = [66.33, 154.33, 143.50]
+prov = { from = "authored", by = "Dereth Network", note = "on the pedestal the install places in the middle of its chamber (the wiki: each crystal repaired in its chamber)", confidence = "low" }
+
+[[object]]
+key = "crystal-chamber-way-back-b"
+kind = "static"
+template = 0x47001154
+cell = 0x01BB0277
+at = [66.33, 179.33, 144.50]
+name = { table = 0x25001B44, string = 0xA4D261EE }
+to = "item-portals:master-omishan-portal"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: use the portal to get back to the beginning; at the chamber's far end from its landing, a choice", confidence = "low" }
+
+[[object]]
+key = "crystal-c"
+kind = "npc"
+template = 0x47002F96
+cell = 0x01BB024B
+at = [107.06, 153.63, 116.00]
+prov = { from = "authored", by = "Dereth Network", note = "on the pedestal the install places in the middle of its chamber (the wiki: each crystal repaired in its chamber)", confidence = "low" }
+
+[[object]]
+key = "crystal-chamber-way-back-c"
+kind = "static"
+template = 0x47001154
+cell = 0x01BB0242
+at = [107.06, 178.63, 116.90]
+name = { table = 0x25001B44, string = 0xA4D261EE }
+to = "item-portals:master-omishan-portal"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: use the portal to get back to the beginning; at the chamber's far end from its landing, a choice", confidence = "low" }
+
+[[camp]]
+key = "om-golems-cross"
+cell = 0x01BB0101
+at = [4.72, 21.74, 71.30]
+spots = [{ cell = 0x01BB0101, at = [4.72, 21.74, 71.30] }, { cell = 0x01BB0101, at = [7.13, 21.74, 71.30] }, { cell = 0x01BB0101, at = [2.72, 21.74, 70.80] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700250C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the crystal chambers' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "om-skeletons-hall"
+cell = 0x01BB0204
+at = [10.03, -46.84, 70.10]
+spots = [{ cell = 0x01BB0204, at = [10.03, -46.84, 70.10] }, { cell = 0x01BB0204, at = [12.45, -46.84, 70.10] }, { cell = 0x01BB0204, at = [7.45, -46.84, 70.10] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002B21, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the crystal chambers' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "om-dragoons-lower-hall"
+cell = 0x01BB01A0
+at = [29.59, -40.15, 34.10]
+spots = [{ cell = 0x01BB01A0, at = [29.59, -40.15, 34.10] }, { cell = 0x01BB0197, at = [31.89, -39.85, 34.10] }, { cell = 0x01BB01A0, at = [27.18, -40.56, 34.10] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002B8D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the crystal chambers' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "om-wisps-crystal-hall"
+cell = 0x01BB0220
+at = [-49.99, -22.26, 16.10]
+spots = [{ cell = 0x01BB0220, at = [-49.99, -22.26, 16.10] }, { cell = 0x01BB0221, at = [-47.58, -22.68, 16.10] }, { cell = 0x01BB0220, at = [-52.82, -22.44, 16.10] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002DD8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the crystal chambers' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "om-skeletons-lowest"
+cell = 0x01BB023D
+at = [20.13, -19.89, -7.80]
+spots = [{ cell = 0x01BB023D, at = [20.13, -19.89, -7.80] }, { cell = 0x01BB023D, at = [22.38, -20.21, -8.00] }, { cell = 0x01BB023D, at = [18.01, -19.76, -8.00] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002B21, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the crystal chambers' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "om-golems-south-east"
+cell = 0x01BB01FC
+at = [20.12, -108.17, 13.10]
+spots = [{ cell = 0x01BB01FC, at = [20.12, -108.17, 13.10] }, { cell = 0x01BB01FC, at = [22.82, -108.47, 13.10] }, { cell = 0x01BB01FC, at = [17.29, -108.00, 13.10] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x4700250C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "one of the four kinds the wiki and its map name in the vault, on the way to the crystal chambers' portals", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "renselm"
+cell = 0x01BB02B2
+at = [-71.54, 137.15, 143.30]
+spots = [{ cell = 0x01BB02B2, at = [-71.54, 137.15, 143.30] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C9F, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the archon alone on the platform the install places in the middle of his chamber (the wiki and its map)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "renselm-guards"
+cell = 0x01BB02AF
+at = [-58.23, 128.05, 143.10]
+spots = [{ cell = 0x01BB02AF, at = [-58.23, 128.05, 143.10] }, { cell = 0x01BB02B6, at = [-83.73, 146.35, 143.10] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002B8D, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: kill the guards and the boss; two of the vault's skeletons among the chamber's pillars, a choice", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "menhir-portal"
+kind = "static"
+template = 0x47001154
+cell = 0x01BB02C9
+at = [-70.83, 183.86, 143.70]
+name = { table = 0x25001B44, string = 0xCCE60D38 }
+to = "omishan-menhir"
+requires = { quest = 0x400002B5, phase = 3 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's map: the portal to the shard at the chamber's far end, where the install places an arch; kept to players at the quest's last phase, as the archon fallen", confidence = "low" }
+
+[[object]]
+key = "menhir"
+kind = "static"
+template = 0x47002F97
+cell = 0x01BB02CA
+at = [80.60, 195.61, 317.20]
+prov = { from = "authored", by = "Dereth Network", note = "at the far end of the walkway from the landing, under the light the install places there (the wiki's picture of its twin)", confidence = "low" }
+
+[[object]]
+key = "menhir-way-out"
+kind = "static"
+template = 0x47001154
+cell = 0x01BB02CA
+at = [80.48, 48.92, 311.40]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "omishan-vault-exit"
+prov = { from = "authored", by = "Dereth Network", note = "no source names a way out of the menhir's chamber: a portal to the vault's way out on the land, by the landing, a choice", confidence = "low" }

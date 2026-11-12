@@ -1,0 +1,29 @@
+# The Linvak archon's quest after its giving: the archon's chamber, his fall and the menhir; edit an authored
+# pack instead.
+
+[[step]]
+key = "archon-chamber"
+quest = 0x400002B4
+needs = 1
+trigger = { arrive = 0x47001154, from = 0x4002BB0000000001 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the portal from the chamber the conduits feed to the archon's room; as 2017 moved its Osteth twin on at the antechamber's portal", confidence = "low" }
+
+[[step]]
+key = "archon-falls"
+quest = 0x400002B4
+needs = 2
+trigger = { kill = 0x47002C9C, within = 40 }
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "every player near the archon as he falls, as the last phase's journal tells it", confidence = "low" }
+
+[[step]]
+key = "menhir"
+quest = 0x400002B4
+needs = 3
+trigger = { use = 0x47002F92 }
+update = "complete"
+gives = [0x470013E3]
+prov = { from = "authored", by = "Dereth Network", note = "the menhir's touch ends it with the vault's crystallized vitae (its own line and the vitae's description), as 2017's Osteth twin", confidence = "low" }

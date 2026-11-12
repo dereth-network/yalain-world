@@ -1,0 +1,56 @@
+# The Omishan archon's quest after its giving: the crystals repaired, the archon's fall and the menhir; edit an
+# authored pack instead.
+
+[[step]]
+key = "crystals-repaired"
+quest = 0x400002B5
+needs = 1
+trigger = { done = 0x400002B0 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once the three crystals are repaired the quest moves on (the last crystal's step sends the player to the archon's room)", confidence = "low" }
+
+[[step]]
+key = "archon-falls"
+quest = 0x400002B5
+needs = 2
+trigger = { kill = 0x47002C9F, within = 40 }
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "every player near the archon as he falls, as the last phase's journal tells it", confidence = "low" }
+
+[[step]]
+key = "menhir"
+quest = 0x400002B5
+needs = 3
+trigger = { use = 0x47002F97 }
+update = "complete"
+gives = [0x470013EC]
+prov = { from = "authored", by = "Dereth Network", note = "the menhir's touch ends it with the vault's crystallized vitae (its own line and the vitae's description), as 2017's Osteth twin", confidence = "low" }
+
+[[step]]
+key = "back-to-the-archon-a"
+quest = 0x400002B5
+needs = 2
+trigger = { use = 0x47002F94 }
+update = "none"
+to = "omishan-archon-chamber"
+prov = { from = "authored", by = "Dereth Network", note = "a repaired crystal sends a player whose archon still stands to his room: a fellow the last repair did not send, or one who died there; a choice", confidence = "low" }
+
+[[step]]
+key = "back-to-the-archon-b"
+quest = 0x400002B5
+needs = 2
+trigger = { use = 0x47002F95 }
+update = "none"
+to = "omishan-archon-chamber"
+prov = { from = "authored", by = "Dereth Network", note = "a repaired crystal sends a player whose archon still stands to his room: a fellow the last repair did not send, or one who died there; a choice", confidence = "low" }
+
+[[step]]
+key = "back-to-the-archon-c"
+quest = 0x400002B5
+needs = 2
+trigger = { use = 0x47002F96 }
+update = "none"
+to = "omishan-archon-chamber"
+prov = { from = "authored", by = "Dereth Network", note = "a repaired crystal sends a player whose archon still stands to his room: a fellow the last repair did not send, or one who died there; a choice", confidence = "low" }

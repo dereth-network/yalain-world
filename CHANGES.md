@@ -47,6 +47,7 @@
 - The scholars' vault in north-west Osteth can now be entered and left. New pack `arcanum-vault/`.
 - The archon of Osteth's master vault can now be fought and his quest finished. New pack `osteth-master-vault/`.
 - People no longer say names, descriptions or lines meant for other moments. New pack `misnamed-lines/`.
+- The archons of the Linvak and Omishan master vaults can now be fought and their quests finished. New pack `linvak-omishan-vaults/`.
 
 ## v0.36.0
 
