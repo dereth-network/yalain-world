@@ -81,6 +81,7 @@
 - The Radiant Temple's smith now asks for a new hearthstone and teaches ancient armor. New pack `radiant-temple-forge/`.
 - Diamonds, pyreum and starstones now drop, so the gem quests can be finished. New pack `rare-gems/`.
 - Mirras now drop, very rarely, from creatures of level 45 and over. New pack `mirra-drops/`.
+- Dead prospectors now hold hoard keys, and every hoard has its stockpile. New pack `prospector-corpses/`.
 
 ## v0.36.0
 
