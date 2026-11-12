@@ -1,0 +1,60 @@
+# Each who met the son tells of him in turn, then the son on the beach, then back to his father; edit an authored pack instead.
+
+[[step]]
+key = "asked-moose"
+quest = 0x80000095
+needs = 1
+trigger = { use = 0x47003357 }
+update = "advance"
+phase = 2
+tell = { table = 0x25002AC7, string = 0xFEA2CC5C }
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the wiki: first the dillo herder in the southwest town; the line is the one each person's table holds on the son", confidence = "low" }
+
+[[step]]
+key = "asked-gallus"
+quest = 0x80000095
+needs = 2
+trigger = { use = 0x47003351 }
+update = "advance"
+phase = 3
+tell = { table = 0x25002AC4, string = 0xFEA2CC5C }
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the wiki: then the war captain in the eastern bay town; the line is the one each person's table holds on the son", confidence = "low" }
+
+[[step]]
+key = "asked-lahry"
+quest = 0x80000095
+needs = 3
+trigger = { use = 0x470033D6 }
+update = "advance"
+phase = 4
+tell = { table = 0x25002AFE, string = 0xFEA2CC5C }
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the wiki: then the crazed farmer east of the northern town; the line is the one each person's table holds on the son", confidence = "low" }
+
+[[step]]
+key = "asked-furs"
+quest = 0x80000095
+needs = 4
+trigger = { use = 0x47003294 }
+update = "advance"
+phase = 5
+tell = { table = 0x25002A6B, string = 0xFEA2CC5C }
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the wiki: then the fisher's son southeast of the northern town; the line is the one each person's table holds on the son", confidence = "low" }
+
+[[step]]
+key = "found-stubby"
+quest = 0x80000095
+needs = 5
+trigger = { use = 0x4700335B }
+update = "advance"
+phase = 6
+tell = { table = 0x25002AC9, string = 0x506BB9FB }
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the wiki: the son found by the water in the southwest; his line for his father", confidence = "low" }
+
+[[step]]
+key = "told-father"
+quest = 0x80000095
+needs = 6
+trigger = { use = 0x47003359 }
+update = "complete"
+tell = { table = 0x25002AC8, string = 0x9654E40C }
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the wiki: back to the father; his line on hearing where his son is", confidence = "low" }

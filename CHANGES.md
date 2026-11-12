@@ -50,6 +50,7 @@
 - The archons of the Linvak and Omishan master vaults can now be fought and their quests finished. New pack `linvak-omishan-vaults/`.
 - Nine dungeon kill quests can now be done, with ways into four more dungeons. New pack `dungeon-bosses/`.
 - Rare recruits near seven besieged outposts now start their beacon quests. New pack `beacon-blowouts/`.
+- A father's search for his runaway son in Linvak can now be finished. New pack `stubbington-search/`.
 
 ## v0.36.0
 

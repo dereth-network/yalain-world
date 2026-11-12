@@ -1,0 +1,22 @@
+# The father's offer and reminder, his own lines; edit an authored pack instead.
+
+[[talk]]
+key = "stubby-offer"
+who = 0x47003359
+line = { table = 0x25002AC8, string = 0xFEA2CC5C }
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x80000095
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "his table's long greeting asks the player to find his son and names the herder first", confidence = "low" }
+
+[[talk]]
+key = "stubby-remind"
+who = 0x47003359
+line = { table = 0x25002AC8, string = 0xA71D472A }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x80000095
+prov = { from = "authored", by = "Dereth Network", note = "his table's short ask, said while the search is under way", confidence = "low" }
