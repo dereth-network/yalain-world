@@ -1,0 +1,23 @@
+# The town shrine's opal and the fount that mends it; edit an authored pack instead.
+
+[[talk]]
+key = "t-31c5-2f2214c8"
+who = 0x470031C5
+line = { table = 0x250013B6, string = 0x2F2214C8 }
+how = "emote"
+when = "give"
+quest = 0x4000005B
+update = "advance"
+phase = 2
+order = 1
+prov = { from = "authored", by = "Dereth Network", note = "the fount's line as it mends the opal; no recording", confidence = "low" }
+
+[[talk]]
+key = "t-31c5-fcab09e6"
+who = 0x470031C5
+line = { table = 0x250013B6, string = 0xFCAB09E6 }
+role = "accept"
+how = "emote"
+when = "give"
+item = 0x47000615
+prov = { from = "authored", by = "Dereth Network", note = "the fount's line for an opal given with no quest to mend it, which it dissolves; no recording", confidence = "low" }

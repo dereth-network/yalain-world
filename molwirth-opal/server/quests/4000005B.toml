@@ -1,0 +1,72 @@
+# The town shrine's opal and the fount that mends it; edit an authored pack instead.
+
+[[step]]
+key = "fount-mends"
+quest = 0x4000005B
+needs = 1
+trigger = { give = 0x47000615, to = 0x470031C5 }
+update = "advance"
+phase = 2
+takes = [0x47000615]
+gives = [0x47000616]
+prov = { from = "authored", by = "Dereth Network", note = "the journal: given to the fount in the caverns, whose line mends it and sends the player back; 2017 recorded the fount where a player on the quest went (1 session), not the give", confidence = "low" }
+
+[[step]]
+key = "shrine-whole-human"
+quest = 0x4000005B
+needs = 2
+trigger = { give = 0x47000616, to = 0x470031C6 }
+update = "complete"
+races = [1]
+takes = [0x47000616]
+gives = [0x47000617]
+tell = { table = 0x250013B7, string = 0xCBA81E4D }
+prov = { from = "authored", by = "Dereth Network", note = "the mended opal's own text and a guide: given back to the shrine, which gives boots for the player's race (human) with its line for them; no recording of the ending", confidence = "low" }
+
+[[step]]
+key = "shrine-whole-lugian"
+quest = 0x4000005B
+needs = 2
+trigger = { give = 0x47000616, to = 0x470031C6 }
+update = "complete"
+races = [2]
+takes = [0x47000616]
+gives = [0x47000618]
+tell = { table = 0x250013B7, string = 0x4FA7824F }
+prov = { from = "authored", by = "Dereth Network", note = "the mended opal's own text and a guide: given back to the shrine, which gives boots for the player's race (Lugian) with its line for them; no recording of the ending", confidence = "low" }
+
+[[step]]
+key = "shrine-whole-tumerok"
+quest = 0x4000005B
+needs = 2
+trigger = { give = 0x47000616, to = 0x470031C6 }
+update = "complete"
+races = [4]
+takes = [0x47000616]
+gives = [0x47000619]
+tell = { table = 0x250013B7, string = 0xC9B501E1 }
+prov = { from = "authored", by = "Dereth Network", note = "the mended opal's own text and a guide: given back to the shrine, which gives boots for the player's race (Tumerok) with its line for them; no recording of the ending", confidence = "low" }
+
+[[step]]
+key = "shrine-whole-drudge"
+quest = 0x4000005B
+needs = 2
+trigger = { give = 0x47000616, to = 0x470031C6 }
+update = "complete"
+races = [8]
+takes = [0x47000616]
+gives = [0x4700061B]
+tell = { table = 0x250013B7, string = 0xCBA81E4D }
+prov = { from = "authored", by = "Dereth Network", note = "the mended opal's own text and a guide: given back to the shrine, which gives boots for the player's race (Drudge) with its line for them; no recording of the ending", confidence = "low" }
+
+[[step]]
+key = "shrine-whole-empyrean"
+quest = 0x4000005B
+needs = 2
+trigger = { give = 0x47000616, to = 0x470031C6 }
+update = "complete"
+races = [16]
+takes = [0x47000616]
+gives = [0x4700061A]
+tell = { table = 0x250013B7, string = 0xCBA81E4D }
+prov = { from = "authored", by = "Dereth Network", note = "the mended opal's own text and a guide: given back to the shrine, which gives boots for the player's race (Empyrean) with its line for them; no recording of the ending", confidence = "low" }
