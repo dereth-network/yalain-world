@@ -103,6 +103,7 @@
 - Killing the officer in three towns now gets you a ticket. New pack `officer-tickets/`.
 - The great tree's long trade chain near Rakani can now be finished. New pack `natures-friend/`.
 - The plane of chaos under the Battlefield can now be entered, as far as the eidolon's dungeon. New pack `chaos-plane/`.
+- The tainted forge beyond the eidolon's dungeon and its quest through five platforms can now be done. New pack `chaos-forge/`.
 
 ## v0.36.0
 
