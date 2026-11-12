@@ -1,0 +1,28 @@
+# The counselor's errand, from her own lines, the journal and the fetish's own effect; edit an authored pack instead.
+
+[[quest]]
+id = 0x400002CE
+id_name = "QuestStealBloodFetish"
+state = 0x6F0008D7
+prov = { from = "dat", record = 0x6F0008D7 }
+
+[[step]]
+key = "given"
+quest = 0x400002CE
+needs = 0
+trigger = { use = 0x47003038 }
+update = "bestow"
+tell = { table = 0x25002957, string = 0x393F6D96 }
+requires = [{ quest = 0x400002CC, phase = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "her lines: once the war-leader has given his mission she offers this in its place; her line of the fetish", confidence = "low" }
+
+[[step]]
+key = "returned"
+quest = 0x400002CE
+needs = 2
+trigger = { give = 0x47001501, to = 0x47003038 }
+update = "complete"
+tell = { table = 0x25002957, string = 0xC2B38E4F }
+gives = [0x47001500]
+takes = [0x47001501]
+prov = { from = "authored", by = "Dereth Network", note = "the journal: the fetish returned to her; her line of the amulet she rewards it with, the amulet the wiki names", confidence = "low" }
