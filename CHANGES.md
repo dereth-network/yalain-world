@@ -45,6 +45,7 @@
 - Arramora's lair gems now drop, and the lairs have their bosses and ways out. New pack `arramora-lairs/`.
 - Arramora's eleven lair quests can now be done, from the gems their holders drop. New pack `arramora-lairs/`.
 - Arramora's lair quests can now be done, from the gems their holders drop. New pack `arramora-lairs/`.
+- The blowouts' portal shards and the master vaults' gems now open their portals. New pack `item-portals/`.
 
 ## v0.36.0
 
