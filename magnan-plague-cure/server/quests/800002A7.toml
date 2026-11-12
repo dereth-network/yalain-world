@@ -1,0 +1,86 @@
+# The scholar's cure for the plague, for six maws; edit an authored pack instead.
+
+[[quest]]
+id = 0x800002A7
+id_name = "QuestPPCure"
+state = 0x6F000C1C
+challenge = -999
+retry = 2246400
+duration = 28800
+min_level = 65
+xp_share = 0.03
+xp_share_level = 70
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:c381e809", confidence = "high", sample = { sessions = 3 }, fields = { retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "the wiki: level 65 and up", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "the wiki: 3 percent, capped at level 70", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "the wiki: 3 percent, capped at level 70", confidence = "low" } } }
+
+[[step]]
+key = "maw-p1"
+quest = 0x800002A7
+needs = 1
+trigger = { give = 0x47001CB9, to = 0x4700321D }
+update = "advance"
+phase = 2
+takes = [0x47001CB9]
+wants = 1
+tell = { table = 0x25002A4A, string = 0x72A031BE }
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down six maws, one a phase; the wiki: one at a time, a stack refused; her line asking for more", confidence = "low" }
+
+[[step]]
+key = "maw-p2"
+quest = 0x800002A7
+needs = 2
+trigger = { give = 0x47001CB9, to = 0x4700321D }
+update = "advance"
+phase = 3
+takes = [0x47001CB9]
+wants = 1
+tell = { table = 0x25002A4A, string = 0x72A031BE }
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down six maws, one a phase; the wiki: one at a time, a stack refused; her line asking for more", confidence = "low" }
+
+[[step]]
+key = "maw-p3"
+quest = 0x800002A7
+needs = 3
+trigger = { give = 0x47001CB9, to = 0x4700321D }
+update = "advance"
+phase = 4
+takes = [0x47001CB9]
+wants = 1
+tell = { table = 0x25002A4A, string = 0x72A031BE }
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down six maws, one a phase; the wiki: one at a time, a stack refused; her line asking for more", confidence = "low" }
+
+[[step]]
+key = "maw-p4"
+quest = 0x800002A7
+needs = 4
+trigger = { give = 0x47001CB9, to = 0x4700321D }
+update = "advance"
+phase = 5
+takes = [0x47001CB9]
+wants = 1
+tell = { table = 0x25002A4A, string = 0x72A031BE }
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down six maws, one a phase; the wiki: one at a time, a stack refused; her line asking for more", confidence = "low" }
+
+[[step]]
+key = "maw-p5"
+quest = 0x800002A7
+needs = 5
+trigger = { give = 0x47001CB9, to = 0x4700321D }
+update = "advance"
+phase = 6
+takes = [0x47001CB9]
+wants = 1
+tell = { table = 0x25002A4A, string = 0x72A031BE }
+prov = { from = "authored", by = "Dereth Network", note = "the journal counts down six maws, one a phase; the wiki: one at a time, a stack refused; her line asking for more", confidence = "low" }
+
+[[step]]
+key = "w-end"
+quest = 0x800002A7
+needs = 6
+trigger = { give = 0x47001CB9, to = 0x4700321D }
+update = "complete"
+takes = [0x47001CB9]
+wants = 1
+gives = [0x47001663]
+counts = [3]
+tell = { table = 0x25002A4A, string = 0xB804EC83 }
+prov = { from = "authored", by = "Dereth Network", note = "the journal's last phase: one more maw; the wiki: six handed in one at a time end it with three cures; her line for the doses", confidence = "low" }

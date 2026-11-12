@@ -92,6 +92,7 @@
 - Vargil now gives his sword quest, with a quest for the bearer's fellows.
 - Four more of Arramora's exigencies can now be done. New pack `arramora-exigencies/`.
 - The doomed sword quest in Arramora now has its sword and its creature. New pack `doomed-hero-sword/`.
+- The plague cure in the Knorr Ramparts now takes six maws, one at a time. New pack `magnan-plague-cure/`.
 
 ## v0.36.0
 

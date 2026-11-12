@@ -1,0 +1,33 @@
+# The scholar's cure for the plague, for six maws; edit an authored pack instead.
+
+[[talk]]
+key = "t-321d-7661b035"
+who = 0x4700321D
+line = { table = 0x25002A4A, string = 0x7661B035 }
+role = "offer"
+how = "tell"
+when = "use"
+quest = 0x800002A7
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "her offer of a cure for the plague, collecting its ingredients", confidence = "low" }
+
+[[talk]]
+key = "t-321d-97e6a031"
+who = 0x4700321D
+line = { table = 0x25002A4A, string = 0x97E6A031 }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x800002A7
+prov = { from = "authored", by = "Dereth Network", note = "her reminder to find the maws", confidence = "low" }
+
+[[talk]]
+key = "t-321d-bbe8b373"
+who = 0x4700321D
+line = { table = 0x25002A4A, string = 0xBBE8B373 }
+role = "refuse-give"
+how = "tell"
+when = "give"
+quest = 0x800002A7
+item = 0x47001CB9
+prov = { from = "authored", by = "Dereth Network", note = "her refusal of a stack of maws, one at a time", confidence = "low" }
