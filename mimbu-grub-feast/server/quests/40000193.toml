@@ -1,0 +1,278 @@
+# The Mimbu feast of grub meat and the cookpot's talismans; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000193
+id_name = "QuestOlthoiGrubs"
+state = 0x6F000BED
+challenge = 45
+duration = 86400
+retry = 72000
+prov = { from = "derived", rule = "quest-setup-static", record = 0x6F000BED, confidence = "medium" }
+
+[[step]]
+key = "meat-given"
+quest = 0x40000193
+needs = 0
+trigger = { give = 0x470017AC, to = 0x470031FA }
+update = "bestow"
+takes = [0x470017AC]
+tell = { table = 0x25002A43, string = 0x290031B6 }
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: bring the shaman the grub meat; his line for the meat, sending the player to the cookpot with a talisman; the meat kept; no recording", confidence = "low" }
+
+[[step]]
+key = "blessed-absorption"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A4, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A4]
+gives = [0x4700177C]
+chance = 0.25
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "blessed-boomerang"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A4, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A4]
+gives = [0x4700177E]
+chance = 0.333333
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "blessed-heart"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A4, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A4]
+gives = [0x47001780]
+chance = 0.5
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "blessed-spark"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A4, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A4]
+gives = [0x47001782]
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "bone-absorption"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A5, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A5]
+gives = [0x47001784]
+chance = 0.25
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "bone-boomerang"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A5, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A5]
+gives = [0x47001786]
+chance = 0.333333
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "bone-heart"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A5, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A5]
+gives = [0x47001788]
+chance = 0.5
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "bone-spark"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A5, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A5]
+gives = [0x4700178A]
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "greater-absorption"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A6, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A6]
+gives = [0x4700178C]
+chance = 0.25
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "greater-boomerang"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A6, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A6]
+gives = [0x4700178E]
+chance = 0.333333
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "greater-heart"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A6, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A6]
+gives = [0x47001790]
+chance = 0.5
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "greater-spark"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A6, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A6]
+gives = [0x47001792]
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "heartstone-absorption"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A7, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A7]
+gives = [0x47001794]
+chance = 0.25
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "heartstone-boomerang"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A7, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A7]
+gives = [0x47001796]
+chance = 0.333333
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "heartstone-heart"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A7, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A7]
+gives = [0x47001798]
+chance = 0.5
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "heartstone-spark"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A7, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A7]
+gives = [0x4700179A]
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "runic-absorption"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A8, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A8]
+gives = [0x4700179C]
+chance = 0.25
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "runic-boomerang"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A8, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A8]
+gives = [0x4700179E]
+chance = 0.333333
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "runic-heart"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A8, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A8]
+gives = [0x470017A0]
+chance = 0.5
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "runic-spark"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A8, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A8]
+gives = [0x470017A2]
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "silver-absorption"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A9, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A9]
+gives = [0x470017A4]
+chance = 0.25
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "silver-boomerang"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A9, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A9]
+gives = [0x470017A6]
+chance = 0.333333
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "silver-heart"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A9, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A9]
+gives = [0x470017A8]
+chance = 0.5
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
+
+[[step]]
+key = "silver-spark"
+quest = 0x40000193
+needs = 1
+trigger = { give = 0x470010A9, to = 0x470031F9 }
+update = "complete"
+takes = [0x470010A9]
+gives = [0x470017AA]
+prov = { from = "authored", by = "Dereth Network", note = "a 2003 guide: a talisman dipped comes back with one of four blessings; drawn here one in four each, as the install's effect for it picks at random; no recording", confidence = "low" }
