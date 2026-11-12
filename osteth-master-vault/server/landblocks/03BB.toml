@@ -1,0 +1,56 @@
+# The vault's antechamber: the archon, his guards and the portal to the menhir; edit an authored pack instead.
+
+[[camp]]
+key = "c-13042"
+cell = 0x03BB02DB
+at = [44.5, -509.0, 171.0]
+radius = 0.0
+spots = [{ cell = 0x03BB02DB, at = [40.0, -508.0, 171.02] }, { cell = 0x03BB02DB, at = [49.0, -510.0, 171.02] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002D06, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the two guards 2017 recorded at these spots in both sessions, apart from the archon and the third guard the recorded camp pooled them with", confidence = "medium", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "saelar-guard"
+cell = 0x03BB02BD
+at = [42.0, -487.0, 171.22]
+radius = 0.0
+spots = [{ cell = 0x03BB02BD, at = [42.0, -487.0, 171.22] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D11, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the guard 2017 recorded at this spot in both sessions, which the recorded camp kept in one pool with the archon", confidence = "medium", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "saelar"
+cell = 0x03BB02D6
+at = [46.0, -503.0, 171.23]
+radius = 0.0
+spots = [{ cell = 0x03BB02D6, at = [46.0, -503.0, 171.23] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002CA1, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the archon alone at the spot 2017 recorded him at in both sessions, which the recorded camp kept in one pool with his guards", confidence = "medium", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "menhir-portal"
+kind = "static"
+template = 0x470013F1
+cell = 0x03BB02E5
+at = [45.0, -523.0, 172.0]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "master-osteth-menhir"
+requires = { quest = 0x400002AD, phase = 3 }
+prov = { from = "authored", by = "Dereth Network", note = "2017 recorded it made here as the archon fell, both sessions, and used to the menhir's chamber; here it always stands, kept to players at the last phase as its template is", confidence = "medium" }
+
+[[object]]
+key = "s-6a"
+kind = "static"
+id = 0x4003BB000000006A
+template = 0x47002F99
+cell = 0x03BB015A
+at = [50.0, -165.0, 91.1]
+rotation = [1.0, 0.0, 0.0, 0.0]
+to = "accelerator-top"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:3798edb4", confidence = "medium", sample = { sessions = 2 }, fields = { to = { from = "authored" } } }

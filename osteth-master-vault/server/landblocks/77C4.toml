@@ -1,0 +1,11 @@
+# The Battlefield's third kind of portal wisp; edit an authored pack instead.
+
+[[camp]]
+key = "distorted-portal-wisp"
+cell = 0x77C40026
+at = [84.7, 101.1, 79.25]
+radius = 5.0
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002DDC, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki puts all three kinds on the Battlefield; 2017 recorded the other two here and none of this kind: between them", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
