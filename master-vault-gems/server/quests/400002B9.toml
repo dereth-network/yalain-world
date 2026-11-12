@@ -1,0 +1,163 @@
+# Omishan: three kinds of portal creature killed in order make the vault's gem.
+# The order: Hero: the deformed, the distorted, the contorted; 2017 recorded two runs out of it, a phase a kill, each ending with the flawed gem.
+
+[[step]]
+key = "given-2dd6"
+quest = 0x400002B9
+needs = 0
+trigger = { kill = 0x47002DD6 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "any of the three kinds killed gives it (0x47002dd6)" }
+
+[[step]]
+key = "given-2dd7"
+quest = 0x400002B9
+needs = 0
+trigger = { kill = 0x47002DD7 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "any of the three kinds killed gives it (0x47002dd7)" }
+
+[[step]]
+key = "given-2dd5"
+quest = 0x400002B9
+needs = 0
+trigger = { kill = 0x47002DD5 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "any of the three kinds killed gives it (0x47002dd5)" }
+
+[[step]]
+key = "second-2dd6"
+quest = 0x400002B9
+needs = 1
+trigger = { kill = 0x47002DD6 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "any of the three killed second moves it on (0x47002dd6)" }
+
+[[step]]
+key = "second-2dd7"
+quest = 0x400002B9
+needs = 1
+trigger = { kill = 0x47002DD7 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "any of the three killed second moves it on (0x47002dd7)" }
+
+[[step]]
+key = "second-2dd5"
+quest = 0x400002B9
+needs = 1
+trigger = { kill = 0x47002DD5 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "any of the three killed second moves it on (0x47002dd5)" }
+
+[[step]]
+key = "gem-2dd5"
+quest = 0x400002B9
+needs = 2
+trigger = { kill = 0x47002DD5 }
+update = "complete"
+requires = [{ quest = 0x400002B8, free = true }]
+gives = [0x470013E6]
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "the third kind (0x47002dd5) killed last, the first two in order, makes the gem" }
+
+[[step]]
+key = "flawed-2dd6"
+quest = 0x400002B9
+needs = 2
+trigger = { kill = 0x47002DD6 }
+update = "complete"
+gives = [0x470013E5]
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "the first kind (0x47002dd6) killed last is out of order: the flawed gem" }
+
+[[step]]
+key = "flawed-2dd7"
+quest = 0x400002B9
+needs = 2
+trigger = { kill = 0x47002DD7 }
+update = "complete"
+gives = [0x470013E5]
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "the second kind (0x47002dd7) killed last is out of order: the flawed gem" }
+
+[[step]]
+key = "flawed-2dd5"
+quest = 0x400002B9
+needs = 2
+trigger = { kill = 0x47002DD5 }
+update = "complete"
+requires = [{ quest = 0x400002B8, phase = 1 }]
+gives = [0x470013E5]
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "the third kind (0x47002dd5) killed last after a kill out of order: the flawed gem" }
+
+# Omishan: the flawed gem's quest, kept hidden, marks a kill out of order.
+
+[[quest]]
+id = 0x400002B8
+id_name = "QuestDestroyRenselmFlawedGem"
+state = 0x6F0007B2
+visible = false
+prov = { from = "derived", rule = "quest-setup-static", record = 0x6F0007B2, confidence = "medium", fields = { visible = { from = "authored", by = "Dereth Network", confidence = "medium", note = "a flag: no recording showed it, in two runs out of order" } } }
+
+[[step]]
+key = "first-2dd7"
+quest = 0x400002B8
+needs = 0
+trigger = { kill = 0x47002DD7 }
+update = "bestow"
+requires = [{ quest = 0x400002B9, phase = 1 }]
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "the second kind (0x47002dd7) killed first is out of order" }
+
+[[step]]
+key = "first-2dd5"
+quest = 0x400002B8
+needs = 0
+trigger = { kill = 0x47002DD5 }
+update = "bestow"
+requires = [{ quest = 0x400002B9, phase = 1 }]
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "the third kind (0x47002dd5) killed first is out of order" }
+
+[[step]]
+key = "second-2dd6"
+quest = 0x400002B8
+needs = 0
+trigger = { kill = 0x47002DD6 }
+update = "bestow"
+requires = [{ quest = 0x400002B9, phase = 2 }]
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "the first kind (0x47002dd6) killed second is out of order" }
+
+[[step]]
+key = "second-2dd5"
+quest = 0x400002B8
+needs = 0
+trigger = { kill = 0x47002DD5 }
+update = "bestow"
+requires = [{ quest = 0x400002B9, phase = 2 }]
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "the third kind (0x47002dd5) killed second is out of order" }
+
+[[step]]
+key = "ends-2dd6"
+quest = 0x400002B8
+needs = 1
+trigger = { kill = 0x47002DD6 }
+update = "complete"
+requires = [{ quest = 0x400002B9, done = true }]
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "the flag ends with the gem quest, in the kill that ends it" }
+
+[[step]]
+key = "ends-2dd7"
+quest = 0x400002B8
+needs = 1
+trigger = { kill = 0x47002DD7 }
+update = "complete"
+requires = [{ quest = 0x400002B9, done = true }]
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "the flag ends with the gem quest, in the kill that ends it" }
+
+[[step]]
+key = "ends-2dd5"
+quest = 0x400002B8
+needs = 1
+trigger = { kill = 0x47002DD5 }
+update = "complete"
+requires = [{ quest = 0x400002B9, done = true }]
+prov = { from = "authored", by = "Dereth Network", confidence = "medium", note = "the flag ends with the gem quest, in the kill that ends it" }

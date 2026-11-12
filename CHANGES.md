@@ -41,6 +41,7 @@
 - The Olvidan farm's herd and well pump quests can now be finished. New pack `olvidan-farm/`.
 - The temple under the standing stone east of Hakata can now be entered, and its quests done. New pack `temple-of-roots/`.
 - The five Curses of the Undead can now be finished. New pack `undead-curses/`.
+- The master vaults' gems can now be made, their portal creatures killed in order. New pack `master-vault-gems/`.
 
 ## v0.36.0
 
