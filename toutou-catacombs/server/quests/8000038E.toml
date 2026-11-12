@@ -13,3 +13,12 @@ tell = { table = 0x25002B03, string = 0x65DF4D98 }
 gives = [0x47000E66]
 recipes = [0x6F0020C8]
 prov = { from = "authored", by = "Dereth Network", note = "the journal: show Zu's defense planner the arrow; AC2 Hero: she gives the book and the arrow back, then the tachi's recipe takes all five pieces; her own line for the arrow", confidence = "low" }
+
+[[step]]
+key = "s-given"
+quest = 0x8000038E
+needs = 0
+trigger = { use = 0x470033E0 }
+update = "bestow"
+requires = [{ quest = 0x8000038F, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "who gives it: AC2 Hero; no recording", confidence = "low", fields = { requires = { from = "authored", by = "Dereth Network", note = "the wiki puts it after the ruins quest she gives first, and its journal follows on from that one", confidence = "low" } } }

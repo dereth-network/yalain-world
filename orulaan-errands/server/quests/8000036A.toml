@@ -1,0 +1,10 @@
+# The Disciple's tasks in their order; edit an authored pack instead.
+
+[[step]]
+key = "g1"
+quest = 0x8000036A
+needs = 0
+trigger = { use = 0x47002FA3 }
+update = "bestow"
+requires = [{ quest = 0x80000371, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the person its last journal names", confidence = "low", fields = { requires = { from = "authored", by = "Dereth Network", note = "the wiki: given once his third task is done", confidence = "low" } } }

@@ -1,0 +1,10 @@
+# A person's quests given one after another; edit an authored pack instead.
+
+[[step]]
+key = "v1"
+quest = 0x800000C9
+needs = 0
+trigger = { use = 0x47003082 }
+update = "bestow"
+requires = [{ quest = 0x800000C8, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time", fields = { requires = { from = "authored", by = "Dereth Network", note = "the wiki: given once the one before it is done; 2017: given at the next use after it was done (1 session)", confidence = "medium" } } }

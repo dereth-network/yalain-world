@@ -1,0 +1,10 @@
+# Drudgerton's quests in their order; edit an authored pack instead.
+
+[[step]]
+key = "g1"
+quest = 0x8000035A
+needs = 0
+trigger = { use = 0x47002FAF }
+update = "bestow"
+requires = [{ quest = 0x80000359, done = true }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KILL-GIVERS-2017", ref = "c:cbb6cd94", confidence = "low", sample = { sessions = 1 }, fields = { requires = { from = "authored", by = "Dereth Network", note = "the wiki: given once the one before it in the series is done; 2017: given after it (1 session)", confidence = "medium" } } }

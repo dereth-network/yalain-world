@@ -1,0 +1,12 @@
+# The Drudge Insurgence Saga's errands; edit an authored pack instead.
+
+[[step]]
+key = "s1"
+quest = 0x400000CB
+needs = 0
+trigger = { use = 0x47002FBC }
+tell = { table = 0x2500291D, string = 0xA3030C8E }
+update = "bestow"
+xp = 0
+requires = [{ quest = 0x400000C7, done = true }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:8db2b1c7", confidence = "medium", sample = { sessions = 2 }, fields = { requires = { from = "authored", by = "Dereth Network", note = "2017: given as the quest before it ended (2 of 2 sessions), and that one given first to a player who held neither (2 of 2); the wiki: the saga sends the player on once it is done", confidence = "medium" } } }

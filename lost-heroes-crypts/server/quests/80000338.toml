@@ -7,7 +7,8 @@ needs = 0
 trigger = { use = 0x47002FB5 }
 update = "bestow"
 tell = { table = 0x25002916, string = 0xEEE612A8 }
-prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time, with her own line on the Silent City's totem", confidence = "low" }
+requires = [{ quest = 0x80000337, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time, with her own line on the Silent City's totem", confidence = "low", fields = { requires = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: given once her first is done", confidence = "medium" } } }
 
 [[step]]
 key = "w-end"

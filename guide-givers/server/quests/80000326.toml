@@ -15,7 +15,8 @@ quest = 0x80000326
 needs = 0
 trigger = { use = 0x47002FDF }
 update = "bestow"
-prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; no recording", confidence = "low" }
+requires = [{ quest = 0x80000327, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "who gives it, from a player's guide of the time; no recording", confidence = "low", fields = { requires = { from = "authored", by = "Dereth Network", note = "the wiki: given once the search before it is done; 2017: the search given first (2 sessions)", confidence = "medium" } } }
 
 [[step]]
 key = "w-end"
