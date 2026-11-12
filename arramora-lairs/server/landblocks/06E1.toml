@@ -1,0 +1,22 @@
+# Arramora's lairs: the way out and the boss; edit an authored pack instead.
+
+[[object]]
+key = "mound-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x06E1013E
+at = [-56.67, 48.34, 176.00]
+rotation = [0.639439, 0, 0, -0.768842]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "lair-mound-out"
+prov = { from = "authored", by = "Dereth Network", note = "the lair's way out, beside the landing, where the players' maps draw the exit portal beside the departure; no recording", confidence = "low" }
+
+[[camp]]
+key = "mound-boss"
+cell = 0x06E10176
+at = [30.41, 123.63, 207.50]
+spots = [{ cell = 0x06E10176, at = [30.41, 123.63, 207.50] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470029CF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a players' map draws the boss at the top of the path north of the first hall, where the walk from the landing ends farthest", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

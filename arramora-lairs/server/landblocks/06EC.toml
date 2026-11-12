@@ -1,0 +1,22 @@
+# Arramora's lairs: the way out and the boss; edit an authored pack instead.
+
+[[object]]
+key = "rimehold-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x06EC0126
+at = [-126.82, -69.36, 74.60]
+rotation = [0.923879, 0, 0, -0.382684]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "lair-rimehold-out"
+prov = { from = "authored", by = "Dereth Network", note = "the lair's way out, beside the landing, where the players' maps draw the exit portal beside the departure; no recording", confidence = "low" }
+
+[[camp]]
+key = "rimehold-boss"
+cell = 0x06EC0145
+at = [-100.98, 76.88, 109.20]
+spots = [{ cell = 0x06EC0145, at = [-100.98, 76.88, 109.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002514, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the boss waits at the lair end; placed where the walk from the landing ends farthest; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

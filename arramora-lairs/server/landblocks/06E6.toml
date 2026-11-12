@@ -1,0 +1,22 @@
+# Arramora's lairs: the way out and the boss; edit an authored pack instead.
+
+[[object]]
+key = "drifthaven-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x06E6014B
+at = [122.85, 120.66, 145.50]
+rotation = [0.378649, 0, 0, 0.92554]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "lair-drifthaven-out"
+prov = { from = "authored", by = "Dereth Network", note = "the lair's way out, beside the landing, where the players' maps draw the exit portal beside the departure; no recording", confidence = "low" }
+
+[[camp]]
+key = "drifthaven-boss"
+cell = 0x06E6010B
+at = [-22.50, 41.78, 82.30]
+spots = [{ cell = 0x06E6010B, at = [-22.50, 41.78, 82.30] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C15, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a players' map draws the boss in the lower loop past the stairs, where the walk from the landing ends farthest", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

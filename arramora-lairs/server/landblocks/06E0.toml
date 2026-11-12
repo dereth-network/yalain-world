@@ -1,0 +1,22 @@
+# Arramora's lairs: the way out and the boss; edit an authored pack instead.
+
+[[object]]
+key = "grisly-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x06E00185
+at = [127.02, -122.05, 198.00]
+rotation = [0.99999, 0, 0, 0.004363]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "lair-grisly-out"
+prov = { from = "authored", by = "Dereth Network", note = "the lair's way out, beside the landing, where the players' maps draw the exit portal beside the departure; no recording", confidence = "low" }
+
+[[camp]]
+key = "grisly-boss"
+cell = 0x06E0013B
+at = [-69.91, -36.60, 176.80]
+spots = [{ cell = 0x06E0013B, at = [-69.91, -36.60, 176.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700251A, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the walk from the landing ends farthest in the first hall: past it a climb into the upper tunnels isn't walkable in the walls here, so the hall's far side stands for the end", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

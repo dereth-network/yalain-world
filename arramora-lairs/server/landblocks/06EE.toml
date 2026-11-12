@@ -1,0 +1,22 @@
+# Arramora's lairs: the way out and the boss; edit an authored pack instead.
+
+[[object]]
+key = "nursery-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x06EE0134
+at = [109.37, -46.25, 83.20]
+rotation = [0.887011, 0, 0, 0.461749]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "lair-nursery-out"
+prov = { from = "authored", by = "Dereth Network", note = "the lair's way out, beside the landing, where the players' maps draw the exit portal beside the departure; no recording", confidence = "low" }
+
+[[camp]]
+key = "nursery-boss"
+cell = 0x06EE011F
+at = [6.28, 13.00, 82.60]
+spots = [{ cell = 0x06EE011F, at = [6.28, 13.00, 82.60] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002914, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the boss waits at the lair end; placed where the walk from the landing ends farthest; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
