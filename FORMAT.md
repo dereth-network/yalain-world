@@ -287,7 +287,7 @@ at and above which that share pays no more), `xp_least`, `xp_most` (the least an
 its player but never shown, in no journal and no update; left out, a quest is shown when its
 definition has a description), `min_level` (the least level a player is given it at; a person whose
 step would give it says its refusal of the quest, a `refuse-use` line naming it, to a player under
-it), `fails_on_death` (true: it fails when its player dies), `once` (true: given only once, done never given again; false: given again;
+it), `fails_on_death` (true: it fails when its player dies; left out, as the quest's setup in the install says), `fails_on_logout` (true: it fails when its player leaves the world; left out, as the setup says), `fails_on_teleport` (true: it fails when its player goes through portal space, by a portal, a door, a recall or any sending but a dead player's return; left out, as the setup says), `once` (true: given only once, done never given again; false: given again;
 left out, as the quest's setup in the install says), `fellows` (true: a kill's move on it reaches the killer's fellows; false: only the killer; left out, as the quest's setup in the install says, and only the killer for a quest with no setup). Its name, description, icon, journal
 and the effects each of its updates puts on the player are the definition's. A phase the definition
 says is done by other quests (subquests) gives them with it, kept hidden: steps move them, each
