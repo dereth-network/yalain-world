@@ -1,0 +1,34 @@
+# The training course's way through, from 2017's recording of one player; edit an authored pack instead.
+
+[[step]]
+key = "course-entered"
+quest = 0x8000004D
+needs = 0
+trigger = { arrive = 0x4700115B, from = 0x4004990000000031 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "2017: given on arriving through this portal into the course (1 session; later arrivals while it was had moved nothing)", confidence = "medium" }
+
+[[step]]
+key = "course-entered-2"
+quest = 0x8000004D
+needs = 0
+trigger = { arrive = 0x4700115B, from = 0x4004990000000032 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "2017: first given on arriving through this portal, its twin beside the other (1 session)", confidence = "medium" }
+
+[[step]]
+key = "course-ended"
+quest = 0x8000004D
+needs = 1
+trigger = { arrive = 0x47001155, from = 0x4004970000000037 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "2017: moved to phase 2 on arriving through the course's last portal, by the palace (1 session)", confidence = "medium" }
+
+[[step]]
+key = "course-reported"
+quest = 0x8000004D
+needs = 2
+trigger = { use = 0x47003027 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "2017: ended at the Imperator's use with his line of congratulation (1 session)", confidence = "medium" }

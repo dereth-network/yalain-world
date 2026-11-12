@@ -36,6 +36,7 @@
 - The spirit in the ruins southwest of Zu now waits for its four kills. New pack `lin-ruins/`.
 - Two Shadow quests from the Ikeras antechamber can now be done. New pack `ikeras-antechamber/`.
 - Hakata's temple search and the huntress's spear lesson can now be finished. New pack `hakata-errands/`.
+- The Virindi training course can now be done. New pack `dominion-training/`.
 
 ## v0.36.0
 
