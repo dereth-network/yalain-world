@@ -1,0 +1,39 @@
+# The base's first gate, its keys and the door into its command area; edit an authored pack instead.
+
+[[step]]
+key = "ultra-gate"
+quest = 0x800002CD
+needs = 2
+trigger = { arrive = 0x470032E6 }
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "2017: one fellowship's pass, every phase recorded (1 session): the gate's use moved it from 2 to 3, with its line; the gate sends its user into the base, so here on arriving through it", confidence = "medium" }
+
+[[step]]
+key = "ultra-security"
+quest = 0x800002CD
+needs = 3
+trigger = { take = 0x4700193A }
+update = "advance"
+phase = 4
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "2017: one fellowship's pass, every phase recorded (1 session): moved to 4 after the handler's fall, with no take of the recording player's; the wiki: the handler's key; the fellows moved with it", confidence = "low" }
+
+[[step]]
+key = "ultra-command"
+quest = 0x800002CD
+needs = 4
+trigger = { arrive = 0x4700119B, from = 0x4004890000000046 }
+update = "advance"
+phase = 5
+prov = { from = "authored", by = "Dereth Network", note = "2017: one fellowship's pass, every phase recorded (1 session): moved to 5 at the use of the last door into the command area (not at the first door of the same kind, one level before)", confidence = "medium" }
+
+[[step]]
+key = "ultra-plans"
+quest = 0x800002CD
+needs = 5
+trigger = { take = 0x47001939 }
+update = "advance"
+phase = 6
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "2017: one fellowship's pass, every phase recorded (1 session): moved to 6 as Number Two's corpse was looted; the wiki: the whole fellowship moves", confidence = "low" }

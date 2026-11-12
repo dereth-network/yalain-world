@@ -60,6 +60,7 @@
 - Shinoko's festival on the water can now be prepared, decorated and held. New pack `festival-of-lights/`.
 - Clearing Shinoko's roads now lowers the board's advisory and brings the peddler back. New pack `shinoko-roadway/`.
 - The Silent City and the Yokketh Bell Tower are open, and their boots and totem quests can be done. New pack `lost-heroes-crypts/`.
+- Linvak's secret base quest can now be done, from the ravine's scrap to the leader's plans. New pack `shreth-base-ultra/`.
 
 ## v0.36.0
 
