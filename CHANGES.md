@@ -28,7 +28,7 @@
 - Two of the wanderers' errands near Arwic can now be done. New pack `wandering-folk/`.
 - Two of Lake Artefon's three tomb quests can now be done, and their armor learned. New pack `artefon-tombs/`.
 - Three errands of the Drudge Insurgence Saga can now be done. New pack `drudge-insurgence/`.
-- The tarot's fifteen card melds and their quests can now be done, and every greater trump drops. New pack `tarot/`.
+- The tarot's card melds and their fifteen quests can now be done. New pack `tarot/`.
 
 ## v0.36.0
 
