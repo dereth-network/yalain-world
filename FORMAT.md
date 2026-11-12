@@ -906,9 +906,17 @@ are taken whole, never mixed with the server's.
 the table's outcome names nothing made (an emblem imprinted from one of the weapons its user holds). `key`
 (lowercase letters, digits and hyphens); `item`, the template of the item used; one of `on`, a template it is used
 on, or `on_class`, a class (a script package, by number) the item's table names, any template of which counts;
-`gives`, the template of what it makes; and `count` (above 0; 1 when left out). The user is given it after the quest
-steps the use triggers and before the item is used up. A use takes the row for the item that names the target's
+`gives`, the template of what it makes; `gated_gives`, what it makes instead where the interaction the use met is for
+some characters only (`gives` when left out); and `count` (above 0; 1 when left out). The user is given it after the
+quest steps the use triggers and before the item is used up. A use takes the row for the item that names the target's
 template, else the first that names a class the target counts in. One row per key.
+
+An item's table may hold interactions for some characters only: those whose number (the low word of the character's
+id) leaves a given remainder when divided by a given number. A use takes the table's first interaction naming the
+target that its user's character may have, so a character always meets the same one, and one the table names only for
+other characters is refused, the item kept. A card meld's table names each lesser trump (Ace 0 to King 13) for the
+characters whose number leaves its rank when divided by 14, then each suit for anyone: one row a suit, `gives` for
+anyone and `gated_gives` for a character on its own rank, covers the suit.
 
 **`[[object_states]]`**: the states the world's objects of some templates hold. `key` (lowercase letters, digits and
 hyphens); `templates`, `{ template, start }`: a template whose objects hold a state and the state they start in;
