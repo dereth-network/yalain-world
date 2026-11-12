@@ -1,4 +1,4 @@
-# The insignia to the Factotum of Arwic, from the journal, the insignia and the factotums' own lines; edit an authored pack instead.
+# An insignia to another town's factotum, from the journal, the insignia and the factotums' own lines; edit an authored pack instead.
 
 [[quest]]
 id = 0x400001B4
@@ -15,7 +15,7 @@ update = "bestow"
 races = [1]
 gives = [0x47001A26]
 tell = { table = 0x25002ABE, string = 0x838D6ABB }
-prov = { from = "authored", by = "Dereth Network", note = "as the Lugian insignia's errand (2017): the factotum gives the insignia of Arwic's factotum; his line for it speaks to a human player, so a human's errand", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "as the Lugian insignia's errand (2017): the factotum gives the insignia for another town's factotum; his line for it speaks to a human player, so a human's errand", confidence = "low" }
 
 [[step]]
 key = "insignia-delivered"
@@ -25,4 +25,4 @@ trigger = { give = 0x47001A26, to = 0x4700334C }
 update = "complete"
 takes = [0x47001A26]
 tell = { table = 0x25002AC1, string = 0xF221EBB3 }
-prov = { from = "authored", by = "Dereth Network", note = "the journal: deliver the insignia to Orven; his line for it", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "the journal: the insignia delivered to that factotum; his line for it", confidence = "low" }

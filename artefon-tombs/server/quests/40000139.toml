@@ -1,40 +1,40 @@
-# Tima Drokh's six tombs and the armor after them, from 2017's recordings; edit an authored pack instead.
+# The knights' six tombs, their giver's return and the armor quest after them, from 2017's recordings; edit an authored pack instead.
 
 [[quest]]
 id = 0x4000013A
 id_name = "QuestFindTombKnightsFlame"
 state = 0x6F0006EC
-prov = { from = "authored", by = "Dereth Network", note = "Tomb of a Knight of the Flame, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[quest]]
 id = 0x4000013B
 id_name = "QuestFindTombKnightsShield"
 state = 0x6F0006EE
-prov = { from = "authored", by = "Dereth Network", note = "Tomb of a Knight of the Shield, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[quest]]
 id = 0x4000013C
 id_name = "QuestFindTombKnightsUnicorn"
 state = 0x6F0006EF
-prov = { from = "authored", by = "Dereth Network", note = "Tomb of a Knight of the Unicorn, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[quest]]
 id = 0x4000013D
 id_name = "QuestFindTombKnightsDragon"
 state = 0x6F0006EB
-prov = { from = "authored", by = "Dereth Network", note = "Tomb of a Knight of the Dragon, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[quest]]
 id = 0x4000013F
 id_name = "QuestFindTombKnightsZharalim"
 state = 0x6F0006F0
-prov = { from = "authored", by = "Dereth Network", note = "Tomb of a Zharalim, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[quest]]
 id = 0x40000140
 id_name = "QuestFindTombKnightsProphet"
 state = 0x6F0006ED
-prov = { from = "authored", by = "Dereth Network", note = "Tomb of a Prophet of Blades, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[step]]
 key = "knights-given"
@@ -42,7 +42,7 @@ quest = 0x40000139
 needs = 0
 trigger = { use = 0x47002F1D }
 update = "bestow"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-given", confidence = "medium", sample = { sessions = 1 } }
+prov = { from = "authored", by = "Dereth Network", note = "2017: the giver's use gives it (1 of 1 sessions)", confidence = "medium" }
 
 [[step]]
 key = "knights-tomb-flame"
@@ -50,7 +50,7 @@ quest = 0x4000013A
 needs = 1
 trigger = { use = 0x47002F21 }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "knights-tomb-shield"
@@ -58,7 +58,7 @@ quest = 0x4000013B
 needs = 1
 trigger = { use = 0x47002F25 }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "knights-tomb-unicorn"
@@ -66,7 +66,7 @@ quest = 0x4000013C
 needs = 1
 trigger = { use = 0x47002F27 }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "knights-tomb-dragon"
@@ -74,7 +74,7 @@ quest = 0x4000013D
 needs = 1
 trigger = { use = 0x47002F1F }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "knights-tomb-zharalim"
@@ -82,7 +82,7 @@ quest = 0x4000013F
 needs = 1
 trigger = { use = 0x47002F29 }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "knights-tomb-prophet"
@@ -90,7 +90,7 @@ quest = 0x40000140
 needs = 1
 trigger = { use = 0x47002F23 }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "knights-back"
@@ -98,4 +98,4 @@ quest = 0x40000139
 needs = 2
 trigger = { use = 0x47002F1D }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "knights-back", confidence = "medium", note = "back to Tima Drokh once the six tombs are done" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: back to the giver once the six tombs are done", confidence = "medium" }

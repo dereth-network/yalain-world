@@ -1,40 +1,40 @@
-# Minauri's six tombs and the armor after them, from 2017's recordings; edit an authored pack instead.
+# The lords' six tombs, their giver's return and the armor quest after them, from 2017's recordings; edit an authored pack instead.
 
 [[quest]]
 id = 0x40000148
 id_name = "QuestFindTombLordsAleval"
 state = 0x6F0006F8
-prov = { from = "authored", by = "Dereth Network", note = "Lord Aleval's Tomb, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[quest]]
 id = 0x40000149
 id_name = "QuestFindTombLordsAurutis"
 state = 0x6F0006F9
-prov = { from = "authored", by = "Dereth Network", note = "Tomb of Aurutis, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[quest]]
 id = 0x4000014A
 id_name = "QuestFindTombLordsRalirea"
 state = 0x6F0006FA
-prov = { from = "authored", by = "Dereth Network", note = "Aun Ralirea's Tomb, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[quest]]
 id = 0x4000014B
 id_name = "QuestFindTombLordsShoyanen"
 state = 0x6F0006FB
-prov = { from = "authored", by = "Dereth Network", note = "Shoyanen's Tomb, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[quest]]
 id = 0x4000014C
 id_name = "QuestFindTombLordsTikauri"
 state = 0x6F0006FC
-prov = { from = "authored", by = "Dereth Network", note = "Aun Tikauri's Tomb, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[quest]]
 id = 0x4000014D
 id_name = "QuestFindTombLordsUlkas"
 state = 0x6F0006FD
-prov = { from = "authored", by = "Dereth Network", note = "Master Smith Ulkas' Tomb, a subquest of the family's first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "one of the family's six tombs, a subquest of its first phase; its definition the install's, a row so its step and its parent's phase can move it", confidence = "medium" }
 
 [[step]]
 key = "lords-given"
@@ -42,7 +42,7 @@ quest = 0x40000141
 needs = 0
 trigger = { use = 0x47002F2B }
 update = "bestow"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "lords-given", confidence = "medium", sample = { sessions = 2 } }
+prov = { from = "authored", by = "Dereth Network", note = "2017: the giver's use gives it (2 of 2 sessions)", confidence = "medium" }
 
 [[step]]
 key = "lords-tomb-aleval"
@@ -50,7 +50,7 @@ quest = 0x40000148
 needs = 1
 trigger = { use = 0x47002F2D }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "lords-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "lords-tomb-aurutis"
@@ -58,7 +58,7 @@ quest = 0x40000149
 needs = 1
 trigger = { use = 0x47002F2F }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "lords-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "lords-tomb-ralirea"
@@ -66,7 +66,7 @@ quest = 0x4000014A
 needs = 1
 trigger = { use = 0x47002F31 }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "lords-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "lords-tomb-shoyanen"
@@ -74,7 +74,7 @@ quest = 0x4000014B
 needs = 1
 trigger = { use = 0x47002F33 }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "lords-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "lords-tomb-tikauri"
@@ -82,7 +82,7 @@ quest = 0x4000014C
 needs = 1
 trigger = { use = 0x47002F35 }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "lords-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "lords-tomb-ulkas"
@@ -90,7 +90,7 @@ quest = 0x4000014D
 needs = 1
 trigger = { use = 0x47002F37 }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "lords-tombs", confidence = "medium", note = "each tomb used moves the family's quest at its first phase; the six done, it is at its second" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: each tomb used moves the family's quest at its first phase; the six done, it is at its second", confidence = "medium" }
 
 [[step]]
 key = "lords-back"
@@ -98,4 +98,4 @@ quest = 0x40000141
 needs = 2
 trigger = { use = 0x47002F2B }
 update = "complete"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-ARTEFON-TOMBS", ref = "lords-back", confidence = "medium", note = "back to Minauri once the six tombs are done" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: back to the giver once the six tombs are done", confidence = "medium" }

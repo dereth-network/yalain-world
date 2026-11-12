@@ -1,4 +1,4 @@
-# Journey to Zu, from Hero's walkthrough and the two factotums' own lines; edit an authored pack instead.
+# The factotum's errand to the far isle's factotum, from a player's guide of the time and the two factotums' own lines; edit an authored pack instead.
 
 [[step]]
 key = "zu-given"
@@ -16,7 +16,7 @@ trigger = { use = 0x47003343 }
 update = "advance"
 phase = 2
 tell = { table = 0x25002ABC, string = 0x4FA31B1C }
-prov = { from = "authored", by = "Dereth Network", note = "Hero and the journal: seek out the Factotum of Zu, then report back; his line for Kanten's checking on him", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "a player's guide and the journal: the far factotum sought out, then back; his line for being checked on", confidence = "low" }
 
 [[step]]
 key = "zu-back"
@@ -25,4 +25,4 @@ needs = 2
 trigger = { use = 0x47003346 }
 update = "complete"
 tell = { table = 0x25002ABE, string = 0x28AF023A }
-prov = { from = "authored", by = "Dereth Network", note = "Hero and the journal: back to Kanten; his line for Akkilea's news", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "a player's guide and the journal: back to the factotum; his line for the news", confidence = "low" }

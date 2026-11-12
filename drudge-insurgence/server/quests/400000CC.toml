@@ -1,4 +1,4 @@
-# Find the Warder Scout, from 2017's recordings and the wiki's walkthrough; edit an authored pack instead.
+# The corporal's errand to the scout, from 2017's recordings and the wiki's walkthrough; edit an authored pack instead.
 
 [[step]]
 key = "scout-given"
@@ -6,7 +6,7 @@ quest = 0x400000CC
 needs = 0
 trigger = { use = 0x47002FD0 }
 update = "bestow"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-OSTETH-DRUDGE-INSURGENCE", ref = "scout-given", confidence = "medium", sample = { sessions = 2 }, note = "the wiki: given by the corporal, the corporal's own errand need not be done first" }
+prov = { from = "authored", by = "Dereth Network", note = "2017: given at the corporal's use (2 sessions); the wiki: his own errand need not be done first", confidence = "medium" }
 
 [[step]]
 key = "scout-found"
@@ -15,4 +15,4 @@ needs = 1
 trigger = { use = 0x470033CC }
 update = "complete"
 tell = { table = 0x25002AFB, string = 0x2AE6122C }
-prov = { from = "capture", evidence = "AC2-EVID-WDB-OSTETH-DRUDGE-INSURGENCE", ref = "scout-found", confidence = "medium", sample = { sessions = 2 } }
+prov = { from = "authored", by = "Dereth Network", note = "2017: ended at the scout's use, with his line (2 sessions)", confidence = "medium" }
