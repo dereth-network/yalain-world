@@ -1,0 +1,12 @@
+# The temple's steps of this quest, from the wiki's walkthrough, AC2 Hero's steps and the install's own lines; edit an authored pack instead.
+
+[[step]]
+key = "roots-way-in"
+quest = 0x80000327
+needs = 0
+trigger = { use = 0x47002FE1 }
+update = "none"
+tell = { table = 0x2500292D, string = 0x202EC234 }
+requires = [{ quest = 0x80000327, done = true }]
+to = "roots-landing"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once the search is done, the standing stone portals the player into the temple; its own line of the pull underground", confidence = "low" }

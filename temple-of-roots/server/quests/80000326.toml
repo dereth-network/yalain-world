@@ -1,0 +1,20 @@
+# The temple's steps of this quest, from the wiki's walkthrough, AC2 Hero's steps and the install's own lines; edit an authored pack instead.
+
+[[step]]
+key = "roots-shrine-touched"
+quest = 0x80000326
+needs = 1
+trigger = { use = 0x47002FE5 }
+update = "advance"
+phase = 2
+tell = { table = 0x2500292F, string = 0xAD4C65EA }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and AC2 Hero: the shrine found and touched, then back to the chieftain; the shrine's own line", confidence = "low" }
+
+[[step]]
+key = "w-end"
+quest = 0x80000326
+needs = 2
+trigger = { use = 0x47002FDF }
+update = "complete"
+tell = { table = 0x2500292C, string = 0x18FD99EB }
+prov = { from = "authored", by = "Dereth Network", note = "the chieftain ends it (the journal); his line on the shrine found", confidence = "low" }

@@ -1,0 +1,11 @@
+# The temple's steps of this quest, from the wiki's walkthrough, AC2 Hero's steps and the install's own lines; edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x80000325
+needs = 0
+trigger = { use = 0x47002FE8 }
+update = "bestow"
+tell = { table = 0x25002931, string = 0x49ED4911 }
+requires = [{ quest = 0x80000326, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: given by Keranua once the temple's exploration is done; his line on the Burun in the temple", confidence = "low" }

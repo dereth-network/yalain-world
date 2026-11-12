@@ -1,0 +1,67 @@
+# The temple's steps of this quest, from the wiki's walkthrough, AC2 Hero's steps and the install's own lines; edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x80000322
+needs = 0
+trigger = { use = 0x47002FEB }
+update = "bestow"
+tell = { table = 0x25002933, string = 0x8B29241B }
+gives = [0x470014C4]
+requires = [{ quest = 0x80000323, done = true }]
+effects = [0x6F001C48]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: given once the depths' quest is done, with the vial; her line of the vial and its enchantment, which the install has", confidence = "low" }
+
+[[step]]
+key = "roots-essence"
+quest = 0x80000322
+needs = 2
+trigger = { give = 0x470014C4, to = 0x47002FEB }
+update = "advance"
+phase = 3
+tell = { table = 0x25002933, string = 0x388ED5E3 }
+gives = [0x470014C3]
+takes = [0x470014C4]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and AC2 Hero: the full vial handed to the shaman gives the fetish; her line handing it over", confidence = "low" }
+
+[[step]]
+key = "roots-fetish"
+quest = 0x80000322
+needs = 3
+trigger = { give = 0x470014C3, to = 0x47002FE3 }
+update = "complete"
+takes = [0x470014C3]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the fetish given to the chained spawn ends it (a give sends no one: the spawn, used once it is done, does)", confidence = "low" }
+
+[[step]]
+key = "roots-fetish-used"
+quest = 0x80000322
+needs = 3
+trigger = { use = 0x470014C3, on = 0x47002FE3 }
+update = "complete"
+tell = { table = 0x2500292E, string = 0xA06C61F7 }
+takes = [0x470014C3]
+to = "roots-depths-landing"
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time: the fetish used on the chained spawn, the player is dragged underground; the spawn's own line of sinking into the ground", confidence = "low" }
+
+[[step]]
+key = "roots-way-down"
+quest = 0x80000322
+needs = 0
+trigger = { use = 0x47002FE3 }
+update = "none"
+tell = { table = 0x2500292E, string = 0xA06C61F7 }
+requires = [{ quest = 0x80000322, done = true }]
+to = "roots-depths-landing"
+prov = { from = "authored", by = "Dereth Network", note = "once the fetish is given, the chained spawn takes the player down to the depths again, with its own line of sinking into the ground", confidence = "low" }
+
+[[step]]
+key = "roots-way-up"
+quest = 0x80000322
+needs = 0
+trigger = { use = 0x47002FE4 }
+update = "none"
+tell = { table = 0x2500292E, string = 0x5D020FCF }
+requires = [{ quest = 0x80000322, done = true }]
+to = "roots-from-depths"
+prov = { from = "authored", by = "Dereth Network", note = "the second chained spawn's own line carries the player up to the ceiling: back to the temple", confidence = "low" }

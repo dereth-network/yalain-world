@@ -1,0 +1,27 @@
+# The temple's steps of this quest, from the wiki's walkthrough, AC2 Hero's steps and the install's own lines; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000357
+id_name = "QuestAlienParasiteReward"
+state = 0x6F0008A0
+prov = { from = "dat", record = 0x6F0008A0 }
+
+[[step]]
+key = "roots-burl"
+quest = 0x80000357
+needs = 1
+trigger = { use = 0x47002FE6 }
+update = "complete"
+tell = { table = 0x25002930, string = 0x44E3C846 }
+gives = [0x47000610]
+prov = { from = "authored", by = "Dereth Network", note = "AC2 Hero: the root behind the tentacle used gives the burl; the root's own line of the nodule", confidence = "low" }
+
+[[step]]
+key = "roots-thanks"
+quest = 0x80000357
+needs = 0
+trigger = { use = 0x47002FE6 }
+update = "none"
+tell = { table = 0x25002930, string = 0x84E3C846 }
+requires = [{ quest = 0x80000357, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the root's own line once it is freed", confidence = "low" }

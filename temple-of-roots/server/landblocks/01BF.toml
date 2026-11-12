@@ -1,0 +1,67 @@
+# The temple: its way out, the chained spawn, the shrine, the Burun and the spawn; edit an authored pack instead.
+
+[[object]]
+key = "roots-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x01BF0117
+at = [-0.70, 106.50, -58.10]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "hakata-errands:menhir-hill"
+prov = { from = "authored", by = "Dereth Network", note = "no source names a way out (the wiki marks the temple recallable): a portal back to the standing stone's hill, 2 m from the landing", confidence = "low" }
+
+[[object]]
+key = "roots-chained-spawn"
+kind = "npc"
+template = 0x47002FE3
+cell = 0x01BF0144
+at = [-65.84, 168.86, -51.80]
+prov = { from = "authored", by = "Dereth Network", note = "past the Burun halls on the right, in a room of the lesser spawn (the wiki: take a right at the start and pass through the large Burun rooms)", confidence = "low" }
+
+[[object]]
+key = "roots-shrine"
+kind = "npc"
+template = 0x47002FE5
+cell = 0x01BF015A
+at = [73.79, 114.20, -58.50]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: take all lefts from the start: the far end of the east passages, where every left turn from the landing leads", confidence = "low" }
+
+[[camp]]
+key = "roots-marauders-north"
+cell = 0x01BF0130
+at = [-156.12, 166.09, -58.90]
+spots = [{ cell = 0x01BF0130, at = [-156.12, 166.09, -58.90] }, { cell = 0x01BF0130, at = [-155.62, 171.24, -59.10] }, { cell = 0x01BF0130, at = [-154.28, 160.04, -59.20] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x47002279, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the large Burun rooms on the right side (the wiki): the north hall west of the great hall", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "roots-marauders-south"
+cell = 0x01BF0131
+at = [-155.89, 132.48, -59.30]
+spots = [{ cell = 0x01BF0131, at = [-155.89, 132.48, -59.30] }, { cell = 0x01BF0131, at = [-154.38, 138.14, -59.20] }, { cell = 0x01BF0131, at = [-155.59, 127.70, -59.10] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x47002279, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the large Burun rooms on the right side (the wiki): the south hall west of the great hall", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "roots-rehir"
+cell = 0x01BF012D
+at = [-130.77, 169.10, -59.40]
+spots = [{ cell = 0x01BF012D, at = [-130.77, 169.10, -59.40] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470022A1, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the marauders' leader, whose death the quest also wants (its two subquests): between the two Burun halls", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "roots-slave-spawn"
+cell = 0x01BF0144
+at = [-63.01, 171.69, -51.00]
+spots = [{ cell = 0x01BF0145, at = [-51.70, 185.27, -50.30] }, { cell = 0x01BF0146, at = [-51.94, 154.96, -50.30] }, { cell = 0x01BF0132, at = [-89.01, 168.86, -57.80] }, { cell = 0x01BF0144, at = [-63.01, 171.69, -51.00] }]
+population = 6
+regen = 192.0
+spawns = [{ template = 0x47002BC6, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the lesser spawn surrounding the chained spawn (the wiki); twelve kills fill the vial", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

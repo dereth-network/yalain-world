@@ -1,0 +1,32 @@
+# The temple's steps of this quest, from the wiki's walkthrough, AC2 Hero's steps and the install's own lines; edit an authored pack instead.
+
+[[step]]
+key = "w-given"
+quest = 0x80000323
+needs = 0
+trigger = { use = 0x47002FEB }
+update = "bestow"
+tell = { table = 0x25002933, string = 0xE34C7BB2 }
+requires = [{ quest = 0x80000326, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: given by the shaman once the temple's exploration is done; her line on the spawn", confidence = "low" }
+
+[[step]]
+key = "roots-spore"
+quest = 0x80000323
+needs = 1
+trigger = { use = 0x47002FE3 }
+update = "advance"
+phase = 2
+tell = { table = 0x2500292E, string = 0x4BC4E899 }
+gives = [0x470014C5]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and AC2 Hero: the chained spawn used gives the spore; its own line of the glowing motes", confidence = "low" }
+
+[[step]]
+key = "w-end"
+quest = 0x80000323
+needs = 2
+trigger = { give = 0x470014C5, to = 0x47002FEB }
+update = "complete"
+tell = { table = 0x25002933, string = 0x11367F9C }
+takes = [0x470014C5]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the spore handed to the shaman ends it; her line on the spore", confidence = "low" }

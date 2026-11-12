@@ -39,6 +39,7 @@
 - The Dominion's course for neonates can now be run to its end. New pack `dominion-training/`.
 - The two Gurog leaders' slaying quests can now be finished. New pack `malthabbor-gurog/`.
 - The Olvidan farm's herd and well pump quests can now be finished. New pack `olvidan-farm/`.
+- The temple under the standing stone east of Hakata can now be entered, and its quests done. New pack `temple-of-roots/`.
 
 ## v0.36.0
 

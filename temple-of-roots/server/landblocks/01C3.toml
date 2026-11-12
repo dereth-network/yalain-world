@@ -1,0 +1,37 @@
+# The depths: the spawn that carries players back up, the tentacle, its guards and the root; edit an authored pack instead.
+
+[[object]]
+key = "depths-chained-spawn"
+kind = "npc"
+template = 0x47002FE4
+cell = 0x01C30126
+at = [117.30, -76.47, -62.50]
+prov = { from = "authored", by = "Dereth Network", note = "the second chained spawn, whose line carries the player up to the ceiling: beside the depths' landing", confidence = "low" }
+
+[[object]]
+key = "depths-deru-root"
+kind = "npc"
+template = 0x47002FE6
+cell = 0x01C30121
+at = [97.43, -305.51, -64.00]
+prov = { from = "authored", by = "Dereth Network", note = "the root behind the tentacle from the way in (AC2 Hero): the south end of the depths' great hall, the one room its 46 m spread fits", confidence = "low" }
+
+[[camp]]
+key = "depths-tentacle"
+cell = 0x01C30120
+at = [97.43, -271.51, -64.00]
+spots = [{ cell = 0x01C30120, at = [97.43, -271.51, -64.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002BA5, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the tentacle by the root (the quest's description), between it and the way in, in the depths' great hall", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "depths-slave-spawn"
+cell = 0x01C30120
+at = [85.92, -261.65, -64.00]
+spots = [{ cell = 0x01C30120, at = [85.92, -261.65, -64.00] }, { cell = 0x01C30120, at = [109.70, -261.52, -64.00] }, { cell = 0x01C3011F, at = [97.43, -221.51, -64.00] }, { cell = 0x01C30121, at = [85.92, -291.65, -64.00] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x47002BC6, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the lesser spawn guarding the tentacle (AC2 Hero)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

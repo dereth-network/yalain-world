@@ -1,0 +1,45 @@
+# The shaman's reminders for the temple's quests, from her own table; edit an authored pack instead.
+
+[[talk]]
+key = "roots-depths-remind"
+who = 0x47002FEB
+line = { table = 0x25002933, string = 0x332E881A }
+how = "tell"
+when = "use"
+role = "remind"
+quest = 0x80000323
+phase = 1
+prov = { from = "authored", by = "Dereth Network", note = "her line sending the player to seek the spawn's power", confidence = "low" }
+
+[[talk]]
+key = "roots-essence-remind"
+who = 0x47002FEB
+line = { table = 0x25002933, string = 0xA53E5E4D }
+how = "tell"
+when = "use"
+role = "remind"
+quest = 0x80000322
+phase = 1
+prov = { from = "authored", by = "Dereth Network", note = "her line asking for all twelve samples", confidence = "low" }
+
+[[talk]]
+key = "roots-vial-remind"
+who = 0x47002FEB
+line = { table = 0x25002933, string = 0xA53E5E41 }
+how = "tell"
+when = "use"
+role = "remind"
+quest = 0x80000322
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "her line asking for the vial", confidence = "low" }
+
+[[talk]]
+key = "roots-fetish-remind"
+who = 0x47002FEB
+line = { table = 0x25002933, string = 0xA53E5E45 }
+how = "tell"
+when = "use"
+role = "remind"
+quest = 0x80000322
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "her line naming the fetish's use", confidence = "low" }
