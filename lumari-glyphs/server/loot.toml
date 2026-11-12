@@ -1,0 +1,19 @@
+# The isles' glyph droppers leave their vault's glyph, as the other vaults' droppers do; edit an authored pack instead.
+
+[[loot]]
+profile = 734
+profile_name = "GP_SpawnIdolLumari_GlyphDropperHoard"
+counts = [0, 1, 0, 0, 0]
+draws = [{ pool = "GP_Weapons", weight = 440.1 }, { pool = "GP_Armor", weight = 278.8 }, { pool = "GP_Shields", weight = 92.6 }, { pool = "GP_PotionsMagic", weight = 32.9 }, { pool = "GP_Jewelry", weight = 29 }, { pool = "GP_MusicalInstruments", weight = 19.9 }, { pool = "GP_GemsSmall", weight = 6.8, most = 32 }, { pool = "GP_LesserTrumps", weight = 4.5, least = 15 }, { pool = "GP_GemsMedium", weight = 2.8, least = 33, most = 49 }, { pool = "GP_GemsLarge", weight = 0.6, least = 50 }, { pool = "GP_GreaterTrumps", weight = 0.6, least = 51 }]
+extras = [{ template = 0x470010B6, chance = 0.1 }]
+rare = { pool = "GP_TrophyRares", chance = 0.0013 }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:2de", confidence = "low", sample = { corpses = 1 }, fields = { extras = { from = "authored", by = "Dereth Network", note = "the vault's glyph, which no recorded corpse held: the least chance a recorded glyph dropper gives its glyph (0.1)", confidence = "low" }, draws = { from = "authored", by = "Dereth Network", note = "fewer than 20 of its recorded items were pool items: its region class's 2017 mix of pools, as the pools' own rows, less the miscellaneous items, which are its extras", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "a rare at the rate 2017 recorded, as the pools' own rows roll", confidence = "low" } } }
+
+[[loot]]
+profile = 736
+profile_name = "GP_SpawnSurrogateLumari_GlyphDropperHoard"
+counts = [0.0582, 0.6375, 0.2542, 0.037, 0.0091, 0.0039]
+draws = [{ pool = "GP_Weapons", weight = 440.1 }, { pool = "GP_Armor", weight = 278.8 }, { pool = "GP_Shields", weight = 92.6 }, { pool = "GP_MiscellaneousItems", weight = 91.4 }, { pool = "GP_PotionsMagic", weight = 32.9 }, { pool = "GP_Jewelry", weight = 29 }, { pool = "GP_MusicalInstruments", weight = 19.9 }, { pool = "GP_GemsSmall", weight = 6.8, most = 32 }, { pool = "GP_LesserTrumps", weight = 4.5, least = 15 }, { pool = "GP_GemsMedium", weight = 2.8, least = 33, most = 49 }, { pool = "GP_GemsLarge", weight = 0.6, least = 50 }, { pool = "GP_GreaterTrumps", weight = 0.6, least = 51 }]
+extras = [{ template = 0x470010B6, chance = 0.1 }]
+rare = { pool = "GP_TrophyRares", chance = 0.0013 }
+prov = { from = "authored", by = "Dereth Network", note = "no corpse of it was recorded: the 2017 treasure mix of its region class, its count by its bounds as recorded creatures of them, a rare at the recorded rate", confidence = "low", fields = { extras = { from = "authored", by = "Dereth Network", note = "the vault's glyph, which no recorded corpse held: the least chance a recorded glyph dropper gives its glyph (0.1)", confidence = "low" } } }
