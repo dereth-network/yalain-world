@@ -1,0 +1,215 @@
+# The loft's inner half: its rifts room to room, its ways out, the bosses and their kind; edit an authored pack
+# instead.
+
+[[object]]
+key = "rift-0105"
+kind = "static"
+id = 0x40037D0000000001
+template = 0x47001154
+cell = 0x037D0105
+at = [-23.68, 31.61, 3.20]
+name = { table = 0x25001B44, string = 0xDF6D7E5D }
+to = "loft-riftb6"
+prov = { from = "authored", by = "Dereth Network", note = "the install's rift marker in the loft's room 7, leading on to its room 8 as the wiki orders them", confidence = "low" }
+
+[[object]]
+key = "rift-0118"
+kind = "static"
+template = 0x47001154
+cell = 0x037D0118
+at = [128.69, 190.50, 13.03]
+name = { table = 0x25001B44, string = 0xDF6D7E5D }
+to = "loft-riftb4"
+prov = { from = "authored", by = "Dereth Network", note = "the install's rift marker in the loft's room 6, leading on to its corridor 7 as the wiki orders them", confidence = "low" }
+
+[[object]]
+key = "way-out-0135"
+kind = "static"
+template = 0x47001154
+cell = 0x037D0135
+at = [35.49, -99.97, -8.50]
+name = { table = 0x25001B44, string = 0x45EBC30D }
+to = "loft-exit"
+prov = { from = "authored", by = "Dereth Network", note = "the loft's way out to the land, at the install's rift marker in its room 8", confidence = "low" }
+
+[[object]]
+key = "rift-0165"
+kind = "static"
+template = 0x47001154
+cell = 0x037D0165
+at = [309.56, 399.56, 22.94]
+name = { table = 0x25001B44, string = 0xDF6D7E5D }
+to = "loft-riftb2"
+prov = { from = "authored", by = "Dereth Network", note = "the install's rift marker in the loft's room 5, leading on to its corridor 6 as the wiki orders them", confidence = "low" }
+
+[[object]]
+key = "way-out-016b"
+kind = "static"
+template = 0x47001154
+cell = 0x037D016B
+at = [203.42, 602.93, 23.95]
+name = { table = 0x25001B44, string = 0x45EBC30D }
+to = "loft-exit"
+prov = { from = "authored", by = "Dereth Network", note = "the loft's way out to the land, at the install's rift marker in its corridor 5", confidence = "low" }
+
+[[object]]
+key = "rift-0209"
+kind = "static"
+template = 0x47001154
+cell = 0x037D0209
+at = [183.70, 602.10, 24.02]
+name = { table = 0x25001B44, string = 0xDF6D7E5D }
+to = "loft-riftb1"
+prov = { from = "authored", by = "Dereth Network", note = "the install's rift marker in the loft's corridor 5, leading on to its room 5 as the wiki orders them", confidence = "low" }
+
+[[object]]
+key = "rift-0228"
+kind = "static"
+template = 0x47001154
+cell = 0x037D0228
+at = [220.60, 301.46, 14.15]
+name = { table = 0x25001B44, string = 0xDF6D7E5D }
+to = "loft-riftb3"
+prov = { from = "authored", by = "Dereth Network", note = "the install's rift marker in the loft's corridor 6, leading on to its room 6 as the wiki orders them", confidence = "low" }
+
+[[object]]
+key = "rift-022a"
+kind = "static"
+template = 0x47001154
+cell = 0x037D022A
+at = [76.40, 78.79, -0.64]
+name = { table = 0x25001B44, string = 0xDF6D7E5D }
+to = "loft-riftb5"
+prov = { from = "authored", by = "Dereth Network", note = "the install's rift marker in the loft's corridor 7, leading on to its room 7 as the wiki orders them", confidence = "low" }
+
+[[camp]]
+key = "boss-paragos"
+cell = 0x037D015E
+at = [222.27, 479.42, 22.20]
+radius = 0.0
+spots = [{ cell = 0x037D015E, at = [222.27, 479.42, 22.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C5A, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the boss of the loft's room 5, alone at its middle, as the wiki's room table has it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "riftb1-hatchlings"
+cell = 0x037D020A
+at = [251.49, 452.21, 22.30]
+radius = 0.0
+spots = [{ cell = 0x037D020A, at = [251.49, 452.21, 22.30] }, { cell = 0x037D0169, at = [201.99, 513.70, 22.80] }, { cell = 0x037D016D, at = [187.99, 482.04, 23.30] }, { cell = 0x037D015E, at = [215.02, 454.98, 23.30] }, { cell = 0x037D0168, at = [246.02, 475.16, 23.20] }, { cell = 0x037D0169, at = [219.46, 500.69, 23.30] }, { cell = 0x037D015E, at = [233.83, 459.86, 22.80] }, { cell = 0x037D016D, at = [204.13, 471.56, 22.80] }]
+population = 8
+regen = 192.0
+spawns = [{ template = 0x47002C59, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the loft's room 5's hatchlings, as many as the wiki's room table counts, spread across it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "riftb2-hatchlings"
+cell = 0x037D015B
+at = [194.57, 394.15, 18.90]
+radius = 0.0
+spots = [{ cell = 0x037D015B, at = [194.57, 394.15, 18.90] }, { cell = 0x037D0157, at = [223.94, 309.67, 14.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C59, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the loft's corridor 6's hatchlings, as many as the wiki's room table counts, spread across it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "boss-dirlok"
+cell = 0x037D011D
+at = [151.38, 259.38, 12.00]
+radius = 0.0
+spots = [{ cell = 0x037D011D, at = [151.38, 259.38, 12.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C54, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the boss of the loft's room 6, alone at its middle, as the wiki's room table has it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "riftb3-hatchlings"
+cell = 0x037D011E
+at = [151.38, 219.38, 12.00]
+radius = 0.0
+spots = [{ cell = 0x037D011E, at = [151.38, 219.38, 12.00] }, { cell = 0x037D011C, at = [132.79, 294.79, 12.00] }, { cell = 0x037D020B, at = [178.25, 288.93, 12.50] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002C59, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the loft's room 6's hatchlings, as many as the wiki's room table counts, spread across it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "riftb3-guardians"
+cell = 0x037D011C
+at = [151.38, 279.38, 12.00]
+radius = 0.0
+spots = [{ cell = 0x037D011C, at = [151.38, 279.38, 12.00] }, { cell = 0x037D011D, at = [151.38, 239.38, 12.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C58, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the loft's room 6's guardians, as many as the wiki's room table counts, spread across it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "riftb4-hatchlings"
+cell = 0x037D010F
+at = [71.97, 199.63, 13.80]
+radius = 0.0
+spots = [{ cell = 0x037D010F, at = [71.97, 199.63, 13.80] }, { cell = 0x037D0108, at = [67.04, 84.56, 0.10] }, { cell = 0x037D0111, at = [17.46, 130.09, 13.90] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002C59, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the loft's corridor 7's hatchlings, as many as the wiki's room table counts, spread across it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "boss-gan"
+cell = 0x037D0103
+at = [39.79, 25.69, 2.20]
+radius = 0.0
+spots = [{ cell = 0x037D0103, at = [39.79, 25.69, 2.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C56, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the boss of the loft's room 7, alone at its middle, as the wiki's room table has it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "riftb5-hatchlings"
+cell = 0x037D0104
+at = [-0.21, 25.69, 2.20]
+radius = 0.0
+spots = [{ cell = 0x037D0104, at = [-0.21, 25.69, 2.20] }, { cell = 0x037D0107, at = [79.45, 22.86, 2.20] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C59, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the loft's room 7's hatchlings, as many as the wiki's room table counts, spread across it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "riftb5-protectors"
+cell = 0x037D0103
+at = [59.79, 25.69, 2.00]
+radius = 0.0
+spots = [{ cell = 0x037D0103, at = [59.79, 25.69, 2.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C5E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the loft's room 7's protectors, as many as the wiki's room table counts, spread across it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "boss-deimos"
+cell = 0x037D013D
+at = [0.31, -97.03, -9.00]
+radius = 0.0
+spots = [{ cell = 0x037D013D, at = [0.31, -97.03, -9.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C51, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the boss of the loft's room 8, alone at its middle, as the wiki's room table has it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "riftb6-protectors"
+cell = 0x037D013B
+at = [0.31, -77.03, -9.00]
+radius = 0.0
+spots = [{ cell = 0x037D013B, at = [0.31, -77.03, -9.00] }, { cell = 0x037D013F, at = [0.31, -117.03, -9.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C5E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the loft's room 8's protectors, as many as the wiki's room table counts, spread across it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

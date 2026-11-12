@@ -1,0 +1,10 @@
+# The last room's quest, given on arriving there (the wiki), ended by its boss's fall and its scale taken (the
+# install); edit an authored pack instead.
+
+[[step]]
+key = "deimos-arrival"
+quest = 0x4000018C
+needs = 0
+trigger = { arrive = 0x47001154, from = 0x40037D0000000001 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the quest begins on entering the last room, through the rift that leads there", confidence = "low" }

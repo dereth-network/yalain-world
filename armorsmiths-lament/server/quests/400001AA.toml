@@ -1,0 +1,58 @@
+# The master armorsmith's own quest, as its journal and the wiki tell it: given by him to a player on no apprentice's
+# quest, moved on by the lair's boss's fall (which gives the hidden marker of her kill), the helm's recipe for the
+# player's race at the return; the helm made ends it (the install). Edit an authored pack instead.
+
+[[step]]
+key = "d-1"
+quest = 0x400001AA
+needs = 0
+trigger = { use = 0x47002F08 }
+update = "bestow"
+requires = [{ quest = 0x40000136, phase = 0 }, { quest = 0x40000137, phase = 0 }, { quest = 0x40000138, phase = 0 }]
+races = [1, 2, 4]
+prov = { from = "authored", by = "Dereth Network", note = "his use gives it (2017, one giving); the wiki: not to a player on an apprentice's quest; only these races have a recipe for it", confidence = "low" }
+
+[[step]]
+key = "d-2"
+quest = 0x400001AA
+needs = 1
+trigger = { given = 0x400001AB }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the quest moves on as she falls; her fall gives the marker (the install), which moves it", confidence = "low" }
+
+[[step]]
+key = "d-3-1"
+quest = 0x400001AA
+needs = 2
+trigger = { use = 0x47002F08 }
+tell = { table = 0x250028C0, string = 0x28247C8C }
+update = "advance"
+phase = 3
+effects = [0x6F001AAE]
+races = [1]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: back to him for the helm's recipe; the recipe by the race its helm is for; his line the one his table names for the helm", confidence = "low" }
+
+[[step]]
+key = "d-3-2"
+quest = 0x400001AA
+needs = 2
+trigger = { use = 0x47002F08 }
+tell = { table = 0x250028C0, string = 0x28247C8C }
+update = "advance"
+phase = 3
+effects = [0x6F001AAF]
+races = [2]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: back to him for the helm's recipe; the recipe by the race its helm is for; his line the one his table names for the helm", confidence = "low" }
+
+[[step]]
+key = "d-3-4"
+quest = 0x400001AA
+needs = 2
+trigger = { use = 0x47002F08 }
+tell = { table = 0x250028C0, string = 0x28247C8C }
+update = "advance"
+phase = 3
+effects = [0x6F001AB0]
+races = [4]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: back to him for the helm's recipe; the recipe by the race its helm is for; his line the one his table names for the helm", confidence = "low" }

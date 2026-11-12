@@ -1,0 +1,10 @@
+# The hidden marker of the lair's boss's kill: given by her fall (the install), read and ended by the master armorsmith;
+# edit an authored pack instead.
+
+[[step]]
+key = "k-1"
+quest = 0x400001AB
+needs = 1
+trigger = { use = 0x47002F08 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the marker ends where the quest that reads it returns; no recording shows it", confidence = "low" }

@@ -54,6 +54,9 @@
 - The festival guard's reward after the third trounce can now be claimed. New pack `drudgerton-errands/`.
 - A mad sage's cure in Linvak's redoubt can now be finished, and his captain told. New pack `rustwater-redoubt/`.
 - The reliquary's inner sanctum now holds its weapons, and the white altar upgrades them. New pack `golden-age-relics/`.
+- The tyrants' dungeon east of Gevoth can be walked room to room, its bosses leaving their scales. New pack `tyrants-loft/`.
+- The tyrant lair on the egg-shaped Vesayan island has its portal, rooms and boss. New pack `silvas-lair/`.
+- The apprentices give their trophy back, and their father's helm quest can now be done. Pack `armorsmiths-lament/`.
 
 ## v0.36.0
 

@@ -1,0 +1,129 @@
+# The lair: its rifts, its ways out, its boss and her guards; edit an authored pack instead.
+
+[[object]]
+key = "lair-rift-in"
+kind = "static"
+template = 0x47001154
+cell = 0x03EB014F
+at = [24.58, -218.84, -22.68]
+name = { table = 0x25001B44, string = 0xCCC9A007 }
+to = "lair-inside"
+prov = { from = "authored", by = "Dereth Network", note = "the install's rift marker north-east of the lower round room, the wiki's rift into the boss's room", confidence = "low" }
+
+[[object]]
+key = "lair-rift-out"
+kind = "static"
+template = 0x47001154
+cell = 0x03EB0151
+at = [85.16, -209.37, 1.27]
+name = { table = 0x25001B44, string = 0x41F4A328 }
+to = "lair-inside-exit"
+prov = { from = "authored", by = "Dereth Network", note = "the install's rift marker in the boss's room's corner, back beside the rift that led in", confidence = "low" }
+
+[[object]]
+key = "lair-way-out-0176"
+kind = "static"
+template = 0x47001154
+cell = 0x03EB0176
+at = [-16.39, 114.02, 3.12]
+name = { table = 0x25001B44, string = 0x45EBC30D }
+to = "lair-exit"
+prov = { from = "authored", by = "Dereth Network", note = "the install's rift marker beside the landing: a way out to the land", confidence = "low" }
+
+[[object]]
+key = "lair-way-out-0111"
+kind = "static"
+template = 0x47001154
+cell = 0x03EB0111
+at = [99.85, -12.62, 18.09]
+name = { table = 0x25001B44, string = 0x45EBC30D }
+to = "lair-exit"
+prov = { from = "authored", by = "Dereth Network", note = "the install's rift marker at the maze's eastern arm: a way out to the land", confidence = "low" }
+
+[[camp]]
+key = "boss-silva"
+cell = 0x03EB0159
+at = [171.63, -184.37, 0.00]
+radius = 0.0
+spots = [{ cell = 0x03EB0159, at = [171.63, -184.37, 0.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C61, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the lair's boss, alone at her room's middle (the wiki: the rift leads into her room)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "room-guardians"
+cell = 0x03EB0153
+at = [141.63, -184.37, 0.00]
+radius = 0.0
+spots = [{ cell = 0x03EB0153, at = [141.63, -184.37, 0.00] }, { cell = 0x03EB0159, at = [201.63, -184.37, 0.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C58, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the two guardians the wiki names in her room", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "room-hatchlings"
+cell = 0x03EB0154
+at = [127.29, -192.02, 0.00]
+radius = 0.0
+spots = [{ cell = 0x03EB0154, at = [127.29, -192.02, 0.00] }, { cell = 0x03EB0156, at = [204.66, -153.87, 0.50] }, { cell = 0x03EB0158, at = [208.85, -209.58, -0.00] }, { cell = 0x03EB0173, at = [146.39, -147.56, 0.80] }]
+population = 4
+regen = 192.0
+spawns = [{ template = 0x47002C59, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the young the wiki says to kill first in her room; how many is a guess", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "upper-round-room-guardian"
+cell = 0x03EB0122
+at = [-57.42, -135.13, -20.00]
+radius = 0.0
+spots = [{ cell = 0x03EB0122, at = [-57.42, -135.13, -20.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C58, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the guardian the wiki names in this round room", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "lower-round-room-guardian"
+cell = 0x03EB0141
+at = [-58.40, -256.14, -30.00]
+radius = 0.0
+spots = [{ cell = 0x03EB0141, at = [-58.40, -256.14, -30.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002C58, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the guardian the wiki names in this round room", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "maze-hatchlings-1"
+cell = 0x03EB0101
+at = [-55.52, 37.20, 10.20]
+radius = 0.0
+spots = [{ cell = 0x03EB0101, at = [-55.52, 37.20, 10.20] }, { cell = 0x03EB0101, at = [-35.63, 25.93, 10.90] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C59, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the young the wiki's walk fights through on the way down; where and how many is a guess", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "maze-hatchlings-2"
+cell = 0x03EB010D
+at = [47.24, 6.60, 4.00]
+radius = 0.0
+spots = [{ cell = 0x03EB010D, at = [47.24, 6.60, 4.00] }, { cell = 0x03EB010F, at = [48.66, 15.89, 3.40] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C59, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the young the wiki's walk fights through on the way down; where and how many is a guess", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "maze-hatchlings-3"
+cell = 0x03EB011C
+at = [-15.59, -75.19, -13.90]
+radius = 0.0
+spots = [{ cell = 0x03EB011C, at = [-15.59, -75.19, -13.90] }, { cell = 0x03EB011C, at = [-8.11, -71.41, -13.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002C59, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the young the wiki's walk fights through on the way down; where and how many is a guess", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
