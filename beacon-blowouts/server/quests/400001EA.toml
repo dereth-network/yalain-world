@@ -1,0 +1,11 @@
+# The imbue that lets the beacon be destroyed, from the quest's journal and the imbuer's lines; edit an authored pack instead.
+
+[[step]]
+key = "imbue"
+quest = 0x400001EA
+needs = 1
+trigger = { give_class = 0x1049, to = 0x470031FD }
+update = "advance"
+phase = 2
+tell = { table = 0x25002A44, string = 0x39CB1594 }
+prov = { from = "authored", by = "Dereth Network", note = "the journal: phase 2 is the weapon imbued; the imbuer's lines: give any weapon, handed back with the spell on it; a player's guide names this imbuer for the Gurog outposts; no recording", confidence = "low" }
