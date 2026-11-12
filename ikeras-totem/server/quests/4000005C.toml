@@ -1,0 +1,41 @@
+# A town totem's quest for its lost gem; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000005C
+id_name = "QuestBrokenTotemReturn"
+state = 0x6F000751
+challenge = 25
+duration = 7200
+cancellable = true
+retry = 158400
+min_level = 20
+fails_on_death = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:02755e41", confidence = "low", sample = { sessions = 1 }, fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000751 }, retry = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-WAITS-2017", ref = "c:d481420e", confidence = "medium", sample = { sessions = 5 } }, min_level = { from = "authored", by = "Dereth Network", note = "the install's own list of the land's quests names the totem's from level 20", confidence = "low" }, fails_on_death = { from = "authored", by = "Dereth Network", note = "the totem's own offer says the task fails if its player dies, and the journal asks it done without dying", confidence = "medium" } } }
+
+[[step]]
+key = "totem-given"
+quest = 0x4000005C
+needs = 0
+trigger = { use = 0x47002F42 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "2017 recorded the totem's use giving it, its offer the line its talk row says with the giving (1 session); its companion for the bearer's fellows left out", confidence = "medium" }
+
+[[step]]
+key = "emerald-taken"
+quest = 0x4000005C
+needs = 1
+trigger = { take = 0x47000605 }
+update = "advance"
+phase = 2
+effects = [0x6F001A47]
+prov = { from = "authored", by = "Dereth Network", note = "the emerald, which only a player on this quest may take; with its burden, which a guide says slows its bearer, lasting as long as the quest; no recording", confidence = "low" }
+
+[[step]]
+key = "emerald-returned"
+quest = 0x4000005C
+needs = 2
+trigger = { give = 0x47000605, to = 0x47002F42 }
+update = "complete"
+takes = [0x47000605]
+effects = [0x6F001A46, 0x6F001A48]
+prov = { from = "authored", by = "Dereth Network", note = "the journal: the emerald returned to the totem; the install's quest effects lift the burden and give the totem's blessing; no recording", confidence = "low" }

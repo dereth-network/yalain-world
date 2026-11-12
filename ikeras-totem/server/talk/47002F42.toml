@@ -1,0 +1,32 @@
+# A town totem's quest for its lost gem; edit an authored pack instead.
+
+[[talk]]
+key = "t-2f42-c2bfb14d"
+who = 0x47002F42
+line = { table = 0x250013AD, string = 0xC2BFB14D }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x4000005C
+phase = 1
+prov = { from = "authored", by = "Dereth Network", note = "the totem's line asking for the emerald, said with it not yet found; no recording", confidence = "low" }
+
+[[talk]]
+key = "t-2f42-bbe318f5"
+who = 0x47002F42
+line = { table = 0x250013AD, string = 0xBBE318F5 }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x4000005C
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the totem's line asking for the emerald found to be placed in it; no recording", confidence = "low" }
+
+[[talk]]
+key = "t-2f42-2e280ff0"
+who = 0x47002F42
+line = { table = 0x250013AD, string = 0x2E280FF0 }
+role = "refuse-give"
+how = "tell"
+when = "give"
+prov = { from = "authored", by = "Dereth Network", note = "the totem's refusal of an item it did not ask for; no recording", confidence = "low" }
