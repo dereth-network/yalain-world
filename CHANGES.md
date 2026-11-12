@@ -64,6 +64,7 @@
 - The southern outpost's crafter can now be helped with his knights, and the knights he loses count for his second quest. New pack `ludward-gear-knights/`.
 - Three of the Hakata huntress's errands can now be done. New pack `hakata-huntress/`.
 - The counselor's errand in the Burun lair south of Ankoro can now be done. New pack `burun-clutch-fetish/`.
+- The ranger's missing pet can now be found and brought home. New pack `ranger-den/`.
 
 ## v0.36.0
 

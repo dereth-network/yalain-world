@@ -1,0 +1,27 @@
+# The lost pet's steps, as 2017 recorded each; edit an authored pack instead.
+
+[[step]]
+key = "den"
+quest = 0x8000037A
+needs = 1
+trigger = { use = 0x47002EFD }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "2017: the den's use moved it on, with the den's own line (1 session)", confidence = "medium" }
+
+[[step]]
+key = "home"
+quest = 0x8000037A
+needs = 2
+trigger = { use = 0x47002EFB }
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "2017: the ranger's use moved it on, with his line (1 session)", confidence = "medium" }
+
+[[step]]
+key = "petted"
+quest = 0x8000037A
+needs = 3
+trigger = { use = 0x4700341C }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "2017: the pet's use beside the ranger ended it five seconds later, with its own line (1 session)", confidence = "medium" }
