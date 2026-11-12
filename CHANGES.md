@@ -23,7 +23,7 @@
 - A cartographer's drawing of Knorr can now be finished, region by region. New pack `knorr-map-quest/`.
 - The estate crypt's tile puzzle and the throne past it can now be done. New pack `knorr-crypt/`.
 - Finishing all five of Knorr's mushroom hunts now earns their bonus. Pack `knorr-mushrooms/`.
-- Three quests from Shoushi's drudges can now be done, one in the crones' laboratories. New pack `prosper-drudges/`.
+- Four quests from Shoushi's drudges can now be done, one in the crones' laboratories. New pack `prosper-drudges/`.
 - Two more of the Cavendo factotum's errands can now be done. New pack `cavendo-factotum/`.
 - Two of the wanderers' errands near Arwic can now be done. New pack `wandering-folk/`.
 
