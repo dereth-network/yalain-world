@@ -1,0 +1,20 @@
+# The rescue's steps, from the huts' own lines and players' guides; edit an authored pack instead.
+
+[[step]]
+key = "rescue-given"
+quest = 0x4000025E
+needs = 0
+trigger = { use = 0x470031C7 }
+update = "bestow"
+tell = { table = 0x25002A23, string = 0xE9447F99 }
+escort = { template = 0x47003445 }
+prov = { from = "authored", by = "Dereth Network", note = "the guides of 2004: clear and use either fungal hut, and a mosswart follows; the hut's own line of the mosswart peeking out and following; no recording", confidence = "low" }
+
+[[step]]
+key = "rescue-home"
+quest = 0x4000025E
+needs = 1
+trigger = { use = 0x470031C9 }
+update = "complete"
+tell = { table = 0x25002A24, string = 0xE094FECF }
+prov = { from = "authored", by = "Dereth Network", note = "the guides of 2004: walk east to the fenced hut; its own line of showing the mosswart it is safe there; the quest has one phase, so the hut's use ends it", confidence = "low" }

@@ -71,6 +71,7 @@
 - Rashan's quest to lay his sword on the drudges' shrine can now be done. New pack `drudge-hero-shrine/`.
 - Arramora's alms and teeth errands for the Disciple can now be done. New pack `orulaan-errands/`.
 - Two Arramora raids can now be started, by the grub and the spawn that give them. New pack `arramora-raids/`.
+- An enslaved mosswart in Arramora can now be rescued and led home. New pack `mosswart-rescue/`.
 
 ## v0.36.0
 

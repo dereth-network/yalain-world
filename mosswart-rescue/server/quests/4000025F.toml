@@ -1,0 +1,16 @@
+# The rescuer's fellows' quest to protect the mosswart; edit an authored pack instead.
+
+[[quest]]
+id = 0x4000025F
+id_name = "QuestMosswartRescueControl"
+state = 0x6F000BDD
+prov = { from = "authored", by = "Dereth Network", note = "the install's quest the rescue's end gives and ends; without a row the server would not hold it, and nothing could give it to the fellows", confidence = "low" }
+
+[[step]]
+key = "control-given"
+quest = 0x4000025F
+needs = 0
+trigger = { given = 0x4000025E }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the guides of 2004: the rescuer's fellows get a quest to protect the mosswart; the install's quest for it, which the rescue's end gives and ends for the rescuer", confidence = "low" }
