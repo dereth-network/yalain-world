@@ -1,0 +1,29 @@
+# The urn's lines; edit an authored pack instead.
+
+[[talk]]
+key = "urn-fills"
+who = 0x470031A5
+line = { table = 0x25002A16, string = 0x3C50960D }
+role = "accept"
+how = "emote"
+when = "give"
+item = 0x470016F4
+prov = { from = "authored", by = "Dereth Network", note = "the urn's table: its line on filling the empty vial", confidence = "low" }
+
+[[talk]]
+key = "urn-refuses"
+who = 0x470031A5
+line = { table = 0x25002A16, string = 0x08813897 }
+role = "refuse-give"
+how = "emote"
+when = "give"
+prov = { from = "authored", by = "Dereth Network", note = "the urn's table: its line on anything else given it", confidence = "low" }
+
+[[talk]]
+key = "urn-touched"
+who = 0x470031A5
+line = { table = 0x25002A16, string = 0x466B19FD }
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "the urn's table: its line on a plain use", confidence = "low" }

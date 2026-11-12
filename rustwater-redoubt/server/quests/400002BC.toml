@@ -1,0 +1,19 @@
+# The news of the sage for the captain, given as the cure ends, as 2017 recorded; edit an authored pack instead.
+
+[[step]]
+key = "koske-news"
+quest = 0x400002BC
+needs = 0
+trigger = { done = 0x400002BB }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "2017: given at the moment the cure ended, 1 session", confidence = "medium" }
+
+[[step]]
+key = "gallus-told"
+quest = 0x400002BC
+needs = 1
+trigger = { use = 0x47003351 }
+update = "complete"
+tell = { table = 0x25002AC4, string = 0xB5E493C8 }
+gives = [0x470016E6]
+prov = { from = "authored", by = "Dereth Network", note = "2017: ended at the captain's use with his line and the emblem, 1 session", confidence = "medium" }

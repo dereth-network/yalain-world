@@ -52,6 +52,7 @@
 - Rare recruits near seven besieged outposts now start their beacon quests. New pack `beacon-blowouts/`.
 - A father's search for his runaway son in Linvak can now be finished. New pack `stubbington-search/`.
 - The festival guard's reward after the third trounce can now be claimed. New pack `drudgerton-errands/`.
+- A mad sage's cure in Linvak's redoubt can now be finished, and his captain told. New pack `rustwater-redoubt/`.
 
 ## v0.36.0
 

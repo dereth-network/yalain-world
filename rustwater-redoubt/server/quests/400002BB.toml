@@ -1,0 +1,23 @@
+# The sage's cure: the crucible's stone, the sage given it, and the captain told; edit an authored pack instead.
+
+[[step]]
+key = "crucible-soulstone"
+quest = 0x400002BB
+needs = 1
+trigger = { use = 0x470031A2 }
+update = "advance"
+phase = 2
+tell = { table = 0x25002A14, string = 0x206DA579 }
+gives = [0x470016EE]
+takes = [0x470016F1, 0x470016F2, 0x470016E7]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the seed, the blood and the flask put in the crucible, then its use gives the stone (the journal's phase 2); here its use takes the three held at once; its line of the fire lit", confidence = "low" }
+
+[[step]]
+key = "koske-cured"
+quest = 0x400002BB
+needs = 2
+trigger = { give = 0x470016EE, to = 0x470031A3 }
+update = "complete"
+tell = { table = 0x25002A15, string = 0x287A0B36 }
+takes = [0x470016EE]
+prov = { from = "authored", by = "Dereth Network", note = "2017 recorded the quest ending, 1 session; the wiki: the stone given to the sage; his line on taking it", confidence = "medium" }

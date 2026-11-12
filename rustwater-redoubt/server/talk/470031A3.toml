@@ -1,0 +1,31 @@
+# The sage's lines; edit an authored pack instead.
+
+[[talk]]
+key = "koske-vacant"
+who = 0x470031A3
+line = { table = 0x25002A15, string = 0x466B19FD }
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "his table: his line on a plain use while mad", confidence = "low" }
+
+[[talk]]
+key = "koske-refuses"
+who = 0x470031A3
+line = { table = 0x25002A15, string = 0x08813897 }
+role = "refuse-give"
+how = "emote"
+when = "give"
+prov = { from = "authored", by = "Dereth Network", note = "his table: his line on any other item given him", confidence = "low" }
+
+[[talk]]
+key = "koske-free"
+who = 0x470031A3
+line = { table = 0x25002A15, string = 0x287AAB36 }
+role = "complete"
+how = "say"
+when = "give"
+quest = 0x400002BB
+update = "complete"
+item = 0x470016EE
+prov = { from = "authored", by = "Dereth Network", note = "his table: his words once cured, asking the player to tell the captain", confidence = "low" }
