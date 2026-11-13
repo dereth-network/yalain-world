@@ -1,0 +1,722 @@
+# The east side dungeon's way out and its creatures; no recording.
+
+[[object]]
+key = "hod-east-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x06DB0101
+at = [2.00, -29.00, 102.80]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "hod-east-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out 2 m beside the landing, as the players' map draws it, to the arm of the main dungeon it came from; no recording", confidence = "low" }
+
+[[camp]]
+key = "hod-east-1"
+cell = 0x06DB0265
+at = [-9.26, 1027.37, 101.10]
+spots = [{ cell = 0x06DB0265, at = [-9.26, 1027.37, 101.10] }, { cell = 0x06DB0265, at = [-9.26, 1022.37, 101.10] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-2"
+cell = 0x06DB01F2
+at = [159.14, 500.83, 100.80]
+spots = [{ cell = 0x06DB01F2, at = [159.14, 500.83, 100.80] }, { cell = 0x06DB01F2, at = [159.14, 495.83, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-3"
+cell = 0x06DB01CA
+at = [-160.22, 414.28, 100.90]
+spots = [{ cell = 0x06DB01CA, at = [-160.22, 414.28, 100.90] }, { cell = 0x06DB01CA, at = [-155.22, 414.28, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-4"
+cell = 0x06DB0223
+at = [-67.42, 706.87, 101.70]
+spots = [{ cell = 0x06DB0223, at = [-67.42, 706.87, 101.70] }, { cell = 0x06DB0223, at = [-63.59, 703.69, 102.10] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-5"
+cell = 0x06DB0123
+at = [159.99, 211.56, 100.80]
+spots = [{ cell = 0x06DB0123, at = [159.99, 211.56, 100.80] }, { cell = 0x06DB0123, at = [159.99, 216.56, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-6"
+cell = 0x06DB0163
+at = [-157.22, 164.42, 100.80]
+spots = [{ cell = 0x06DB0163, at = [-157.22, 164.42, 100.80] }, { cell = 0x06DB0163, at = [-154.81, 160.01, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-7"
+cell = 0x06DB018F
+at = [26.90, 355.56, 101.80]
+spots = [{ cell = 0x06DB018F, at = [26.90, 355.56, 101.80] }, { cell = 0x06DB018E, at = [26.90, 350.56, 102.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-8"
+cell = 0x06DB023C
+at = [59.49, 850.12, 100.80]
+spots = [{ cell = 0x06DB023C, at = [59.49, 850.12, 100.80] }, { cell = 0x06DB023C, at = [54.49, 850.12, 100.70] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-9"
+cell = 0x06DB020F
+at = [84.49, 646.58, 101.60]
+spots = [{ cell = 0x06DB020F, at = [84.49, 646.58, 101.60] }, { cell = 0x06DB01FF, at = [79.78, 647.87, 101.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-10"
+cell = 0x06DB01BA
+at = [-158.47, 574.53, 100.80]
+spots = [{ cell = 0x06DB01BA, at = [-158.47, 574.53, 100.80] }, { cell = 0x06DB01BA, at = [-158.47, 569.53, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-11"
+cell = 0x06DB0113
+at = [130.13, 63.66, 100.80]
+spots = [{ cell = 0x06DB0113, at = [130.13, 63.66, 100.80] }, { cell = 0x06DB0113, at = [130.76, 68.61, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-12"
+cell = 0x06DB0240
+at = [-77.56, 901.55, 100.80]
+spots = [{ cell = 0x06DB0240, at = [-77.56, 901.55, 100.80] }, { cell = 0x06DB0240, at = [-73.76, 904.86, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-13"
+cell = 0x06DB0171
+at = [-89.95, 283.69, 101.50]
+spots = [{ cell = 0x06DB0171, at = [-89.95, 283.69, 101.50] }, { cell = 0x06DB0171, at = [-90.36, 278.69, 102.10] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-14"
+cell = 0x06DB01BB
+at = [-59.86, 495.42, 100.80]
+spots = [{ cell = 0x06DB01BB, at = [-59.86, 495.42, 100.80] }, { cell = 0x06DB01BB, at = [-60.98, 500.30, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-15"
+cell = 0x06DB0156
+at = [-61.38, 81.17, 100.80]
+spots = [{ cell = 0x06DB0156, at = [-61.38, 81.17, 100.80] }, { cell = 0x06DB0156, at = [-59.68, 76.58, 101.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-16"
+cell = 0x06DB0116
+at = [59.84, 154.04, 100.90]
+spots = [{ cell = 0x06DB0116, at = [59.84, 154.04, 100.90] }, { cell = 0x06DB0117, at = [62.97, 157.92, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-17"
+cell = 0x06DB022B
+at = [32.10, 742.07, 101.70]
+spots = [{ cell = 0x06DB022B, at = [32.10, 742.07, 101.70] }, { cell = 0x06DB022B, at = [32.10, 737.07, 102.20] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-18"
+cell = 0x06DB01EF
+at = [59.53, 533.47, 101.00]
+spots = [{ cell = 0x06DB01EF, at = [59.53, 533.47, 101.00] }, { cell = 0x06DB01EF, at = [62.24, 529.76, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-19"
+cell = 0x06DB01D9
+at = [116.64, 407.10, 100.80]
+spots = [{ cell = 0x06DB01D9, at = [116.64, 407.10, 100.80] }, { cell = 0x06DB01D9, at = [121.64, 407.10, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-20"
+cell = 0x06DB0248
+at = [57.48, 951.11, 100.80]
+spots = [{ cell = 0x06DB0248, at = [57.48, 951.11, 100.80] }, { cell = 0x06DB0248, at = [55.77, 946.40, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-21"
+cell = 0x06DB0166
+at = [-59.99, 180.42, 100.80]
+spots = [{ cell = 0x06DB0166, at = [-59.99, 180.42, 100.80] }, { cell = 0x06DB0166, at = [-59.99, 175.42, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-22"
+cell = 0x06DB0172
+at = [89.63, 282.74, 101.50]
+spots = [{ cell = 0x06DB0172, at = [89.63, 282.74, 101.50] }, { cell = 0x06DB0172, at = [84.80, 284.56, 102.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-23"
+cell = 0x06DB014D
+at = [-156.27, 69.18, 100.80]
+spots = [{ cell = 0x06DB014D, at = [-156.27, 69.18, 100.80] }, { cell = 0x06DB014D, at = [-151.27, 69.18, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-24"
+cell = 0x06DB01C7
+at = [-68.71, 404.68, 101.00]
+spots = [{ cell = 0x06DB01C7, at = [-68.71, 404.68, 101.00] }, { cell = 0x06DB01C8, at = [-72.25, 408.21, 101.20] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-25"
+cell = 0x06DB0236
+at = [-28.00, 825.68, 100.80]
+spots = [{ cell = 0x06DB0236, at = [-28.00, 825.68, 100.80] }, { cell = 0x06DB0238, at = [-32.25, 828.21, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-26"
+cell = 0x06DB0209
+at = [-5.61, 640.63, 102.60]
+spots = [{ cell = 0x06DB0209, at = [-5.61, 640.63, 102.60] }, { cell = 0x06DB0209, at = [-4.90, 645.58, 101.70] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-27"
+cell = 0x06DB010E
+at = [-90.44, -2.15, 102.30]
+spots = [{ cell = 0x06DB010E, at = [-90.44, -2.15, 102.30] }, { cell = 0x06DB010E, at = [-86.59, 1.10, 102.10] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-28"
+cell = 0x06DB01B4
+at = [-71.05, 582.23, 100.80]
+spots = [{ cell = 0x06DB01B4, at = [-71.05, 582.23, 100.80] }, { cell = 0x06DB01B4, at = [-71.05, 577.23, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-29"
+cell = 0x06DB01F9
+at = [146.83, 585.27, 100.80]
+spots = [{ cell = 0x06DB01F9, at = [146.83, 585.27, 100.80] }, { cell = 0x06DB01F9, at = [147.95, 580.39, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-30"
+cell = 0x06DB010D
+at = [80.02, -3.27, 103.50]
+spots = [{ cell = 0x06DB010D, at = [80.02, -3.27, 103.50] }, { cell = 0x06DB010D, at = [75.02, -3.27, 102.70] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-31"
+cell = 0x06DB01C1
+at = [-142.04, 494.10, 100.00]
+spots = [{ cell = 0x06DB01C1, at = [-142.04, 494.10, 100.00] }, { cell = 0x06DB01C1, at = [-142.04, 489.10, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-32"
+cell = 0x06DB0241
+at = [-0.19, 899.44, 100.00]
+spots = [{ cell = 0x06DB0241, at = [-0.19, 899.44, 100.00] }, { cell = 0x06DB0241, at = [0.93, 894.56, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-33"
+cell = 0x06DB011F
+at = [160.61, 134.72, 100.80]
+spots = [{ cell = 0x06DB011F, at = [160.61, 134.72, 100.80] }, { cell = 0x06DB011F, at = [159.49, 139.60, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-34"
+cell = 0x06DB016B
+at = [-153.81, 241.01, 100.80]
+spots = [{ cell = 0x06DB016B, at = [-153.81, 241.01, 100.80] }, { cell = 0x06DB016B, at = [-150.27, 237.48, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-35"
+cell = 0x06DB017D
+at = [-9.67, 288.94, 101.90]
+spots = [{ cell = 0x06DB017D, at = [-9.67, 288.94, 101.90] }, { cell = 0x06DB017D, at = [-9.67, 293.94, 101.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-36"
+cell = 0x06DB0267
+at = [-37.52, 961.53, 100.80]
+spots = [{ cell = 0x06DB0267, at = [-37.52, 961.53, 100.80] }, { cell = 0x06DB0267, at = [-33.98, 958.00, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-37"
+cell = 0x06DB01E8
+at = [93.11, 472.55, 100.00]
+spots = [{ cell = 0x06DB01E8, at = [93.11, 472.55, 100.00] }, { cell = 0x06DB01E8, at = [93.11, 467.55, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-38"
+cell = 0x06DB0125
+at = [90.63, 214.74, 100.00]
+spots = [{ cell = 0x06DB0125, at = [90.63, 214.74, 100.00] }, { cell = 0x06DB0125, at = [91.75, 209.86, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-39"
+cell = 0x06DB0193
+at = [-52.72, 339.97, 102.20]
+spots = [{ cell = 0x06DB0193, at = [-52.72, 339.97, 102.20] }, { cell = 0x06DB0193, at = [-53.66, 344.88, 102.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-40"
+cell = 0x06DB020A
+at = [-85.90, 645.28, 101.90]
+spots = [{ cell = 0x06DB020A, at = [-85.90, 645.28, 101.90] }, { cell = 0x06DB020A, at = [-80.90, 645.28, 101.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-41"
+cell = 0x06DB015D
+at = [-102.38, 130.58, 100.00]
+spots = [{ cell = 0x06DB015D, at = [-102.38, 130.58, 100.00] }, { cell = 0x06DB015D, at = [-102.38, 135.58, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-42"
+cell = 0x06DB011A
+at = [78.72, 96.53, 100.00]
+spots = [{ cell = 0x06DB011A, at = [78.72, 96.53, 100.00] }, { cell = 0x06DB011A, at = [78.72, 101.53, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-43"
+cell = 0x06DB0220
+at = [-8.82, 699.47, 102.00]
+spots = [{ cell = 0x06DB0220, at = [-8.82, 699.47, 102.00] }, { cell = 0x06DB0220, at = [-6.73, 704.02, 101.90] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-44"
+cell = 0x06DB0169
+at = [-97.73, 225.05, 100.00]
+spots = [{ cell = 0x06DB0169, at = [-97.73, 225.05, 100.00] }, { cell = 0x06DB0169, at = [-97.73, 220.05, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-45"
+cell = 0x06DB01C5
+at = [-110.29, 445.35, 100.00]
+spots = [{ cell = 0x06DB01C5, at = [-110.29, 445.35, 100.00] }, { cell = 0x06DB01C5, at = [-110.29, 440.35, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-46"
+cell = 0x06DB01D7
+at = [59.67, 414.17, 100.90]
+spots = [{ cell = 0x06DB01D7, at = [59.67, 414.17, 100.90] }, { cell = 0x06DB01D7, at = [64.67, 414.17, 100.90] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-47"
+cell = 0x06DB01F8
+at = [89.57, 582.43, 100.30]
+spots = [{ cell = 0x06DB01F8, at = [89.57, 582.43, 100.30] }, { cell = 0x06DB01F8, at = [89.57, 577.43, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-48"
+cell = 0x06DB01B8
+at = [-109.58, 540.64, 100.00]
+spots = [{ cell = 0x06DB01B8, at = [-109.58, 540.64, 100.00] }, { cell = 0x06DB01B8, at = [-109.58, 535.64, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-49"
+cell = 0x06DB0225
+at = [72.30, 701.98, 101.70]
+spots = [{ cell = 0x06DB0225, at = [72.30, 701.98, 101.70] }, { cell = 0x06DB0225, at = [72.30, 696.98, 102.20] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-50"
+cell = 0x06DB01E2
+at = [157.17, 444.86, 100.80]
+spots = [{ cell = 0x06DB01E2, at = [157.17, 444.86, 100.80] }, { cell = 0x06DB01E2, at = [156.22, 439.91, 101.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-51"
+cell = 0x06DB0122
+at = [114.14, 164.24, 100.00]
+spots = [{ cell = 0x06DB0122, at = [114.14, 164.24, 100.00] }, { cell = 0x06DB0122, at = [114.14, 159.24, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-52"
+cell = 0x06DB01F1
+at = [114.78, 533.23, 100.00]
+spots = [{ cell = 0x06DB01F1, at = [114.78, 533.23, 100.00] }, { cell = 0x06DB01F1, at = [114.78, 528.23, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-53"
+cell = 0x06DB023B
+at = [-78.48, 847.58, 100.80]
+spots = [{ cell = 0x06DB023B, at = [-78.48, 847.58, 100.80] }, { cell = 0x06DB023B, at = [-74.60, 850.70, 100.30] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-54"
+cell = 0x06DB0177
+at = [41.00, 304.60, 101.80]
+spots = [{ cell = 0x06DB0177, at = [41.00, 304.60, 101.80] }, { cell = 0x06DB0177, at = [46.00, 304.60, 101.70] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-55"
+cell = 0x06DB0234
+at = [3.83, 785.30, 102.10]
+spots = [{ cell = 0x06DB0234, at = [3.83, 785.30, 102.10] }, { cell = 0x06DB0235, at = [-1.17, 785.30, 101.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-56"
+cell = 0x06DB0244
+at = [51.02, 900.45, 100.30]
+spots = [{ cell = 0x06DB0244, at = [51.02, 900.45, 100.30] }, { cell = 0x06DB0244, at = [51.02, 895.45, 100.30] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-57"
+cell = 0x06DB010A
+at = [-50.66, -33.24, 103.00]
+spots = [{ cell = 0x06DB010A, at = [-50.66, -33.24, 103.00] }, { cell = 0x06DB010A, at = [-55.66, -33.24, 102.40] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-58"
+cell = 0x06DB022E
+at = [-27.25, 745.90, 101.60]
+spots = [{ cell = 0x06DB022E, at = [-27.25, 745.90, 101.60] }, { cell = 0x06DB022E, at = [-22.42, 744.73, 102.20] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-59"
+cell = 0x06DB019A
+at = [89.66, 365.91, 101.50]
+spots = [{ cell = 0x06DB019A, at = [89.66, 365.91, 101.50] }, { cell = 0x06DB019A, at = [90.01, 370.45, 102.10] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-60"
+cell = 0x06DB016D
+at = [-107.53, 65.17, 100.80]
+spots = [{ cell = 0x06DB016D, at = [-107.53, 65.17, 100.80] }, { cell = 0x06DB016D, at = [-103.27, 67.76, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-61"
+cell = 0x06DB0245
+at = [9.00, 947.63, 100.00]
+spots = [{ cell = 0x06DB0245, at = [9.00, 947.63, 100.00] }, { cell = 0x06DB0245, at = [9.00, 942.63, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-62"
+cell = 0x06DB0164
+at = [-111.16, 178.36, 100.00]
+spots = [{ cell = 0x06DB0164, at = [-111.16, 178.36, 100.00] }, { cell = 0x06DB0164, at = [-111.16, 173.36, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-63"
+cell = 0x06DB0204
+at = [31.23, 671.42, 101.90]
+spots = [{ cell = 0x06DB0204, at = [31.23, 671.42, 101.90] }, { cell = 0x06DB0204, at = [31.76, 666.40, 101.90] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-64"
+cell = 0x06DB023F
+at = [11.42, 853.05, 100.00]
+spots = [{ cell = 0x06DB023F, at = [11.42, 853.05, 100.00] }, { cell = 0x06DB023F, at = [11.42, 848.05, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-65"
+cell = 0x06DB0127
+at = [127.03, 246.14, 100.80]
+spots = [{ cell = 0x06DB0127, at = [127.03, 246.14, 100.80] }, { cell = 0x06DB0127, at = [131.03, 243.14, 100.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-66"
+cell = 0x06DB023D
+at = [-39.01, 873.12, 100.00]
+spots = [{ cell = 0x06DB023D, at = [-39.01, 873.12, 100.00] }, { cell = 0x06DB023D, at = [-39.01, 868.12, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-67"
+cell = 0x06DB0214
+at = [-44.13, 665.98, 101.90]
+spots = [{ cell = 0x06DB0214, at = [-44.13, 665.98, 101.90] }, { cell = 0x06DB0214, at = [-47.67, 662.45, 101.90] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-68"
+cell = 0x06DB011C
+at = [122.79, 108.90, 100.00]
+spots = [{ cell = 0x06DB011C, at = [122.79, 108.90, 100.00] }, { cell = 0x06DB011C, at = [123.91, 104.02, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-69"
+cell = 0x06DB015C
+at = [-147.10, 120.09, 100.00]
+spots = [{ cell = 0x06DB015C, at = [-147.10, 120.09, 100.00] }, { cell = 0x06DB015C, at = [-142.75, 122.65, 100.00] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-70"
+cell = 0x06DB0109
+at = [45.24, -33.24, 102.70]
+spots = [{ cell = 0x06DB0109, at = [45.24, -33.24, 102.70] }, { cell = 0x06DB0103, at = [40.24, -33.24, 102.80] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "hod-east-71"
+cell = 0x06DB0112
+at = [91.04, 40.28, 101.70]
+spots = [{ cell = 0x06DB0112, at = [91.04, 40.28, 101.70] }, { cell = 0x06DB0112, at = [91.04, 45.28, 102.60] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700294C, weight = 1 }, { template = 0x470022BD, weight = 1 }, { template = 0x4700227A, weight = 1 }, { template = 0x47002951, weight = 1 }, { template = 0x4700082C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "spread over the floor reached on foot from the landing, about as densely as the players' map's dots; the kinds its legend names, at their levels; neither these nor their kin were recorded here", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

@@ -108,6 +108,7 @@
 - Gems from creatures now lead to the Arcanum's guarded caches, and the scholar in its vault takes their books. New pack `arcanum-caches/`.
 - A fellowship now moves through Linvak's secret base quest together when one picks up the scrap.
 - The Foundry's tower, workshop and library now have their undead. New pack `foundry-house-camps/`.
+- The Olthoi Wastes' hive dungeon now has a way in, and creatures in its side dungeons. New pack `heart-of-darkness/`.
 
 ## v0.36.0
 

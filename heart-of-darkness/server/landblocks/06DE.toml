@@ -1,0 +1,45 @@
+# The main dungeon's way out and the portals at its arms' ends into its side dungeons; no recording.
+
+[[object]]
+key = "hod-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x06DE0101
+at = [2.00, -20.00, 101.90]
+rotation = [1, 0, 0, 0]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "hod-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way out 2 m beside the landing, to the surface end the list of destinations gives; no recording", confidence = "low" }
+
+[[object]]
+key = "hod-west"
+kind = "static"
+template = 0x47001154
+cell = 0x06DE026C
+at = [-33.00, -100.00, 82.40]
+rotation = [1, 0, 0, 0]
+min_level = 55
+to = "hod-west-in"
+prov = { from = "authored", by = "Dereth Network", note = "at the end of the arm the way back from this side dungeon lands on, 6 m past that landing; its least level the players' map's; no recording", confidence = "low" }
+
+[[object]]
+key = "hod-south"
+kind = "static"
+template = 0x47001154
+cell = 0x06DE026E
+at = [0.00, -133.00, 81.40]
+rotation = [1, 0, 0, 0]
+min_level = 55
+to = "hod-south-in"
+prov = { from = "authored", by = "Dereth Network", note = "at the end of the arm the way back from this side dungeon lands on, 6 m past that landing; its least level the players' map's; no recording", confidence = "low" }
+
+[[object]]
+key = "hod-east"
+kind = "static"
+template = 0x47001154
+cell = 0x06DE026A
+at = [35.00, -100.00, 82.30]
+rotation = [1, 0, 0, 0]
+min_level = 55
+to = "hod-east-in"
+prov = { from = "authored", by = "Dereth Network", note = "at the end of the arm the way back from this side dungeon lands on, 6 m past that landing; its least level the players' map's; no recording", confidence = "low" }
