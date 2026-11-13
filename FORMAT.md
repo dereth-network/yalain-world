@@ -43,7 +43,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/treasure_potions.toml [[treasure_potion]]
 <pack>/server/treasure_families.toml [[treasure_family]]
 <pack>/server/items.toml           [[item_use]], [[book]], [[start_item]], [[interaction]]
-<pack>/server/puzzles.toml         [[object_states]], [[sequence]]
+<pack>/server/puzzles.toml         [[object_states]], [[sequence]], [[lever]], [[offering]]
 <pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]]
 ```
 
@@ -125,7 +125,7 @@ Every row sets one **item**, named by its key:
 | `weapon NAME` | the weapon's name, as creatures' templates write it |
 | `area XXYY` | the area's landblock |
 | `death_treasure KEY` | the row's `key` |
-| `object_states KEY`, `sequence KEY` | the row's `key` |
+| `object_states KEY`, `sequence KEY`, `lever KEY`, `offering KEY` | the row's `key` |
 | `treasure_pool NAME` | the pool's name |
 | `pet 0xEFFECT` | the pet effect (or the contract's template) |
 | `pet_limit 0xSKILL` | the summoning skill |
@@ -969,6 +969,25 @@ Every row naming the object used is judged at each use, so one use may move seve
 last use, or done and not to be given again, is not judged. The object says the `right` line of the first row a use
 moved on, else the `wrong` line of the first it judged; a use of an object a row names runs no quest step of its own.
 
+**`[[lever]]`**: placed objects whose pulls open doors of the world for everyone. `key`; `levers`, the placed objects
+pulled, and `opens`, the doors they open, at least one each, `key@XXYY` (or `pack:key@XXYY` in another pack); `open_for`,
+the seconds the doors stay open (above 0; until a use closes them when left out); `within`, the seconds a pull waits for
+the row's other levers (above 0; as long as it takes when left out). A player who uses a lever is walked to within three
+meters of it and pulls it; once every lever of the row is pulled, its doors open as a use opens them, whatever their
+locks, and stay open the row's time in place of a door's own ten seconds; a pull while they stand open holds them so
+again from then. A door `locked` whose `lock` is left out is one no key opens: from its front only a lever opens it, from behind
+anyone may. A lever may be in several rows, and one pull counts in each.
+
+**`[[offering]]`**: a placed object that takes a set of items from players and then opens the way for a while. `key`;
+`object`, the placed object given to (named as a lever's); `takes`, at least one `{ item, shows }`, each item once: an
+item of the set and the placed object that stands only while the offering holds it (none when left out); `opens`, the
+placed objects that stand once it holds the whole set, at least one; `lasts`, how long they stand, in seconds above 0.
+An item of the set it does not hold, given while it is not open, is kept (gone from the giver and the world), whoever
+gives it, and the object says its `accept` lines for a give; one it holds already, or any while it is open, is handed
+back. As the last comes, the stand-ins go and `opens` stand for everyone for `lasts` seconds, then go, and it holds
+nothing again. What it holds lasts over a restart. A quest step the give triggers runs instead; an item not of the set
+is the object's as any other give. An object takes one offering.
+
 ```toml
 # <pack>/server/puzzles.toml
 [[object_states]]
@@ -983,6 +1002,21 @@ prov = { from = "authored", by = "you" }
 key = "lamps-lit"
 quest = 0x800001A3
 uses = [{ use = 0x470030DE, state = "lit" }]
+prov = { from = "authored", by = "you" }
+
+[[lever]]
+key = "gate"
+levers = ["west-lever@048E"]
+opens = ["gate-door@048E"]
+open_for = 60
+prov = { from = "authored", by = "you" }
+
+[[offering]]
+key = "shrine"
+object = "shrine@04B9"
+takes = [{ item = 0x4700131F, shows = "eye-flare@04B9" }, { item = 0x47001321 }]
+opens = ["way-up@04B9"]
+lasts = 300
 prov = { from = "authored", by = "you" }
 ```
 
