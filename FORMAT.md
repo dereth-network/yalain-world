@@ -43,7 +43,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/treasure_potions.toml [[treasure_potion]]
 <pack>/server/treasure_families.toml [[treasure_family]]
 <pack>/server/items.toml           [[item_use]], [[book]], [[start_item]], [[interaction]]
-<pack>/server/puzzles.toml         [[object_states]], [[sequence]], [[lever]], [[offering]]
+<pack>/server/puzzles.toml         [[object_states]], [[sequence]], [[lever]], [[offering]], [[guarded]]
 <pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]], [[defense]]
 ```
 
@@ -125,7 +125,7 @@ Every row sets one **item**, named by its key:
 | `weapon NAME` | the weapon's name, as creatures' templates write it |
 | `area XXYY` | the area's landblock |
 | `death_treasure KEY` | the row's `key` |
-| `object_states KEY`, `sequence KEY`, `lever KEY`, `offering KEY` | the row's `key` |
+| `object_states KEY`, `sequence KEY`, `lever KEY`, `offering KEY`, `guarded KEY` | the row's `key` |
 | `treasure_pool NAME` | the pool's name |
 | `pet 0xEFFECT` | the pet effect (or the contract's template) |
 | `pet_limit 0xSKILL` | the summoning skill |
@@ -348,7 +348,9 @@ does not count); `{ event = "key" }`, an `[[event]]` that
 must be on for the step to run; `{ craft = S, at_least = N }`, a craft skill (its saved state) at level N (above 0) or
 above as a making reads it, with what the player's effects add, or `craft = [S, ...]` for any one of several (a bestowing
 step a player meets all else of but this says its person's `refuse-use` line for the quest, as one under the quest's least
-level does); and `{ act = A }`, an act the player must hold whole: seven of its scenes, its hidden
+level does); `{ untraining = true }`, an untraining under way: the player has begun untraining a skill
+and not yet finished or cancelled it (a give it keeps from a player hands the item back with the person's
+`refuse-give` line for that item); and `{ act = A }`, an act the player must hold whole: seven of its scenes, its hidden
 ones aside (a scene of the act must be served; a give names none). A use of a person whose steps don't run says its
 own line at a use, as one that moves nothing does. `takes` lists templates of items taken from the player's
 pack, which the player must hold (a hand-in); a give's step that takes the item given keeps it (the rest of a
@@ -741,8 +743,8 @@ enumeration's value and the install's one effect of that value, or by a package 
 row: `yalain world check --dats <install>` says which state it resolves to.
 
 **`[[effect_rule]]`**: what an effect of the install does where its own data says nothing. `effect` (its saved
-state, one the install holds), and a `ward`, a `vitae_share`, a `vitae_restore`, a `then`, a `reset`, a `skill` or more
-than one. `vitae_share`: the share of its player's vitae
+state, one the install holds), and a `ward`, a `vitae_share`, a `vitae_restore`, a `then`, a `reset`, `untrains`, a `skill`
+or more than one. `vitae_share`: the share of its player's vitae
 the effect takes when it is put on, above 0 and at most 1, the effect's own appearance played on the player; a world
 whose rules name none has the server's own (the tap `0x6F001C64`, a tenth), one with any its rows alone.
 `vitae_restore`: `{ points, fellows }`, the vitae the effect gives back when it is put on, `points` above 0 and at
@@ -757,7 +759,9 @@ one. `then`: the effect is an immunity under way, hidden from its holder, and le
 install holds, not its own) as it ends; that effect's own row gives its `ward`. A world whose rules name no `then`
 has the server's own twelve crowd control immunities, each with its long effect's ward; one with any its rows alone.
 `reset`: `skills` or `hero-skills`, putting it on grants its player one complete reset of that kind, which
-`/skills reset` or `/heroskills reset` uses. `skill`: a skill, by its number (one the install has): putting the effect
+`/skills reset` or `/heroskills reset` uses. `untrains`: true, putting it on finishes its player's untraining
+under way at once, as earning its experience again would: the skill untrained, its credits back and its
+experience given back to spend, the player told so; a player untraining nothing gains nothing. `skill`: a skill, by its number (one the install has): putting the effect
 on a player trains it that skill for good, at level 1 by the grant, unraisable and at no cost, told with the effect's
 own line and appearance; a player who holds it already gains nothing. `places`: a template, putting the effect on (by
 name: using an item whose template names it, after the use is answered) makes an object of it standing in the world
@@ -989,6 +993,17 @@ back. As the last comes, the stand-ins go and `opens` stand for everyone for `la
 nothing again. What it holds lasts over a restart. A quest step the give triggers runs instead; an item not of the set
 is the object's as any other give. An object takes one offering.
 
+**`[[guarded]]`**: placed objects usable only while every creature of a camp is dead, such as a rift nobody may
+close while its keeper stands. `key`; `camp`, the camp whose creatures guard (`key@XXYY`, or `pack:key@XXYY` in
+another pack); `objects`, the placed objects they guard, at least one, named as a lever's; `refused`, what an object
+says to a use it refuses (`{ table, string }`; nothing when left out); `hidden` (true: the objects stand only while
+every creature of the camp is dead); `gone_for`, the seconds above 0 a use carried out takes an object from the
+world for. A camp's creatures are dead once it has made them and keeps none alive now; until it first fills, its
+objects are guarded. A use of a guarded object while one of the camp's creatures lives is refused where the
+player has walked to it: the object says `refused` to the player and no quest step runs. Hidden objects come for
+everyone as the camp's last creature dies and go as one comes back; one taken by `gone_for` comes back after its
+time, unless the camp's creature is back and the row hides it. What is gone or hidden is not kept across a restart.
+
 ```toml
 # <pack>/server/puzzles.toml
 [[object_states]]
@@ -1018,6 +1033,14 @@ object = "shrine@04B9"
 takes = [{ item = 0x4700131F, shows = "eye-flare@04B9" }, { item = 0x47001321 }]
 opens = ["way-up@04B9"]
 lasts = 300
+prov = { from = "authored", by = "you" }
+
+[[guarded]]
+key = "rift"
+camp = "keeper@04C1"
+objects = ["rift@04C1"]
+refused = { table = 0x250028EF, string = 0xC844788A }
+gone_for = 30
 prov = { from = "authored", by = "you" }
 ```
 
