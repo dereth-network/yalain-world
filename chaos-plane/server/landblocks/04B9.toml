@@ -1,4 +1,5 @@
-# The eidolon's dungeon's way back to the nexus, which 2017 recorded with no destination; edit an authored pack instead.
+# The eidolon's dungeon's way back to the nexus and its safe portal up to the tower's stairs, which 2017 recorded
+# with no destinations, and the portal the one atop the tower opens; edit an authored pack instead.
 
 [[object]]
 key = "s-26"
@@ -11,3 +12,25 @@ rotation = [1.0, 0.0, 0.0, 0.0]
 name = { table = 0x25001B44, string = 0xE2E5EF57 }
 to = "cp-in"
 prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:6c94f422", confidence = "medium", sample = { sessions = 2 }, fields = { to = { from = "authored", by = "Dereth Network", note = "the portal beside the dungeon's first landing on its pad (the wiki's map: the exit beside the arrival), back to the nexus", confidence = "low" } } }
+
+[[object]]
+key = "s-20"
+kind = "static"
+id = 0x4004B90000000020
+template = 0x47001155
+cell = 0x04B90145
+at = [44.0957, -75.7811, 102.0133]
+rotation = [-0.707107, 0.0, 0.0, 0.707107]
+name = { table = 0x25001B44, string = 0x7A7C5CDA }
+to = "ce-tower"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:b6054182", confidence = "medium", sample = { sessions = 2 }, fields = { to = { from = "authored", by = "Dereth Network", note = "the wiki's map: the safe one of the dungeon's three portals, in its south room, leads to the room whose stairs climb the eidolon's tower", confidence = "low" } } }
+
+[[object]]
+key = "ce-ascension-portal"
+kind = "static"
+template = 0x4700131E
+cell = 0x04B9016B
+at = [43.28, -50.29, 297.10]
+rotation = [1, 0, 0, 0]
+to = "ce-ascension"
+prov = { from = "authored", by = "Dereth Network", note = "the way to the ascended archon, made at the tower's portal as its third part was kept (2017, both passes); it stands only while that is open, and leads to his dungeon (2017: both arrived there)", confidence = "low" }
