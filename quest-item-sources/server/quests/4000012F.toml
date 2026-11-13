@@ -1,0 +1,22 @@
+# The Aura Stone of Linvak's way through the quest, as the recorded Bow and Claw went and the install's recipe makes its emblem.
+
+[[step]]
+key = "h-3-958"
+quest = 0x4000012F
+needs = 2
+trigger = { give = 0x47001958, to = 0x47003332 }
+update = "advance"
+phase = 3
+takes = [0x47001958]
+effects = [0x6F001F46]
+prov = { from = "authored", by = "Dereth Network", note = "the Aura Stone scroll handed to her teaches its emblem's recipe, as the recorded Bow and Claw scrolls did theirs and a players' guide says of any; no recording", confidence = "low" }
+
+[[step]]
+key = "h-5-bb0"
+quest = 0x4000012F
+needs = 4
+trigger = { give = 0x47000BB0, to = 0x47003331 }
+update = "complete"
+gives = [0x4700071C]
+takes = [0x47000BB0]
+prov = { from = "authored", by = "Dereth Network", note = "the Aura Stone emblem handed to the golem ends it with the Soulbound Aura Stone, as the recorded Bow and Claw emblems ended it with theirs; no recording", confidence = "low" }
