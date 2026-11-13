@@ -44,7 +44,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/treasure_families.toml [[treasure_family]]
 <pack>/server/items.toml           [[item_use]], [[book]], [[start_item]], [[interaction]]
 <pack>/server/puzzles.toml         [[object_states]], [[sequence]], [[lever]], [[offering]]
-<pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]]
+<pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]], [[defense]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -137,6 +137,7 @@ Every row sets one **item**, named by its key:
 | `treasure_family SORT ORDER` | the sort and the family's `order` |
 | `treasure_value LEVEL` | the creatures' level |
 | `mine 0xSKILL` | the mining craft skill |
+| `defense 0xTEMPLATE` | the device's template |
 | `map_region REGION` | the region's key |
 | `worn 0xTEMPLATE 0xRACES 0xSEXES` | the template and the races and sexes it fits |
 
@@ -1069,6 +1070,22 @@ it nor one another creature near it fights, and gives up on one that no longer h
 `kept_out_line`, the line a player's attack on it is told (a string reference `{ table, string }`). A row gives at
 least one of these. A shooter with no rhythm shoots with a gap of 1.63 and a windup of 0.55.
 
+**`[[defense]]`**: a device creatures come to attack while it stands, and what it leaves once it has stood long
+enough (a device an item's use sets down). A creature of the `device` template, however it comes into the world (a
+`[[death_spawn]]` an item's use names, a camp), fights nothing and keeps the row's attackers about it as a camp keeps
+its creatures: `spawns`, at least one `{ template, weight }` of a creature's template, each weight above 0;
+`population` of them at once (at least 1), each killed replaced `regen` seconds after its death (above 0; the
+device's template's generator period when left out, else 30), each appearing `radius` meters from it (10 when left
+out) in a direction picked at random and going at it at once, turning from it only to a player that hurts it. Once it
+has stood `holds` seconds (above 0) it goes, with no fall and no corpse, and `then` stands where it stood for
+`then_lasts` seconds (above 0; left out, a portal until the server stops, a creature until killed, an object until a
+tally clears it): a portal leading where its template names, anyone's to use as a placed one is; a creature; or
+another object, no one's. Killed first, it leaves nothing; what it made stays until killed. It says aloud of itself,
+heard by everyone who sees it, its `says` lines (`{ at, line }`, a string reference said `at` seconds after it came,
+0 as it comes, none after `holds`, in order of their times), its `hurt_line` once as its health first falls below
+half, and its `held_line` as it holds. One row to a device. Nothing of this is kept across a restart. Players are
+kept from harming a device by its template's `[[creature]]` row (`players_kept_out`), not by this one.
+
 ```toml
 # <pack>/server/creatures.toml
 [[concealing]]
@@ -1113,6 +1130,18 @@ prov = { from = "authored", by = "you" }
 template = 0x4700163D
 players_kept_out = true
 kept_out_line = { table = 0x250025F5, string = 0x383D0528 }
+prov = { from = "authored", by = "you" }
+
+[[defense]]
+device = 0x470029A1
+holds = 180
+spawns = [{ template = 0x47002D35, weight = 2 }, { template = 0x470021CD, weight = 1 }]
+population = 4
+radius = 15
+then = 0x47001304
+then_lasts = 300
+says = [{ at = 0, line = { table = 0x250026BE, string = 0x8B69133E } }]
+held_line = { table = 0x250026BE, string = 0xFF1D266D }
 prov = { from = "authored", by = "you" }
 ```
 
