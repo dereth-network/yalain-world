@@ -1,4 +1,16 @@
-# The base's first gate, its keys and the door into its command area; edit an authored pack instead.
+# The base's quest shared with fellows, its first gate, its keys and the door into its command area; edit an authored pack
+# instead.
+
+[[quest]]
+id = 0x800002CD
+id_name = "QuestSHRETHBaseUltra"
+state = 0x6F000CD3
+challenge = -999
+retry = 518400
+cancellable = false
+duration = 86400.0
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:01a0c88b", confidence = "high", sample = { sessions = 5 }, fields = { duration = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-DURATIONS-2017", ref = "c:22866efa", confidence = "low", sample = { sessions = 1 } }, fellows = { from = "authored", by = "Dereth Network", note = "2017: one fellowship's pass (1 session): the scrap moved the recording player's quest from 1 to 2 with no take of its own, as the plans did from 5 to 6; the install's setup shares neither", confidence = "low" } } }
 
 [[step]]
 key = "ultra-gate"
