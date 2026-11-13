@@ -622,7 +622,9 @@ player has more pets in all than the server allows.
 | `count` | | how many plants one seed plants, spread across the planter's heading; 1 when left out |
 | `ripe` | | seconds from its planting until it is ripe, above 0; 180 when left out |
 | `tended` | | false: it needs no water or fertilizer, never withers and keeps its own look until harvested; true when left out |
-| `texts` | | `{ table, maturity_in, mature, harvest }`: the string table of its lines, which holds the lines for a plant not yet ripe and one its user did not plant under the garden plants' ids, and the ids of its examination's countdown label, its line once ripe and its harvest's line; the garden plants' when left out |
+| `water`, `fertilizer` | | the templates of the items whose use on it lowers its need for water or for fertilizer by a level; the garden plants' own can and fertilizer when left out. Only for one `tended` |
+| `garden` | | `{ template, planted, busy }`: its seed plants nothing where it is used, but is given to an object of `template`, which keeps it and says `planted` as the plant stands where the object stands, facing as it faces; while that plant stands, a seed given to it is handed back with `busy`. The lines are string references `{ table, string }`, each left out or given. A quest step the give triggers runs instead |
+| `texts` | | `{ table, mature, harvest }` and any of `maturity_in`, `not_mature`, `not_yours`, `withers`, `stages` and `conditions`: the string table of its lines and the ids in it of its examination's countdown label (no countdown when left out), its line once ripe, its harvest's line, its refusals of a harvest too early and by another player, and its line as it withers (each of those three the garden plants' id in its table when left out); `stages`, three ids, its examination's line at each growing stage; `conditions`, `{ healthy, dry, overwatered, hungry, overfed }`, the lines its examination shows of how it fares in place of its needs and its pollen; healthy, or each that holds (dry or hungry from the fifth of the need levels on, overwatered or overfed at the second or below). A plant with `texts` keeps its own look as it grows. The garden plants' when left out; `stages` and `conditions` only for one `tended` |
 
 Planting moves the quests the seed's template names for its use.
 
@@ -636,6 +638,21 @@ seed = 0x47001454
 pollen = 0x47001448
 name = 0x811B71D6
 harvest = 0x47000FF9
+prov = { from = "authored", by = "you" }
+```
+
+A plant of its own, grown in a garden with care items of its own:
+
+```toml
+# <pack>/server/plants.toml
+[[plant]]
+plant = 0x47001B4A
+seed = 0x47001B48
+harvest = 0x47001B46
+water = 0x47001B51
+fertilizer = 0x47001B49
+garden = { template = 0x47003393, planted = { table = 0x25002ADA, string = 0xC84AF9AA } }
+texts = { table = 0x25002ADF, mature = 0x979A5B8B, harvest = 0x54AC9502, stages = [0xA8AE7D4D, 0x2B64913D, 0xAFA119CC], conditions = { healthy = 0xF312FCF9, dry = 0xCD52FC4E, overwatered = 0x99448784, hungry = 0x28A10E7C, overfed = 0xFCA8EFAF } }
 prov = { from = "authored", by = "you" }
 ```
 
