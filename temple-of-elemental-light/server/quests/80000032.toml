@@ -1,0 +1,42 @@
+# The middle pillar's lines by day and by night, for a player before the quest and at its first phase; edit an
+# authored pack instead.
+
+[[step]]
+key = "central-daylight-0"
+quest = 0x80000032
+needs = 0
+trigger = { use = 0x47003361 }
+update = "none"
+tell = { table = 0x25002ACC, string = 0xE26AA57F }
+requires = [{ event = "temple-daylight" }]
+prov = { from = "authored", by = "Dereth Network", note = "the middle pillar's own line by day: its disc glowing brightly, six depressions about it; a line for each count of pillars set waits on their order", confidence = "low" }
+
+[[step]]
+key = "central-night-0"
+quest = 0x80000032
+needs = 0
+trigger = { use = 0x47003361 }
+update = "none"
+tell = { table = 0x25002ACC, string = 0x49D59491 }
+requires = [{ event = "temple-night" }]
+prov = { from = "authored", by = "Dereth Network", note = "the middle pillar's own line at night: its disc glowing feebly; a line for each count of pillars set waits on their order", confidence = "low" }
+
+[[step]]
+key = "central-daylight-1"
+quest = 0x80000032
+needs = 1
+trigger = { use = 0x47003361 }
+update = "none"
+tell = { table = 0x25002ACC, string = 0xE26AA57F }
+requires = [{ event = "temple-daylight" }]
+prov = { from = "authored", by = "Dereth Network", note = "the middle pillar's own line by day: its disc glowing brightly, six depressions about it; a line for each count of pillars set waits on their order", confidence = "low" }
+
+[[step]]
+key = "central-night-1"
+quest = 0x80000032
+needs = 1
+trigger = { use = 0x47003361 }
+update = "none"
+tell = { table = 0x25002ACC, string = 0x49D59491 }
+requires = [{ event = "temple-night" }]
+prov = { from = "authored", by = "Dereth Network", note = "the middle pillar's own line at night: its disc glowing feebly; a line for each count of pillars set waits on their order", confidence = "low" }

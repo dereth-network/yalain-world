@@ -1,0 +1,11 @@
+# The game's day and night, by the world's calendar; edit an authored pack instead.
+
+[[event]]
+key = "temple-daylight"
+when = [{ game = "day" }]
+prov = { from = "authored", by = "Dereth Network", note = "the guide: the portal to the dungeon only opens during daytime (the install tells the middle pillar when it is day); the calendar's parts of the day that are not night", confidence = "low" }
+
+[[event]]
+key = "temple-night"
+when = [{ game = "night" }]
+prov = { from = "authored", by = "Dereth Network", note = "the middle pillar's own line for the night, its disc glowing feebly; the calendar's night part", confidence = "low" }

@@ -1,0 +1,76 @@
+# The middle pillar, its six pillars about it, and the temple's portal before it by day; edit an authored pack
+# instead.
+
+[[object]]
+key = "central-pillar"
+kind = "npc"
+template = 0x47003361
+cell = 0x605A001C
+at = [71.07, 68.40, 77.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the guide: six outer pillars and an inner one in the middle, on the island south-east of the scholar; the island's high middle, 34 m from the temple's way out; never recorded", confidence = "low" }
+
+[[object]]
+key = "pillar-1"
+kind = "npc"
+template = 0x47003362
+cell = 0x605A001C
+at = [71.63, 76.31, 77.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the guide: six outer pillars about the inner one; this one 0 degrees clockwise from north, 8 m from the middle one; never recorded", confidence = "low" }
+
+[[object]]
+key = "pillar-2"
+kind = "npc"
+template = 0x47003362
+cell = 0x605A001C
+at = [78.07, 71.91, 77.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the guide: six outer pillars about the inner one; this one 60 degrees clockwise from north, 8 m from the middle one; never recorded", confidence = "low" }
+
+[[object]]
+key = "pillar-3"
+kind = "npc"
+template = 0x47003362
+cell = 0x605A001C
+at = [78.39, 64.11, 77.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the guide: six outer pillars about the inner one; this one 120 degrees clockwise from north, 8 m from the middle one; never recorded", confidence = "low" }
+
+[[object]]
+key = "pillar-4"
+kind = "npc"
+template = 0x47003362
+cell = 0x605A001C
+at = [71.52, 60.48, 77.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the guide: six outer pillars about the inner one; this one 180 degrees clockwise from north, 8 m from the middle one; never recorded", confidence = "low" }
+
+[[object]]
+key = "pillar-5"
+kind = "npc"
+template = 0x47003362
+cell = 0x605A001C
+at = [65.15, 63.85, 77.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the guide: six outer pillars about the inner one; this one 240 degrees clockwise from north, 8 m from the middle one; never recorded", confidence = "low" }
+
+[[object]]
+key = "pillar-6"
+kind = "npc"
+template = 0x47003362
+cell = 0x605A001C
+at = [64.53, 71.97, 77.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the guide: six outer pillars about the inner one; this one 300 degrees clockwise from north, 8 m from the middle one; never recorded", confidence = "low" }
+
+[[object]]
+key = "temple-portal"
+kind = "static"
+template = 0x47001A4F
+cell = 0x605A001C
+at = [66.65, 68.35, 77.10]
+rotation = [1, 0, 0, 0]
+to = "temple-light-in"
+event = "temple-daylight"
+prov = { from = "authored", by = "Dereth Network", note = "the middle pillar's line: a portal appears before it; the guide: it opens only by day; 4.4 m west of it, its use the template's", confidence = "low", fields = { event = { from = "authored", by = "Dereth Network", note = "the pillars' order, which should open it, waits on a mechanism: until then it stands by day for anyone", confidence = "low" } } }
