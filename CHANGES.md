@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- The light temple's pillars now stand on its island, and its portal opens by day. New pack `temple-of-elemental-light/`.
+- The light temple's pillars, set in their order, now open its portal by day. New pack `temple-of-elemental-light/`.
 - Killing the mountain fortress's Gurog king now opens a portal to the dungeon below. New pack `goarata-undercrofts/`.
 - Elenura's bean can now be grown in the garden by her camp and handed back. New pack `golden-bean/`.
 - A mage now finishes your untraining for coins. New pack `soul-eater/`.

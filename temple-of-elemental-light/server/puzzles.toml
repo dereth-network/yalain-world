@@ -1,0 +1,10 @@
+# The six pillars' order, counted for the fellowship; edit an authored pack instead.
+
+[[sequence]]
+key = "temple-pillars"
+uses = [{ object = "pillar-1@605A" }, { object = "pillar-4@605A" }, { object = "pillar-2@605A" }, { object = "pillar-5@605A" }, { object = "pillar-3@605A" }, { object = "pillar-6@605A" }]
+wrong_starts_over = false
+forgets_after = 1800
+right = { table = 0x25002ACD, string = 0xEA52FD5E }
+wrong = { table = 0x25002ACD, string = 0xF2269530 }
+prov = { from = "authored", by = "Dereth Network", note = "the guide: touch each pillar once in its order; one touched again resets them; one out of turn changes nothing; one set opens it for all fellows", confidence = "low", fields = { uses = { from = "authored", by = "Dereth Network", note = "no order is recorded: across the ring and about it, north first, so it is found by trying", confidence = "low" }, forgets_after = { from = "authored", by = "Dereth Network", note = "how long they stayed set is not recorded: half an hour", confidence = "low" }, right = { from = "authored", by = "Dereth Network", note = "the pillar's own lines: a whirring as it is set, nothing happening as it is not", confidence = "low" } } }
