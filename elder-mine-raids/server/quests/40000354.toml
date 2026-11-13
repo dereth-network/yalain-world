@@ -1,4 +1,4 @@
-# Linvak's raid: given with its crystal at a headquarters beacon, at phase 2 once the crystal has
+# Linvak's raid, for heroes alone: given with its crystal at a headquarters beacon, at phase 2 once the crystal has
 # called its bore, ended by the portal home that stands once the bore has held; edit an authored pack instead.
 
 [[quest]]
@@ -15,8 +15,8 @@ needs = 0
 trigger = { use = 0x47001480 }
 update = "bestow"
 gives = [0x4700146D]
-requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
-prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives the raid and its crystal, as its template's use names both, to one of its kingdom whose last beacon's hour has run out (its template's own gate)", confidence = "low" }
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives the raid and its crystal, as its template's use names both, to a hero of its kingdom whose last beacon's hour has run out (its template's own gates)", confidence = "low" }
 
 [[step]]
 key = "beacon-lin-do-again-1"
@@ -25,8 +25,8 @@ needs = 1
 trigger = { use = 0x47001480 }
 update = "none"
 gives = [0x4700146D]
-requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
-prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives another crystal while the raid is at phase 1 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives another crystal while the raid is at phase 1 (a crystal run out or a bore lost: call another, its journal says), an hour after the last, to a hero", confidence = "low" }
 
 [[step]]
 key = "beacon-lin-do-again-2"
@@ -35,8 +35,8 @@ needs = 2
 trigger = { use = 0x47001480 }
 update = "none"
 gives = [0x4700146D]
-requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
-prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives another crystal while the raid is at phase 2 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives another crystal while the raid is at phase 2 (a crystal run out or a bore lost: call another, its journal says), an hour after the last, to a hero", confidence = "low" }
 
 [[step]]
 key = "beacon-lin-ds"
@@ -45,8 +45,8 @@ needs = 0
 trigger = { use = 0x47001481 }
 update = "bestow"
 gives = [0x4700146F]
-requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
-prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives the raid and its crystal, as its template's use names both, to one of its kingdom whose last beacon's hour has run out (its template's own gate)", confidence = "low" }
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives the raid and its crystal, as its template's use names both, to a hero of its kingdom whose last beacon's hour has run out (its template's own gates)", confidence = "low" }
 
 [[step]]
 key = "beacon-lin-ds-again-1"
@@ -55,8 +55,8 @@ needs = 1
 trigger = { use = 0x47001481 }
 update = "none"
 gives = [0x4700146F]
-requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
-prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives another crystal while the raid is at phase 1 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives another crystal while the raid is at phase 1 (a crystal run out or a bore lost: call another, its journal says), an hour after the last, to a hero", confidence = "low" }
 
 [[step]]
 key = "beacon-lin-ds-again-2"
@@ -65,8 +65,8 @@ needs = 2
 trigger = { use = 0x47001481 }
 update = "none"
 gives = [0x4700146F]
-requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
-prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives another crystal while the raid is at phase 2 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives another crystal while the raid is at phase 2 (a crystal run out or a bore lost: call another, its journal says), an hour after the last, to a hero", confidence = "low" }
 
 [[step]]
 key = "home-d"
