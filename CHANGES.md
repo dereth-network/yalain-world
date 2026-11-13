@@ -98,7 +98,7 @@
 - The shreth pit north-east of Rakani is open, and its warden's quest can be done. New pack `shreth-spawning-pit/`.
 - The tyrants' blood quest in Linvak can now be done, from the ravine's chest. New pack `tyrant-heart/`.
 - People who give quests in a series now give them in order. New pack `quest-series/`.
-- The renegades' fortress south of Mayoi and its two quests can now be done. New pack `aun-tanua-fortress/`.
+- The renegades' fortress south of Mayoi, its maze's lever and its two quests can now be done. New pack `aun-tanua-fortress/`.
 - The paths into darkness and light can now be done. New pack `path-into-darkness/`.
 - Killing the officer in three towns now gets you a ticket. New pack `officer-tickets/`.
 - The great tree's long trade chain near Rakani can now be finished. New pack `natures-friend/`.

@@ -1,0 +1,8 @@
+# The maze's lever and the door it opens; edit an authored pack instead.
+
+[[lever]]
+key = "atl-portal-room"
+levers = ["atl-lever@048E"]
+opens = ["atl-portal-room-door@048E"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "the maze's lever opens the room of portals' door (the wiki's map and its notes: only the correct lever opens the door, and it stays open a short time)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: the map says only a short time, one fellow pulling it and running to the door; the run from the lever to the door is about 300 m of the maze's corridors, some 46 s at a run", confidence = "low" } } }
