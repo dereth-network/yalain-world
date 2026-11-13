@@ -107,6 +107,7 @@
 - Fidget's hunt for the carenzi's hidden nuts can now be finished. New pack `carenzi-hoard/`.
 - Gems from creatures now lead to the Arcanum's guarded caches, and the scholar in its vault takes their books. New pack `arcanum-caches/`.
 - A fellowship now moves through Linvak's secret base quest together when one picks up the scrap.
+- The Foundry's tower, workshop and library now have their undead. New pack `foundry-house-camps/`.
 
 ## v0.36.0
 
