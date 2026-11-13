@@ -1,0 +1,93 @@
+# Linvak's raid: given with its crystal at a headquarters beacon, at phase 2 once the crystal has
+# called its bore, ended by the portal home that stands once the bore has held; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000354
+id_name = "QuestEMRaid"
+challenge = 55
+retry = 0
+prov = { from = "derived", rule = "quest-setup-static", record = 0x6F0007F5, confidence = "high", fields = { retry = { from = "authored", by = "Dereth Network", note = "its setup gives no wait: given again at once", confidence = "low" } } }
+
+[[step]]
+key = "beacon-lin-do"
+quest = 0x40000354
+needs = 0
+trigger = { use = 0x47001480 }
+update = "bestow"
+gives = [0x4700146D]
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives the raid and its crystal, as its template's use names both, to one of its kingdom whose last beacon's hour has run out (its template's own gate)", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-do-again-1"
+quest = 0x40000354
+needs = 1
+trigger = { use = 0x47001480 }
+update = "none"
+gives = [0x4700146D]
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives another crystal while the raid is at phase 1 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-do-again-2"
+quest = 0x40000354
+needs = 2
+trigger = { use = 0x47001480 }
+update = "none"
+gives = [0x4700146D]
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives another crystal while the raid is at phase 2 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-ds"
+quest = 0x40000354
+needs = 0
+trigger = { use = 0x47001481 }
+update = "bestow"
+gives = [0x4700146F]
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives the raid and its crystal, as its template's use names both, to one of its kingdom whose last beacon's hour has run out (its template's own gate)", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-ds-again-1"
+quest = 0x40000354
+needs = 1
+trigger = { use = 0x47001481 }
+update = "none"
+gives = [0x4700146F]
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives another crystal while the raid is at phase 1 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-ds-again-2"
+quest = 0x40000354
+needs = 2
+trigger = { use = 0x47001481 }
+update = "none"
+gives = [0x4700146F]
+requires = [{ kingdom = "dominion" }, { quest = 0x40000359, free = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives another crystal while the raid is at phase 2 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+
+[[step]]
+key = "home-d"
+quest = 0x40000354
+needs = 2
+trigger = { arrive = 0x470014A1 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the dominion's portal home that stands where its bore held ends the raid as its template's use names (a player's guide: upon entering the portal the quest completes)", confidence = "low" }
+
+[[step]]
+key = "home-o"
+quest = 0x40000354
+needs = 2
+trigger = { arrive = 0x470014A2 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the order's portal home that stands where its bore held ends the raid as its template's use names (a player's guide: upon entering the portal the quest completes)", confidence = "low" }
+
+[[step]]
+key = "home-s"
+quest = 0x40000354
+needs = 2
+trigger = { arrive = 0x470014A3 }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the shadow's portal home that stands where its bore held ends the raid as its template's use names (a player's guide: upon entering the portal the quest completes)", confidence = "low" }
