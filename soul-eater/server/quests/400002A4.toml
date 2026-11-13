@@ -1,0 +1,69 @@
+# The five sales: coins given to the mage while untraining a skill; edit an authored pack instead.
+
+[[step]]
+key = "sale-1"
+quest = 0x400002A4
+needs = 0
+trigger = { give = 0x47000538, to = 0x4700338D }
+update = "bestow"
+tell = { table = 0x25002AD7, string = 0xF62B9C8E }
+takes = [0x47000538]
+wants = 15000
+requires = [{ untraining = true }]
+effects = [0x6F00248D]
+prov = { from = "authored", by = "Dereth Network", note = "his own words: begin untraining a skill and give him 15,000 coins, and he casts his spell; the first gives the quest (the wiki: hand the coins over to begin it; four left)", confidence = "low" }
+
+[[step]]
+key = "sale-2"
+quest = 0x400002A4
+needs = 1
+trigger = { give = 0x47000538, to = 0x4700338D }
+update = "advance"
+phase = 2
+tell = { table = 0x25002AD7, string = 0xF62B9C8E }
+takes = [0x47000538]
+wants = 15000
+requires = [{ untraining = true }]
+effects = [0x6F00248D]
+prov = { from = "authored", by = "Dereth Network", note = "his own words: begin untraining a skill and give him 15,000 coins, and he casts his spell; the second: three left (its journal)", confidence = "low" }
+
+[[step]]
+key = "sale-3"
+quest = 0x400002A4
+needs = 2
+trigger = { give = 0x47000538, to = 0x4700338D }
+update = "advance"
+phase = 3
+tell = { table = 0x25002AD7, string = 0xF62B9C8E }
+takes = [0x47000538]
+wants = 15000
+requires = [{ untraining = true }]
+effects = [0x6F00248D]
+prov = { from = "authored", by = "Dereth Network", note = "his own words: begin untraining a skill and give him 15,000 coins, and he casts his spell; the third: two left (its journal)", confidence = "low" }
+
+[[step]]
+key = "sale-4"
+quest = 0x400002A4
+needs = 3
+trigger = { give = 0x47000538, to = 0x4700338D }
+update = "advance"
+phase = 4
+tell = { table = 0x25002AD7, string = 0xF62B9C8E }
+takes = [0x47000538]
+wants = 15000
+requires = [{ untraining = true }]
+effects = [0x6F00248D]
+prov = { from = "authored", by = "Dereth Network", note = "his own words: begin untraining a skill and give him 15,000 coins, and he casts his spell; the fourth: one left (its journal)", confidence = "low" }
+
+[[step]]
+key = "sale-5"
+quest = 0x400002A4
+needs = 4
+trigger = { give = 0x47000538, to = 0x4700338D }
+update = "complete"
+tell = { table = 0x25002AD7, string = 0xF62B9C8E }
+takes = [0x47000538]
+wants = 15000
+requires = [{ untraining = true }]
+effects = [0x6F00248D]
+prov = { from = "authored", by = "Dereth Network", note = "his own words: begin untraining a skill and give him 15,000 coins, and he casts his spell; the fifth ends it; its five days run before he takes coins again", confidence = "low" }

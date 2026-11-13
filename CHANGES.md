@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- A mage now finishes your untraining for coins. New pack `soul-eater/`.
 - The kingdoms' mine raids can now be done from the Dominion's headquarters. New pack `elder-mine-raids/`.
 - Creatures' loot now comes from the treasure pools. New pack `loot-from-pools/`.
 - Creatures and ways in for more of the Foundry's houses and one more dungeon, from players' maps. Pack `acmaps-camps/`.

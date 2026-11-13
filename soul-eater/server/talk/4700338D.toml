@@ -1,0 +1,34 @@
+# The mage's lines as he takes the token or refuses the coins or the token; edit an authored pack instead.
+
+[[talk]]
+key = "eater-token-taken"
+who = 0x4700338D
+line = { table = 0x25002AD7, string = 0xF62B9C8E }
+line_name = "ID_Untrain"
+role = "accept"
+how = "tell"
+when = "give"
+item = 0x47001B42
+prov = { from = "authored", by = "Dereth Network", note = "his line as he casts his spell, said for the token as for the coins", confidence = "low" }
+
+[[talk]]
+key = "eater-coins-refused"
+who = 0x4700338D
+line = { table = 0x25002AD7, string = 0x61B457E8 }
+line_name = "ID_QuestUnderway"
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x47000538
+prov = { from = "authored", by = "Dereth Network", note = "his line asking for a skill begun untraining and 15,000 coins, said as coins he cannot take are handed back", confidence = "low" }
+
+[[talk]]
+key = "eater-token-refused"
+who = 0x4700338D
+line = { table = 0x25002AD7, string = 0xFD56B34A }
+line_name = "ID_ReturnToken"
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x47001B42
+prov = { from = "authored", by = "Dereth Network", note = "his line for a token: one at a time, and only while untraining a skill", confidence = "low" }
