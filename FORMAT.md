@@ -43,7 +43,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/treasure_potions.toml [[treasure_potion]]
 <pack>/server/treasure_families.toml [[treasure_family]]
 <pack>/server/items.toml           [[item_use]], [[book]], [[start_item]], [[interaction]]
-<pack>/server/puzzles.toml         [[object_states]], [[sequence]], [[lever]], [[offering]], [[guarded]]
+<pack>/server/puzzles.toml         [[object_states]], [[sequence]], [[lever]], [[offering]], [[guarded]], [[shifting]]
 <pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]], [[defense]]
 ```
 
@@ -125,7 +125,7 @@ Every row sets one **item**, named by its key:
 | `weapon NAME` | the weapon's name, as creatures' templates write it |
 | `area XXYY` | the area's landblock |
 | `death_treasure KEY` | the row's `key` |
-| `object_states KEY`, `sequence KEY`, `lever KEY`, `offering KEY`, `guarded KEY` | the row's `key` |
+| `object_states KEY`, `sequence KEY`, `lever KEY`, `offering KEY`, `guarded KEY`, `shifting KEY` | the row's `key` |
 | `treasure_pool NAME` | the pool's name |
 | `pet 0xEFFECT` | the pet effect (or the contract's template) |
 | `pet_limit 0xSKILL` | the summoning skill |
@@ -350,7 +350,9 @@ above as a making reads it, with what the player's effects add, or `craft = [S, 
 step a player meets all else of but this says its person's `refuse-use` line for the quest, as one under the quest's least
 level does); `{ untraining = true }`, an untraining under way: the player has begun untraining a skill
 and not yet finished or cancelled it (a give it keeps from a player hands the item back with the person's
-`refuse-give` line for that item); and `{ act = A }`, an act the player must hold whole: seven of its scenes, its hidden
+`refuse-give` line for that item); `{ hero = true }`, for heroes alone (a bestowing step a player meets all else of but
+this says its person's `refuse-use` line for the quest, as for a craft skill; a give it keeps from a player hands the
+item back with the person's line for it); and `{ act = A }`, an act the player must hold whole: seven of its scenes, its hidden
 ones aside (a scene of the act must be served; a give names none). A use of a person whose steps don't run says its
 own line at a use, as one that moves nothing does. `takes` lists templates of items taken from the player's
 pack, which the player must hold (a hand-in); a give's step that takes the item given keeps it (the rest of a
@@ -1021,6 +1023,15 @@ player has walked to it: the object says `refused` to the player and no quest st
 everyone as the camp's last creature dies and go as one comes back; one taken by `gone_for` comes back after its
 time, unless the camp's creature is back and the row hides it. What is gone or hidden is not kept across a restart.
 
+**`[[shifting]]`**: placed objects of which one stands at a time, moving to another of their places after each use,
+such as remains that crumble once searched and lie somewhere else next time. `key`; `objects`, the placed objects, at
+least two, named as a lever's, none in another `[[shifting]]` row; `gone_for`, the seconds above 0 none stands after
+a use (the next stands at once when left out); `moves_after`, the seconds above 0 one stands unused before it moves on
+(until it is used when left out). As the world starts one of them, picked at random, stands; the others are kept from
+the world. A use of the one standing that is carried out (for an object a quest step makes a person, a use whose step
+ran) takes it from the world for everyone, and another of them, never the same, stands in its place. What stood is not
+kept across a restart.
+
 ```toml
 # <pack>/server/puzzles.toml
 [[object_states]]
@@ -1058,6 +1069,12 @@ camp = "keeper@04C1"
 objects = ["rift@04C1"]
 refused = { table = 0x250028EF, string = 0xC844788A }
 gone_for = 30
+prov = { from = "authored", by = "you" }
+
+[[shifting]]
+key = "remains"
+objects = ["remains-east@5973", "remains-west@5A74"]
+gone_for = 120
 prov = { from = "authored", by = "you" }
 ```
 
