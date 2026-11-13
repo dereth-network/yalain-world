@@ -99,7 +99,7 @@
 - The tyrants' blood quest in Linvak can now be done, from the ravine's chest. New pack `tyrant-heart/`.
 - People who give quests in a series now give them in order. New pack `quest-series/`.
 - The renegades' fortress south of Mayoi, its maze's lever and its two quests can now be done. New pack `aun-tanua-fortress/`.
-- The paths into darkness and light can now be done. New pack `path-into-darkness/`.
+- The paths into darkness and light can now be done, through the vault's levers. New pack `path-into-darkness/`.
 - Killing the officer in three towns now gets you a ticket. New pack `officer-tickets/`.
 - The great tree's long trade chain near Rakani can now be finished. New pack `natures-friend/`.
 - The plane of chaos under the Battlefield can now be entered, as far as the eidolon's dungeon. New pack `chaos-plane/`.

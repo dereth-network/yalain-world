@@ -1,4 +1,4 @@
-# The Shadows' vault as its thieves find it: its protectors, the codex at the end of its top corridor, and the way out
+# The Shadows' vault as its thieves find it: its doors and levers, its protectors, the codex at the end of its top corridor, and the way out
 # at the other end; edit an authored pack instead.
 
 [[object]]
@@ -40,3 +40,558 @@ population = 2
 regen = 192.0
 spawns = [{ template = 0x47002AEA, weight = 1 }]
 prov = { from = "authored", by = "Dereth Network", note = "Shadow protectors in the halls of locked doors (the wiki's map)", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "ld1-door-a"
+kind = "static"
+id = 0x4004910000000E00
+template = 0x47000FB1
+cell = 0x04910118
+at = [116.44, 15.07, -9.45]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door A (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-b"
+kind = "static"
+id = 0x4004910000000E01
+template = 0x47000FB1
+cell = 0x04910117
+at = [116.23, -24.98, -9.49]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door B (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-c"
+kind = "static"
+id = 0x4004910000000E02
+template = 0x47000FB1
+cell = 0x04910116
+at = [116.27, -64.97, -9.48]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door C (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1l-px"
+kind = "static"
+id = 0x4004910000000E03
+template = 0x47000FB1
+cell = 0x0491012E
+at = [169.51, 35.06, -9.79]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1l-py"
+kind = "static"
+id = 0x4004910000000E04
+template = 0x47000FB1
+cell = 0x0491012E
+at = [164.20, 40.27, -9.84]
+rotation = [0, 0, 0, 1]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1l-nx"
+kind = "static"
+id = 0x4004910000000E05
+template = 0x47000FB1
+cell = 0x0491012E
+at = [158.76, 34.97, -9.81]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1l-ny"
+kind = "static"
+id = 0x4004910000000E06
+template = 0x47000FB1
+cell = 0x0491012E
+at = [164.13, 29.72, -9.84]
+rotation = [1, 0, 0, 0]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1m-px"
+kind = "static"
+id = 0x4004910000000E07
+template = 0x47000FB1
+cell = 0x0491012B
+at = [169.82, -4.88, -9.80]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the middle column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1m-py"
+kind = "static"
+id = 0x4004910000000E08
+template = 0x47000FB1
+cell = 0x0491012B
+at = [164.24, 0.43, -9.75]
+rotation = [1, 0, 0, 0]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the middle column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1m-nx"
+kind = "static"
+id = 0x4004910000000E09
+template = 0x47000FB1
+cell = 0x0491012B
+at = [159.07, -4.97, -9.82]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the middle column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1m-ny"
+kind = "static"
+id = 0x4004910000000E0A
+template = 0x47000FB1
+cell = 0x0491012B
+at = [164.17, -10.12, -9.75]
+rotation = [1, 0, 0, 0]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the middle column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1r-px"
+kind = "static"
+id = 0x4004910000000E0B
+template = 0x47000FB1
+cell = 0x0491012A
+at = [169.65, -44.96, -9.80]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1r-py"
+kind = "static"
+id = 0x4004910000000E0C
+template = 0x47000FB1
+cell = 0x0491012A
+at = [164.21, -39.65, -9.63]
+rotation = [1, 0, 0, 0]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1r-nx"
+kind = "static"
+id = 0x4004910000000E0D
+template = 0x47000FB1
+cell = 0x0491012A
+at = [158.90, -45.05, -9.82]
+rotation = [0.707107, 0, 0, -0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-1r-ny"
+kind = "static"
+id = 0x4004910000000E0E
+template = 0x47000FB1
+cell = 0x0491012A
+at = [164.14, -50.20, -9.63]
+rotation = [1, 0, 0, 0]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the first crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2l-px"
+kind = "static"
+id = 0x4004910000000E0F
+template = 0x47000FB1
+cell = 0x04910132
+at = [189.56, 34.95, -9.78]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2l-py"
+kind = "static"
+id = 0x4004910000000E10
+template = 0x47000FB1
+cell = 0x04910132
+at = [184.17, 39.96, -9.84]
+rotation = [0, 0, 0, 1]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2l-nx"
+kind = "static"
+id = 0x4004910000000E11
+template = 0x47000FB1
+cell = 0x04910132
+at = [178.80, 34.87, -9.80]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2l-ny"
+kind = "static"
+id = 0x4004910000000E12
+template = 0x47000FB1
+cell = 0x04910132
+at = [184.10, 29.41, -9.84]
+rotation = [1, 0, 0, 0]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2m-px"
+kind = "static"
+id = 0x4004910000000E13
+template = 0x47000FB1
+cell = 0x04910131
+at = [189.87, -4.99, -9.79]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the middle column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2m-py"
+kind = "static"
+id = 0x4004910000000E14
+template = 0x47000FB1
+cell = 0x04910131
+at = [184.21, 0.12, -9.75]
+rotation = [0, 0, 0, 1]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the middle column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2m-nx"
+kind = "static"
+id = 0x4004910000000E15
+template = 0x47000FB1
+cell = 0x04910131
+at = [179.11, -5.07, -9.81]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the middle column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2m-ny"
+kind = "static"
+id = 0x4004910000000E16
+template = 0x47000FB1
+cell = 0x04910131
+at = [184.14, -10.43, -9.75]
+rotation = [1, 0, 0, 0]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the middle column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2r-px"
+kind = "static"
+id = 0x4004910000000E17
+template = 0x47000FB1
+cell = 0x04910133
+at = [189.70, -45.07, -9.79]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2r-py"
+kind = "static"
+id = 0x4004910000000E18
+template = 0x47000FB1
+cell = 0x04910133
+at = [184.18, -39.96, -9.63]
+rotation = [0, 0, 0, 1]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2r-nx"
+kind = "static"
+id = 0x4004910000000E19
+template = 0x47000FB1
+cell = 0x04910133
+at = [178.94, -45.15, -9.81]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-2r-ny"
+kind = "static"
+id = 0x4004910000000E1A
+template = 0x47000FB1
+cell = 0x04910133
+at = [184.11, -50.51, -9.63]
+rotation = [1, 0, 0, 0]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the second crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3l-px"
+kind = "static"
+id = 0x4004910000000E1B
+template = 0x47000FB1
+cell = 0x04910138
+at = [209.57, 35.04, -9.84]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3l-py"
+kind = "static"
+id = 0x4004910000000E1C
+template = 0x47000FB1
+cell = 0x04910138
+at = [204.06, 39.75, -9.84]
+rotation = [0, 0, 0, 1]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3l-nx"
+kind = "static"
+id = 0x4004910000000E1D
+template = 0x47000FB1
+cell = 0x04910138
+at = [198.82, 34.95, -9.84]
+rotation = [0.707107, 0, 0, -0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3l-ny"
+kind = "static"
+id = 0x4004910000000E1E
+template = 0x47000FB1
+cell = 0x04910138
+at = [204.00, 29.20, -9.84]
+rotation = [0, 0, 0, 1]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the west column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3m-px"
+kind = "static"
+id = 0x4004910000000E1F
+template = 0x47000FB1
+cell = 0x04910139
+at = [209.88, -4.90, -9.67]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the middle column, X (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3m-py"
+kind = "static"
+id = 0x4004910000000E20
+template = 0x47000FB1
+cell = 0x04910139
+at = [204.10, -0.09, -9.75]
+rotation = [0, 0, 0, 1]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the middle column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3m-nx"
+kind = "static"
+id = 0x4004910000000E21
+template = 0x47000FB1
+cell = 0x04910139
+at = [199.13, -4.99, -9.69]
+rotation = [0.707107, 0, 0, -0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the middle column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3m-ny"
+kind = "static"
+id = 0x4004910000000E22
+template = 0x47000FB1
+cell = 0x04910139
+at = [204.04, -10.64, -9.75]
+rotation = [0, 0, 0, 1]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the middle column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3r-px"
+kind = "static"
+id = 0x4004910000000E23
+template = 0x47000FB1
+cell = 0x0491013A
+at = [209.71, -44.98, -9.67]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3r-py"
+kind = "static"
+id = 0x4004910000000E24
+template = 0x47000FB1
+cell = 0x0491013A
+at = [204.07, -40.17, -9.63]
+rotation = [0, 0, 0, 1]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3r-nx"
+kind = "static"
+id = 0x4004910000000E25
+template = 0x47000FB1
+cell = 0x0491013A
+at = [198.96, -45.07, -9.69]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-door-3r-ny"
+kind = "static"
+id = 0x4004910000000E26
+template = 0x47000FB1
+cell = 0x0491013A
+at = [204.01, -50.72, -9.63]
+rotation = [1, 0, 0, 0]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "a grid door by the third crossing of the east column (the map), in the install's frame there, the door such frames hold most; front to the way in, so anyone opens it from behind (out, not up)", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-d"
+kind = "static"
+template = 0x47000CDD
+cell = 0x04910118
+at = [113.32, 17.96, -9.30]
+rotation = [0.400282, 0, 0, -0.916392]
+prov = { from = "authored", by = "Dereth Network", note = "lever d (the wiki's map), in the main hall beside door A", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-e"
+kind = "static"
+template = 0x47000CDD
+cell = 0x04910117
+at = [113.40, -21.83, -9.20]
+rotation = [0.357854, 0, 0, -0.933778]
+prov = { from = "authored", by = "Dereth Network", note = "lever e (the wiki's map), in the main hall beside door B", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-f"
+kind = "static"
+template = 0x47000CDD
+cell = 0x04910116
+at = [113.79, -61.84, -9.20]
+rotation = [0.328792, 0, 0, -0.944402]
+prov = { from = "authored", by = "Dereth Network", note = "lever f (the wiki's map), in the main hall beside door C; the map says nothing of what it opens, so no row names it", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-g"
+kind = "static"
+template = 0x47000CDD
+cell = 0x04910117
+at = [120.61, -26.69, -9.40]
+rotation = [0.825735, 0, 0, 0.564058]
+prov = { from = "authored", by = "Dereth Network", note = "lever g (the wiki's map), just past door B", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-h"
+kind = "static"
+template = 0x47000CDD
+cell = 0x04910127
+at = [151.29, -6.75, -9.50]
+rotation = [0.753921, 0, 0, -0.656965]
+prov = { from = "authored", by = "Dereth Network", note = "lever h (the wiki's map), on the middle column short of the first crossing; the map says nothing of what it opens, so no row names it", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-i"
+kind = "static"
+template = 0x47000CDD
+cell = 0x04910125
+at = [151.37, 36.12, -9.50]
+rotation = [0.674754, 0, 0, -0.738043]
+prov = { from = "authored", by = "Dereth Network", note = "lever i (the wiki's map), on the west column short of the first crossing", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-1"
+kind = "static"
+template = 0x47000CDD
+cell = 0x0491012F
+at = [165.32, 59.54, -9.40]
+rotation = [0.023180, 0, 0, 0.999731]
+prov = { from = "authored", by = "Dereth Network", note = "lever 1 (the wiki's map), at the end of its room", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-2"
+kind = "static"
+template = 0x47000CDD
+cell = 0x04910137
+at = [183.61, 59.56, -9.40]
+rotation = [0.010978, 0, 0, -0.999940]
+prov = { from = "authored", by = "Dereth Network", note = "lever 2 (the wiki's map), at the end of its room; the sequence chosen does not reach it, so no row names it", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-3"
+kind = "static"
+template = 0x47000CDD
+cell = 0x0491013C
+at = [205.73, 59.51, -9.40]
+rotation = [0.034170, 0, 0, 0.999416]
+prov = { from = "authored", by = "Dereth Network", note = "lever 3 (the wiki's map), at the end of its room", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-4"
+kind = "static"
+template = 0x47000CDD
+cell = 0x04910140
+at = [228.71, 33.58, -9.40]
+rotation = [0.726731, 0, 0, 0.686922]
+prov = { from = "authored", by = "Dereth Network", note = "lever 4 (the wiki's map), at the end of its room; the sequence chosen does not reach it, so no row names it", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-5"
+kind = "static"
+template = 0x47000CDD
+cell = 0x0491013F
+at = [228.71, -44.55, -9.40]
+rotation = [0.699903, 0, 0, 0.714238]
+prov = { from = "authored", by = "Dereth Network", note = "lever 5 (the wiki's map), at the end of its room", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-6"
+kind = "static"
+template = 0x47000CDD
+cell = 0x0491013B
+at = [205.40, -69.57, -9.40]
+rotation = [0.999622, 0, 0, 0.027497]
+prov = { from = "authored", by = "Dereth Network", note = "lever 6 (the wiki's map), at the end of its room", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-7"
+kind = "static"
+template = 0x47000CDD
+cell = 0x04910134
+at = [183.32, -69.52, -9.40]
+rotation = [0.999856, 0, 0, -0.016952]
+prov = { from = "authored", by = "Dereth Network", note = "lever 7 (the wiki's map), at the end of its room", confidence = "low" }
+
+[[object]]
+key = "ld1-lever-8"
+kind = "static"
+template = 0x47000CDD
+cell = 0x04910130
+at = [164.12, -69.58, -9.40]
+rotation = [0.999999, 0, 0, -0.001223]
+prov = { from = "authored", by = "Dereth Network", note = "lever 8 (the wiki's map), at the end of its room", confidence = "low" }
