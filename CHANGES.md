@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Killing the mountain fortress's Gurog king now opens a portal to the dungeon below. New pack `goarata-undercrofts/`.
 - A mage now finishes your untraining for coins. New pack `soul-eater/`.
 - The kingdoms' mine raids can now be done from the Dominion's headquarters. New pack `elder-mine-raids/`.
 - Creatures' loot now comes from the treasure pools. New pack `loot-from-pools/`.

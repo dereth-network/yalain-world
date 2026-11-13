@@ -1,0 +1,10 @@
+# The king's death opens the portal into the dungeon below on the fortress's platform; edit an authored pack
+# instead.
+
+[[death_spawn]]
+creature = 0x47002663
+template = 0x470013E2
+at = "undercrofts-platform"
+to = "undercrofts-in"
+lasts = 300
+prov = { from = "authored", by = "Dereth Network", note = "the guide: killing him makes a portal to the dungeon appear on the platform for several minutes; he names no death effect", confidence = "low", fields = { template = { from = "authored", by = "Dereth Network", note = "no portal of the install leads there: one of this region's with no quest gate (least level 40, under the quest's 51), led to the dungeon's landing", confidence = "low" }, lasts = { from = "authored", by = "Dereth Network", note = "several minutes", confidence = "low" } } }
