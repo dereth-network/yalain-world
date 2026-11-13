@@ -1,0 +1,21 @@
+# The Order's lost scholars: their remains give the chest's key, and the tunnels' boss's fall opens the rupture; edit
+# this pack's rows.
+
+[[step]]
+key = "corpse-key"
+quest = 0x4000033B
+needs = 1
+trigger = { use = 0x470012FC }
+update = "advance"
+phase = 2
+gives = [0x470010CF]
+prov = { from = "authored", by = "Dereth Network", note = "the corpse's own use: the key and the next phase (its line: rifling through the bones uncovers a key); the wiki: loot the body for the chest's key", confidence = "low" }
+
+[[step]]
+key = "nexi-fallen"
+quest = 0x4000033B
+needs = 5
+trigger = { kill = 0x47002232, within = 40 }
+update = "none"
+adds = { tally = "nexi-fallen", by = 1 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: once the tunnels' boss dies a portal opens to the island; a player in the tunnels at the quest's last phase near its fall opens it", confidence = "low" }

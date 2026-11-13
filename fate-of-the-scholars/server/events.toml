@@ -1,0 +1,12 @@
+# The rupture the Nexi's fall opens, for five minutes; edit this pack's rows.
+
+[[event]]
+key = "chaos-tunnels-rupture"
+prov = { from = "authored", by = "Dereth Network", note = "on while the rupture the boss's fall opened stands", confidence = "low" }
+
+[[tally]]
+key = "nexi-fallen"
+full = 1
+starts = { event = "chaos-tunnels-rupture", lasts = 300 }
+resets = { event = "chaos-tunnels-rupture" }
+prov = { from = "authored", by = "Dereth Network", note = "the boss fallen near a player at the last phase opens the rupture for five minutes (nothing says how long; the wiki: everyone must use it)", confidence = "low" }

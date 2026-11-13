@@ -109,6 +109,7 @@
 - A fellowship now moves through Linvak's secret base quest together when one picks up the scrap.
 - The Foundry's tower, workshop and library now have their undead, and the tower's ladders reach its top. New pack `foundry-house-camps/`.
 - The Olthoi Wastes' hive dungeon now has a way in, and creatures in its side dungeons. New pack `heart-of-darkness/`.
+- The quest for the Order's lost scholars can now be done, through the tunnels under the delta. New pack `fate-of-the-scholars/`.
 
 ## v0.36.0
 

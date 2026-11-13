@@ -1,0 +1,22 @@
+# The tunnels' boss and the rupture its fall opens; edit this pack's rows.
+
+[[camp]]
+key = "the-nexi"
+cell = 0x07F001A2
+at = [106.45, -652.51, 92.80]
+spots = [{ cell = 0x07F001A2, at = [106.45, -652.51, 92.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002232, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the tunnels' boss in the middle of the room the four boss places of a list of the game's destinations stand round (the wiki: south, then east, to it); no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "tunnels-rupture"
+kind = "static"
+template = 0x47001307
+cell = 0x07F001A2
+at = [106.62, -645.26, 93.30]
+rotation = [1, 0, 0, 0]
+to = "gateway-cacophos"
+event = "chaos-tunnels-rupture"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: as the tunnels' boss dies a portal opens to the island; here beside its place, while its fall holds the event; no recording", confidence = "low" }
