@@ -45,7 +45,7 @@
 - Arramora's lair quests can now be done, from the gems their holders drop. New pack `arramora-lairs/`.
 - The blowouts' portal shards and the master vaults' gems now open their portals. New pack `item-portals/`.
 - The scholars' vault in north-west Osteth can now be entered and left. New pack `arcanum-vault/`.
-- The archon of Osteth's master vault can now be fought and his quest finished. New pack `osteth-master-vault/`.
+- The archon of Osteth's master vault can now be fought, his quest finished and his heart taken. New pack `osteth-master-vault/`.
 - People no longer say names, descriptions or lines meant for other moments. New pack `misnamed-lines/`.
 - The archons of the Linvak and Omishan master vaults can now be fought and their quests finished. New pack `linvak-omishan-vaults/`.
 - Nine dungeon kill quests can now be done, with ways into four more dungeons. New pack `dungeon-bosses/`.
