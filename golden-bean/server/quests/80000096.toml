@@ -1,0 +1,15 @@
+# The bean of gold the plant bears, handed back to Elenura, ends her quest.
+
+[[step]]
+key = "bean-back"
+quest = 0x80000096
+needs = 1
+trigger = { give = 0x47001B46, to = 0x47003391 }
+update = "complete"
+takes = [0x47001B46]
+wants = 1
+gives = [0x47000538]
+counts = [5000]
+xp_share = 0.05
+tell = { table = 0x25002AD9, string = 0xEDC53877 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: the harvest handed to Elenura completes it, for 5,000 coins and 5% of a level's experience (its cap at level 56 left out); the line is her own", confidence = "low" }

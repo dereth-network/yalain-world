@@ -4,6 +4,7 @@
 
 - The light temple's pillars now stand on its island, and its portal opens by day. New pack `temple-of-elemental-light/`.
 - Killing the mountain fortress's Gurog king now opens a portal to the dungeon below. New pack `goarata-undercrofts/`.
+- Elenura's bean can now be grown in the garden by her camp and handed back. New pack `golden-bean/`.
 - A mage now finishes your untraining for coins. New pack `soul-eater/`.
 - The kingdoms' mine raids can now be done from the Dominion's headquarters. New pack `elder-mine-raids/`.
 - Creatures' loot now comes from the treasure pools. New pack `loot-from-pools/`.
