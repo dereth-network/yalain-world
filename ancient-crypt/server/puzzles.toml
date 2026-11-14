@@ -1,0 +1,15 @@
+# The crypt's two deadly things: the second level's trapped platform and the seventh level's gate; edit an authored pack instead.
+
+[[hazard]]
+key = "acrypt-2-trap"
+spots = [{ cell = 0x03E40148, at = [67.20, -8.00, -0.90] }]
+touch = 6.0
+kills = true
+prov = { from = "authored", by = "Dereth Network", note = "the platform where the walkways cross, which a players' guide says kills whoever steps on it; its reach the platform's", confidence = "low" }
+
+[[hazard]]
+key = "acrypt-7-splendor"
+objects = ["acrypt-7-gate@03DF"]
+used = true
+kills = true
+prov = { from = "authored", by = "Dereth Network", note = "the gate a players' guide says kills at once whoever uses it, as its own line warns; after its warning", confidence = "low" }
