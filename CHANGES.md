@@ -1,6 +1,6 @@
 # Changes
 
-## Unreleased
+## v0.37.0
 
 - The mine under the Skyport now has its banderlings. New pack `skyport-maint-camps/`.
 - The western hive in the Olthoi Wastes can now be entered from its mound, and has its olthoi. New pack `olthoi-hive-west/`.
