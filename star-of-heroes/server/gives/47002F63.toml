@@ -1,0 +1,20 @@
+# What the forge does with a crystal charged with chaos: for one who has cleansed it, the star; edit an authored pack
+# instead.
+
+[[give]]
+key = "attuned-crystal-to-star"
+to = 0x47002F63
+item = 0x4700131C
+wants = 1
+gives = [0x4700184B]
+requires = [{ quest = 0x40000303, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the hammer and the forge: one who cleansed it may put a crystal of chaos in it, which comes back changed into the star; of the two star templates, the one no recipe makes", confidence = "low" }
+
+[[give]]
+key = "power-crystal-to-star"
+to = 0x47002F63
+item = 0x47000612
+wants = 1
+gives = [0x4700184B]
+requires = [{ quest = 0x40000303, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "a guide of the time: the crystal the last part of the tree quest gives also works at the forge; as the attuned crystal", confidence = "low" }

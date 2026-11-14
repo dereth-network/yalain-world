@@ -1,0 +1,37 @@
+# The forge's lines as it takes a crystal or refuses an item, in place of its making lines said at a plain use; edit an
+# authored pack instead.
+
+[[talk]]
+key = "t-2f63-9cd3aedf"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0x9CD3AEDF }
+line_name = "ID_StarSpew"
+role = "accept"
+how = "emote"
+when = "give"
+item = 0x4700131C
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line for the star's making, said as it takes the attuned crystal and hands back the star; read before as a line of any use", confidence = "low" }
+
+[[talk]]
+key = "t-2f63-9cd3aedf-power"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0x9CD3AEDF }
+line_name = "ID_StarSpew"
+role = "accept"
+how = "emote"
+when = "give"
+item = 0x47000612
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line for the star's making, as for the attuned crystal", confidence = "low" }
+
+[[talk]]
+key = "t-2f63-f1ebbc45"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0xF1EBBC45 }
+role = "refuse-give"
+how = "emote"
+when = "give"
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line for an item it hands back untouched, said for any it does not take", confidence = "low" }
+
+# The armor's making steps, which no row here takes, are not said at a plain use.
+[[remove]]
+items = ["talk t-2f63-41ae4c35", "talk t-2f63-bff40440", "talk t-2f63-dc74902a", "talk t-2f63-e0265634", "talk t-2f63-feddafdc"]
