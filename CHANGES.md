@@ -3,7 +3,7 @@
 ## Unreleased
 
 - The island beyond the delta's tunnels can now be finished, down through its heart to the beast. New pack `cacophos/`.
-- A chaos crystal can now be forged into a star and given to Arramora's beacon. New pack `star-of-heroes/`.
+- The temple priestess gives the star's quest, and the cleansed forge makes the star for Arramora's beacon. New pack `star-of-heroes/`.
 - The Dominion's mine overseer now asks for enemy motes, which the mines' guardians drop. New pack `elder-mine-boons/`.
 - The light temple can now be done, from its pillars by day through its levers to the well. New pack `temple-of-elemental-light/`.
 - The lore hunt in the dungeon under the mountain fortress can now be done. New pack `goarata-undercrofts/`.

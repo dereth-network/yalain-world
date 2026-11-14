@@ -1,0 +1,12 @@
+# The star's own quest: the temple's priestess gives it with the recipe that assembles the star, whose making ends it;
+# edit an authored pack instead.
+
+[[step]]
+key = "priestess-gives"
+quest = 0x400001CF
+needs = 0
+trigger = { use = 0x47003264 }
+update = "bestow"
+tell = { table = 0x25002A51, string = 0x2FE893C2 }
+recipes = [0x6F000329]
+prov = { from = "authored", by = "Dereth Network", note = "a guide: the temple's high priestess west of Mayoi gives it; her line for a task; the star's recipe as the install grants it, whose making ends the quest; 2017: one character held it failed", confidence = "low" }
