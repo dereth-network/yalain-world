@@ -1,5 +1,5 @@
-# The fortress's platform, where the king's portal stands, and the dungeon's landing; edit an authored pack
-# instead.
+# The fortress's platform, where the king's portal stands, the dungeon's landing, and where its way out lands; edit an
+# authored pack instead.
 
 [[place]]
 key = "undercrofts-platform"
@@ -14,3 +14,10 @@ cell = 0x03E60100
 at = [15.00, 20.00, 101.20]
 rotation = [0.707107, 0, 0, -0.707107]
 prov = { from = "authored", by = "Dereth Network", note = "the dungeon's arrival, as a list of the game's destinations gives it; no trip there was recorded", confidence = "medium" }
+
+[[place]]
+key = "undercrofts-out"
+cell = 0x46510023
+at = [84.00, 45.00, 330.50]
+rotation = [0, 0, 0, 1]
+prov = { from = "authored", by = "Dereth Network", note = "where the dungeon's way out lands on the fortress's plaza, as a list of the game's destinations gives it; no trip there was recorded", confidence = "low" }
