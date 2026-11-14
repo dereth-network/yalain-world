@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The quest for the Foundry's gates is now given from level 50, once Vothardun has been investigated. Pack `guide-givers/`.
 - Practice dummies' hurting whoever hits them is now part of the world. New pack `practice-dummies/`.
 - The renegades' fortress south of Mayoi now has its fanatics. New pack `renegade-fortress-camps/`.
 - The dungeon the crafted necklace leads to now has its wisps, who leave the necklace's user alone. New pack `chaos-breach-wisps/`.
