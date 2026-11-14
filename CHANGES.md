@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The olthoi hunts' grubs are now in the warren under the northeast hive. Pack `bug-hunts/`.
 - The western hive in the Olthoi Wastes can now be reached by a portal on the land in front of its mound. Pack `olthoi-hive-west/`.
 - The western hive in the Olthoi Wastes now has its nymph boss. Pack `dungeon-bosses/`.
 - The Warder trackers now hand out their scroll only once an hour. Pack `hakata-huntress/`.
