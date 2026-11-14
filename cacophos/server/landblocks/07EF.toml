@@ -1,0 +1,23 @@
+# The heart's way out beside its landing, and the portal past its bridge to the beast's lair; edit an authored pack
+# instead.
+
+[[object]]
+key = "heart-way-out"
+kind = "static"
+template = 0x47001154
+cell = 0x07EF0100
+at = [-1.00, -15.00, 154.21]
+rotation = [0, 0, 0, 1]
+to = "heart-exit"
+prov = { from = "authored", by = "Dereth Network", note = "on the install's portal pad beside the heart's landing, 1.48 m above it, back to the opening atop the mountain; no recording", confidence = "low" }
+
+[[object]]
+key = "to-the-lair"
+kind = "static"
+template = 0x47001154
+cell = 0x07EF0167
+at = [4.00, -559.00, 63.18]
+rotation = [0, 0, 0, 1]
+name = { table = 0x25001B44, string = 0xA36DD52A }
+to = "beast-lair"
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: at the bottom a path with a small bridge and the portal to the lair; a flood finds one narrow way (5 m by 30 m) at the heart's south end, the install's arch past it; no recording", confidence = "low" }
