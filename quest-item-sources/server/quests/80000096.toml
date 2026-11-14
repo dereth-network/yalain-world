@@ -1,10 +1,16 @@
-# The bean and its gardening tools, given with the quest, as a players' guide of the time tells it.
+# The bean and its gardening tools, sold to a hero with the quest for 1,000 coins, as the wiki and a players' guide of the
+# time tell it.
 
 [[step]]
 key = "w-given"
 quest = 0x80000096
 needs = 0
-trigger = { use = 0x47003391 }
+trigger = { give = 0x47000538, to = 0x47003391 }
 update = "bestow"
+takes = [0x47000538]
+wants = 1000
+least_level = 46
+requires = [{ hero = true }]
 gives = [0x47001B48, 0x47001B49, 0x47001B51]
-prov = { from = "authored", by = "Dereth Network", note = "who gives it, and the three items that come with it, from a player's guide of the time; the 1,000 coins the guide and her lines ask for them are not taken; no recording", confidence = "low" }
+tell = { table = 0x25002AD9, string = 0x1D803BA2 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: level 46 and a hero, pay her 1,000 gold for the bean to begin it, the trowel and the can coming with it; her own lines ask the 1,000 and thank the buyer; no recording", confidence = "low" }

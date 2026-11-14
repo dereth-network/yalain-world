@@ -1,0 +1,21 @@
+# Elenura's offer of her bean at a use, and her price asked of a buyer who hands her another sum.
+
+[[talk]]
+key = "elenura-offers-the-bean"
+who = 0x47003391
+line = { table = 0x25002AD9, string = 0xBD65E99B }
+role = "use"
+how = "tell"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "her own line offering the bean for 1,000 gold; the wiki: speak to her, then pay; no recording", confidence = "low" }
+
+[[talk]]
+key = "elenura-asks-her-price"
+who = 0x47003391
+line = { table = 0x25002AD9, string = 0x686DE421 }
+role = "refuse-give"
+how = "tell"
+when = "give"
+quest = 0x80000096
+item = 0x47000538
+prov = { from = "authored", by = "Dereth Network", note = "her own line asking 1,000 coins for a bean, said as another sum is handed back; no recording", confidence = "low" }
