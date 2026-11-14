@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The northeast hive in the Olthoi Wastes now has its olthoi. New pack `olthoi-hive-northeast-camps/`.
 - The hero initiation's dungeon now opens to those its device has flagged, and has a way out. New packs `holding-matrix/` and `holding-portal/`.
 - The quest for the Foundry's gates is now given from level 50, once Vothardun has been investigated. Pack `guide-givers/`.
 - Practice dummies' hurting whoever hits them is now part of the world. New pack `practice-dummies/`.
