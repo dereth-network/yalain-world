@@ -1,4 +1,4 @@
-# The besieged outposts' recruits and beacons; edit an authored pack instead.
+# The besieged outposts' recruits, beacons, guards and supply chests; edit an authored pack instead.
 
 [[camp]]
 key = "beacon-e4"
@@ -9,3 +9,42 @@ population = 1
 regen = 192.0
 spawns = [{ template = 0x4700299C, weight = 1 }]
 prov = { from = "authored", by = "Dereth Network", note = "the outpost's beacon, one at a time, at the north-east Tou-Tou outpost of the AC2 Vault's map (27.2N 67.4E), Tou-Tou's eastmost; 2017 recorded no camp there; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "chest-e4"
+kind = "static"
+template = 0x47000F2F
+cell = 0xD5A20023
+at = [96.30, 46.66, 77.44]
+rotation = [0.382683, 0.0, 0.0, 0.92388]
+prov = { from = "authored", by = "Dereth Network", note = "the supply chest of the east Tou-Tou outpost, at the place from its beacon 2017 recorded the central Farali one's; none recorded here", confidence = "low" }
+
+[[camp]]
+key = "guards-e4-ruruk"
+cell = 0xD5A20022
+at = [81.40, 30.70, 78.18]
+spots = [{ cell = 0xD5A2001A, at = [74.30, 22.80, 74.42] }, { cell = 0xD5A2001A, at = [68.30, 38.80, 79.06] }, { cell = 0xD5A20021, at = [84.30, 14.80, 72.58] }, { cell = 0xD5A20022, at = [90.30, 36.80, 77.33] }, { cell = 0xD5A20019, at = [70.30, 12.80, 73.96] }, { cell = 0xD5A2001A, at = [74.30, 24.80, 74.72] }, { cell = 0xD5A2001A, at = [68.30, 26.80, 75.53] }, { cell = 0xD5A20021, at = [80.30, 18.80, 73.77] }, { cell = 0xD5A2001A, at = [64.30, 20.80, 76.20] }, { cell = 0xD5A20022, at = [92.30, 34.80, 76.13] }]
+population = 10
+regen = 192.0
+spawns = [{ template = 0x470022B1, weight = 23 }]
+prov = { from = "authored", by = "Dereth Network", note = "guard Burun ruruks as 2017 recorded at the central Farali outpost (kinds, weights, population, place from its beacon); none recorded here; the wiki: about 15 Burun around a beacon", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "guards-e4-myrmidons"
+cell = 0xD5A2001A
+at = [78.60, 32.40, 78.83]
+spots = [{ cell = 0xD5A20022, at = [96.30, 32.80, 75.98] }, { cell = 0xD5A20023, at = [84.30, 40.80, 80.28] }, { cell = 0xD5A2001A, at = [66.30, 34.80, 77.85] }, { cell = 0xD5A2001A, at = [62.30, 28.80, 77.63] }, { cell = 0xD5A2001A, at = [76.30, 26.80, 75.95] }, { cell = 0xD5A20022, at = [80.30, 24.80, 76.00] }, { cell = 0xD5A20022, at = [82.30, 22.80, 74.05] }, { cell = 0xD5A2001B, at = [74.30, 50.80, 81.40] }]
+population = 8
+regen = 192.0
+spawns = [{ template = 0x4700226A, weight = 15 }, { template = 0x47002267, weight = 9 }]
+prov = { from = "authored", by = "Dereth Network", note = "guard Burun myrmidons and browerks as 2017 recorded at the central Farali outpost (kinds, weights, population, place from its beacon); none recorded here; the wiki: about 15 Burun around a beacon", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "guards-e4-immortals"
+cell = 0xD5A2001A
+at = [77.80, 35.00, 79.29]
+spots = [{ cell = 0xD5A2001A, at = [74.30, 28.80, 76.25] }, { cell = 0xD5A20022, at = [84.30, 32.80, 77.92] }]
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002290, weight = 4 }]
+prov = { from = "authored", by = "Dereth Network", note = "guard Burun immortals as 2017 recorded at the central Farali outpost (kinds, weights, population, place from its beacon); none recorded here; the wiki: about 15 Burun around a beacon", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
