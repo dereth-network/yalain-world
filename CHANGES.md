@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The cleansed forge in the plane of chaos now forges new suits of augmented armor. New pack `chaos-forge-armor/`.
 - Each crystal in the master vault of Omishan now needs one serum of its own, picked at random. Pack `linvak-omishan-vaults/`.
 - The olthoi hunts' grubs are now in the warren under the northeast hive. Pack `bug-hunts/`.
 - The western hive in the Olthoi Wastes can now be reached by a portal on the land in front of its mound. Pack `olthoi-hive-west/`.

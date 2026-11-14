@@ -1,0 +1,123 @@
+# The forge's lines with each step of the new suit; edit an authored pack instead.
+
+[[talk]]
+key = "new-suit-begun"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0xE0265634 }
+line_name = "ID_PyreumSpew"
+role = "offer"
+how = "emote"
+when = "give"
+quest = 0x40000305
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line as the pyreum bursts in it, the first step done, asking next for the essence that heals", confidence = "low" }
+
+[[talk]]
+key = "new-suit-essence"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0x01ED2C80 }
+role = "advance"
+how = "emote"
+when = "give"
+quest = 0x40000305
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line as the essence hisses into it, asking next for five of the ebon metal", confidence = "low" }
+
+[[talk]]
+key = "new-suit-smelted-3"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0xA93F106A }
+role = "advance"
+how = "emote"
+when = "give"
+quest = 0x40000305
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line as the ebon metal is smelted into the matrix", confidence = "low" }
+
+[[talk]]
+key = "new-suit-smelted-4"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0xA93F106A }
+role = "advance"
+how = "emote"
+when = "give"
+quest = 0x40000305
+update = "advance"
+phase = 4
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line as the ebon metal is smelted into the matrix", confidence = "low" }
+
+[[talk]]
+key = "new-suit-smelted-5"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0xA93F106A }
+role = "advance"
+how = "emote"
+when = "give"
+quest = 0x40000305
+update = "advance"
+phase = 5
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line as the ebon metal is smelted into the matrix", confidence = "low" }
+
+[[talk]]
+key = "new-suit-smelted-6"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0xA93F106A }
+role = "advance"
+how = "emote"
+when = "give"
+quest = 0x40000305
+update = "advance"
+phase = 6
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line as the ebon metal is smelted into the matrix", confidence = "low" }
+
+[[talk]]
+key = "new-suit-spheres"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0xA53F106A }
+role = "advance"
+how = "emote"
+when = "give"
+quest = 0x40000305
+update = "advance"
+phase = 7
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line for the fifth of the ebon metal, the matrix formed into five spheres, asking next for the coins", confidence = "low" }
+
+[[talk]]
+key = "new-suit-coins"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0xFEDDAFDC }
+line_name = "ID_CoinSpew"
+role = "advance"
+how = "emote"
+when = "give"
+quest = 0x40000305
+update = "advance"
+phase = 8
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line as the coins cascade into it and five pieces form, asking next for a crystal of chaos", confidence = "low" }
+
+[[talk]]
+key = "new-suit-crystal"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0xBFF40440 }
+line_name = "ID_CrystalSpew"
+role = "advance"
+how = "emote"
+when = "give"
+quest = 0x40000305
+update = "advance"
+phase = 9
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line as the crystal's energy is released, one step left: the player's own blood", confidence = "low" }
+
+[[talk]]
+key = "new-suit-attuned"
+who = 0x47002F63
+line = { table = 0x250028EE, string = 0x41AE4C35 }
+line_name = "ID_AttuneSpew"
+role = "complete"
+how = "emote"
+when = "use"
+quest = 0x40000305
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line as the blood flows and the suit comes out of it into the player's hands", confidence = "low" }

@@ -1,0 +1,374 @@
+# The forge's new suit: begun with the largest pyreum, fed the healing essence, five of the ebon metal, the coins and a
+# crystal of chaos, and ended with the player's blood; edit an authored pack instead.
+
+[[quest]]
+id = 0x40000305
+id_name = "QuestNewKingdomArmor"
+state = 0x6F000770
+challenge = 55
+duration = 86400
+retry = 1
+min_level = 50
+prov = { from = "derived", rule = "quest-setup-static", record = 0x6F000770, confidence = "high" }
+
+[[step]]
+key = "pyreum-shadow"
+quest = 0x40000305
+needs = 0
+trigger = { give = 0x4700106B, to = 0x47002F63 }
+update = "bestow"
+wants = 1
+takes = [0x4700106B]
+requires = [{ quest = 0x40000303, done = true }, { kingdom = "shadow" }]
+prov = { from = "authored", by = "Dereth Network", note = "the hammer and the forge: one who cleansed it begins a suit with the largest pyreum; for one of a kingdom, as each piece asks for one: no source says what the forge did for one of none", confidence = "low" }
+
+[[step]]
+key = "pyreum-order"
+quest = 0x40000305
+needs = 0
+trigger = { give = 0x4700106B, to = 0x47002F63 }
+update = "bestow"
+wants = 1
+takes = [0x4700106B]
+requires = [{ quest = 0x40000303, done = true }, { kingdom = "order" }]
+prov = { from = "authored", by = "Dereth Network", note = "the hammer and the forge: one who cleansed it begins a suit with the largest pyreum; for one of a kingdom, as each piece asks for one: no source says what the forge did for one of none", confidence = "low" }
+
+[[step]]
+key = "pyreum-dominion"
+quest = 0x40000305
+needs = 0
+trigger = { give = 0x4700106B, to = 0x47002F63 }
+update = "bestow"
+wants = 1
+takes = [0x4700106B]
+requires = [{ quest = 0x40000303, done = true }, { kingdom = "dominion" }]
+prov = { from = "authored", by = "Dereth Network", note = "the hammer and the forge: one who cleansed it begins a suit with the largest pyreum; for one of a kingdom, as each piece asks for one: no source says what the forge did for one of none", confidence = "low" }
+
+[[step]]
+key = "essence-heals"
+quest = 0x40000305
+needs = 1
+trigger = { give = 0x47001324, to = 0x47002F63 }
+update = "advance"
+phase = 2
+wants = 1
+takes = [0x47001324]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's lines: the form of the essence that sustains health, the one of the six that heals", confidence = "low" }
+
+[[step]]
+key = "essence-wrong-2"
+quest = 0x40000305
+needs = 1
+trigger = { give = 0x47001326, to = 0x47002F63 }
+update = "none"
+wants = 1
+takes = [0x47001326]
+tell = { table = 0x250028EE, string = 0x728CDEF5 }
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line for an essence not of the right type: its drops boil away and nothing else happens", confidence = "low" }
+
+[[step]]
+key = "essence-wrong-3"
+quest = 0x40000305
+needs = 1
+trigger = { give = 0x47001327, to = 0x47002F63 }
+update = "none"
+wants = 1
+takes = [0x47001327]
+tell = { table = 0x250028EE, string = 0x728CDEF5 }
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line for an essence not of the right type: its drops boil away and nothing else happens", confidence = "low" }
+
+[[step]]
+key = "essence-wrong-4"
+quest = 0x40000305
+needs = 1
+trigger = { give = 0x47001328, to = 0x47002F63 }
+update = "none"
+wants = 1
+takes = [0x47001328]
+tell = { table = 0x250028EE, string = 0x728CDEF5 }
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line for an essence not of the right type: its drops boil away and nothing else happens", confidence = "low" }
+
+[[step]]
+key = "essence-wrong-5"
+quest = 0x40000305
+needs = 1
+trigger = { give = 0x47001329, to = 0x47002F63 }
+update = "none"
+wants = 1
+takes = [0x47001329]
+tell = { table = 0x250028EE, string = 0x728CDEF5 }
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line for an essence not of the right type: its drops boil away and nothing else happens", confidence = "low" }
+
+[[step]]
+key = "essence-wrong-6"
+quest = 0x40000305
+needs = 1
+trigger = { give = 0x4700132A, to = 0x47002F63 }
+update = "none"
+wants = 1
+takes = [0x4700132A]
+tell = { table = 0x250028EE, string = 0x728CDEF5 }
+prov = { from = "authored", by = "Dereth Network", note = "the forge's line for an essence not of the right type: its drops boil away and nothing else happens", confidence = "low" }
+
+[[step]]
+key = "ebon-1"
+quest = 0x40000305
+needs = 2
+trigger = { give = 0x47000AFD, to = 0x47002F63 }
+update = "advance"
+phase = 3
+wants = 1
+takes = [0x47000AFD]
+prov = { from = "authored", by = "Dereth Network", note = "the journal: five of the ebon metal smelted one at a time, four, three, two and one left; the forge's line for each, and for the fifth its spheres", confidence = "low" }
+
+[[step]]
+key = "ebon-2"
+quest = 0x40000305
+needs = 3
+trigger = { give = 0x47000AFD, to = 0x47002F63 }
+update = "advance"
+phase = 4
+wants = 1
+takes = [0x47000AFD]
+prov = { from = "authored", by = "Dereth Network", note = "the journal: five of the ebon metal smelted one at a time, four, three, two and one left; the forge's line for each, and for the fifth its spheres", confidence = "low" }
+
+[[step]]
+key = "ebon-3"
+quest = 0x40000305
+needs = 4
+trigger = { give = 0x47000AFD, to = 0x47002F63 }
+update = "advance"
+phase = 5
+wants = 1
+takes = [0x47000AFD]
+prov = { from = "authored", by = "Dereth Network", note = "the journal: five of the ebon metal smelted one at a time, four, three, two and one left; the forge's line for each, and for the fifth its spheres", confidence = "low" }
+
+[[step]]
+key = "ebon-4"
+quest = 0x40000305
+needs = 5
+trigger = { give = 0x47000AFD, to = 0x47002F63 }
+update = "advance"
+phase = 6
+wants = 1
+takes = [0x47000AFD]
+prov = { from = "authored", by = "Dereth Network", note = "the journal: five of the ebon metal smelted one at a time, four, three, two and one left; the forge's line for each, and for the fifth its spheres", confidence = "low" }
+
+[[step]]
+key = "ebon-5"
+quest = 0x40000305
+needs = 6
+trigger = { give = 0x47000AFD, to = 0x47002F63 }
+update = "advance"
+phase = 7
+wants = 1
+takes = [0x47000AFD]
+prov = { from = "authored", by = "Dereth Network", note = "the journal: five of the ebon metal smelted one at a time, four, three, two and one left; the forge's line for each, and for the fifth its spheres", confidence = "low" }
+
+[[step]]
+key = "coins"
+quest = 0x40000305
+needs = 7
+trigger = { give = 0x47000538, to = 0x47002F63 }
+update = "advance"
+phase = 8
+wants = 100000
+takes = [0x47000538]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's lines: a hundred thousand coins deposited in it, alloyed with the molten metal", confidence = "low" }
+
+[[step]]
+key = "crystal-attuned"
+quest = 0x40000305
+needs = 8
+trigger = { give = 0x4700131C, to = 0x47002F63 }
+update = "advance"
+phase = 9
+wants = 1
+takes = [0x4700131C]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's lines: a crystal charged with chaos released in its hearth; either of the two a guide of the time names for the forge, as for its star", confidence = "low" }
+
+[[step]]
+key = "crystal-power"
+quest = 0x40000305
+needs = 8
+trigger = { give = 0x47000612, to = 0x47002F63 }
+update = "advance"
+phase = 9
+wants = 1
+takes = [0x47000612]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's lines: a crystal charged with chaos released in its hearth; either of the two a guide of the time names for the forge, as for its star", confidence = "low" }
+
+[[step]]
+key = "blood-human-shadow"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [1]
+requires = [{ kingdom = "shadow" }]
+gives = [0x470006DC, 0x470006D9, 0x470006D6, 0x470006D0, 0x470006D3]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-human-order"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [1]
+requires = [{ kingdom = "order" }]
+gives = [0x470006DB, 0x470006D8, 0x470006D5, 0x470006CF, 0x470006D2]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-human-dominion"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [1]
+requires = [{ kingdom = "dominion" }]
+gives = [0x470006DA, 0x470006D7, 0x470006D4, 0x470006CE, 0x470006D1]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-lugian-shadow"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [2]
+requires = [{ kingdom = "shadow" }]
+gives = [0x470006EB, 0x470006E8, 0x470006E5, 0x470006DF, 0x470006E2]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-lugian-order"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [2]
+requires = [{ kingdom = "order" }]
+gives = [0x470006EA, 0x470006E7, 0x470006E4, 0x470006DE, 0x470006E1]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-lugian-dominion"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [2]
+requires = [{ kingdom = "dominion" }]
+gives = [0x470006E9, 0x470006E6, 0x470006E3, 0x470006DD, 0x470006E0]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-tumerok-shadow"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [4]
+requires = [{ kingdom = "shadow" }]
+gives = [0x470006FA, 0x470006F7, 0x470006F4, 0x470006EE, 0x470006F1]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-tumerok-order"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [4]
+requires = [{ kingdom = "order" }]
+gives = [0x470006F9, 0x470006F6, 0x470006F3, 0x470006ED, 0x470006F0]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-tumerok-dominion"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [4]
+requires = [{ kingdom = "dominion" }]
+gives = [0x470006F8, 0x470006F5, 0x470006F2, 0x470006EC, 0x470006EF]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-drudge-shadow"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [8]
+requires = [{ kingdom = "shadow" }]
+gives = [0x47000D06, 0x47000D03, 0x47000D00, 0x47000CFA, 0x47000CFD]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-drudge-order"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [8]
+requires = [{ kingdom = "order" }]
+gives = [0x47000D05, 0x47000D02, 0x47000CFF, 0x47000CF9, 0x47000CFC]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-drudge-dominion"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [8]
+requires = [{ kingdom = "dominion" }]
+gives = [0x47000D04, 0x47000D01, 0x47000CFE, 0x47000CF8, 0x47000CFB]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-empyrean-shadow"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [16]
+requires = [{ kingdom = "shadow" }]
+gives = [0x47000D3F, 0x47000D3C, 0x47000D39, 0x47000D33, 0x47000D36]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-empyrean-order"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [16]
+requires = [{ kingdom = "order" }]
+gives = [0x47000D3E, 0x47000D3B, 0x47000D38, 0x47000D32, 0x47000D35]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "blood-empyrean-dominion"
+quest = 0x40000305
+needs = 9
+trigger = { use = 0x47002F63 }
+update = "complete"
+races = [16]
+requires = [{ kingdom = "dominion" }]
+gives = [0x47000D3D, 0x47000D3A, 0x47000D37, 0x47000D31, 0x47000D34]
+prov = { from = "authored", by = "Dereth Network", note = "the journal and the forge's line: the blood attunes the suit, which comes out of the forge: the five pieces of the race and kingdom, one per place worn; what the blood cost is in no source", confidence = "low" }
+
+[[step]]
+key = "instructions"
+quest = 0x40000305
+needs = 0
+trigger = { use = 0x47002F63 }
+update = "none"
+requires = [{ quest = 0x40000303, done = true }]
+tell = { table = 0x250028EE, string = 0x4C63015E }
+prov = { from = "authored", by = "Dereth Network", note = "the forge's instructions for a new suit, said at a use to one who has cleansed it with no suit under way", confidence = "low" }
