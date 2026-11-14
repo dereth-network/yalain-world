@@ -336,6 +336,7 @@ back, with the person's `refuse-give` line naming the quest and the `item` if it
 | `{ kill = T }` | kills a creature of template T (the effects its template names at its death need no step: they move their quests whatever a step says, on any quest no step moved at that kill) |
 | `{ kill = T, camp = K }` | kills a creature of template T that the one camp K made: its `key`, or `key@XXYY` where camps of several landblocks share the key; the camp must make T. A quest a step of T alone moved at that kill isn't moved again |
 | `{ kill = T, within = M }` | is within M meters (a whole number above 0) of a creature of template T as it dies, whoever kills it (another creature too): every player in the world, out of portal space and alive that near is moved, each alone |
+| `{ hurt = T, within = M }` | is within M meters (a whole number above 0) of a creature of template T as it loses health, whoever hurts it (another creature too): every player in the world, out of portal space and alive that near is moved, each alone, at each such hurt, so a player at the step's phase moves at the first one it is near for |
 | `{ done = Q }` | completes quest Q |
 | `{ given = Q }` | is given quest Q, shown or kept hidden, by whatever gives it |
 
