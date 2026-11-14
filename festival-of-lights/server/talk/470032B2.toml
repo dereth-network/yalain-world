@@ -235,8 +235,8 @@ line = { table = 0x25002A76, string = 0xDAF4B939 }
 role = "use"
 how = "tell"
 when = "use"
-requires = [{ tally = "fol-decorations", full = true }]
-prov = { from = "authored", by = "Dereth Network", note = "used once all is set: find a seat, it should start in a few minutes", confidence = "low" }
+requires = [{ tally = "fol-decorations", full = true }, { event = "shinoko-festival", on = false }]
+prov = { from = "authored", by = "Dereth Network", note = "used once all is set and before the festival comes on: find a seat, it should start in a few minutes", confidence = "low" }
 
 [[talk]]
 key = "fol-refuse"
@@ -265,5 +265,47 @@ line = { table = 0x25002A76, string = 0xC9E291C9 }
 role = "refuse-give"
 how = "tell"
 when = "give"
-requires = [{ tally = "fol-decorations", full = true }]
-prov = { from = "authored", by = "Dereth Network", note = "a supply given once all is set: it should be starting in a few minutes", confidence = "low" }
+requires = [{ tally = "fol-decorations", full = true }, { event = "shinoko-festival", on = false }]
+prov = { from = "authored", by = "Dereth Network", note = "a supply given once all is set and before the festival comes on: it should be starting in a few minutes", confidence = "low" }
+
+[[talk]]
+key = "fol-more-work"
+who = 0x470032B2
+line = { table = 0x25002A76, string = 0xBBA7826C }
+role = "near"
+how = "say"
+when = "near"
+requires = [{ tally = "fol-supplies", full = true }, { tally = "fol-decorations", full = false }]
+prov = { from = "authored", by = "Dereth Network", note = "to a player near her once the supplies are gathered, until all is set, beside her line that it just needs setting up: there is more work, if still interested in helping", confidence = "low" }
+
+[[talk]]
+key = "fol-turned-out-great"
+who = 0x470032B2
+line = { table = 0x25002A76, string = 0x6ED648ED }
+line_name = "ID_EnjoyFestival"
+role = "use"
+how = "tell"
+when = "use"
+requires = [{ event = "shinoko-festival" }]
+prov = { from = "authored", by = "Dereth Network", note = "used while the festival is on: it turned out great, Shinoko is truly the jewel of Dereth (the line's name: enjoy the festival)", confidence = "low" }
+
+[[talk]]
+key = "fol-turned-out-great-near"
+who = 0x470032B2
+line = { table = 0x25002A76, string = 0x6ED648ED }
+line_name = "ID_EnjoyFestival"
+role = "near"
+how = "say"
+when = "near"
+requires = [{ event = "shinoko-festival" }]
+prov = { from = "authored", by = "Dereth Network", note = "to a player near her while the festival is on, as her other stages' lines are said near", confidence = "low" }
+
+[[talk]]
+key = "fol-refuse-festival"
+who = 0x470032B2
+line = { table = 0x25002A76, string = 0xA5878E95 }
+role = "refuse-give"
+how = "tell"
+when = "give"
+requires = [{ event = "shinoko-festival" }]
+prov = { from = "authored", by = "Dereth Network", note = "given anything while the festival is on: no thanks, enjoy the festival", confidence = "low" }
