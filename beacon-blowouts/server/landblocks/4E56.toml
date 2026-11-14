@@ -1,4 +1,4 @@
-# The besieged outposts' recruits and beacons; edit an authored pack instead.
+# The besieged outposts' recruits, beacons and supply chests; edit an authored pack instead.
 
 [[camp]]
 key = "beacon-e8"
@@ -9,3 +9,12 @@ population = 1
 regen = 192.0
 spawns = [{ template = 0x47002993, weight = 1 }]
 prov = { from = "authored", by = "Dereth Network", note = "the outpost's beacon, one at a time, at the east Malthabbor outpost of the AC2 Vault's map (32.2S 38.7W), between the Gladiator and Henchman camps 2017 recorded there; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[object]]
+key = "chest-e8"
+kind = "static"
+template = 0x47000F2E
+cell = 0x4E560007
+at = [8.14, 129.92, 100.95]
+rotation = [-0.5, 0.0, 0.0, 0.866026]
+prov = { from = "authored", by = "Dereth Network", note = "the supply chest of the east Malthabbor outpost, at the place from its beacon 2017 recorded the south-west Nepeth one's; none recorded here", confidence = "low" }
