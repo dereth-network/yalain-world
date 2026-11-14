@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Malik's dungeon now has its banderlings. New pack `banderling-delve-camps/`.
 - The tunnels under Knorr's stores now have their scraven. New pack `siege-stores-camps/`.
 - The crones' laboratory near Cavendo now has its crones. New pack `crone-labs-camps/`.
 - The haunted mine near Ikeras now has its bals. New pack `ghost-mines-camps/`.
