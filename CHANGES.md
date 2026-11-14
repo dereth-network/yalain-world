@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The deepest catacombs under Artefon now have their undead. New pack `artefon-deep-camps/`.
 - The drudges' cave near Rithwic now has its creatures. New pack `drudge-hideout/`.
 - The Skyport's mine and prototype dungeons now have their creatures. New pack `skyport-mysteries-camps/`.
 - Axe Orbs, and Lashers near level 47, now take creatures' hits as they did in 2017. Pack `pet-armor/`.
