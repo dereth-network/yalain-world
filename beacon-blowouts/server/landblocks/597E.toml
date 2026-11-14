@@ -1,0 +1,11 @@
+# The besieged outposts' recruits and beacons; edit an authored pack instead.
+
+[[camp]]
+key = "beacon-eb"
+cell = 0x597E001D
+at = [67.20, 84.80, 105.50]
+spots = [{ cell = 0x597E001D, at = [67.20, 84.80, 105.50] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470029A0, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outpost's beacon, one at a time, at the north-east Winterhollows outpost of the AC2 Vault's map (0.8S 29.9W), as a players' map draws it; 2017 recorded no camp there; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

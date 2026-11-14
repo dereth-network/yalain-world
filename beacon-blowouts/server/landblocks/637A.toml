@@ -1,0 +1,11 @@
+# The besieged outposts' recruits and beacons; edit an authored pack instead.
+
+[[camp]]
+key = "beacon-ee"
+cell = 0x637A0029
+at = [101.90, 18.30, 140.50]
+spots = [{ cell = 0x637A0029, at = [101.90, 18.30, 140.50] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700299B, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outpost's beacon, one at a time, at the guard camp 2017 recorded at the north Thusik outpost of the AC2 Vault's map (4.2S 21.9W); no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

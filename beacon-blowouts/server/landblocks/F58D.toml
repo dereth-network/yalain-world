@@ -1,0 +1,11 @@
+# The besieged outposts' recruits and beacons; edit an authored pack instead.
+
+[[camp]]
+key = "beacon-e7"
+cell = 0xF58D0023
+at = [81.70, 51.20, 77.75]
+spots = [{ cell = 0xF58D0023, at = [81.70, 51.20, 77.75] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700299E, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outpost's beacon, one at a time, at the east Vesayan outpost of the AC2 Vault's map (10.8N 92.5E), the southern of its two; 2017 recorded no camp there; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

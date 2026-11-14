@@ -57,7 +57,7 @@
 - People no longer say names, descriptions or lines meant for other moments. New pack `misnamed-lines/`.
 - The archons of the Linvak and Omishan master vaults can now be fought and their quests finished. New pack `linvak-omishan-vaults/`.
 - Nine dungeon kill quests can now be done, with ways into four more dungeons. New pack `dungeon-bosses/`.
-- Eight besieged outposts' beacon quests can now be started and finished. New pack `beacon-blowouts/`.
+- Fifteen besieged outposts' beacon quests can now be started and finished. New pack `beacon-blowouts/`.
 - A father's search for his runaway son in Linvak can now be finished. New pack `stubbington-search/`.
 - The festival guard's reward after the third trounce can now be claimed. New pack `drudgerton-errands/`.
 - A mad sage's cure in Linvak's redoubt can now be finished, and his captain told. New pack `rustwater-redoubt/`.

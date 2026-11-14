@@ -1,0 +1,11 @@
+# The besieged outposts' recruits and beacons; edit an authored pack instead.
+
+[[camp]]
+key = "recruit-e8"
+cell = 0x4E550008
+at = [19.00, 148.85, 83.43]
+spots = [{ cell = 0x4E550008, at = [19.00, 148.85, 83.43] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700267A, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a rare one at a time 120 m south of the east Malthabbor outpost's beacon, on his way to it as the quest's text says; south, as the wiki says of the central Farali one; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

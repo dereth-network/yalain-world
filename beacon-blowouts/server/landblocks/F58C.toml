@@ -1,0 +1,11 @@
+# The besieged outposts' recruits and beacons; edit an authored pack instead.
+
+[[camp]]
+key = "recruit-e7"
+cell = 0xF58C0025
+at = [81.70, 91.20, 93.53]
+spots = [{ cell = 0xF58C0025, at = [81.70, 91.20, 93.53] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x4700228C, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a rare one at a time 120 m south of the east Vesayan outpost's beacon, on his way to it as the quest's text says; south, as the wiki says of the central Farali one; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

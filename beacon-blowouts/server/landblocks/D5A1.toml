@@ -1,0 +1,11 @@
+# The besieged outposts' recruits and beacons; edit an authored pack instead.
+
+[[camp]]
+key = "recruit-e4"
+cell = 0xD5A10024
+at = [80.30, 76.80, 71.70]
+spots = [{ cell = 0xD5A10024, at = [80.30, 76.80, 71.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470022CF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a rare one at a time 120 m south of the east Tou-Tou outpost's beacon, on his way to it as the quest's text says; south, as the wiki says of the central Farali one; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

@@ -1,0 +1,11 @@
+# The besieged outposts' recruits and beacons; edit an authored pack instead.
+
+[[camp]]
+key = "recruit-ee"
+cell = 0x6379002B
+at = [101.90, 58.30, 99.27]
+spots = [{ cell = 0x6379002B, at = [101.90, 58.30, 99.27] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002630, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a rare one at a time 120 m south of the north Thusik outpost's beacon, on his way to it as the quest's text says; south, as the wiki says of the central Farali one; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

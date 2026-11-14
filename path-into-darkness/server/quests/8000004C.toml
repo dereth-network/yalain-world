@@ -1,6 +1,15 @@
 # Retracing the Path: the three treasure houses defended again, by the same ways; the renegades' deaths move it by the
 # install's own effects. Edit an authored pack instead.
 
+[[quest]]
+id = 0x8000004C
+id_name = "QuestLDLight2"
+state = 0x6F000B9D
+challenge = 55
+duration = 36000
+retry = 428400
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:acac2917", confidence = "high", sample = { sessions = 4 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "the wiki's time limit, 10 hours, as AC2 Hero and the AC2 Vault give it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "the wiki's repeat time, 4 days and 23 hours (AC2 Hero: a 5-day reset)", confidence = "low" } } }
+
 [[step]]
 key = "s-given"
 quest = 0x8000004C

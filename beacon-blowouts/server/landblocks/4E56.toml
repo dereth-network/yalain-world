@@ -1,0 +1,11 @@
+# The besieged outposts' recruits and beacons; edit an authored pack instead.
+
+[[camp]]
+key = "beacon-e8"
+cell = 0x4E560006
+at = [19.00, 108.85, 97.91]
+spots = [{ cell = 0x4E560006, at = [19.00, 108.85, 97.91] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002993, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outpost's beacon, one at a time, at the east Malthabbor outpost of the AC2 Vault's map (32.2S 38.7W), between the Gladiator and Henchman camps 2017 recorded there; no recording of it", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
