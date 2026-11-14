@@ -16,9 +16,9 @@ quest = 0x8000004C
 needs = 0
 trigger = { use = 0x4700319A }
 update = "bestow"
-requires = [{ quest = 0x80000049, done = true }, { quest = 0x8000004B, done = true }]
+requires = [{ quest = 0x80000049, done = true }, { quest = 0x8000004B, done = true }, { quest = 0x8000004A, done = false }]
 tell = { table = 0x25002A0F, string = 0xAAE688A9 }
-prov = { from = "authored", by = "Dereth Network", note = "Lataua gives it after both paths (the wiki), with her line for it", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "Lataua gives it after both paths (the wiki), with her line for it, never to one who has done the agent of the dark's quest (AC2 Hero and the AC2 Vault)", confidence = "low" }
 
 [[step]]
 key = "hand-scriptorium"
