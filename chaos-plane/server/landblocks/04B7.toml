@@ -1,0 +1,477 @@
+# The virindi platform, off the nexus's north-west path: its pad, its ring of four platforms joined by bridges round a
+# fifth above them, its portals, its ways back and its virindi and wisps, from the wiki's map; edit an authored pack instead.
+
+[[object]]
+key = "cp-virindi-pad-ne"
+kind = "static"
+template = 0x47001154
+cell = 0x04B70115
+at = [-44.29, -42.37, 214.60]
+rotation = [0.92388, 0.0, 0.0, -0.382683]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "cp-virindi-ring"
+prov = { from = "authored", by = "Dereth Network", note = "in the install's frame of the virindi path's pad toward its ring (the wiki's map: the pad's portal to the ring's departure)", confidence = "low" }
+
+[[object]]
+key = "cp-virindi-pad-nw"
+kind = "static"
+template = 0x47001154
+cell = 0x04B70115
+at = [-64.96, -41.81, 214.40]
+rotation = [0.92388, 0.0, 0.0, 0.382683]
+name = { table = 0x25001B44, string = 0xF7E36079 }
+to = "cp-nexus-w"
+prov = { from = "authored", by = "Dereth Network", note = "in the install's frame of the virindi path's pad (the wiki's map: one of the pad's two portals back to CP begin), to the nexus", confidence = "low" }
+
+[[object]]
+key = "cp-virindi-pad-se"
+kind = "static"
+template = 0x47001154
+cell = 0x04B70115
+at = [-43.72, -63.05, 214.50]
+rotation = [-0.382683, 0.0, 0.0, 0.92388]
+name = { table = 0x25001B44, string = 0xF7E36079 }
+to = "cp-nexus-w"
+prov = { from = "authored", by = "Dereth Network", note = "in the install's frame of the virindi path's pad (the wiki's map: one of the pad's two portals back to CP begin), to the nexus", confidence = "low" }
+
+[[object]]
+key = "cp-virindi-to-top"
+kind = "static"
+template = 0x47001154
+cell = 0x04B70138
+at = [-128.67, -128.60, 325.70]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "cp-virindi-top"
+prov = { from = "authored", by = "Dereth Network", note = "on the rim of the ring's platform across from its departure (the wiki: on the opposite platform; the map's To top Platform)", confidence = "low" }
+
+[[object]]
+key = "cp-virindi-out"
+kind = "static"
+template = 0x47001154
+cell = 0x04B7010B
+at = [36.28, 36.28, 400.80]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0xF7E36079 }
+to = "cp-nexus-w"
+prov = { from = "authored", by = "Dereth Network", note = "on the top platform by its middle, where the wiki's map draws To CP begin, to the nexus's west stair top", confidence = "low" }
+
+[[camp]]
+key = "cp-virindi-top-1"
+cell = 0x04B7010D
+at = [17.68, -52.68, 400.80]
+spots = [{ cell = 0x04B7010D, at = [17.68, -52.68, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-2"
+cell = 0x04B7010C
+at = [-47.26, 21.26, 400.80]
+spots = [{ cell = 0x04B7010C, at = [-47.26, 21.26, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-3"
+cell = 0x04B7010C
+at = [-31.78, 10.78, 400.80]
+spots = [{ cell = 0x04B7010C, at = [-31.78, 10.78, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-4"
+cell = 0x04B7010D
+at = [7.78, -25.78, 400.80]
+spots = [{ cell = 0x04B7010D, at = [7.78, -25.78, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-5"
+cell = 0x04B7010D
+at = [23.33, -40.33, 400.80]
+spots = [{ cell = 0x04B7010D, at = [23.33, -40.33, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D73, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi executors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-6"
+cell = 0x04B7010B
+at = [-13.54, 3.12, 400.80]
+spots = [{ cell = 0x04B7010B, at = [-13.54, 3.12, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-7"
+cell = 0x04B7010B
+at = [-19.97, 21.97, 400.80]
+spots = [{ cell = 0x04B7010B, at = [-19.97, 21.97, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D75, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi inquisitors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-8"
+cell = 0x04B7010B
+at = [-25.92, 27.92, 400.80]
+spots = [{ cell = 0x04B7010B, at = [-25.92, 27.92, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-9"
+cell = 0x04B7010D
+at = [37.28, -30.87, 400.80]
+spots = [{ cell = 0x04B7010D, at = [37.28, -30.87, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D73, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi executors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-10"
+cell = 0x04B7010B
+at = [26.26, -17.26, 400.80]
+spots = [{ cell = 0x04B7010B, at = [26.26, -17.26, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-11"
+cell = 0x04B7010B
+at = [-13.02, 32.02, 400.80]
+spots = [{ cell = 0x04B7010B, at = [-13.02, 32.02, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D75, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi inquisitors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-12"
+cell = 0x04B7010B
+at = [42.14, -13.73, 400.80]
+spots = [{ cell = 0x04B7010B, at = [42.14, -13.73, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D73, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi executors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-13"
+cell = 0x04B7010B
+at = [1.41, 35.41, 400.80]
+spots = [{ cell = 0x04B7010B, at = [1.41, 35.41, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D75, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi inquisitors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-14"
+cell = 0x04B7010B
+at = [15.73, 22.73, 400.80]
+spots = [{ cell = 0x04B7010B, at = [15.73, 22.73, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D75, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi inquisitors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-15"
+cell = 0x04B70110
+at = [56.31, -11.31, 400.80]
+spots = [{ cell = 0x04B70110, at = [56.31, -11.31, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-16"
+cell = 0x04B7010B
+at = [42.83, 2.41, 400.80]
+spots = [{ cell = 0x04B7010B, at = [42.83, 2.41, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-top-17"
+cell = 0x04B7010B
+at = [-5.66, 50.66, 400.80]
+spots = [{ cell = 0x04B7010B, at = [-5.66, 50.66, 400.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's top platform: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-1"
+cell = 0x04B7016E
+at = [-118.18, -96.12, 325.70]
+spots = [{ cell = 0x04B7016E, at = [-118.18, -96.12, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D73, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi executors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-2"
+cell = 0x04B7016C
+at = [-91.01, -116.59, 327.20]
+spots = [{ cell = 0x04B7016C, at = [-91.01, -116.59, 327.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002DCD, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: furious wisps (1) where the wiki's map dots them; 1.5 m over the floor, as it floats; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-3"
+cell = 0x04B70121
+at = [-90.78, -94.69, 325.70]
+spots = [{ cell = 0x04B70121, at = [-90.78, -94.69, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D75, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi inquisitors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-4"
+cell = 0x04B70121
+at = [-89.10, -72.80, 327.20]
+spots = [{ cell = 0x04B70121, at = [-89.10, -72.80, 327.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002DCD, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: furious wisps (1) where the wiki's map dots them; 1.5 m over the floor, as it floats; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-5"
+cell = 0x04B70121
+at = [-63.26, -91.84, 325.70]
+spots = [{ cell = 0x04B70121, at = [-63.26, -91.84, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D73, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi executors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-6"
+cell = 0x04B70166
+at = [-130.23, 87.77, 325.70]
+spots = [{ cell = 0x04B70166, at = [-130.23, 87.77, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D75, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi inquisitors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-7"
+cell = 0x04B70169
+at = [126.21, -151.85, 325.70]
+spots = [{ cell = 0x04B70169, at = [126.21, -151.85, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-8"
+cell = 0x04B70169
+at = [107.12, -131.76, 325.70]
+spots = [{ cell = 0x04B70169, at = [107.12, -131.76, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-9"
+cell = 0x04B70169
+at = [89.75, -107.53, 325.70]
+spots = [{ cell = 0x04B70169, at = [89.75, -107.53, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-10"
+cell = 0x04B70120
+at = [-109.18, 113.52, 327.20]
+spots = [{ cell = 0x04B70120, at = [-109.18, 113.52, 327.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002DCE, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: raging wisps (1) where the wiki's map dots them; 1.5 m over the floor, as it floats; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-11"
+cell = 0x04B70139
+at = [-132.68, 139.03, 325.70]
+spots = [{ cell = 0x04B70139, at = [-132.68, 139.03, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D75, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi inquisitors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-12"
+cell = 0x04B7013D
+at = [153.79, -141.43, 327.20]
+spots = [{ cell = 0x04B7013D, at = [153.79, -141.43, 327.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002DCD, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: furious wisps (1) where the wiki's map dots them; 1.5 m over the floor, as it floats; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-13"
+cell = 0x04B7013D
+at = [135.69, -118.33, 327.20]
+spots = [{ cell = 0x04B7013D, at = [135.69, -118.33, 327.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002DCD, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: furious wisps (1) where the wiki's map dots them; 1.5 m over the floor, as it floats; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-14"
+cell = 0x04B70117
+at = [115.60, -94.24, 327.20]
+spots = [{ cell = 0x04B70117, at = [115.60, -94.24, 327.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002DCD, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: furious wisps (1) where the wiki's map dots them; 1.5 m over the floor, as it floats; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-15"
+cell = 0x04B70120
+at = [-86.37, 124.71, 325.70]
+spots = [{ cell = 0x04B70120, at = [-86.37, 124.71, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D75, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi inquisitors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-16"
+cell = 0x04B7013D
+at = [167.93, -125.57, 325.70]
+spots = [{ cell = 0x04B7013D, at = [167.93, -125.57, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-17"
+cell = 0x04B70179
+at = [149.84, -101.48, 325.70]
+spots = [{ cell = 0x04B70179, at = [149.84, -101.48, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-18"
+cell = 0x04B70179
+at = [130.74, -77.38, 325.70]
+spots = [{ cell = 0x04B70179, at = [130.74, -77.38, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-19"
+cell = 0x04B7011C
+at = [108.35, 67.35, 325.70]
+spots = [{ cell = 0x04B7011C, at = [108.35, 67.35, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D73, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi executors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-20"
+cell = 0x04B7011C
+at = [76.21, 100.21, 325.70]
+spots = [{ cell = 0x04B7011C, at = [76.21, 100.21, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D73, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi executors (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-21"
+cell = 0x04B7011C
+at = [94.04, 84.62, 325.70]
+spots = [{ cell = 0x04B7011C, at = [94.04, 84.62, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-22"
+cell = 0x04B7011C
+at = [83.66, 126.66, 325.70]
+spots = [{ cell = 0x04B7011C, at = [83.66, 126.66, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-23"
+cell = 0x04B70176
+at = [135.98, 74.98, 325.70]
+spots = [{ cell = 0x04B70176, at = [135.98, 74.98, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-low-24"
+cell = 0x04B7011C
+at = [111.47, 105.47, 325.70]
+spots = [{ cell = 0x04B7011C, at = [111.47, 105.47, 325.70] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's lower ring: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "cp-virindi-pad-1"
+cell = 0x04B70115
+at = [-54.77, -52.86, 213.80]
+spots = [{ cell = 0x04B70115, at = [-54.77, -52.86, 213.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D76, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the virindi path's pad: virindi masters (1) where the wiki's map dots them; nothing of the plane's paths was recorded", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

@@ -1,5 +1,5 @@
-# The nexus's way back up to the land and its south-east path's portal to the eidolon's dungeon; edit an authored pack
-# instead.
+# The nexus's way back up to the land, its south-east path's portal to the eidolon's dungeon and its three other paths'
+# portals to the shadows' platforms, the virindi platform and the spiral; edit an authored pack instead.
 
 [[object]]
 key = "cp-up"
@@ -22,3 +22,36 @@ rotation = [0.923880, 0.0, 0.0, 0.382683]
 name = { table = 0x25001B44, string = 0xE2E5EF57 }
 to = "ce-in"
 prov = { from = "authored", by = "Dereth Network", note = "in the install's frame at the top of the south-east path (the wiki: the southeast stairway's green portal; the maps), to the eidolon's dungeon's first room", confidence = "low" }
+
+[[object]]
+key = "cp-to-shadow"
+kind = "static"
+template = 0x47001154
+cell = 0x04B5010D
+at = [18.85, 50.62, 216.90]
+rotation = [0.382683, 0.0, 0.0, 0.92388]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "cp-shadow-1"
+prov = { from = "authored", by = "Dereth Network", note = "in the install's frame at the end of the nexus's north-east path (the maps' insets: the shadows' platforms' way), to its first landing", confidence = "low" }
+
+[[object]]
+key = "cp-to-virindi"
+kind = "static"
+template = 0x47001154
+cell = 0x04B5011A
+at = [-50.76, 18.97, 217.10]
+rotation = [-0.382683, 0.0, 0.0, 0.92388]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "cp-virindi-in"
+prov = { from = "authored", by = "Dereth Network", note = "in the install's frame at the end of the nexus's north-west path (the maps' insets: the virindi platform's way), to its first landing", confidence = "low" }
+
+[[object]]
+key = "cp-to-spiral"
+kind = "static"
+template = 0x47001154
+cell = 0x04B5011C
+at = [-19.62, -50.32, 217.10]
+rotation = [0.92388, 0.0, 0.0, -0.382683]
+name = { table = 0x25001B44, string = 0xE2E5EF57 }
+to = "cp-spiral-in"
+prov = { from = "authored", by = "Dereth Network", note = "in the install's frame at the end of the nexus's south-west path (the maps' insets: the spiral's way), to its first landing", confidence = "low" }
