@@ -1,4 +1,4 @@
-# The vault's antechamber: the archon, his guards and the portal to the menhir; edit an authored pack instead.
+# The vault's antechamber: the archon and his guards; edit an authored pack instead.
 
 [[camp]]
 key = "c-13042"
@@ -32,17 +32,6 @@ population = 1
 regen = 192.0
 spawns = [{ template = 0x47002CA1, weight = 1 }]
 prov = { from = "authored", by = "Dereth Network", note = "the archon alone at the spot 2017 recorded him at in both sessions, which the recorded camp kept in one pool with his guards", confidence = "medium", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
-
-[[object]]
-key = "menhir-portal"
-kind = "static"
-template = 0x470013F1
-cell = 0x03BB02E5
-at = [45.0, -523.0, 172.0]
-rotation = [1.0, 0.0, 0.0, 0.0]
-to = "master-osteth-menhir"
-requires = { quest = 0x400002AD, phase = 3 }
-prov = { from = "authored", by = "Dereth Network", note = "2017 recorded it made here as the archon fell, both sessions, and used to the menhir's chamber; here it always stands, kept to players at the last phase as its template is", confidence = "medium" }
 
 [[object]]
 key = "s-6a"

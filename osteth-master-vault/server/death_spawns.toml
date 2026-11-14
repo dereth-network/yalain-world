@@ -1,4 +1,5 @@
-# What the master vault gem's use and its flawed twin's open, before their user; edit an authored pack instead.
+# What the master vault gem's use and its flawed twin's open, before their user, and the portal on to the menhir the
+# archon's death opens; edit an authored pack instead.
 
 [[death_spawn]]
 effect = "Eff_DestroySaelarCreatePortal"
@@ -12,3 +13,11 @@ template = 0x470013ED
 offset = [0.0, 2.0, 0.0]
 lasts = 300.0
 prov = { from = "authored", by = "Dereth Network", note = "the flawed portal: 2017 recorded it made three times, one gone 300.0 s after it was first seen, the other two seen for less; 2 m ahead", confidence = "medium" }
+
+[[death_spawn]]
+creature = 0x47002CA1
+template = 0x470013F1
+at = "master-control-shard"
+to = "master-osteth-menhir"
+lasts = 300.0
+prov = { from = "authored", by = "Dereth Network", note = "2017, both times: made 20 m from the archon as he fell and used to the menhir's chamber; kept to players at the last phase as its template is; he names no death effect", confidence = "medium", fields = { lasts = { from = "authored", by = "Dereth Network", note = "how long it stands is in no source: five minutes, as the flawed gem's portal", confidence = "low" } } }
