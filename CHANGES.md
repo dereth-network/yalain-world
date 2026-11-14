@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The burun shaman's lair near Tou-Tou now has its buruns and grubs. New pack `shaman-lair-camps/`.
 - The drudges' underground city near Cavendo now has its drudges. New pack `drudge-city-camps/`.
 - The vermin's cave near Millstone now has its vermin. New pack `vermin-nest-camps/`.
 - The slimelord's keep near Hakata now has its buruns. New pack `toad-keep-camps/`.
