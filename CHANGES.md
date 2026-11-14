@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The slimelord's keep near Hakata now has its buruns. New pack `toad-keep-camps/`.
 - Malik's dungeon now has its banderlings. New pack `banderling-delve-camps/`.
 - The tunnels under Knorr's stores now have their scraven. New pack `siege-stores-camps/`.
 - The crones' laboratory near Cavendo now has its crones. New pack `crone-labs-camps/`.
