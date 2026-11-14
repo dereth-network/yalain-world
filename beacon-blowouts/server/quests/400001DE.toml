@@ -8,4 +8,5 @@ trigger = { give_class = 0x1049, to = 0x47003201 }
 update = "advance"
 phase = 2
 tell = { table = 0x25002A46, string = 0x39C83594 }
-prov = { from = "authored", by = "Dereth Network", note = "the journal: phase 2 is the weapon imbued; the imbuer's lines: give any weapon, handed back with the spell on it; a player's guide names this imbuer for the Drudge outposts; no recording", confidence = "low" }
+given_effects = [0x6F001E04]
+prov = { from = "authored", by = "Dereth Network", note = "the journal: phase 2 is the weapon imbued; the imbuer's lines: give any weapon, handed back with the spell on it; a player's guide names this imbuer for the Drudge outposts; no recording", confidence = "low", fields = { given_effects = { from = "dat", record = 0x6F001E04 } } }

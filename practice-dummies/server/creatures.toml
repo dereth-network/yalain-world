@@ -1,0 +1,12 @@
+# The practice dummies' effect, held from their first moment: 0.01 of an attack sent back for each point of spellcraft,
+# at 15 and half the dummy's level. The nine are the install's templates on a practice dummy's NPC table.
+
+[[creature_effect]]
+key = "practice-dummies"
+templates = [
+    0x47002DAB, 0x47002DAE, 0x47002DAF, 0x47002DB1, 0x47002DB2,
+    0x47002DB3, 0x47002DB4, 0x47002DB5, 0x47002DB6,
+]
+effect = 0x70001C79
+spellcraft = [[30, 30.0], [70, 50.0]]
+prov = { from = "dat", record = 0x70001C79, confidence = "high", note = "the shares 2017 recorded sent back, by level 0.35 at 40, 0.40 at 50, 0.45 at 60, 0.50 at 70; level 30 by the same line, unrecorded" }

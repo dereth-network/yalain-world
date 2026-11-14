@@ -1,0 +1,13 @@
+# Each outpost beacon holds its immunity from its first moment: no harm reaches one until a blow struck with
+# what carries the imbuers' spell dispels it; edit an authored pack instead.
+
+[[creature_effect]]
+key = "beacon-immunity"
+templates = [
+    0x4700298C, 0x4700298F, 0x47002990, 0x47002991, 0x47002992,
+    0x47002993, 0x47002994, 0x47002995, 0x47002996, 0x47002997,
+    0x47002998, 0x47002999, 0x4700299A, 0x4700299B, 0x4700299C,
+    0x4700299D, 0x4700299E, 0x4700299F, 0x470029A0,
+]
+effect = 0x6F001E06
+prov = { from = "dat", record = 0x6F001E06, confidence = "medium", note = "the immunity named for these beacons; 2017: 115 landed hits on four, no health change; guides and wiki: no harm without the imbued weapon" }
