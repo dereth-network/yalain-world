@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The western hive in the Olthoi Wastes now has its nymph boss. Pack `dungeon-bosses/`.
 - The Warder trackers now hand out their scroll only once an hour. Pack `hakata-huntress/`.
 
 ## v0.37.0
