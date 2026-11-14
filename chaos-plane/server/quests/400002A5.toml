@@ -1,0 +1,11 @@
+# The eidolon destroyed: a vortex its death leaves, touched, ends the quest and gives the attuned crystal; edit an authored
+# pack instead.
+
+[[step]]
+key = "vortex-touched"
+quest = 0x400002A5
+needs = 1
+trigger = { use = 0x47002F60 }
+update = "complete"
+gives = [0x4700131C]
+prov = { from = "authored", by = "Dereth Network", note = "2017, both passes: a vortex used was answered about a second later by the quest's update and the crystal made in the player's pack; the vortex's line for it is its own talk row's", confidence = "low" }

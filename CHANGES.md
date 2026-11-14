@@ -107,7 +107,7 @@
 - The paths into darkness and light can now be done, through the vault's levers. New pack `path-into-darkness/`.
 - Killing the officer in three towns now gets you a ticket. New pack `officer-tickets/`.
 - The great tree's long trade chain near Rakani can now be finished. New pack `natures-friend/`.
-- The plane of chaos under the Battlefield can now be entered, up to the portal atop the eidolon's tower. New pack `chaos-plane/`.
+- The plane of chaos under the Battlefield can now be entered, and its eidolon destroyed. New pack `chaos-plane/`.
 - The tainted forge beyond the eidolon's dungeon and its quest through five platforms can now be done. New pack `chaos-forge/`.
 - Fidget's hunt for the carenzi's hidden nuts can now be finished. New pack `carenzi-hoard/`.
 - Gems from creatures now lead to the Arcanum's guarded caches, and the scholar in its vault takes their books. New pack `arcanum-caches/`.
