@@ -1,0 +1,52 @@
+# The overseers' task: each gives it to its own kingdom's players, and an enemy kingdom's granule or mote given
+# back completes it; edit an authored pack instead.
+
+[[step]]
+key = "suthanna-gives"
+quest = 0x40000351
+needs = 0
+trigger = { use = 0x47002FBE }
+update = "bestow"
+tell = { table = 0x2500291E, string = 0x4E0C13F6 }
+requires = [{ kingdom = "dominion" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: bring an enemy granule or mote to your own kingdom's overseer; the overseer's own line giving the task; for its own kingdom", confidence = "low" }
+
+[[step]]
+key = "suthanna-takes-celestial-matter-granule"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147C, to = 0x47002FBE }
+update = "complete"
+takes = [0x4700147C]
+requires = [{ kingdom = "dominion" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[step]]
+key = "suthanna-takes-celestial-matter-mote"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147D, to = 0x47002FBE }
+update = "complete"
+takes = [0x4700147D]
+requires = [{ kingdom = "dominion" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[step]]
+key = "suthanna-takes-dark-metal-granule"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147E, to = 0x47002FBE }
+update = "complete"
+takes = [0x4700147E]
+requires = [{ kingdom = "dominion" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[step]]
+key = "suthanna-takes-dark-metal-mote"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147F, to = 0x47002FBE }
+update = "complete"
+takes = [0x4700147F]
+requires = [{ kingdom = "dominion" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
