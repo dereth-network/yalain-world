@@ -10,7 +10,7 @@ xp = 720
 duration = 86400.0
 retry = 1.0
 cancellable = true
-prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: level 20, 720 experience, a day to do it, repeatable at once (a retry of 1 s, so that she gives the next errand at once); her pay in gold is not given", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: level 20, 720 experience, a day to do it, repeatable at once (a retry of 1 s, so that she gives the next errand at once); her line asking it promises 50 coins", confidence = "low" }
 
 [[step]]
 key = "given"
@@ -29,10 +29,12 @@ needs = 1
 trigger = { give = 0x47000779, to = 0x470032B2 }
 update = "complete"
 takes = [0x47000779]
+gives = [0x47000538]
+counts = [50]
 tell = { table = 0x25002A76, string = 0xBE1FBF26 }
 requires = [{ tally = "fol-supplies", full = false }]
 adds = { tally = "fol-supplies", by = 2 }
-prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks, and the 50 coins her line asking it promises", confidence = "low" }
 
 [[step]]
 key = "handed-2"
@@ -41,10 +43,12 @@ needs = 1
 trigger = { give = 0x4700077A, to = 0x470032B2 }
 update = "complete"
 takes = [0x4700077A]
+gives = [0x47000538]
+counts = [50]
 tell = { table = 0x25002A76, string = 0xBE1FBF26 }
 requires = [{ tally = "fol-supplies", full = false }]
 adds = { tally = "fol-supplies", by = 2 }
-prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks, and the 50 coins her line asking it promises", confidence = "low" }
 
 [[step]]
 key = "handed-3"
@@ -53,10 +57,12 @@ needs = 1
 trigger = { give = 0x4700077B, to = 0x470032B2 }
 update = "complete"
 takes = [0x4700077B]
+gives = [0x47000538]
+counts = [50]
 tell = { table = 0x25002A76, string = 0xBE1FBF26 }
 requires = [{ tally = "fol-supplies", full = false }]
 adds = { tally = "fol-supplies", by = 2 }
-prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks, and the 50 coins her line asking it promises", confidence = "low" }
 
 [[step]]
 key = "handed-4"
@@ -65,10 +71,12 @@ needs = 1
 trigger = { give = 0x4700077C, to = 0x470032B2 }
 update = "complete"
 takes = [0x4700077C]
+gives = [0x47000538]
+counts = [50]
 tell = { table = 0x25002A76, string = 0xBE1FBF26 }
 requires = [{ tally = "fol-supplies", full = false }]
 adds = { tally = "fol-supplies", by = 2 }
-prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks, and the 50 coins her line asking it promises", confidence = "low" }
 
 [[step]]
 key = "handed-5"
@@ -77,10 +85,12 @@ needs = 1
 trigger = { give = 0x4700077D, to = 0x470032B2 }
 update = "complete"
 takes = [0x4700077D]
+gives = [0x47000538]
+counts = [50]
 tell = { table = 0x25002A76, string = 0xBE1FBF26 }
 requires = [{ tally = "fol-supplies", full = false }]
 adds = { tally = "fol-supplies", by = 2 }
-prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks, and the 50 coins her line asking it promises", confidence = "low" }
 
 [[step]]
 key = "handed-6"
@@ -89,10 +99,12 @@ needs = 1
 trigger = { give = 0x4700077E, to = 0x470032B2 }
 update = "complete"
 takes = [0x4700077E]
+gives = [0x47000538]
+counts = [50]
 tell = { table = 0x25002A76, string = 0xBE1FBF26 }
 requires = [{ tally = "fol-supplies", full = false }]
 adds = { tally = "fol-supplies", by = 2 }
-prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks, and the 50 coins her line asking it promises", confidence = "low" }
 
 [[step]]
 key = "handed-7"
@@ -101,10 +113,12 @@ needs = 1
 trigger = { give = 0x4700077F, to = 0x470032B2 }
 update = "complete"
 takes = [0x4700077F]
+gives = [0x47000538]
+counts = [50]
 tell = { table = 0x25002A76, string = 0xBE1FBF26 }
 requires = [{ tally = "fol-supplies", full = false }]
 adds = { tally = "fol-supplies", by = 2 }
-prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "a spear: the install's seven plain spears handed to her while the supplies are wanted adds to them; her thanks, and the 50 coins her line asking it promises", confidence = "low" }
 
 [[step]]
 key = "not-needed"

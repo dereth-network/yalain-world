@@ -10,7 +10,7 @@ xp = 720
 duration = 86400.0
 retry = 1.0
 cancellable = true
-prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: level 20, 720 experience, a day to do it, repeatable at once (a retry of 1 s, so that she gives the next errand at once); her pay in gold is not given", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: level 20, 720 experience, a day to do it, repeatable at once (a retry of 1 s, so that she gives the next errand at once); her line asking it promises 100 coins", confidence = "low" }
 
 [[step]]
 key = "given"
@@ -30,10 +30,12 @@ trigger = { give = 0x470006C7, to = 0x470032B2 }
 update = "complete"
 wants = 200
 takes = [0x470006C7]
+gives = [0x47000538]
+counts = [100]
 tell = { table = 0x25002A76, string = 0x9A219709 }
 requires = [{ tally = "fol-supplies", full = false }]
 adds = { tally = "fol-supplies", by = 4 }
-prov = { from = "authored", by = "Dereth Network", note = "two hundred wood handed to her while the supplies are wanted adds to them; her thanks", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "two hundred wood handed to her while the supplies are wanted adds to them; her thanks, and the 100 coins her line asking it promises", confidence = "low" }
 
 [[step]]
 key = "not-needed"
