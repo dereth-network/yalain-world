@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The western hive in the Olthoi Wastes can now be entered from its mound, and has its olthoi. New pack `olthoi-hive-west/`.
 - The warren under the northeast hive in the Olthoi Wastes can now be entered, and has its olthoi. New pack `olthoi-warren/`.
 - The northeast hive in the Olthoi Wastes now has its olthoi. New pack `olthoi-hive-northeast-camps/`.
 - The hero initiation's dungeon now opens to those its device has flagged, and has a way out. New packs `holding-matrix/` and `holding-portal/`.
