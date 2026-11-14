@@ -45,3 +45,30 @@ effects_on = { camp = "the-beast@07EE", effects = [0x6F00236D, 0x6F0001ED] }
 effects_here = [0x6F001A7C]
 tell = { table = 0x25001F0D, string = 0xBF64A8DB }
 prov = { from = "authored", by = "Dereth Network", note = "the seal's table names its stone alone; the dispel and bar of its number; the stone glows its 20 minutes and takes no second seal while it glows", confidence = "low" }
+
+# Each pack seal lasts four hours from when it is picked up; edit an authored pack instead.
+
+[[item_life]]
+template = 0x47001308
+lasts = 14400
+prov = { from = "dat", record = 0x6F001A71, confidence = "medium", note = "the genesis effect that makes it lasts 14400 s; the seal's own description gives it four hours in a pack after it is picked up, and the August 2004 patch notes say four hours instead of one" }
+
+[[item_life]]
+template = 0x4700130C
+lasts = 14400
+prov = { from = "dat", record = 0x6F001A72, confidence = "medium", note = "the genesis effect that makes it lasts 14400 s; the seal's own description gives it four hours in a pack after it is picked up, and the August 2004 patch notes say four hours instead of one" }
+
+[[item_life]]
+template = 0x4700130F
+lasts = 14400
+prov = { from = "dat", record = 0x6F001A73, confidence = "medium", note = "the genesis effect that makes it lasts 14400 s; the seal's own description gives it four hours in a pack after it is picked up, and the August 2004 patch notes say four hours instead of one" }
+
+[[item_life]]
+template = 0x47001312
+lasts = 14400
+prov = { from = "dat", record = 0x6F001A74, confidence = "medium", note = "the genesis effect that makes it lasts 14400 s; the seal's own description gives it four hours in a pack after it is picked up, and the August 2004 patch notes say four hours instead of one" }
+
+[[item_life]]
+template = 0x47001315
+lasts = 14400
+prov = { from = "dat", record = 0x6F001A75, confidence = "medium", note = "the genesis effect that makes it lasts 14400 s; the seal's own description gives it four hours in a pack after it is picked up, and the August 2004 patch notes say four hours instead of one" }
