@@ -1,4 +1,4 @@
-# The guide's recipe taught at its giving and the seven trackers' scrolls, from 2017 and her own line; edit an authored pack instead.
+# The guide's recipe taught at its giving and the seven trackers' scrolls, each once an hour, from 2017 and their own lines; edit an authored pack instead.
 
 [[step]]
 key = "h-1"
@@ -19,7 +19,8 @@ trigger = { use = 0x47003220 }
 update = "none"
 tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
 gives = [0x4700092D]
-prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+again_after = 3600
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium", fields = { again_after = { from = "dat", record = 0x25002A4C } } }
 
 [[step]]
 key = "scroll-hakata"
@@ -29,7 +30,8 @@ trigger = { use = 0x4700322C }
 update = "none"
 tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
 gives = [0x4700092E]
-prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+again_after = 3600
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium", fields = { again_after = { from = "dat", record = 0x25002A4C } } }
 
 [[step]]
 key = "scroll-ikeras"
@@ -39,7 +41,8 @@ trigger = { use = 0x4700322E }
 update = "none"
 tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
 gives = [0x47000928]
-prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+again_after = 3600
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium", fields = { again_after = { from = "dat", record = 0x25002A4C } } }
 
 [[step]]
 key = "scroll-mayoi"
@@ -49,7 +52,8 @@ trigger = { use = 0x47003234 }
 update = "none"
 tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
 gives = [0x4700092B]
-prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+again_after = 3600
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium", fields = { again_after = { from = "dat", record = 0x25002A4C } } }
 
 [[step]]
 key = "scroll-rakani"
@@ -59,7 +63,8 @@ trigger = { use = 0x4700323D }
 update = "none"
 tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
 gives = [0x4700092C]
-prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+again_after = 3600
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium", fields = { again_after = { from = "dat", record = 0x25002A4C } } }
 
 [[step]]
 key = "scroll-shinoko"
@@ -69,7 +74,8 @@ trigger = { use = 0x47003241 }
 update = "none"
 tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
 gives = [0x4700092A]
-prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+again_after = 3600
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium", fields = { again_after = { from = "dat", record = 0x25002A4C } } }
 
 [[step]]
 key = "scroll-zu"
@@ -79,4 +85,5 @@ trigger = { use = 0x47003247 }
 update = "none"
 tell = { table = 0x25002A4C, string = 0x0FBA3EAC }
 gives = [0x47000929]
-prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium" }
+again_after = 3600
+prov = { from = "authored", by = "Dereth Network", note = "2017: the tracker of the Warders in its town handed its scroll to a player copying them (1 session, all seven); their shared line", confidence = "medium", fields = { again_after = { from = "dat", record = 0x25002A4C } } }

@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- The Warder trackers now hand out their scroll only once an hour. Pack `hakata-huntress/`.
+
 ## v0.37.0
 
 - The mine under the Skyport now has its banderlings. New pack `skyport-maint-camps/`.
