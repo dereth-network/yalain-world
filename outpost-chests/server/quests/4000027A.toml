@@ -1,0 +1,54 @@
+# The Osteth outposts' key quest, given to a drudge beacon's quester and fellows as its blowout ends;
+# taking the key from the beacon ends it. Edit an authored pack instead.
+
+[[quest]]
+id = 0x4000027A
+id_name = "QuestPortalBeaconPickupOsteth"
+state = 0x6F000C0B
+duration = 1800
+prov = { from = "authored", by = "Dereth Network", note = "the install's hidden quest the key needs under way to be taken and ends as it is taken; nothing in the install gives it, so the blowout's end does, as the guides tell", confidence = "low", fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000C0B } } }
+
+[[step]]
+key = "key-quest-1dc"
+quest = 0x4000027A
+needs = 0
+trigger = { done = 0x400001DC }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }
+
+[[step]]
+key = "key-quest-1dd"
+quest = 0x4000027A
+needs = 0
+trigger = { done = 0x400001DD }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }
+
+[[step]]
+key = "key-quest-1de"
+quest = 0x4000027A
+needs = 0
+trigger = { done = 0x400001DE }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }
+
+[[step]]
+key = "key-quest-1df"
+quest = 0x4000027A
+needs = 0
+trigger = { done = 0x400001DF }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }
+
+[[step]]
+key = "key-quest-1e0"
+quest = 0x4000027A
+needs = 0
+trigger = { done = 0x400001E0 }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }

@@ -1,0 +1,9 @@
+# The summoners' wait: the install's own hidden quest, which a summoner needs free to be given and gives,
+# for its thirty minutes. Edit an authored pack instead.
+
+[[quest]]
+id = 0x40000286
+id_name = "QuestPortalBeaconPet"
+state = 0x6F000C08
+duration = 1800
+prov = { from = "derived", rule = "quest-definition", record = 0x6F000C08, confidence = "medium", fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000C08 } } }

@@ -1,0 +1,72 @@
+# The Linvak outposts' key quest, given to a gurog beacon's quester and fellows as its blowout ends;
+# taking the key from the beacon ends it. Edit an authored pack instead.
+
+[[quest]]
+id = 0x40000278
+id_name = "QuestPortalBeaconPickupLinvak"
+state = 0x6F000C09
+duration = 1800
+prov = { from = "authored", by = "Dereth Network", note = "the install's hidden quest the key needs under way to be taken and ends as it is taken; nothing in the install gives it, so the blowout's end does, as the guides tell", confidence = "low", fields = { duration = { from = "derived", rule = "quest-setup-static", record = 0x6F000C09 } } }
+
+[[step]]
+key = "key-quest-1e8"
+quest = 0x40000278
+needs = 0
+trigger = { done = 0x400001E8 }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }
+
+[[step]]
+key = "key-quest-1e9"
+quest = 0x40000278
+needs = 0
+trigger = { done = 0x400001E9 }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }
+
+[[step]]
+key = "key-quest-1ea"
+quest = 0x40000278
+needs = 0
+trigger = { done = 0x400001EA }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }
+
+[[step]]
+key = "key-quest-1eb"
+quest = 0x40000278
+needs = 0
+trigger = { done = 0x400001EB }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }
+
+[[step]]
+key = "key-quest-1ec"
+quest = 0x40000278
+needs = 0
+trigger = { done = 0x400001EC }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }
+
+[[step]]
+key = "key-quest-1ed"
+quest = 0x40000278
+needs = 0
+trigger = { done = 0x400001ED }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }
+
+[[step]]
+key = "key-quest-1ee"
+quest = 0x40000278
+needs = 0
+trigger = { done = 0x400001EE }
+update = "bestow"
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's three blowout guides (2003, 2004) and the wiki: whoever is in the quester's fellowship as the beacon is destroyed may loot one key from it; the install's quest its taking needs", confidence = "low" }

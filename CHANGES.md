@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- A destroyed outpost beacon leaves each fellow a key to the supply chest. New pack `outpost-chests/`.
 - The Skyport nexus now has its guards, who leave alone whoever wears the amulet from the hidden archive. New pack `skyport-nexus-guards/`.
 - The burun shaman's lair near Tou-Tou now has its buruns and grubs. New pack `shaman-lair-camps/`.
 - The drudges' underground city near Cavendo now has its drudges. New pack `drudge-city-camps/`.
