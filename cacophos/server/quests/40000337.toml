@@ -1,4 +1,5 @@
-# The island: passing into its heart, and the sage's reward once the beast has fallen; edit an authored pack instead.
+# The island: passing into its heart, its seals, and the sage's reward once the beast has fallen; edit an authored
+# pack instead.
 
 [[step]]
 key = "into-the-heart"
@@ -52,3 +53,58 @@ races = [16]
 gives = [0x470012FB, 0x470010D0]
 tell = { table = 0x250028E5, string = 0x7E1BEEB1 }
 prov = { from = "authored", by = "Dereth Network", note = "as for a human, with the Empyrean's robe", confidence = "low" }
+
+[[step]]
+key = "renseloi-seal"
+quest = 0x40000337
+needs = 2
+trigger = { use = 0x4700130B }
+update = "none"
+gives = [0x47001308]
+tell = { table = 0x25001F0D, string = 0xA43BF3EF }
+requires = [{ hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the seal on the ground makes the seal of its name in the pack, with its line, for heroes alone; inside the heart, so at the second phase", confidence = "low" }
+
+[[step]]
+key = "stelseloi-seal"
+quest = 0x40000337
+needs = 2
+trigger = { use = 0x4700130E }
+update = "none"
+gives = [0x4700130C]
+tell = { table = 0x25001F0D, string = 0xA43BF3EF }
+requires = [{ hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the seal on the ground makes the seal of its name in the pack, with its line, for heroes alone; inside the heart, so at the second phase", confidence = "low" }
+
+[[step]]
+key = "anuseloi-seal"
+quest = 0x40000337
+needs = 2
+trigger = { use = 0x47001311 }
+update = "none"
+gives = [0x4700130F]
+tell = { table = 0x25001F0D, string = 0xA43BF3EF }
+requires = [{ hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the seal on the ground makes the seal of its name in the pack, with its line, for heroes alone; inside the heart, so at the second phase", confidence = "low" }
+
+[[step]]
+key = "dethseloi-seal"
+quest = 0x40000337
+needs = 2
+trigger = { use = 0x47001314 }
+update = "none"
+gives = [0x47001312]
+tell = { table = 0x25001F0D, string = 0xA43BF3EF }
+requires = [{ hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the seal on the ground makes the seal of its name in the pack, with its line, for heroes alone; inside the heart, so at the second phase", confidence = "low" }
+
+[[step]]
+key = "censeloi-seal"
+quest = 0x40000337
+needs = 2
+trigger = { use = 0x47001317 }
+update = "none"
+gives = [0x47001315]
+tell = { table = 0x25001F0D, string = 0xA43BF3EF }
+requires = [{ hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the seal on the ground makes the seal of its name in the pack, with its line, for heroes alone; inside the heart, so at the second phase", confidence = "low" }

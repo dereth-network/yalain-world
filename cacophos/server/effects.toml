@@ -1,0 +1,51 @@
+# Each seal's dispel takes its heal off the beast, and its bar keeps that heal off; edit an authored pack instead.
+
+[[effect_rule]]
+effect = 0x6F002369
+dispels = [0x6F0001E5]
+prov = { from = "dat", record = 0x6F002369, confidence = "medium", note = "its own name: it dispels the beast's heal of the same number; its data names nothing it takes off" }
+
+[[effect_rule]]
+effect = 0x6F00236A
+dispels = [0x6F0001E6]
+prov = { from = "dat", record = 0x6F00236A, confidence = "medium", note = "its own name: it dispels the beast's heal of the same number; its data names nothing it takes off" }
+
+[[effect_rule]]
+effect = 0x6F00236B
+dispels = [0x6F0001E7]
+prov = { from = "dat", record = 0x6F00236B, confidence = "medium", note = "its own name: it dispels the beast's heal of the same number; its data names nothing it takes off" }
+
+[[effect_rule]]
+effect = 0x6F00236C
+dispels = [0x6F0001E8]
+prov = { from = "dat", record = 0x6F00236C, confidence = "medium", note = "its own name: it dispels the beast's heal of the same number; its data names nothing it takes off" }
+
+[[effect_rule]]
+effect = 0x6F00236D
+dispels = [0x6F0001E9]
+prov = { from = "dat", record = 0x6F00236D, confidence = "medium", note = "its own name: it dispels the beast's heal of the same number; its data names nothing it takes off" }
+
+[[effect_rule]]
+effect = 0x6F0001F2
+ward = { effects = [0x6F0001E5], chance = 1.0 }
+prov = { from = "dat", record = 0x6F0001F2, confidence = "medium", note = "its own text: it blocks the beast from using its heal of the same number, and it sits in that heal's class above it" }
+
+[[effect_rule]]
+effect = 0x6F0001EA
+ward = { effects = [0x6F0001E6], chance = 1.0 }
+prov = { from = "dat", record = 0x6F0001EA, confidence = "medium", note = "its own text: it blocks the beast from using its heal of the same number, and it sits in that heal's class above it" }
+
+[[effect_rule]]
+effect = 0x6F0001EB
+ward = { effects = [0x6F0001E7], chance = 1.0 }
+prov = { from = "dat", record = 0x6F0001EB, confidence = "medium", note = "its own text: it blocks the beast from using its heal of the same number, and it sits in that heal's class above it" }
+
+[[effect_rule]]
+effect = 0x6F0001EC
+ward = { effects = [0x6F0001E8], chance = 1.0 }
+prov = { from = "dat", record = 0x6F0001EC, confidence = "medium", note = "its own text: it blocks the beast from using its heal of the same number, and it sits in that heal's class above it" }
+
+[[effect_rule]]
+effect = 0x6F0001ED
+ward = { effects = [0x6F0001E9], chance = 1.0 }
+prov = { from = "dat", record = 0x6F0001ED, confidence = "medium", note = "its own text: it blocks the beast from using its heal of the same number, and it sits in that heal's class above it" }
