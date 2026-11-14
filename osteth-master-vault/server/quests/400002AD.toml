@@ -10,10 +10,10 @@ phase = 2
 prov = { from = "authored", by = "Dereth Network", note = "2017: both players with the quest were moved on as they came out of the antechamber's portal", confidence = "medium" }
 
 [[step]]
-key = "archon-falls"
+key = "archon-hurt"
 quest = 0x400002AD
 needs = 2
-trigger = { kill = 0x47002CA1, within = 40 }
+trigger = { hurt = 0x47002CA1, within = 40 }
 update = "advance"
 phase = 3
-prov = { from = "authored", by = "Dereth Network", note = "every player near the archon as he falls (as the last phase's journal tells it); 2017 moved both players on 1 to 2 s after the archon was first hurt, 14 to 25 s before he fell, which no row can say", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "2017, both times: moved on 1 to 2 s after the archon was first hurt, 14 to 25 s before he fell, though the player never struck him (the last phase's journal says after his fall)", confidence = "medium" }
