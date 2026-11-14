@@ -1,15 +1,15 @@
 # The inputs of the next release, which release.yml refuses to publish without.
 # Set them for each release; this file isn't in the archive, so its bytes don't change the hash.
 
-version = "0.36.0"
+version = "0.37.0"
 
 [builder]
 url = "https://github.com/dereth-network/dereth"
 # A commit the mirror holds, its Cargo.lock's SHA-256, and what `rustc -V` says.
-commit = "1d44028944ce820993320c5c267b7e91b5585fe6"
-cargo_lock_sha256 = "1baa086f718f13a103ef956ef890e7480d099185ffe33c0177afc40f0be66044"
+commit = "b5a5da6ab286bd63f8c2d16d7c05a9ccbb7da591"
+cargo_lock_sha256 = "76eeaf9638553ea132a45e2fd00e87545cfb179c9ba3d0b71dfdff7a7dce6117"
 toolchain = "rustc 1.98.1 (48a229cea 2026-09-01)"
 
 [archive]
 # What `yalain world release . --tag v<version> --package-only` printed.
-sha256 = "accbf004a4b8dcc1664e4ae251790468b4c3b1f58f70c71bf631f4f5be034989"
+sha256 = "e92bf8fe81abd9fce3b3e286b10c0b25c0c8e5c663c91e7061426eb479ee8c4c"
