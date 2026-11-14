@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The haunted mine near Ikeras now has its bals. New pack `ghost-mines-camps/`.
 - The deepest catacombs under Artefon now have their undead. New pack `artefon-deep-camps/`.
 - The drudges' cave near Rithwic now has its creatures. New pack `drudge-hideout/`.
 - The Skyport's mine and prototype dungeons now have their creatures. New pack `skyport-mysteries-camps/`.
