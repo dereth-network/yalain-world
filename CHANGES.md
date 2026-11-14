@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The dungeon under the Gurog fortress on the mountain now has its Gurogs. New pack `undercrofts-camps/`.
 - The Olthoi Wastes' hive dungeon now has olthoi in its entry halls. New pack `hive-entry-camps/`.
 - The grievvers' nest near the Aerie now has its grievvers. New pack `grievver-nest-camps/`.
 - A destroyed outpost beacon leaves each fellow a key to the supply chest. New pack `outpost-chests/`.
