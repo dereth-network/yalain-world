@@ -43,7 +43,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/treasure_potions.toml [[treasure_potion]]
 <pack>/server/treasure_families.toml [[treasure_family]]
 <pack>/server/items.toml           [[item_use]], [[book]], [[start_item]], [[interaction]]
-<pack>/server/puzzles.toml         [[object_states]], [[sequence]], [[lever]], [[offering]], [[guarded]], [[shifting]]
+<pack>/server/puzzles.toml         [[object_states]], [[sequence]], [[lever]], [[offering]], [[guarded]], [[shifting]], [[wanting]]
 <pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]], [[defense]]
 ```
 
@@ -125,7 +125,7 @@ Every row sets one **item**, named by its key:
 | `weapon NAME` | the weapon's name, as creatures' templates write it |
 | `area XXYY` | the area's landblock |
 | `death_treasure KEY` | the row's `key` |
-| `object_states KEY`, `sequence KEY`, `lever KEY`, `offering KEY`, `guarded KEY`, `shifting KEY` | the row's `key` |
+| `object_states KEY`, `sequence KEY`, `lever KEY`, `offering KEY`, `guarded KEY`, `shifting KEY`, `wanting KEY` | the row's `key` |
 | `treasure_pool NAME` | the pool's name |
 | `pet 0xEFFECT` | the pet effect (or the contract's template) |
 | `pet_limit 0xSKILL` | the summoning skill |
@@ -1041,6 +1041,17 @@ the world. A use of the one standing that is carried out (for an object a quest 
 ran) takes it from the world for everyone, and another of them, never the same, stands in its place. What stood is not
 kept across a restart.
 
+**`[[wanting]]`**: placed objects that each want one item of a set, drawn at random, such as crystals that each take
+one of three serums, and no other, until repaired. `key`; `objects`, the placed objects, at least one, named as a
+lever's, none in another `[[wanting]]` row; `items`, the set, at least two `{ template, weight }`, each template once
+and each weight above 0; `refused`, what an object says to an item of the set it does not want (`{ table, string }`;
+nothing when left out). The first item of the set used on an object or given to it draws the object's want by the
+weights; the object keeps it, the same for every player and apart from the row's other objects. Another item of the
+set is refused where the player has walked to it: the object says `refused`, the item stays in the player's pack
+(handed back, for a give) and no quest step runs. The item wanted goes on as any use or give: once it runs a quest
+step (or, given, a `[[give]]` row takes it), the want is met and forgotten, and the next item of the set to come
+draws again. An item outside the set is not judged. Wants are not kept across a restart.
+
 ```toml
 # <pack>/server/puzzles.toml
 [[object_states]]
@@ -1084,6 +1095,12 @@ prov = { from = "authored", by = "you" }
 key = "remains"
 objects = ["remains-east@5973", "remains-west@5A74"]
 gone_for = 120
+prov = { from = "authored", by = "you" }
+
+[[wanting]]
+key = "crystals"
+objects = ["crystal-a@01BB", "crystal-b@01BB"]
+items = [{ template = 0x470013E9, weight = 1 }, { template = 0x470013EA, weight = 1 }]
 prov = { from = "authored", by = "you" }
 ```
 
