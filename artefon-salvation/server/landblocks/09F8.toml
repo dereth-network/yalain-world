@@ -1,5 +1,5 @@
-# The catacombs' lower halls' way out, which 2017 recorded with no destination, and the queen by her tomb; edit an
-# authored pack instead.
+# The catacombs' lower halls' way out, which 2017 recorded with no destination, the queen by her tomb and her undead
+# self, there once her quest fails until she is killed; edit an authored pack instead.
 
 [[object]]
 key = "s-1"
@@ -21,3 +21,14 @@ cell = 0x09F8018A
 at = [-285.78, -3.69, 50.40]
 rotation = [0.030539, 0.0, 0.0, 0.999534]
 prov = { from = "authored", by = "Dereth Network", note = "by her tomb in the lower halls, on the floor of its alcove (the wiki, a players' guide, a map of the catacombs); she gives the quest; no recording places her", confidence = "low" }
+
+[[camp]]
+key = "artefon-queen-undead"
+cell = 0x09F8018A
+at = [-285.78, -3.69, 50.40]
+spots = [{ cell = 0x09F8018A, at = [-285.78, -3.69, 50.40] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002CF7, weight = 1 }]
+event = "artefon-queen-undead"
+prov = { from = "authored", by = "Dereth Network", note = "the queen's undead self where she stood, once her quest has failed until it is killed: the install's unique creature of her name (her undead description) and its game event; its death ends the event", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

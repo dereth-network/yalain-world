@@ -1,0 +1,8 @@
+# The queen turned undead once her quest fails, until someone kills her; edit an authored pack instead.
+
+[[event]]
+key = "artefon-queen-undead"
+game_event = 0x40000018
+failure = { quest = 0x400001C7, until_killed = "artefon-queen-undead@09F8" }
+hides = ["artefon-kei@09F8"]
+prov = { from = "authored", by = "Dereth Network", note = "she turns undead as her quest fails for anyone and is herself again once that self is killed: the install's two game events of her, her undead self, its lines and hers at a failure; no time is given", confidence = "low" }
