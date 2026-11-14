@@ -1,4 +1,5 @@
-# The tower's master who holds a glyph, its way out, its hatch down and its basement's way out; no recording.
+# The tower's master who holds a glyph, its way out, its hatch down (locked to the basement's key) and its basement's way
+# out; no recording.
 
 [[object]]
 key = "tower-trap-door"
@@ -9,7 +10,9 @@ at = [-3.54, 3.18, 101.00]
 rotation = [1, 0, 0, 0]
 to = "tower-basement"
 requires = { quest = 0x8000029C, underway = true }
-prov = { from = "authored", by = "Dereth Network", note = "on the bottom floor, above the hatch the client draws in the basement's ceiling; down to the basement; open from the gates' quest's second phase, which gives its second door; no recording", confidence = "low" }
+locked = true
+lock = 0x400000AB
+prov = { from = "authored", by = "Dereth Network", note = "on the bottom floor, above the hatch the client draws in the basement's ceiling; down to the basement; open from the gates' quest's second phase, which gives its second door; no recording", confidence = "low", fields = { locked = { from = "authored", by = "Dereth Network", note = "a players' map keeps the basement behind the key the top floor's undead drop; the install's key to the tower's basement carries this lock", confidence = "low" } } }
 
 [[object]]
 key = "tower-basement-exit"

@@ -139,7 +139,7 @@
 - Fidget's hunt for the carenzi's hidden nuts can now be finished. New pack `carenzi-hoard/`.
 - Gems from creatures now lead to the Arcanum's guarded caches, and the scholar in its vault takes their books. New pack `arcanum-caches/`.
 - A fellowship now moves through Linvak's secret base quest together when one picks up the scrap.
-- The Foundry's tower, workshop and library now have their undead, and the tower's ladders reach its top. New pack `foundry-house-camps/`.
+- The Foundry's tower, workshop and library now have their undead, and the tower's ladders reach its top, where its basement key drops. New pack `foundry-house-camps/`.
 - The Olthoi Wastes' hive dungeon now has a way in, and creatures in its side dungeons. New pack `heart-of-darkness/`.
 - The quest for the Order's lost scholars can now be done, through the tunnels under the delta. New pack `fate-of-the-scholars/`.
 
