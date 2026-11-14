@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Each crystal in the master vault of Omishan now needs one serum of its own, picked at random. Pack `linvak-omishan-vaults/`.
 - The olthoi hunts' grubs are now in the warren under the northeast hive. Pack `bug-hunts/`.
 - The western hive in the Olthoi Wastes can now be reached by a portal on the land in front of its mound. Pack `olthoi-hive-west/`.
 - The western hive in the Olthoi Wastes now has its nymph boss. Pack `dungeon-bosses/`.
