@@ -1,0 +1,97 @@
+# What the watchtower's Gurog says of his lore quest: reminders, his refusal of the weak, his speech as he takes
+# the satchel back; edit an authored pack instead.
+
+[[talk]]
+key = "uncover-remind-1"
+who = 0x4700319C
+line = { table = 0x25001ABA, string = 0xEF02365B }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x400002C6
+phase = 1
+prov = { from = "authored", by = "Dereth Network", note = "his own line asking why the task is not done", confidence = "low" }
+
+[[talk]]
+key = "uncover-remind-2"
+who = 0x4700319C
+line = { table = 0x25001ABA, string = 0xEF02363B }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x400002C6
+phase = 1
+prov = { from = "authored", by = "Dereth Network", note = "his own line offering the easier task for the satchel back", confidence = "low" }
+
+[[talk]]
+key = "uncover-remind-loaded"
+who = 0x4700319C
+line = { table = 0x25001ABA, string = 0xEF02365D }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x400002C6
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "his own line: the satchel is loaded down, give it to him", confidence = "low" }
+
+[[talk]]
+key = "uncover-too-weak"
+who = 0x4700319C
+line = { table = 0x25001ABA, string = 0xC4F9188E }
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x400002C6
+prov = { from = "authored", by = "Dereth Network", note = "his own line for one too weak to help him", confidence = "low" }
+
+[[talk]]
+key = "uncover-done-0"
+who = 0x4700319C
+line = { table = 0x25001ABA, string = 0x7D7F04C6 }
+role = "complete"
+how = "emote"
+when = "give"
+quest = 0x400002C6
+update = "complete"
+item = 0x47001B41
+order = 0
+prov = { from = "authored", by = "Dereth Network", note = "his own lines as he takes the loaded satchel: rifling through it, all the writings found, the vial, how it works; their order read from them", confidence = "low" }
+
+[[talk]]
+key = "uncover-done-1"
+who = 0x4700319C
+line = { table = 0x25001ABA, string = 0x34CC0A92 }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x400002C6
+update = "complete"
+item = 0x47001B41
+order = 1
+prov = { from = "authored", by = "Dereth Network", note = "his own lines as he takes the loaded satchel: rifling through it, all the writings found, the vial, how it works; their order read from them", confidence = "low" }
+
+[[talk]]
+key = "uncover-done-2"
+who = 0x4700319C
+line = { table = 0x25001ABA, string = 0x34CD0A92 }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x400002C6
+update = "complete"
+item = 0x47001B41
+order = 2
+prov = { from = "authored", by = "Dereth Network", note = "his own lines as he takes the loaded satchel: rifling through it, all the writings found, the vial, how it works; their order read from them", confidence = "low" }
+
+[[talk]]
+key = "uncover-done-3"
+who = 0x4700319C
+line = { table = 0x25001ABA, string = 0x34CA0A92 }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x400002C6
+update = "complete"
+item = 0x47001B41
+order = 3
+prov = { from = "authored", by = "Dereth Network", note = "his own lines as he takes the loaded satchel: rifling through it, all the writings found, the vial, how it works; their order read from them", confidence = "low" }

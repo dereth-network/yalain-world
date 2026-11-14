@@ -1,0 +1,31 @@
+# The watchtower's Gurog's other quest, the bones: for those too weak for his lore quest, and for those who have
+# done or failed it; edit an authored pack instead.
+
+[[step]]
+key = "h-1"
+quest = 0x40000075
+needs = 0
+trigger = { use = 0x4700319C }
+update = "bestow"
+most_level = 50
+prov = { from = "capture", evidence = "AC2-EVID-WDB-HAND-INS-2017", ref = "c:aa60230e", confidence = "medium", sample = { sessions = 2 }, fields = { most_level = { from = "authored", by = "Dereth Network", note = "under the lore quest's least level, so he gives one of his two quests by level and does not pick one at random", confidence = "low" } } }
+
+[[step]]
+key = "bones-after-lore-done"
+quest = 0x40000075
+needs = 0
+trigger = { use = 0x4700319C }
+update = "bestow"
+least_level = 51
+requires = [{ quest = 0x400002C6, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the guide: he gives the bones to one still waiting to be given the lore quest again; his own line offers the easier task", confidence = "low" }
+
+[[step]]
+key = "bones-after-lore-failed"
+quest = 0x40000075
+needs = 0
+trigger = { use = 0x4700319C }
+update = "bestow"
+least_level = 51
+requires = [{ quest = 0x400002C6, failed = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the guide: he gives the bones to one still waiting to be given the lore quest again; his own line offers the easier task to one who failed it", confidence = "low" }

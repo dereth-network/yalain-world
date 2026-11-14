@@ -1,0 +1,35 @@
+# The lore quest: the watchtower's Gurog gives it with the satchel and takes the loaded satchel back; edit an
+# authored pack instead.
+
+[[quest]]
+id = 0x400002C6
+id_name = "QuestUncoverPast"
+state = 0x6F000D48
+challenge = 55
+cancellable = true
+min_level = 51
+duration = 21600
+retry = 518400
+xp_share = 0.05
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:1c8d9b97", confidence = "high", sample = { sessions = 30 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "the satchel's own least level, and the guide's level 51", confidence = "medium" }, duration = { from = "authored", by = "Dereth Network", note = "the guide's six hours", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "the guide's six days", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "the guide's five percent of a level", confidence = "low" } } }
+
+[[step]]
+key = "lodrog-gives"
+quest = 0x400002C6
+needs = 0
+trigger = { use = 0x4700319C }
+update = "bestow"
+least_level = 51
+gives = [0x47001B41]
+tell = { table = 0x25001ABA, string = 0x4B81BD16 }
+prov = { from = "authored", by = "Dereth Network", note = "the guide: he gives the quest and the satchel; his own line hands the satchel over and names the task; the satchel's own description says he gave it", confidence = "low", fields = { least_level = { from = "authored", by = "Dereth Network", note = "the quest's least level, as his other quest goes to those under it", confidence = "low" } } }
+
+[[step]]
+key = "lodrog-takes-satchel"
+quest = 0x400002C6
+needs = 2
+trigger = { give = 0x47001B41, to = 0x4700319C }
+update = "complete"
+takes = [0x47001B41]
+gives = [0x47001B3F]
+prov = { from = "authored", by = "Dereth Network", note = "his own lines: the satchel loaded down, given to him for the reward, the vial his reward; the guide: back to him with all five for the vial", confidence = "low" }

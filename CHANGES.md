@@ -5,7 +5,7 @@
 - The island beyond the delta's tunnels can now be finished, down through its heart to the beast. New pack `cacophos/`.
 - A chaos crystal can now be forged into a star and given to Arramora's beacon. New pack `star-of-heroes/`.
 - The light temple can now be done, from its pillars by day through its levers to the well. New pack `temple-of-elemental-light/`.
-- Killing the mountain fortress's Gurog king now opens a portal to the dungeon below. New pack `goarata-undercrofts/`.
+- The lore hunt in the dungeon under the mountain fortress can now be done. New pack `goarata-undercrofts/`.
 - Elenura's bean can now be grown in the garden by her camp and handed back. New pack `golden-bean/`.
 - A mage now finishes your untraining for coins. New pack `soul-eater/`.
 - The kingdoms' mine raids can now be done from the Dominion's headquarters. New pack `elder-mine-raids/`.

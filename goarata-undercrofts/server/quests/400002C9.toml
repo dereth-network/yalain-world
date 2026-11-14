@@ -1,0 +1,11 @@
+# A pile of rubble searched with the satchel: one of the lore quest's five pieces; edit an authored pack instead.
+
+[[step]]
+key = "debris-c"
+quest = 0x400002C9
+needs = 1
+trigger = { use = 0x47001B41, on = 0x47001B39 }
+update = "complete"
+text = { table = 0x25002C99, string = 0x1CF49ED3 }
+requires = [{ quest = 0x400002C6, phase = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the satchel's own uses name the five piles; the quest's first phase is done by five subquests, one a pile; the guide: the satchel used on each glowing pile gives some lore and moves the quest on", confidence = "medium", fields = { text = { from = "authored", by = "Dereth Network", note = "the five lore texts the install gives its text effects, matched to the piles in the order of both numberings; which pile told which is not recorded", confidence = "low" } } }
