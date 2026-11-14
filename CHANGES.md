@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The crones' laboratory near Cavendo now has its crones. New pack `crone-labs-camps/`.
 - The haunted mine near Ikeras now has its bals. New pack `ghost-mines-camps/`.
 - The deepest catacombs under Artefon now have their undead. New pack `artefon-deep-camps/`.
 - The drudges' cave near Rithwic now has its creatures. New pack `drudge-hideout/`.
