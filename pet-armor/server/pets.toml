@@ -5,6 +5,10 @@
 # less. A turret's level is its vigor over 80. The rest of each row is as the pack it came from has it:
 # pet-attacks for pet 47000846, turret-vigor for pet 47000851, pet-kinds for the other four. The Axe Orb's
 # one level rests on one recording; its line meets the few hits recorded on it at levels 40 and 43.
+#
+# The rows after those are kinds never recorded struck at a known level, each given the line of its
+# nearest recorded kin, named in its prov: another of the same skills and class of pet. The Small
+# Turret's few hits at 58 and the orbs' few at 14 sit near their kin's line.
 
 [[pet]]
 effect = 0x70000805
@@ -79,3 +83,89 @@ variance = 0.35
 lands = 0.8
 swing = 4
 prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700083D", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 4700083D", confidence = "medium" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 4700083D", confidence = "low", sample = { sessions = 1 } } } }
+
+[[pet]]
+effect = 0x7000082E
+template = 0x4700084C
+flags = 1096
+health = [{ level = 1, health = 22 }, { level = 27, health = 582 }]
+armor = [{ level = 1, armor = 0 }, { level = 55, armor = 98 }, { level = 58, armor = 111 }, { level = 72, armor = 177 }]
+per_level_squared = 0.08
+variance = 0.35
+lands = 0.84
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700084C", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 4700084C", confidence = "medium" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 4700084B", confidence = "low", note = "the Sand Warrior's line: the sand pets' lesser kind, of its class of pet" } } }
+
+[[pet]]
+effect = 0x70001F5F
+template = 0x4700084F
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+armor = [{ level = 1, armor = 0 }, { level = 56, armor = 216 }, { level = 59, armor = 235 }, { level = 72, armor = 302 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 4700084A", confidence = "low", note = "the Sand Fiend's line: the sand pets' hero kind, with the Sand Fiend's own buff" } } }
+
+[[pet]]
+effect = 0x700008BD
+template = 0x47000853
+flags = 3128
+stays = true
+health = [{ level = 1, health = 89 }, { level = 58, health = 5157 }]
+armor = [{ level = 1, armor = 0 }, { level = 58, armor = 250 }]
+per_level_squared = 0.05
+variance = 0.5
+lands = 0.75
+outdoors_only = true
+corpse_after = 2.8
+vigor_per_level = 60
+vigor_per_second = 6.5
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 47000853", confidence = "medium" }, per_level_squared = { from = "capture", evidence = "AC2-EVID-WDB-PET-HITS-2017", ref = "pet 47000853", confidence = "medium" }, vigor_per_level = { from = "authored", confidence = "low" }, vigor_per_second = { from = "authored", confidence = "low" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 47000851", confidence = "low", note = "the Large Turret's line: the other turret, of its class of pet" } } }
+
+[[pet]]
+effect = 0x70001F1A
+template = 0x4700083C
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 12, health = 236 }, { level = 14, health = 273 }, { level = 40, health = 918 }, { level = 43, health = 1038 }, { level = 54, health = 1553 }, { level = 68, health = 2135 }, { level = 89, health = 3189 }]
+armor = [{ level = 1, armor = 0 }, { level = 89, armor = 178 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700083C", confidence = "medium" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 4700083D", confidence = "low", note = "the Axe Orb's line: another orb, of its class of pet" } } }
+
+[[pet]]
+effect = 0x70001F1F
+template = 0x4700083E
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 12, health = 236 }, { level = 14, health = 273 }, { level = 40, health = 918 }, { level = 43, health = 1038 }, { level = 54, health = 1553 }, { level = 68, health = 2135 }, { level = 89, health = 3189 }]
+armor = [{ level = 1, armor = 0 }, { level = 89, armor = 178 }]
+taunts = true
+corpse_after = 1.1
+attacks = [{ skill = 1024, weight = 1 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "capture", evidence = "AC2-EVID-WDB-PET-HEALTH-2017", ref = "pet 4700083E", confidence = "medium" }, attacks = { from = "capture", evidence = "AC2-EVID-WDB-PET-ATTACKS-2017", ref = "pet 4700083E", confidence = "high" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 4700083D", confidence = "low", note = "the Axe Orb's line: another orb, of its class of pet" } } }
+
+[[pet]]
+effect = 0x70000783
+template = 0x4700083A
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+armor = [{ level = 1, armor = 0 }, { level = 89, armor = 178 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 4700083D", confidence = "low", note = "the Axe Orb's line: a conjured blade of the orbs' class of pet" } } }
+
+[[pet]]
+effect = 0x70000784
+template = 0x4700083B
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+armor = [{ level = 1, armor = 0 }, { level = 89, armor = 178 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 4700083D", confidence = "low", note = "the Axe Orb's line: a conjured blade of the orbs' class of pet" } } }
+
+[[pet]]
+effect = 0x7000092A
+template = 0x47000862
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+armor = [{ level = 1, armor = 0 }, { level = 58, armor = 89 }, { level = 60, armor = 97 }, { level = 63, armor = 106 }, { level = 76, armor = 158 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 47000863", confidence = "low", note = "the Shreth's line: another beast of its skills and class of pet" } } }
+
+[[pet]]
+effect = 0x7000092B
+template = 0x4700082A
+flags = 1096
+health = [{ level = 1, health = 20 }, { level = 10, health = 200 }, { level = 25, health = 500 }, { level = 50, health = 1100 }, { level = 90, health = 2300 }, { level = 150, health = 5000 }]
+armor = [{ level = 1, armor = 0 }, { level = 58, armor = 89 }, { level = 60, armor = 97 }, { level = 63, armor = 106 }, { level = 76, armor = 158 }]
+prov = { from = "derived", rule = "pet-from-its-effect", confidence = "high", fields = { health = { from = "authored", note = "in line with the kinds recorded" }, armor = { from = "capture", evidence = "AC2-EVID-WDB-PET-ARMOR-2017", ref = "pet 47000863", confidence = "low", note = "the Shreth's line: another beast of its skills and class of pet" } } }
