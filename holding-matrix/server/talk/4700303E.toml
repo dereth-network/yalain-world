@@ -1,0 +1,22 @@
+# What the mechanism says as it catalogs a player, and to one it cataloged before; edit an authored pack instead.
+
+[[talk]]
+key = "t-303e-ea52fd5e"
+who = 0x4700303E
+line = { table = 0x2500295B, string = 0xEA52FD5E }
+line_name = "ID_Use"
+role = "complete"
+how = "emote"
+when = "use"
+quest = 0x40000256
+update = "complete"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:16e5a6bf", confidence = "low", sample = { lines = 1, sessions = 1 }, fields = { role = { from = "authored", by = "Dereth Network", note = "its catalog line said as it catalogs, with the mark", confidence = "low" }, quest = { from = "authored", by = "Dereth Network", note = "its catalog line said as it catalogs, with the mark", confidence = "low" }, update = { from = "authored", by = "Dereth Network", note = "its catalog line said as it catalogs, with the mark", confidence = "low" } } }
+
+[[talk]]
+key = "matrix-cataloged-before"
+who = 0x4700303E
+line = { table = 0x2500295B, string = 0x5B6588B5 }
+role = "use"
+how = "emote"
+when = "use"
+prov = { from = "authored", by = "Dereth Network", note = "the mechanism's own line that the essence was cataloged before, said as its catalog line is, to one it marked; no recording", confidence = "low" }
