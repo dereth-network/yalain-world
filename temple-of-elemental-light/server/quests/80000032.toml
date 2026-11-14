@@ -1,5 +1,6 @@
 # The middle pillar's lines by day, for each count of the pillars set and for all of them, and at night; and the
-# portal's way in once they are set; edit an authored pack instead.
+# portal's way in once they are set; inside, the lattice taken, its light drawn from the well, and the return to
+# the scholar; edit an authored pack instead.
 
 [[step]]
 key = "central-daylight-0-0"
@@ -171,3 +172,34 @@ phase = 2
 to = "temple-light-in"
 requires = [{ sequence = "temple-pillars", done = true }]
 prov = { from = "authored", by = "Dereth Network", note = "the portal's own use moves the quest to its second phase, for a player at its first; the guide: once the pillars are set, every fellow enters, each by its own use (the portal stands by day alone)", confidence = "low" }
+
+[[step]]
+key = "dark-lattice"
+quest = 0x80000032
+needs = 2
+trigger = { use = 0x47001A4E }
+update = "advance"
+phase = 3
+gives = [0x47001A4C]
+prov = { from = "authored", by = "Dereth Network", note = "its use at the second phase gives the lattice a player carries and moves the quest on, as its template's effects do; the guide: each fellow takes one", confidence = "low" }
+
+[[step]]
+key = "well"
+quest = 0x80000032
+needs = 3
+trigger = { use = 0x47001A4C, on = 0x47001A4D }
+update = "advance"
+phase = 4
+takes = [0x47001A4C]
+gives_one_of = [{ template = 0x47001A4B, weight = 1 }, { template = 0x47001A49, weight = 1 }]
+text = { table = 0x25002C8E, string = 0x8888466F }
+prov = { from = "authored", by = "Dereth Network", note = "the carried lattice used on the well at the third phase: the install's line of it drawing in light, the dark one taken and a light one given (the guide; the install's effects)", confidence = "low", fields = { gives_one_of = { from = "authored", by = "Dereth Network", note = "which of the two is not recorded (a guide: 10 to 20 uses, the two's): as likely each", confidence = "low" } } }
+
+[[step]]
+key = "kathyr-done"
+quest = 0x80000032
+needs = 4
+trigger = { use = 0x4700335D }
+update = "complete"
+tell = { table = 0x25002ACA, string = 0xBB6F6364 }
+prov = { from = "authored", by = "Dereth Network", note = "the last phase's return to Kathyr ends it (its journal); her line for a lattice full of light", confidence = "low" }

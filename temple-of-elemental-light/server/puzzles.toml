@@ -1,4 +1,5 @@
-# The six pillars' order, counted for the fellowship; edit an authored pack instead.
+# The six pillars' order, counted for the fellowship, and the temple's levers; edit an authored pack
+# instead.
 
 [[sequence]]
 key = "temple-pillars"
@@ -8,3 +9,124 @@ forgets_after = 1800
 right = { table = 0x25002ACD, string = 0xEA52FD5E }
 wrong = { table = 0x25002ACD, string = 0xF2269530 }
 prov = { from = "authored", by = "Dereth Network", note = "the guide: touch each pillar once in its order; one touched again resets them; one out of turn changes nothing; one set opens it for all fellows", confidence = "low", fields = { uses = { from = "authored", by = "Dereth Network", note = "no order is recorded: across the ring and about it, north first, so it is found by trying", confidence = "low" }, forgets_after = { from = "authored", by = "Dereth Network", note = "how long they stayed set is not recorded: half an hour", confidence = "low" }, right = { from = "authored", by = "Dereth Network", note = "the pillar's own lines: a whirring as it is set, nothing happening as it is not", confidence = "low" } } }
+
+# The temple's levers: each opens its door for a while, from the way in (outer) or from behind (inner).
+
+[[lever]]
+key = "lever-a-outer"
+levers = ["lever-a-outer@07E7"]
+opens = ["door-a@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "lever A in the exit portal's room opens door A (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-a-inner"
+levers = ["lever-a-inner@07E7"]
+opens = ["door-a@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "the lever A past door A opens door A (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-b-outer"
+levers = ["lever-b-outer@07E7"]
+opens = ["door-b@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "lever B in the far room upstairs opens door B (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-b-inner"
+levers = ["lever-b-inner@07E7"]
+opens = ["door-b@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "the lever B in the room past door B opens door B (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-c"
+levers = ["lever-c@07E7"]
+opens = ["door-c@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "lever C in the room past door B opens door C (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-d-outer"
+levers = ["lever-d-outer@07E7"]
+opens = ["door-d@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "lever D in the small room by the grid opens door D (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-e-outer"
+levers = ["lever-e-outer@07E7"]
+opens = ["door-e@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "lever E in the great hall's north alcove opens door E (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-i-outer"
+levers = ["lever-i-outer@07E7"]
+opens = ["door-i@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "lever I in the great hall's south alcove opens door I (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-f-outer"
+levers = ["lever-f-outer@07E7"]
+opens = ["door-f@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "lever F in the loop beside door F opens door F (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-e-inner"
+levers = ["lever-e-inner@07E7"]
+opens = ["door-e@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "the lever E in the lattice's room opens door E (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-f-inner"
+levers = ["lever-f-inner@07E7"]
+opens = ["door-f@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "the lever F in the lattice's room opens door F (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-d-inner"
+levers = ["lever-d-inner@07E7"]
+opens = ["door-d@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "the lever D in the lattice's room opens door D (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-i-inner"
+levers = ["lever-i-inner@07E7"]
+opens = ["door-i@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "the lever I in the lattice's room opens door I (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-g-outer"
+levers = ["lever-g-outer@07E7"]
+opens = ["door-g@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "lever G in the room north-west of the ring opens door G (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-g-inner"
+levers = ["lever-g-inner@07E7"]
+opens = ["door-g@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "the lever G in the alcove past door G opens door G (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-h-outer"
+levers = ["lever-h-outer@07E7"]
+opens = ["door-h@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "lever H in the far room south-west of the ring opens door H (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }
+
+[[lever]]
+key = "lever-h-inner"
+levers = ["lever-h-inner@07E7"]
+opens = ["door-h@07E7"]
+open_for = 60
+prov = { from = "authored", by = "Dereth Network", note = "the lever H in the well's room opens door H (the players' map and its steps; the guide)", confidence = "low", fields = { open_for = { from = "authored", by = "Dereth Network", note = "a minute: no source says; the longest run from a lever to its door is H's, about 290 m (45 s at a run), then C's, about 180 m", confidence = "low" } } }

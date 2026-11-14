@@ -1,0 +1,763 @@
+# The temple's inside: its locked doors and their levers, the lattice, the well, the way out, and the
+# golems where the players' map puts them; edit an authored pack instead.
+
+[[object]]
+key = "door-a"
+kind = "static"
+id = 0x4007E70000000E00
+template = 0x47000FCE
+cell = 0x07E7010E
+at = [32.00, 0.00, 101.00]
+rotation = [0.707107, 0, 0, -0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door A, between the room of the exit portal and the corridor west, by the players' map, fitted by hand; in the install's frame there; its front to the way in", confidence = "low" }
+
+[[object]]
+key = "door-b"
+kind = "static"
+id = 0x4007E70000000E01
+template = 0x47000FCE
+cell = 0x07E70165
+at = [0.00, -30.00, 131.00]
+rotation = [1, 0, 0, 0]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door B, upstairs between the hall and the room of levers B and C, by the players' map, fitted by hand; in the install's frame there; its front to the way in", confidence = "low" }
+
+[[object]]
+key = "door-c"
+kind = "static"
+id = 0x4007E70000000E02
+template = 0x47000FCE
+cell = 0x07E70122
+at = [0.00, -8.00, 101.00]
+rotation = [1, 0, 0, 0]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door C, at the corridor's crossing, the way down to the lower level, by the players' map, fitted by hand; in the install's frame there; its front to the way in", confidence = "low" }
+
+[[object]]
+key = "door-d"
+kind = "static"
+id = 0x4007E70000000E03
+template = 0x47000FCE
+cell = 0x07E70273
+at = [88.00, 20.00, 68.00]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door D, from the lower level's grid to the long corridor east, by the players' map, fitted by hand; in the install's frame there; its front to the way in", confidence = "low" }
+
+[[object]]
+key = "door-e"
+kind = "static"
+id = 0x4007E70000000E04
+template = 0x47000FCE
+cell = 0x07E702E9
+at = [187.00, 40.00, 65.00]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door E, the great hall's north-east door to the loop, by the players' map, fitted by hand; in the install's frame there; its front to the way in", confidence = "low" }
+
+[[object]]
+key = "door-f"
+kind = "static"
+id = 0x4007E70000000E05
+template = 0x47000FCE
+cell = 0x07E702CF
+at = [213.00, 20.00, 65.00]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door F, from the loop to the lattice's room, by the players' map, fitted by hand; in the install's frame there; its front to the way in", confidence = "low" }
+
+[[object]]
+key = "door-g"
+kind = "static"
+id = 0x4007E70000000E06
+template = 0x47000FCE
+cell = 0x07E7020A
+at = [-129.00, 0.00, 95.00]
+rotation = [0.707107, 0, 0, -0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door G, the ring's west door toward the well, by the players' map, fitted by hand; in the install's frame there; its front to the way in", confidence = "low" }
+
+[[object]]
+key = "door-h"
+kind = "static"
+id = 0x4007E70000000E07
+template = 0x47000FCE
+cell = 0x07E70210
+at = [-233.00, 0.00, 104.00]
+rotation = [0.707107, 0, 0, -0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door H, into the well's room, by the players' map, fitted by hand; in the install's frame there; its front to the way in", confidence = "low" }
+
+[[object]]
+key = "door-i"
+kind = "static"
+id = 0x4007E70000000E08
+template = 0x47000FCE
+cell = 0x07E702E8
+at = [187.00, 0.00, 65.00]
+rotation = [0.707107, 0, 0, 0.707107]
+locked = true
+prov = { from = "authored", by = "Dereth Network", note = "door I, the great hall's south-east door to the loop, by the players' map, fitted by hand; in the install's frame there; its front to the way in", confidence = "low" }
+
+[[object]]
+key = "lever-a-outer"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E7010F
+at = [37.51, -7.07, 101.00]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "lever A in the exit portal's room, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-a-inner"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E70129
+at = [27.48, -2.03, 101.00]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the lever A past door A, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-b-outer"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E70146
+at = [5.17, 70.06, 125.30]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "lever B in the far room upstairs, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-b-inner"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E7016D
+at = [4.31, -57.78, 131.20]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the lever B in the room past door B, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-c"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E7016D
+at = [-4.86, -58.06, 131.20]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "lever C in the room past door B, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-d-outer"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E70272
+at = [81.82, -18.11, 68.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "lever D in the small room by the grid, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-e-outer"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E70281
+at = [155.14, 57.31, 65.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "lever E in the great hall's north alcove, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-i-outer"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E702C7
+at = [154.32, -17.29, 65.10]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "lever I in the great hall's south alcove, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-f-outer"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E702EC
+at = [206.85, 22.76, 65.00]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "lever F in the loop beside door F, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-e-inner"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E702D1
+at = [222.03, 28.64, 65.20]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the lever E in the lattice's room, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-f-inner"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E702D8
+at = [238.31, 28.64, 65.20]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the lever F in the lattice's room, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-d-inner"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E702D2
+at = [222.60, 11.55, 65.20]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the lever D in the lattice's room, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-i-inner"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E702D5
+at = [237.68, 11.47, 65.20]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the lever I in the lattice's room, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-g-outer"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E701F9
+at = [-146.23, 55.46, 95.00]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "lever G in the room north-west of the ring, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-g-inner"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E7020D
+at = [-181.38, 8.49, 101.00]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the lever G in the alcove past door G, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-h-outer"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E701D5
+at = [-199.93, -109.77, 95.40]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "lever H in the far room south-west of the ring, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "lever-h-inner"
+kind = "static"
+template = 0x47000CDD
+cell = 0x07E70216
+at = [-246.36, -12.14, 104.20]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the lever H in the well's room, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "dark-lattice"
+kind = "static"
+template = 0x47001A4E
+cell = 0x07E702D9
+at = [230.36, 23.32, 65.00]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the lattice in its room past door F, beside the middle, by the players' map, fitted by hand; each fellow takes one from it (the guide)", confidence = "low" }
+
+[[object]]
+key = "well"
+kind = "static"
+template = 0x47001A4D
+cell = 0x07E70252
+at = [-285.03, 0.09, 104.00]
+rotation = [1, 0, 0, 0]
+prov = { from = "authored", by = "Dereth Network", note = "the well at the west of its room past door H, by the players' map, fitted by hand", confidence = "low" }
+
+[[object]]
+key = "exit-portal"
+kind = "static"
+template = 0x47001A50
+cell = 0x07E70101
+at = [60.46, 0.29, 101.00]
+rotation = [0.707107, 0, 0, 0.707107]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "temple-light-out"
+prov = { from = "authored", by = "Dereth Network", note = "the exit portal past the landing, by the players' map, fitted by hand; the install's portal out of the temple, named as a way out (its own name is another's)", confidence = "low" }
+
+[[camp]]
+key = "golem-1"
+cell = 0x07E7019A
+at = [-119.81, 40.37, 95.10]
+spots = [{ cell = 0x07E7019A, at = [-119.81, 40.37, 95.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-2"
+cell = 0x07E70193
+at = [-99.81, 39.96, 95.10]
+spots = [{ cell = 0x07E70193, at = [-99.81, 39.96, 95.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-3"
+cell = 0x07E70194
+at = [-79.81, 40.37, 95.10]
+spots = [{ cell = 0x07E70194, at = [-79.81, 40.37, 95.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-4"
+cell = 0x07E70195
+at = [-60.32, 39.89, 95.10]
+spots = [{ cell = 0x07E70195, at = [-60.32, 39.89, 95.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-5"
+cell = 0x07E70196
+at = [-39.66, 19.89, 95.10]
+spots = [{ cell = 0x07E70196, at = [-39.66, 19.89, 95.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-6"
+cell = 0x07E7018A
+at = [-39.74, -19.53, 95.10]
+spots = [{ cell = 0x07E7018A, at = [-39.74, -19.53, 95.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-7"
+cell = 0x07E70197
+at = [-120.30, -39.97, 95.10]
+spots = [{ cell = 0x07E70197, at = [-120.30, -39.97, 95.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-8"
+cell = 0x07E7018F
+at = [-100.01, -39.94, 95.10]
+spots = [{ cell = 0x07E7018F, at = [-100.01, -39.94, 95.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-9"
+cell = 0x07E7018E
+at = [-80.01, -39.97, 95.10]
+spots = [{ cell = 0x07E7018E, at = [-80.01, -39.97, 95.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-10"
+cell = 0x07E7018B
+at = [-60.07, -39.83, 95.10]
+spots = [{ cell = 0x07E7018B, at = [-60.07, -39.83, 95.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-11"
+cell = 0x07E701ED
+at = [-149.50, 44.92, 95.00]
+spots = [{ cell = 0x07E701ED, at = [-149.50, 44.92, 95.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-12"
+cell = 0x07E701A4
+at = [-155.01, -37.09, 95.00]
+spots = [{ cell = 0x07E701A4, at = [-155.01, -37.09, 95.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-13"
+cell = 0x07E701AE
+at = [-172.34, -44.75, 95.00]
+spots = [{ cell = 0x07E701AE, at = [-172.34, -44.75, 95.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-14"
+cell = 0x07E701CA
+at = [-205.29, -84.81, 95.00]
+spots = [{ cell = 0x07E701CA, at = [-205.29, -84.81, 95.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-15"
+cell = 0x07E701D2
+at = [-197.59, -92.81, 95.00]
+spots = [{ cell = 0x07E701D2, at = [-197.59, -92.81, 95.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-16"
+cell = 0x07E701D4
+at = [-206.70, -103.23, 95.00]
+spots = [{ cell = 0x07E701D4, at = [-206.70, -103.23, 95.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-17"
+cell = 0x07E70122
+at = [8.51, 0.20, 101.00]
+spots = [{ cell = 0x07E70122, at = [8.51, 0.20, 101.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-18"
+cell = 0x07E70186
+at = [-29.07, 0.20, 98.00]
+spots = [{ cell = 0x07E70186, at = [-29.07, 0.20, 98.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-19"
+cell = 0x07E7020B
+at = [-146.04, 0.08, 98.00]
+spots = [{ cell = 0x07E7020B, at = [-146.04, 0.08, 98.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-20"
+cell = 0x07E7020E
+at = [-201.04, 0.08, 103.10]
+spots = [{ cell = 0x07E7020E, at = [-201.04, 0.08, 103.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-21"
+cell = 0x07E70106
+at = [54.10, 9.07, 101.20]
+spots = [{ cell = 0x07E70106, at = [54.10, 9.07, 101.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-22"
+cell = 0x07E70103
+at = [52.68, -9.73, 101.20]
+spots = [{ cell = 0x07E70103, at = [52.68, -9.73, 101.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-23"
+cell = 0x07E7024B
+at = [-277.10, 16.84, 104.00]
+spots = [{ cell = 0x07E7024B, at = [-277.10, 16.84, 104.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-24"
+cell = 0x07E7021E
+at = [-256.10, 14.42, 104.00]
+spots = [{ cell = 0x07E7021E, at = [-256.10, 14.42, 104.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-25"
+cell = 0x07E70250
+at = [-283.61, -10.45, 104.20]
+spots = [{ cell = 0x07E70250, at = [-283.61, -10.45, 104.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-26"
+cell = 0x07E70234
+at = [-269.76, -19.09, 104.00]
+spots = [{ cell = 0x07E70234, at = [-269.76, -19.09, 104.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-27"
+cell = 0x07E70142
+at = [20.13, 42.08, 125.00]
+spots = [{ cell = 0x07E70142, at = [20.13, 42.08, 125.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-28"
+cell = 0x07E7013A
+at = [-0.18, 42.37, 125.00]
+spots = [{ cell = 0x07E7013A, at = [-0.18, 42.37, 125.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-29"
+cell = 0x07E70134
+at = [-19.96, 42.48, 125.00]
+spots = [{ cell = 0x07E70134, at = [-19.96, 42.48, 125.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-30"
+cell = 0x07E70169
+at = [3.60, -42.07, 131.50]
+spots = [{ cell = 0x07E70169, at = [3.60, -42.07, 131.50] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-31"
+cell = 0x07E70171
+at = [-6.27, -45.06, 131.50]
+spots = [{ cell = 0x07E70171, at = [-6.27, -45.06, 131.50] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-32"
+cell = 0x07E7013E
+at = [-3.72, 70.08, 125.30]
+spots = [{ cell = 0x07E7013E, at = [-3.72, 70.08, 125.30] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-33"
+cell = 0x07E702F8
+at = [40.33, 39.85, 68.10]
+spots = [{ cell = 0x07E702F8, at = [40.33, 39.85, 68.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-34"
+cell = 0x07E702F7
+at = [60.35, 39.89, 68.10]
+spots = [{ cell = 0x07E702F7, at = [60.35, 39.89, 68.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-35"
+cell = 0x07E702F6
+at = [80.30, 39.83, 68.10]
+spots = [{ cell = 0x07E702F6, at = [80.30, 39.83, 68.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-36"
+cell = 0x07E7026B
+at = [20.38, 20.40, 68.10]
+spots = [{ cell = 0x07E7026B, at = [20.38, 20.40, 68.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-37"
+cell = 0x07E7026C
+at = [19.97, 0.08, 68.10]
+spots = [{ cell = 0x07E7026C, at = [19.97, 0.08, 68.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-38"
+cell = 0x07E7026F
+at = [60.15, -0.06, 67.80]
+spots = [{ cell = 0x07E7026F, at = [60.15, -0.06, 67.80] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-39"
+cell = 0x07E7026D
+at = [40.35, -39.89, 68.10]
+spots = [{ cell = 0x07E7026D, at = [40.35, -39.89, 68.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-40"
+cell = 0x07E70271
+at = [60.47, -40.18, 68.10]
+spots = [{ cell = 0x07E70271, at = [60.47, -40.18, 68.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-41"
+cell = 0x07E70272
+at = [77.94, -17.93, 68.10]
+spots = [{ cell = 0x07E70272, at = [77.94, -17.93, 68.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-42"
+cell = 0x07E70274
+at = [114.05, 19.84, 68.00]
+spots = [{ cell = 0x07E70274, at = [114.05, 19.84, 68.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-43"
+cell = 0x07E70281
+at = [155.14, 54.31, 65.10]
+spots = [{ cell = 0x07E70281, at = [155.14, 54.31, 65.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-44"
+cell = 0x07E7027E
+at = [143.02, 42.36, 65.20]
+spots = [{ cell = 0x07E7027E, at = [143.02, 42.36, 65.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-45"
+cell = 0x07E70284
+at = [157.14, 22.49, 65.00]
+spots = [{ cell = 0x07E70284, at = [157.14, 22.49, 65.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-46"
+cell = 0x07E7029A
+at = [145.60, 1.49, 65.20]
+spots = [{ cell = 0x07E7029A, at = [145.60, 1.49, 65.20] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-47"
+cell = 0x07E702C7
+at = [154.32, -15.29, 65.10]
+spots = [{ cell = 0x07E702C7, at = [154.32, -15.29, 65.10] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "golem-48"
+cell = 0x07E702D0
+at = [222.53, 20.05, 65.00]
+spots = [{ cell = 0x07E702D0, at = [222.53, 20.05, 65.00] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x470024F8, weight = 1 }, { template = 0x470024F4, weight = 1 }, { template = 0x470024D8, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a solo golem at a dot of the map, fitted by hand; the three kinds a guide names, as likely each; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
