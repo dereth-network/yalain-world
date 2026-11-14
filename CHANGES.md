@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The renegades' fortress south of Mayoi now has its fanatics. New pack `renegade-fortress-camps/`.
 - The dungeon the crafted necklace leads to now has its wisps, who leave the necklace's user alone. New pack `chaos-breach-wisps/`.
 - Dianech's house and its hidden archive now have their servitor guards. New pack `skyport-mansion-camps/`.
 - The dungeon under the Gurog fortress on the mountain now has its Gurogs. New pack `undercrofts-camps/`.
