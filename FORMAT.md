@@ -293,7 +293,7 @@ at and above which that share pays no more), `xp_least`, `xp_most` (the least an
 its player but never shown, in no journal and no update; left out, a quest is shown when its
 definition has a description), `min_level` (the least level a player is given it at; a person whose
 step would give it says its refusal of the quest, a `refuse-use` line naming it, to a player under
-it), `fails_on_death` (true: it fails when its player dies; left out, as the quest's setup in the install says), `fails_on_logout` (true: it fails when its player leaves the world; left out, as the setup says), `fails_on_teleport` (true: it fails when its player goes through portal space, by a portal, a door, a recall or any sending but a dead player's return; left out, as the setup says), `once` (true: given only once, done never given again; false: given again;
+it), `fails_on_death` (true: it fails when its player dies; left out, as the quest's setup in the install says), `fails_on_logout` (true: it fails when its player leaves the world; left out, as the setup says), `fails_on_teleport` (true: it fails when its player goes through portal space, by a portal, a door, a recall or any sending but a dead player's return; left out, as the setup says), `duration_by_calendar` (true: its `duration` runs on the calendar, its player in the world or not, and a player away as it runs out finds the quest failed on entering; left out, false), `once` (true: given only once, done never given again; false: given again;
 left out, as the quest's setup in the install says), `fellows` (true: a kill's move on it reaches the killer's fellows; false: only the killer; left out, as the quest's setup in the install says, and only the killer for a quest with no setup). Its name, description, icon, journal
 and the effects each of its updates puts on the player are the definition's. A phase the definition
 says is done by other quests (subquests) gives them with it, kept hidden: steps move them, each
@@ -314,7 +314,9 @@ player, by their saved states: a blessing, a recipe learned or forgotten), `text
 after the effects, `{ table, string }`), `recipes` (recipes it teaches, by id: the install's, or the world's
 `[[recipe]]` rows'; learned after its update and its effects), `fellows` (true: the update is made for each of the
 player's fellows in the world as well, each told it alone; what the step takes and gives is the player's alone, and a fellow
-needs only the phase and what the step requires), `to_fellows` (true, with `to`: each of the player's fellows in the
+needs only the phase and what the step requires), `out_of_turn` (true, with `update = "none"` and `needs` above 0: it runs
+when its quest is under way at any phase but `needs`, saying and putting on what it names and moving no quest: a stop of a
+course used out of its turn; used at `needs`, the quest's own step for it runs instead), `to_fellows` (true, with `to`: each of the player's fellows in the
 world goes there too, through portal space, wherever it is, as the player goes, and for a kill at the kill; a fellow who is
 dead, whose scene isn't drawn yet or who is already on its way somewhere stays; where `to` is a room of a row, each goes to
 a room of its own; it moves no fellow's quest, which `fellows` does), `gives_one_of` (one more item it gives, one of several
@@ -397,8 +399,8 @@ lines of its rows whose moment and quest match, picking at random among several.
 | `line`, `line_text` | one of them | the line: a string reference, in the person's own string table, or new prose |
 | `line_name` | | the token name of `line`'s string id |
 | `role` | | what it does: `offer`, `remind`, `advance`, `accept`, `complete`, `fail`, `refuse-use`, `refuse-give`, `too-soon`, `use`, `near`, `idle`, `combat`, `death`, `teleport` (said as a person sends a map's holder where it leads), `refuse-map` (said of a map it does not send anyone with) |
-| `how` | | `tell` (to the player, naming the speaker; the default), `say` (aloud, to everyone near), `emote` (text naming the speaker), `broadcast` (read by every player in the speaker's landblock and the eight around it, indoors its own landblock, whether their clients know the speaker or not) |
-| `when` | required | the moment: `use`, `give`, `attack`, `death`, `near`, `idle` |
+| `how` | | `tell` (to the player, naming the speaker; the default), `say` (aloud, to everyone near), `emote` (text naming the speaker), `broadcast` (read by every player in the speaker's landblock and the eight around it, indoors its own landblock, whether their clients know the speaker or not), `notice` (read by every player in the world, naming no speaker) |
+| `when` | required | the moment: `use`, `give`, `attack`, `death`, `near`, `idle`, `event` (as the one event its `requires` names starts: said, broadcast or a notice, by each placed person of `who` standing in the world, or by none for a notice) |
 | `quest`, `update`, `phase` | | the quest update the line comes with (`bestow`, `advance` and its phase, `complete`, `fail`) |
 
 A `remind` line names its `quest` and no `update`: it is said at a plain use with that quest under way, at the `phase` it names if it names one.
@@ -779,7 +781,10 @@ one. `then`: the effect is an immunity under way, hidden from its holder, and le
 install holds, not its own) as it ends; that effect's own row gives its `ward`. A world whose rules name no `then`
 has the server's own twelve crowd control immunities, each with its long effect's ward; one with any its rows alone.
 `reset`: `skills` or `hero-skills`, putting it on grants its player one complete reset of that kind, which
-`/skills reset` or `/heroskills reset` uses. `untrains`: true, putting it on finishes its player's untraining
+`/skills reset` or `/heroskills reset` uses. `holds_back`: `{ quality, except }`, while its player holds it, every rise
+other effects give `quality` (`type << 16 | quality`, as an effect's change names it: speed is `0x30127`), an amount above
+0 added or a factor above 1, counts for nothing, but those of the effects `except` names (saved states; none when left
+out); a lowering still counts. `untrains`: true, putting it on finishes its player's untraining
 under way at once, as earning its experience again would: the skill untrained, its credits back and its
 experience given back to spend, the player told so; a player untraining nothing gains nothing. `skill`: a skill, by its number (one the install has): putting the effect
 on a player trains it that skill for good, at level 1 by the grant, unraisable and at no cost, told with the effect's
@@ -1116,7 +1121,9 @@ the world's calendar, and `{ game = "hours", from, until }`, each game day from 
 calendar keeps these shut, and an effect such an event puts on lasts to its window's end; `on_players`, effects
 (saved states) every player in the world holds while it is on, each put on at spellcraft 1 and running out as
 the event ends, and given to a player who comes into the world while it is on (one already holding a running
-record of the effect isn't given a second). Times are UTC for every world, whoever plays it. What an event
+record of the effect isn't given a second); `ended_by`, quests whose completion by any player ends it at once, for
+everyone, for the rest of the window it is on in (the first to complete one holds what it stood for; it comes on again with
+its next window). A weekly window's times may name seconds, `HH:MM:SS`. Times are UTC for every world, whoever plays it. What an event
 gates names it: a camp's or an object's `event`, a step's `requires = [{ event = "key" }]`; each must name an
 event of the world. A world with no events gates nothing.
 

@@ -9,3 +9,102 @@ role = "use"
 how = "tell"
 when = "use"
 prov = { from = "authored", by = "Dereth Network", note = "his welcome tells how to race; said at a use that moves nothing, as near him", confidence = "low" }
+
+[[talk]]
+key = "rogol-countdown-1"
+who = 0x47002F8D
+line = { table = 0x250028FF, string = 0xB365FD54 }
+how = "broadcast"
+when = "event"
+requires = [{ event = "dereth-rally-timer-1" }]
+prov = { from = "authored", by = "Dereth Network", note = "his countdown, said as its time comes (the wiki: he counts down in local chat)", confidence = "medium" }
+
+[[talk]]
+key = "rogol-countdown-2"
+who = 0x47002F8D
+line = { table = 0x250028FF, string = 0xB365FD24 }
+how = "broadcast"
+when = "event"
+requires = [{ event = "dereth-rally-timer-2" }]
+prov = { from = "authored", by = "Dereth Network", note = "his countdown, said as its time comes (the wiki: he counts down in local chat)", confidence = "medium" }
+
+[[talk]]
+key = "rogol-countdown-3"
+who = 0x47002F8D
+line = { table = 0x250028FF, string = 0xB365FD34 }
+how = "broadcast"
+when = "event"
+requires = [{ event = "dereth-rally-timer-3" }]
+prov = { from = "authored", by = "Dereth Network", note = "his countdown, said as its time comes (the wiki: he counts down in local chat)", confidence = "medium" }
+
+[[talk]]
+key = "rogol-countdown-4"
+who = 0x47002F8D
+line = { table = 0x250028FF, string = 0xB365FD04 }
+how = "broadcast"
+when = "event"
+requires = [{ event = "dereth-rally-timer-4" }]
+prov = { from = "authored", by = "Dereth Network", note = "his countdown, said as its time comes (the wiki: he counts down in local chat)", confidence = "medium" }
+
+[[talk]]
+key = "rogol-countdown-5"
+who = 0x47002F8D
+line = { table = 0x250028FF, string = 0x3CEEFC01 }
+how = "broadcast"
+when = "event"
+requires = [{ event = "dereth-rally-timer-5" }]
+prov = { from = "authored", by = "Dereth Network", note = "his countdown, said as its time comes (the wiki: he counts down in local chat)", confidence = "medium" }
+
+[[talk]]
+key = "rogol-countdown-6"
+who = 0x47002F8D
+line = { table = 0x250028FF, string = 0x9CEEFC21 }
+how = "broadcast"
+when = "event"
+requires = [{ event = "dereth-rally-timer-6" }]
+prov = { from = "authored", by = "Dereth Network", note = "his countdown, said as its time comes (the wiki: he counts down in local chat)", confidence = "medium" }
+
+[[talk]]
+key = "rogol-countdown-7"
+who = 0x47002F8D
+line = { table = 0x250028FF, string = 0x6D116087 }
+how = "broadcast"
+when = "event"
+requires = [{ event = "dereth-rally-timer-7" }]
+prov = { from = "authored", by = "Dereth Network", note = "his countdown, said as its time comes (the wiki: he counts down in local chat)", confidence = "medium" }
+
+[[talk]]
+key = "rogol-countdown-8"
+who = 0x47002F8D
+line = { table = 0x250028FF, string = 0x6D1160C7 }
+how = "broadcast"
+when = "event"
+requires = [{ event = "dereth-rally-timer-8" }]
+prov = { from = "authored", by = "Dereth Network", note = "his countdown, said as its time comes (heard in local chat in 2017)", confidence = "medium" }
+
+[[talk]]
+key = "rogol-countdown-9"
+who = 0x47002F8D
+line = { table = 0x250028FF, string = 0x5360F125 }
+how = "broadcast"
+when = "event"
+requires = [{ event = "dereth-rally-timer-9" }]
+prov = { from = "authored", by = "Dereth Network", note = "his countdown, said as its time comes (heard in local chat in 2017)", confidence = "medium" }
+
+[[talk]]
+key = "rogol-countdown-10"
+who = 0x47002F8D
+line = { table = 0x250028FF, string = 0x8CA38999 }
+how = "say"
+when = "event"
+requires = [{ event = "dereth-rally-timer-10" }]
+prov = { from = "authored", by = "Dereth Network", note = "his countdown, said as its time comes (heard in local chat in 2017)", confidence = "medium" }
+
+[[talk]]
+key = "rally-notice"
+who = 0x47002F8D
+line = { table = 0x250028FF, string = 0x3CEEFC01 }
+how = "notice"
+when = "event"
+requires = [{ event = "dereth-rally-timer-5" }]
+prov = { from = "authored", by = "Dereth Network", note = "the 30-minute warning every player reads (2017: a notice of his line to every session, 124 times)", confidence = "high" }

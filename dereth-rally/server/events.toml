@@ -3,77 +3,150 @@
 [[event]]
 key = "dereth-rally"
 game_event = 0x40000218
+ended_by = [0x4000033F, 0x40000343, 0x40000344, 0x40000345, 0x40000346, 0x40000347, 0x40000348, 0x40000349, 0x4000034A, 0x40000340, 0x40000341, 0x40000342]
 when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "00:00", until = "00:45" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "04:48", until = "05:33" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "09:36", until = "10:21" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "14:24", until = "15:09" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "19:12", until = "19:57" }]
-prov = { from = "authored", by = "Dereth Network", note = "a race: 45 minutes, five a day; 2017's notices came 4.3 to 5.0 hours apart, median 4.6, where a set week needs a whole number a day; no countdown, no notice", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "a race: 45 minutes, five a day; 2017's notices came 4.3 to 5.0 hours apart, median 4.6, where a set week needs a whole number a day; it ends as the first racer finishes; Rogol counts down to it", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-1"
 game_event = 0x40000219
+ended_by = [0x4000033F]
 when = [{ days = ["mon"], from = "00:00", until = "00:45" }, { days = ["wed"], from = "09:36", until = "10:21" }, { days = ["fri"], from = "19:12", until = "19:57" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 1, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-2"
 game_event = 0x4000021A
+ended_by = [0x40000343]
 when = [{ days = ["mon"], from = "04:48", until = "05:33" }, { days = ["wed"], from = "14:24", until = "15:09" }, { days = ["sat"], from = "00:00", until = "00:45" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 2, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-3"
 game_event = 0x4000021B
+ended_by = [0x40000344]
 when = [{ days = ["mon"], from = "09:36", until = "10:21" }, { days = ["wed"], from = "19:12", until = "19:57" }, { days = ["sat"], from = "04:48", until = "05:33" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 3, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-4"
 game_event = 0x4000021C
+ended_by = [0x40000345]
 when = [{ days = ["mon"], from = "14:24", until = "15:09" }, { days = ["thu"], from = "00:00", until = "00:45" }, { days = ["sat"], from = "09:36", until = "10:21" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 4, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-5"
 game_event = 0x4000021D
+ended_by = [0x40000346]
 when = [{ days = ["mon"], from = "19:12", until = "19:57" }, { days = ["thu"], from = "04:48", until = "05:33" }, { days = ["sat"], from = "14:24", until = "15:09" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 5, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-6"
 game_event = 0x4000021E
+ended_by = [0x40000347]
 when = [{ days = ["tue"], from = "00:00", until = "00:45" }, { days = ["thu"], from = "09:36", until = "10:21" }, { days = ["sat"], from = "19:12", until = "19:57" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 6, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-7"
 game_event = 0x4000021F
+ended_by = [0x40000348]
 when = [{ days = ["tue"], from = "04:48", until = "05:33" }, { days = ["thu"], from = "14:24", until = "15:09" }, { days = ["sun"], from = "00:00", until = "00:45" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 7, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-8"
 game_event = 0x40000220
+ended_by = [0x40000349]
 when = [{ days = ["tue"], from = "09:36", until = "10:21" }, { days = ["thu"], from = "19:12", until = "19:57" }, { days = ["sun"], from = "04:48", until = "05:33" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 8, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-9"
 game_event = 0x40000221
+ended_by = [0x4000034A]
 when = [{ days = ["tue"], from = "14:24", until = "15:09" }, { days = ["fri"], from = "00:00", until = "00:45" }, { days = ["sun"], from = "09:36", until = "10:21" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 9, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-10"
 game_event = 0x40000222
+ended_by = [0x40000340]
 when = [{ days = ["tue"], from = "19:12", until = "19:57" }, { days = ["fri"], from = "04:48", until = "05:33" }, { days = ["sun"], from = "14:24", until = "15:09" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 10, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-11"
 game_event = 0x40000223
+ended_by = [0x40000341]
 when = [{ days = ["wed"], from = "00:00", until = "00:45" }, { days = ["fri"], from = "09:36", until = "10:21" }, { days = ["sun"], from = "19:12", until = "19:57" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 11, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
 
 [[event]]
 key = "dereth-rally-course-12"
 game_event = 0x40000224
+ended_by = [0x40000342]
 when = [{ days = ["wed"], from = "04:48", until = "05:33" }, { days = ["fri"], from = "14:24", until = "15:09" }]
 prov = { from = "authored", by = "Dereth Network", note = "the race's course 12, on for its races: the courses run in turn through the week, where the live server chose one a race", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-timer-1"
+game_event = 0x40000225
+when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "19:57", until = "21:00" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "00:45", until = "01:48" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "05:33", until = "06:36" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "10:21", until = "11:24" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "15:09", until = "16:12" }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol's countdown line 1 of ten, at its time before each race (his line says when; the game's ten timer events)", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-timer-2"
+game_event = 0x40000226
+when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "21:00", until = "22:00" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "01:48", until = "02:48" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "06:36", until = "07:36" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "11:24", until = "12:24" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "16:12", until = "17:12" }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol's countdown line 2 of ten, at its time before each race (his line says when; the game's ten timer events)", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-timer-3"
+game_event = 0x40000227
+when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "22:00", until = "23:00" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "02:48", until = "03:48" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "07:36", until = "08:36" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "12:24", until = "13:24" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "17:12", until = "18:12" }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol's countdown line 3 of ten, at its time before each race (his line says when; the game's ten timer events)", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-timer-4"
+game_event = 0x40000228
+when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "23:00", until = "23:30" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "03:48", until = "04:18" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "08:36", until = "09:06" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "13:24", until = "13:54" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "18:12", until = "18:42" }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol's countdown line 4 of ten, at its time before each race (his line says when; the game's ten timer events)", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-timer-5"
+game_event = 0x40000229
+when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "23:30", until = "23:45" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "04:18", until = "04:33" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "09:06", until = "09:21" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "13:54", until = "14:09" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "18:42", until = "18:57" }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol's countdown line 5 of ten, at its time before each race (his line says when; the game's ten timer events)", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-timer-6"
+game_event = 0x4000022A
+when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "23:45", until = "23:55" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "04:33", until = "04:43" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "09:21", until = "09:31" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "14:09", until = "14:19" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "18:57", until = "19:07" }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol's countdown line 6 of ten, at its time before each race (his line says when; the game's ten timer events)", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-timer-7"
+game_event = 0x4000022B
+when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "23:55", until = "23:59" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "04:43", until = "04:47" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "09:31", until = "09:35" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "14:19", until = "14:23" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "19:07", until = "19:11" }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol's countdown line 7 of ten, at its time before each race (his line says when; the game's ten timer events)", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-timer-8"
+game_event = 0x4000022C
+when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "23:59", until = "23:59:40" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "04:47", until = "04:47:40" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "09:35", until = "09:35:40" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "14:23", until = "14:23:40" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "19:11", until = "19:11:40" }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol's countdown line 8 of ten, at its time before each race (his line says when; the game's ten timer events)", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-timer-9"
+game_event = 0x4000022D
+when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "23:59:40", until = "00:00" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "04:47:40", until = "04:48" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "09:35:40", until = "09:36" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "14:23:40", until = "14:24" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "19:11:40", until = "19:12" }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol's countdown line 9 of ten, at its time before each race (his line says when; the game's ten timer events)", confidence = "low" }
+
+[[event]]
+key = "dereth-rally-timer-10"
+game_event = 0x4000022E
+when = [{ days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "00:00", until = "00:01" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "04:48", until = "04:49" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "09:36", until = "09:37" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "14:24", until = "14:25" }, { days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], from = "19:12", until = "19:13" }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol's countdown line 10 of ten, at its time before each race (his line says when; the game's ten timer events)", confidence = "low" }

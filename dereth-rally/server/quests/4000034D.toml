@@ -7,7 +7,7 @@ state = 0x6F00079B
 xp_share = 0.005
 xp_share_level = 60
 xp_whole = true
-prov = { from = "authored", by = "Dereth Network", note = "the prize Rogol gives a winner: the wiki's half of a level's share a race, at most a level 60's; the guides' gold by streak is left out", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "the prize Rogol gives a winner: the wiki's half of a level's share a race, at most a level 60's; and gold by wins in a row", confidence = "medium" }
 
 [[step]]
 key = "won-1"
@@ -106,9 +106,79 @@ update = "bestow"
 prov = { from = "authored", by = "Dereth Network", note = "a course won leaves the prize to claim (the prize's journal and the finish's line)", confidence = "medium" }
 
 [[step]]
-key = "claimed"
+key = "claimed-1"
 quest = 0x4000034D
 needs = 1
 trigger = { use = 0x47002F8D }
 update = "complete"
-prov = { from = "authored", by = "Dereth Network", note = "Rogol gives the prize at a use (his reward line)", confidence = "medium" }
+gives = [0x47000538]
+counts = [1000]
+requires = [{ quest = 0x4000034B, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol gives the prize at a use: win 1 in a row pays 1000 gold (the wiki's and the Hero guide's table)", confidence = "medium" }
+
+[[step]]
+key = "claimed-2"
+quest = 0x4000034D
+needs = 1
+trigger = { use = 0x47002F8D }
+update = "complete"
+gives = [0x47000538]
+counts = [3000]
+requires = [{ quest = 0x4000034B, phase = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol gives the prize at a use: win 2 in a row pays 3000 gold (the wiki's and the Hero guide's table)", confidence = "medium" }
+
+[[step]]
+key = "claimed-3"
+quest = 0x4000034D
+needs = 1
+trigger = { use = 0x47002F8D }
+update = "complete"
+gives = [0x47000538]
+counts = [6000]
+requires = [{ quest = 0x4000034B, phase = 2 }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol gives the prize at a use: win 3 in a row pays 6000 gold (the wiki's and the Hero guide's table)", confidence = "medium" }
+
+[[step]]
+key = "claimed-4"
+quest = 0x4000034D
+needs = 1
+trigger = { use = 0x47002F8D }
+update = "complete"
+gives = [0x47000538]
+counts = [10000]
+requires = [{ quest = 0x4000034B, phase = 3 }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol gives the prize at a use: win 4 in a row pays 10000 gold (the wiki's and the Hero guide's table)", confidence = "medium" }
+
+[[step]]
+key = "claimed-5"
+quest = 0x4000034D
+needs = 1
+trigger = { use = 0x47002F8D }
+update = "complete"
+gives = [0x47000538]
+counts = [15000]
+requires = [{ quest = 0x4000034B, phase = 4 }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol gives the prize at a use: win 5 in a row pays 15000 gold (the wiki's and the Hero guide's table)", confidence = "medium" }
+
+[[step]]
+key = "claimed-6"
+quest = 0x4000034D
+needs = 1
+trigger = { use = 0x47002F8D }
+update = "complete"
+gives = [0x47000538]
+counts = [21000]
+requires = [{ quest = 0x4000034B, phase = 5 }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol gives the prize at a use: win 6 in a row pays 21000 gold (the wiki's and the Hero guide's table)", confidence = "medium" }
+
+[[step]]
+key = "claimed-7"
+quest = 0x4000034D
+needs = 1
+trigger = { use = 0x47002F8D }
+tell = { table = 0x250028FF, string = 0x34140CEE }
+update = "complete"
+gives = [0x47000538, 0x4700134A]
+counts = [50000, 1]
+requires = [{ quest = 0x4000034B, phase = 6 }]
+prov = { from = "authored", by = "Dereth Network", note = "Rogol gives the prize at a use: win 7 in a row pays 50000 gold, with the Golden Saddle and his champion's line (the wiki's and the Hero guide's table)", confidence = "medium" }

@@ -18,7 +18,8 @@ needs = 0
 trigger = { use = 0x47002F8F }
 update = "bestow"
 requires = [{ event = "dereth-rally-course-9" }, { quest = 0x4000034D, phase = 0 }]
-prov = { from = "authored", by = "Dereth Network", note = "the start's touch gives the course raced now; not while a prize waits at Rogol (the prize's journal: claim it before racing again)", confidence = "medium" }
+effects = [0x6F001AB8, 0x6F001AB9]
+prov = { from = "authored", by = "Dereth Network", note = "the start's touch gives the course raced now; not while a prize waits at Rogol (the prize's journal: claim it before racing again); it strips the racer's speed buffs but a mount's and keeps new ones from counting for the race (the install's dispel and regulator, the wiki and the Hero guide)", confidence = "medium" }
 
 [[step]]
 key = "checkpoint-1"
@@ -66,4 +67,52 @@ quest = 0x4000034A
 needs = 5
 trigger = { use = 0x47002F8B }
 update = "complete"
-prov = { from = "authored", by = "Dereth Network", note = "the finish's touch wins it (its line); here every racer who reaches it in time, not the first alone", confidence = "medium" }
+prov = { from = "authored", by = "Dereth Network", note = "the finish's touch wins it (its line); the first racer to reach it alone, as the race then ends (Rogol's welcome: be the first)", confidence = "medium" }
+
+[[step]]
+key = "meddled-1"
+quest = 0x4000034A
+needs = 1
+trigger = { use = 0x47002F83 }
+tell = { table = 0x250028FD, string = 0x2CEF436E }
+update = "none"
+out_of_turn = true
+effects = [0x6F001AB7]
+requires = [{ event = "dereth-rally-course-9" }]
+prov = { from = "authored", by = "Dereth Network", note = "its stop touched out of turn flings the racer (the checkpoints' line; the install's Mighty Impulse beside the rally's other effects)", confidence = "medium" }
+
+[[step]]
+key = "meddled-2"
+quest = 0x4000034A
+needs = 2
+trigger = { use = 0x47002F85 }
+tell = { table = 0x250028FD, string = 0x2CEF436E }
+update = "none"
+out_of_turn = true
+effects = [0x6F001AB7]
+requires = [{ event = "dereth-rally-course-9" }]
+prov = { from = "authored", by = "Dereth Network", note = "its stop touched out of turn flings the racer (the checkpoints' line; the install's Mighty Impulse beside the rally's other effects)", confidence = "medium" }
+
+[[step]]
+key = "meddled-3"
+quest = 0x4000034A
+needs = 3
+trigger = { use = 0x47002F87 }
+tell = { table = 0x250028FD, string = 0x2CEF436E }
+update = "none"
+out_of_turn = true
+effects = [0x6F001AB7]
+requires = [{ event = "dereth-rally-course-9" }]
+prov = { from = "authored", by = "Dereth Network", note = "its stop touched out of turn flings the racer (the checkpoints' line; the install's Mighty Impulse beside the rally's other effects)", confidence = "medium" }
+
+[[step]]
+key = "meddled-4"
+quest = 0x4000034A
+needs = 4
+trigger = { use = 0x47002F89 }
+tell = { table = 0x250028FD, string = 0x2CEF436E }
+update = "none"
+out_of_turn = true
+effects = [0x6F001AB7]
+requires = [{ event = "dereth-rally-course-9" }]
+prov = { from = "authored", by = "Dereth Network", note = "its stop touched out of turn flings the racer (the checkpoints' line; the install's Mighty Impulse beside the rally's other effects)", confidence = "medium" }
