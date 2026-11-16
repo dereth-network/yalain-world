@@ -1,0 +1,145 @@
+# What the overseer says of its task; edit an authored pack instead.
+
+[[talk]]
+key = "horinua-remind"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0xB0F38882 }
+role = "remind"
+how = "tell"
+when = "use"
+quest = 0x40000351
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own line asking for the material it wants", confidence = "low" }
+
+[[talk]]
+key = "horinua-too-weak"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0xC4F9188E }
+role = "refuse-use"
+how = "tell"
+when = "use"
+quest = 0x40000351
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own line to one too weak for its task", confidence = "low" }
+
+[[talk]]
+key = "horinua-takes-energy-lattice-granule-0"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0x1AA038A2 }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x40000351
+update = "complete"
+item = 0x4700147A
+order = 0
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[talk]]
+key = "horinua-takes-energy-lattice-granule-1"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0x2FB7FE28 }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x40000351
+update = "complete"
+item = 0x4700147A
+order = 1
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[talk]]
+key = "horinua-takes-energy-lattice-mote-0"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0x1AA038A2 }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x40000351
+update = "complete"
+item = 0x4700147B
+order = 0
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[talk]]
+key = "horinua-takes-energy-lattice-mote-1"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0x2FB7FE28 }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x40000351
+update = "complete"
+item = 0x4700147B
+order = 1
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[talk]]
+key = "horinua-takes-celestial-matter-granule-0"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0x3D8F1398 }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x40000351
+update = "complete"
+item = 0x4700147C
+order = 0
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[talk]]
+key = "horinua-takes-celestial-matter-granule-1"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0x2FB7FE28 }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x40000351
+update = "complete"
+item = 0x4700147C
+order = 1
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[talk]]
+key = "horinua-takes-celestial-matter-mote-0"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0x3D8F1398 }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x40000351
+update = "complete"
+item = 0x4700147D
+order = 0
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[talk]]
+key = "horinua-takes-celestial-matter-mote-1"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0x2FB7FE28 }
+role = "complete"
+how = "tell"
+when = "give"
+quest = 0x40000351
+update = "complete"
+item = 0x4700147D
+order = 1
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[talk]]
+key = "horinua-refuses-dark-metal-granule"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0x29802FAC }
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x4700147E
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own line for a material of its own kingdom, which it does not take", confidence = "low" }
+
+[[talk]]
+key = "horinua-refuses-dark-metal-mote"
+who = 0x47002FC2
+line = { table = 0x25002920, string = 0x29802FAC }
+role = "refuse-give"
+how = "tell"
+when = "give"
+item = 0x4700147F
+prov = { from = "authored", by = "Dereth Network", note = "the overseer's own line for a material of its own kingdom, which it does not take", confidence = "low" }

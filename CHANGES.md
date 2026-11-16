@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The Order's and the Shadow's headquarters can now be entered, with their overseers and raid beacons. New pack `kingdom-headquarters/`.
 - An outpost's guards now leave when its beacon is destroyed, and come back with the next. New pack `beacon-guards/`.
 - The quest of the three stars can now be done at the five kingdom shrines and their wandering guardian. New pack `kingdom-shrines/`.
 - Races now have their host's countdown, the 30-minute warning, a single winner and the champion's prizes. Pack `dereth-rally/`.

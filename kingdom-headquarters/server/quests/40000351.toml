@@ -1,0 +1,101 @@
+# The Order's and the Shadow's overseers' task; edit an authored pack instead.
+
+[[step]]
+key = "akreg-gives"
+quest = 0x40000351
+needs = 0
+trigger = { use = 0x47002FC0 }
+update = "bestow"
+tell = { table = 0x2500291F, string = 0x4E0C13F6 }
+requires = [{ kingdom = "order" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: bring an enemy granule or mote to your own kingdom's overseer; the overseer's own line giving the task; for its own kingdom", confidence = "low" }
+
+[[step]]
+key = "akreg-takes-energy-lattice-granule"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147A, to = 0x47002FC0 }
+update = "complete"
+takes = [0x4700147A]
+requires = [{ kingdom = "order" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[step]]
+key = "akreg-takes-energy-lattice-mote"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147B, to = 0x47002FC0 }
+update = "complete"
+takes = [0x4700147B]
+requires = [{ kingdom = "order" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[step]]
+key = "akreg-takes-dark-metal-granule"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147E, to = 0x47002FC0 }
+update = "complete"
+takes = [0x4700147E]
+requires = [{ kingdom = "order" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[step]]
+key = "akreg-takes-dark-metal-mote"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147F, to = 0x47002FC0 }
+update = "complete"
+takes = [0x4700147F]
+requires = [{ kingdom = "order" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[step]]
+key = "horinua-gives"
+quest = 0x40000351
+needs = 0
+trigger = { use = 0x47002FC2 }
+update = "bestow"
+tell = { table = 0x25002920, string = 0x4E0C13FE }
+requires = [{ kingdom = "shadow" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: bring an enemy granule or mote to your own kingdom's overseer; the overseer's own line giving the task; for its own kingdom", confidence = "low" }
+
+[[step]]
+key = "horinua-takes-energy-lattice-granule"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147A, to = 0x47002FC2 }
+update = "complete"
+takes = [0x4700147A]
+requires = [{ kingdom = "shadow" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[step]]
+key = "horinua-takes-energy-lattice-mote"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147B, to = 0x47002FC2 }
+update = "complete"
+takes = [0x4700147B]
+requires = [{ kingdom = "shadow" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[step]]
+key = "horinua-takes-celestial-matter-granule"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147C, to = 0x47002FC2 }
+update = "complete"
+takes = [0x4700147C]
+requires = [{ kingdom = "shadow" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }
+
+[[step]]
+key = "horinua-takes-celestial-matter-mote"
+quest = 0x40000351
+needs = 1
+trigger = { give = 0x4700147D, to = 0x47002FC2 }
+update = "complete"
+takes = [0x4700147D]
+requires = [{ kingdom = "shadow" }]
+prov = { from = "authored", by = "Dereth Network", note = "the quest's journal: an enemy kingdom's granule or mote given to your overseer; the overseer's own lines for a material of that kingdom and for the permission", confidence = "low" }

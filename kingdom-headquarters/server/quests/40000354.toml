@@ -1,0 +1,121 @@
+# Linvak's raid: the Order's and the Shadow's beacons; edit an authored pack instead.
+
+[[step]]
+key = "beacon-lin-od"
+quest = 0x40000354
+needs = 0
+trigger = { use = 0x47001482 }
+update = "bestow"
+gives = [0x47001470]
+requires = [{ kingdom = "order" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the dominion's mine of Linvak gives the raid and its crystal, as its template's use names both, to a hero of its kingdom whose last beacon's hour has run out (its template's own gates)", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-od-again-1"
+quest = 0x40000354
+needs = 1
+trigger = { use = 0x47001482 }
+update = "none"
+gives = [0x47001470]
+requires = [{ kingdom = "order" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the dominion's mine of Linvak gives another crystal while the raid is at phase 1 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-od-again-2"
+quest = 0x40000354
+needs = 2
+trigger = { use = 0x47001482 }
+update = "none"
+gives = [0x47001470]
+requires = [{ kingdom = "order" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the dominion's mine of Linvak gives another crystal while the raid is at phase 2 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-os"
+quest = 0x40000354
+needs = 0
+trigger = { use = 0x47001483 }
+update = "bestow"
+gives = [0x47001471]
+requires = [{ kingdom = "order" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives the raid and its crystal, as its template's use names both, to a hero of its kingdom whose last beacon's hour has run out (its template's own gates)", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-os-again-1"
+quest = 0x40000354
+needs = 1
+trigger = { use = 0x47001483 }
+update = "none"
+gives = [0x47001471]
+requires = [{ kingdom = "order" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives another crystal while the raid is at phase 1 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-os-again-2"
+quest = 0x40000354
+needs = 2
+trigger = { use = 0x47001483 }
+update = "none"
+gives = [0x47001471]
+requires = [{ kingdom = "order" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the shadow's mine of Linvak gives another crystal while the raid is at phase 2 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-sd"
+quest = 0x40000354
+needs = 0
+trigger = { use = 0x47001484 }
+update = "bestow"
+gives = [0x47001472]
+requires = [{ kingdom = "shadow" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the dominion's mine of Linvak gives the raid and its crystal, as its template's use names both, to a hero of its kingdom whose last beacon's hour has run out (its template's own gates)", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-sd-again-1"
+quest = 0x40000354
+needs = 1
+trigger = { use = 0x47001484 }
+update = "none"
+gives = [0x47001472]
+requires = [{ kingdom = "shadow" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the dominion's mine of Linvak gives another crystal while the raid is at phase 1 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-sd-again-2"
+quest = 0x40000354
+needs = 2
+trigger = { use = 0x47001484 }
+update = "none"
+gives = [0x47001472]
+requires = [{ kingdom = "shadow" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the dominion's mine of Linvak gives another crystal while the raid is at phase 2 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-so"
+quest = 0x40000354
+needs = 0
+trigger = { use = 0x47001485 }
+update = "bestow"
+gives = [0x47001473]
+requires = [{ kingdom = "shadow" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives the raid and its crystal, as its template's use names both, to a hero of its kingdom whose last beacon's hour has run out (its template's own gates)", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-so-again-1"
+quest = 0x40000354
+needs = 1
+trigger = { use = 0x47001485 }
+update = "none"
+gives = [0x47001473]
+requires = [{ kingdom = "shadow" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives another crystal while the raid is at phase 1 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
+
+[[step]]
+key = "beacon-lin-so-again-2"
+quest = 0x40000354
+needs = 2
+trigger = { use = 0x47001485 }
+update = "none"
+gives = [0x47001473]
+requires = [{ kingdom = "shadow" }, { quest = 0x40000359, free = true }, { hero = true }]
+prov = { from = "authored", by = "Dereth Network", note = "the beacon for the order's mine of Linvak gives another crystal while the raid is at phase 2 (a crystal run out or a bore lost: call another, its journal says), an hour after the last", confidence = "low" }
