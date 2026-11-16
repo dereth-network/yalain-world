@@ -1,6 +1,6 @@
 # Changes
 
-## Unreleased
+## v0.38.0
 
 - The kingdoms' armor can now be made from the three stars and upgraded at the cleansed forge of the plane of chaos. New pack `kingdom-armor/`.
 - Busted! now runs out ten hours after the officer is killed. New pack `busted-hours/`.
