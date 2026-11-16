@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The quest of the three stars can now be done at the five kingdom shrines and their wandering guardian. New pack `kingdom-shrines/`.
 - Races now have their host's countdown, the 30-minute warning, a single winner and the champion's prizes. Pack `dereth-rally/`.
 - The seals from the heart of the island beyond the delta's tunnels now vanish four hours after they are picked up. Pack `cacophos/`.
 - The cleansed forge in the plane of chaos now forges new suits of augmented armor. New pack `chaos-forge-armor/`.
