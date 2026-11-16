@@ -1,0 +1,34 @@
+# The smith's recipes for the kingdoms' armor, once the quest of the three stars is done; edit an authored pack instead.
+
+[[step]]
+key = "smith-kingdom-armor-shadow"
+quest = 0x400001CC
+needs = 0
+trigger = { use = 0x47003267 }
+update = "none"
+tell = { table = 0x25002A52, string = 0x2B63154C }
+recipes = [0x6F0002E1, 0x6F0002E5, 0x6F0002E9, 0x6F0002ED, 0x6F0002F1, 0x6F0002F5, 0x6F0002F9, 0x6F0002FD, 0x6F000301, 0x6F000305, 0x6F000309, 0x6F000312, 0x6F000317, 0x6F000324, 0x6F000328, 0x6F001E45, 0x6F001E4D, 0x6F001E55, 0x6F001E5D, 0x6F001E65, 0x6F001E6D, 0x6F001E75, 0x6F001E7D, 0x6F001E85, 0x6F001E8D, 0x6F001E3F, 0x6F001E47, 0x6F001E4F, 0x6F001E57, 0x6F001E5F, 0x6F001E67, 0x6F001E6F, 0x6F001E77, 0x6F001E7F, 0x6F001E87]
+requires = [{ quest = 0x400001CC, done = true }, { kingdom = "shadow" }]
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's walkthrough (2003): the quest done, the temple smith teaches making an unfinished piece and three stars into the armor of the player's kingdom; and the later races' unfinished", confidence = "low" }
+
+[[step]]
+key = "smith-kingdom-armor-order"
+quest = 0x400001CC
+needs = 0
+trigger = { use = 0x47003267 }
+update = "none"
+tell = { table = 0x25002A52, string = 0x2B63154C }
+recipes = [0x6F0002E0, 0x6F0002E4, 0x6F0002E8, 0x6F0002EC, 0x6F0002F0, 0x6F0002F4, 0x6F0002F8, 0x6F0002FC, 0x6F000300, 0x6F000304, 0x6F000308, 0x6F000311, 0x6F000316, 0x6F000323, 0x6F000327, 0x6F001E43, 0x6F001E4B, 0x6F001E53, 0x6F001E5B, 0x6F001E63, 0x6F001E6B, 0x6F001E73, 0x6F001E7B, 0x6F001E83, 0x6F001E8B, 0x6F001E3F, 0x6F001E47, 0x6F001E4F, 0x6F001E57, 0x6F001E5F, 0x6F001E67, 0x6F001E6F, 0x6F001E77, 0x6F001E7F, 0x6F001E87]
+requires = [{ quest = 0x400001CC, done = true }, { kingdom = "order" }]
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's walkthrough (2003): the quest done, the temple smith teaches making an unfinished piece and three stars into the armor of the player's kingdom; and the later races' unfinished", confidence = "low" }
+
+[[step]]
+key = "smith-kingdom-armor-dominion"
+quest = 0x400001CC
+needs = 0
+trigger = { use = 0x47003267 }
+update = "none"
+tell = { table = 0x25002A52, string = 0x2B63154C }
+recipes = [0x6F0002DF, 0x6F0002E3, 0x6F0002E7, 0x6F0002EB, 0x6F0002EF, 0x6F0002F3, 0x6F0002F7, 0x6F0002FB, 0x6F0002FF, 0x6F000303, 0x6F000307, 0x6F000310, 0x6F000315, 0x6F000322, 0x6F000326, 0x6F001E41, 0x6F001E49, 0x6F001E51, 0x6F001E59, 0x6F001E61, 0x6F001E69, 0x6F001E71, 0x6F001E79, 0x6F001E81, 0x6F001E89, 0x6F001E3F, 0x6F001E47, 0x6F001E4F, 0x6F001E57, 0x6F001E5F, 0x6F001E67, 0x6F001E6F, 0x6F001E77, 0x6F001E7F, 0x6F001E87]
+requires = [{ quest = 0x400001CC, done = true }, { kingdom = "dominion" }]
+prov = { from = "authored", by = "Dereth Network", note = "the Vault's walkthrough (2003): the quest done, the temple smith teaches making an unfinished piece and three stars into the armor of the player's kingdom; and the later races' unfinished", confidence = "low" }

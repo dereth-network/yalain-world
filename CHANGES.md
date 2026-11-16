@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- The kingdoms' armor can now be made from the three stars and upgraded at the cleansed forge of the plane of chaos. New pack `kingdom-armor/`.
 - Busted! now runs out ten hours after the officer is killed. New pack `busted-hours/`.
 - The Order's and the Shadow's headquarters can now be entered, with their overseers and raid beacons. New pack `kingdom-headquarters/`.
 - An outpost's guards now leave when its beacon is destroyed, and come back with the next. New pack `beacon-guards/`.
