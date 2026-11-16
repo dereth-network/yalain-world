@@ -1,0 +1,34 @@
+# The outpost beacon's guards, each camp as the pack before had it, keeping its creatures for the beacon; edit an authored pack instead.
+
+[[camp]]
+key = "guards-eb-casters"
+cell = 0x597E0015
+at = [54.20, 85.70, 105.50]
+spots = [{ cell = 0x597E001C, at = [65.20, 78.80, 105.50] }, { cell = 0x597E0015, at = [55.20, 84.80, 105.50] }, { cell = 0x597E001D, at = [63.20, 94.80, 105.50] }, { cell = 0x597E0015, at = [57.20, 96.80, 105.50] }, { cell = 0x597E0015, at = [49.20, 88.80, 105.50] }, { cell = 0x597E0014, at = [43.20, 76.80, 105.50] }, { cell = 0x597E0015, at = [57.20, 90.80, 105.50] }, { cell = 0x597E0015, at = [59.20, 98.80, 105.50] }]
+population = 8
+regen = 192.0
+spawns = [{ template = 0x47002616, weight = 27 }, { template = 0x47002618, weight = 16 }, { template = 0x47002619, weight = 13 }]
+parent = "beacon-blowouts:beacon-eb"
+prov = { from = "authored", by = "Dereth Network", note = "guard Gurog casters as 2017 recorded at the south-west Nepeth outpost (kinds, weights, population, place from its beacon); none recorded here", confidence = "low", fields = { parent = { from = "authored", by = "Dereth Network", note = "the Vault's Gurog pet guide: kill the beacon and its monsters disappear; which camps are its guards (its race's, within 25 m) is ours", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "guards-eb-gladiators"
+cell = 0x597E0015
+at = [53.20, 81.80, 105.50]
+spots = [{ cell = 0x597E0014, at = [59.20, 60.80, 105.34] }, { cell = 0x597E0015, at = [49.20, 96.80, 105.50] }, { cell = 0x597E001C, at = [63.20, 72.80, 105.50] }, { cell = 0x597E0014, at = [49.20, 64.80, 104.46] }, { cell = 0x597E000D, at = [31.20, 88.80, 105.50] }, { cell = 0x597E0014, at = [59.20, 72.80, 105.50] }, { cell = 0x597E001C, at = [75.20, 70.80, 105.50] }]
+population = 7
+regen = 192.0
+spawns = [{ template = 0x4700265F, weight = 32 }]
+parent = "beacon-blowouts:beacon-eb"
+prov = { from = "authored", by = "Dereth Network", note = "guard Gurog gladiators as 2017 recorded at the south-west Nepeth outpost (kinds, weights, population, place from its beacon); none recorded here", confidence = "low", fields = { parent = { from = "authored", by = "Dereth Network", note = "the Vault's Gurog pet guide: kill the beacon and its monsters disappear; which camps are its guards (its race's, within 25 m) is ours", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "guards-eb-henchmen"
+cell = 0x597E0015
+at = [56.50, 84.80, 105.50]
+spots = [{ cell = 0x597E0014, at = [41.20, 76.80, 105.50] }, { cell = 0x597E001D, at = [71.20, 92.80, 105.50] }, { cell = 0x597E0015, at = [57.20, 82.80, 105.50] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002639, weight = 21 }]
+parent = "beacon-blowouts:beacon-eb"
+prov = { from = "authored", by = "Dereth Network", note = "guard Gurog henchmen as 2017 recorded at the south-west Nepeth outpost (kinds, weights, population, place from its beacon); none recorded here", confidence = "low", fields = { parent = { from = "authored", by = "Dereth Network", note = "the Vault's Gurog pet guide: kill the beacon and its monsters disappear; which camps are its guards (its race's, within 25 m) is ours", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" } } }

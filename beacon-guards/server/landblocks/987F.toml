@@ -1,0 +1,25 @@
+# The outpost beacon's guards, each camp as the pack before had it, keeping its creatures for the beacon; edit an authored pack instead.
+
+[[camp]]
+key = "c-7204"
+cell = 0x987F0026
+at = [81.6, 103.2, 195.5]
+radius = 17.4
+population = 9
+regen = 192.0
+spawns = [{ template = 0x47002346, weight = 8 }, { template = 0x47002344, weight = 8 }, { template = 0x47000811, weight = 8 }]
+parent = "seed-2017:c-3889"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7204", confidence = "high", sample = { creatures = 24, sessions = 7 }, fields = { parent = { from = "authored", by = "Dereth Network", note = "the Vault's Gurog pet guide: kill the beacon and its monsters disappear; which camps are its guards (its race's, within 25 m) is ours", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-7432"
+cell = 0x987F0025
+at = [80.0, 97.5, 196.5]
+radius = 8.7
+population = 6
+regen = 192.0
+spawns = [{ template = 0x47002326, weight = 7 }]
+profile = 44
+profile_name = "GP_CampDrudgeMystic"
+parent = "seed-2017:c-3889"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7432", confidence = "medium", sample = { creatures = 7, sessions = 2 }, fields = { parent = { from = "authored", by = "Dereth Network", note = "the Vault's Gurog pet guide: kill the beacon and its monsters disappear; which camps are its guards (its race's, within 25 m) is ours", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }

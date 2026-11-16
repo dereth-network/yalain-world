@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- An outpost's guards now leave when its beacon is destroyed, and come back with the next. New pack `beacon-guards/`.
 - The quest of the three stars can now be done at the five kingdom shrines and their wandering guardian. New pack `kingdom-shrines/`.
 - Races now have their host's countdown, the 30-minute warning, a single winner and the champion's prizes. Pack `dereth-rally/`.
 - The seals from the heart of the island beyond the delta's tunnels now vanish four hours after they are picked up. Pack `cacophos/`.

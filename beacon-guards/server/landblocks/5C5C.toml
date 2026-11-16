@@ -1,0 +1,34 @@
+# The outpost beacon's guards, each camp as the pack before had it, keeping its creatures for the beacon; edit an authored pack instead.
+
+[[camp]]
+key = "c-1306"
+cell = 0x5C5C001E
+at = [66.7, 110.8, 91.3]
+radius = 20.2
+population = 5
+regen = 192.0
+spawns = [{ template = 0x47002616, weight = 5 }, { template = 0x47002618, weight = 2 }, { template = 0x47002619, weight = 1 }]
+parent = "seed-2017:c-3886"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1306", confidence = "high", sample = { creatures = 8, sessions = 3 }, fields = { parent = { from = "authored", by = "Dereth Network", note = "the Vault's Gurog pet guide: kill the beacon and its monsters disappear; which camps are its guards (its race's, within 25 m) is ours", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-1580"
+cell = 0x5C5C0016
+at = [59.1, 109.0, 91.3]
+radius = 19.6
+population = 5
+regen = 192.0
+spawns = [{ template = 0x4700265F, weight = 7 }]
+parent = "seed-2017:c-3886"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1580", confidence = "high", sample = { creatures = 7, sessions = 3 }, fields = { parent = { from = "authored", by = "Dereth Network", note = "the Vault's Gurog pet guide: kill the beacon and its monsters disappear; which camps are its guards (its race's, within 25 m) is ours", confidence = "low" }, population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 1580", confidence = "high" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "c-2442"
+cell = 0x5C5C0015
+at = [59.1, 94.9, 91.3]
+radius = 12.7
+population = 5
+regen = 192.0
+spawns = [{ template = 0x47002639, weight = 5 }]
+parent = "seed-2017:c-3886"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 2442", confidence = "low", sample = { creatures = 5, sessions = 1 }, fields = { parent = { from = "authored", by = "Dereth Network", note = "the Vault's Gurog pet guide: kill the beacon and its monsters disappear; which camps are its guards (its race's, within 25 m) is ours", confidence = "low" }, population = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-POPULATION-2017", ref = "camp 2442", confidence = "low" }, regen = { from = "derived", rule = "camp-regen-median" } } }

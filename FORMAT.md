@@ -254,7 +254,7 @@ places is kept from the world until the server starts again; to have such a ches
 | `regen` | required | seconds from a death to its replacement |
 | `spawns` | | what it makes: `{ template, weight }`; an item's template (one with a value, no creature) it keeps lying at its place, a new one `regen` seconds after the last is taken; a chest's template it keeps standing there, anyone's to open, a new one `regen` seconds after the last is gone (one of a kind that goes once closed: a dead prospector that comes back now and then, with a long `regen`) |
 | `profile`, `profile_name` | | the generator profile it stands for |
-| `parent` | | a master camp |
+| `parent` | | a master camp (`pack:key`, the pack whose row of it stands, or `key` in this pack; `@XXYY` for another landblock): this camp keeps its creatures only while the master keeps one; as the master's last dies they leave the world at once, with no fall and no corpse, and the camp fills again, all at once, when the master makes another. A master camp keeps no master of its own |
 | `movement` | | how its creatures may move, over their template's: `stationary` (never moves nor fights), `turn-only` (turns where it stands), `constrained-to-home` (kept near home: the default), `constrained-to-master` (follows a master), `free-range` (no distance from home ends a fight) |
 | `wanders`, `wander_range`, `wander_chance` | | over their template's: whether they wander at rest (default true), how far from home (m, default 25), the chance a wander sets out when one falls due (default 0.1) |
 | `homesick`, `perception` | | over their template's: the distance from home they keep to (m, default 40; under 5 they never wander), how near a player must come to be noticed (m, default 20) |
