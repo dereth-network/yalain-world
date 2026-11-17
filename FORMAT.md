@@ -489,6 +489,7 @@ say it makes among them).
 | `found` | required | the name of the effect a find of one of the region's maps puts on: every recipe of the row may then be drawn again |
 | `recipes` | required | at least one recipe (its saved state), in the order the call lists them |
 | `wait` | | seconds of game time, from 0; 300 when left out |
+| `deletes` | | the effect (its saved state) a drawing puts on that throws away every map of the region its drawer held before (the maps whose find puts on `found`); none thrown away when left out |
 
 A world with no `[[map_recipes]]` rows has the server's own, Linvak's, Omishan's and Osteth's five each; a world
 with any has its rows alone.

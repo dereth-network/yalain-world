@@ -1,7 +1,8 @@
 # Each region's surveyor's map recipes, in the order their call lists them (crystal, iron, stone, wood, silver): drawing
 # one puts on the region's effect `drawn`, which has all five wait `wait` seconds; a find of one of the region's maps puts
 # on `found`, which lets them be drawn again. The January 2017 recordings listed Linvak's 68 times, Omishan's 41 and
-# Osteth's 3, each in this order, and every drawing set all five 300 seconds ahead.
+# Osteth's 3, each in this order, and every drawing set all five 300 seconds ahead. A drawing also puts on `deletes`,
+# which throws away the maps of the region the drawer held before.
 
 [[map_recipes]]
 region = "linvak"
@@ -9,7 +10,8 @@ drawn = 0x6F00170C
 found = "Eff_ResetLinvakResetTimers"
 recipes = [0x6F00109B, 0x6F001099, 0x6F00109C, 0x6F00109D, 0x6F00109A]
 wait = 300.0
-prov = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-SET", ref = "region linvak", confidence = "high", fields = { found = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-RESET", ref = "region linvak", confidence = "high" } } }
+deletes = 0x6F001705
+prov = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-SET", ref = "region linvak", confidence = "high", fields = { found = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-RESET", ref = "region linvak", confidence = "high" }, deletes = { from = "dat", record = 0x6F001705, confidence = "high", note = "every map recipe of the region puts it on as it draws; the two 2017 drawings by a player already holding a map of the region took that map" } } }
 
 [[map_recipes]]
 region = "omishan"
@@ -17,7 +19,8 @@ drawn = 0x6F00170D
 found = "Eff_ResetOmishanResetTimers"
 recipes = [0x6F001096, 0x6F001094, 0x6F001097, 0x6F001098, 0x6F001095]
 wait = 300.0
-prov = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-SET", ref = "region omishan", confidence = "high", fields = { found = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-RESET", ref = "region omishan", confidence = "high" } } }
+deletes = 0x6F001706
+prov = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-SET", ref = "region omishan", confidence = "high", fields = { found = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-RESET", ref = "region omishan", confidence = "high" }, deletes = { from = "dat", record = 0x6F001706, confidence = "high", note = "every map recipe of the region puts it on as it draws; the two 2017 drawings by a player already holding a map of the region took that map" } } }
 
 [[map_recipes]]
 region = "osteth"
@@ -25,4 +28,5 @@ drawn = 0x6F00170E
 found = "Eff_ResetOstethResetTimers"
 recipes = [0x6F001091, 0x6F00108F, 0x6F001092, 0x6F001093, 0x6F001090]
 wait = 300.0
-prov = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-SET", ref = "region osteth", confidence = "medium", fields = { found = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-RESET", ref = "region osteth", confidence = "medium" } } }
+deletes = 0x6F001707
+prov = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-SET", ref = "region osteth", confidence = "medium", fields = { found = { from = "capture", evidence = "AC2-EVID-SRV-CRAFT-MAP-RECIPES-RESET", ref = "region osteth", confidence = "medium" }, deletes = { from = "dat", record = 0x6F001707, confidence = "high", note = "every map recipe of the region puts it on as it draws; the two 2017 drawings by a player already holding a map of the region took that map" } } }
