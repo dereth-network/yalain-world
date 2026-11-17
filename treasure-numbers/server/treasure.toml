@@ -1,7 +1,8 @@
 # The numbers treasure draws by, as the 2017 servers' items were fit: how far an item's own least level stands
 # above its dropper's (a dropper's loot quality override has its own weights: 2017 never showed it at plus 3), the
 # lore it needs, a potion's tier and spellcraft and an item's look, then for each sort how many enchantments by level
-# band and its share of a made item's numbers, the vigor it costs, its delay and slot. Each weighted list is in the
+# band and its share of a made item's numbers (above level 50 a weapon's damage less, armor's rating a little more),
+# the vigor it costs, its delay and slot. Each weighted list is in the
 # order the server draws it. These are the server's own numbers, written as rows.
 [[treasure_rules]]
 above_base = [436.0, 519.0, 220.0, 39.0]
@@ -17,18 +18,19 @@ prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-BY-LEVEL", ref = "f
 sort = "weapon"
 counts = [{ from = 0, weights = [102.0, 20.0, 0.0, 0.0] }, { from = 10, weights = [267.0, 34.0, 1.0, 1.0] }, { from = 20, weights = [462.0, 43.0, 7.0, 1.0] }, { from = 30, weights = [429.0, 36.0, 11.0, 0.0] }, { from = 40, weights = [473.0, 28.0, 19.0, 8.0] }, { from = 50, weights = [610.0, 64.0, 36.0, 12.0] }]
 damage_share = [0.84, 0.97]
-vigor = [{ from = 0, least = 1, most = 1 }, { from = 8, least = 3, most = 3 }, { from = 10, least = 4, most = 5 }, { from = 21, least = 6, most = 7 }, { from = 30, least = 10, most = 12 }, { from = 40, least = 14, most = 17 }, { from = 50, least = 16, most = 19, every = 5 }]
+damage_scale = [[50, 1.0], [55, 0.95], [60, 0.9], [65, 0.87], [75, 0.81], [85, 0.77], [100, 0.73], [150, 1.07]]
+vigor = [{ from = 0, least = 1, most = 1 }, { from = 8, least = 3, most = 3 }, { from = 10, least = 4, most = 5 }, { from = 21, least = 6, most = 7 }, { from = 30, least = 10, most = 12 }, { from = 40, least = 14, most = 17 }, { from = 50, least = 16, most = 19 }, { from = 60, least = 22, most = 27 }, { from = 65, least = 23, most = 33 }, { from = 70, least = 27, most = 33, every = 7 }]
 delays = { from = 4, weights = [2.0, 17.0, 29.0, 41.0, 60.0, 58.0, 107.0, 113.0, 116.0, 108.0, 100.0, 86.0, 40.0, 44.0, 33.0, 19.0] }
-prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCH-DROPS", ref = "fit counts", confidence = "medium", fields = { damage_share = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, vigor = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, delays = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" } } }
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCH-DROPS", ref = "fit counts", confidence = "medium", fields = { damage_share = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, damage_scale = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ABOVE-50", ref = "fit damage-above-50", confidence = "low" }, vigor = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ABOVE-50", ref = "fit vigor-above-50", confidence = "low" }, delays = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" } } }
 
 [[treasure_sort]]
 sort = "armor"
 counts = [{ from = 0, weights = [65.0, 12.0, 0.0, 0.0] }, { from = 10, weights = [148.0, 20.0, 1.0, 0.0] }, { from = 20, weights = [294.0, 35.0, 0.0, 0.0] }, { from = 30, weights = [261.0, 18.0, 2.0, 0.0] }, { from = 40, weights = [281.0, 31.0, 0.0, 0.0] }, { from = 50, weights = [353.0, 73.0, 0.0, 0.0] }]
 delays = { from = 4, weights = [1.0, 3.0, 5.0, 7.0, 5.0, 10.0, 13.0, 16.0, 13.0, 10.0, 8.0, 11.0, 4.0, 7.0, 5.0, 7.0, 2.0, 1.0] }
-rating_share = [[0, 0.75], [50, 1.0]]
+rating_share = [[0, 0.75], [50, 1.0], [51, 1.07]]
 rating_spread = 0.1
 slot_chance = 0.5
-prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCH-DROPS", ref = "fit counts", confidence = "medium", fields = { delays = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, rating_share = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, rating_spread = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, slot_chance = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" } } }
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCH-DROPS", ref = "fit counts", confidence = "medium", fields = { delays = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, rating_share = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ABOVE-50", ref = "fit rating-above-50", confidence = "low" }, rating_spread = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, slot_chance = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" } } }
 
 [[treasure_sort]]
 sort = "shield"
@@ -37,10 +39,10 @@ damage_share = [0.84, 0.97]
 vigor = [{ from = 0, least = 1, most = 1 }, { from = 8, least = 2, most = 3 }, { from = 17, least = 4, most = 5 }, { from = 28, least = 5, most = 7 }, { from = 40, least = 6, most = 9 }]
 span = [0.25, 0.29]
 delays = { from = 5, weights = [14.0, 33.0, 40.0, 42.0, 31.0, 29.0, 12.0] }
-rating_share = [[0, 0.75], [50, 1.0]]
+rating_share = [[0, 0.75], [50, 1.0], [51, 1.07]]
 rating_spread = 0.1
 slot_chance = 0.5
-prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCH-DROPS", ref = "fit counts", confidence = "medium", fields = { damage_share = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, vigor = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-SHIELDS", ref = "fit shields", confidence = "medium" }, span = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-SHIELDS", ref = "fit shields", confidence = "medium" }, delays = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, rating_share = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, rating_spread = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, slot_chance = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" } } }
+prov = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ENCH-DROPS", ref = "fit counts", confidence = "medium", fields = { damage_share = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, vigor = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-SHIELDS", ref = "fit shields", confidence = "medium" }, span = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-SHIELDS", ref = "fit shields", confidence = "medium" }, delays = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, rating_share = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-ABOVE-50", ref = "fit rating-above-50", confidence = "low" }, rating_spread = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" }, slot_chance = { from = "capture", evidence = "AC2-EVID-SRV-TREASURE-NUMBERS", ref = "fit numbers", confidence = "medium" } } }
 
 [[treasure_sort]]
 sort = "jewelry"

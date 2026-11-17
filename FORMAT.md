@@ -893,18 +893,20 @@ above 0); weapons, armor and shields have six bands, as the words before their n
 Beside them, each sort has its own fields and no others:
 
 - weapons and shields: `damage_share = [least, most]`, their greatest damage as a share of a made weapon's at their
-  level, drawn evenly; `vigor`, bands of the vigor they cost, `[{ from, least, most, every }]` (`from` the first 0
+  level, drawn evenly; `damage_scale`, which may be left out, what that share is times by level, as points `[[level,
+  times], ...]` (levels from 0 and rising, each above 0 and at most 2) in proportion between them and held past the
+  ends; `vigor`, bands of the vigor they cost, `[{ from, least, most, every }]` (`from` the first 0
   and rising, `least` 1 or more and at most `most`), each drawn evenly from `least` to `most`; `every`, only on the
   last band, adds one to both for each that many levels above its `from`;
 - shields: `span = [least, most]`, their span of damage when their template names none, drawn evenly;
 - weapons, armor and shields: `delays = { from, weights }`, how often each delay between blows from `from` (0 or
   more) up is drawn;
 - armor and shields: `rating_share`, their rating as a share of a made one's at their level, as points `[[level,
-  share], ...]` (levels from 0 and rising, shares from 0 to 1) in proportion between them and held past the ends;
+  share], ...]` (levels from 0 and rising, shares above 0 and at most 2) in proportion between them and held past the ends;
   `rating_spread`, how far either side of it each is drawn, evenly; `slot_chance`, how often one has an
   enchantment slot (robes always have three, weapons one).
 
-Shares and chances are from 0 to 1, least at most most. A world gives all four sorts or none: a world with none
+Other shares and chances are from 0 to 1, least at most most. A world gives all four sorts or none: a world with none
 has the server's own, and one with some but not all is refused. A sort's families of enchantments and its words
 are the server's own.
 

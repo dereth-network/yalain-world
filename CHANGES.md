@@ -11,6 +11,7 @@
 - Enchanted weapons, armor and jewelry a creature leaves are now worth more than plain ones. New pack `treasure-units/`.
 - Joining a kingdom now needs level 10; going neutral costs gold, then a two-week wait. New pack `kingdom-joins/`.
 - The war and peace shrines now let other kingdoms fight you anywhere, or stop it. New pack `war-peace-shrines/`.
+- Treasure from creatures above level 50 now hits and protects as retail's did. Pack `treasure-numbers/`.
 
 ## v0.38.0
 
