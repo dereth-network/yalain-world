@@ -6,6 +6,7 @@
 - Keyed dungeon caches that opened empty now hold treasure. New pack `sigil-caches/`.
 - Monarchs can now bind their allegiance's recall at the halls' binding stones. New pack `allegiance-halls/`.
 - Any creature can now leave a lodestone or a Tessera on its corpse, by your level. New pack `corpse-finds/`.
+- Lodestones from mining now change quality at levels 25, 40, 55 and 70. Pack `mines/`.
 
 ## v0.38.0
 

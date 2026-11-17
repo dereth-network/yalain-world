@@ -460,7 +460,7 @@ tools = [0x47000CC1, 0x47000CC2]
 answer = { table = 0x25000CEC, string = 0x79C276DB }
 rich_answer = { table = 0x25000CEC, string = 0x53EE7371 }
 delving = { effect = "Eff_SummonMine_Copper_Hills", node = 0x47000C8C }
-lodestones = [{ from = 0, template = 0x47000C16 }, { from = 30, template = 0x47000C14 }]
+lodestones = [{ from = 0, template = 0x47000C16 }, { from = 25, template = 0x47000C14 }]
 find_chance = 0.05
 finds = [{ template = 0x4700052F, share = 0.25 }]
 prov = { from = "authored", by = "you" }
