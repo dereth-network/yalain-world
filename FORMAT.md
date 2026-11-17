@@ -331,7 +331,9 @@ under way), `trigger`, `tell` / `tell_text` (what the person says), `update` (`b
 given, in order; 1 when left out), `requires`, `takes`, `to`, `effects` (the effects it puts on the
 player, by their saved states: a blessing, a recipe learned or forgotten), `text` (a text shown
 after the effects, `{ table, string }`), `recipes` (recipes it teaches, by id: the install's, or the world's
-`[[recipe]]` rows'; learned after its update and its effects), `fellows` (true: the update is made for each of the
+`[[recipe]]` rows'; learned after its update and its effects), `skills` (skills it trains, by their numbers: each
+trained for good after its recipes, at level 1 by the grant, unraisable and at no cost, told as an effect's grant of a
+skill is; a player who holds one already gains nothing), `fellows` (true: the update is made for each of the
 player's fellows in the world as well, each told it alone; what the step takes and gives is the player's alone, and a fellow
 needs only the phase and what the step requires), `out_of_turn` (true, with `update = "none"` and `needs` above 0: it runs
 when its quest is under way at any phase but `needs`, saying and putting on what it names and moving no quest: a stop of a

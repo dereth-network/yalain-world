@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Drawing a surveyor's map now throws away your old maps of that region. Pack `map-recipes/`.
+- Arramora's beacon now teaches its recall skill with any star given. New pack `arramora-recall/`.
 - Sigil caches now and then hold a rare. New pack `sigil-cache-rares/`.
 - Lifestones that players' maps of the time show are now where no recording went. New pack `vault-lifestones/`.
 - Bosses with three possible spots now stand at only one of them at a time. New pack `boss-spots/`.
