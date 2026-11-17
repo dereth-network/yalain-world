@@ -1,4 +1,5 @@
-# What the sigil caches hold where 2017 recorded too little: from the caches of their race it did record.
+# What the sigil caches hold where 2017 recorded too little: from the caches of their race it did record, and
+# for the Water Temple's cache, from what players reported of it.
 
 [[loot]]
 profile = 1001
@@ -53,3 +54,13 @@ items = [{ template = 0x4700066E, weight = 1 }, { template = 0x47000E0A, weight 
 level = 45
 value = [56, 81]
 prov = { from = "capture", evidence = "AC2-EVID-WDB-CHEST-LOOT-2017", ref = "p:3fc", confidence = "low", sample = { views = 1 }, fields = { items = { from = "authored", by = "Dereth Network", note = "its recorded items, and the weapons and shields the other cache of its race recorded in 2017 held, each at the weight it had there", confidence = "low" } } }
+
+[[loot]]
+profile = 1026
+profile_name = "GP_Chest_SigilTumerok_Expensive_LowHoard"
+counts = [0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 0.5]
+items = [{ template = 0x47000671, weight = 130 }, { template = 0x47000672, weight = 145 }, { template = 0x47001C32, weight = 28 }, { template = 0x47001C33, weight = 39 }, { template = 0x47001C34, weight = 35 }, { template = 0x47001C35, weight = 31 }, { template = 0x47001C36, weight = 28 }, { template = 0x47001D68, weight = 97 }, { template = 0x47001D77, weight = 62 }, { template = 0x47001D79, weight = 22 }, { template = 0x47001E06, weight = 60 }, { template = 0x47002099, weight = 27 }, { template = 0x4700209A, weight = 46 }, { template = 0x4700209C, weight = 12 }, { template = 0x47002106, weight = 73 }, { template = 0x4700210B, weight = 51 }, { template = 0x4700215D, weight = 43 }, { template = 0x4700219E, weight = 70 }]
+extras = [{ template = 0x47001858, chance = 0.01 }, { template = 0x47001C30, chance = 0.01 }, { template = 0x47001D01, chance = 0.01 }, { template = 0x47001D88, chance = 0.01 }, { template = 0x47001E0D, chance = 0.01 }, { template = 0x47002077, chance = 0.01 }, { template = 0x4700208C, chance = 0.01 }]
+level = 25
+value = [36, 49]
+prov = { from = "authored", by = "Dereth Network", note = "players' reports on the AC2 Vault's Water Temple page, Dec 2002 to Dec 2003: items of levels 20 to 31, 5 or 6 a pull, mostly weapons; the Tumerok pools' weapons and shields at 25", confidence = "low", fields = { value = { from = "authored", by = "Dereth Network", note = "between the Tumerok and human caches recorded in 2017 at 37 and 16; a player on the Vault's page sold some at 40", confidence = "low" }, extras = { from = "authored", by = "Dereth Network", note = "the sigil rares of weapons and shields at its level, now and then: players on the Vault report rare drops from another cache of its kind", confidence = "low" } } }
