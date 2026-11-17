@@ -7,6 +7,7 @@
 - Monarchs can now bind their allegiance's recall at the halls' binding stones. New pack `allegiance-halls/`.
 - Any creature can now leave a lodestone or a Tessera on its corpse, by your level. New pack `corpse-finds/`.
 - Lodestones from mining now change quality at levels 25, 40, 55 and 70. Pack `mines/`.
+- The creatures that had a lodestone or Tessera of their own now leave them like any other. Pack `loot-from-pools/`.
 
 ## v0.38.0
 

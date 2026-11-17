@@ -1,7 +1,8 @@
 # The seeded loot profiles drawn from the treasure pools: each keeps its recorded counts and the items no pool
 # holds, and draws the rest from its hoard's own 2017 mix of pools, or its region class's where fewer than 20 of
 # its recorded items were pool items. A count the seed rounded from a few corpses is the pools' count by bounds
-# instead, and the rare roll is half the pools' own.
+# instead, and the rare roll is half the pools' own. Lodestones and Tesserae are left to the corpse finds any creature
+# may leave, not kept as a profile's own.
 
 [[loot]]
 profile = 380
@@ -148,7 +149,7 @@ profile = 399
 profile_name = "GP_BanderlingRaverHoard"
 counts = [0.68, 0.32, 0, 0, 0]
 draws = [{ pool = "GP_Weapons", weight = 425.9 }, { pool = "GP_Armor", weight = 257.9 }, { pool = "GP_Shields", weight = 86.3 }, { pool = "GP_Jewelry", weight = 31.4 }, { pool = "GP_PotionsMagic", weight = 30.5 }, { pool = "GP_MusicalInstruments", weight = 16.2 }, { pool = "GP_GemsMedium", weight = 9, least = 33, most = 49 }, { pool = "GP_LesserTrumps", weight = 7.2, least = 15 }]
-extras = [{ template = 0x4700111E, chance = 0.032 }, { template = 0x4700052F, chance = 0.0323 }]
+extras = [{ template = 0x4700111E, chance = 0.032 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:18f", confidence = "medium", sample = { corpses = 31 }, fields = { draws = { from = "authored", by = "Dereth Network", note = "fewer than 20 of its recorded items were pool items: its region class's 2017 mix of pools, as the pools' own rows, less the miscellaneous items, which are its extras", confidence = "low" }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -272,7 +273,7 @@ profile = 420
 profile_name = "GP_BurunBrooduHoard"
 counts = [0, 0.75, 0.24, 0.01, 0]
 draws = [{ pool = "GP_Weapons", weight = 489.8 }, { pool = "GP_Armor", weight = 316.3 }, { pool = "GP_Shields", weight = 112.2 }, { pool = "GP_MusicalInstruments", weight = 30.6 }, { pool = "GP_Jewelry", weight = 30.6 }, { pool = "GP_PotionsMagic", weight = 20.4 }]
-extras = [{ template = 0x47001124, chance = 0.025 }, { template = 0x47000C02, chance = 0.013 }]
+extras = [{ template = 0x47001124, chance = 0.025 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:1a4", confidence = "medium", sample = { corpses = 80 }, fields = { draws = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-TO-POOLS-2017", ref = "p:1a4", confidence = "low", sample = { corpses = 80 } }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -887,7 +888,7 @@ profile = 523
 profile_name = "GP_FlayerWindHoard"
 counts = [0, 0.54, 0.46, 0, 0]
 draws = [{ pool = "GP_Weapons", weight = 625 }, { pool = "GP_Armor", weight = 250 }, { pool = "GP_Shields", weight = 62.5 }, { pool = "GP_PotionsMagic", weight = 31.2 }, { pool = "GP_MusicalInstruments", weight = 31.2 }]
-extras = [{ template = 0x4700111E, chance = 0.083 }, { template = 0x4700052F, chance = 0.0417 }]
+extras = [{ template = 0x4700111E, chance = 0.083 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:20b", confidence = "low", sample = { corpses = 24 }, fields = { draws = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-TO-POOLS-2017", ref = "p:20b", confidence = "low", sample = { corpses = 24 } }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -1045,7 +1046,7 @@ profile = 562
 profile_name = "GP_GurogGladiatorHoard"
 counts = [0, 0.6, 0.33, 0.07, 0]
 draws = [{ pool = "GP_Weapons", weight = 520.5 }, { pool = "GP_Armor", weight = 315.1 }, { pool = "GP_Shields", weight = 95.9 }, { pool = "GP_PotionsMagic", weight = 41.1 }, { pool = "GP_MusicalInstruments", weight = 13.7 }, { pool = "GP_LesserTrumps", weight = 13.7, least = 15 }]
-extras = [{ template = 0x47000AFD, chance = 0.15 }, { template = 0x4700111E, chance = 0.05 }, { template = 0x4700141E, chance = 0.033 }, { template = 0x47000C17, chance = 0.017 }]
+extras = [{ template = 0x47000AFD, chance = 0.15 }, { template = 0x4700111E, chance = 0.05 }, { template = 0x4700141E, chance = 0.033 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:232", confidence = "medium", sample = { corpses = 60 }, fields = { draws = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-TO-POOLS-2017", ref = "p:232", confidence = "low", sample = { corpses = 60 } }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -1228,7 +1229,6 @@ profile = 2018
 profile_name = "GP_KnorrMumiyahHeroHoard"
 counts = [0, 0, 0, 1, 0]
 draws = [{ pool = "GP_Weapons", weight = 554.6 }, { pool = "GP_Armor", weight = 215.5 }, { pool = "GP_Shields", weight = 71.8 }, { pool = "GP_PotionsMagic", weight = 48.9 }, { pool = "GP_Jewelry", weight = 37.4 }, { pool = "GP_GemsLarge", weight = 20.1, least = 50 }, { pool = "GP_MusicalInstruments", weight = 17.2 }, { pool = "GP_LesserTrumps", weight = 5.7, least = 15 }, { pool = "GP_GreaterTrumps", weight = 5.7, least = 51 }, { pool = "GP_GemsSmall", weight = 2.9, most = 32 }]
-extras = [{ template = 0x47000C05, chance = 0.2 }]
 rare = { pool = "GP_KnorrTrophyRares", chance = 0.018 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:7e2", confidence = "low", sample = { corpses = 5 }, fields = { draws = { from = "authored", by = "Dereth Network", note = "fewer than 20 of its recorded items were pool items: its region class's 2017 mix of pools, as the pools' own rows, less the miscellaneous items, which are its extras", confidence = "low" }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -1327,7 +1327,7 @@ profile = 587
 profile_name = "GP_LasherBrutalHoard"
 counts = [0, 0.74, 0.26, 0, 0]
 draws = [{ pool = "GP_Weapons", weight = 457.1 }, { pool = "GP_Armor", weight = 328.6 }, { pool = "GP_Shields", weight = 85.7 }, { pool = "GP_Jewelry", weight = 42.9 }, { pool = "GP_MusicalInstruments", weight = 28.6 }, { pool = "GP_LesserTrumps", weight = 28.6, least = 15 }, { pool = "GP_PotionsMagic", weight = 28.6 }]
-extras = [{ template = 0x47000C16, chance = 0.018 }, { template = 0x47001B0E, chance = 0.018 }]
+extras = [{ template = 0x47001B0E, chance = 0.018 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:24b", confidence = "medium", sample = { corpses = 57 }, fields = { draws = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-TO-POOLS-2017", ref = "p:24b", confidence = "low", sample = { corpses = 57 } }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -1540,7 +1540,6 @@ profile = 1418
 profile_name = "GP_MosswartFrothingHoard"
 counts = [0, 0.61, 0.23, 0.13, 0.03]
 draws = [{ pool = "GP_Weapons", weight = 377.8 }, { pool = "GP_Armor", weight = 355.6 }, { pool = "GP_Shields", weight = 177.8 }, { pool = "GP_Jewelry", weight = 44.4 }, { pool = "GP_PotionsMagic", weight = 22.2 }, { pool = "GP_GreaterTrumps", weight = 22.2, least = 51 }]
-extras = [{ template = 0x47000C11, chance = 0.032 }, { template = 0x47000C05, chance = 0.032 }, { template = 0x47000C1D, chance = 0.032 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:58a", confidence = "medium", sample = { corpses = 31 }, fields = { draws = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-TO-POOLS-2017", ref = "p:58a", confidence = "low", sample = { corpses = 31 } }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -1634,7 +1633,6 @@ profile = 1422
 profile_name = "GP_MumiyahNomadicHoard"
 counts = [0, 0.69, 0.23, 0.08, 0]
 draws = [{ pool = "GP_Weapons", weight = 431 }, { pool = "GP_Armor", weight = 301.7 }, { pool = "GP_Shields", weight = 86.2 }, { pool = "GP_Jewelry", weight = 60.3 }, { pool = "GP_PotionsMagic", weight = 34.5 }, { pool = "GP_GemsLarge", weight = 25.9, least = 50 }, { pool = "GP_MusicalInstruments", weight = 25.9 }]
-extras = [{ template = 0x4700052F, chance = 0.0769 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:58e", confidence = "low", sample = { corpses = 13 }, fields = { draws = { from = "authored", by = "Dereth Network", note = "fewer than 20 of its recorded items were pool items: its region class's 2017 mix of pools, as the pools' own rows, less the miscellaneous items, which are its extras", confidence = "low" }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -1643,7 +1641,6 @@ profile = 1423
 profile_name = "GP_MumiyahOutcastHoard"
 counts = [0, 0.79, 0.21, 0, 0]
 draws = [{ pool = "GP_Weapons", weight = 431 }, { pool = "GP_Armor", weight = 301.7 }, { pool = "GP_Shields", weight = 86.2 }, { pool = "GP_Jewelry", weight = 60.3 }, { pool = "GP_PotionsMagic", weight = 34.5 }, { pool = "GP_GemsLarge", weight = 25.9, least = 50 }, { pool = "GP_MusicalInstruments", weight = 25.9 }]
-extras = [{ template = 0x47000C1D, chance = 0.071 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:58f", confidence = "low", sample = { corpses = 14 }, fields = { draws = { from = "authored", by = "Dereth Network", note = "fewer than 20 of its recorded items were pool items: its region class's 2017 mix of pools, as the pools' own rows, less the miscellaneous items, which are its extras", confidence = "low" }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -2007,7 +2004,7 @@ profile = 771
 profile_name = "GP_RevenantConscriptHoard"
 counts = [0, 0.757, 0.216, 0.027, 0]
 draws = [{ pool = "GP_Weapons", weight = 527.8 }, { pool = "GP_Armor", weight = 361.1 }, { pool = "GP_Shields", weight = 55.6 }, { pool = "GP_Jewelry", weight = 27.8 }, { pool = "GP_PotionsMagic", weight = 27.8 }]
-extras = [{ template = 0x470016C0, chance = 0.27 }, { template = 0x4700052F, chance = 0.027 }]
+extras = [{ template = 0x470016C0, chance = 0.27 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:303", confidence = "medium", sample = { corpses = 37 }, fields = { draws = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-TO-POOLS-2017", ref = "p:303", confidence = "low", sample = { corpses = 37 } }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -2404,7 +2401,6 @@ profile = 1433
 profile_name = "GP_SpawnEffigyHoard"
 counts = [0, 0.7, 0.3, 0, 0]
 draws = [{ pool = "GP_Weapons", weight = 440.1 }, { pool = "GP_Armor", weight = 278.8 }, { pool = "GP_Shields", weight = 92.6 }, { pool = "GP_PotionsMagic", weight = 32.9 }, { pool = "GP_Jewelry", weight = 29 }, { pool = "GP_MusicalInstruments", weight = 19.9 }, { pool = "GP_GemsSmall", weight = 6.8, most = 32 }, { pool = "GP_LesserTrumps", weight = 4.5, least = 15 }, { pool = "GP_GemsMedium", weight = 2.8, least = 33, most = 49 }, { pool = "GP_GemsLarge", weight = 0.6, least = 50 }, { pool = "GP_GreaterTrumps", weight = 0.6, least = 51 }]
-extras = [{ template = 0x47000C0B, chance = 0.1 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:599", confidence = "low", sample = { corpses = 10 }, fields = { draws = { from = "authored", by = "Dereth Network", note = "fewer than 20 of its recorded items were pool items: its region class's 2017 mix of pools, as the pools' own rows, less the miscellaneous items, which are its extras", confidence = "low" }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -2469,7 +2465,7 @@ profile = 1438
 profile_name = "GP_ThornlingPlundererHoard"
 counts = [0, 0.57, 0.21, 0.21, 0]
 draws = [{ pool = "GP_Weapons", weight = 550 }, { pool = "GP_Armor", weight = 300 }, { pool = "GP_PotionsMagic", weight = 50 }, { pool = "GP_Shields", weight = 50 }, { pool = "GP_Jewelry", weight = 50 }]
-extras = [{ template = 0x47001B05, chance = 0.071 }, { template = 0x47001CDF, chance = 0.071 }, { template = 0x4700052F, chance = 0.0714 }]
+extras = [{ template = 0x47001B05, chance = 0.071 }, { template = 0x47001CDF, chance = 0.071 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:59e", confidence = "low", sample = { corpses = 14 }, fields = { draws = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-TO-POOLS-2017", ref = "p:59e", confidence = "low", sample = { corpses = 14 } }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -2606,7 +2602,6 @@ profile = 1316
 profile_name = "GP_WarathInvincibleHoard"
 counts = [0.08, 0, 0, 0.31, 0.62]
 draws = [{ pool = "GP_Weapons", weight = 560 }, { pool = "GP_Armor", weight = 160 }, { pool = "GP_Shields", weight = 120 }, { pool = "GP_MusicalInstruments", weight = 60 }, { pool = "GP_PotionsMagic", weight = 60 }, { pool = "GP_Jewelry", weight = 40 }]
-extras = [{ template = 0x4700052F, chance = 0.0769 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:524", confidence = "low", sample = { corpses = 13 }, fields = { draws = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-TO-POOLS-2017", ref = "p:524", confidence = "low", sample = { corpses = 13 } }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
 
@@ -2640,6 +2635,5 @@ profile = 1449
 profile_name = "GP_WispSwampGasHoard"
 counts = [0, 0.77, 0.23, 0, 0]
 draws = [{ pool = "GP_Weapons", weight = 371.4 }, { pool = "GP_Armor", weight = 314.3 }, { pool = "GP_Shields", weight = 142.9 }, { pool = "GP_Jewelry", weight = 114.3 }, { pool = "GP_PotionsMagic", weight = 28.6 }, { pool = "GP_GemsLarge", weight = 28.6, least = 50 }]
-extras = [{ template = 0x47000C1D, chance = 0.033 }, { template = 0x4700052F, chance = 0.0333 }]
 rare = { pool = "GP_TrophyRares", chance = 0.00065 }
 prov = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-2017", ref = "p:5a9", confidence = "medium", sample = { corpses = 30 }, fields = { draws = { from = "capture", evidence = "AC2-EVID-WDB-LOOT-TO-POOLS-2017", ref = "p:5a9", confidence = "low", sample = { corpses = 30 } }, extras = { from = "authored", by = "Dereth Network", note = "the recorded items and extras no treasure pool holds, each at the share of recorded corpses that held it; the rest is drawn from the pools", confidence = "low" }, rare = { from = "authored", by = "Dereth Network", note = "half the pools' own rare roll, which brings rares to about the share of items 2017 recorded over the recorded corpses", confidence = "low" } } }
