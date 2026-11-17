@@ -1,0 +1,38 @@
+# The hidden quest both shrines give and complete at once: its three days before it is given again keep a player from
+# either shrine until then, as their descriptions say. The war shrine grants the permission to be fought anywhere by
+# players of other kingdoms who hold it too; the peace shrine revokes it.
+
+[[quest]]
+id = 0x800002C7
+id_name = "QuestKVKAnywhere"
+state = 0x6F000B97
+challenge = -1
+visible = false
+retry = 259200
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:bd34d64f", confidence = "high", sample = { sessions = 48 }, fields = { visible = { from = "dat", record = 0x4700100E }, retry = { from = "dat", record = 0x4700100E, note = "both shrines' descriptions: the other one after three days" } } }
+
+[[step]]
+key = "war"
+quest = 0x800002C7
+needs = 0
+trigger = { use = 0x4700100E }
+update = "bestow"
+permissions = { grant = 0xC0000 }
+prov = { from = "dat", record = 0x4700100E, note = "its use gives and completes the quest and sets the permission bits its own effect sets" }
+
+[[step]]
+key = "peace"
+quest = 0x800002C7
+needs = 0
+trigger = { use = 0x4700100C }
+update = "bestow"
+permissions = { revoke = 0xC0000 }
+prov = { from = "dat", record = 0x4700100C, note = "its use gives and completes the quest and takes the permission back" }
+
+[[step]]
+key = "done"
+quest = 0x800002C7
+needs = 1
+trigger = { given = 0x800002C7 }
+update = "complete"
+prov = { from = "dat", record = 0x4700100E, note = "both shrines complete the quest they give in the same use" }
