@@ -35,6 +35,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/values.toml          [[treasure_value]]
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
+<pack>/server/allegiance.toml      [[allegiance_hall]]
 <pack>/server/kingdoms.toml        [[points_bonus]]
 <pack>/server/popups.toml          [[popup]]
 <pack>/server/treasure.toml        [[treasure_rules]], [[treasure_sort]]
@@ -270,6 +271,16 @@ maps sends here; a template is named by one place at most), `destination` (that 
 effect that sends a player to a named place, a city's recall, looks it up by; one place to a name), `row`
 and `holds` (a room of a row of like rooms, and the cell its creature stands in: a step that leads to any
 room of a row sends a player to one of them, free of players and with its creature standing if it can).
+
+**`[[allegiance_hall]]`**: the stone a monarch binds its allegiance at, in a hall. `key`, `stone` (the
+placed stone, `key@XXYY` or `pack:key@XXYY`, in no other such row), `place` (a `[[place]]`, `key` or
+`pack:key`: where the allegiance's recall takes a member once bound), `cost` (the money its monarch
+pays; 0 when left out). Anyone but a monarch is refused at once; a monarch is walked to the stone,
+refused where the quest its template needs keeps it out, told it has not enough money when short of
+`cost`, and otherwise pays, binds its whole allegiance there in place of any hall before, and the use
+goes on as the stone's own: its template's quest effects for a use, then its steps. The allegiance's
+export names the hall by the place's `destination`. How soon a monarch may bind again is the `retry` of
+the quest the stone needs.
 
 **`[[loot]]`**: what a dead creature leaves. `profile` and `profile_name` (its death-loot profile),
 `counts` (the chance of 0, 1, 2, ... items), `items` (`{ template, weight }`, what a draw picks
