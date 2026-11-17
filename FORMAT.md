@@ -38,7 +38,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
 <pack>/server/allegiance.toml      [[allegiance_hall]]
-<pack>/server/kingdoms.toml        [[points_bonus]]
+<pack>/server/kingdoms.toml        [[points_bonus]], [[kingdom_join]]
 <pack>/server/popups.toml          [[popup]]
 <pack>/server/treasure.toml        [[treasure_rules]], [[treasure_sort]]
 <pack>/server/treasure_words.toml  [[treasure_word]]
@@ -141,6 +141,7 @@ Every row sets one **item**, named by its key:
 | `treasure_value LEVEL` | the creatures' level |
 | `corpse_find KEY` | the row's `key` |
 | `treasure_unit LEAST` | the least level it applies from |
+| `kingdom_join KINGDOM` | the kingdom's word |
 | `mine 0xSKILL` | the mining craft skill |
 | `defense 0xTEMPLATE` | the device's template |
 | `map_region REGION` | the region's key |
@@ -764,6 +765,24 @@ at those points are granted at once, as a use of the shrine grants them. One row
 effect = 0x6F00188E
 add = 200
 up_to = 1500
+prov = { from = "authored", by = "you" }
+```
+
+**`[[kingdom_join]]`**: what a kingdom's faction shrines ask of a player who would join the kingdom there.
+`kingdom` (`neutral`, `shadow`, `order` or `dominion`); each of the rest is asked only when given: `least_level`
+(the least level it is joined at), `sworn_refused` (`true`: a player sworn to another kingdom than the neutral one is
+refused, so it must go neutral first), `wait` (seconds by the calendar, kept while the player is away, since the
+player last left a kingdom other than the neutral one) and `costs` (`{ from, gold }`, levels rising from 0: the gold
+a join costs from each level on). They are asked as the join would be made, in that order, and the first one failed
+is told and nothing changes; otherwise the gold is paid, told with the join. A kingdom no row names asks nothing.
+One row per kingdom.
+
+```toml
+# <pack>/server/kingdoms.toml
+[[kingdom_join]]
+kingdom = "neutral"
+least_level = 10
+costs = [{ from = 0, gold = 0 }, { from = 21, gold = 15000 }]
 prov = { from = "authored", by = "you" }
 ```
 

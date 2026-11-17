@@ -1,0 +1,31 @@
+# What each kingdom's shrines ask of a player who would join. The neutral shrine charges by level, as the 0930 script
+# library's own cost does (nothing to 20, 15,000 to 30, 75,000 to 40, 500,000 above) and the June 2003 patch notes
+# say; a player of a kingdom changes only by going neutral first, then waits two weeks (the same notes). Level 10 for
+# every shrine: the 2002 player's manual and the Vault's shrine pages. No recording shows a refusal.
+
+[[kingdom_join]]
+kingdom = "neutral"
+least_level = 10
+costs = [{ from = 0, gold = 0 }, { from = 21, gold = 15000 }, { from = 31, gold = 75000 }, { from = 41, gold = 500000 }]
+prov = { from = "authored", by = "Dereth Network", note = "costs by level are the 0930 script library's own, as the June 2003 patch notes give them; level 10 from the 2002 manual; no recording shows a refusal", confidence = "medium" }
+
+[[kingdom_join]]
+kingdom = "shadow"
+least_level = 10
+sworn_refused = true
+wait = 1209600
+prov = { from = "authored", by = "Dereth Network", note = "two weeks after going neutral before another kingdom, changes made through the neutral shrine: June 2003 patch notes; level 10 from the 2002 manual; no recording shows a refusal", confidence = "medium" }
+
+[[kingdom_join]]
+kingdom = "order"
+least_level = 10
+sworn_refused = true
+wait = 1209600
+prov = { from = "authored", by = "Dereth Network", note = "two weeks after going neutral before another kingdom, changes made through the neutral shrine: June 2003 patch notes; level 10 from the 2002 manual; no recording shows a refusal", confidence = "medium" }
+
+[[kingdom_join]]
+kingdom = "dominion"
+least_level = 10
+sworn_refused = true
+wait = 1209600
+prov = { from = "authored", by = "Dereth Network", note = "two weeks after going neutral before another kingdom, changes made through the neutral shrine: June 2003 patch notes; level 10 from the 2002 manual; no recording shows a refusal", confidence = "medium" }

@@ -9,6 +9,7 @@
 - Lodestones from mining now change quality at levels 25, 40, 55 and 70. Pack `mines/`.
 - The creatures that had a lodestone or Tessera of their own now leave them like any other. Pack `loot-from-pools/`.
 - Enchanted weapons, armor and jewelry a creature leaves are now worth more than plain ones. New pack `treasure-units/`.
+- Joining a kingdom now needs level 10; going neutral costs gold, then a two-week wait. New pack `kingdom-joins/`.
 
 ## v0.38.0
 
