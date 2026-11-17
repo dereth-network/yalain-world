@@ -12,6 +12,7 @@
 - Joining a kingdom now needs level 10; going neutral costs gold, then a two-week wait. New pack `kingdom-joins/`.
 - The war and peace shrines now let other kingdoms fight you anywhere, or stop it. New pack `war-peace-shrines/`.
 - Treasure from creatures above level 50 now hits and protects as retail's did. Pack `treasure-numbers/`.
+- Creatures of the Knorr lands now drop weapons of a wider mix of races. New pack `knorr-weapon-races/`.
 
 ## v0.38.0
 

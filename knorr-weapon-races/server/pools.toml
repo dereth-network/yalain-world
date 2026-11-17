@@ -1,0 +1,35 @@
+# The Knorr lands' treasure weapons: the install's Knorr weapons pool over its four race pools, each over that
+# race's own weapons, with 2017's race mix from Knorr-region creatures and the share of a killer's own race,
+# fit over 190 weapons whose killer's race was recorded.
+
+[[treasure_pool]]
+name = "GP_KnorrWeapons"
+pools = [{ pool = "GP_KnorrWeaponsHuman", weight = 437.5 }, { pool = "GP_KnorrWeaponsLugian", weight = 266.2 }, { pool = "GP_KnorrWeaponsEmpyrean", weight = 176.4 }, { pool = "GP_KnorrWeaponsTumerok", weight = 119.9 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KNORR-WEAPON-RACES-2017", ref = "knorr-weapons", confidence = "low", sample = { corpses = 178 } }
+
+[[treasure_pool]]
+name = "GP_KnorrWeaponsHuman"
+race = "human"
+own = 0.123
+pools = [{ pool = "GP_WeaponsHuman", weight = 1.0 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KNORR-WEAPON-RACES-2017", ref = "knorr-weapons", confidence = "low", sample = { corpses = 178 } }
+
+[[treasure_pool]]
+name = "GP_KnorrWeaponsLugian"
+race = "lugian"
+own = 0.411
+pools = [{ pool = "GP_WeaponsLugian", weight = 1.0 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KNORR-WEAPON-RACES-2017", ref = "knorr-weapons", confidence = "low", fields = { own = { from = "authored", by = "Dereth Network", note = "too few killers of the race recorded: its share everywhere else" } } }
+
+[[treasure_pool]]
+name = "GP_KnorrWeaponsTumerok"
+race = "tumerok"
+own = 0.342
+pools = [{ pool = "GP_WeaponsTumerok", weight = 1.0 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KNORR-WEAPON-RACES-2017", ref = "knorr-weapons", confidence = "low", sample = { corpses = 178 } }
+
+[[treasure_pool]]
+name = "GP_KnorrWeaponsEmpyrean"
+race = "empyrean"
+pools = [{ pool = "GP_WeaponsEmpyrean", weight = 1.0 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-KNORR-WEAPON-RACES-2017", ref = "knorr-weapons", confidence = "low", sample = { corpses = 178 } }
