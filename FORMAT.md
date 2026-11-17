@@ -34,6 +34,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/events.toml          [[event]]
 <pack>/server/values.toml          [[treasure_value]]
 <pack>/server/finds.toml           [[corpse_find]]
+<pack>/server/units.toml           [[treasure_unit]]
 <pack>/server/routes.toml          [[route]]
 <pack>/server/areas.toml           [[area]]
 <pack>/server/allegiance.toml      [[allegiance_hall]]
@@ -139,6 +140,7 @@ Every row sets one **item**, named by its key:
 | `treasure_family SORT ORDER` | the sort and the family's `order` |
 | `treasure_value LEVEL` | the creatures' level |
 | `corpse_find KEY` | the row's `key` |
+| `treasure_unit LEAST` | the least level it applies from |
 | `mine 0xSKILL` | the mining craft skill |
 | `defense 0xTEMPLATE` | the device's template |
 | `map_region REGION` | the region's key |
@@ -717,7 +719,9 @@ appearance = 0x20000016
 prov = { from = "authored", by = "you" }
 ```
 
-**`[[treasure_value]]`**: what treasure a creature of a level leaves is worth. `level` (the creature's level) and `values` (whole numbers, at least one): each treasure item the creature leaves carries one of them as its own value, drawn evenly, so a value listed twice comes twice as often; selling it pays that. A level with no row draws from the nearest level that has one (the lower of two as near); a world with none has the server's own instead, a band of values for each ten levels up to 50. A rare and a trump of the tarot never carry one.
+**`[[treasure_value]]`**: what treasure a creature of a level leaves is worth. `level` (the creature's level) and `values` (whole numbers, at least one): each treasure item the creature leaves carries one of them as its own value, drawn evenly, so a value listed twice comes twice as often; selling it pays that. A level with no row draws from the nearest level that has one (the lower of two as near); a world with none has the server's own instead, a band of values for each ten levels up to 50. A rare and a trump of the tarot never carry one. Where the world has `[[treasure_unit]]` rows, weapons, shields, armor and jewels are worth their units instead.
+
+**`[[treasure_unit]]`**: what a treasure weapon, shield, armor or jewel a creature leaves is worth by its own least level. `least` (from 1: the least level it applies from, up to the next row's), `low` and `high` (whole numbers, `low` at least 1 and at most `high`): the item's unit is drawn evenly from `low` to `high`, and the item is worth the unit times one more than the enchantments it drew. An item with no least level of its own (a plain jewel) takes the level its dropper's treasure is drawn at; one below the first row takes the first. A rare and a trump of the tarot keep their template's value, and other treasure keeps its `[[treasure_value]]`.
 
 **`[[corpse_find]]`**: something any creature's corpse may hold beside its loot, rolled once at each kill a player made. `key`; `chance` (above 0, at most 1); `bands` (`{ from, items }`, levels rising from 0, each with at least one template): the item is one of the band's, drawn evenly, the last band whose `from` the killer's level reaches. Its gates, each left out when not given: `never` (a template property of the install: a creature whose template sets it true leaves none), `least_level` (the least level of a creature that leaves it), `below_killer` (how many levels below its killer a creature that leaves it may be, at most) and `hero_cap` (`true`: only for a killer whose hero skill credits, held and spent, are under the cap the level table gives its level, so none below level 45). The item is no treasure: it keeps its template's value.
 

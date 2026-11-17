@@ -8,6 +8,7 @@
 - Any creature can now leave a lodestone or a Tessera on its corpse, by your level. New pack `corpse-finds/`.
 - Lodestones from mining now change quality at levels 25, 40, 55 and 70. Pack `mines/`.
 - The creatures that had a lodestone or Tessera of their own now leave them like any other. Pack `loot-from-pools/`.
+- Enchanted weapons, armor and jewelry a creature leaves are now worth more than plain ones. New pack `treasure-units/`.
 
 ## v0.38.0
 
