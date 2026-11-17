@@ -1,0 +1,33 @@
+# The hidden quest a hall's sign gives a monarch, which the hall's stone needs under way and completes: the permission
+# to bind, and the three days before a monarch may bind again.
+
+[[quest]]
+id = 0x400001D1
+id_name = "QuestAllegianceHall"
+visible = false
+retry = 259200
+prov = { from = "derived", rule = "quest-setup-static" }
+
+[[step]]
+key = "sign-0x470011c3"
+quest = 0x400001D1
+needs = 0
+trigger = { use = 0x470011C3 }
+update = "bestow"
+prov = { from = "dat", record = 0x470011C3 }
+
+[[step]]
+key = "sign-0x470011c4"
+quest = 0x400001D1
+needs = 0
+trigger = { use = 0x470011C4 }
+update = "bestow"
+prov = { from = "dat", record = 0x470011C4 }
+
+[[step]]
+key = "sign-0x470011c5"
+quest = 0x400001D1
+needs = 0
+trigger = { use = 0x470011C5 }
+update = "bestow"
+prov = { from = "dat", record = 0x470011C5 }
