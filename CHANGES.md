@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Bosses with three possible spots now stand at only one of them at a time. New pack `boss-spots/`.
+- Keyed dungeon caches that opened empty now hold treasure. New pack `sigil-caches/`.
 
 ## v0.38.0
 
