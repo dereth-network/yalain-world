@@ -5,6 +5,7 @@
 - Bosses with three possible spots now stand at only one of them at a time. New pack `boss-spots/`.
 - Keyed dungeon caches that opened empty now hold treasure. New pack `sigil-caches/`.
 - Monarchs can now bind their allegiance's recall at the halls' binding stones. New pack `allegiance-halls/`.
+- Any creature can now leave a lodestone or a Tessera on its corpse, by your level. New pack `corpse-finds/`.
 
 ## v0.38.0
 

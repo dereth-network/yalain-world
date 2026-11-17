@@ -1,0 +1,27 @@
+# What any creature's corpse may hold beside its loot, as the January 2017 recordings show it: a lodestone of any of the
+# five kinds, of the quality the killer's level gives, from a creature no more than a level below its killer; a Tessera
+# from a creature of level 42 and up, for a killer whose hero skill credits are under its level's cap. A creature whose
+# template says it never leaves one leaves none.
+
+[[corpse_find]]
+key = "lodestones"
+chance = 0.0061
+never = "NPC_NeverDropLodestones"
+below_killer = 1
+bands = [
+    { from = 0, items = [0x47000C1C, 0x47000C16, 0x47000C04, 0x47000C0A, 0x47000C10] },
+    { from = 25, items = [0x47000C1A, 0x47000C14, 0x47000C02, 0x47000C08, 0x47000C0E] },
+    { from = 40, items = [0x47000C1D, 0x47000C17, 0x47000C05, 0x47000C0B, 0x47000C11] },
+    { from = 55, items = [0x47000C1F, 0x47000C19, 0x47000C07, 0x47000C0D, 0x47000C13] },
+    { from = 70, items = [0x47000C1E, 0x47000C18, 0x47000C06, 0x47000C0C, 0x47000C12] },
+]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CORPSE-FINDS-2017", ref = "lodestones", confidence = "low", sample = { corpses = 1464 }, fields = { bands = { from = "capture", evidence = "AC2-EVID-SRV-LODESTONE-BANDS", ref = "corpses", confidence = "low" } } }
+
+[[corpse_find]]
+key = "tesserae"
+chance = 0.0062
+never = "NPC_NeverDropTesserae"
+least_level = 42
+hero_cap = true
+bands = [{ from = 0, items = [0x4700052F] }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CORPSE-FINDS-2017", ref = "tesserae", confidence = "low", sample = { corpses = 1124 } }
