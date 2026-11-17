@@ -1,0 +1,14 @@
+# A boss with several possible spots stands at one at a time.
+
+[[remove]]
+items = ["camp g-2ca5-1@3AA2"]
+
+[[camp]]
+key = "b-2ca5"
+cell = 0x3AA2000C
+at = [22.4, 69.6, 79.46]
+spots = [{ cell = 0x3AA2000C, at = [22.4, 69.6, 79.46] }, { cell = 0x418A001A, at = [65.2, 33.6, 77.57] }, { cell = 0x43A00014, at = [51.2, 63.2, 91.07] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002CA5, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "where the AC2 Vault and AC2 Hero put it, to about 20 m; its height is the land's; no recording shows it, and one would replace this", confidence = "medium", fields = { population = { from = "authored", by = "Dereth Network", note = "one at a time, at one of its three spots, as the AC2 Vault's map and AC2 Hero describe it; no recording says how many stood at once" }, spots = { from = "authored", by = "Dereth Network", note = "the Vault's three spots, as the guide camps placed them" }, regen = { from = "derived", rule = "camp-regen-median" } } }

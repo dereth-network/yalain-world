@@ -1,0 +1,14 @@
+# A boss with several possible spots stands at one at a time.
+
+[[remove]]
+items = ["camp c-3800@499D"]
+
+[[camp]]
+key = "b-2d80"
+cell = 0x499D0014
+at = [52.1, 73.1, 96.7]
+spots = [{ cell = 0x499D0014, at = [52.1, 73.1, 96.7] }, { cell = 0x4096001D, at = [62.0, 92.4, 162.78] }, { cell = 0x42A2003C, at = [150.0, 69.6, 73.28] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002D80, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3800", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { population = { from = "authored", by = "Dereth Network", note = "one at a time, at one of its three spots, as the AC2 Vault's map and AC2 Hero describe it; no recording says how many stood at once" }, spots = { from = "authored", by = "Dereth Network", note = "the place recorded in 2017 in camp 3800, 38 m from the Vault's second spot, and the Vault's other two, on the land's nearest ground, to about 20 m" }, regen = { from = "derived", rule = "camp-regen-median" } } }

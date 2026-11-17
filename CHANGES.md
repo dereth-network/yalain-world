@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- Bosses with three possible spots now stand at only one of them at a time. New pack `boss-spots/`.
+
 ## v0.38.0
 
 - The kingdoms' armor can now be made from the three stars and upgraded at the cleansed forge of the plane of chaos. New pack `kingdom-armor/`.

@@ -1,0 +1,11 @@
+# A boss with several possible spots stands at one at a time.
+
+[[camp]]
+key = "c-3661"
+cell = 0x3D9B0002
+at = [4.5, 31.8, 282.0]
+radius = 24.6
+population = 2
+regen = 192.0
+spawns = [{ template = 0x47002518, weight = 1 }, { template = 0x470024E6, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3661", confidence = "medium", sample = { creatures = 4, sessions = 2 }, fields = { spawns = { from = "authored", by = "Dereth Network", note = "the two golems recorded here in 2017; the boss recorded here stands at one of its three spots, kept by camp b-2ada@3B8D" }, population = { from = "authored", by = "Dereth Network", note = "one of each golem seen" }, regen = { from = "derived", rule = "camp-regen-median" } } }
