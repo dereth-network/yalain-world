@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- A lifestone the wiki lists where no recording went now stands there. New pack `wiki-lifestones/`.
 - Order Island's lifestone now looks like the Order's own. Pack `vault-lifestones/`.
 - Drawing a surveyor's map now throws away your old maps of that region. Pack `map-recipes/`.
 - Arramora's beacon now teaches its recall skill with any star given. New pack `arramora-recall/`.
