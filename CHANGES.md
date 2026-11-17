@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Lifestones that players' maps of the time show are now where no recording went. New pack `vault-lifestones/`.
 - Bosses with three possible spots now stand at only one of them at a time. New pack `boss-spots/`.
 - Keyed dungeon caches that opened empty now hold treasure. New pack `sigil-caches/`.
 - Monarchs can now bind their allegiance's recall at the halls' binding stones. New pack `allegiance-halls/`.
