@@ -40,6 +40,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/allegiance.toml      [[allegiance_hall]]
 <pack>/server/kingdoms.toml        [[points_bonus]], [[kingdom_join]]
 <pack>/server/popups.toml          [[popup]]
+<pack>/server/vitals.toml          [[away_regen]]
 <pack>/server/treasure.toml        [[treasure_rules]], [[treasure_sort]]
 <pack>/server/treasure_words.toml  [[treasure_word]]
 <pack>/server/treasure_looks.toml  [[treasure_look]]
@@ -142,6 +143,7 @@ Every row sets one **item**, named by its key:
 | `corpse_find KEY` | the row's `key` |
 | `treasure_unit LEAST` | the least level it applies from |
 | `kingdom_join KINGDOM` | the kingdom's word |
+| `away_regen VITAL` | the vital's word |
 | `mine 0xSKILL` | the mining craft skill |
 | `defense 0xTEMPLATE` | the device's template |
 | `map_region REGION` | the region's key |
@@ -802,6 +804,21 @@ character passed before it, and a character kept before tips were shown has pass
 [[popup]]
 on = "level-up"
 effect = 0x6F001925
+prov = { from = "authored", by = "you" }
+```
+
+**`[[away_regen]]`**: what a vital regains while its character is out of the world. `vital` (`health`, `vigor`
+or `focus`), `every` (seconds, above 0) and `points` (above 0): the character regains `points` for each whole `every`
+seconds since it left the world, given back as it enters again and carried in its description, never past its
+greatest. Time it spends in the world counts for nothing, and only a vital the character holds regains (focus, a
+hero's). A vital no row names regains nothing while away. One row per vital.
+
+```toml
+# <pack>/server/vitals.toml
+[[away_regen]]
+vital = "focus"
+every = 600
+points = 1
 prov = { from = "authored", by = "you" }
 ```
 

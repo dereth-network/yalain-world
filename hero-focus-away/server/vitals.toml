@@ -1,0 +1,7 @@
+# A hero's focus comes back a point for each whole ten minutes the character is out of the world, given back as it
+# enters: in the recordings, every hero's next entry after time away carried it, and time in the world brought none.
+[[away_regen]]
+vital = "focus"
+every = 600
+points = 1
+prov = { from = "capture", evidence = "AC2-EVID-SRV-FOCUS-OFFLINE", ref = "vital focus", confidence = "high" }
