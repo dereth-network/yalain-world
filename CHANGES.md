@@ -1,10 +1,9 @@
 # Changes
 
-## Unreleased
+## v0.39.0
 
 - Heroes now regain focus while logged out. New pack `hero-focus-away/`.
 - A lifestone the wiki lists where no recording went now stands there. New pack `wiki-lifestones/`.
-- Order Island's lifestone now looks like the Order's own. Pack `vault-lifestones/`.
 - Drawing a surveyor's map now throws away your old maps of that region. Pack `map-recipes/`.
 - Arramora's beacon now teaches its recall skill with any star given. New pack `arramora-recall/`.
 - Sigil caches now and then hold a rare. New pack `sigil-cache-rares/`.
