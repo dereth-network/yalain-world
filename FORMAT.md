@@ -13,7 +13,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/landblocks/XXYY.toml [[object]], [[camp]] and [[clearing]] rows standing in landblock XXYY
 <pack>/server/places.toml          [[place]]
 <pack>/server/loot.toml            [[loot]]
-<pack>/server/stores.toml          [[keeper]], [[sale]]
+<pack>/server/stores.toml          [[keeper]], [[sale]], [[consignments]]
 <pack>/server/quests/QQQQQQQQ.toml [[quest]], [[step]] of one quest
 <pack>/server/gives/TTTTTTTT.toml  [[give]] of one template given to
 <pack>/server/talk/TTTTTTTT.toml   [[talk]] of one template
@@ -135,6 +135,7 @@ Every row sets one **item**, named by its key:
 | `pet 0xEFFECT` | the pet effect (or the contract's template) |
 | `pet_limit 0xSKILL` | the summoning skill |
 | `treasure_rules` | the world's one row |
+| `consignments` | the world's one row |
 | `treasure_sort SORT` | the sort: `weapon`, `armor`, `shield` or `jewelry` |
 | `treasure_word SORT 0xWORD` | the sort and the word's string |
 | `treasure_look 0xTEMPLATE` | the template |
@@ -304,6 +305,18 @@ draws is then treasure of that level, each piece worth a draw from that band; it
 `name_text`. Who a sale is for (a race, a least level, quests at a status) and whether its store
 hides from a player the sales the player may not have (else shows them restricted) are the
 install's.
+
+**`[[consignments]]`**: how many consignments a player holds at one broker, on sale, expired, or sold and
+not yet collected. `at_a_broker` (from 0). A player at that many is refused another there; its effects of extra
+consignments add to it. A world has one at most; with none, or `at_a_broker` left out, a player is held to
+nothing of the world's own. Each broker's own limit for an account is the install's either way.
+
+```toml
+# <pack>/server/stores.toml
+[[consignments]]
+at_a_broker = 3
+prov = { from = "authored", by = "you" }
+```
 
 **`[[quest]]`**: a quest's server values. `id` and `id_name`, `state`† (its definition), `challenge`,
 `duration` (s of the player's time in the world, 0 for none), `timed_phase` (the one phase the duration runs in, from when that phase comes, shown and able to fail the quest in that phase only; left out, every phase from its giving), `retry` (s, by the calendar, in the world or not), `cancel_wait` (s, by the calendar, from 0: the wait after its player cancels it before it is given again; left out, 300, except that a world whose rows name none has the server's own five hours for the quests 2017 gave them), `xp` (left out, as the quest's setup in the install says), `xp_share` (in place of an amount, the
