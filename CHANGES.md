@@ -3,6 +3,7 @@
 ## Unreleased
 
 - The skills that heal another player's vitae now work. New pack `vitae-healing/`.
+- Examining the teaching stones at the vaults and elsewhere now shows their text. New pack `teaching-stone-texts/`.
 
 ## v0.39.0
 
