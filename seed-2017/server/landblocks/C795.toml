@@ -16,11 +16,11 @@ cell = 0xC7950003
 at = [18.0, 42.6, 77.0]
 radius = 5.0
 population = 1
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47002A26, weight = 1 }]
 profile = 347
 profile_name = "GP_CampSclavusSata"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8911", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 8911", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-outdoor" }, profile = { from = "derived", rule = "camp-profile-species" } } }
 
 [[camp]]
 key = "c-11237"
@@ -28,6 +28,6 @@ cell = 0xC7950019
 at = [62.1, 5.7, 81.5]
 radius = 5.0
 population = 1
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x4700289A, weight = 1 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11237", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11237", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-outdoor" } } }

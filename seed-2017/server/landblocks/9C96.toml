@@ -17,9 +17,9 @@ cell = 0x9C96001E
 at = [79.9, 105.5, 165.5]
 radius = 31.9
 population = 8
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47002343, weight = 10 }, { template = 0x47002341, weight = 5 }, { template = 0x47002345, weight = 5 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7273", confidence = "high", sample = { creatures = 20, sessions = 5 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7273", confidence = "high", sample = { creatures = 20, sessions = 5 }, fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
 
 [[camp]]
 key = "c-7463"
@@ -27,9 +27,9 @@ cell = 0x9C960026
 at = [86.6, 110.3, 167.1]
 radius = 8.6
 population = 2
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47002324, weight = 8 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7463", confidence = "high", sample = { creatures = 8, sessions = 5 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7463", confidence = "high", sample = { creatures = 8, sessions = 5 }, fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
 
 [[camp]]
 key = "c-7513"
@@ -37,9 +37,9 @@ cell = 0x9C96000D
 at = [39.3, 80.4, 173.5]
 radius = 5.0
 population = 2
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47002324, weight = 2 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7513", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7513", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-outdoor" } } }
 
 [[camp]]
 key = "c-12199"

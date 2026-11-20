@@ -17,9 +17,9 @@ cell = 0x72AF000E
 at = [33.6, 103.0, 119.2]
 radius = 5.0
 population = 1
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47002224, weight = 2 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4816", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4816", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-outdoor" } } }
 
 [[camp]]
 key = "c-5190"
@@ -27,9 +27,9 @@ cell = 0x72AF0009
 at = [31.6, 9.2, 121.2]
 radius = 14.7
 population = 1
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47002D34, weight = 1 }, { template = 0x47002D31, weight = 1 }, { template = 0x47002D52, weight = 1 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5190", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5190", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
 
 [[camp]]
 key = "c-5191"
@@ -37,6 +37,6 @@ cell = 0x72AF000E
 at = [35.3, 102.4, 118.8]
 radius = 6.7
 population = 1
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47002D52, weight = 3 }, { template = 0x47002D31, weight = 2 }, { template = 0x47002D34, weight = 1 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5191", confidence = "high", sample = { creatures = 6, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5191", confidence = "high", sample = { creatures = 6, sessions = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

@@ -231,9 +231,9 @@ cell = 0x314E003F
 at = [144.6, 134.9, 154.8]
 radius = 5.0
 population = 2
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x470025AF, weight = 2 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11607", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11607", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-outdoor" } } }
 
 [[camp]]
 key = "c-11608"
@@ -241,9 +241,9 @@ cell = 0x314E0031
 at = [132.0, 11.6, 149.6]
 radius = 5.0
 population = 2
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x470025A1, weight = 2 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11608", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11608", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-outdoor" } } }
 
 [[camp]]
 key = "c-11609"
@@ -251,6 +251,6 @@ cell = 0x314E000C
 at = [20.8, 77.9, 146.3]
 radius = 5.7
 population = 3
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x470025AD, weight = 2 }, { template = 0x4700259F, weight = 1 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11609", confidence = "low", sample = { creatures = 3, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 11609", confidence = "low", sample = { creatures = 3, sessions = 1 }, fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

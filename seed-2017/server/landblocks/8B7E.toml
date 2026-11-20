@@ -16,9 +16,9 @@ cell = 0x8B7E0025
 at = [80.2, 80.5, 106.9]
 radius = 5.0
 population = 1
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47002997, weight = 2 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3882", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3882", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-outdoor" } } }
 
 [[camp]]
 key = "c-7193"
@@ -26,9 +26,9 @@ cell = 0x8B7E0025
 at = [81.1, 84.9, 106.5]
 radius = 11.0
 population = 13
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47000811, weight = 8 }, { template = 0x47002344, weight = 5 }, { template = 0x47002346, weight = 4 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7193", confidence = "medium", sample = { creatures = 17, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7193", confidence = "medium", sample = { creatures = 17, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
 
 [[camp]]
 key = "c-7412"
@@ -36,8 +36,8 @@ cell = 0x8B7E0025
 at = [90.5, 85.8, 108.5]
 radius = 19.8
 population = 2
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47002326, weight = 5 }]
 profile = 44
 profile_name = "GP_CampDrudgeMystic"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7412", confidence = "medium", sample = { creatures = 5, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-median" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7412", confidence = "medium", sample = { creatures = 5, sessions = 2 }, fields = { regen = { from = "derived", rule = "camp-regen-outdoor" }, profile = { from = "derived", rule = "camp-profile-species" } } }

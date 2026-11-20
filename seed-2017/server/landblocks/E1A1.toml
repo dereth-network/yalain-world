@@ -6,9 +6,9 @@ cell = 0xE1A1003C
 at = [143.3, 72.0, 76.7]
 radius = 10.3
 population = 1
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x470027C3, weight = 7 }, { template = 0x470027C1, weight = 6 }, { template = 0x470027C2, weight = 5 }, { template = 0x470027C0, weight = 3 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7525", confidence = "high", sample = { creatures = 21, sessions = 21 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7525", confidence = "high", sample = { creatures = 21, sessions = 21 }, fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
 
 [[camp]]
 key = "c-7857"
@@ -16,9 +16,9 @@ cell = 0xE1A1003C
 at = [143.8, 72.9, 76.8]
 radius = 5.0
 population = 1
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47002837, weight = 1 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7857", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 7857", confidence = "low", sample = { creatures = 1, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "derived", rule = "camp-regen-outdoor" } } }
 
 [[camp]]
 key = "c-8169"

@@ -69,6 +69,6 @@ cell = 0x408F0039
 at = [146.5, 4.6, 89.0]
 radius = 29.3
 population = 3
-regen = 192.0
+regen = 180.0
 spawns = [{ template = 0x47000846, weight = 2 }, { template = 0x4700083D, weight = 2 }, { template = 0x4700084B, weight = 2 }, { template = 0x47000847, weight = 1 }, { template = 0x4700084A, weight = 1 }, { template = 0x4700084F, weight = 1 }, { template = 0x47000858, weight = 1 }]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 33", confidence = "high", sample = { creatures = 10, sessions = 7 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 33", confidence = "high", sample = { creatures = 10, sessions = 7 }, fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
