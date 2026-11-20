@@ -1,0 +1,14 @@
+# Written from the January 2017 recordings: each camp's replacements came its period after the dead body left the world.
+
+[[camp]]
+key = "c-1018"
+cell = 0x7D6D001A
+at = [65.4, 25.1, 183.2]
+radius = 0.0
+spots = [{ cell = 0x7D6D001A, at = [65.39, 25.12, 183.17] }]
+population = 1
+regen = 180.0
+spawns = [{ template = 0x470021F5, weight = 5 }]
+profile = 20
+profile_name = "GP_CampBanderlingRaver"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1018", confidence = "high", sample = { creatures = 5, sessions = 5 }, fields = { spots = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-OUTDOOR-SPOTS-2017", ref = "camp 1018", confidence = "high" }, regen = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-RESPAWN-2017", ref = "camp 1018", confidence = "medium" }, profile = { from = "derived", rule = "camp-profile-species" } } }

@@ -1,0 +1,43 @@
+# Written from the January 2017 recordings: each camp's replacements came its period after the dead body left the world.
+
+[[camp]]
+key = "c-3192"
+cell = 0x816D0002
+at = [7.5, 33.2, 183.4]
+radius = 5.1
+population = 1
+regen = 180.0
+spawns = [{ template = 0x47002966, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3192", confidence = "medium", sample = { creatures = 3, sessions = 2 }, fields = { regen = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-RESPAWN-2017", ref = "camp 3192", confidence = "high" } } }
+
+[[camp]]
+key = "c-3194"
+cell = 0x816D0013
+at = [43.2, 48.9, 181.3]
+radius = 5.0
+population = 1
+regen = 180.0
+spawns = [{ template = 0x47002966, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3194", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-RESPAWN-2017", ref = "camp 3194", confidence = "medium" } } }
+
+[[camp]]
+key = "c-3975"
+cell = 0x816D000B
+at = [25.5, 41.6, 180.1]
+radius = 25.2
+population = 2
+regen = 180.0
+spawns = [{ template = 0x470023D1, weight = 6 }, { template = 0x470023CF, weight = 4 }, { template = 0x470023D3, weight = 2 }]
+profile = 60
+profile_name = "GP_CampEliSlaggard"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 3975", confidence = "high", sample = { creatures = 12, sessions = 3 }, fields = { regen = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-RESPAWN-2017", ref = "camp 3975", confidence = "high" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-5531"
+cell = 0x816D0002
+at = [6.8, 38.1, 181.9]
+radius = 4.0
+population = 1
+regen = 180.0
+spawns = [{ template = 0x470029F1, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5531", confidence = "medium", sample = { creatures = 3, sessions = 3 }, fields = { regen = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-RESPAWN-2017", ref = "camp 5531", confidence = "medium" } } }

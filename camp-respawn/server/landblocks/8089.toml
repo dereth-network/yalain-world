@@ -1,0 +1,23 @@
+# Written from the January 2017 recordings: each camp's replacements came its period after the dead body left the world.
+
+[[camp]]
+key = "c-4831"
+cell = 0x80890024
+at = [83.5, 69.4, 149.5]
+radius = 16.8
+population = 1
+regen = 180.0
+spawns = [{ template = 0x470025CF, weight = 3 }, { template = 0x470025D2, weight = 2 }]
+profile = 81
+profile_name = "GP_CampGruttMorbific"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 4831", confidence = "high", sample = { creatures = 5, sessions = 4 }, fields = { regen = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-RESPAWN-2017", ref = "camp 4831", confidence = "medium" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6420"
+cell = 0x8089000B
+at = [31.9, 42.5, 149.6]
+radius = 3.8
+population = 1
+regen = 180.0
+spawns = [{ template = 0x47002734, weight = 3 }, { template = 0x47002732, weight = 1 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6420", confidence = "medium", sample = { creatures = 4, sessions = 3 }, fields = { regen = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-RESPAWN-2017", ref = "camp 6420", confidence = "medium" } } }

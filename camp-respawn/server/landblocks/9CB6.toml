@@ -1,0 +1,33 @@
+# Written from the January 2017 recordings: each camp's replacements came its period after the dead body left the world.
+
+[[camp]]
+key = "c-1811"
+cell = 0x9CB6001A
+at = [64.0, 23.9, 133.6]
+radius = 6.0
+population = 1
+regen = 180.0
+spawns = [{ template = 0x47002AFF, weight = 5 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 1811", confidence = "high", sample = { creatures = 5, sessions = 3 }, fields = { regen = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-RESPAWN-2017", ref = "camp 1811", confidence = "medium" } } }
+
+[[camp]]
+key = "c-5011"
+cell = 0x9CB6001A
+at = [65.6, 24.7, 133.5]
+radius = 5.0
+population = 1
+regen = 180.0
+spawns = [{ template = 0x47002D2D, weight = 2 }]
+profile = 378
+profile_name = "GP_CampVerminTanglefoot"
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 5011", confidence = "low", sample = { creatures = 2, sessions = 1 }, fields = { radius = { from = "authored" }, regen = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-RESPAWN-2017", ref = "camp 5011", confidence = "medium" }, profile = { from = "derived", rule = "camp-profile-species" } } }
+
+[[camp]]
+key = "c-6284"
+cell = 0x9CB60003
+at = [3.7, 51.4, 135.2]
+radius = 5.0
+population = 1
+regen = 180.0
+spawns = [{ template = 0x47002B84, weight = 2 }]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 6284", confidence = "medium", sample = { creatures = 2, sessions = 2 }, fields = { radius = { from = "authored" }, regen = { from = "capture", evidence = "AC2-EVID-WDB-CAMP-RESPAWN-2017", ref = "camp 6284", confidence = "medium" } } }

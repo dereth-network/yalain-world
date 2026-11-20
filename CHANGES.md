@@ -6,6 +6,7 @@
 - Examining the teaching stones at the vaults and elsewhere now shows their text. New pack `teaching-stone-texts/`.
 - A player can now hold three consignments at each broker. New pack `consignment-limits/`.
 - The level-70 hero skill that puts a random effect on you and your fellowship now works. New pack `fickle-fate/`.
+- Camps seen in 2017 now replace their dead after the period they did. New pack `camp-respawn/`.
 
 ## v0.39.0
 
