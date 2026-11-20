@@ -9,6 +9,7 @@
 - Camps now replace their dead on 2017's timing. New pack `camp-respawn/`.
 - Rabbits no longer play their victory over players they kill. New pack `creature-victories/`.
 - Examining altars, shrines, quest stones and a few quest items now shows their names. New pack `examinations-2017/`.
+- Examining portals, shards and vaults now shows their descriptions. New pack `object-pages/`.
 
 ## v0.39.0
 
