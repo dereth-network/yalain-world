@@ -1034,8 +1034,9 @@ prov = { from = "authored", by = "you" }
 ```
 
 **`[[examination]]`**: what examining an object of a template says, where its template names nothing (a name and a
-page its script gives it from a table of its own). `template`, `name` and `description`, each a string reference
-(`{ table, string }`); `description` may be left out. One row per template.
+page its script gives it from a table of its own): a placed object's, and an item's. `template`, `name` and
+`description`, each a string reference (`{ table, string }`); `description` may be left out (the page the install
+holds, if any, stands). One row per template.
 
 **`[[book]]`**: what an item or a person of a template shows when used, where its template names nothing.
 `template`, and one of: `table`, the string table of a book's pages, shown with its page controls (a person used in
