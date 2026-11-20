@@ -10,6 +10,7 @@
 - Rabbits no longer play their victory over players they kill. New pack `creature-victories/`.
 - Examining altars, shrines, quest stones and a few quest items now shows their names. New pack `examinations-2017/`.
 - Examining portals, shards and vaults now shows their descriptions. New pack `object-pages/`.
+- Portals now allow recall and summon as they did in 2017. New pack `portal-recall-lines/`.
 
 ## v0.39.0
 
