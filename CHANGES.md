@@ -5,7 +5,7 @@
 - The skills that heal another player's vitae now work. New pack `vitae-healing/`.
 - Examining the teaching stones at the vaults and elsewhere now shows their text. New pack `teaching-stone-texts/`.
 - A player can now hold three consignments at each broker. New pack `consignment-limits/`.
-- The level-70 hero skill that puts a random effect on you and your fellowship now works. New pack `fickle-fate/`.
+- The level-70 hero skill that puts a random effect on you and your nearby fellows now works. New pack `fickle-fate/`.
 - Camps now replace their dead on 2017's timing. New pack `camp-respawn/`.
 - Rabbits no longer play their victory over players they kill. New pack `creature-victories/`.
 - Examining altars, shrines, quest stones and a few quest items now shows their names. New pack `examinations-2017/`.
