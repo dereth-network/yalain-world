@@ -195,7 +195,8 @@ prov = { from = "capture", evidence = "AC2-EVID-WDB-CAMPS-2017", ref = "camp 458
 | rule | value |
 |---|---|
 | `camp-regen-generator` | a camp's regeneration is the regeneration period of the generator template whose profile matches the camp's species |
-| `camp-regen-median` | a camp with no matching generator regenerates 192 s after a death, the median respawn measured |
+| `camp-regen-median` | an indoor camp with no matching generator regenerates 192 s after its dead body leaves, the median respawn measured |
+| `camp-regen-outdoor` | an outdoor camp with no matching generator regenerates 180 s after its dead body leaves, the period 2017's outdoor camps showed |
 | `camp-regen-hall` | the training hall's camps regenerate after the respawn measured at the spot |
 | `camp-profile-species` | a camp's generator profile is the one camp profile whose name matches the species of the creatures it made |
 | `keeper-store` | a storekeeper opens the store its template names |
