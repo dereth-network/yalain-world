@@ -870,7 +870,9 @@ has the server's own twelve crowd control immunities, each with its long effect'
 `/skills reset` or `/heroskills reset` uses. `holds_back`: `{ quality, except }`, while its player holds it, every rise
 other effects give `quality` (`type << 16 | quality`, as an effect's change names it: speed is `0x30127`), an amount above
 0 added or a factor above 1, counts for nothing, but those of the effects `except` names (saved states; none when left
-out); a lowering still counts. `untrains`: true, putting it on finishes its player's untraining
+out); a lowering still counts. `pick`: `{ effects = [{ effect, weight }], fellows }`, putting it on puts one of
+`effects` (saved states, at least one, each with a whole `weight` above 0) on in its place, drawn by weight, at the
+spellcraft it was cast at; with `fellows = true` its player's fellows in the world have the same. `untrains`: true, putting it on finishes its player's untraining
 under way at once, as earning its experience again would: the skill untrained, its credits back and its
 experience given back to spend, the player told so; a player untraining nothing gains nothing. `skill`: a skill, by its number (one the install has): putting the effect
 on a player trains it that skill for good, at level 1 by the grant, unraisable and at no cost, told with the effect's

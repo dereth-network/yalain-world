@@ -1,0 +1,26 @@
+# The skill's effect does nothing by its own data: its pick among the fourteen effects (armor, damage, experience, health,
+# vigor and their heals, each up or down) was the servers' own code. The install gives each effect its duration (900 s
+# up, 300 s down) and its numbers by the skill's level. Turbine's producer (April 2005) wrote that the effect comes on
+# the user "and their fellowship" at random, "the vast majority" good with "occasional negative effects"; nothing gives
+# the chances, so each good one is nine times as likely as each bad one: nine in ten draws are good. No 2017 recording
+# shows the skill used.
+
+[[effect_rule]]
+effect = 0x70001EC7
+pick = { effects = [
+    { effect = 0x70001EC9, weight = 9 },
+    { effect = 0x70001ECB, weight = 9 },
+    { effect = 0x70001ECD, weight = 9 },
+    { effect = 0x70001ED1, weight = 9 },
+    { effect = 0x70001ED0, weight = 9 },
+    { effect = 0x70001ED5, weight = 9 },
+    { effect = 0x70001ED4, weight = 9 },
+    { effect = 0x70001EC8, weight = 1 },
+    { effect = 0x70001ECA, weight = 1 },
+    { effect = 0x70001ECC, weight = 1 },
+    { effect = 0x70001ECE, weight = 1 },
+    { effect = 0x70001ECF, weight = 1 },
+    { effect = 0x70001ED2, weight = 1 },
+    { effect = 0x70001ED3, weight = 1 },
+], fellows = true }
+prov = { from = "dat", record = 0x70001EC7, confidence = "low", note = "the fourteen effects the install holds for it", fields = { pick = { from = "authored", by = "Dereth Network", confidence = "low", note = "weights for the producer's 'vast majority' good; his note names the fellowship" } } }

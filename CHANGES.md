@@ -5,6 +5,7 @@
 - The skills that heal another player's vitae now work. New pack `vitae-healing/`.
 - Examining the teaching stones at the vaults and elsewhere now shows their text. New pack `teaching-stone-texts/`.
 - A player can now hold three consignments at each broker. New pack `consignment-limits/`.
+- The level-70 hero skill that puts a random effect on you and your fellowship now works. New pack `fickle-fate/`.
 
 ## v0.39.0
 
