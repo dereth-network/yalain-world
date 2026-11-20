@@ -7,6 +7,7 @@
 - A player can now hold three consignments at each broker. New pack `consignment-limits/`.
 - The level-70 hero skill that puts a random effect on you and your fellowship now works. New pack `fickle-fate/`.
 - Camps now replace their dead on 2017's timing. New pack `camp-respawn/`.
+- Rabbits no longer play their victory over players they kill. New pack `creature-victories/`.
 
 ## v0.39.0
 
