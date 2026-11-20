@@ -840,10 +840,11 @@ state, one the install holds), and a `ward`, a `vitae_share`, a `vitae_restore`,
 or more than one. `vitae_share`: the share of its player's vitae
 the effect takes when it is put on, above 0 and at most 1, the effect's own appearance played on the player; a world
 whose rules name none has the server's own (the tap `0x6F001C64`, a tenth), one with any its rows alone.
-`vitae_restore`: `{ points, fellows }`, the vitae the effect gives back when it is put on, `points` above 0 and at
-most 100, never above full, to its player and, with `fellows = true`, to each of the player's fellows in the world
-(left out, false); one at full has nothing, and each who gains plays the effect's own appearance. An effect no row
-names gives no vitae back.
+`vitae_restore`: `{ points, most, fellows }`, the vitae the effect gives back when it is put on, `points` above 0 and
+at most 100, or with `most` a whole number of points drawn evenly from `points` to `most` each time it is put on (both
+whole, `most` at most 100), never above full, to its player and, with `fellows = true`, to each of the player's fellows
+in the world (left out, false); one at full has nothing, and each who gains plays the effect's own appearance. An
+effect no row names gives no vitae back.
 `ward`: `{ classes, effects, chance }`, what a player holding it keeps off:
 effects of these classes and these effects (saved states the install holds), at least one of either, each kept off
 by `chance`, above 0 and at most 1, at any spellcraft. Of a player's wards of one class only the top one draws. A

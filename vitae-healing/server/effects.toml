@@ -1,0 +1,15 @@
+# The effects of skills 296 and 637 name no amount, and the skills' descriptions say only that spending experience on
+# them gives more. In 2017 every use on a player under full vitae gave back a whole number of points, 1 to 8 about
+# evenly, never above full: 82 of 84 such uses (62 of skill 296 by one caster, 20 of skill 637 by one caster at its
+# level 38), with no draw above 8 in the 26 that had more than 8 points to fill. Each skill had one caster, so how the
+# amount grows with the skill is unknown; these are the amounts those two gave.
+
+[[effect_rule]]
+effect = 0x70000837
+vitae_restore = { points = 1, most = 8 }
+prov = { from = "capture", evidence = "AC2-EVID-SRV-VITAE-RESTORE-DRAWN", ref = "skill 296", confidence = "medium", sample = { sessions = 17 } }
+
+[[effect_rule]]
+effect = 0x700008EA
+vitae_restore = { points = 1, most = 8 }
+prov = { from = "capture", evidence = "AC2-EVID-SRV-VITAE-RESTORE-DRAWN", ref = "skill 637", confidence = "medium", sample = { sessions = 5 } }

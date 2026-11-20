@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- The skills that heal another player's vitae now work. New pack `vitae-healing/`.
+
 ## v0.39.0
 
 - Heroes now regain focus while logged out. New pack `hero-focus-away/`.
