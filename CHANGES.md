@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- The two fast Shreth patrol guards now jog their rounds, as in 2017. Pack `patrol-routes/`.
+
 ## v0.40.0
 
 - The skills that heal another player's vitae now work. New pack `vitae-healing/`.

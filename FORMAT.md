@@ -759,8 +759,10 @@ prov = { from = "authored", by = "you" }
 **`[[route]]`**: places creatures (and people that name it) walk at rest in turn. `key`; `waypoints` (`{ cell, at, rest }`, `rest`
 the seconds a creature stands there, else the route's); `shape`, `back-and-forth` (turn back at either
 end, the default) or `loop` (on from the last to the first); `gait`, `walk` (the default) or `run`;
-`speed` (meters a second for a creature of scale 1, when not the gait's own pace); `rest` (seconds, for
-waypoints that set none; 0 when left out). Several camps may share one route, each with its own start.
+`speed` (meters a second for a creature of scale 1, when not the gait's own pace); `forward` (the
+forward motion byte a creature on it is shown walking with, `0x80` to `0xFE`, when not the gait's own:
+`0xBF` for a walk, `0xFE` for a run); `rest` (seconds, for waypoints that set none; 0 when left out).
+Several camps may share one route, each with its own start.
 A creature that gives up a fight goes back to its route's nearest waypoint and carries on from there.
 
 **`[[area]]`**: the kind of player conflict a landblock allows. `landblock` (`0xXXYY`, outdoors or a
