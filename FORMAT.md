@@ -1268,7 +1268,9 @@ clients that know it (a template that names no kingdom holds none). A row gives 
 
 **`[[ai_class]]`**: what the world says of the creatures of an AI class, by its number (`class`, a value of their
 `AI_AISuperClass`): `idle_every`, the mean gap in seconds (above 0) between the idle behaviors one plays at rest, the
-gaps falling as chance spaces them. A class with no row idles every 450 s on average.
+gaps falling as chance spaces them; `notice_idle`, the chance (from 0 to 1) that one plays an idle as it notices a
+player, going after the player once the idle is through. A row gives at least one of the two. A class with no
+`idle_every` idles every 450 s on average, and one with no `notice_idle` never plays an idle as it notices a player.
 
 **`[[defense]]`**: a device creatures come to attack while it stands, and what it leaves once it has stood long
 enough (a device an item's use sets down). A creature of the `device` template, however it comes into the world (a
@@ -1345,6 +1347,7 @@ prov = { from = "authored", by = "you" }
 [[ai_class]]
 class = 0x06
 idle_every = 295
+notice_idle = 0.06
 prov = { from = "authored", by = "you" }
 
 [[defense]]
