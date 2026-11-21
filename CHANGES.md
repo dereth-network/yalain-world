@@ -6,6 +6,7 @@
 - Creatures now play their idle animations as often as their kind did in 2017. New pack `idle-rates/`.
 - Drudges sometimes pause in an idle before they charge, as in 2017. Pack `idle-rates/`.
 - An undead spellcaster teaching its class now says two more of its lessons. New pack `archmage-lines/`.
+- Bluff can now make a creature lose interest in you. New pack `bluff-threat/`.
 
 ## v0.40.0
 

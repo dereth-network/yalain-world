@@ -880,7 +880,10 @@ spellcraft it was cast at; with `fellows = true` its player's fellows in the wor
 under way at once, as earning its experience again would: the skill untrained, its credits back and its
 experience given back to spend, the player told so; a player untraining nothing gains nothing. `skill`: a skill, by its number (one the install has): putting the effect
 on a player trains it that skill for good, at level 1 by the grant, unraisable and at no cost, told with the effect's
-own line and appearance; a player who holds it already gains nothing. `places`: a template, putting the effect on (by
+own line and appearance; a player who holds it already gains nothing. `drops_threat`: a chance from 0 to 1, a detaunt
+landing on a creature makes it drop all its threat on its caster at that chance, turning to another that hurt it or,
+with none, giving up and going home; it takes the caster on again only once struck by it, or once the caster has left
+its perception and come back; failing, the detaunt takes from the caster's weight as ever. `places`: a template, putting the effect on (by
 name: using an item whose template names it, after the use is answered) makes an object of it standing in the world
 at its player, no one's to take or use; one of a chest's template is a chest anyone may open, filled from its
 generator profile at each opening (a map's cargo chest), and what it holds goes with it; with it `offset`,

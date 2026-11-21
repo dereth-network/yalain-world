@@ -1,0 +1,9 @@
+# Bluff's detaunt (the effect its skill puts on its target) may make the creature drop all its threat on its user,
+# as the skill's own description says it tries to (its description's string 0x6C459364 in table 0x250003D3). No use
+# of it was recorded in 2017; the chance is the share of give-ups after the same detaunt that a ranger's arrow skill
+# (skill 990) carries, on a creature fighting its user alone (6 of 19, the user beyond its perception).
+
+[[effect_rule]]
+effect = 0x700007E3
+drops_threat = 0.3
+prov = { from = "authored", by = "Dereth Network", confidence = "low", note = "loose evidence, the owner's choice: the same detaunt of skill 990 was followed by a give-up after 6 of 19 hits on a creature fighting its user alone" }
