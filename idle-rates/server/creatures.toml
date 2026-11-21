@@ -1,0 +1,84 @@
+# How often creatures of each AI class (their template's AI superclass) play an idle behavior at rest, as the 2017
+# recordings show them: the mean gap in seconds, from creatures at rest within 50 m of the recorded player, their
+# time before any fight less its last 10 s (a creature about to fight plays one then). Classes seen at least 1.5 h.
+# A class with no row keeps the server's own gap.
+
+[[ai_class]]
+class = 0x06
+idle_every = 295
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 06", confidence = "high", sample = { creatures = 1440, sessions = 93 }, note = "185 idles in 15.17 h" }
+
+[[ai_class]]
+class = 0x1E
+idle_every = 414
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 1E", confidence = "high", sample = { creatures = 1079, sessions = 23 }, note = "64 idles in 7.36 h" }
+
+[[ai_class]]
+class = 0x1D
+idle_every = 706
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 1D", confidence = "medium", sample = { creatures = 885, sessions = 29 }, note = "37 idles in 7.26 h" }
+
+[[ai_class]]
+class = 0x2C
+idle_every = 978
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 2C", confidence = "medium", sample = { creatures = 605, sessions = 53 }, note = "21 idles in 5.70 h" }
+
+[[ai_class]]
+class = 0x15
+idle_every = 446
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 15", confidence = "medium", sample = { creatures = 570, sessions = 22 }, note = "45 idles in 5.57 h" }
+
+[[ai_class]]
+class = 0x16
+idle_every = 687
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 16", confidence = "medium", sample = { creatures = 900, sessions = 39 }, note = "25 idles in 4.77 h" }
+
+[[ai_class]]
+class = 0x0C
+idle_every = 381
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 0C", confidence = "medium", sample = { creatures = 691, sessions = 52 }, note = "42 idles in 4.44 h" }
+
+[[ai_class]]
+class = 0x17
+idle_every = 422
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 17", confidence = "medium", sample = { creatures = 306, sessions = 19 }, note = "26 idles in 3.05 h" }
+
+[[ai_class]]
+class = 0x1F
+idle_every = 511
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 1F", confidence = "medium", sample = { creatures = 361, sessions = 57 }, note = "19 idles in 2.70 h" }
+
+[[ai_class]]
+class = 0x76
+idle_every = 867
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 76", confidence = "low", sample = { creatures = 388, sessions = 40 }, note = "11 idles in 2.65 h" }
+
+[[ai_class]]
+class = 0x53
+idle_every = 1022
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 53", confidence = "low", sample = { creatures = 102, sessions = 1 }, note = "9 idles in 2.56 h" }
+
+[[ai_class]]
+class = 0x02
+idle_every = 552
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 02", confidence = "low", sample = { creatures = 282, sessions = 33 }, note = "11 idles in 1.69 h" }
+
+[[ai_class]]
+class = 0x39
+idle_every = 5559
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 39", confidence = "low", sample = { creatures = 46, sessions = 16 }, note = "no idle in 1.54 h: the gap is that time, as if one" }
+
+[[ai_class]]
+class = 0x03
+idle_every = 695
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 03", confidence = "low", sample = { creatures = 261, sessions = 45 }, note = "8 idles in 1.54 h" }
+
+[[ai_class]]
+class = 0x0E
+idle_every = 786
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 0E", confidence = "low", sample = { creatures = 258, sessions = 24 }, note = "7 idles in 1.53 h" }
+
+[[ai_class]]
+class = 0x19
+idle_every = 604
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 19", confidence = "low", sample = { creatures = 178, sessions = 19 }, note = "9 idles in 1.51 h" }

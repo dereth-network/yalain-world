@@ -49,7 +49,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/items.toml           [[item_use]], [[book]], [[start_item]], [[interaction]]
 <pack>/server/examinations.toml    [[examination]]
 <pack>/server/puzzles.toml         [[object_states]], [[sequence]], [[lever]], [[offering]], [[guarded]], [[shifting]], [[wanting]]
-<pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]], [[defense]], [[round]]
+<pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]], [[ai_class]], [[defense]], [[round]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -1266,6 +1266,10 @@ seconds above 0 that one of its creatures holds the kingdom its template names (
 shown as its own: players of that kingdom may not harm it meanwhile, then it holds none and is told anew to the
 clients that know it (a template that names no kingdom holds none). A row gives at least one of these. A shooter with no rhythm shoots with a gap of 1.63 and a windup of 0.55.
 
+**`[[ai_class]]`**: what the world says of the creatures of an AI class, by its number (`class`, a value of their
+`AI_AISuperClass`): `idle_every`, the mean gap in seconds (above 0) between the idle behaviors one plays at rest, the
+gaps falling as chance spaces them. A class with no row idles every 450 s on average.
+
 **`[[defense]]`**: a device creatures come to attack while it stands, and what it leaves once it has stood long
 enough (a device an item's use sets down). A creature of the `device` template, however it comes into the world (a
 `[[death_spawn]]` an item's use names, a camp), fights nothing and keeps the row's attackers about it as a camp keeps
@@ -1336,6 +1340,11 @@ prov = { from = "authored", by = "you" }
 template = 0x4700163D
 players_kept_out = true
 kept_out_line = { table = 0x250025F5, string = 0x383D0528 }
+prov = { from = "authored", by = "you" }
+
+[[ai_class]]
+class = 0x06
+idle_every = 295
 prov = { from = "authored", by = "you" }
 
 [[defense]]
