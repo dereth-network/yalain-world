@@ -8,7 +8,7 @@
 class = 0x06
 idle_every = 295
 notice_idle = 0.06
-prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 06", confidence = "high", sample = { creatures = 1440, sessions = 93 }, note = "185 idles in 15.17 h", fields = { notice_idle = { from = "capture", evidence = "AC2-EVID-WDB-NOTICE-IDLE-2017", ref = "class 06", confidence = "medium", sample = { sessions = 93 }, note = "an idle within 1.5 s of the player coming within perception in 12 of 168 fights begun on their own, 1.7 by the resting rate" } } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-IDLE-RATE-2017", ref = "class 06", confidence = "high", sample = { creatures = 1440, sessions = 93 }, note = "185 idles in 15.17 h", fields = { notice_idle = { from = "capture", evidence = "AC2-EVID-WDB-NOTICE-IDLE-2017", ref = "class 06", confidence = "medium", sample = { sessions = 16 }, note = "an idle within 1.5 s of the player coming within perception in 12 of 168 fights begun on their own, 1.7 by the resting rate" } } }
 
 [[ai_class]]
 class = 0x1E
