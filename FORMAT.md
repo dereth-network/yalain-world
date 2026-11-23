@@ -178,6 +178,11 @@ Every row has `prov`; a field whose source differs from its row's says so in `pr
 | `derived` | computed by a listed rule | `rule` | `record` |
 | `authored` | written by a person | | `by`, `note` |
 
+A capture's `sample` counts what was measured. Its `sessions` are recordings: a recording that logged
+in again several times is one session, not one for each login. Its other counts are of distinct things
+of their kind: creatures, corpses, views, trips, lines and visits. Rows released before v0.41.0 may
+count each login of a recording as a session.
+
 ```toml
 [[camp]]
 key = "c-4586"
