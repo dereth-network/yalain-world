@@ -8,7 +8,7 @@
 - An undead spellcaster teaching its class now says two more of its lessons. New pack `archmage-lines/`.
 - Bluff can now make a creature lose interest in you. New pack `bluff-threat/`.
 - Some people now pause partway through their quest steps, as in 2017. New pack `step-pauses/`.
-- Drudges and a few other creatures now use their special attacks as often as in 2017. New pack `special-rates/`.
+- Creatures now use each of their special attacks about as often as in 2017. New pack `special-rates/`.
 
 ## v0.40.0
 

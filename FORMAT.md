@@ -49,7 +49,7 @@ world.lock                         ids given to authored symbols, kept across bu
 <pack>/server/items.toml           [[item_use]], [[book]], [[start_item]], [[interaction]]
 <pack>/server/examinations.toml    [[examination]]
 <pack>/server/puzzles.toml         [[object_states]], [[sequence]], [[lever]], [[offering]], [[guarded]], [[shifting]], [[wanting]]
-<pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]], [[ai_class]], [[defense]], [[round]]
+<pack>/server/creatures.toml       [[concealing]], [[npc_table]], [[friend_table]], [[creature]], [[ai_class]], [[defense]], [[round]], [[special]]
 ```
 
 Any file under `server/` may also hold `[[remove]]` rows. One file per landblock and per quest
@@ -1279,11 +1279,17 @@ clients that know it (a template that names no kingdom holds none). A row gives 
 **`[[ai_class]]`**: what the world says of the creatures of an AI class, by its number (`class`, a value of their
 `AI_AISuperClass`): `idle_every`, the mean gap in seconds (above 0) between the idle behaviors one plays at rest, the
 gaps falling as chance spaces them; `notice_idle`, the chance (from 0 to 1) that one plays an idle as it notices a
-player, going after the player once the idle is through; `specials`, three chances (each from 0 to 1) that one with
-no sub class (`AI_AISubClass`) uses one of its specials as it attacks, with one, two, and three or more at hand (in
-range, off their bar and paid for in vigor). A row gives at least one of the three. A class with no `idle_every` idles
-every 450 s on average, one with no `notice_idle` never plays an idle as it notices a player, and one with no
-`specials` keeps the server's own chances.
+player, going after the player once the idle is through; `special_term`, for one with no sub class (`AI_AISubClass`),
+how much likelier than a generic monster it is to use a special: a number from -20 to 20 added to each special's
+`[[special]]` weight on the logit scale. A row gives at least one of the three. A class with no `idle_every` idles every
+450 s on average, one with no `notice_idle` never plays an idle as it notices a player, and one with no `special_term`
+uses its specials as the generic monsters do.
+
+**`[[special]]`**: how often creatures use a special as they attack, by its `skill` (the skill's number): `weight`, the
+chance (from 0 to 1) that a generic monster (one with an `AI_AISubClass`) uses it at an attack with it at hand, which a
+creature of another class moves by its class's `special_term`. At each attack every special a creature has at hand (in
+range, off its bar and paid for in vigor) has its chance; none is used with the product of their misses, else one is
+drawn by chance. A skill with no row has the weight 0.087.
 
 **`[[defense]]`**: a device creatures come to attack while it stands, and what it leaves once it has stood long
 enough (a device an item's use sets down). A creature of the `device` template, however it comes into the world (a

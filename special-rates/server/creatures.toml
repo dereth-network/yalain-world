@@ -1,25 +1,770 @@
-# How often creatures of some AI classes (their template's AI superclass) with no sub class use one of their specials as
-# they attack, by how many are at hand (one, two, three or more), where 2017's attacks differ from the server's own
-# chances once the vigor a special takes is paid: every attack of a creature on a player or the world with a special at
-# hand by its range and its 40 s bar, by distinct event, replayed with the vigor the specials take. The drudges' class
-# is in the `idle-rates` pack's row. A class with no row keeps the server's own chances.
+# How often creatures use their specials as they attack, as 2017's recordings show them: each special's weight, its
+# chance at a generic monster's attack with it at hand, and for each older AI class (a template's AI superclass, its
+# creatures with no sub class) its term, how much likelier its creatures are, on the logit scale, than the generic
+# monsters. Fitted over every 2017 attack on a player or the world with a special at hand by range and 40 s bar and
+# paid for in vigor, by distinct event. The classes the `idle-rates` pack has a row for have their term there.
+
+[[special]]
+skill = 222
+weight = 0.06
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 222", confidence = "low", sample = { turns = 6, sessions = 2 }, note = "this server's fit: used in 1 of 6 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 228
+weight = 0.018
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 228", confidence = "low", sample = { turns = 7, sessions = 2 }, note = "this server's fit: used in 0 of 7 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 274
+weight = 0.024
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 274", confidence = "low", sample = { turns = 23, sessions = 1 }, note = "this server's fit: used in 0 of 23 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 359
+weight = 0.086
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 359", confidence = "low", sample = { turns = 19, sessions = 1 }, note = "this server's fit: used in 1 of 19 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 361
+weight = 0.093
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 361", confidence = "low", sample = { turns = 16, sessions = 1 }, note = "this server's fit: used in 1 of 16 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 368
+weight = 0.062
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 368", confidence = "low", sample = { turns = 4, sessions = 1 }, note = "this server's fit: used in 0 of 4 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 423
+weight = 0.437
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 423", confidence = "low", sample = { turns = 4, sessions = 2 }, note = "this server's fit: used in 3 of 4 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 425
+weight = 0.019
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 425", confidence = "low", sample = { turns = 8, sessions = 2 }, note = "this server's fit: used in 0 of 8 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 429
+weight = 0.019
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 429", confidence = "low", sample = { turns = 8, sessions = 2 }, note = "this server's fit: used in 0 of 8 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 430
+weight = 0.148
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 430", confidence = "low", sample = { turns = 4, sessions = 2 }, note = "this server's fit: used in 1 of 4 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 456
+weight = 0.04
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 456", confidence = "high", sample = { turns = 1832, sessions = 22 }, note = "this server's fit: used in 250 of 1832 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 457
+weight = 0.034
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 457", confidence = "high", sample = { turns = 1569, sessions = 21 }, note = "this server's fit: used in 184 of 1569 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 461
+weight = 0.005
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 461", confidence = "medium", sample = { turns = 254, sessions = 8 }, note = "this server's fit: used in 0 of 254 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 462
+weight = 0.35
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 462", confidence = "medium", sample = { turns = 254, sessions = 8 }, note = "this server's fit: used in 64 of 254 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 463
+weight = 0.057
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 463", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 0 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 464
+weight = 0.057
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 464", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 0 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 466
+weight = 0.429
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 466", confidence = "medium", sample = { turns = 399, sessions = 12 }, note = "this server's fit: used in 81 of 399 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 467
+weight = 0.409
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 467", confidence = "medium", sample = { turns = 399, sessions = 12 }, note = "this server's fit: used in 76 of 399 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 489
+weight = 0.057
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 489", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 0 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 490
+weight = 0.057
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 490", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 0 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 491
+weight = 0.057
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 491", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 0 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 492
+weight = 0.057
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 492", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 0 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 607
+weight = 0.07
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 607", confidence = "medium", sample = { turns = 131, sessions = 3 }, note = "this server's fit: used in 16 of 131 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 608
+weight = 0.103
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 608", confidence = "medium", sample = { turns = 179, sessions = 3 }, note = "this server's fit: used in 33 of 179 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 614
+weight = 0.059
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 614", confidence = "low", sample = { turns = 51, sessions = 4 }, note = "this server's fit: used in 4 of 51 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 615
+weight = 0.088
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 615", confidence = "low", sample = { turns = 51, sessions = 4 }, note = "this server's fit: used in 6 of 51 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 770
+weight = 0.218
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 770", confidence = "low", sample = { turns = 2, sessions = 1 }, note = "this server's fit: used in 1 of 2 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 775
+weight = 0.186
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 775", confidence = "low", sample = { turns = 5, sessions = 2 }, note = "this server's fit: used in 2 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 780
+weight = 0.188
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 780", confidence = "low", sample = { turns = 4, sessions = 1 }, note = "this server's fit: used in 1 of 4 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 781
+weight = 0.253
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 781", confidence = "low", sample = { turns = 1, sessions = 1 }, note = "this server's fit: used in 1 of 1 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 834
+weight = 0.028
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 834", confidence = "low", sample = { turns = 87, sessions = 3 }, note = "this server's fit: used in 2 of 87 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 889
+weight = 0.015
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 889", confidence = "low", sample = { turns = 97, sessions = 5 }, note = "this server's fit: used in 1 of 97 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 890
+weight = 0.007
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 890", confidence = "low", sample = { turns = 94, sessions = 5 }, note = "this server's fit: used in 0 of 94 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 891
+weight = 0.026
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 891", confidence = "low", sample = { turns = 91, sessions = 5 }, note = "this server's fit: used in 2 of 91 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 918
+weight = 0.151
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 918", confidence = "medium", sample = { turns = 566, sessions = 6 }, note = "this server's fit: used in 60 of 566 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 929
+weight = 0.057
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 929", confidence = "low", sample = { turns = 2, sessions = 1 }, note = "this server's fit: used in 0 of 2 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 932
+weight = 0.05
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 932", confidence = "low", sample = { turns = 3, sessions = 1 }, note = "this server's fit: used in 0 of 3 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 981
+weight = 0.045
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 981", confidence = "high", sample = { turns = 1279, sessions = 15 }, note = "this server's fit: used in 55 of 1279 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 990
+weight = 0.318
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 990", confidence = "low", sample = { turns = 5, sessions = 3 }, note = "this server's fit: used in 4 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 994
+weight = 0.271
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 994", confidence = "low", sample = { turns = 10, sessions = 4 }, note = "this server's fit: used in 5 of 10 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1013
+weight = 0.069
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1013", confidence = "low", sample = { turns = 1, sessions = 1 }, note = "this server's fit: used in 0 of 1 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1015
+weight = 0.117
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1015", confidence = "low", sample = { turns = 7, sessions = 2 }, note = "this server's fit: used in 2 of 7 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1016
+weight = 0.164
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1016", confidence = "low", sample = { turns = 15, sessions = 1 }, note = "this server's fit: used in 2 of 15 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1017
+weight = 0.09
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1017", confidence = "low", sample = { turns = 13, sessions = 1 }, note = "this server's fit: used in 1 of 13 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1019
+weight = 0.09
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1019", confidence = "low", sample = { turns = 13, sessions = 1 }, note = "this server's fit: used in 1 of 13 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1198
+weight = 0.011
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1198", confidence = "low", sample = { turns = 26, sessions = 1 }, note = "this server's fit: used in 1 of 26 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1199
+weight = 0.328
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1199", confidence = "medium", sample = { turns = 113, sessions = 4 }, note = "this server's fit: used in 60 of 113 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1200
+weight = 0.473
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1200", confidence = "medium", sample = { turns = 120, sessions = 4 }, note = "this server's fit: used in 82 of 120 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1213
+weight = 0.315
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1213", confidence = "low", sample = { turns = 40, sessions = 2 }, note = "this server's fit: used in 8 of 40 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1214
+weight = 0.315
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1214", confidence = "low", sample = { turns = 40, sessions = 2 }, note = "this server's fit: used in 8 of 40 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1215
+weight = 0.029
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1215", confidence = "low", sample = { turns = 13, sessions = 2 }, note = "this server's fit: used in 0 of 13 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1216
+weight = 0.196
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1216", confidence = "low", sample = { turns = 61, sessions = 2 }, note = "this server's fit: used in 10 of 61 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1217
+weight = 0.153
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1217", confidence = "low", sample = { turns = 40, sessions = 2 }, note = "this server's fit: used in 4 of 40 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1234
+weight = 0.069
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1234", confidence = "low", sample = { turns = 1, sessions = 1 }, note = "this server's fit: used in 0 of 1 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1235
+weight = 0.026
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1235", confidence = "low", sample = { turns = 18, sessions = 1 }, note = "this server's fit: used in 0 of 18 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1236
+weight = 0.144
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1236", confidence = "low", sample = { turns = 18, sessions = 1 }, note = "this server's fit: used in 2 of 18 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1237
+weight = 0.026
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1237", confidence = "low", sample = { turns = 18, sessions = 1 }, note = "this server's fit: used in 0 of 18 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1238
+weight = 0.026
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1238", confidence = "low", sample = { turns = 18, sessions = 1 }, note = "this server's fit: used in 0 of 18 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1239
+weight = 0.026
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1239", confidence = "low", sample = { turns = 18, sessions = 1 }, note = "this server's fit: used in 0 of 18 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1240
+weight = 0.026
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1240", confidence = "low", sample = { turns = 18, sessions = 1 }, note = "this server's fit: used in 0 of 18 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1241
+weight = 0.026
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1241", confidence = "low", sample = { turns = 18, sessions = 1 }, note = "this server's fit: used in 0 of 18 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1242
+weight = 0.087
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1242", confidence = "low", sample = { turns = 17, sessions = 1 }, note = "this server's fit: used in 1 of 17 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1243
+weight = 0.144
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1243", confidence = "low", sample = { turns = 18, sessions = 1 }, note = "this server's fit: used in 2 of 18 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1244
+weight = 0.069
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1244", confidence = "low", sample = { turns = 1, sessions = 1 }, note = "this server's fit: used in 0 of 1 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1245
+weight = 0.082
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1245", confidence = "low", sample = { turns = 18, sessions = 1 }, note = "this server's fit: used in 1 of 18 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1246
+weight = 0.062
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1246", confidence = "low", sample = { turns = 4, sessions = 1 }, note = "this server's fit: used in 0 of 4 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1247
+weight = 0.054
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1247", confidence = "low", sample = { turns = 6, sessions = 1 }, note = "this server's fit: used in 0 of 6 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1249
+weight = 0.108
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1249", confidence = "low", sample = { turns = 12, sessions = 1 }, note = "this server's fit: used in 3 of 12 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1250
+weight = 0.53
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1250", confidence = "low", sample = { turns = 6, sessions = 1 }, note = "this server's fit: used in 2 of 6 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1251
+weight = 0.255
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1251", confidence = "low", sample = { turns = 20, sessions = 2 }, note = "this server's fit: used in 6 of 20 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1252
+weight = 0.062
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1252", confidence = "low", sample = { turns = 4, sessions = 1 }, note = "this server's fit: used in 0 of 4 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1253
+weight = 0.031
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1253", confidence = "low", sample = { turns = 19, sessions = 2 }, note = "this server's fit: used in 1 of 19 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1254
+weight = 0.32
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1254", confidence = "low", sample = { turns = 4, sessions = 1 }, note = "this server's fit: used in 1 of 4 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1255
+weight = 0.054
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1255", confidence = "low", sample = { turns = 6, sessions = 1 }, note = "this server's fit: used in 0 of 6 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1256
+weight = 0.256
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1256", confidence = "low", sample = { turns = 6, sessions = 1 }, note = "this server's fit: used in 1 of 6 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1288
+weight = 0.233
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1288", confidence = "low", sample = { turns = 3, sessions = 1 }, note = "this server's fit: used in 1 of 3 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1289
+weight = 0.042
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1289", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 0 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1297
+weight = 0.057
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1297", confidence = "low", sample = { turns = 2, sessions = 1 }, note = "this server's fit: used in 0 of 2 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1298
+weight = 0.456
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1298", confidence = "low", sample = { turns = 1, sessions = 1 }, note = "this server's fit: used in 1 of 1 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1350
+weight = 0.105
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1350", confidence = "low", sample = { turns = 19, sessions = 1 }, note = "this server's fit: used in 4 of 19 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1351
+weight = 0.105
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1351", confidence = "low", sample = { turns = 19, sessions = 1 }, note = "this server's fit: used in 4 of 19 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1352
+weight = 0.074
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1352", confidence = "low", sample = { turns = 19, sessions = 1 }, note = "this server's fit: used in 3 of 19 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1353
+weight = 0.137
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1353", confidence = "low", sample = { turns = 11, sessions = 1 }, note = "this server's fit: used in 4 of 11 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1354
+weight = 0.075
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1354", confidence = "low", sample = { turns = 19, sessions = 1 }, note = "this server's fit: used in 4 of 19 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1356
+weight = 0.054
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1356", confidence = "low", sample = { turns = 12, sessions = 1 }, note = "this server's fit: used in 2 of 12 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1357
+weight = 0.081
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1357", confidence = "low", sample = { turns = 12, sessions = 1 }, note = "this server's fit: used in 3 of 12 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1359
+weight = 0.078
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1359", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 1 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1360
+weight = 0.078
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1360", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 1 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1361
+weight = 0.078
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1361", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 1 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1362
+weight = 0.1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1362", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 1 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1363
+weight = 0.028
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1363", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 0 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1364
+weight = 0.511
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1364", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 4 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1365
+weight = 0.028
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1365", confidence = "low", sample = { turns = 5, sessions = 1 }, note = "this server's fit: used in 0 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1426
+weight = 0.047
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1426", confidence = "low", sample = { turns = 91, sessions = 3 }, note = "this server's fit: used in 4 of 91 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1794
+weight = 0.087
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1794", confidence = "low", sample = { turns = 71, sessions = 1 }, note = "this server's fit: used in 6 of 71 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1795
+weight = 0.101
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1795", confidence = "low", sample = { turns = 42, sessions = 3 }, note = "this server's fit: used in 4 of 42 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1797
+weight = 0.063
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1797", confidence = "low", sample = { turns = 53, sessions = 3 }, note = "this server's fit: used in 3 of 53 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1800
+weight = 0.077
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1800", confidence = "medium", sample = { turns = 310, sessions = 15 }, note = "this server's fit: used in 42 of 310 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1801
+weight = 0.098
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1801", confidence = "medium", sample = { turns = 158, sessions = 3 }, note = "this server's fit: used in 15 of 158 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1819
+weight = 0.095
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1819", confidence = "low", sample = { turns = 44, sessions = 3 }, note = "this server's fit: used in 4 of 44 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1820
+weight = 0.107
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1820", confidence = "medium", sample = { turns = 945, sessions = 28 }, note = "this server's fit: used in 97 of 945 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1821
+weight = 0.065
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1821", confidence = "low", sample = { turns = 33, sessions = 2 }, note = "this server's fit: used in 2 of 33 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1822
+weight = 0.06
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1822", confidence = "high", sample = { turns = 4142, sessions = 34 }, note = "this server's fit: used in 255 of 4142 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1823
+weight = 0.085
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1823", confidence = "medium", sample = { turns = 737, sessions = 27 }, note = "this server's fit: used in 73 of 737 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1824
+weight = 0.097
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1824", confidence = "medium", sample = { turns = 295, sessions = 24 }, note = "this server's fit: used in 27 of 295 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1825
+weight = 0.049
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1825", confidence = "high", sample = { turns = 3656, sessions = 62 }, note = "this server's fit: used in 207 of 3656 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1826
+weight = 0.087
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1826", confidence = "high", sample = { turns = 8951, sessions = 67 }, note = "this server's fit: used in 733 of 8951 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1827
+weight = 0.041
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1827", confidence = "high", sample = { turns = 2555, sessions = 37 }, note = "this server's fit: used in 100 of 2555 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1828
+weight = 0.042
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1828", confidence = "high", sample = { turns = 5724, sessions = 51 }, note = "this server's fit: used in 232 of 5724 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1829
+weight = 0.043
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1829", confidence = "medium", sample = { turns = 968, sessions = 33 }, note = "this server's fit: used in 41 of 968 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1830
+weight = 0.096
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1830", confidence = "high", sample = { turns = 2532, sessions = 65 }, note = "this server's fit: used in 230 of 2532 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1831
+weight = 0.074
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1831", confidence = "low", sample = { turns = 84, sessions = 12 }, note = "this server's fit: used in 6 of 84 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1832
+weight = 0.065
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1832", confidence = "high", sample = { turns = 1410, sessions = 36 }, note = "this server's fit: used in 86 of 1410 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1833
+weight = 0.088
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1833", confidence = "high", sample = { turns = 2046, sessions = 29 }, note = "this server's fit: used in 169 of 2046 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1834
+weight = 0.082
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1834", confidence = "high", sample = { turns = 1083, sessions = 31 }, note = "this server's fit: used in 103 of 1083 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1835
+weight = 0.072
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1835", confidence = "high", sample = { turns = 1449, sessions = 36 }, note = "this server's fit: used in 81 of 1449 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1836
+weight = 0.467
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1836", confidence = "low", sample = { turns = 5, sessions = 2 }, note = "this server's fit: used in 2 of 5 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1837
+weight = 0.093
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1837", confidence = "medium", sample = { turns = 855, sessions = 45 }, note = "this server's fit: used in 76 of 855 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1838
+weight = 0.067
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1838", confidence = "high", sample = { turns = 5495, sessions = 43 }, note = "this server's fit: used in 362 of 5495 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1839
+weight = 0.076
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1839", confidence = "high", sample = { turns = 1620, sessions = 52 }, note = "this server's fit: used in 147 of 1620 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1843
+weight = 0.081
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1843", confidence = "high", sample = { turns = 1016, sessions = 15 }, note = "this server's fit: used in 80 of 1016 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1849
+weight = 0.093
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1849", confidence = "low", sample = { turns = 11, sessions = 1 }, note = "this server's fit: used in 1 of 11 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1851
+weight = 0.052
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1851", confidence = "medium", sample = { turns = 912, sessions = 13 }, note = "this server's fit: used in 102 of 912 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1852
+weight = 0.217
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1852", confidence = "medium", sample = { turns = 940, sessions = 41 }, note = "this server's fit: used in 230 of 940 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1853
+weight = 0.097
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1853", confidence = "medium", sample = { turns = 829, sessions = 23 }, note = "this server's fit: used in 77 of 829 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1856
+weight = 0.381
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1856", confidence = "low", sample = { turns = 52, sessions = 7 }, note = "this server's fit: used in 18 of 52 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1857
+weight = 0.101
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1857", confidence = "high", sample = { turns = 3358, sessions = 33 }, note = "this server's fit: used in 319 of 3358 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1858
+weight = 0.116
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1858", confidence = "high", sample = { turns = 1323, sessions = 33 }, note = "this server's fit: used in 151 of 1323 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1859
+weight = 0.108
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1859", confidence = "medium", sample = { turns = 520, sessions = 26 }, note = "this server's fit: used in 120 of 520 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1860
+weight = 0.1
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1860", confidence = "high", sample = { turns = 2483, sessions = 44 }, note = "this server's fit: used in 237 of 2483 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1862
+weight = 0.275
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1862", confidence = "low", sample = { turns = 15, sessions = 1 }, note = "this server's fit: used in 4 of 15 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1863
+weight = 0.112
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1863", confidence = "high", sample = { turns = 2844, sessions = 59 }, note = "this server's fit: used in 439 of 2844 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1864
+weight = 0.074
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1864", confidence = "high", sample = { turns = 1182, sessions = 25 }, note = "this server's fit: used in 84 of 1182 attacks with it at hand; its chance at a generic monster" }
+
+[[special]]
+skill = 1867
+weight = 0.087
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "skill 1867", confidence = "high", sample = { turns = 4774, sessions = 63 }, note = "this server's fit: used in 471 of 4774 attacks with it at hand; its chance at a generic monster" }
 
 [[ai_class]]
-class = 0x1C
-specials = [0.332, 0.223, 0.3]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 1C", confidence = "medium", sample = { turns = 267, sessions = 12 }, note = "this server's fit: with one special at hand (Disease) 89 of 267 attacks took it, 0.333 (0.280-0.392), replayed at 0.332 as 0.331; two and three or more the server's own 0.223 and 0.3" }
+class = 0x04
+special_term = 0.49
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 04", confidence = "medium", sample = { turns = 439, sessions = 15 }, note = "this server's fit: its creatures took a special in 124 of 439 attacks with one at hand; the term against the generic monsters" }
 
 [[ai_class]]
-class = 0x20
-specials = [0.067, 0.223, 0.3]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 20", confidence = "medium", sample = { turns = 359, sessions = 6 }, note = "this server's fit: with one special at hand (one that lowers attack) 24 of 359 attacks took it, 0.067 (0.045-0.098), replayed at 0.067 as 0.066; two and three or more the server's own 0.223 and 0.3" }
+class = 0x05
+special_term = -0.48
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 05", confidence = "medium", sample = { turns = 254, sessions = 8 }, note = "this server's fit: its creatures took a special in 64 of 254 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x08
+special_term = -0.14
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 08", confidence = "low", sample = { turns = 24, sessions = 1 }, note = "this server's fit: its creatures took a special in 14 of 24 attacks with one at hand; the term against the generic monsters" }
 
 [[ai_class]]
 class = 0x09
-specials = [0.103, 0.223, 0.3]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 09", confidence = "medium", sample = { turns = 669, sessions = 14 }, note = "this server's fit: with one special at hand (Energy) 71 of 669 attacks took it, 0.106 (0.085-0.132), replayed at 0.103 as 0.103; two and three or more the server's own 0.223 and 0.3" }
+special_term = 0.28
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 09", confidence = "medium", sample = { turns = 669, sessions = 14 }, note = "this server's fit: its creatures took a special in 71 of 669 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x0A
+special_term = -1.49
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 0A", confidence = "medium", sample = { turns = 121, sessions = 8 }, note = "this server's fit: its creatures took a special in 9 of 121 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x0D
+special_term = 0.74
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 0D", confidence = "medium", sample = { turns = 179, sessions = 3 }, note = "this server's fit: its creatures took a special in 49 of 179 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x0F
+special_term = 0.79
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 0F", confidence = "low", sample = { turns = 38, sessions = 4 }, note = "this server's fit: its creatures took a special in 8 of 38 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x1C
+special_term = 1.42
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 1C", confidence = "medium", sample = { turns = 267, sessions = 12 }, note = "this server's fit: its creatures took a special in 89 of 267 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x20
+special_term = -0.27
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 20", confidence = "medium", sample = { turns = 371, sessions = 6 }, note = "this server's fit: its creatures took a special in 26 of 371 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x28
+special_term = 4.53
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 28", confidence = "low", sample = { turns = 53, sessions = 4 }, note = "this server's fit: its creatures took a special in 52 of 53 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x30
+special_term = 0.61
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 30", confidence = "medium", sample = { turns = 333, sessions = 19 }, note = "this server's fit: its creatures took a special in 44 of 333 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x31
+special_term = 1.54
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 31", confidence = "low", sample = { turns = 40, sessions = 3 }, note = "this server's fit: its creatures took a special in 15 of 40 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x34
+special_term = 1.84
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 34", confidence = "low", sample = { turns = 22, sessions = 2 }, note = "this server's fit: its creatures took a special in 8 of 22 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x35
+special_term = 0.86
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 35", confidence = "medium", sample = { turns = 552, sessions = 13 }, note = "this server's fit: its creatures took a special in 113 of 552 attacks with one at hand; the term against the generic monsters" }
 
 [[ai_class]]
 class = 0x38
-specials = [0.136, 0.0, 0.3]
-prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 38", confidence = "low", sample = { turns = 312, sessions = 3 }, note = "this server's fit: with its two specials at hand none of 312 attacks took one (0.000-0.012), all creatures of one template; one and three or more the server's own 0.136 and 0.3" }
+special_term = 0.71
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 38", confidence = "medium", sample = { turns = 840, sessions = 5 }, note = "this server's fit: its creatures took a special in 202 of 840 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x47
+special_term = 2.51
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 47", confidence = "medium", sample = { turns = 147, sessions = 4 }, note = "this server's fit: its creatures took a special in 143 of 147 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x4D
+special_term = 1.49
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 4D", confidence = "low", sample = { turns = 89, sessions = 7 }, note = "this server's fit: its creatures took a special in 61 of 89 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x55
+special_term = 1.81
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 55", confidence = "low", sample = { turns = 42, sessions = 6 }, note = "this server's fit: its creatures took a special in 17 of 42 attacks with one at hand; the term against the generic monsters" }
+
+[[ai_class]]
+class = 0x77
+special_term = 2.14
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 77", confidence = "low", sample = { turns = 6, sessions = 1 }, note = "this server's fit: its creatures took a special in 2 of 6 attacks with one at hand; the term against the generic monsters" }
