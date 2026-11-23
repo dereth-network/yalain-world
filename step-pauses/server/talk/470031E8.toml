@@ -1,0 +1,15 @@
+# The pauses people make between the parts of a step, as the January 2017 recordings show them.
+
+[[talk]]
+key = "t-31e8-a3030c8e"
+who = 0x470031E8
+line = { table = 0x25002A35, string = 0xA3030C8E }
+line_name = "ID_DonePart2"
+role = "complete"
+how = "tell"
+when = "use"
+quest = 0x40000018
+update = "complete"
+order = 1
+after_update = 1.5
+prov = { from = "capture", evidence = "AC2-EVID-WDB-TALK-2017", ref = "c:c4654194", confidence = "high", sample = { lines = 7, sessions = 7 }, fields = { after_update = { from = "capture", evidence = "AC2-EVID-WDB-STEP-PAUSES-2017", ref = "c:c1f36bcb", confidence = "high", sample = { lines = 7, sessions = 7 }, note = "this line came 1.50 to 1.56 s after the search was done, 7 of 7" }, role = { from = "derived", rule = "talk-token-role" }, line_name = { from = "derived", rule = "talk-token-role" } } }

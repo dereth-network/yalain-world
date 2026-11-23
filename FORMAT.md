@@ -368,7 +368,7 @@ Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out), `effects_la
 quest's update is told before the effects and their text, not after them), `effects_quiet` (true: the effects tell
 none of their own lines, as a recipe or a skill they grant would, and the `text` is still told; only with
 `effects`), `wants` (for a give, exactly how many of the item it wants: any other count is refused and handed
-back, with the person's `refuse-give` line naming the quest and the `item` if it has one, else its plain refusal; left out, it runs for whatever is given and takes it all), `transforms` (a give's step that makes its player a hero: `{ seconds, fx, behavior, text, name }`, below), `chance` (above 0 and at most 1: the chance it runs each time it may, drawn once it may; one that does not come up is passed over for the rest of that moment, as if it could not run; left out, every time), `permissions` (`{ grant, revoke }`, either or both, no bit in both: bits added to and taken from the permissions the player always lets through, after its effects, every client that knows the player told; `grant = 0xC0000` lets players of other kingdoms who hold it too fight the player anywhere, peace areas included).
+back, with the person's `refuse-give` line naming the quest and the `item` if it has one, else its plain refusal; left out, it runs for whatever is given and takes it all), `transforms` (a give's step that makes its player a hero: `{ seconds, fx, behavior, text, name }`, below), `chance` (above 0 and at most 1: the chance it runs each time it may, drawn once it may; one that does not come up is passed over for the rest of that moment, as if it could not run; left out, every time), `pause` (seconds, above 0 and at most 60: the step says and does nothing until so long after its trigger, then all of it; meanwhile no other step of its quest runs for the player, and one who leaves the world has it done then; a step with `to`, or one run by a kill, a hurt or a take, takes none), `permissions` (`{ grant, revoke }`, either or both, no bit in both: bits added to and taken from the permissions the player always lets through, after its effects, every client that knows the player told; `grant = 0xC0000` lets players of other kingdoms who hold it too fight the player anywhere, peace areas included).
 
 | `trigger` | moves the quest when the player |
 |---|---|
@@ -449,6 +449,8 @@ lines of its rows whose moment and quest match, picking at random among several.
 A `remind` line names its `quest` and no `update`: it is said at a plain use with that quest under way, at the `phase` it names if it names one.
 | `item` | | the item given, for a line said when one is: at a give it is said of that item and no other, before the person's plain refusal |
 | `order` | | its place in a speech of several lines (0 first) |
+| `pause` | | for a line said with a quest update: seconds, above 0 and at most 60, that the rest of its step (its later lines, its items, its update) waits after it; the item given such a step is kept at once |
+| `after_update` | | for a line said with a quest update: seconds, above 0 and at most 60, after that update that it is said, holding nothing; never with `pause` |
 
 A person with a `teleport` line said at a give sends the holder of a surveyor's map given it to the place that names
 the map's template (`[[place]]` `named_by`), handing the map back: a map of its own land (the land its template's table

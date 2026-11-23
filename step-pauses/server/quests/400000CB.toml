@@ -1,0 +1,13 @@
+# The pauses people make between the parts of a step, as the January 2017 recordings show them.
+
+[[step]]
+key = "s1"
+quest = 0x400000CB
+needs = 0
+trigger = { use = 0x47002FBC }
+tell = { table = 0x2500291D, string = 0xA3030C8E }
+update = "bestow"
+xp = 0
+requires = [{ quest = 0x400000C7, done = true }]
+pause = 1.0
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:3a769fcf", confidence = "medium", sample = { sessions = 2 }, fields = { pause = { from = "capture", evidence = "AC2-EVID-WDB-STEP-PAUSES-2017", ref = "c:3a769fcf", confidence = "medium", sample = { sessions = 2 }, note = "the Miller's next quest came 1.03 s after the one before it was done, 2 of 2" }, requires = { from = "authored", by = "Dereth Network", note = "2017: given as the quest before it ended (2 of 2 sessions), and that one given first to a player who held neither (2 of 2); the wiki: the saga sends the player on once it is done", confidence = "medium" } } }
