@@ -1,0 +1,25 @@
+# How often creatures of some AI classes (their template's AI superclass) with no sub class use one of their specials as
+# they attack, by how many are at hand (one, two, three or more), where 2017's attacks differ from the server's own
+# chances once the vigor a special takes is paid: every attack of a creature on a player or the world with a special at
+# hand by its range and its 40 s bar, by distinct event, replayed with the vigor the specials take. The drudges' class
+# is in the `idle-rates` pack's row. A class with no row keeps the server's own chances.
+
+[[ai_class]]
+class = 0x1C
+specials = [0.332, 0.223, 0.3]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 1C", confidence = "medium", sample = { turns = 267, sessions = 12 }, note = "this server's fit: with one special at hand (Disease) 89 of 267 attacks took it, 0.333 (0.280-0.392), replayed at 0.332 as 0.331; two and three or more the server's own 0.223 and 0.3" }
+
+[[ai_class]]
+class = 0x20
+specials = [0.067, 0.223, 0.3]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 20", confidence = "medium", sample = { turns = 359, sessions = 6 }, note = "this server's fit: with one special at hand (one that lowers attack) 24 of 359 attacks took it, 0.067 (0.045-0.098), replayed at 0.067 as 0.066; two and three or more the server's own 0.223 and 0.3" }
+
+[[ai_class]]
+class = 0x09
+specials = [0.103, 0.223, 0.3]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 09", confidence = "medium", sample = { turns = 669, sessions = 14 }, note = "this server's fit: with one special at hand (Energy) 71 of 669 attacks took it, 0.106 (0.085-0.132), replayed at 0.103 as 0.103; two and three or more the server's own 0.223 and 0.3" }
+
+[[ai_class]]
+class = 0x38
+specials = [0.136, 0.0, 0.3]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-SPECIAL-RATES-2017", ref = "class 38", confidence = "low", sample = { turns = 312, sessions = 3 }, note = "this server's fit: with its two specials at hand none of 312 attacks took one (0.000-0.012), all creatures of one template; one and three or more the server's own 0.136 and 0.3" }

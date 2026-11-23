@@ -173,14 +173,14 @@ Every row has `prov`; a field whose source differs from its row's says so in `pr
 
 | `from` | means | required | optional |
 |---|---|---|---|
-| `capture` | measured from recordings of the live servers | `evidence` (an `AC2-EVID-...` handle), `ref` (opaque), `confidence` (`high`, `medium`, `low`) | `sample`: `sessions`, `creatures`, `corpses`, `views`, `trips`, `lines`, `visits` |
+| `capture` | measured from recordings of the live servers | `evidence` (an `AC2-EVID-...` handle), `ref` (opaque), `confidence` (`high`, `medium`, `low`) | `sample`: `sessions`, `creatures`, `corpses`, `views`, `trips`, `lines`, `visits`, `turns` |
 | `dat` | a record of the install | `record` | |
 | `derived` | computed by a listed rule | `rule` | `record` |
 | `authored` | written by a person | | `by`, `note` |
 
 A capture's `sample` counts what was measured. Its `sessions` are recordings: a recording that logged
 in again several times is one session, not one for each login. Its other counts are of distinct things
-of their kind: creatures, corpses, views, trips, lines and visits. Rows released before v0.41.0 may
+of their kind: creatures, corpses, views, trips, lines, visits and turns. Rows released before v0.41.0 may
 count each login of a recording as a session.
 
 ```toml
@@ -1279,8 +1279,11 @@ clients that know it (a template that names no kingdom holds none). A row gives 
 **`[[ai_class]]`**: what the world says of the creatures of an AI class, by its number (`class`, a value of their
 `AI_AISuperClass`): `idle_every`, the mean gap in seconds (above 0) between the idle behaviors one plays at rest, the
 gaps falling as chance spaces them; `notice_idle`, the chance (from 0 to 1) that one plays an idle as it notices a
-player, going after the player once the idle is through. A row gives at least one of the two. A class with no
-`idle_every` idles every 450 s on average, and one with no `notice_idle` never plays an idle as it notices a player.
+player, going after the player once the idle is through; `specials`, three chances (each from 0 to 1) that one with
+no sub class (`AI_AISubClass`) uses one of its specials as it attacks, with one, two, and three or more at hand (in
+range, off their bar and paid for in vigor). A row gives at least one of the three. A class with no `idle_every` idles
+every 450 s on average, one with no `notice_idle` never plays an idle as it notices a player, and one with no
+`specials` keeps the server's own chances.
 
 **`[[defense]]`**: a device creatures come to attack while it stands, and what it leaves once it has stood long
 enough (a device an item's use sets down). A creature of the `device` template, however it comes into the world (a
