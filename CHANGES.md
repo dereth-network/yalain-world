@@ -1,6 +1,6 @@
 # Changes
 
-## Unreleased
+## v0.41.0
 
 - The two fast Shreth patrol guards now jog their rounds, as in 2017. Pack `patrol-routes/`.
 - Creatures now play their idle animations as often as their kind did in 2017. New pack `idle-rates/`.
