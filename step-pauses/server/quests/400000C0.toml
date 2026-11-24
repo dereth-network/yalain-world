@@ -8,7 +8,8 @@ trigger = { done = 0x40000016 }
 update = "bestow"
 xp = 0
 pause = 1.5
-prov = { from = "capture", evidence = "AC2-EVID-WDB-NEW-PLAYERS-2017", ref = "c:e50aea9b", confidence = "high", sample = { sessions = 4 }, fields = { pause = { from = "capture", evidence = "AC2-EVID-WDB-STEP-PAUSES-2017", ref = "c:e50aea9b", confidence = "high", sample = { sessions = 4 }, note = "the next quest was given or refused 1.50 to 1.67 s after the search was done, 4 of 4" } } }
+told_refused = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-NEW-PLAYERS-2017", ref = "c:e50aea9b", confidence = "high", sample = { sessions = 4 }, fields = { pause = { from = "capture", evidence = "AC2-EVID-WDB-STEP-PAUSES-2017", ref = "c:e50aea9b", confidence = "high", sample = { sessions = 4 }, note = "the next quest was given or refused 1.50 to 1.67 s after the search was done, 4 of 4" }, told_refused = { from = "capture", evidence = "AC2-EVID-WDB-TOLD-REFUSED-2017", ref = "c:49dd9721", confidence = "high", sample = { sessions = 2 }, note = "with the quest held or waiting, the next quest's giving was refused and told so, under way or waiting, in the explorer's line's tick, 2 of 2" } } }
 
 [[step]]
 key = "s2"
@@ -18,7 +19,8 @@ trigger = { done = 0x40000017 }
 update = "bestow"
 xp = 0
 pause = 1.5
-prov = { from = "capture", evidence = "AC2-EVID-WDB-NEW-PLAYERS-2017", ref = "c:daef2126", confidence = "high", sample = { sessions = 7 }, fields = { pause = { from = "capture", evidence = "AC2-EVID-WDB-STEP-PAUSES-2017", ref = "c:daef2126", confidence = "high", sample = { sessions = 7 }, note = "the next quest was given or refused 1.49 to 1.61 s after the search was done, 7 of 7" } } }
+told_refused = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-NEW-PLAYERS-2017", ref = "c:daef2126", confidence = "high", sample = { sessions = 7 }, fields = { pause = { from = "capture", evidence = "AC2-EVID-WDB-STEP-PAUSES-2017", ref = "c:daef2126", confidence = "high", sample = { sessions = 7 }, note = "the next quest was given or refused 1.49 to 1.61 s after the search was done, 7 of 7" }, told_refused = { from = "capture", evidence = "AC2-EVID-WDB-TOLD-REFUSED-2017", ref = "c:daef2126", confidence = "high", sample = { sessions = 3 }, note = "with the quest held or waiting, the next quest's giving was refused and told so, under way or waiting, in the explorer's line's tick, 3 of 3" } } }
 
 [[step]]
 key = "s3"
@@ -28,4 +30,5 @@ trigger = { done = 0x40000018 }
 update = "bestow"
 xp = 0
 pause = 1.5
-prov = { from = "capture", evidence = "AC2-EVID-WDB-NEW-PLAYERS-2017", ref = "c:d07e9e75", confidence = "high", sample = { sessions = 7 }, fields = { pause = { from = "capture", evidence = "AC2-EVID-WDB-STEP-PAUSES-2017", ref = "c:d07e9e75", confidence = "high", sample = { sessions = 7 }, note = "the next quest was given or refused 1.50 to 1.56 s after the search was done, 7 of 7" } } }
+told_refused = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-NEW-PLAYERS-2017", ref = "c:d07e9e75", confidence = "high", sample = { sessions = 7 }, fields = { pause = { from = "capture", evidence = "AC2-EVID-WDB-STEP-PAUSES-2017", ref = "c:d07e9e75", confidence = "high", sample = { sessions = 7 }, note = "the next quest was given or refused 1.50 to 1.56 s after the search was done, 7 of 7" }, told_refused = { from = "capture", evidence = "AC2-EVID-WDB-TOLD-REFUSED-2017", ref = "c:8c92f9d4", confidence = "high", sample = { sessions = 4 }, note = "with the quest held or waiting, the next quest's giving was refused and told so, under way or waiting, in the explorer's line's tick, 4 of 4" } } }

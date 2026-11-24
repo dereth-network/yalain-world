@@ -367,7 +367,9 @@ picked by weight each time it runs: at least two `{ template, weight }`, each a 
 Lugian, 4 Tumerok, 8 Drudge, 16 Empyrean; every race when left out), `effects_last` (true: the
 quest's update is told before the effects and their text, not after them), `effects_quiet` (true: the effects tell
 none of their own lines, as a recipe or a skill they grant would, and the `text` is still told; only with
-`effects`), `wants` (for a give, exactly how many of the item it wants: any other count is refused and handed
+`effects`), `told_refused` (true, on a step that gives its quest: when the quest is under way or its wait to be taken
+again is not over, the step still says its line once its pause is over, and the player is told the giving was refused
+and why), `wants` (for a give, exactly how many of the item it wants: any other count is refused and handed
 back, with the person's `refuse-give` line naming the quest and the `item` if it has one, else its plain refusal; left out, it runs for whatever is given and takes it all), `transforms` (a give's step that makes its player a hero: `{ seconds, fx, behavior, text, name }`, below), `chance` (above 0 and at most 1: the chance it runs each time it may, drawn once it may; one that does not come up is passed over for the rest of that moment, as if it could not run; left out, every time), `pause` (seconds, above 0 and at most 60: the step says and does nothing until so long after its trigger, then all of it; meanwhile no other step of its quest runs for the player, and one who leaves the world has it done then; a step with `to`, or one run by a kill, a hurt or a take, takes none), `permissions` (`{ grant, revoke }`, either or both, no bit in both: bits added to and taken from the permissions the player always lets through, after its effects, every client that knows the player told; `grant = 0xC0000` lets players of other kingdoms who hold it too fight the player anywhere, peace areas included).
 
 | `trigger` | moves the quest when the player |
