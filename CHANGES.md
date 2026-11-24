@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- Darkenfowl and common vermin no longer shoot, as in 2017. New pack `npc-table-skips/`.
+
 ## v0.41.0
 
 - The two fast Shreth patrol guards now jog their rounds, as in 2017. Pack `patrol-routes/`.

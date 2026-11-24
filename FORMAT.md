@@ -1255,7 +1255,10 @@ attack a player first). Where a player's effects give both for a creature, hate 
 an effect for two classes has a row for each.
 
 **`[[npc_table]]`**: what the world says of the creatures of a behavior table, by its `name` (the install's table,
-their `AI_NPCTable`): `heals_kin` (true: a healer of the table heals its badly hurt kin as well as itself).
+their `AI_NPCTable`): `heals_kin` (true: a healer of the table heals its badly hurt kin as well as itself) and `skips`
+(the attack skills, by number, its creatures never use though their templates hold them; a skipped basic missile never
+makes one shoot). A row gives at least one of the two; rows of one table in several packs merge field by field, each
+field keeping the provenance of the row it came from.
 
 **`[[friend_table]]`**: what the world says of the creatures of a friend table, by its number (`table`, their
 `AI_LoveTable`): `attacks_first` (false: they never attack a player first, only one that attacks them or that a
