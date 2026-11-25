@@ -6,6 +6,6 @@ cell = 0x557A002B
 at = [105.4, 44.4, 162.28]
 radius = 5.0
 population = 1
-regen = 180.0
-spawns = [{ template = 0x47002D8D, weight = 2 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+regen = 192.0
+spawns = [{ template = 0x47002660, weight = 4 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

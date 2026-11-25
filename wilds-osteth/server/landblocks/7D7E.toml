@@ -2,10 +2,12 @@
 
 [[camp]]
 key = "w-7d7e"
-cell = 0x7D7E0027
-at = [87.2, 135.1, 159.8]
-radius = 5.0
+cell = 0x7D7E0037
+at = [127.2, 137.2, 175.5]
+radius = 12.7
 population = 2
 regen = 180.0
-spawns = [{ template = 0x47002C0A, weight = 1 }, { template = 0x47002C14, weight = 1 }]
+profile = 81
+profile_name = "GP_CampGruttMorbific"
+spawns = [{ template = 0x470025CF, weight = 2 }, { template = 0x470025CA, weight = 2 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 7 blocks away in the nearest land with any; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

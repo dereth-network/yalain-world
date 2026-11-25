@@ -2,10 +2,12 @@
 
 [[camp]]
 key = "w-e080"
-cell = 0xE0800015
-at = [46.0, 97.6, 78.95]
-radius = 34.7
-population = 2
+cell = 0xE080000E
+at = [20.3, 110.9, 77.86]
+radius = 5.0
+population = 1
 regen = 180.0
-spawns = [{ template = 0x470022B5, weight = 8 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 10 blocks away; no recording reached this block", confidence = "low" }
+profile = 347
+profile_name = "GP_CampSclavusSata"
+spawns = [{ template = 0x47002A21, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 2 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

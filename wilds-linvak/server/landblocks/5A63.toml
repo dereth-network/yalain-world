@@ -7,7 +7,5 @@ at = [68.8, 17.7, 201.71]
 radius = 5.0
 population = 1
 regen = 180.0
-profile = 15
-profile_name = "GP_CampBanderlingBouncer"
-spawns = [{ template = 0x470021EF, weight = 2 }]
+spawns = [{ template = 0x4700243B, weight = 2 }, { template = 0x4700243E, weight = 1 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

@@ -6,8 +6,8 @@ cell = 0x948E0016
 at = [55.9, 105.5, 196.83]
 radius = 5.0
 population = 1
-regen = 60.0
-profile = 359
-profile_name = "GP_CampLostWishThornlingRingleader"
-spawns = [{ template = 0x47002C0E, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 2 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-generator" } } }
+regen = 180.0
+profile = 362
+profile_name = "GP_CampThornlingHarrower"
+spawns = [{ template = 0x47002C0A, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 2 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

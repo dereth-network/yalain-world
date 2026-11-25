@@ -5,7 +5,9 @@ key = "w-bb82"
 cell = 0xBB82001F
 at = [63.7, 129.0, 120.4]
 radius = 5.0
-population = 1
+population = 2
 regen = 180.0
-spawns = [{ template = 0x47002BBD, weight = 1 }]
+profile = 345
+profile_name = "GP_CampSclavusEssa"
+spawns = [{ template = 0x47002A1B, weight = 2 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

@@ -7,5 +7,7 @@ at = [112.2, 90.6, 162.34]
 radius = 5.0
 population = 1
 regen = 180.0
-spawns = [{ template = 0x470029C6, weight = 1 }]
+profile = 361
+profile_name = "GP_CampThornlingCrippler"
+spawns = [{ template = 0x47002C07, weight = 1 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 2 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

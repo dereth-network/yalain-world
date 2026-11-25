@@ -5,9 +5,9 @@ key = "w-6070"
 cell = 0x6070000F
 at = [35.8, 125.5, 256.2]
 radius = 5.0
-population = 1
+population = 2
 regen = 180.0
-profile = 62
-profile_name = "GP_CampFlayerWind"
-spawns = [{ template = 0x47002441, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+profile = 16
+profile_name = "GP_CampBanderlingCrasher"
+spawns = [{ template = 0x470021F3, weight = 2 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

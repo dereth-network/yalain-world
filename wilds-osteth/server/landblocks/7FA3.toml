@@ -2,12 +2,12 @@
 
 [[camp]]
 key = "w-7fa3"
-cell = 0x7FA3003C
-at = [143.3, 61.0, 102.84]
-radius = 5.0
-population = 2
-regen = 180.0
-profile = 49
-profile_name = "GP_CampDrudgeRobber"
-spawns = [{ template = 0x4700080E, weight = 2 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+cell = 0x7FA30012
+at = [51.4, 33.4, 110.22]
+radius = 23.3
+population = 4
+regen = 192.0
+profile = 51
+profile_name = "GP_CampDrudgeSlinker"
+spawns = [{ template = 0x47002375, weight = 6 }, { template = 0x4700239B, weight = 2 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

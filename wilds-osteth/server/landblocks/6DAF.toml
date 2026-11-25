@@ -5,9 +5,9 @@ key = "w-6daf"
 cell = 0x6DAF000C
 at = [26.2, 68.9, 301.56]
 radius = 5.0
-population = 2
+population = 1
 regen = 180.0
-profile = 358
-profile_name = "GP_CampShrethGnawer"
-spawns = [{ template = 0x47002AF9, weight = 3 }]
+profile = 377
+profile_name = "GP_CampVerminPilferer"
+spawns = [{ template = 0x47002D34, weight = 1 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 6 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

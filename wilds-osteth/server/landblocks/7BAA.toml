@@ -2,12 +2,10 @@
 
 [[camp]]
 key = "w-7baa"
-cell = 0x7BAA0024
-at = [92.7, 72.8, 99.95]
-radius = 5.0
-population = 1
+cell = 0x7BAA002B
+at = [114.8, 59.4, 99.89]
+radius = 20.6
+population = 2
 regen = 180.0
-profile = 378
-profile_name = "GP_CampVerminTanglefoot"
-spawns = [{ template = 0x47002D2D, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+spawns = [{ template = 0x47002D33, weight = 4 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

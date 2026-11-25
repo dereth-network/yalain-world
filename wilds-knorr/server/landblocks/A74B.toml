@@ -2,10 +2,10 @@
 
 [[camp]]
 key = "w-a74b"
-cell = 0xA74B0012
-at = [44.1, 27.1, 91.02]
-radius = 20.0
-population = 6
-regen = 192.0
-spawns = [{ template = 0x470028D0, weight = 1 }]
-prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's list for this zone names, weighted by where its zone page puts it, sized as a camp of it nearby; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+cell = 0xA74B0033
+at = [130.1, 51.7, 102.18]
+radius = 5.0
+population = 1
+regen = 180.0
+spawns = [{ template = 0x4700297E, weight = 1 }]
+prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's list for this zone names, weighted by where its zone page puts it; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

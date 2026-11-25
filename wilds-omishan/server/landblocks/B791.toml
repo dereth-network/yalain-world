@@ -5,9 +5,9 @@ key = "w-b791"
 cell = 0xB791001E
 at = [61.9, 105.4, 76.45]
 radius = 5.0
-population = 2
-regen = 192.0
-profile = 316
-profile_name = "GP_CampMimbuTolen"
-spawns = [{ template = 0x470027A3, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 6 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+population = 1
+regen = 180.0
+profile = 312
+profile_name = "GP_CampMimbuAcita"
+spawns = [{ template = 0x4700279F, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 3 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

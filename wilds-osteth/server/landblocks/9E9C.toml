@@ -5,9 +5,7 @@ key = "w-9e9c"
 cell = 0x9E9C002B
 at = [109.8, 46.8, 353.92]
 radius = 5.0
-population = 1
+population = 2
 regen = 180.0
-profile = 48
-profile_name = "GP_CampDrudgeProwler"
-spawns = [{ template = 0x47002373, weight = 1 }]
+spawns = [{ template = 0x47002327, weight = 2 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 5 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

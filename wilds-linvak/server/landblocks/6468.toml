@@ -2,12 +2,10 @@
 
 [[camp]]
 key = "w-6468"
-cell = 0x6468003D
-at = [146.9, 93.1, 90.66]
-radius = 5.0
+cell = 0x64680035
+at = [136.8, 91.2, 87.68]
+radius = 15.4
 population = 1
 regen = 180.0
-profile = 12
-profile_name = "GP_CampArmoredilloStony"
-spawns = [{ template = 0x470021BB, weight = 1 }, { template = 0x470021C2, weight = 1 }]
+spawns = [{ template = 0x47002AF4, weight = 3 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

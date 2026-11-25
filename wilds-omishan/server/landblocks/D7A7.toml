@@ -5,7 +5,9 @@ key = "w-d7a7"
 cell = 0xD7A7001D
 at = [68.1, 99.4, 113.32]
 radius = 5.0
-population = 2
+population = 1
 regen = 180.0
-spawns = [{ template = 0x47002A1E, weight = 1 }, { template = 0x47002A22, weight = 1 }]
+profile = 347
+profile_name = "GP_CampSclavusSata"
+spawns = [{ template = 0x47002A21, weight = 1 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 6 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

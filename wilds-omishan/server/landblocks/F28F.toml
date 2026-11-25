@@ -2,10 +2,10 @@
 
 [[camp]]
 key = "w-f28f"
-cell = 0xF28F000F
-at = [28.3, 128.3, 72.5]
-radius = 20.8
-population = 4
-regen = 192.0
-spawns = [{ template = 0x470027C2, weight = 2 }, { template = 0x470027C0, weight = 1 }, { template = 0x470027C3, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+cell = 0xF28F0008
+at = [12.9, 142.7, 75.03]
+radius = 5.0
+population = 2
+regen = 240.0
+spawns = [{ template = 0x470022DB, weight = 1 }, { template = 0x470022DD, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-generator" } } }

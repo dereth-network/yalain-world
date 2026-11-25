@@ -5,9 +5,7 @@ key = "w-88a2"
 cell = 0x88A2000A
 at = [24.2, 24.3, 208.66]
 radius = 5.0
-population = 2
+population = 1
 regen = 180.0
-profile = 357
-profile_name = "GP_CampShrethCarrion"
-spawns = [{ template = 0x47002AF7, weight = 2 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 2 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+spawns = [{ template = 0x47002D46, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 6 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

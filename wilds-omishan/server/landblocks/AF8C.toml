@@ -2,10 +2,10 @@
 
 [[camp]]
 key = "w-af8c"
-cell = 0xAF8C001A
-at = [64.0, 29.4, 80.33]
-radius = 18.2
-population = 2
+cell = 0xAF8C0019
+at = [60.2, 17.4, 82.67]
+radius = 5.0
+population = 1
 regen = 180.0
-spawns = [{ template = 0x4700230E, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 3 blocks away; no recording reached this block", confidence = "low" }
+spawns = [{ template = 0x47002BBD, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 3 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

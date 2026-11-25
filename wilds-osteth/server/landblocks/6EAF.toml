@@ -2,12 +2,10 @@
 
 [[camp]]
 key = "w-6eaf"
-cell = 0x6EAF0019
-at = [66.2, 19.8, 128.68]
-radius = 5.0
-population = 1
+cell = 0x6EAF001C
+at = [79.8, 70.0, 121.52]
+radius = 20.1
+population = 2
 regen = 180.0
-profile = 377
-profile_name = "GP_CampVerminPilferer"
-spawns = [{ template = 0x47002D34, weight = 1 }]
+spawns = [{ template = 0x47002225, weight = 3 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 7 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

@@ -2,10 +2,12 @@
 
 [[camp]]
 key = "w-8da5"
-cell = 0x8DA50032
-at = [128.2, 36.8, 152.36]
-radius = 5.0
+cell = 0x8DA50033
+at = [123.9, 40.6, 153.84]
+radius = 11.1
 population = 1
 regen = 180.0
-spawns = [{ template = 0x47002963, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 6 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+profile = 30
+profile_name = "GP_CampBeetleShear"
+spawns = [{ template = 0x4700222E, weight = 3 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 7 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

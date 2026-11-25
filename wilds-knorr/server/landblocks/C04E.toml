@@ -6,6 +6,6 @@ cell = 0xC04E0016
 at = [40.3, 104.5, 81.43]
 radius = 5.0
 population = 1
-regen = 192.0
-spawns = [{ template = 0x4700270B, weight = 1 }]
-prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's list for this zone names, weighted by where its zone page puts it, sized as a camp of it nearby; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+regen = 180.0
+spawns = [{ template = 0x47002769, weight = 1 }]
+prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's list for this zone names, weighted by where its zone page puts it; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

@@ -1,0 +1,13 @@
+# Made by a rule where no recording went; edit an authored pack instead.
+
+[[camp]]
+key = "w-c083"
+cell = 0xC083000E
+at = [22.7, 102.3, 74.15]
+radius = 5.0
+population = 1
+regen = 180.0
+profile = 33
+profile_name = "GP_CampDarkenfowlChanticleer"
+spawns = [{ template = 0x47002309, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 5 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

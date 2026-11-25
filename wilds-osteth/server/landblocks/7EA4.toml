@@ -3,9 +3,11 @@
 [[camp]]
 key = "w-7ea4"
 cell = 0x7EA40033
-at = [120.4, 41.0, 99.42]
-radius = 23.8
-population = 2
+at = [120.8, 40.6, 99.46]
+radius = 23.3
+population = 4
 regen = 192.0
-spawns = [{ template = 0x47002375, weight = 7 }]
+profile = 51
+profile_name = "GP_CampDrudgeSlinker"
+spawns = [{ template = 0x47002375, weight = 6 }, { template = 0x4700239B, weight = 2 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

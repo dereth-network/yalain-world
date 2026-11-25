@@ -3,9 +3,9 @@
 [[camp]]
 key = "w-c33d"
 cell = 0xC33D0026
-at = [80.5, 113.8, 264.28]
-radius = 15.0
-population = 2
+at = [80.5, 119.5, 262.0]
+radius = 5.0
+population = 1
 regen = 192.0
-spawns = [{ template = 0x47002A3C, weight = 1 }]
+spawns = [{ template = 0x47002BDF, weight = 1 }]
 prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's list for this zone names, weighted by where its zone page puts it, sized as a camp of it nearby; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

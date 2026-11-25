@@ -1,0 +1,11 @@
+# Made by a rule where no recording went; edit an authored pack instead.
+
+[[camp]]
+key = "w-7a80"
+cell = 0x7A800036
+at = [137.9, 103.6, 115.86]
+radius = 5.0
+population = 2
+regen = 180.0
+spawns = [{ template = 0x47002B1B, weight = 2 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 21 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

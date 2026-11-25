@@ -2,10 +2,12 @@
 
 [[camp]]
 key = "w-6f61"
-cell = 0x6F610015
-at = [57.3, 94.8, 145.79]
-radius = 5.0
+cell = 0x6F61000E
+at = [35.5, 117.1, 140.11]
+radius = 6.6
 population = 1
-regen = 180.0
-spawns = [{ template = 0x47002DD3, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 6 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+regen = 192.0
+profile = 15
+profile_name = "GP_CampBanderlingBouncer"
+spawns = [{ template = 0x470021EF, weight = 3 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 6 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

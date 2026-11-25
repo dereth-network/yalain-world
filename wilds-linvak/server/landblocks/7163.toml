@@ -7,5 +7,7 @@ at = [11.9, 62.5, 94.01]
 radius = 5.0
 population = 1
 regen = 180.0
-spawns = [{ template = 0x470021C7, weight = 2 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 5 blocks away in this zone; no recording reached this block", confidence = "low" }
+profile = 11
+profile_name = "GP_CampArmoredilloSteppe"
+spawns = [{ template = 0x470021C1, weight = 3 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 5 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

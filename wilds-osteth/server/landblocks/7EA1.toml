@@ -3,9 +3,11 @@
 [[camp]]
 key = "w-7ea1"
 cell = 0x7EA1002C
-at = [105.7, 72.5, 104.5]
-radius = 23.8
+at = [115.3, 69.6, 104.5]
+radius = 5.0
 population = 2
-regen = 192.0
-spawns = [{ template = 0x47002375, weight = 7 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+regen = 180.0
+profile = 49
+profile_name = "GP_CampDrudgeRobber"
+spawns = [{ template = 0x4700080E, weight = 2 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

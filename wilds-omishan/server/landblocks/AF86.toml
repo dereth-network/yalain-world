@@ -2,10 +2,12 @@
 
 [[camp]]
 key = "w-af86"
-cell = 0xAF860035
-at = [137.7, 99.9, 74.4]
-radius = 16.2
-population = 4
-regen = 192.0
-spawns = [{ template = 0x4700230E, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 2 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+cell = 0xAF86003E
+at = [148.9, 103.7, 74.0]
+radius = 5.0
+population = 1
+regen = 180.0
+profile = 34
+profile_name = "GP_CampDarkenfowlChick"
+spawns = [{ template = 0x4700230B, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 2 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

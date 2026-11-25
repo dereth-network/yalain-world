@@ -2,10 +2,10 @@
 
 [[camp]]
 key = "w-bf29"
-cell = 0xBF290014
-at = [58.3, 65.6, 99.81]
-radius = 20.0
-population = 3
+cell = 0xBF290034
+at = [139.4, 76.3, 97.91]
+radius = 5.0
+population = 1
 regen = 192.0
-spawns = [{ template = 0x47002BFC, weight = 1 }]
+spawns = [{ template = 0x47002BDF, weight = 1 }]
 prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's list for this zone names, weighted by where its zone page puts it, sized as a camp of it nearby; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

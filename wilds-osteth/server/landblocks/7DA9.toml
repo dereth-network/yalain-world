@@ -7,5 +7,7 @@ at = [137.8, 124.2, 106.28]
 radius = 5.0
 population = 1
 regen = 180.0
-spawns = [{ template = 0x47002963, weight = 2 }]
+profile = 378
+profile_name = "GP_CampVerminTanglefoot"
+spawns = [{ template = 0x47002D2D, weight = 1 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

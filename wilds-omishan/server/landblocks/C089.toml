@@ -5,9 +5,9 @@ key = "w-c089"
 cell = 0xC089002D
 at = [112.3, 86.3, 169.53]
 radius = 5.0
-population = 2
-regen = 192.0
-profile = 314
-profile_name = "GP_CampMimbuFeyen"
-spawns = [{ template = 0x470027B9, weight = 2 }, { template = 0x470027A7, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 6 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+population = 1
+regen = 180.0
+profile = 345
+profile_name = "GP_CampSclavusEssa"
+spawns = [{ template = 0x47002A1B, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 6 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

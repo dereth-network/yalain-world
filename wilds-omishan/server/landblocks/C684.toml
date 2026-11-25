@@ -5,7 +5,9 @@ key = "w-c684"
 cell = 0xC684002B
 at = [102.0, 45.9, 135.09]
 radius = 5.0
-population = 2
+population = 1
 regen = 180.0
-spawns = [{ template = 0x470028A2, weight = 2 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 4 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+profile = 33
+profile_name = "GP_CampDarkenfowlChanticleer"
+spawns = [{ template = 0x47002309, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 5 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

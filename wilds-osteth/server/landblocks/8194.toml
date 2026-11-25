@@ -2,10 +2,12 @@
 
 [[camp]]
 key = "w-8194"
-cell = 0x8194000C
-at = [21.9, 70.2, 138.67]
-radius = 14.5
-population = 2
+cell = 0x81940004
+at = [12.6, 68.6, 138.78]
+radius = 5.0
+population = 1
 regen = 180.0
-spawns = [{ template = 0x470029E9, weight = 2 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 3 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+profile = 83
+profile_name = "GP_CampGruttSepsis"
+spawns = [{ template = 0x470025D4, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 2 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

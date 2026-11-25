@@ -5,7 +5,7 @@ key = "w-5b64"
 cell = 0x5B640016
 at = [42.2, 107.4, 189.88]
 radius = 5.0
-population = 1
+population = 2
 regen = 180.0
-spawns = [{ template = 0x47002639, weight = 1 }]
+spawns = [{ template = 0x47002439, weight = 1 }, { template = 0x4700243B, weight = 1 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

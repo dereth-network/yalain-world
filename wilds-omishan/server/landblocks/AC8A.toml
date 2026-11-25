@@ -7,5 +7,7 @@ at = [103.5, 97.6, 148.89]
 radius = 5.0
 population = 1
 regen = 180.0
-spawns = [{ template = 0x4700230F, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 3 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+profile = 35
+profile_name = "GP_CampDarkenfowlHen"
+spawns = [{ template = 0x4700230E, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 3 blocks away; no recording reached this block", confidence = "low" }

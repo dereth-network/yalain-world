@@ -5,7 +5,7 @@ key = "w-bfa6"
 cell = 0xBFA60023
 at = [99.4, 52.8, 83.71]
 radius = 5.0
-population = 1
-regen = 180.0
-spawns = [{ template = 0x4700288B, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+population = 3
+regen = 240.0
+spawns = [{ template = 0x470022E3, weight = 2 }, { template = 0x470022E5, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-generator" } } }

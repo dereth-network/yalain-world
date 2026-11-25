@@ -2,12 +2,10 @@
 
 [[camp]]
 key = "w-789f"
-cell = 0x789F000C
-at = [29.0, 70.1, 100.75]
-radius = 5.0
-population = 1
+cell = 0x789F0022
+at = [81.9, 31.8, 110.5]
+radius = 23.6
+population = 3
 regen = 180.0
-profile = 342
-profile_name = "GP_CampReedsharkVeteran"
-spawns = [{ template = 0x470029F4, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 9 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+spawns = [{ template = 0x470029EC, weight = 3 }, { template = 0x470029F4, weight = 2 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 8 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

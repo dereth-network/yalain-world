@@ -2,10 +2,12 @@
 
 [[camp]]
 key = "w-a1a4"
-cell = 0xA1A40035
-at = [125.4, 93.3, 172.29]
-radius = 25.1
-population = 3
+cell = 0xA1A4003D
+at = [144.0, 98.7, 175.77]
+radius = 5.0
+population = 1
 regen = 180.0
-spawns = [{ template = 0x470025D3, weight = 2 }, { template = 0x470025D1, weight = 1 }]
+profile = 77
+profile_name = "GP_CampGruttFilthminder"
+spawns = [{ template = 0x470025D1, weight = 1 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 7 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

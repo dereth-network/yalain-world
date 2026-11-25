@@ -2,12 +2,10 @@
 
 [[camp]]
 key = "w-8b7a"
-cell = 0x8B7A000F
-at = [38.1, 122.5, 77.23]
-radius = 5.0
-population = 1
-regen = 180.0
-profile = 368
-profile_name = "GP_CampThornlingWorrier"
-spawns = [{ template = 0x47002C14, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 5 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+cell = 0x8B7A000E
+at = [33.3, 113.4, 76.97]
+radius = 23.1
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002731, weight = 4 }, { template = 0x47002729, weight = 2 }, { template = 0x4700272E, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 5 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

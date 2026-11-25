@@ -5,7 +5,9 @@ key = "w-709f"
 cell = 0x709F0014
 at = [46.3, 73.9, 182.26]
 radius = 5.0
-population = 1
-regen = 180.0
-spawns = [{ template = 0x47002372, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 9 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+population = 2
+regen = 192.0
+profile = 334
+profile_name = "GP_CampReedsharkElder"
+spawns = [{ template = 0x470029E9, weight = 2 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 8 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

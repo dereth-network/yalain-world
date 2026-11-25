@@ -5,9 +5,7 @@ key = "w-396b"
 cell = 0x396B001D
 at = [68.7, 96.5, 168.2]
 radius = 5.0
-population = 1
-regen = 180.0
-profile = 69
-profile_name = "GP_CampGigurathBominous"
-spawns = [{ template = 0x470024BD, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 6 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+population = 2
+regen = 192.0
+spawns = [{ template = 0x470024E1, weight = 1 }, { template = 0x470024FF, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 6 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

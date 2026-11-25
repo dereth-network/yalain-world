@@ -2,10 +2,12 @@
 
 [[camp]]
 key = "w-93bf"
-cell = 0x93BF0009
-at = [25.9, 19.0, 88.53]
-radius = 12.3
+cell = 0x93BF001E
+at = [60.5, 108.6, 75.55]
+radius = 5.0
 population = 1
 regen = 180.0
-spawns = [{ template = 0x47002D4C, weight = 4 }]
+profile = 340
+profile_name = "GP_CampReedsharkRunt"
+spawns = [{ template = 0x470029EE, weight = 1 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 5 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

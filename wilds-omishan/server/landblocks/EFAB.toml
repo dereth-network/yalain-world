@@ -3,9 +3,9 @@
 [[camp]]
 key = "w-efab"
 cell = 0xEFAB001A
-at = [62.7, 33.6, 74.45]
-radius = 5.6
-population = 3
-regen = 240.0
-spawns = [{ template = 0x470022DD, weight = 4 }, { template = 0x470022DB, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-generator" } } }
+at = [62.5, 33.2, 74.56]
+radius = 5.0
+population = 1
+regen = 180.0
+spawns = [{ template = 0x47002277, weight = 2 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

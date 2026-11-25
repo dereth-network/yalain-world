@@ -3,9 +3,9 @@
 [[camp]]
 key = "w-cc42"
 cell = 0xCC420021
-at = [87.4, 13.0, 76.16]
-radius = 6.0
-population = 3
-regen = 192.0
-spawns = [{ template = 0x470029DC, weight = 1 }]
-prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's list for this zone names, weighted by where its zone page puts it, sized as a camp of it nearby; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+at = [87.5, 12.0, 75.84]
+radius = 5.0
+population = 1
+regen = 180.0
+spawns = [{ template = 0x47002A3F, weight = 1 }]
+prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's list for this zone names, weighted by where its zone page puts it; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

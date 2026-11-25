@@ -2,10 +2,10 @@
 
 [[camp]]
 key = "w-9f9c"
-cell = 0x9F9C001A
-at = [72.2, 26.6, 334.0]
-radius = 16.3
-population = 3
+cell = 0x9F9C0019
+at = [70.7, 16.2, 334.0]
+radius = 5.0
+population = 2
 regen = 180.0
-spawns = [{ template = 0x47002373, weight = 2 }, { template = 0x47002376, weight = 1 }]
+spawns = [{ template = 0x47002353, weight = 2 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 6 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

@@ -3,9 +3,11 @@
 [[camp]]
 key = "w-8081"
 cell = 0x8081000F
-at = [23.2, 131.7, 159.16]
-radius = 5.0
-population = 1
+at = [29.5, 125.9, 157.86]
+radius = 12.7
+population = 2
 regen = 180.0
-spawns = [{ template = 0x4700272E, weight = 1 }]
+profile = 81
+profile_name = "GP_CampGruttMorbific"
+spawns = [{ template = 0x470025CF, weight = 2 }, { template = 0x470025CA, weight = 2 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 4 blocks away in the nearest land with any; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

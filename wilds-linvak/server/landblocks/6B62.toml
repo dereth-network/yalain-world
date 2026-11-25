@@ -3,11 +3,9 @@
 [[camp]]
 key = "w-6b62"
 cell = 0x6B62000E
-at = [31.1, 117.9, 150.83]
-radius = 5.0
+at = [33.5, 116.1, 151.55]
+radius = 8.3
 population = 1
 regen = 180.0
-profile = 11
-profile_name = "GP_CampArmoredilloSteppe"
-spawns = [{ template = 0x470021C1, weight = 1 }]
+spawns = [{ template = 0x47002D90, weight = 3 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 5 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

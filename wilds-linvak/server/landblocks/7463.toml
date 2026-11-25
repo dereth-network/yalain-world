@@ -2,10 +2,12 @@
 
 [[camp]]
 key = "w-7463"
-cell = 0x74630026
-at = [81.6, 105.0, 200.52]
-radius = 21.2
-population = 2
+cell = 0x7463000E
+at = [26.2, 116.8, 204.26]
+radius = 5.0
+population = 1
 regen = 180.0
-spawns = [{ template = 0x47002643, weight = 4 }]
+profile = 62
+profile_name = "GP_CampFlayerWind"
+spawns = [{ template = 0x47002441, weight = 1 }]
 prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

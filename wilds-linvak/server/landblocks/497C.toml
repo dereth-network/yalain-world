@@ -3,9 +3,9 @@
 [[camp]]
 key = "w-497c"
 cell = 0x497C0013
-at = [44.8, 58.0, 200.14]
-radius = 5.0
+at = [47.3, 59.5, 199.19]
+radius = 9.9
 population = 1
 regen = 180.0
-spawns = [{ template = 0x4700243F, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 4 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+spawns = [{ template = 0x47002C88, weight = 2 }, { template = 0x47002C87, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 5 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

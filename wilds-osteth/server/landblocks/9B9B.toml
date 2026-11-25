@@ -5,9 +5,9 @@ key = "w-9b9b"
 cell = 0x9B9B0013
 at = [43.2, 49.5, 305.6]
 radius = 5.0
-population = 1
-regen = 180.0
-profile = 50
-profile_name = "GP_CampDrudgeScowl"
-spawns = [{ template = 0x47002346, weight = 1 }, { template = 0x47002353, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+population = 2
+regen = 192.0
+profile = 49
+profile_name = "GP_CampDrudgeRobber"
+spawns = [{ template = 0x47002376, weight = 2 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

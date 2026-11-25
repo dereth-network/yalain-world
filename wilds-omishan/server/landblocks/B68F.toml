@@ -2,10 +2,12 @@
 
 [[camp]]
 key = "w-b68f"
-cell = 0xB68F0037
-at = [138.3, 122.3, 153.07]
-radius = 7.8
-population = 6
-regen = 192.0
-spawns = [{ template = 0x470027A3, weight = 3 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 16 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+cell = 0xB68F003F
+at = [140.7, 124.0, 152.76]
+radius = 5.0
+population = 1
+regen = 180.0
+profile = 315
+profile_name = "GP_CampMimbuKachem"
+spawns = [{ template = 0x470027A8, weight = 1 }]
+prov = { from = "derived", rule = "camp-nearest-kin", note = "the creature a players' map of 2003 to 2005 drew here, sized as the nearest recorded camp of it in this zone, 16 blocks away; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
