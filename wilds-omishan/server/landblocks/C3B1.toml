@@ -2,10 +2,10 @@
 
 [[camp]]
 key = "w-c3b1"
-cell = 0xC3B1002F
-at = [101.5, 124.9, 77.28]
-radius = 22.8
-population = 2
-regen = 192.0
-spawns = [{ template = 0x4700289A, weight = 4 }, { template = 0x4700289B, weight = 2 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 5 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+cell = 0xC3B1002E
+at = [116.8, 103.2, 75.75]
+radius = 5.0
+population = 1
+regen = 180.0
+spawns = [{ template = 0x47002AB2, weight = 1 }]
+prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's page for this zone lists at level 32 and no recording placed; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

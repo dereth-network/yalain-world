@@ -1,0 +1,11 @@
+# Made by a rule where no recording went; edit an authored pack instead.
+
+[[camp]]
+key = "w-73c9"
+cell = 0x73C90018
+at = [44.0, 146.7, 211.18]
+radius = 5.0
+population = 1
+regen = 180.0
+spawns = [{ template = 0x4700280B, weight = 1 }]
+prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's page for this area lists at level 61 and no recording placed; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

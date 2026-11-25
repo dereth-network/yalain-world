@@ -5,7 +5,7 @@ key = "w-739a"
 cell = 0x739A002B
 at = [108.5, 47.1, 215.24]
 radius = 5.0
-population = 2
-regen = 192.0
-spawns = [{ template = 0x47002372, weight = 1 }, { template = 0x4700239F, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+population = 1
+regen = 180.0
+spawns = [{ template = 0x47002A69, weight = 1 }]
+prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's page for this zone lists at level 12 and no recording placed; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

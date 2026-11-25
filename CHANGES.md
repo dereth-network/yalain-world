@@ -1,5 +1,9 @@
 # Changes
 
+## v0.44.0
+
+- Creatures the zone guides name now have camps outside Knorr too. Packs `wilds-linvak/`, `wilds-osteth/`, `wilds-omishan/`, `wilds-islands/`.
+
 ## v0.43.0
 
 - The market shops of the six cities can now be entered, with their storekeepers. New pack `market-districts/`.

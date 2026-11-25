@@ -7,5 +7,5 @@ at = [52.1, 137.3, 79.66]
 radius = 5.0
 population = 1
 regen = 180.0
-spawns = [{ template = 0x47002ABB, weight = 1 }, { template = 0x47002AC3, weight = 1 }]
-prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 4 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+spawns = [{ template = 0x470024FD, weight = 1 }]
+prov = { from = "derived", rule = "camp-zone-list", note = "a kind the wiki's page for this zone lists at level 40 and no recording placed; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
