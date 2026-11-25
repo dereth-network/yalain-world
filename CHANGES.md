@@ -4,6 +4,7 @@
 
 - Darkenfowl and common vermin no longer shoot, as in 2017. New pack `npc-table-skips/`.
 - Three empty dungeons now hold creatures: the island's deep heart, the drudges' shrine and the Foundry's entrance. New pack `dungeon-gap-camps/`.
+- The warren under the western hive can now be entered, and has olthoi. New pack `olthoi-warren-west/`.
 
 ## v0.41.0
 
