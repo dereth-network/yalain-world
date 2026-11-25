@@ -4,6 +4,7 @@
 
 - The market shops of the six cities can now be entered, with their storekeepers. New pack `market-districts/`.
 - Gems of every kind now drop from creatures. Pack `rare-gems/`.
+- A mosswart chief now trades miniatures for eep ears. New pack `eep-treats/`.
 - Fixed a boss appearing twice in the Omishan wilds. Pack `wilds-omishan/`.
 
 ## v0.42.0
