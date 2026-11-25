@@ -1,6 +1,6 @@
 # Changes
 
-## Unreleased
+## v0.43.0
 
 - Fixed a boss appearing twice in the Omishan wilds. Pack `wilds-omishan/`.
 
