@@ -1,0 +1,11 @@
+# Made by a rule where no recording went; edit an authored pack instead.
+
+[[camp]]
+key = "w-547c"
+cell = 0x547C000A
+at = [23.0, 32.4, 125.2]
+radius = 15.6
+population = 2
+regen = 192.0
+spawns = [{ template = 0x4700265F, weight = 10 }]
+prov = { from = "authored", by = "Dereth Network", note = "made by a rule: a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

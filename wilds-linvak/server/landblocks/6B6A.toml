@@ -1,0 +1,13 @@
+# Made by a rule where no recording went; edit an authored pack instead.
+
+[[camp]]
+key = "w-6b6a"
+cell = 0x6B6A0032
+at = [127.7, 39.9, 224.83]
+radius = 5.0
+population = 1
+regen = 192.0
+profile = 22
+profile_name = "GP_CampBanderlingThrasher"
+spawns = [{ template = 0x470021F8, weight = 3 }]
+prov = { from = "authored", by = "Dereth Network", note = "made by a rule: a copy of a recorded camp 3 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
