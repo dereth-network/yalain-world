@@ -1,0 +1,167 @@
+# The ring's ways up and its creatures.
+
+[[object]]
+key = "ring-primus-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x08C20100
+at = [-41.12, 16.22, 100.40]
+rotation = [-0.382683, 0, 0, 0.92388]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "ring-primus-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way up beside this tower's landing in the ring, to the tower's portal on the land; no recording", confidence = "low" }
+
+[[object]]
+key = "ring-secundus-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x08C201D7
+at = [60.29, -279.71, 100.40]
+rotation = [-0.382683, 0, 0, 0.92388]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "ring-secundus-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way up beside this tower's landing in the ring, to the tower's portal on the land; no recording", confidence = "low" }
+
+[[object]]
+key = "ring-tertius-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x08C2018C
+at = [658.42, -320.88, 100.40]
+rotation = [0.92388, 0, 0, 0.382684]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "ring-tertius-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way up beside this tower's landing in the ring, to the tower's portal on the land; no recording", confidence = "low" }
+
+[[object]]
+key = "ring-quartus-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x08C2017A
+at = [757.40, -19.13, 100.40]
+rotation = [0.92388, 0, 0, 0.382684]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "ring-quartus-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way up beside this tower's landing in the ring, to the tower's portal on the land; no recording", confidence = "low" }
+
+[[object]]
+key = "ring-quintus-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x08C20168
+at = [659.39, 279.42, 100.40]
+rotation = [0.92388, 0, 0, 0.382684]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "ring-quintus-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way up beside this tower's landing in the ring, to the tower's portal on the land; no recording", confidence = "low" }
+
+[[object]]
+key = "ring-sextus-exit"
+kind = "static"
+template = 0x47001154
+cell = 0x08C20112
+at = [60.70, 320.67, 100.40]
+rotation = [-0.382683, 0, 0, 0.92388]
+name = { table = 0x25001B44, string = 0x1DE22D16 }
+to = "ring-sextus-out"
+prov = { from = "authored", by = "Dereth Network", note = "a way up beside this tower's landing in the ring, to the tower's portal on the land; no recording", confidence = "low" }
+
+[[camp]]
+key = "ring-valet"
+cell = 0x08C2019F
+at = [379.92, -0.08, 100.40]
+spots = [{ cell = 0x08C2019F, at = [379.92, -0.08, 100.40] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A95, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the one strong servant a players' map of the estate's underground ring names on its middle paths, alone at the place nearest the middle of its cross; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ring-middle-1"
+cell = 0x08C2019E
+at = [353.65, -401.11, 100.40]
+spots = [{ cell = 0x08C2019E, at = [353.65, -401.11, 100.40] }, { cell = 0x08C2019E, at = [358.38, -399.72, 100.40] }, { cell = 0x08C20135, at = [348.54, -399.96, 100.40] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002A94, weight = 1 }, { template = 0x47002AA0, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the middle paths of the estate's underground ring, with the kind a players' map of it names there, at the density of the hives' entrance mounds; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ring-middle-2"
+cell = 0x08C20159
+at = [365.76, 399.63, 100.40]
+spots = [{ cell = 0x08C20159, at = [365.76, 399.63, 100.40] }, { cell = 0x08C20156, at = [370.76, 399.63, 100.40] }, { cell = 0x08C20159, at = [360.51, 400.39, 100.40] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002A94, weight = 1 }, { template = 0x47002AA0, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the middle paths of the estate's underground ring, with the kind a players' map of it names there, at the density of the hives' entrance mounds; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ring-middle-3"
+cell = 0x08C2014D
+at = [169.92, -0.12, 100.40]
+spots = [{ cell = 0x08C2014D, at = [169.92, -0.12, 100.40] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002A94, weight = 1 }, { template = 0x47002AA0, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the middle paths of the estate's underground ring, with the kind a players' map of it names there, at the density of the hives' entrance mounds; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ring-outer-1"
+cell = 0x08C20129
+at = [226.96, 299.63, 100.40]
+spots = [{ cell = 0x08C20129, at = [226.96, 299.63, 100.40] }, { cell = 0x08C20129, at = [221.96, 299.63, 100.40] }, { cell = 0x08C2012A, at = [231.67, 300.34, 100.40] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002302, weight = 1 }, { template = 0x470029DF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outer paths of the estate's underground ring, with the two kinds a players' map of it names there, at the density of the hives' entrance mounds; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ring-outer-2"
+cell = 0x08C20194
+at = [492.43, -300.20, 100.40]
+spots = [{ cell = 0x08C20194, at = [492.43, -300.20, 100.40] }, { cell = 0x08C20194, at = [497.14, -299.50, 100.40] }, { cell = 0x08C20195, at = [487.14, -299.50, 100.40] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002302, weight = 1 }, { template = 0x470029DF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outer paths of the estate's underground ring, with the two kinds a players' map of it names there, at the density of the hives' entrance mounds; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ring-outer-3"
+cell = 0x08C20174
+at = [739.84, 141.75, 100.40]
+spots = [{ cell = 0x08C20174, at = [739.84, 141.75, 100.40] }, { cell = 0x08C20174, at = [739.84, 136.75, 100.40] }, { cell = 0x08C20174, at = [739.84, 146.75, 100.40] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002302, weight = 1 }, { template = 0x470029DF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outer paths of the estate's underground ring, with the two kinds a players' map of it names there, at the density of the hives' entrance mounds; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ring-outer-4"
+cell = 0x08C20182
+at = [741.47, -179.75, 100.40]
+spots = [{ cell = 0x08C20182, at = [741.47, -179.75, 100.40] }, { cell = 0x08C20182, at = [739.13, -175.18, 100.40] }, { cell = 0x08C20182, at = [736.76, -180.46, 100.40] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002302, weight = 1 }, { template = 0x470029DF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outer paths of the estate's underground ring, with the two kinds a players' map of it names there, at the density of the hives' entrance mounds; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ring-outer-5"
+cell = 0x08C20108
+at = [-20.03, 178.14, 100.40]
+spots = [{ cell = 0x08C20108, at = [-20.03, 178.14, 100.40] }, { cell = 0x08C20108, at = [-20.03, 173.14, 100.40] }, { cell = 0x08C20108, at = [-15.50, 180.26, 100.40] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x47002302, weight = 1 }, { template = 0x470029DF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outer paths of the estate's underground ring, with the two kinds a players' map of it names there, at the density of the hives' entrance mounds; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+
+[[camp]]
+key = "ring-outer-6"
+cell = 0x08C20118
+at = [-19.73, -142.15, 100.40]
+spots = [{ cell = 0x08C20118, at = [-19.73, -142.15, 100.40] }]
+population = 1
+regen = 192.0
+spawns = [{ template = 0x47002302, weight = 1 }, { template = 0x470029DF, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "the outer paths of the estate's underground ring, with the two kinds a players' map of it names there, at the density of the hives' entrance mounds; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

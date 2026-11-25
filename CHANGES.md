@@ -6,6 +6,7 @@
 - Three empty dungeons now hold creatures: the island's deep heart, the drudges' shrine and the Foundry's entrance. New pack `dungeon-gap-camps/`.
 - The warren under the western hive can now be entered, and has olthoi. New pack `olthoi-warren-west/`.
 - Four olthoi dungeons in the Knorr wilds can now be entered, and have creatures. New pack `knorr-olthoi-war/`.
+- The Knorr estate's underground ring can now be entered. New pack `knorr-estate-ring/`.
 
 ## v0.41.0
 
