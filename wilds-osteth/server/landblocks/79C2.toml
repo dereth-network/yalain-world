@@ -8,4 +8,4 @@ radius = 31.6
 population = 9
 regen = 192.0
 spawns = [{ template = 0x470026F1, weight = 9 }]
-prov = { from = "authored", by = "Dereth Network", note = "made by a rule: a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

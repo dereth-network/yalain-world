@@ -10,4 +10,4 @@ regen = 192.0
 profile = 51
 profile_name = "GP_CampDrudgeSlinker"
 spawns = [{ template = 0x47002377, weight = 22 }, { template = 0x47002375, weight = 4 }, { template = 0x4700239B, weight = 2 }]
-prov = { from = "authored", by = "Dereth Network", note = "made by a rule: a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 2 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

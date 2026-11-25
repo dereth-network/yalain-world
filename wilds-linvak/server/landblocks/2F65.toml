@@ -10,4 +10,4 @@ regen = 180.0
 profile = 63
 profile_name = "GP_CampGearknightChampion"
 spawns = [{ template = 0x4700248C, weight = 1 }]
-prov = { from = "authored", by = "Dereth Network", note = "made by a rule: a copy of a recorded camp 8 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
+prov = { from = "derived", rule = "camp-nearest-kin", note = "a copy of a recorded camp 8 blocks away in this zone; no recording reached this block", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }
