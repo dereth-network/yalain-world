@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- Fixed a boss appearing twice in the Omishan wilds. Pack `wilds-omishan/`.
+
 ## v0.42.0
 
 - Creatures now roam the far land no recording reached, at most three to a camp. New packs `wilds-*/`.
