@@ -80,6 +80,9 @@ license = "CC0-1.0"
 description = "People of Arwic's market."
 ```
 
+A released pack that changes moves its `version` before the next release: the minor number when
+what it does grows, the patch number when it only changes rows. A release refuses one that didn't.
+
 ## Values
 
 - **Data ids** are integers, written in hexadecimal: `template = 0x470031E6`. They name records of
