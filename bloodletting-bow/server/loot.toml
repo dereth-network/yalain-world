@@ -1,0 +1,11 @@
+# The leaders of the rangers who roam the land now and then leave the bow the wiki says they drop, beside their treasure as
+# before; edit an authored pack instead.
+
+[[loot]]
+profile = 1649
+profile_name = "GP_HumanRangerLeaderHoard"
+counts = [0.0582, 0.6375, 0.2542, 0.037, 0.0091, 0.0039]
+draws = [{ pool = "GP_Weapons", weight = 432 }, { pool = "GP_Armor", weight = 284.5 }, { pool = "GP_Shields", weight = 98 }, { pool = "GP_MiscellaneousItems", weight = 86.4 }, { pool = "GP_Jewelry", weight = 34.8 }, { pool = "GP_PotionsMagic", weight = 34.8 }, { pool = "GP_MusicalInstruments", weight = 11.6 }, { pool = "GP_GemsLarge", weight = 6.3, least = 50 }, { pool = "GP_LesserTrumps", weight = 6.3, least = 15 }, { pool = "GP_GreaterTrumps", weight = 3.2, least = 51 }, { pool = "GP_GemsHuge", weight = 1.1, least = 50 }, { pool = "GP_GemsSmall", weight = 1.1, most = 32 }]
+rare = { pool = "GP_TrophyRares", chance = 0.0013 }
+extras = [{ template = 0x47001916, chance = 0.01 }]
+prov = { from = "authored", by = "Dereth Network", note = "no corpse of it was recorded: the 2017 treasure mix of its region class, its count by its bounds as recorded creatures of them, a rare at the recorded rate", confidence = "low", fields = { extras = { from = "authored", by = "Dereth Network", note = "the wiki's page for unique bows: occasionally dropped by this kind; no recorded drop; the chance the authored cache rares take", confidence = "low" } } }

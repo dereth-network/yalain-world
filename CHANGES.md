@@ -9,6 +9,7 @@
 - The Knorr Ramparts' group creatures now have camps. New pack `ramparts-groups/`.
 - Athraes now upgrades Soulslayers. New pack `soulslayer-upgrade/`.
 - The hammer at the forge now tells its lore in order, as a quest. New pack `hammer-lore/`.
+- Arramora's ranger leaders can now drop a unique bow. New pack `bloodletting-bow/`.
 
 ## v0.43.0
 
