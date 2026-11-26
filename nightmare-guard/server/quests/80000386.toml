@@ -1,6 +1,17 @@
 # The haunted guard's quest: he gives it, the creature's own death moves it on, and he thanks its killer; edit this
 # pack's rows.
 
+[[quest]]
+id = 0x80000386
+id_name = "Quest_SlayCreatureOfNightmare"
+state = 0x6F000C4F
+challenge = 26
+cancellable = true
+min_level = 29
+xp = 60000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:888b676f", confidence = "high", sample = { sessions = 14 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "the level the wiki's table for this zone gives it, checked there", confidence = "low" }, xp = { from = "authored", by = "Dereth Network", note = "as the zone's other group quest of its level pays, by the wiki's table: a fixed 60,000; no source gives this one's", confidence = "low" }, xp_whole = { from = "authored", by = "Dereth Network", note = "the wiki's table: a fixed amount", confidence = "low" } } }
+
 [[step]]
 key = "given"
 quest = 0x80000386
