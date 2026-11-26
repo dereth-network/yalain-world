@@ -13,6 +13,7 @@
 - The Shield Wall's tent quests in the Knorr Desolation can now be done. New packs `knorr-tent-quests/`, `knorr-tent-orders/`.
 - Honitea's Niffis Plague quest can now be done. New pack `niffis-plague/`.
 - More unique items can now drop from the rare pools. Pack `mirra-drops/`.
+- Hineanu, Morla and Kirea now stand with Lutna. New pack `shaper-guards/`.
 
 ## v0.43.0
 
