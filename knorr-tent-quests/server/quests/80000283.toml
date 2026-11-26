@@ -1,0 +1,42 @@
+# The tent quests of the gate camp in the desolation; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000283
+id_name = "QuestSH"
+state = 0x6F000B70
+challenge = 80
+duration = 18000
+retry = 518400
+xp_share = 0.015
+xp_share_level = 80
+min_level = 65
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:11848234", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: 5 hours", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: again after 6 days", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: 1.5% of a level", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: capped at level 80", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: level 65 and up", confidence = "low" }, fellows = { from = "authored", by = "Dereth Network", note = "a group quest the whole fellowship takes: its kills move each fellow's", confidence = "low" } } }
+
+[[step]]
+key = "orders-given"
+quest = 0x80000283
+needs = 0
+trigger = { give = 0x4700167F, to = 0x4700317C }
+update = "bestow"
+takes = [0x4700167F]
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: the fellowship's leader hands the orders bought from Falitea to Kelinua, which gives the quest to the whole fellowship; no recording", confidence = "low" }
+
+[[step]]
+key = "went-in"
+quest = 0x80000283
+needs = 1
+trigger = { arrive = 0x47001194 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: the quest moves on as the player goes in through the dungeon's door on the land (the door's kind also stands at two other doors of the region); no recording", confidence = "low" }
+
+[[step]]
+key = "reported"
+quest = 0x80000283
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x9A8376A9 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: back at Kelinua with the four slain, her thanks; no recording", confidence = "low" }

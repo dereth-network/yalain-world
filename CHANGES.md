@@ -10,6 +10,7 @@
 - Athraes now upgrades Soulslayers. New pack `soulslayer-upgrade/`.
 - The hammer at the forge now tells its lore in order, as a quest. New pack `hammer-lore/`.
 - Arramora's ranger leaders can now drop a unique bow. New pack `bloodletting-bow/`.
+- The Shield Wall's tent quests in the Knorr Desolation can now be done. New packs `knorr-tent-quests/`, `knorr-tent-orders/`.
 
 ## v0.43.0
 

@@ -1,0 +1,10 @@
+# The tent quests of the gate camp in the desolation; edit an authored pack instead.
+
+[[step]]
+key = "cylinder-given"
+quest = 0x800001E4
+needs = 1
+trigger = { give = 0x47001626, to = 0x4700317C }
+update = "complete"
+takes = [0x47001626]
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: the four cylinders handed to Kelinua end the quest, one subquest each; no recording", confidence = "low" }

@@ -1,0 +1,269 @@
+# The tent quests of the gate camp in the desolation; edit an authored pack instead.
+
+[[quest]]
+id = 0x800001DC
+id_name = "QuestIN"
+state = 0x6F000AC6
+challenge = 80
+duration = 18000
+retry = 518400
+xp_share = 0.04
+xp_share_level = 74
+min_level = 65
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:40eba0fa", confidence = "high", sample = { sessions = 3 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: 5 hours", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: again after 6 days", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: 4% of a level", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: capped at level 74", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: level 65 and up", confidence = "low" }, fellows = { from = "authored", by = "Dereth Network", note = "a group quest the whole fellowship takes: its kills move each fellow's", confidence = "low" } } }
+
+[[step]]
+key = "orders-given"
+quest = 0x800001DC
+needs = 0
+trigger = { give = 0x47001681, to = 0x4700317C }
+update = "bestow"
+takes = [0x47001681]
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: the fellowship's leader hands the orders bought from Falitea to Kelinua, which gives the quest to the whole fellowship; no recording", confidence = "low" }
+
+[[step]]
+key = "went-in"
+quest = 0x800001DC
+needs = 1
+trigger = { arrive = 0x47001194 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: the quest moves on as the player goes in through the dungeon's door on the land (the door's kind also stands at two other doors of the region); no recording", confidence = "low" }
+
+[[step]]
+key = "first-kill"
+quest = 0x800001DC
+needs = 2
+trigger = { kill = 0x470028B7 }
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: one of the eggs destroyed moves the quest on, back to Kelinua; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-1"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x675D2452 }
+requires = [{ quest = 0x800001DE, phase = 2 }]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with one to four eggs destroyed: her line for it and the reward it names, 0 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-2"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x675D2452 }
+requires = [{ quest = 0x800001DE, phase = 3 }]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with one to four eggs destroyed: her line for it and the reward it names, 0 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-3"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x675D2452 }
+requires = [{ quest = 0x800001DE, phase = 4 }]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with one to four eggs destroyed: her line for it and the reward it names, 0 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-4"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x675D2452 }
+requires = [{ quest = 0x800001DE, phase = 5 }]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with one to four eggs destroyed: her line for it and the reward it names, 0 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-5"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x67DD2452 }
+requires = [{ quest = 0x800001DE, phase = 6 }]
+gives = [0x47000BCE]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with five to nine eggs destroyed: her line for it and the reward it names, 1 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-6"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x67DD2452 }
+requires = [{ quest = 0x800001DE, phase = 7 }]
+gives = [0x47000BCE]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with five to nine eggs destroyed: her line for it and the reward it names, 1 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-7"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x67DD2452 }
+requires = [{ quest = 0x800001DE, phase = 8 }]
+gives = [0x47000BCE]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with five to nine eggs destroyed: her line for it and the reward it names, 1 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-8"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x67DD2452 }
+requires = [{ quest = 0x800001DE, phase = 9 }]
+gives = [0x47000BCE]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with five to nine eggs destroyed: her line for it and the reward it names, 1 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-9"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x67DD2452 }
+requires = [{ quest = 0x800001DE, phase = 10 }]
+gives = [0x47000BCE]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with five to nine eggs destroyed: her line for it and the reward it names, 1 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-10"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6DB36F04 }
+requires = [{ quest = 0x800001DE, phase = 11 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen eggs destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-11"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6DB36F04 }
+requires = [{ quest = 0x800001DE, phase = 12 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen eggs destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-12"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6DB36F04 }
+requires = [{ quest = 0x800001DE, phase = 13 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen eggs destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-13"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6DB36F04 }
+requires = [{ quest = 0x800001DE, phase = 14 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen eggs destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-14"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6DB36F04 }
+requires = [{ quest = 0x800001DE, phase = 15 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen eggs destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-15"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6DB36F04 }
+requires = [{ quest = 0x800001DE, phase = 16 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen eggs destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-16"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6DB36F04 }
+requires = [{ quest = 0x800001DE, phase = 17 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen eggs destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-17"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6DB36F04 }
+requires = [{ quest = 0x800001DE, phase = 18 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen eggs destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-18"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6DB36F04 }
+requires = [{ quest = 0x800001DE, phase = 19 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen eggs destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-19"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6DB36F04 }
+requires = [{ quest = 0x800001DE, phase = 20 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen eggs destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-20"
+quest = 0x800001DC
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6DD36F04 }
+gives = [0x47000BCE]
+counts = [3]
+requires = [{ quest = 0x800001DE, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with twenty eggs destroyed: her line for at least twenty and the three tessera it names; the wiki's page for these tent quests; no recording", confidence = "low" }

@@ -1,0 +1,14 @@
+# Stands in for the world balance: every order always on sale; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000292
+id_name = "QuestTO4"
+prov = { from = "authored", by = "Dereth Network", note = "the order's flag Falitea's store asks for under way; held for its steps; in place of the balance of the two sides, which picked the orders on sale: all four, always (owner choice B2(a))", confidence = "low" }
+
+[[step]]
+key = "briefed"
+quest = 0x80000292
+needs = 0
+trigger = { given = 0x80000291 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the next order's flag, under way with the one before; in place of the balance of the two sides, which picked the orders on sale: all four, always (owner choice B2(a))", confidence = "low" }

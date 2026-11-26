@@ -1,0 +1,269 @@
+# The tent quests of the gate camp in the desolation; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000288
+id_name = "QuestSS"
+state = 0x6F000B75
+challenge = 80
+duration = 18000
+retry = 518400
+xp_share = 0.015
+xp_share_level = 80
+min_level = 65
+fellows = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:6645a35d", confidence = "medium", sample = { sessions = 2 }, fields = { duration = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: 5 hours", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: again after 6 days", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: 1.5% of a level", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: capped at level 80", confidence = "low" }, min_level = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: level 65 and up", confidence = "low" }, fellows = { from = "authored", by = "Dereth Network", note = "a group quest the whole fellowship takes: its kills move each fellow's", confidence = "low" } } }
+
+[[step]]
+key = "orders-given"
+quest = 0x80000288
+needs = 0
+trigger = { give = 0x47001683, to = 0x4700317C }
+update = "bestow"
+takes = [0x47001683]
+fellows = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: the fellowship's leader hands the orders bought from Falitea to Kelinua, which gives the quest to the whole fellowship; no recording", confidence = "low" }
+
+[[step]]
+key = "went-in"
+quest = 0x80000288
+needs = 1
+trigger = { arrive = 0x47001194 }
+update = "advance"
+phase = 2
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: the quest moves on as the player goes in through the dungeon's door on the land (the door's kind also stands at two other doors of the region); no recording", confidence = "low" }
+
+[[step]]
+key = "first-kill"
+quest = 0x80000288
+needs = 2
+trigger = { kill = 0x4700259B }
+update = "advance"
+phase = 3
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's page for these tent quests: one of the young grievver lords destroyed moves the quest on, back to Kelinua; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-1"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x57E357A3 }
+requires = [{ quest = 0x8000028A, phase = 2 }]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with one to four young grievver lords destroyed: her line for it and the reward it names, 0 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-2"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x57E357A3 }
+requires = [{ quest = 0x8000028A, phase = 3 }]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with one to four young grievver lords destroyed: her line for it and the reward it names, 0 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-3"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x57E357A3 }
+requires = [{ quest = 0x8000028A, phase = 4 }]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with one to four young grievver lords destroyed: her line for it and the reward it names, 0 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-4"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x57E357A3 }
+requires = [{ quest = 0x8000028A, phase = 5 }]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with one to four young grievver lords destroyed: her line for it and the reward it names, 0 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-5"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x57EB57A3 }
+requires = [{ quest = 0x8000028A, phase = 6 }]
+gives = [0x47000BCE]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with five to nine young grievver lords destroyed: her line for it and the reward it names, 1 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-6"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x57EB57A3 }
+requires = [{ quest = 0x8000028A, phase = 7 }]
+gives = [0x47000BCE]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with five to nine young grievver lords destroyed: her line for it and the reward it names, 1 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-7"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x57EB57A3 }
+requires = [{ quest = 0x8000028A, phase = 8 }]
+gives = [0x47000BCE]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with five to nine young grievver lords destroyed: her line for it and the reward it names, 1 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-8"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x57EB57A3 }
+requires = [{ quest = 0x8000028A, phase = 9 }]
+gives = [0x47000BCE]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with five to nine young grievver lords destroyed: her line for it and the reward it names, 1 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-9"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x57EB57A3 }
+requires = [{ quest = 0x8000028A, phase = 10 }]
+gives = [0x47000BCE]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with five to nine young grievver lords destroyed: her line for it and the reward it names, 1 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-10"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6427AC2D }
+requires = [{ quest = 0x8000028A, phase = 11 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen young grievver lords destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-11"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6427AC2D }
+requires = [{ quest = 0x8000028A, phase = 12 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen young grievver lords destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-12"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6427AC2D }
+requires = [{ quest = 0x8000028A, phase = 13 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen young grievver lords destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-13"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6427AC2D }
+requires = [{ quest = 0x8000028A, phase = 14 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen young grievver lords destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-14"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6427AC2D }
+requires = [{ quest = 0x8000028A, phase = 15 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen young grievver lords destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-15"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6427AC2D }
+requires = [{ quest = 0x8000028A, phase = 16 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen young grievver lords destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-16"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6427AC2D }
+requires = [{ quest = 0x8000028A, phase = 17 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen young grievver lords destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-17"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6427AC2D }
+requires = [{ quest = 0x8000028A, phase = 18 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen young grievver lords destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-18"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6427AC2D }
+requires = [{ quest = 0x8000028A, phase = 19 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen young grievver lords destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-19"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6427AC2D }
+requires = [{ quest = 0x8000028A, phase = 20 }]
+gives = [0x47000BCE]
+counts = [2]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with ten to nineteen young grievver lords destroyed: her line for it and the reward it names, 2 tessera; the wiki's page for these tent quests; no recording", confidence = "low" }
+
+[[step]]
+key = "paid-20"
+quest = 0x80000288
+needs = 3
+trigger = { use = 0x4700317C }
+update = "complete"
+tell = { table = 0x25002A01, string = 0x6421AC2D }
+gives = [0x47000BCE]
+counts = [3]
+requires = [{ quest = 0x8000028A, done = true }]
+prov = { from = "authored", by = "Dereth Network", note = "back at Kelinua with twenty young grievver lords destroyed: her line for at least twenty and the three tessera it names; the wiki's page for these tent quests; no recording", confidence = "low" }
