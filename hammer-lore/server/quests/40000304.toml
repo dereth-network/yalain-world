@@ -1,0 +1,120 @@
+# The hammer's lore, one line a use; edit an authored pack instead.
+
+[[step]]
+key = "lore-1"
+quest = 0x40000304
+needs = 0
+trigger = { use = 0x47002F66 }
+update = "bestow"
+tell = { table = 0x250028F0, string = 0x2A6B097C }
+requires = [{ quest = 0x40000303, done = true }, { quest = 0x40000304, done = false }, { quest = 0x40000303, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "its first line, at a use once the forge is cleansed and the lore never finished, not while the cleansing is under way; the lines go in their names' order, ID_Quest1 to 11; no recording", confidence = "low" }
+
+[[step]]
+key = "lore-2"
+quest = 0x40000304
+needs = 1
+trigger = { use = 0x47002F66 }
+update = "advance"
+phase = 2
+tell = { table = 0x250028F0, string = 0x2A6B097A }
+requires = [{ quest = 0x40000303, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "its line ID_Quest2 at the next use moves it to phase 2, one line a phase in their names' order; no recording", confidence = "low" }
+
+[[step]]
+key = "lore-3"
+quest = 0x40000304
+needs = 2
+trigger = { use = 0x47002F66 }
+update = "advance"
+phase = 3
+tell = { table = 0x250028F0, string = 0x2A6B0978 }
+requires = [{ quest = 0x40000303, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "its line ID_Quest3 at the next use moves it to phase 3, one line a phase in their names' order; no recording", confidence = "low" }
+
+[[step]]
+key = "lore-4"
+quest = 0x40000304
+needs = 3
+trigger = { use = 0x47002F66 }
+update = "advance"
+phase = 4
+tell = { table = 0x250028F0, string = 0x2A6B0976 }
+requires = [{ quest = 0x40000303, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "its line ID_Quest4 at the next use moves it to phase 4, one line a phase in their names' order; no recording", confidence = "low" }
+
+[[step]]
+key = "lore-5"
+quest = 0x40000304
+needs = 4
+trigger = { use = 0x47002F66 }
+update = "advance"
+phase = 5
+tell = { table = 0x250028F0, string = 0x2A6B0974 }
+requires = [{ quest = 0x40000303, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "its line ID_Quest5 at the next use moves it to phase 5, one line a phase in their names' order; no recording", confidence = "low" }
+
+[[step]]
+key = "lore-6"
+quest = 0x40000304
+needs = 5
+trigger = { use = 0x47002F66 }
+update = "advance"
+phase = 6
+tell = { table = 0x250028F0, string = 0x2A6B0972 }
+requires = [{ quest = 0x40000303, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "its line ID_Quest6 at the next use moves it to phase 6, one line a phase in their names' order; no recording", confidence = "low" }
+
+[[step]]
+key = "lore-7"
+quest = 0x40000304
+needs = 6
+trigger = { use = 0x47002F66 }
+update = "advance"
+phase = 7
+tell = { table = 0x250028F0, string = 0x2A6B0970 }
+requires = [{ quest = 0x40000303, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "its line ID_Quest7 at the next use moves it to phase 7, one line a phase in their names' order; no recording", confidence = "low" }
+
+[[step]]
+key = "lore-8"
+quest = 0x40000304
+needs = 7
+trigger = { use = 0x47002F66 }
+update = "advance"
+phase = 8
+tell = { table = 0x250028F0, string = 0x2A6B096E }
+requires = [{ quest = 0x40000303, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "its line ID_Quest8 at the next use moves it to phase 8, one line a phase in their names' order; no recording", confidence = "low" }
+
+[[step]]
+key = "lore-9"
+quest = 0x40000304
+needs = 8
+trigger = { use = 0x47002F66 }
+update = "advance"
+phase = 9
+tell = { table = 0x250028F0, string = 0x2A6B096C }
+requires = [{ quest = 0x40000303, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "its line ID_Quest9 at the next use moves it to phase 9, one line a phase in their names' order; no recording", confidence = "low" }
+
+[[step]]
+key = "lore-10"
+quest = 0x40000304
+needs = 9
+trigger = { use = 0x47002F66 }
+update = "advance"
+phase = 10
+tell = { table = 0x250028F0, string = 0xEA6B097C }
+requires = [{ quest = 0x40000303, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "its line ID_Quest10 at the next use moves it to phase 10, one line a phase in their names' order; no recording", confidence = "low" }
+
+[[step]]
+key = "lore-11"
+quest = 0x40000304
+needs = 10
+trigger = { use = 0x47002F66 }
+update = "complete"
+tell = { table = 0x250028F0, string = 0xEE6B097C }
+requires = [{ quest = 0x40000303, phase = 0 }]
+prov = { from = "authored", by = "Dereth Network", note = "its last line, ID_Quest11, ends it at the use after the tenth phase; no recording", confidence = "low" }

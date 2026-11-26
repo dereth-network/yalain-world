@@ -8,6 +8,7 @@
 - A guard at a Naderu outpost now asks you to slay the creature that stalks him. New pack `nightmare-guard/`.
 - The Knorr Ramparts' group creatures now have camps. New pack `ramparts-groups/`.
 - Athraes now upgrades Soulslayers. New pack `soulslayer-upgrade/`.
+- The hammer at the forge now tells its lore in order, as a quest. New pack `hammer-lore/`.
 
 ## v0.43.0
 
