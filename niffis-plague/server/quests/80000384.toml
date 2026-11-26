@@ -1,0 +1,29 @@
+# The plague quest: she gives it, the creatures' own deaths count the ten, and she thanks you; edit an authored pack instead.
+
+[[quest]]
+id = 0x80000384
+id_name = "Quest_NiffisPlague"
+state = 0x6F000C4A
+challenge = 25
+retry = 518400
+xp = 43000
+xp_whole = true
+prov = { from = "derived", rule = "quest-death-effect", record = 0x6F000C4A, confidence = "low", fields = { challenge = { from = "authored", by = "Dereth Network", note = "the wiki's table for this zone: level 25", confidence = "low" }, xp = { from = "authored", by = "Dereth Network", note = "the wiki's table for this zone: a fixed 43,000", confidence = "low" }, xp_whole = { from = "authored", by = "Dereth Network", note = "the wiki's table for this zone: a fixed amount", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "as its sister quest of the same givers sets it, 6 days; no source gives this one's", confidence = "low" } } }
+
+[[step]]
+key = "given"
+quest = 0x80000384
+needs = 0
+trigger = { use = 0x47003277 }
+update = "bestow"
+tell = { table = 0x25002A5A, string = 0x10D9BD3B }
+prov = { from = "authored", by = "Dereth Network", note = "she asks you to clear out the creatures, from her own lines; their own death effect counts the ten; no source says more of its steps", confidence = "low" }
+
+[[step]]
+key = "cleared"
+quest = 0x80000384
+needs = 11
+trigger = { use = 0x47003277 }
+update = "complete"
+tell = { table = 0x25002A5A, string = 0x00A66C32 }
+prov = { from = "authored", by = "Dereth Network", note = "back to her once the ten are dead, at its last phase, with her thanks, from her own lines", confidence = "low" }
