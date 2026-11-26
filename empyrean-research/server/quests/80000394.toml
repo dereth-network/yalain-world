@@ -1,0 +1,32 @@
+# The facility quest: the scholar gives it, a lens taken in the facility moves it on, and he takes the lens back; edit
+# this pack's rows.
+
+[[quest]]
+id = 0x80000394
+id_name = "QuestEmpyreanResearch"
+state = 0x6F005D78
+challenge = 70
+min_level = 70
+retry = 72000
+xp = 1000000000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:e688c5e3", confidence = "high", sample = { sessions = 3 }, fields = { min_level = { from = "authored", by = "Dereth Network", note = "the wiki's walkthrough: level 70 and up; the install has no setup for it", confidence = "low" }, retry = { from = "authored", by = "Dereth Network", note = "the wiki's walkthrough: 20 hours to repeat", confidence = "low" }, xp = { from = "authored", by = "Dereth Network", note = "the wiki's walkthrough: a fixed 1,000,000,000", confidence = "low" }, xp_whole = { from = "authored", by = "Dereth Network", note = "the wiki gives one amount at any level", confidence = "low" } } }
+
+[[step]]
+key = "given"
+quest = 0x80000394
+needs = 0
+trigger = { use = 0x47003E2A }
+update = "bestow"
+tell = { table = 0x25002E8E, string = 0x2AE6122C }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's walkthrough: he starts it; his offer of the facility, from his own lines; the three 2017 holders had it done, and no recording shows the giving", confidence = "low" }
+
+[[step]]
+key = "lens-back"
+quest = 0x80000394
+needs = 2
+trigger = { give = 0x47003E23, to = 0x47003E2A }
+update = "complete"
+takes = [0x47003E23]
+tell = { table = 0x25002E8E, string = 0x153E60B6 }
+prov = { from = "authored", by = "Dereth Network", note = "the wiki's walkthrough: hand him a lens for the reward; the lens taken moves it to its second phase, as the lens's own effect names; his thanks from his own lines", confidence = "low" }

@@ -3,6 +3,7 @@
 ## v0.44.0
 
 - Creatures the zone guides name now have camps outside Knorr too. Packs `wilds-linvak/`, `wilds-osteth/`, `wilds-omishan/`, `wilds-islands/`.
+- A Balthazar quest in Arramora can now be finished: Empyrean Research. New pack `empyrean-research/`.
 
 ## v0.43.0
 
