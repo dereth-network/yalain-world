@@ -9,7 +9,8 @@ min_level = 20
 xp = 720
 duration = 86400.0
 cancellable = true
-prov = { from = "authored", by = "Dereth Network", note = "the wiki: as her errands, given again at once (no retry, so that the step after its completion runs); the decoration's use in Shinoko completes it (its own use effect)", confidence = "low" }
+xp_whole = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki: as her errands, given again at once (no retry, so that the step after its completion runs); the decoration's use in Shinoko completes it (its own use effect)", confidence = "low", fields = { xp_whole = { from = "authored", by = "Dereth Network", note = "the wiki's page for this quest: a fixed 720", confidence = "low" } } }
 
 [[step]]
 key = "given-banner-1"

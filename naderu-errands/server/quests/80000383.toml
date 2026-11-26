@@ -1,5 +1,15 @@
 # The ranger's revenge on the beast of the marshes, from a player's guide of the time and his own lines; edit an authored pack instead.
 
+[[quest]]
+id = 0x80000383
+id_name = "Quest_MarshTerrorMustBeStopped"
+state = 0x6F000C49
+challenge = 26
+cancellable = true
+xp = 60000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:fbf9b7e4", confidence = "high", sample = { sessions = 14 }, fields = { xp = { from = "authored", by = "Dereth Network", note = "the wiki's page for this quest: a fixed 60,000", confidence = "low" }, xp_whole = { from = "authored", by = "Dereth Network", note = "the wiki's page for this quest: a fixed amount", confidence = "low" } } }
+
 [[step]]
 key = "terror-killed"
 quest = 0x80000383

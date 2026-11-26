@@ -1,5 +1,15 @@
 # The Disciple's tasks in their order; edit an authored pack instead.
 
+[[quest]]
+id = 0x8000036E
+id_name = "QuestSentienceLost"
+state = 0x6F0007C3
+challenge = 50
+cancellable = true
+xp_share = 0.05
+xp_share_level = 60
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:35d7af26", confidence = "high", sample = { sessions = 3 }, fields = { xp_share = { from = "authored", by = "Dereth Network", note = "the wiki's page for this quest: 5% of a level", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "the wiki's page for this quest: capped at level 60", confidence = "low" } } }
+
 [[step]]
 key = "g1"
 quest = 0x8000036E

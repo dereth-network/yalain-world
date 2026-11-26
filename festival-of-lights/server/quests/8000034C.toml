@@ -10,7 +10,8 @@ xp = 720
 duration = 86400.0
 retry = 1.0
 cancellable = true
-prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: level 20, 720 experience, a day to do it, repeatable at once (a retry of 1 s, so that she gives the next errand at once); her line asking it promises 50 coins", confidence = "low" }
+xp_whole = true
+prov = { from = "authored", by = "Dereth Network", note = "the wiki and a player's guide: level 20, 720 experience, a day to do it, repeatable at once (a retry of 1 s, so that she gives the next errand at once); her line asking it promises 50 coins", confidence = "low", fields = { xp_whole = { from = "authored", by = "Dereth Network", note = "the wiki's page for this quest: a fixed 720", confidence = "low" } } }
 
 [[step]]
 key = "given"

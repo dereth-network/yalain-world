@@ -14,6 +14,7 @@
 - Honitea's Niffis Plague quest can now be done. New pack `niffis-plague/`.
 - More unique items can now drop from the rare pools. Pack `mirra-drops/`.
 - Hineanu, Morla and Kirea now stand with Lutna. New pack `shaper-guards/`.
+- Some quests that paid no experience now pay what the wiki says. Packs `quest-pay/`, `quest-cancel-waits/`, `guide-givers/`, `naderu-errands/`, `orulaan-errands/`, `siraluun-cargo/`, `festival-of-lights/`.
 
 ## v0.43.0
 

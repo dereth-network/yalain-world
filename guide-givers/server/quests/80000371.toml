@@ -7,7 +7,9 @@ state = 0x6F0007C6
 challenge = 50
 retry = 518400
 duration = 86400
-prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:b9849b96", confidence = "high", sample = { sessions = 3 }, fields = { retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" } } }
+xp_share = 0.1
+xp_share_level = 60
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CATALOG-2017", ref = "c:b9849b96", confidence = "high", sample = { sessions = 3 }, fields = { retry = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" }, duration = { from = "authored", by = "Dereth Network", note = "from a player's guide of the time; no recording", confidence = "low" }, xp_share = { from = "authored", by = "Dereth Network", note = "the wiki's page for this quest: 10% of a level", confidence = "low" }, xp_share_level = { from = "authored", by = "Dereth Network", note = "the wiki's page for this quest: capped at level 60", confidence = "low" } } }
 
 [[step]]
 key = "w-given"

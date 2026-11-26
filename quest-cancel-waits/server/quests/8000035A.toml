@@ -7,4 +7,6 @@ state = 0x6F0007DA
 challenge = 47
 cancellable = true
 cancel_wait = 18000
-prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:f5173d7e", confidence = "medium", sample = { sessions = 2 }, fields = { cancel_wait = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CANCEL-WAITS-2017", ref = "c:3f1690fe", confidence = "low", sample = { sessions = 1 } } } }
+xp = 10000000
+xp_whole = true
+prov = { from = "capture", evidence = "AC2-EVID-WDB-QUESTS-2017", ref = "c:f5173d7e", confidence = "medium", sample = { sessions = 2 }, fields = { cancel_wait = { from = "capture", evidence = "AC2-EVID-WDB-QUEST-CANCEL-WAITS-2017", ref = "c:3f1690fe", confidence = "low", sample = { sessions = 1 } }, xp = { from = "authored", by = "Dereth Network", note = "the wiki's page for this quest: a fixed 10,000,000", confidence = "low" }, xp_whole = { from = "authored", by = "Dereth Network", note = "the wiki's page for this quest: a fixed amount", confidence = "low" } } }
