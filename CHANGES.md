@@ -15,6 +15,7 @@
 - More unique items can now drop from the rare pools. Pack `mirra-drops/`.
 - Hineanu, Morla and Kirea now stand with Lutna. New pack `shaper-guards/`.
 - Some quests that paid no experience now pay what the guides of the time say. Packs `quest-pay/`, `quest-cancel-waits/`, `guide-givers/`, `naderu-errands/`, `orulaan-errands/`, `siraluun-cargo/`, `festival-of-lights/`.
+- The Olthoi Hives are entered up their mounds' ramps; their portals at the bottom are the level-35 recall points. Packs `bug-hunts/`, `olthoi-hive-west/`, `dungeon-bosses/`.
 
 ## v0.43.0
 

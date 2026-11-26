@@ -1,6 +1,4 @@
-# The western hive's portal at the bottom of its mound, where a players' map draws it; its portal on the land in
-# front of the mound's mouth, as the northeast mound has, to the top of the mound, and the way out beside where it
-# lands.
+# The western hive's portal at the bottom of its mound, where a players' map draws it.
 
 [[object]]
 key = "olthoi-hive-west"
@@ -11,28 +9,7 @@ at = [-51.06, -43.59, -9.20]
 rotation = [0.92388, 0.0, 0.0, -0.382683]
 name = { table = 0x25001B44, string = 0x10B36549 }
 to = "olthoi-hive-west-in"
-prov = { from = "authored", by = "Dereth Network", note = "at the bottom of the hive's mound, where a players' map draws its portal, beside where the hive's way back lands; no recording", confidence = "low" }
-
-[[object]]
-key = "olthoi-hive-west-land"
-kind = "static"
-template = 0x47001154
-cell = 0xDEA8000C
-at = [27.00, 62.00, 76.80]
-rotation = [1.0, 0.0, 0.0, 0.0]
-name = { table = 0x25001B44, string = 0x10B56549 }
-to = "olthoi-hive-west-top"
 min_level = 35
 recall = true
 summon = true
-prov = { from = "authored", by = "Dereth Network", note = "in front of the mound's mouth, as the northeast mound's portal; named by the portals' table; level 35, recalled and summoned, as the wiki says of both hives; no recording", confidence = "low" }
-
-[[object]]
-key = "olthoi-hive-west-top-exit"
-kind = "static"
-template = 0x47001154
-cell = 0xDEA8012A
-at = [41.30, 72.20, 80.90]
-rotation = [1.0, 0.0, 0.0, 0.0]
-to = "olthoi-hive-west-outside"
-prov = { from = "authored", by = "Dereth Network", note = "the way out, beside where the portal on the land brings its players; no recording", confidence = "low" }
+prov = { from = "authored", by = "Dereth Network", note = "at the bottom of the hive's mound, where a players' map draws its portal, beside where the hive's way back lands; no recording", confidence = "low", fields = { min_level = { from = "authored", by = "Dereth Network", note = "the wiki: level 35+, recallable and summonable; the one 2017 recording to circle both mounds was sent no portal on the land", confidence = "low" }, recall = { from = "authored", by = "Dereth Network", note = "the wiki: level 35+, recallable and summonable; the one 2017 recording to circle both mounds was sent no portal on the land", confidence = "low" }, summon = { from = "authored", by = "Dereth Network", note = "the wiki: level 35+, recallable and summonable; the one 2017 recording to circle both mounds was sent no portal on the land", confidence = "low" } } }
