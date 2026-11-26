@@ -9,10 +9,10 @@ release-check.py verify <builder checkout> <release folder> <what rustc -V said>
     the compiler are the ones it pins.
 
 release-check.py versions [<previous tag>]
-    Refuses when a pack the previous release held has changed since, but its pack.toml still has
-    the version it was released with. A pack new since then, or removed, may have any version, and a
-    change to the version line alone is no change. The previous release is the newest v* tag that
-    isn't release.toml's.
+    Refuses when a pack the previous release held has changed since, but its pack.toml's version
+    isn't higher than the one it was released with: kept, lowered, or not a version of whole numbers.
+    A pack new since then, or removed, may have any version. The previous release is the newest v*
+    tag that isn't release.toml's.
 """
 import hashlib, os, subprocess, sys, tomllib
 from pathlib import Path
@@ -100,8 +100,17 @@ def pack_toml(ref, pack):
     return done.stdout.decode("utf-8") if done.returncode == 0 else None
 
 
+def numbers(version):
+    """A version's whole numbers, to compare; None when it isn't a dotted run of whole numbers."""
+    try:
+        return tuple(int(part) for part in str(version).split("."))
+    except ValueError:
+        return None
+
+
 def unmoved(previous, head="HEAD"):
-    """The packs released at `previous` that changed by `head` and kept their version: [(pack, version)]."""
+    """The packs released at `previous` that changed by `head` without raising their version:
+    [(pack, version then, version now)]."""
     released = sorted(
         path[: -len("/pack.toml")]
         for path in git("ls-tree", "-r", "-z", "--name-only", previous).decode("utf-8").split("\0")
@@ -118,10 +127,11 @@ def unmoved(previous, head="HEAD"):
         after = pack_toml(head, pack) if pack in changed else None
         if after is None:
             continue
-        # Any change with the version unmoved is a change beside the version line.
-        version = tomllib.loads(pack_toml(previous, pack)).get("version")
-        if tomllib.loads(after).get("version") == version:
-            out.append((pack, version))
+        then = tomllib.loads(pack_toml(previous, pack)).get("version")
+        now = tomllib.loads(after).get("version")
+        was, is_ = numbers(then), numbers(now)
+        if was is None or is_ is None or is_ <= was:
+            out.append((pack, then, now))
     return out
 
 
@@ -134,12 +144,12 @@ def versions(previous=None):
             print("no earlier release: every pack is new")
             return
     stale = unmoved(previous)
-    for pack, version in stale:
-        print(f"::error::{pack} changed since {previous} but is still version {version}: "
-              f"move its version in {pack}/pack.toml")
+    for pack, then, now in stale:
+        print(f"::error::{pack} changed since {previous} but its version {now} isn't higher than "
+              f"the released {then}: raise it in {pack}/pack.toml")
     if stale:
         sys.exit(1)
-    print(f"every pack changed since {previous} moved its version")
+    print(f"every pack changed since {previous} raised its version")
 
 
 if __name__ == "__main__":

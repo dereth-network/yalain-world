@@ -47,14 +47,14 @@ jobs:
 
       - name: Read release.toml, and the tag names its version
         id: pin
-        run: python3 .github/workflows/release-check.py pin
+        run: python3 -B .github/workflows/release-check.py pin
 
       - name: The tag is on main
         if: github.ref_type == 'tag'
         run: git merge-base --is-ancestor "$GITHUB_SHA" origin/main
 
       - name: Every pack changed since the last release moved its version
-        run: python3 .github/workflows/release-check.py versions
+        run: python3 -B .github/workflows/release-check.py versions
 
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
@@ -84,7 +84,7 @@ jobs:
           TOOLCHAIN: ${{ steps.pin.outputs.toolchain }}
         run: |
           rustc_said=$(cd builder && rustc "+$TOOLCHAIN" -V)
-          python3 .github/workflows/release-check.py verify builder release "$rustc_said"
+          python3 -B .github/workflows/release-check.py verify builder release "$rustc_said"
           (cd release && sha256sum -c ./*.sha256)
 
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7

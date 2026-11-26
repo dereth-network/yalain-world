@@ -80,7 +80,7 @@ license = "CC0-1.0"
 description = "People of Arwic's market."
 ```
 
-A released pack that changes moves its `version` before the next release: the minor number when
+A released pack that changes raises its `version` before the next release: the minor number when
 what it does grows, the patch number when it only changes rows. A release refuses one that didn't.
 
 ## Values
