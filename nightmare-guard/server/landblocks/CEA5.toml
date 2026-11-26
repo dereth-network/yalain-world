@@ -1,0 +1,11 @@
+# The unique creature that stalks the guard; edit this pack's rows.
+
+[[camp]]
+key = "nightmare"
+cell = 0xCEA50002
+at = [12.6, 35.9, 86.0]
+spots = [{ cell = 0xCEA50002, at = [12.6, 35.9, 86.0] }, { cell = 0xCEA40010, at = [24.5, 145.6, 84.92] }, { cell = 0xCDA50031, at = [121.5, 10.8, 87.5] }]
+population = 1
+regen = 180.0
+spawns = [{ template = 0x47002835, weight = 1 }]
+prov = { from = "authored", by = "Dereth Network", note = "a unique the wiki's page for this zone lists, one at a time at one of 3 spots among the mucor 2017 recorded near the southeast outpost; no finer place is named; no recording", confidence = "low", fields = { regen = { from = "derived", rule = "camp-regen-outdoor" } } }

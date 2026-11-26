@@ -4,6 +4,8 @@
 
 - Creatures the zone guides name now have camps outside Knorr too. Packs `wilds-linvak/`, `wilds-osteth/`, `wilds-omishan/`, `wilds-islands/`.
 - A Balthazar quest in Arramora can now be finished: Empyrean Research. New pack `empyrean-research/`.
+- Rare and unique creatures now roam their zones, such as the beetle boss of the haunted cave. New pack `named-creatures/`.
+- A guard at a Naderu outpost now asks you to slay the creature that stalks him. New pack `nightmare-guard/`.
 
 ## v0.43.0
 

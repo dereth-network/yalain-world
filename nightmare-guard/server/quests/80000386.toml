@@ -1,0 +1,20 @@
+# The haunted guard's quest: he gives it, the creature's own death moves it on, and he thanks its killer; edit this
+# pack's rows.
+
+[[step]]
+key = "given"
+quest = 0x80000386
+needs = 0
+trigger = { use = 0x47003273 }
+update = "bestow"
+tell = { table = 0x25002A58, string = 0x0B005C9C }
+prov = { from = "authored", by = "Dereth Network", note = "he asks for the creature's death, from his own lines; the creature's death moves the quest on, as its own effect names; no source says more of its steps", confidence = "low" }
+
+[[step]]
+key = "slain"
+quest = 0x80000386
+needs = 2
+trigger = { use = 0x47003273 }
+update = "complete"
+tell = { table = 0x25002A58, string = 0x863A0355 }
+prov = { from = "authored", by = "Dereth Network", note = "back to him once it is dead, with his line for its death, from his own lines; no source gives a reward beyond the install's", confidence = "low" }
