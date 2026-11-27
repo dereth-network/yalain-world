@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Lugians and Empyreans now start in their training halls, with a way out. New pack `start-halls/`.
+- Storekeepers in nine market shops now stand where a 2005 recording shows them. Pack `market-districts/`.
 
 ## v0.44.0
 
