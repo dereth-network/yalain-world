@@ -7,7 +7,8 @@ cell = 0xA494000C
 at = [25.16, 61.1, 91.217]
 rotation = [1.0, 0.0, 0.0, 0.0]
 name = { table = 0x25001B45, string = 0x5950ECC5 }
+to = "allegiance-halls:hall-0cf7"
 # recall and summon: every 2017 examination of 0x40A4940000000003 (AC2-EVID-WDB-PORTAL-RECALL-2017)
 recall = true
 summon = true
-prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:d6e865e7", confidence = "high", sample = { sessions = 48 } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:d6e865e7", confidence = "high", sample = { sessions = 27 }, fields = { to = { from = "capture", evidence = "AC2-EVID-WORLD-2005-1423", ref = "c:948daaa6", confidence = "medium", sample = { sessions = 1, trips = 1 } } } }
