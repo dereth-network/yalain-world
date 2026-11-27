@@ -1,17 +1,5 @@
 # Changes
 
-## Unreleased
-
-- Lugians and Empyreans now start in their training halls, with a way out. New pack `start-halls/`.
-- Storekeepers in nine market shops now stand where a 2005 recording shows them. Pack `market-districts/`.
-- Three more towns now have allegiance halls. New pack `allegiance-halls-2005/`.
-- A guild door and an allegiance hall portal that led nowhere now lead inside. New pack `portal-trips-2005/`.
-- Fixed a mine portal that led to the wrong place and wrongly asked for the mine's toll. Pack `mine-ways-down/`.
-- Five dungeon ways out, three lifestones and a person in a vault now stand where a 2005 recording shows them. Packs `acmaps-camps/`, `arcanum-caches/`, `arcanum-vault/`, `dungeon-bosses/`, `osteth-dungeon-bosses/`, `prosper-drudges/`, `vault-lifestones/`.
-- Doors now stand in three dungeons where a 2005 recording shows them. New pack `dungeon-doors-2005/`.
-- More creatures, a signpost and two diving boards now stand where a 2005 recording shows them. New pack `wilds-seen-2005/`.
-- Two defense nexus dungeons on the Battlefield can now be entered. New pack `undead-vault-copies/`.
-
 ## v0.44.0
 
 - Creatures the zone guides name now have camps outside Knorr too. Packs `wilds-linvak/`, `wilds-osteth/`, `wilds-omishan/`, `wilds-islands/`.
@@ -28,6 +16,15 @@
 - Hineanu, Morla and Kirea now stand with Lutna. New pack `shaper-guards/`.
 - Some quests that paid no experience now pay what the guides of the time say. Packs `quest-pay/`, `quest-cancel-waits/`, `guide-givers/`, `naderu-errands/`, `orulaan-errands/`, `siraluun-cargo/`, `festival-of-lights/`.
 - The Olthoi Hives are entered up their mounds' ramps; their portals at the bottom are the level-35 recall points. Packs `bug-hunts/`, `olthoi-hive-west/`, `dungeon-bosses/`.
+- Lugians and Empyreans now start in their training halls, with a way out. New pack `start-halls/`.
+- Storekeepers in nine market shops now stand where a 2005 recording shows them. Pack `market-districts/`.
+- Three more towns now have allegiance halls. New pack `allegiance-halls-2005/`.
+- A guild door and an allegiance hall portal that led nowhere now lead inside. New pack `portal-trips-2005/`.
+- Fixed a mine portal that led to the wrong place and wrongly asked for the mine's toll. Pack `mine-ways-down/`.
+- Five dungeon ways out, three lifestones and a person in a vault now stand where a 2005 recording shows them. Packs `acmaps-camps/`, `arcanum-caches/`, `arcanum-vault/`, `dungeon-bosses/`, `osteth-dungeon-bosses/`, `prosper-drudges/`, `vault-lifestones/`.
+- Doors now stand in three dungeons where a 2005 recording shows them. New pack `dungeon-doors-2005/`.
+- More creatures, a signpost and two diving boards now stand where a 2005 recording shows them. New pack `wilds-seen-2005/`.
+- Two defense nexus dungeons on the Battlefield can now be entered. New pack `undead-vault-copies/`.
 
 ## v0.43.0
 
