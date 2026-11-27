@@ -1,5 +1,9 @@
 # Changes
 
+## Unreleased
+
+- Lugians and Empyreans now start in their training halls, with a way out. New pack `start-halls/`.
+
 ## v0.44.0
 
 - Creatures the zone guides name now have camps outside Knorr too. Packs `wilds-linvak/`, `wilds-osteth/`, `wilds-omishan/`, `wilds-islands/`.

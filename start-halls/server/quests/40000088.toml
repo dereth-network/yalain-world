@@ -1,0 +1,40 @@
+# The hall quest's glyph, one step per race; edit an authored pack instead.
+
+[[step]]
+key = "s8"
+quest = 0x40000088
+needs = 6
+trigger = { use = 0x47001AED, on = 0x47001CE8 }
+update = "advance"
+phase = 7
+xp = 0
+takes = [0x47001AED]
+to = "seed-2017:p-0298014d"
+races = [1]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-START-HALLS", ref = "c:8e4b6ecf", confidence = "low", sample = { sessions = 1 }, fields = { races = { from = "authored", by = "Dereth Network", note = "the human hall's: each race's glyph leads into its own hall's shard room" } } }
+
+[[step]]
+key = "s8-tumerok"
+quest = 0x40000088
+needs = 6
+trigger = { use = 0x47001AED, on = 0x47001CE8 }
+update = "advance"
+phase = 7
+xp = 0
+takes = [0x47001AED]
+to = "tumerok-hall-shard-room"
+races = [4]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-START-HALLS", ref = "c:a5b80ac7", confidence = "low", sample = { sessions = 1 }, fields = { races = { from = "authored", by = "Dereth Network", note = "a Tumerok's glyph leads into its own hall's shard room, where 2017's Tumerok landed" } } }
+
+[[step]]
+key = "s8-lugian"
+quest = 0x40000088
+needs = 6
+trigger = { use = 0x47001AED, on = 0x47001CE8 }
+update = "advance"
+phase = 7
+xp = 0
+takes = [0x47001AED]
+to = "lugian-hall-shard-room"
+races = [2]
+prov = { from = "capture", evidence = "AC2-EVID-WDB-START-HALLS", ref = "c:897e4b3e", confidence = "low", sample = { sessions = 1 }, fields = { races = { from = "authored", by = "Dereth Network", note = "a Lugian's glyph leads into its own hall's shard room, where 2005's Lugian landed" } } }
