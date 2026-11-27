@@ -7,6 +7,7 @@
 - Three more towns now have allegiance halls. New pack `allegiance-halls-2005/`.
 - A guild door and an allegiance hall portal that led nowhere now lead inside. New pack `portal-trips-2005/`.
 - Fixed a mine portal leading to the wrong place. Pack `mine-ways-down/`.
+- Five dungeon ways out, three lifestones and a person in a vault now stand where a 2005 recording shows them. Packs `acmaps-camps/`, `arcanum-caches/`, `arcanum-vault/`, `dungeon-bosses/`, `osteth-dungeon-bosses/`, `prosper-drudges/`, `vault-lifestones/`.
 
 ## v0.44.0
 
