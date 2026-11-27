@@ -1,7 +1,7 @@
 # The inputs of the next release, which release.yml refuses to publish without.
 # Set them for each release; this file isn't in the archive, so its bytes don't change the hash.
 
-version = "0.43.0"
+version = "0.44.0"
 
 [builder]
 url = "https://github.com/dereth-network/dereth"
@@ -12,4 +12,4 @@ toolchain = "rustc 1.98.1 (48a229cea 2026-09-01)"
 
 [archive]
 # What `yalain world release . --tag v<version> --package-only` printed.
-sha256 = "c7c2d696aaeda05e86bdcd1be8135b42330e8c1a246b62d6782e2fa897ea52ec"
+sha256 = "63cd96394f818eaa952d720f831c8c8d4d199e2cdcefb06119bfa8e789d23a2e"
