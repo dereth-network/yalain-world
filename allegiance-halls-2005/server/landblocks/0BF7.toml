@@ -1,0 +1,54 @@
+# An allegiance hall as a recording of 2005 shows it; its twins are 0x0BFB/0x0BFD.
+
+[[object]]
+key = "s-1"
+kind = "static"
+id = 0x400BF70000000001
+template = 0x47001154
+cell = 0x0BF70118
+at = [-290.638, 332.097, -69.361]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B45, string = 0x79247E6B }
+to = "hakata-hall-surface"
+prov = { from = "capture", evidence = "AC2-EVID-WORLD-2005-1423", ref = "c:93146f3f", confidence = "medium", sample = { sessions = 1 }, fields = { to = { from = "authored", by = "Dereth Network", note = "back to the surface by the town portal that names this hall, as its twin halls' ways out lead back to theirs", confidence = "low" } } }
+
+[[object]]
+key = "s-2"
+kind = "static"
+id = 0x400BF70000000002
+template = 0x470011C5
+cell = 0x0BF70109
+at = [-219.068, 279.709, -69.8]
+rotation = [0.92388, 0.0, 0.0, 0.38268]
+prov = { from = "capture", evidence = "AC2-EVID-WORLD-2005-1423", ref = "c:fa12722c", confidence = "medium", sample = { sessions = 1 }, fields = { template = { from = "authored", by = "Dereth Network", note = "the sign its region's twin halls stand with; the crosswalk ties the three regions' signs", confidence = "medium" } } }
+
+[[object]]
+key = "s-3"
+kind = "static"
+id = 0x400BF70000000003
+template = 0x470011C1
+cell = 0x0BF70109
+at = [-212.514, 281.512, -69.783]
+rotation = [1.0, 0.0, 0.0, 0.0]
+prov = { from = "capture", evidence = "AC2-EVID-WORLD-2005-1423", ref = "c:30d577fe", confidence = "medium", sample = { sessions = 1 }, fields = { template = { from = "authored", by = "Dereth Network", note = "the stone its region's twin halls stand with; the crosswalk ties the three regions' stones", confidence = "medium" } } }
+
+[[object]]
+key = "s-4"
+kind = "static"
+id = 0x400BF70000000004
+template = 0x47001BEB
+cell = 0x0BF70109
+at = [-233.541, 285.861, -70.645]
+rotation = [0.92388, 0.0, 0.0, 0.38268]
+prov = { from = "capture", evidence = "AC2-EVID-WORLD-2005-1423", ref = "c:ac374331", confidence = "medium", sample = { sessions = 1 }, fields = { template = { from = "authored", by = "Dereth Network", note = "the end-of-retail town sign of the 2005 record's own package", confidence = "medium" } } }
+
+[[camp]]
+key = "straw-drudges"
+cell = 0x0BF7011E
+at = [-234.107, 225.822, -70.171]
+radius = 0.0
+spots = [{ cell = 0x0BF7011E, at = [-227.793, 231.722, -69.713] }, { cell = 0x0BF7011E, at = [-234.137, 224.445, -70.475] }, { cell = 0x0BF7011E, at = [-240.391, 221.3, -70.326] }]
+population = 3
+regen = 192.0
+spawns = [{ template = 0x470023B5, weight = 3 }]
+prov = { from = "capture", evidence = "AC2-EVID-WORLD-2005-1423", ref = "c:a0af4bba", confidence = "low", sample = { sessions = 1, creatures = 3 }, fields = { regen = { from = "derived", rule = "camp-regen-median" } } }

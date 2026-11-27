@@ -7,7 +7,8 @@ cell = 0x5772001B
 at = [62.06, 46.48, 217.614]
 rotation = [1.0, 0.0, 0.0, 0.0]
 name = { table = 0x25001B45, string = 0x0AF6700A }
+to = "allegiance-halls-2005:linvak-tukal-hall-entry"
 # recall and summon: every 2017 examination of 0x4057720000000023 (AC2-EVID-WDB-PORTAL-RECALL-2017)
 recall = true
 summon = true
-prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:f85e3e5d", confidence = "high", sample = { sessions = 9 } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:f85e3e5d", confidence = "high", sample = { sessions = 6 }, fields = { to = { from = "authored", by = "Dereth Network", note = "the hall its name names; it lands where its twin's town portal lands, object for object", confidence = "low" } } }

@@ -7,6 +7,7 @@ cell = 0xE08A003C
 at = [152.4025, 79.7039, 138.8284]
 rotation = [1.0, 0.0, 0.0, 0.0]
 name = { table = 0x25001B45, string = 0xB7BDE4AF }
+to = "allegiance-halls-2005:hakata-hall-entry"
 # recall and summon: every 2017 examination of 0x40E08A0000000007 (AC2-EVID-WDB-PORTAL-RECALL-2017)
 recall = true
-prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:b7ba2adf", confidence = "high", sample = { sessions = 10 } }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:b7ba2adf", confidence = "high", sample = { sessions = 6 }, fields = { to = { from = "authored", by = "Dereth Network", note = "the hall its name names; it lands where its twin's town portal lands, object for object", confidence = "low" } } }

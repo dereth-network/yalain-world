@@ -4,6 +4,7 @@
 
 - Lugians and Empyreans now start in their training halls, with a way out. New pack `start-halls/`.
 - Storekeepers in nine market shops now stand where a 2005 recording shows them. Pack `market-districts/`.
+- Three more towns now have allegiance halls. New pack `allegiance-halls-2005/`.
 
 ## v0.44.0
 
