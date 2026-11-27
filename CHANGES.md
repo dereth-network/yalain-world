@@ -9,6 +9,7 @@
 - Fixed a mine portal leading to the wrong place. Pack `mine-ways-down/`.
 - Five dungeon ways out, three lifestones and a person in a vault now stand where a 2005 recording shows them. Packs `acmaps-camps/`, `arcanum-caches/`, `arcanum-vault/`, `dungeon-bosses/`, `osteth-dungeon-bosses/`, `prosper-drudges/`, `vault-lifestones/`.
 - Doors now stand in three dungeons where a 2005 recording shows them. New pack `dungeon-doors-2005/`.
+- More creatures, a signpost and two diving boards now stand where a 2005 recording shows them. New pack `wilds-seen-2005/`.
 
 ## v0.44.0
 
