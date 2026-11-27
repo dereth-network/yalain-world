@@ -8,4 +8,5 @@ at = [20.6132, -14.1938, -24.6541]
 rotation = [1.0, 0.0, 0.0, 0.0]
 name = { table = 0x25001B44, string = 0xDCCFD14F }
 to = "seed-2017:p-8eb70013"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:ad320b1a", confidence = "high", sample = { sessions = 8 }, fields = { to = { from = "authored", by = "Dereth Network", note = "no recording shows a trip through the quick exit; it leads where the hall's shard does" } } }
+requires = { quest = 0x400000C3, done = true }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-OBJECTS-2017", ref = "c:ad320b1a", confidence = "high", sample = { sessions = 5 }, fields = { to = { from = "authored", by = "Dereth Network", note = "no recording shows a trip through the quick exit; it leads where the hall's shard does" }, requires = { from = "authored", by = "Dereth Network", note = "the install's page for the exit and its skull's lines: the exit opens once the stone beside it is read and the skull used" } } }

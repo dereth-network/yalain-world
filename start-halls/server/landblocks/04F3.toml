@@ -80,7 +80,8 @@ at = [0.0305, -23.1351, -22.9733]
 rotation = [1.0, 0.0, 0.0, 0.0]
 name = { table = 0x25001B44, string = 0x1BC80696 }
 to = "esper-reaches-landing"
-prov = { from = "capture", evidence = "AC2-EVID-WDB-START-HALLS", ref = "c:2c0ea584", confidence = "low", sample = { sessions = 1 }, fields = { template = { from = "authored", by = "Dereth Network", note = "the end-of-retail template of the 2005 one recorded; in the halls both eras recorded, every object of the 2005 template stood at the same spot under the end-of-retail one" }, to = { from = "authored", by = "Dereth Network", note = "no recording shows a trip through the quick exit; it leads where the hall's shard does, as its name says" } } }
+requires = { quest = 0x400000C3, done = true }
+prov = { from = "capture", evidence = "AC2-EVID-WDB-START-HALLS", ref = "c:2c0ea584", confidence = "low", sample = { sessions = 1 }, fields = { template = { from = "authored", by = "Dereth Network", note = "the end-of-retail template of the 2005 one recorded; in the halls both eras recorded, every object of the 2005 template stood at the same spot under the end-of-retail one" }, to = { from = "authored", by = "Dereth Network", note = "no recording shows a trip through the quick exit; it leads where the hall's shard does, as its name says" }, requires = { from = "authored", by = "Dereth Network", note = "the install's page for the exit and its skull's lines: the exit opens once the stone beside it is read and the skull used" } } }
 
 [[object]]
 key = "lh-shelter-guard"
@@ -130,6 +131,17 @@ rotation = [-0.2588, 0.0, 0.0, 0.9659]
 name = { table = 0x25001B46, string = 0xB4B98389 }
 to = "esper-reaches-landing"
 prov = { from = "capture", evidence = "AC2-EVID-WDB-START-HALLS", ref = "c:068ded42", confidence = "low", sample = { sessions = 1 }, fields = { template = { from = "authored", by = "Dereth Network", note = "the end-of-retail template of the 2005 one recorded; in the halls both eras recorded, every object of the 2005 template stood at the same spot under the end-of-retail one" }, to = { from = "capture", evidence = "AC2-EVID-WDB-START-HALLS", ref = "c:1e81fc94", confidence = "low", sample = { sessions = 1 } } } }
+
+[[object]]
+key = "lh-menhir-portal"
+kind = "static"
+id = 0x4004F30000000055
+template = 0x47001CE8
+cell = 0x04F30109
+at = [-167.85, 405.51, -18.41]
+rotation = [1.0, 0.0, 0.0, 0.0]
+name = { table = 0x25001B44, string = 0xAE3C41DB }
+prov = { from = "authored", by = "Dereth Network", confidence = "low", note = "a recording of 2005 shows the hall's last portal used by its placed id and the trip into the shard room, not the portal itself; placed where its user came to rest as the use went through" }
 
 [[camp]]
 key = "lh-first-creature"

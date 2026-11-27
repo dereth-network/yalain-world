@@ -1,0 +1,25 @@
+# The training halls' exit gate: read the stone, use the skull; edit an authored pack instead.
+
+[[quest]]
+id = 0x400000C3
+id_name = "QuestAdvancedPlayerExit"
+visible = false
+retry = 180
+prov = { from = "derived", rule = "quest-setup-static", record = 0x6F000D3A }
+
+[[step]]
+key = "stone"
+quest = 0x400000C3
+needs = 0
+trigger = { use = 0x47002E13 }
+update = "bestow"
+prov = { from = "authored", by = "Dereth Network", note = "the install's page for the exit and its skull's lines: the exit opens once the stone beside it is read and the skull used" }
+
+[[step]]
+key = "skull"
+quest = 0x400000C3
+needs = 1
+trigger = { use = 0x47002E07 }
+tell = { table = 0x25002886, string = 0x2824FD4C }
+update = "complete"
+prov = { from = "authored", by = "Dereth Network", note = "the install's page for the exit and its skull's lines: the exit opens once the stone beside it is read and the skull used" }
